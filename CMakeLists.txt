@@ -1,16 +1,34 @@
 cmake_minimum_required(VERSION 2.6)
-project(ZSDX)
+project(ZMC)
 
-set(quest_name "zmc")
+set(quest_name "zelda_mercuris_chest")
 
 # data files list
 file(GLOB_RECURSE data_files
   RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/data
-  *.spc *.ogg *.it *.png *.dat *.lua *.ttf *.ttc *.fon)
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.spc
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.ogg
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.it
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.png
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.dat
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.lua
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.ttf
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.ttc
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.fon
+)
 
 file(GLOB_RECURSE data_files_prefixed
   RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
-  *.spc *.ogg *.it *.png *.dat *.lua *.ttf *.ttc *.fon)
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.spc
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.ogg
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.it
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.png
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.dat
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.lua
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.ttf
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.ttc
+  ${CMAKE_CURRENT_SOURCE_DIR}/data/*.fon
+)
 
 # add other data to zip archive
 add_custom_command(
