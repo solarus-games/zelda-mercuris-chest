@@ -4665,24 +4665,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 2424,
-  y = 3176,
-  width = 32,
-  height = 32,
-  pattern = 2,
-}
-
-tile{
-  layer = 1,
-  x = 2424,
-  y = 3368,
-  width = 32,
-  height = 32,
-  pattern = 2,
-}
-
-tile{
-  layer = 1,
   x = 1224,
   y = 3152,
   width = 320,
@@ -7847,15 +7829,6 @@ tile{
   width = 8,
   height = 208,
   pattern = 237,
-}
-
-tile{
-  layer = 1,
-  x = 2376,
-  y = 3368,
-  width = 48,
-  height = 32,
-  pattern = 672,
 }
 
 tile{
@@ -38879,6 +38852,33 @@ tile{
   width = 32,
   height = 16,
   pattern = 655,
+}
+
+tile{
+  layer = 1,
+  x = 2424,
+  y = 3368,
+  width = 32,
+  height = 32,
+  pattern = 2,
+}
+
+tile{
+  layer = 1,
+  x = 2424,
+  y = 3176,
+  width = 32,
+  height = 32,
+  pattern = 2,
+}
+
+tile{
+  layer = 1,
+  x = 2376,
+  y = 3368,
+  width = 48,
+  height = 32,
+  pattern = 672,
 }
 
 door{
