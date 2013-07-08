@@ -1,354 +1,354 @@
-map{ id = "outside_a7", name = "Outside A7 - Lost Woods" }
-map{ id = "outside_e7", name = "Outside E7 - Graveyard" }
-map{ id = "lighthouse_4f", name = "Lighthouse 4F" }
-map{ id = "lighthouse_3f", name = "Lighthouse 3F" }
-map{ id = "lighthouse_2f", name = "Lighthouse 2F" }
-map{ id = "lighthouse_1f", name = "Lighthouse 1F" }
-map{ id = "lighthouse_b1", name = "Lighthouse B1" }
-map{ id = "rail_temple_1f", name = "Rail Temple 1F" }
-map{ id = "rail_temple_b1", name = "Rail Temple B1" }
-map{ id = "rail_temple_b2", name = "Rail Temple B2" }
-map{ id = "test_map", name = "Test Hub" }
+map{ id = "outside_a7", description = "Outside A7 - Lost Woods" }
+map{ id = "outside_e7", description = "Outside E7 - Graveyard" }
+map{ id = "lighthouse_4f", description = "Lighthouse 4F" }
+map{ id = "lighthouse_3f", description = "Lighthouse 3F" }
+map{ id = "lighthouse_2f", description = "Lighthouse 2F" }
+map{ id = "lighthouse_1f", description = "Lighthouse 1F" }
+map{ id = "lighthouse_b1", description = "Lighthouse B1" }
+map{ id = "rail_temple_1f", description = "Rail Temple 1F" }
+map{ id = "rail_temple_b1", description = "Rail Temple B1" }
+map{ id = "rail_temple_b2", description = "Rail Temple B2" }
+map{ id = "test_map", description = "Test Hub" }
 
-tileset{ id = "light_world", name = "Light World" }
-tileset{ id = "dark_world", name = "Dark World" }
-tileset{ id = "cave", name = "Cave" }
-tileset{ id = "house", name = "House" }
-tileset{ id = "blue_dungeon_lw", name = "Blue dungeon (LW)" }
-tileset{ id = "green_dungeon_lw", name = "Green dungeon (LW)" }
-tileset{ id = "brown_dungeon_lw", name = "Brown dungeon (LW)" }
-tileset{ id = "pink_dungeon_lw", name = "Pink dungeon (LW)" }
-tileset{ id = "blue_dungeon_dw", name = "Blue dungeon (DW)" }
-tileset{ id = "green_dungeon_dw", name = "Green dungeon (DW)" }
-tileset{ id = "orange_dungeon_dw", name = "Orange dungeon (DW)" }
-tileset{ id = "gray_dungeon_dw", name = "Gray dungeon (DW)" }
-tileset{ id = "graybrown_dungeon_dw", name = "Gray-brown dungeon (DW)" }
-tileset{ id = "grayblue_dungeon_dw", name = "Gray-blue dungeon (DW)" }
-tileset{ id = "castle", name = "Castle" }
-tileset{ id = "mine", name = "Mine" }
-tileset{ id = "ice_dungeon", name = "Ice dungeon" }
-tileset{ id = "forest_dungeon", name = "Forest dungeon" }
-tileset{ id = "lighthouse", name = "Lighthouse" }
-tileset{ id = "final_dungeon", name = "Final dungeon" }
-tileset{ id = "old_school_dungeon", name = "Old school dungeon" }
-tileset{ id = "intro", name = "Intro" }
+tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "dark_world", description = "Dark World" }
+tileset{ id = "cave", description = "Cave" }
+tileset{ id = "house", description = "House" }
+tileset{ id = "blue_dungeon_lw", description = "Blue dungeon (LW)" }
+tileset{ id = "green_dungeon_lw", description = "Green dungeon (LW)" }
+tileset{ id = "brown_dungeon_lw", description = "Brown dungeon (LW)" }
+tileset{ id = "pink_dungeon_lw", description = "Pink dungeon (LW)" }
+tileset{ id = "blue_dungeon_dw", description = "Blue dungeon (DW)" }
+tileset{ id = "green_dungeon_dw", description = "Green dungeon (DW)" }
+tileset{ id = "orange_dungeon_dw", description = "Orange dungeon (DW)" }
+tileset{ id = "gray_dungeon_dw", description = "Gray dungeon (DW)" }
+tileset{ id = "graybrown_dungeon_dw", description = "Gray-brown dungeon (DW)" }
+tileset{ id = "grayblue_dungeon_dw", description = "Gray-blue dungeon (DW)" }
+tileset{ id = "castle", description = "Castle" }
+tileset{ id = "mine", description = "Mine" }
+tileset{ id = "ice_dungeon", description = "Ice dungeon" }
+tileset{ id = "forest_dungeon", description = "Forest dungeon" }
+tileset{ id = "lighthouse", description = "Lighthouse" }
+tileset{ id = "final_dungeon", description = "Final dungeon" }
+tileset{ id = "old_school_dungeon", description = "Old school dungeon" }
+tileset{ id = "intro", description = "Intro" }
 
-sprite{ id = "npc/agahnim", name = "Agahnim" }
-sprite{ id = "npc/billy", name = "Billy" }
-sprite{ id = "npc/black_knight_soldier", name = "Black Knight Soldier" }
-sprite{ id = "entities/block", name = "Block" }
-sprite{ id = "entities/gray_block", name = "Block (gray)" }
-sprite{ id = "entities/bone_key_door", name = "Bone key door" }
-sprite{ id = "entities/cannon", name = "Cannon" }
-sprite{ id = "entities/slot_machine", name = "Casino slot machine" }
-sprite{ id = "npc/castle_guard", name = "Castle guard" }
-sprite{ id = "entities/castle_lock", name = "Castle prison lock" }
-sprite{ id = "entities/chest", name = "Chest (normal)" }
-sprite{ id = "entities/big_chest", name = "Chest (big)" }
-sprite{ id = "entities/destination", name = "Destination of teletransporter" }
-sprite{ id = "entities/door_normal", name = "Door (normal)" }
-sprite{ id = "entities/door_small_key", name = "Door (small key)" }
-sprite{ id = "entities/door_small_key_block", name = "Door (small key block)" }
-sprite{ id = "entities/door_big_key", name = "Door (big key)" }
-sprite{ id = "entities/door_boss_key", name = "Door (boss key)" }
-sprite{ id = "entities/door_weak_wall", name = "Door (weak wall)" }
-sprite{ id = "entities/door_very_weak_wall", name = "Door (very weak wall)" }
-sprite{ id = "entities/door_weak_block", name = "Door (weak block)" }
-sprite{ id = "entities/frozen_door", name = "Frozen door" }
-sprite{ id = "npc/ganon", name = "Ganon" }
-sprite{ id = "npc/great_fairy", name = "Great Fairy" }
-sprite{ id = "entities/bed", name = "Hero's bed" }
-sprite{ id = "entities/hint_stone", name = "Hint stone" }
-sprite{ id = "npc/inferno", name = "Inferno" }
-sprite{ id = "entities/fresco", name = "Intro fresco" }
-sprite{ id = "npc/monkey", name = "Monkey" }
-sprite{ id = "entities/outside_door", name = "Outside closed door" }
-sprite{ id = "npc/sahasrahla", name = "Sahasrahla" }
-sprite{ id = "entities/sign", name = "Sign" }
-sprite{ id = "entities/snores", name = "Snoring (zzz)" }
-sprite{ id = "entities/somaria_block", name = "Somaria block" }
-sprite{ id = "entities/statue", name = "Statue" }
-sprite{ id = "entities/teletransporter", name = "Teletransporter (yellow)" }
-sprite{ id = "entities/the_end", name = "The end" }
-sprite{ id = "npc/thief", name = "Thief" }
-sprite{ id = "npc/tom", name = "Tom" }
-sprite{ id = "entities/torch", name = "Torch" }
-sprite{ id = "entities/vine", name = "Vine" }
-sprite{ id = "npc/witch", name = "Witch" }
-sprite{ id = "npc/wizard", name = "Wizard" }
-sprite{ id = "npc/zelda", name = "Zelda" }
-sprite{ id = "npc/newlink1", name = "Newlink NPC 1" }
-sprite{ id = "npc/newlink2", name = "Newlink NPC 2" }
-sprite{ id = "npc/newlink3", name = "Newlink NPC 3" }
-sprite{ id = "npc/newlink4", name = "Newlink NPC 4" }
-sprite{ id = "npc/newlink5", name = "Newlink NPC 5" }
-sprite{ id = "npc/newlink6", name = "Newlink NPC 6" }
-sprite{ id = "npc/newlink7", name = "Newlink NPC 7" }
-sprite{ id = "npc/newlink8", name = "Newlink NPC 8" }
-sprite{ id = "npc/villager1", name = "ALTTP villager 1" }
-sprite{ id = "npc/villager2", name = "ALTTP villager 2" }
-sprite{ id = "npc/villager3", name = "ALTTP villager 3" }
-sprite{ id = "npc/static_villager1", name = "ALTTP static villager 1" }
-sprite{ id = "npc/static_villager2", name = "ALTTP static villager 2" }
-sprite{ id = "npc/static_villager3", name = "ALTTP static villager 3" }
-sprite{ id = "npc/static_villager4", name = "ALTTP static villager 4" }
-sprite{ id = "npc/static_villager5", name = "ALTTP static villager 5" }
-sprite{ id = "npc/static_villager6", name = "ALTTP static villager 6" }
-sprite{ id = "npc/static_villager7", name = "ALTTP static villager 7" }
-sprite{ id = "npc/static_villager8", name = "ALTTP static villager 8" }
-sprite{ id = "npc/static_villager9", name = "ALTTP static villager 9" }
-sprite{ id = "npc/static_villager10", name = "ALTTP static villager 10" }
-sprite{ id = "npc/static_villager11", name = "ALTTP static villager 11" }
-sprite{ id = "npc/static_villager12", name = "ALTTP static villager 12" }
-sprite{ id = "npc/static_villager13", name = "ALTTP static villager 13" }
-sprite{ id = "npc/static_villager14", name = "ALTTP static villager 14" }
-sprite{ id = "npc/solarus_child1", name = "Solarus Child 1" }
-sprite{ id = "npc/solarus_child2", name = "Solarus Child 2" }
-sprite{ id = "npc/solarus_child3", name = "Solarus Child 3" }
-sprite{ id = "npc/solarus_child4", name = "Solarus Child 4" }
+sprite{ id = "npc/agahnim", description = "Agahnim" }
+sprite{ id = "npc/billy", description = "Billy" }
+sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
+sprite{ id = "entities/block", description = "Block" }
+sprite{ id = "entities/gray_block", description = "Block (gray)" }
+sprite{ id = "entities/bone_key_door", description = "Bone key door" }
+sprite{ id = "entities/cannon", description = "Cannon" }
+sprite{ id = "entities/slot_machine", description = "Casino slot machine" }
+sprite{ id = "npc/castle_guard", description = "Castle guard" }
+sprite{ id = "entities/castle_lock", description = "Castle prison lock" }
+sprite{ id = "entities/chest", description = "Chest (normal)" }
+sprite{ id = "entities/big_chest", description = "Chest (big)" }
+sprite{ id = "entities/destination", description = "Destination of teletransporter" }
+sprite{ id = "entities/door_normal", description = "Door (normal)" }
+sprite{ id = "entities/door_small_key", description = "Door (small key)" }
+sprite{ id = "entities/door_small_key_block", description = "Door (small key block)" }
+sprite{ id = "entities/door_big_key", description = "Door (big key)" }
+sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
+sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
+sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
+sprite{ id = "entities/frozen_door", description = "Frozen door" }
+sprite{ id = "npc/ganon", description = "Ganon" }
+sprite{ id = "npc/great_fairy", description = "Great Fairy" }
+sprite{ id = "entities/bed", description = "Hero's bed" }
+sprite{ id = "entities/hint_stone", description = "Hint stone" }
+sprite{ id = "npc/inferno", description = "Inferno" }
+sprite{ id = "entities/fresco", description = "Intro fresco" }
+sprite{ id = "npc/monkey", description = "Monkey" }
+sprite{ id = "entities/outside_door", description = "Outside closed door" }
+sprite{ id = "npc/sahasrahla", description = "Sahasrahla" }
+sprite{ id = "entities/sign", description = "Sign" }
+sprite{ id = "entities/snores", description = "Snoring (zzz)" }
+sprite{ id = "entities/somaria_block", description = "Somaria block" }
+sprite{ id = "entities/statue", description = "Statue" }
+sprite{ id = "entities/teletransporter", description = "Teletransporter (yellow)" }
+sprite{ id = "entities/the_end", description = "The end" }
+sprite{ id = "npc/thief", description = "Thief" }
+sprite{ id = "npc/tom", description = "Tom" }
+sprite{ id = "entities/torch", description = "Torch" }
+sprite{ id = "entities/vine", description = "Vine" }
+sprite{ id = "npc/witch", description = "Witch" }
+sprite{ id = "npc/wizard", description = "Wizard" }
+sprite{ id = "npc/zelda", description = "Zelda" }
+sprite{ id = "npc/newlink1", description = "Newlink NPC 1" }
+sprite{ id = "npc/newlink2", description = "Newlink NPC 2" }
+sprite{ id = "npc/newlink3", description = "Newlink NPC 3" }
+sprite{ id = "npc/newlink4", description = "Newlink NPC 4" }
+sprite{ id = "npc/newlink5", description = "Newlink NPC 5" }
+sprite{ id = "npc/newlink6", description = "Newlink NPC 6" }
+sprite{ id = "npc/newlink7", description = "Newlink NPC 7" }
+sprite{ id = "npc/newlink8", description = "Newlink NPC 8" }
+sprite{ id = "npc/villager1", description = "ALTTP villager 1" }
+sprite{ id = "npc/villager2", description = "ALTTP villager 2" }
+sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
+sprite{ id = "npc/static_villager1", description = "ALTTP static villager 1" }
+sprite{ id = "npc/static_villager2", description = "ALTTP static villager 2" }
+sprite{ id = "npc/static_villager3", description = "ALTTP static villager 3" }
+sprite{ id = "npc/static_villager4", description = "ALTTP static villager 4" }
+sprite{ id = "npc/static_villager5", description = "ALTTP static villager 5" }
+sprite{ id = "npc/static_villager6", description = "ALTTP static villager 6" }
+sprite{ id = "npc/static_villager7", description = "ALTTP static villager 7" }
+sprite{ id = "npc/static_villager8", description = "ALTTP static villager 8" }
+sprite{ id = "npc/static_villager9", description = "ALTTP static villager 9" }
+sprite{ id = "npc/static_villager10", description = "ALTTP static villager 10" }
+sprite{ id = "npc/static_villager11", description = "ALTTP static villager 11" }
+sprite{ id = "npc/static_villager12", description = "ALTTP static villager 12" }
+sprite{ id = "npc/static_villager13", description = "ALTTP static villager 13" }
+sprite{ id = "npc/static_villager14", description = "ALTTP static villager 14" }
+sprite{ id = "npc/solarus_child1", description = "Solarus Child 1" }
+sprite{ id = "npc/solarus_child2", description = "Solarus Child 2" }
+sprite{ id = "npc/solarus_child3", description = "Solarus Child 3" }
+sprite{ id = "npc/solarus_child4", description = "Solarus Child 4" }
 
-music{ id = "agahnim", name = "Agahnim theme" }
-music{ id = "beginning", name = "Beginning" }
-music{ id = "boss", name = "Boss" }
-music{ id = "castle", name = "Castle" }
-music{ id = "cave", name = "Cave" }
-music{ id = "credits", name = "Credits" }
-music{ id = "dark_mountain", name = "Dark Mountain" }
-music{ id = "dark_world", name = "Dark World" }
-music{ id = "light_world_dungeon", name = "Dungeon (light world)" }
-music{ id = "dark_world_dungeon", name = "Dungeon (dark world)" }
-music{ id = "tloz_dungeon", name = "Dungeon (old school)" }
-music{ id = "dungeon_finished", name = "Dungeon finished" }
-music{ id = "eagle_tower", name = "Eagle's Tower" }
-music{ id = "excalibur", name = "Excalibur" }
-music{ id = "fanfare", name = "Fanfare" }
-music{ id = "fortune_teller", name = "Fortune Teller" }
-music{ id = "ganon_appears", name = "Ganon appears" }
-music{ id = "ganon_battle", name = "Ganon battle" }
-music{ id = "ganon_theme", name = "Ganon theme" }
-music{ id = "great_fairy", name = "Great Fairy" }
-music{ id = "village", name = "Kakariko Village" }
-music{ id = "legend", name = "Legend" }
-music{ id = "lost_woods", name = "Lost Woods" }
-music{ id = "mini_game", name = "Mini game" }
-music{ id = "la_mountains", name = "Mountains (LA)" }
-music{ id = "overworld", name = "Overworld" }
-music{ id = "sanctuary", name = "Sanctuary" }
-music{ id = "game_over", name = "Selection menu & Game Over" }
-music{ id = "soldiers", name = "Soldiers" }
-music{ id = "southern_shrine", name = "Southern Shrine (LA)" }
-music{ id = "rabbit", name = "Turned into a rabbit" }
-music{ id = "title_screen", name = "Title screen" }
-music{ id = "triforce", name = "Triforce" }
-music{ id = "victory", name = "Victory" }
-music{ id = "witch_hut", name = "Witch (LA)" }
-music{ id = "zelda", name = "Zelda theme" }
+music{ id = "agahnim", description = "Agahnim theme" }
+music{ id = "beginning", description = "Beginning" }
+music{ id = "boss", description = "Boss" }
+music{ id = "castle", description = "Castle" }
+music{ id = "cave", description = "Cave" }
+music{ id = "credits", description = "Credits" }
+music{ id = "dark_mountain", description = "Dark Mountain" }
+music{ id = "dark_world", description = "Dark World" }
+music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
+music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
+music{ id = "tloz_dungeon", description = "Dungeon (old school)" }
+music{ id = "dungeon_finished", description = "Dungeon finished" }
+music{ id = "eagle_tower", description = "Eagle's Tower" }
+music{ id = "excalibur", description = "Excalibur" }
+music{ id = "fanfare", description = "Fanfare" }
+music{ id = "fortune_teller", description = "Fortune Teller" }
+music{ id = "ganon_appears", description = "Ganon appears" }
+music{ id = "ganon_battle", description = "Ganon battle" }
+music{ id = "ganon_theme", description = "Ganon theme" }
+music{ id = "great_fairy", description = "Great Fairy" }
+music{ id = "village", description = "Kakariko Village" }
+music{ id = "legend", description = "Legend" }
+music{ id = "lost_woods", description = "Lost Woods" }
+music{ id = "mini_game", description = "Mini game" }
+music{ id = "la_mountains", description = "Mountains (LA)" }
+music{ id = "overworld", description = "Overworld" }
+music{ id = "sanctuary", description = "Sanctuary" }
+music{ id = "game_over", description = "Selection menu & Game Over" }
+music{ id = "soldiers", description = "Soldiers" }
+music{ id = "southern_shrine", description = "Southern Shrine (LA)" }
+music{ id = "rabbit", description = "Turned into a rabbit" }
+music{ id = "title_screen", description = "Title screen" }
+music{ id = "triforce", description = "Triforce" }
+music{ id = "victory", description = "Victory" }
+music{ id = "witch_hut", description = "Witch (LA)" }
+music{ id = "zelda", description = "Zelda theme" }
 
-sound{ id = "arrow_hit", name = "arrow_hit" }
-sound{ id = "bomb", name = "bomb" }
-sound{ id = "boomerang", name = "boomerang" }
-sound{ id = "boss_charge", name = "boss_charge" }
-sound{ id = "boss_fireball", name = "boss_fireball" }
-sound{ id = "boss_hurt", name = "boss_hurt" }
-sound{ id = "boss_killed", name = "boss_killed" }
-sound{ id = "bounce", name = "bounce" }
-sound{ id = "bow", name = "bow" }
-sound{ id = "bush", name = "bush" }
-sound{ id = "cane", name = "cane" }
-sound{ id = "chest_appears", name = "chest_appears" }
-sound{ id = "chest_open", name = "chest_open" }
-sound{ id = "cursor", name = "cursor" }
-sound{ id = "danger", name = "danger" }
-sound{ id = "door_closed", name = "door_closed" }
-sound{ id = "door_open", name = "door_open" }
-sound{ id = "door_unlocked", name = "door_unlocked" }
-sound{ id = "enemy_awake", name = "enemy_awake" }
-sound{ id = "enemy_hurt", name = "enemy_hurt" }
-sound{ id = "enemy_killed", name = "enemy_killed" }
-sound{ id = "explosion", name = "explosion" }
-sound{ id = "external_stairs_down", name = "external_stairs_down" }
-sound{ id = "external_stairs_up", name = "external_stairs_up" }
-sound{ id = "heart_container", name = "heart_container" }
-sound{ id = "heart", name = "heart" }
-sound{ id = "hero_dying", name = "hero_dying" }
-sound{ id = "hero_falls", name = "hero_falls" }
-sound{ id = "hero_hurt", name = "hero_hurt" }
-sound{ id = "hero_lands", name = "hero_lands" }
-sound{ id = "hero_pushes", name = "hero_pushes" }
-sound{ id = "hero_seen", name = "hero_seen" }
-sound{ id = "hookshot", name = "hookshot" }
-sound{ id = "ice", name = "ice" }
-sound{ id = "internal_stairs_down", name = "internal_stairs_down" }
-sound{ id = "internal_stairs_up", name = "internal_stairs_up" }
-sound{ id = "intro", name = "intro" }
-sound{ id = "item_in_water", name = "item_in_water" }
-sound{ id = "jump", name = "jump" }
-sound{ id = "lamp", name = "lamp" }
-sound{ id = "lift", name = "lift" }
-sound{ id = "magic_bar", name = "magic_bar" }
-sound{ id = "message_end", name = "message_end" }
-sound{ id = "message_letter", name = "message_letter" }
-sound{ id = "monkey", name = "monkey" }
-sound{ id = "monster_hurt", name = "monster_hurt" }
-sound{ id = "octorok", name = "octorok" }
-sound{ id = "ok", name = "ok" }
-sound{ id = "pause_closed", name = "pause_closed" }
-sound{ id = "pause_open", name = "pause_open" }
-sound{ id = "picked_item", name = "picked_item" }
-sound{ id = "picked_rupee", name = "picked_rupee" }
-sound{ id = "picked_small_key", name = "picked_small_key" }
-sound{ id = "piece_of_heart", name = "piece_of_heart" }
-sound{ id = "running", name = "running" }
-sound{ id = "rupee_counter_end", name = "rupee_counter_end" }
-sound{ id = "rupee_counter", name = "rupee_counter" }
-sound{ id = "secret", name = "secret" }
-sound{ id = "shield", name = "shield" }
-sound{ id = "splash", name = "splash" }
-sound{ id = "stairs_down_end", name = "stairs_down_end" }
-sound{ id = "stairs_down_start", name = "stairs_down_start" }
-sound{ id = "stairs_up_end", name = "stairs_up_end" }
-sound{ id = "stairs_up_start", name = "stairs_up_start" }
-sound{ id = "stone", name = "stone" }
-sound{ id = "switch", name = "switch" }
-sound{ id = "sword1", name = "sword1" }
-sound{ id = "sword2", name = "sword2" }
-sound{ id = "sword3", name = "sword3" }
-sound{ id = "sword4", name = "sword4" }
-sound{ id = "sword_spin_attack_load", name = "sword_spin_attack_load" }
-sound{ id = "sword_spin_attack_release", name = "sword_spin_attack_release" }
-sound{ id = "sword_tapping", name = "sword_tapping" }
-sound{ id = "sword_tapping_weak_wall", name = "sword_tapping_weak_wall" }
-sound{ id = "throw", name = "throw" }
-sound{ id = "timer_hurry", name = "timer_hurry" }
-sound{ id = "timer", name = "timer" }
-sound{ id = "treasure", name = "treasure" }
-sound{ id = "victory", name = "victory" }
-sound{ id = "walk_on_grass", name = "walk_on_grass" }
-sound{ id = "walk_on_water", name = "walk_on_water" }
-sound{ id = "warp", name = "warp" }
-sound{ id = "world_warp", name = "world_warp" }
-sound{ id = "wrong", name = "wrong" }
-sound{ id = "zora", name = "zora" }
+sound{ id = "arrow_hit", description = "arrow_hit" }
+sound{ id = "bomb", description = "bomb" }
+sound{ id = "boomerang", description = "boomerang" }
+sound{ id = "boss_charge", description = "boss_charge" }
+sound{ id = "boss_fireball", description = "boss_fireball" }
+sound{ id = "boss_hurt", description = "boss_hurt" }
+sound{ id = "boss_killed", description = "boss_killed" }
+sound{ id = "bounce", description = "bounce" }
+sound{ id = "bow", description = "bow" }
+sound{ id = "bush", description = "bush" }
+sound{ id = "cane", description = "cane" }
+sound{ id = "chest_appears", description = "chest_appears" }
+sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "cursor", description = "cursor" }
+sound{ id = "danger", description = "danger" }
+sound{ id = "door_closed", description = "door_closed" }
+sound{ id = "door_open", description = "door_open" }
+sound{ id = "door_unlocked", description = "door_unlocked" }
+sound{ id = "enemy_awake", description = "enemy_awake" }
+sound{ id = "enemy_hurt", description = "enemy_hurt" }
+sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "explosion", description = "explosion" }
+sound{ id = "external_stairs_down", description = "external_stairs_down" }
+sound{ id = "external_stairs_up", description = "external_stairs_up" }
+sound{ id = "heart_container", description = "heart_container" }
+sound{ id = "heart", description = "heart" }
+sound{ id = "hero_dying", description = "hero_dying" }
+sound{ id = "hero_falls", description = "hero_falls" }
+sound{ id = "hero_hurt", description = "hero_hurt" }
+sound{ id = "hero_lands", description = "hero_lands" }
+sound{ id = "hero_pushes", description = "hero_pushes" }
+sound{ id = "hero_seen", description = "hero_seen" }
+sound{ id = "hookshot", description = "hookshot" }
+sound{ id = "ice", description = "ice" }
+sound{ id = "internal_stairs_down", description = "internal_stairs_down" }
+sound{ id = "internal_stairs_up", description = "internal_stairs_up" }
+sound{ id = "intro", description = "intro" }
+sound{ id = "item_in_water", description = "item_in_water" }
+sound{ id = "jump", description = "jump" }
+sound{ id = "lamp", description = "lamp" }
+sound{ id = "lift", description = "lift" }
+sound{ id = "magic_bar", description = "magic_bar" }
+sound{ id = "message_end", description = "message_end" }
+sound{ id = "message_letter", description = "message_letter" }
+sound{ id = "monkey", description = "monkey" }
+sound{ id = "monster_hurt", description = "monster_hurt" }
+sound{ id = "octorok", description = "octorok" }
+sound{ id = "ok", description = "ok" }
+sound{ id = "pause_closed", description = "pause_closed" }
+sound{ id = "pause_open", description = "pause_open" }
+sound{ id = "picked_item", description = "picked_item" }
+sound{ id = "picked_rupee", description = "picked_rupee" }
+sound{ id = "picked_small_key", description = "picked_small_key" }
+sound{ id = "piece_of_heart", description = "piece_of_heart" }
+sound{ id = "running", description = "running" }
+sound{ id = "rupee_counter_end", description = "rupee_counter_end" }
+sound{ id = "rupee_counter", description = "rupee_counter" }
+sound{ id = "secret", description = "secret" }
+sound{ id = "shield", description = "shield" }
+sound{ id = "splash", description = "splash" }
+sound{ id = "stairs_down_end", description = "stairs_down_end" }
+sound{ id = "stairs_down_start", description = "stairs_down_start" }
+sound{ id = "stairs_up_end", description = "stairs_up_end" }
+sound{ id = "stairs_up_start", description = "stairs_up_start" }
+sound{ id = "stone", description = "stone" }
+sound{ id = "switch", description = "switch" }
+sound{ id = "sword1", description = "sword1" }
+sound{ id = "sword2", description = "sword2" }
+sound{ id = "sword3", description = "sword3" }
+sound{ id = "sword4", description = "sword4" }
+sound{ id = "sword_spin_attack_load", description = "sword_spin_attack_load" }
+sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_release" }
+sound{ id = "sword_tapping", description = "sword_tapping" }
+sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
+sound{ id = "throw", description = "throw" }
+sound{ id = "timer_hurry", description = "timer_hurry" }
+sound{ id = "timer", description = "timer" }
+sound{ id = "treasure", description = "treasure" }
+sound{ id = "victory", description = "victory" }
+sound{ id = "walk_on_grass", description = "walk_on_grass" }
+sound{ id = "walk_on_water", description = "walk_on_water" }
+sound{ id = "warp", description = "warp" }
+sound{ id = "world_warp", description = "world_warp" }
+sound{ id = "wrong", description = "wrong" }
+sound{ id = "zora", description = "zora" }
 
-item{ id = "random", name = "(Random)" }
-item{ id = "feather", name = "Feather" }
-item{ id = "bombs_counter", name = "Bombs counter" }
-item{ id = "bomb", name = "Bombs (x1 / x3 / x8)" }
-item{ id = "bomb_bag", name = "Bomb bag (small / large / huge)" }
-item{ id = "bow", name = "Bow" }
-item{ id = "arrow", name = "Arrows (x1 / x5 / x10)" }
-item{ id = "quiver", name = "Quiver (small / large / huge)" }
-item{ id = "boomerang", name = "Boomerang" }
-item{ id = "lamp", name = "Lamp" }
-item{ id = "hookshot", name = "Hookshot" }
-item{ id = "bottle_1", name = "Bottle 1" }
-item{ id = "bottle_2", name = "Bottle 2" }
-item{ id = "bottle_3", name = "Bottle 3" }
-item{ id = "bottle_4", name = "Bottle 4" }
-item{ id = "pegasus_shoes", name = "Pegasus shoes" }
-item{ id = "mystic_mirror", name = "Mystic mirror" }
-item{ id = "cane_of_somaria", name = "Cane of Somaria" }
-item{ id = "cane_of_stone", name = "Cane of Stone" }
-item{ id = "apples_counter", name = "Apples counter" }
-item{ id = "apple", name = "Apples (x3)" }
-item{ id = "pains_au_chocolat_counter", name = "Pains au chocolat counter" }
-item{ id = "pain_au_chocolat", name = "Pain au chocolat (x1)" }
-item{ id = "croissants_counter", name = "Croissants counter" }
-item{ id = "croissant", name = "Croissant (x1)" }
-item{ id = "rock_key", name = "Rock key" }
-item{ id = "bone_key", name = "Bone key" }
-item{ id = "clay_key", name = "Clay key" }
-item{ id = "level_4_way", name = "Apple pie / Gold bars / Edelweiss" }
-item{ id = "flippers", name = "Flippers" }
-item{ id = "magic_cape", name = "Magic cape" }
-item{ id = "iron_key", name = "Iron key" }
-item{ id = "stone_key", name = "Stone key" }
-item{ id = "wooden_key", name = "Wooden key" }
-item{ id = "ice_key", name = "Ice key" }
-item{ id = "glove", name = "Iron glove / Golden glove" }
-item{ id = "fire_stones_counter", name = "Fire stones counter" }
-item{ id = "fire_stone", name = "Fire stone (x1)" }
-item{ id = "tunic", name = "Tunic (green / blue / red)" }
-item{ id = "sword", name = "Sword" }
-item{ id = "shield", name = "Shield" }
-item{ id = "world_map", name = "World map" }
-item{ id = "rupee_bag", name = "Rupee bag (small / large / huge)" }
-item{ id = "magic_bar", name = "Maximum of magic (none / half / full)" }
-item{ id = "map", name = "Dungeon map" }
-item{ id = "compass", name = "Dungeon compass" }
-item{ id = "big_key", name = "Dungeon big key" }
-item{ id = "boss_key", name = "Dungeon boss key" }
-item{ id = "small_key", name = "Small key" }
-item{ id = "rupee", name = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
-item{ id = "magic_flask", name = "Magic flask (small / big)" }
-item{ id = "heart", name = "Heart (x1)" }
-item{ id = "heart_container", name = "Heart container" }
-item{ id = "piece_of_heart", name = "Piece of heart" }
-item{ id = "fairy", name = "Fairy" }
-item{ id = "red_potion", name = "Red potion" }
-item{ id = "green_potion", name = "Green potion" }
-item{ id = "blue_potion", name = "Blue potion" }
+item{ id = "random", description = "(Random)" }
+item{ id = "feather", description = "Feather" }
+item{ id = "bombs_counter", description = "Bombs counter" }
+item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
+item{ id = "bomb_bag", description = "Bomb bag (small / large / huge)" }
+item{ id = "bow", description = "Bow" }
+item{ id = "arrow", description = "Arrows (x1 / x5 / x10)" }
+item{ id = "quiver", description = "Quiver (small / large / huge)" }
+item{ id = "boomerang", description = "Boomerang" }
+item{ id = "lamp", description = "Lamp" }
+item{ id = "hookshot", description = "Hookshot" }
+item{ id = "bottle_1", description = "Bottle 1" }
+item{ id = "bottle_2", description = "Bottle 2" }
+item{ id = "bottle_3", description = "Bottle 3" }
+item{ id = "bottle_4", description = "Bottle 4" }
+item{ id = "pegasus_shoes", description = "Pegasus shoes" }
+item{ id = "mystic_mirror", description = "Mystic mirror" }
+item{ id = "cane_of_somaria", description = "Cane of Somaria" }
+item{ id = "cane_of_stone", description = "Cane of Stone" }
+item{ id = "apples_counter", description = "Apples counter" }
+item{ id = "apple", description = "Apples (x3)" }
+item{ id = "pains_au_chocolat_counter", description = "Pains au chocolat counter" }
+item{ id = "pain_au_chocolat", description = "Pain au chocolat (x1)" }
+item{ id = "croissants_counter", description = "Croissants counter" }
+item{ id = "croissant", description = "Croissant (x1)" }
+item{ id = "rock_key", description = "Rock key" }
+item{ id = "bone_key", description = "Bone key" }
+item{ id = "clay_key", description = "Clay key" }
+item{ id = "level_4_way", description = "Apple pie / Gold bars / Edelweiss" }
+item{ id = "flippers", description = "Flippers" }
+item{ id = "magic_cape", description = "Magic cape" }
+item{ id = "iron_key", description = "Iron key" }
+item{ id = "stone_key", description = "Stone key" }
+item{ id = "wooden_key", description = "Wooden key" }
+item{ id = "ice_key", description = "Ice key" }
+item{ id = "glove", description = "Iron glove / Golden glove" }
+item{ id = "fire_stones_counter", description = "Fire stones counter" }
+item{ id = "fire_stone", description = "Fire stone (x1)" }
+item{ id = "tunic", description = "Tunic (green / blue / red)" }
+item{ id = "sword", description = "Sword" }
+item{ id = "shield", description = "Shield" }
+item{ id = "world_map", description = "World map" }
+item{ id = "rupee_bag", description = "Rupee bag (small / large / huge)" }
+item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
+item{ id = "map", description = "Dungeon map" }
+item{ id = "compass", description = "Dungeon compass" }
+item{ id = "big_key", description = "Dungeon big key" }
+item{ id = "boss_key", description = "Dungeon boss key" }
+item{ id = "small_key", description = "Small key" }
+item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
+item{ id = "magic_flask", description = "Magic flask (small / big)" }
+item{ id = "heart", description = "Heart (x1)" }
+item{ id = "heart_container", description = "Heart container" }
+item{ id = "piece_of_heart", description = "Piece of heart" }
+item{ id = "fairy", description = "Fairy" }
+item{ id = "red_potion", description = "Red potion" }
+item{ id = "green_potion", description = "Green potion" }
+item{ id = "blue_potion", description = "Blue potion" }
 
-enemy{ id = "bee_guard", name = "Bee Guard" }
-enemy{ id = "bubble", name = "Bubble" }
-enemy{ id = "blue_bullblin", name = "Bullblin (blue)" }
-enemy{ id = "red_bullblin", name = "Bullblin (red)" }
-enemy{ id = "blue_dogman", name = "Dogman (blue)" }
-enemy{ id = "red_dogman", name = "Dogman (red)" }
-enemy{ id = "green_duck_soldier", name = "Duck Soldier (green)" }
-enemy{ id = "blue_duck_soldier", name = "Duck Soldier (blue)" }
-enemy{ id = "red_duck_soldier", name = "Duck Soldier (red)" }
-enemy{ id = "evil_tile", name = "Evil Tile" }
-enemy{ id = "blue_flame", name = "Flame (blue)" }
-enemy{ id = "fireball_simple", name = "Fireball (simple)" }
-enemy{ id = "fireball_triple", name = "Fireball (triple)" }
-enemy{ id = "globul", name = "Globul" }
-enemy{ id = "gibdo", name = "Gibdo" }
-enemy{ id = "blue_hardhat_beetle", name = "Hardhat Beetle (blue)" }
-enemy{ id = "red_hardhat_beetle", name = "Hardhat Beetle (red)" }
-enemy{ id = "red_helmasaur", name = "Helmasaur (red)" }
-enemy{ id = "green_knight_soldier", name = "Knight Soldier (green)" }
-enemy{ id = "blue_knight_soldier", name = "Knight Soldier (blue)" }
-enemy{ id = "red_knight_soldier", name = "Knight Soldier (red)" }
-enemy{ id = "laser", name = "Laser" }
-enemy{ id = "lizalfos", name = "Lizalfos" }
-enemy{ id = "mandible", name = "Mandible" }
-enemy{ id = "blue_pig_soldier", name = "Pig Soldier (blue)" }
-enemy{ id = "red_pig_soldier", name = "Pig Soldier (red)" }
-enemy{ id = "pike_fixed", name = "Pike (never moving)" }
-enemy{ id = "pike_auto", name = "Pike (always moving)" }
-enemy{ id = "pike_detect", name = "Pike (moves near hero)" }
-enemy{ id = "ropa", name = "Ropa" }
-enemy{ id = "simple_green_soldier", name = "Simple Soldier (green)" }
-enemy{ id = "snap_dragon", name = "Snap Dragon" }
-enemy{ id = "skeletor", name = "Skeletor" }
-enemy{ id = "tentacle", name = "Tentacle" }
-enemy{ id = "khorneth", name = "Khorneth" }
-enemy{ id = "papillosaur_king", name = "Papillosaur King" }
-enemy{ id = "minillosaur_egg_thrown", name = "Minillosaur Egg (fixed)" }
-enemy{ id = "minillosaur_egg_fixed", name = "Minillosaur Egg (thrown)" }
-enemy{ id = "khotor", name = "Khotor" }
-enemy{ id = "chain_and_ball", name = "Chain and ball" }
-enemy{ id = "firebird", name = "Fire Bird" }
-enemy{ id = "mowatulla", name = "Mowatulla" }
-enemy{ id = "master_arbror", name = "Master Arbror" }
-enemy{ id = "arbror_root", name = "Arbror root" }
-enemy{ id = "flora_gohma", name = "Flora Gohma" }
-enemy{ id = "flora_gohma_eye", name = "Flora Gohma eye" }
-enemy{ id = "agahnim", name = "Agahnim (first fight)" }
-enemy{ id = "agahnim_2", name = "Agahnim (second fight)" }
-enemy{ id = "agahnim_2_fake", name = "Fake Agahnim (second fight)" }
-enemy{ id = "drakomos", name = "Drakomos" }
-enemy{ id = "drakomos_head", name = "Drakomos head" }
-enemy{ id = "drakomos_lava_spawner", name = "Drakomos lava spawner" }
-enemy{ id = "gelidrak", name = "Gelidrak" }
-enemy{ id = "poutroxor", name = "Poutroxor" }
-enemy{ id = "billy", name = "Billy" }
-enemy{ id = "ganon", name = "Ganon" }
-enemy{ id = "fire_bat", name = "Fire bat" }
+enemy{ id = "bee_guard", description = "Bee Guard" }
+enemy{ id = "bubble", description = "Bubble" }
+enemy{ id = "blue_bullblin", description = "Bullblin (blue)" }
+enemy{ id = "red_bullblin", description = "Bullblin (red)" }
+enemy{ id = "blue_dogman", description = "Dogman (blue)" }
+enemy{ id = "red_dogman", description = "Dogman (red)" }
+enemy{ id = "green_duck_soldier", description = "Duck Soldier (green)" }
+enemy{ id = "blue_duck_soldier", description = "Duck Soldier (blue)" }
+enemy{ id = "red_duck_soldier", description = "Duck Soldier (red)" }
+enemy{ id = "evil_tile", description = "Evil Tile" }
+enemy{ id = "blue_flame", description = "Flame (blue)" }
+enemy{ id = "fireball_simple", description = "Fireball (simple)" }
+enemy{ id = "fireball_triple", description = "Fireball (triple)" }
+enemy{ id = "globul", description = "Globul" }
+enemy{ id = "gibdo", description = "Gibdo" }
+enemy{ id = "blue_hardhat_beetle", description = "Hardhat Beetle (blue)" }
+enemy{ id = "red_hardhat_beetle", description = "Hardhat Beetle (red)" }
+enemy{ id = "red_helmasaur", description = "Helmasaur (red)" }
+enemy{ id = "green_knight_soldier", description = "Knight Soldier (green)" }
+enemy{ id = "blue_knight_soldier", description = "Knight Soldier (blue)" }
+enemy{ id = "red_knight_soldier", description = "Knight Soldier (red)" }
+enemy{ id = "laser", description = "Laser" }
+enemy{ id = "lizalfos", description = "Lizalfos" }
+enemy{ id = "mandible", description = "Mandible" }
+enemy{ id = "blue_pig_soldier", description = "Pig Soldier (blue)" }
+enemy{ id = "red_pig_soldier", description = "Pig Soldier (red)" }
+enemy{ id = "pike_fixed", description = "Pike (never moving)" }
+enemy{ id = "pike_auto", description = "Pike (always moving)" }
+enemy{ id = "pike_detect", description = "Pike (moves near hero)" }
+enemy{ id = "ropa", description = "Ropa" }
+enemy{ id = "simple_green_soldier", description = "Simple Soldier (green)" }
+enemy{ id = "snap_dragon", description = "Snap Dragon" }
+enemy{ id = "skeletor", description = "Skeletor" }
+enemy{ id = "tentacle", description = "Tentacle" }
+enemy{ id = "khorneth", description = "Khorneth" }
+enemy{ id = "papillosaur_king", description = "Papillosaur King" }
+enemy{ id = "minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
+enemy{ id = "minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
+enemy{ id = "khotor", description = "Khotor" }
+enemy{ id = "chain_and_ball", description = "Chain and ball" }
+enemy{ id = "firebird", description = "Fire Bird" }
+enemy{ id = "mowatulla", description = "Mowatulla" }
+enemy{ id = "master_arbror", description = "Master Arbror" }
+enemy{ id = "arbror_root", description = "Arbror root" }
+enemy{ id = "flora_gohma", description = "Flora Gohma" }
+enemy{ id = "flora_gohma_eye", description = "Flora Gohma eye" }
+enemy{ id = "agahnim", description = "Agahnim (first fight)" }
+enemy{ id = "agahnim_2", description = "Agahnim (second fight)" }
+enemy{ id = "agahnim_2_fake", description = "Fake Agahnim (second fight)" }
+enemy{ id = "drakomos", description = "Drakomos" }
+enemy{ id = "drakomos_head", description = "Drakomos head" }
+enemy{ id = "drakomos_lava_spawner", description = "Drakomos lava spawner" }
+enemy{ id = "gelidrak", description = "Gelidrak" }
+enemy{ id = "poutroxor", description = "Poutroxor" }
+enemy{ id = "billy", description = "Billy" }
+enemy{ id = "ganon", description = "Ganon" }
+enemy{ id = "fire_bat", description = "Fire bat" }
 
-language{ id = "fr", name = "French dialogs" }
-language{ id = "en", name = "English dialogs" }
-language{ id = "de", name = "Deutsch dialogs" }
-language{ id = "nl", name = "Nederlands dialogs" }
+language{ id = "fr", description = "French dialogs" }
+language{ id = "en", description = "English dialogs" }
+language{ id = "de", description = "Deutsch dialogs" }
+language{ id = "nl", description = "Nederlands dialogs" }
 
