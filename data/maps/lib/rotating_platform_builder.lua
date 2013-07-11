@@ -17,7 +17,7 @@ function rotating_platform_builder:create(map, prefix)
   local barrier = prefix .. "_barrier"
   local current_state = game:get_value(prefix .. "_save_state")
   
-  for _, sensor in ipairs(sensors) do
+  for _, sensor in pairs(sensors) do
     sensor.on_activated = sensor_activated
   end
   
