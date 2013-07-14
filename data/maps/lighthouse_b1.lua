@@ -22,10 +22,10 @@ end
 
 function map:on_started()
   -- Star tiles puzzle
-  for _, sensor in ipairs(map:get_entities("star_sensor_A")) do
+  for sensor in map:get_entities("star_sensor_A") do
     sensor.on_activated = star_sensor_A_activated
   end
-  for _, sensor in ipairs(map:get_entities("star_sensor_B")) do
+  for sensor in map:get_entities("star_sensor_B") do
     sensor.on_activated = star_sensor_B_activated
   end
 end

@@ -15,7 +15,7 @@ function map:on_started()
   game:get_item("bombs_counter"):set_amount(10)
 
   -- Torch puzzle
-  for _, torch in ipairs(map:get_entities("torch_A")) do
+  for torch in map:get_entities("torch_A") do
     torch.on_activated = torch_A_activated
   end
 end
