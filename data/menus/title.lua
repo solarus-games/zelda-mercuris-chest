@@ -210,7 +210,8 @@ function title_screen:try_finish_title()
       and not self.finished then
     self.finished = true
 
-    self.surface:fade_out(30, function()
+    self.surface:fade_out(30)
+    sol.timer.start(self, 700, function()
       self:finish_title()
     end)
 
