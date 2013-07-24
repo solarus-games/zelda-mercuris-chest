@@ -69,6 +69,15 @@ function game:initialize_hud()
   self:check_hud()
 end
 
+function game:quit_hud()
+
+  if self:is_hud_enabled() then
+    -- Stop all HUD menus.
+    self:set_hud_enabled(false)
+  end
+  self.hud = nil
+end
+
 function game:check_hud()
 
   local map = self:get_map()
@@ -157,14 +166,14 @@ end
 
 function game:set_hud_enabled(hud_enabled)
 
-  if hud_enabled ~= game.hud_enabled then
+  if hud_enabled ~= self.hud_enabled then
     game.hud_enabled = hud_enabled
 
     for _, menu in ipairs(self.hud) do
       if hud_enabled then
-	sol.menu.start(self, menu)
+        sol.menu.start(self, menu)
       else
-	sol.menu.stop(menu)
+        sol.menu.stop(menu)
       end
     end
   end
@@ -175,13 +184,15 @@ function game:get_custom_command_effect(command)
   return self.hud.custom_command_effects[command]
 end
 
--- Make the action (or attack) icon show something else than the
+-- Make the action (or attack) icon of the HUD show something else than the
 -- built-in effect or the action (or attack) command.
 -- You are responsible to override the command if you don't want the built-in
 -- effect to be performed.
 -- Set the effect to nil to show the built-in effect again.
 function game:set_custom_command_effect(command, effect)
 
-  self.hud.custom_command_effects[command] = effect
+  if self.hud ~= nil then
+    self.hud.custom_command_effects[command] = effect
+  end
 end
 
