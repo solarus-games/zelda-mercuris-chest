@@ -331,20 +331,14 @@ enemy{ id = "khotor", description = "Khotor" }
 enemy{ id = "chain_and_ball", description = "Chain and ball" }
 enemy{ id = "firebird", description = "Fire Bird" }
 enemy{ id = "mowatulla", description = "Mowatulla" }
-enemy{ id = "master_arbror", description = "Master Arbror" }
-enemy{ id = "arbror_root", description = "Arbror root" }
 enemy{ id = "flora_gohma", description = "Flora Gohma" }
 enemy{ id = "flora_gohma_eye", description = "Flora Gohma eye" }
-enemy{ id = "agahnim", description = "Agahnim (first fight)" }
-enemy{ id = "agahnim_2", description = "Agahnim (second fight)" }
-enemy{ id = "agahnim_2_fake", description = "Fake Agahnim (second fight)" }
 enemy{ id = "drakomos", description = "Drakomos" }
 enemy{ id = "drakomos_head", description = "Drakomos head" }
 enemy{ id = "drakomos_lava_spawner", description = "Drakomos lava spawner" }
 enemy{ id = "gelidrak", description = "Gelidrak" }
 enemy{ id = "poutroxor", description = "Poutroxor" }
 enemy{ id = "billy", description = "Billy" }
-enemy{ id = "ganon", description = "Ganon" }
 enemy{ id = "fire_bat", description = "Fire bat" }
 
 language{ id = "fr", description = "French dialogs" }
