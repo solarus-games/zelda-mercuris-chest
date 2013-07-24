@@ -17,7 +17,7 @@ function item:on_obtained(variant)
 
   local game = self:get_game()
   local nb_pieces_of_heart = game:get_integer("pieces_of_heart") or 0
-  self:get_map():start_dialog(message_id[nb_pieces_of_heart + 1], function()
+  game:start_dialog(message_id[nb_pieces_of_heart + 1], function()
 
     game:set_integer("pieces_of_heart", (nb_pieces_of_heart + 1) % 4)
     if nb_pieces_of_heart == 3 then

@@ -103,8 +103,8 @@ function inventory_submenu:set_cursor_position(row, column)
 
   -- Update the caption text and the action icon.
   local item_name = item_names[index + 1]
-  local item = self.game:get_item(item_name)
-  local variant = item:get_variant()
+  local item = item_name and self.game:get_item(item_name) or nil
+  local variant = item and item:get_variant() or 0
 
   local item_icon_opacity = 128
   if variant > 0 then
@@ -241,17 +241,17 @@ function inventory_submenu:show_info_message()
 
   -- Position of the dialog (top or bottom).
   if self.cursor_row >= 2 then
-    map:set_dialog_position(1)  -- Top of the screen.
+    self.game:set_dialog_position("top")  -- Top of the screen.
   else
-    map:set_dialog_position(2)  -- Bottom of the screen.
+    self.game:set_dialog_position("bottom")  -- Bottom of the screen.
   end
 
   self.game:set_custom_command_effect("action", nil)
   self.game:set_custom_command_effect("attack", nil)
-  map:start_dialog("_item_description." .. item_name .. "." .. variant, function()
+  self.game:start_dialog("_item_description." .. item_name .. "." .. variant, function()
     self.game:set_custom_command_effect("action", "info")
     self.game:set_custom_command_effect("attack", "save")
-    map:set_dialog_position(0)  -- Back to automatic position.
+    self.game:set_dialog_position("auto")  -- Back to automatic position.
   end)
 
 end

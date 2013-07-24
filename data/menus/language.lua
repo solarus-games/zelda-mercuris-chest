@@ -1,5 +1,5 @@
--- This menu is displayed when the program starts, before the title screen.
--- The user can select his language.
+-- This menu is displayed when the program starts, after the solarus logo and
+-- before the title screen. The user can select his language.
 -- If a language is already set, we go directly to the title screen.
 
 local language_menu = {}
@@ -45,13 +45,15 @@ function language_menu:on_started()
       index = index + 1
     end
 
-    if #self.languages == 1 then
+    if #self.languages <= 1 then
       -- No choice: skip this screen.
-      sol.language.set_language(self.languages[1].id)
+      if #self.languages == 1 then
+        sol.language.set_language(self.languages[1].id)
+      end
       self:start_title_screen()
+    else
+      self:set_cursor_position(cursor_position)
     end
-
-    self:set_cursor_position(cursor_position)
   end
 end
 

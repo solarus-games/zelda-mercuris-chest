@@ -8,11 +8,9 @@ function sol.main:on_started()
   -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
 
-  -- Just need this here, no need to require globally.
-  local language_menu = require("menus/language")
-
-  -- Show the language menu initially.
-  sol.main:start_menu(language_menu:new())
+  -- Show the Solarus logo initially.
+  local solarus_logo_menu = require("menus/solarus_logo")
+  sol.main:start_menu(solarus_logo_menu)
 end
 
 function sol.main:on_finished()
@@ -24,11 +22,17 @@ function sol.main:debug_on_key_pressed(key, modifiers)
 
   local handled = true
   if key == "f1" then
-    self:start_savegame(sol.game.load("save1.dat"))
+    if sol.game.exists("save1.dat") then
+      self:start_savegame(sol.game.load("save1.dat"))
+    end
   elseif key == "f2" then
-    self:start_savegame(sol.game.load("save2.dat"))
+    if sol.game.exists("save2.dat") then
+      self:start_savegame(sol.game.load("save2.dat"))
+    end
   elseif key == "f3" then
-    self:start_savegame(sol.game.load("save3.dat"))
+    if sol.game.exists("save3.dat") then
+      self:start_savegame(sol.game.load("save3.dat"))
+    end
   elseif key == "f12" and not console.enabled then
     console:start()
   elseif sol.main.game ~= nil and not console.enabled then
@@ -92,6 +96,10 @@ function sol.main:debug_on_key_pressed(key, modifiers)
       local x, y, layer = hero:get_position()
       if layer ~= 2 then
 	hero:set_position(x, y, layer + 1)
+      end
+    elseif key == "left shift" or key == "right shift" then
+      if game:is_dialog_enabled() then
+        game.dialog_box:show_all_now()
       end
     else
       -- Not a known in-game debug key.

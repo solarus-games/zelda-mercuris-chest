@@ -1,6 +1,6 @@
 local game = ...
 
--- Include the dungeon features.
+-- Include the various game features.
 sol.main.load_file("dungeons")(game)
 sol.main.load_file("equipment")(game)
 sol.main.load_file("menus/pause")(game)
@@ -14,6 +14,13 @@ function game:on_started()
   -- Set up the dialog box and the HUD.
   self:initialize_dialog_box()
   self:initialize_hud()
+end
+
+function game:on_finished()
+
+  -- Clean what was created by on_started().
+  self:quit_hud()
+  self:quit_dialog_box()
 end
 
 -- This event is called when a new map has just become active.
