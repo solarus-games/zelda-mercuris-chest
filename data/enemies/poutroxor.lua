@@ -8,7 +8,6 @@ local bird, head, skeleton  -- Sprites.
 local phase = 1
 local nb_flames_created = 0
 local max_flames_created = 10
-local timers = {}
 
 function enemy:on_created()
 
@@ -37,16 +36,14 @@ function enemy:on_restarted()
     local m = sol.movement.create("random")
     m:set_speed(32)
     m:start(self)
-    for _, t in ipairs(timers) do t:stop() end
-    timers[#timers + 1] = sol.timer.start(self, math.random(2000, 3000), function()
+    sol.timer.start(self, math.random(2000, 3000), function()
       self:skeleton_attack()
     end)
   else
     local m = sol.movement.create("random")
     m:set_speed(80)
     m:start(self)
-    for _, t in ipairs(timers) do t:stop() end
-    timers[#timers + 1] = sol.timer.start(self, math.random(3000, 5000), function()
+    sol.timer.start(self, math.random(3000, 5000), function()
       self:big_attack()
     end)
   end
@@ -57,14 +54,20 @@ function enemy:skeleton_attack()
 
   skeleton:set_animation("attack")
   sol.audio.play_sound("ice")
-  timers[#timers + 1] = sol.timer.start(self, 500, function()
+  sol.timer.start(self, 500, function()
     skeleton:set_animation("walking")
     nb_flames_created = nb_flames_created + 1
     local son_name = self:get_name() .. "_son_" .. nb_flames_created
-    local son = self:create_enemy(son_name, "blue_flame", 0, -48, 2)
+    local son = self:create_enemy{
+      name = son_name,
+      breed = "blue_flame",
+      x = 0,
+      y = -48,
+      layer = 2,
+    }
     local angle = son:get_angle(self:get_map():get_entity("hero"))
     son:go(angle)
-    timers[#timers + 1] = sol.timer.start(self, math.random(1000, 3000), function()
+    sol.timer.start(self, math.random(1000, 3000), function()
       self:skeleton_attack()
     end)
   end)
@@ -72,7 +75,6 @@ end
 
 function enemy:on_hurt(attack, life_lost)
 
-  for _, t in ipairs(timers) do t:stop() end
   if phase == 1 and self:get_life() <= 7 then
     self:stop_movement()
     sol.audio.play_sound("enemy_killed")
@@ -94,7 +96,7 @@ function enemy:big_attack()
   self:stop_movement()
   head:set_animation("attack")
   sol.audio.play_sound("lamp")
-  timers[#timers + 1] = sol.timer.start(self, 500, function() self:repeat_flame() end)
+  sol.timer.start(self, 500, function() self:repeat_flame() end)
 end
 
 function enemy:repeat_flame()
@@ -103,12 +105,17 @@ function enemy:repeat_flame()
     local son_name = self:get_name() .. "_son_" .. nb_flames_created
     local angle = math.random(30, 90) * math.pi / 40
     nb_flames_created = nb_flames_created + 1
-    local son = self:create_enemy(son_name, "blue_flame", 0, 16)
+    local son = self:create_enemy{
+      name = son_name,
+      breed = "blue_flame",
+      x = 0,
+      y = 16,
+    }
     son:go(angle)
     sol.audio.play_sound("lamp")
-    timers[#timers + 1] = sol.timer.start(self, 150, function() self:repeat_flame() end)
+    sol.timer.start(self, 150, function() self:repeat_flame() end)
   else
-    timers[#timers + 1] = sol.timer.start(self, 500, function() self:restart() end)
+    sol.timer.start(self, 500, function() self:restart() end)
   end
 end
 
