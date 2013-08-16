@@ -12,6 +12,9 @@ function sol.main:on_started()
 
   -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
+ 
+   -- If there is a file called "debug" in the write directory, enable debug mode.
+  debug_enabled = sol.file.exists("debug")
 
   -- If there is a file called "debug" in the write directory, enable debug mode.
   debug_enabled = sol.main.load_file("debug") ~= nil
