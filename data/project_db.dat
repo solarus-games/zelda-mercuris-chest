@@ -218,6 +218,7 @@ sprite{ id = "menus/pause_save_dialog", description = "Menu: Pause save dialog" 
 sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
 sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
+sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
