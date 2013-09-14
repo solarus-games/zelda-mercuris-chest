@@ -12,29 +12,33 @@ function sol.main:on_started()
 
   -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
- 
-   -- If there is a file called "debug" in the write directory, enable debug mode.
-  debug_enabled = sol.file.exists("debug")
 
   -- If there is a file called "debug" in the write directory, enable debug mode.
-  debug_enabled = sol.main.load_file("debug") ~= nil
+  debug_enabled = sol.file.exists("debug")
 
-  -- Show the Solarus logo initially.
   local solarus_logo = require("menus/solarus_logo")
+  local language_menu = require("menus/language")
   local title_screen = require("menus/title")
   local savegame_menu = require("menus/savegames")
 
   -- Show the Solarus logo first.
   sol.menu.start(self, solarus_logo)
 
-  -- Then the title screen, unless a game was started by a debug key.
+  -- Then the language selection menu, unless a game was started by a debug key.
   solarus_logo.on_finished = function()
+    if self.game == nil then
+      sol.menu.start(self, language_menu)
+    end
+  end
+
+  -- Then the title screen.
+  language_menu.on_finished = function()
     if self.game == nil then
       sol.menu.start(self, title_screen)
     end
   end
 
-  -- Then the savegame menu, unless a game was started by a debug key.
+  -- Then the savegame menu.
   title_screen.on_finished = function()
     if self.game == nil then
       sol.menu.start(self, savegame_menu)
@@ -42,6 +46,7 @@ function sol.main:on_started()
   end
 end
 
+-- Event called when the program stops.
 function sol.main:on_finished()
 
   sol.main.save_settings()
@@ -131,6 +136,12 @@ function sol.main:debug_on_key_pressed(key, modifiers)
       local x, y, layer = hero:get_position()
       if layer ~= 2 then
 	hero:set_position(x, y, layer + 1)
+      end
+    elseif key == "r" then
+      if hero:get_walking_speed() == 300 then
+        hero:set_walking_speed(88)
+      else
+        hero:set_walking_speed(300)
       end
     else
       -- Not a known in-game debug key.
