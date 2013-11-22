@@ -3535,3 +3535,23 @@ tile_pattern{
   height = 16,
 }
 
+tile_pattern{
+  id = 742,
+  ground = "hole",
+  default_layer = 1,
+  x = 16,
+  y = 232,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = 743,
+  ground = "traversable",
+  default_layer = 1,
+  x = 56,
+  y = 224,
+  width = 8,
+  height = 8,
+}
+

@@ -29,6 +29,40 @@ function game:on_map_changed(map)
 
   -- Notify the hud.
   self:hud_on_map_changed(map)
+
+  -- Set up common events.
+  self:initialize_common_map_events(map)
+end
+
+local function to_layer_0_sensor_activated(sensor)
+  local hero = sensor:get_map():get_game():get_hero()
+  local x, y, layer = hero:get_position()
+  hero:set_position(x, y, 0)
+end
+
+local function to_layer_1_sensor_activated(sensor)
+  local hero = sensor:get_map():get_game():get_hero()
+  local x, y, layer = hero:get_position()
+  hero:set_position(x, y, 1)
+end
+
+local function to_layer_2_sensor_activated(sensor)
+  local hero = sensor:get_map():get_game():get_hero()
+  local x, y, layer = hero:get_position()
+  hero:set_position(x, y, 2)
+end
+
+function game:initialize_common_map_events(map)
+
+  for sensor in map:get_entities("common_to_layer_0_sensor") do
+    sensor.on_activated = to_layer_0_sensor_activated
+  end
+  for sensor in map:get_entities("common_to_layer_1_sensor") do
+    sensor.on_activated = to_layer_1_sensor_activated
+  end
+  for sensor in map:get_entities("common_to_layer_2_sensor") do
+    sensor.on_activated = to_layer_2_sensor_activated
+  end
 end
 
 function game:on_paused()
