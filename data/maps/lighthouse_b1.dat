@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 640,
   height = 480,
-  world = "lighthouse",
+  world = "dungeon_3",
   floor = -1,
   tileset = "lighthouse",
   music = "same",
@@ -1659,9 +1659,9 @@ chest{
   layer = 1,
   x = 480,
   y = 133,
-  name = "chest_2",
+  name = "KC1",
   treasure_name = "small_key",
-  treasure_variant = 1,
+  treasure_savegame_variable = "lighthouse_b1_key_chest",
   sprite = "entities/chest",
 }
 
@@ -1671,7 +1671,6 @@ destructible{
   y = 77,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -1680,7 +1679,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2064,7 +2062,6 @@ destructible{
   y = 77,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2073,7 +2070,6 @@ destructible{
   y = 189,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2082,7 +2078,6 @@ destructible{
   y = 189,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2091,7 +2086,6 @@ destructible{
   y = 189,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2100,7 +2094,6 @@ destructible{
   y = 189,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2109,7 +2102,6 @@ destructible{
   y = 77,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2118,7 +2110,6 @@ destructible{
   y = 77,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2127,7 +2118,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2136,7 +2126,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2145,7 +2134,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -2154,7 +2142,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 wall{
@@ -2168,6 +2155,33 @@ wall{
   stops_enemies = true,
   stops_npcs = true,
   stops_blocks = true,
+}
+
+door{
+  layer = 1,
+  x = 344,
+  y = 120,
+  name = "LD1",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 280,
+  y = 120,
+  name = "LD1_2",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+sensor{
+  layer = 1,
+  x = 376,
+  y = 117,
+  width = 16,
+  height = 48,
+  name = "DS1",
 }
 
 tile{

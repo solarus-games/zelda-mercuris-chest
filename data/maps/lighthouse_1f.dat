@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 1280,
   height = 960,
-  world = "lighthouse",
+  world = "dungeon_3",
   floor = 0,
   tileset = "lighthouse",
   music = "eagle_tower",
@@ -1932,7 +1932,6 @@ chest{
   y = 365,
   name = "chest",
   treasure_name = "small_key",
-  treasure_variant = 1,
   sprite = "entities/chest",
 }
 
@@ -5550,6 +5549,7 @@ destination{
   y = 925,
   name = "main_entrance",
   direction = 1,
+  default = true,
 }
 
 teletransporter{
@@ -5973,7 +5973,6 @@ destructible{
   y = 301,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -5982,7 +5981,6 @@ destructible{
   y = 317,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -5991,7 +5989,6 @@ destructible{
   y = 333,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6000,7 +5997,6 @@ destructible{
   y = 397,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6009,7 +6005,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6018,7 +6013,6 @@ destructible{
   y = 429,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6027,7 +6021,6 @@ destructible{
   y = 301,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6036,7 +6029,6 @@ destructible{
   y = 317,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6045,7 +6037,6 @@ destructible{
   y = 333,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6054,7 +6045,6 @@ destructible{
   y = 397,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6063,7 +6053,6 @@ destructible{
   y = 413,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
@@ -6072,7 +6061,6 @@ destructible{
   y = 429,
   subtype = "pot",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 door{
@@ -6217,10 +6205,10 @@ door{
   layer = 1,
   x = 472,
   y = 504,
-  name = "door",
+  name = "KD1",
   direction = 1,
   sprite = "entities/door_small_key",
-  savegame_variable = "locked_door_A",
+  savegame_variable = "lighthouse_key_door_1",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
@@ -6231,7 +6219,7 @@ door{
   layer = 1,
   x = 792,
   y = 504,
-  name = "torch_door",
+  name = "LD2",
   direction = 1,
   sprite = "entities/door_normal",
 }

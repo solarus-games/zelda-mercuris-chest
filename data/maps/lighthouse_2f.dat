@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 1280,
   height = 960,
-  world = "lighthouse",
+  world = "dungeon_3",
   floor = 1,
   tileset = "lighthouse",
   music = "same",
@@ -5672,7 +5672,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 736,
+  x = 720,
   y = 632,
   width = 48,
   height = 48,
@@ -5690,9 +5690,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 784,
+  x = 768,
   y = 648,
-  width = 96,
+  width = 112,
   height = 8,
   pattern = 249,
 }
@@ -5947,7 +5947,7 @@ chest{
   layer = 1,
   x = 1208,
   y = 557,
-  name = "chest_2",
+  name = "BKC",
   treasure_name = "big_key",
   sprite = "entities/chest",
 }
@@ -6255,6 +6255,26 @@ wall{
   stops_enemies = true,
   stops_npcs = true,
   stops_blocks = true,
+}
+
+jumper{
+  layer = 1,
+  x = 1104,
+  y = 576,
+  width = 112,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 1096,
+  y = 544,
+  width = 8,
+  height = 32,
+  direction = 4,
+  jump_length = 40,
 }
 
 tile{
