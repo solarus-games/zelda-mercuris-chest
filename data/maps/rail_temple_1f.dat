@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 2992,
   height = 3680,
-  world = "rail_temple",
+  world = "dungeon_7",
   floor = 0,
   tileset = "mine",
   music = "dark_world_dungeon",
@@ -3891,9 +3891,9 @@ tile{
 tile{
   layer = 0,
   x = 2368,
-  y = 1824,
+  y = 1816,
   width = 16,
-  height = 24,
+  height = 32,
   pattern = 666,
 }
 
@@ -4721,7 +4721,7 @@ stairs{
   x = 520,
   y = 1584,
   direction = 3,
-  subtype = "0",
+  subtype = "4",
 }
 
 sensor{
@@ -5237,6 +5237,41 @@ enemy{
   name = "room_c_enemy_5",
   direction = 3,
   breed = "tentacle",
+}
+
+door{
+  layer = 0,
+  x = 2368,
+  y = 2224,
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "rail_temple_room_c_locked_door",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "rail_temple_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 2368,
+  y = 2112,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "rail_temple_room_c_locked_door",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "rail_temple_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+sensor{
+  layer = 0,
+  x = 2376,
+  y = 1837,
+  width = 16,
+  height = 16,
+  name = "common_to_layer_1_sensor_2",
 }
 
 tile{
@@ -12581,33 +12616,6 @@ tile{
   width = 8,
   height = 80,
   pattern = 238,
-}
-
-tile{
-  layer = 1,
-  x = 1240,
-  y = 2560,
-  width = 32,
-  height = 16,
-  pattern = 2,
-}
-
-tile{
-  layer = 1,
-  x = 1288,
-  y = 2560,
-  width = 32,
-  height = 16,
-  pattern = 2,
-}
-
-tile{
-  layer = 1,
-  x = 1240,
-  y = 2624,
-  width = 80,
-  height = 16,
-  pattern = 2,
 }
 
 tile{
@@ -25586,15 +25594,6 @@ tile{
   width = 24,
   height = 8,
   pattern = 70,
-}
-
-tile{
-  layer = 1,
-  x = 2368,
-  y = 1816,
-  width = 16,
-  height = 8,
-  pattern = 666,
 }
 
 tile{
@@ -39646,6 +39645,251 @@ tile{
   pattern = 2,
 }
 
+tile{
+  layer = 1,
+  x = 2368,
+  y = 1816,
+  width = 16,
+  height = 32,
+  pattern = 743,
+}
+
+tile{
+  layer = 1,
+  x = 2536,
+  y = 3296,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2592,
+  y = 3296,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2592,
+  y = 3432,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2576,
+  y = 3432,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2592,
+  y = 3304,
+  width = 8,
+  height = 128,
+  pattern = 71,
+}
+
+tile{
+  layer = 1,
+  x = 2544,
+  y = 3296,
+  width = 48,
+  height = 8,
+  pattern = 70,
+}
+
+tile{
+  layer = 1,
+  x = 2584,
+  y = 3432,
+  width = 8,
+  height = 8,
+  pattern = 70,
+}
+
+tile{
+  layer = 1,
+  x = 2664,
+  y = 3296,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2720,
+  y = 3296,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2672,
+  y = 3296,
+  width = 48,
+  height = 8,
+  pattern = 70,
+}
+
+tile{
+  layer = 1,
+  x = 2664,
+  y = 3432,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2680,
+  y = 3432,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 2664,
+  y = 3304,
+  width = 8,
+  height = 128,
+  pattern = 71,
+}
+
+tile{
+  layer = 1,
+  x = 2672,
+  y = 3432,
+  width = 8,
+  height = 8,
+  pattern = 70,
+}
+
+tile{
+  layer = 1,
+  x = 2568,
+  y = 3592,
+  width = 16,
+  height = 16,
+  pattern = 277,
+}
+
+tile{
+  layer = 1,
+  x = 2680,
+  y = 3592,
+  width = 16,
+  height = 16,
+  pattern = 277,
+}
+
+tile{
+  layer = 1,
+  x = 2568,
+  y = 3520,
+  width = 16,
+  height = 16,
+  pattern = 277,
+}
+
+tile{
+  layer = 1,
+  x = 2680,
+  y = 3520,
+  width = 16,
+  height = 16,
+  pattern = 277,
+}
+
+tile{
+  layer = 1,
+  x = 1536,
+  y = 2560,
+  width = 16,
+  height = 16,
+  pattern = 745,
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 2552,
+  width = 32,
+  height = 16,
+  pattern = 2,
+}
+
+tile{
+  layer = 1,
+  x = 1288,
+  y = 2552,
+  width = 32,
+  height = 16,
+  pattern = 2,
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 2632,
+  width = 80,
+  height = 16,
+  pattern = 2,
+}
+
+enemy{
+  layer = 1,
+  x = 1576,
+  y = 2613,
+  name = "room_e_enemy_2",
+  direction = 3,
+  breed = "skeletor",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1512,
+  y = 2613,
+  name = "room_e_enemy",
+  direction = 3,
+  breed = "skeletor",
+  treasure_name = "random",
+}
+
+sensor{
+  layer = 1,
+  x = 1504,
+  y = 2605,
+  width = 16,
+  height = 16,
+  name = "close_room_e_sensor",
+}
+
+sensor{
+  layer = 1,
+  x = 1584,
+  y = 2605,
+  width = 16,
+  height = 16,
+  name = "close_room_e_sensor_2",
+}
+
 door{
   layer = 1,
   x = -32,
@@ -39658,8 +39902,8 @@ door{
 
 destination{
   layer = 1,
-  x = 2632,
-  y = 2493,
+  x = 1216,
+  y = 2589,
   name = "tmp",
   direction = 1,
 }
@@ -39678,13 +39922,16 @@ chest{
   layer = 1,
   x = 1544,
   y = 2573,
+  name = "room_e_chest",
+  treasure_name = "map",
+  treasure_savegame_variable = "rail_temple_map_chest",
   sprite = "entities/chest",
 }
 
 block{
   layer = 1,
   x = 1184,
-  y = 2573,
+  y = 2565,
   direction = -1,
   sprite = "entities/statue",
   pushable = true,
@@ -39695,7 +39942,7 @@ block{
 block{
   layer = 1,
   x = 1184,
-  y = 2637,
+  y = 2645,
   direction = -1,
   sprite = "entities/statue",
   pushable = true,
@@ -39706,7 +39953,7 @@ block{
 block{
   layer = 1,
   x = 1376,
-  y = 2573,
+  y = 2565,
   direction = -1,
   sprite = "entities/statue",
   pushable = true,
@@ -39717,12 +39964,13 @@ block{
 block{
   layer = 1,
   x = 1376,
-  y = 2637,
+  y = 2645,
+  name = "room_f_statue",
   direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 0,
+  maximum_moves = 2,
 }
 
 npc{
@@ -40023,6 +40271,7 @@ destructible{
   x = 2432,
   y = 3397,
   subtype = "pot",
+  treasure_name = "heart",
 }
 
 destructible{
@@ -40030,6 +40279,7 @@ destructible{
   x = 2448,
   y = 3397,
   subtype = "pot",
+  treasure_name = "heart",
 }
 
 destructible{
@@ -40037,6 +40287,7 @@ destructible{
   x = 2448,
   y = 3189,
   subtype = "pot",
+  treasure_name = "heart",
 }
 
 enemy{
@@ -41526,6 +41777,397 @@ jumper{
   height = 192,
   direction = 4,
   jump_length = 40,
+}
+
+enemy{
+  layer = 1,
+  x = 2856,
+  y = 3229,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2864,
+  y = 3045,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+sensor{
+  layer = 1,
+  x = 2376,
+  y = 1845,
+  width = 16,
+  height = 16,
+  name = "common_to_layer_0_sensor_2",
+}
+
+wall{
+  layer = 1,
+  x = 2360,
+  y = 1816,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 2384,
+  y = 1816,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+jumper{
+  layer = 1,
+  x = 2624,
+  y = 2088,
+  width = 8,
+  height = 24,
+  direction = 0,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 2600,
+  y = 2088,
+  width = 8,
+  height = 24,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 2608,
+  y = 2080,
+  width = 16,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+destructible{
+  layer = 1,
+  x = 2704,
+  y = 3637,
+  subtype = "pot",
+  treasure_name = "heart",
+}
+
+destructible{
+  layer = 1,
+  x = 2720,
+  y = 3637,
+  subtype = "pot",
+  treasure_name = "heart",
+}
+
+destructible{
+  layer = 1,
+  x = 2544,
+  y = 3637,
+  subtype = "pot",
+}
+
+destructible{
+  layer = 1,
+  x = 2560,
+  y = 3637,
+  subtype = "pot",
+}
+
+enemy{
+  layer = 1,
+  x = 2368,
+  y = 3253,
+  direction = 3,
+  breed = "blue_hardhat_beetle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2352,
+  y = 3365,
+  direction = 3,
+  breed = "blue_hardhat_beetle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2392,
+  y = 3069,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2432,
+  y = 3005,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2152,
+  y = 2893,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2384,
+  y = 2901,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2256,
+  y = 2909,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 2064,
+  y = 2917,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random",
+}
+
+door{
+  layer = 1,
+  x = 2056,
+  y = 2592,
+  name = "room_d_door",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 2120,
+  y = 2592,
+  name = "room_d_door_2",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 2232,
+  y = 2592,
+  name = "room_d_door_3",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 2296,
+  y = 2592,
+  name = "room_d_door_4",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+enemy{
+  layer = 1,
+  x = 2184,
+  y = 2605,
+  name = "room_d_enemy",
+  direction = 3,
+  breed = "blue_hardhat_beetle",
+  treasure_name = "random",
+}
+
+sensor{
+  layer = 1,
+  x = 2144,
+  y = 2605,
+  width = 16,
+  height = 16,
+  name = "close_room_d_sensor",
+}
+
+sensor{
+  layer = 1,
+  x = 2224,
+  y = 2605,
+  width = 16,
+  height = 16,
+  name = "close_room_d_sensor_2",
+}
+
+door{
+  layer = 1,
+  x = 1416,
+  y = 2592,
+  name = "room_e_door",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 1480,
+  y = 2592,
+  name = "room_e_door_2",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 1592,
+  y = 2592,
+  name = "room_e_door_3",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 1656,
+  y = 2592,
+  name = "room_e_door_4",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 1064,
+  y = 2592,
+  name = "room_f_door_3",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 1128,
+  y = 2592,
+  name = "room_f_door_4",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+destructible{
+  layer = 1,
+  x = 1248,
+  y = 2565,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1264,
+  y = 2565,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1296,
+  y = 2565,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1312,
+  y = 2565,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+switch{
+  layer = 1,
+  x = 1272,
+  y = 2552,
+  name = "open_room_f_switch",
+  subtype = "1",
+  needs_block = false,
+  inactivate_when_leaving = true,
+}
+
+destructible{
+  layer = 1,
+  x = 1248,
+  y = 2645,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1264,
+  y = 2645,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1280,
+  y = 2645,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1296,
+  y = 2645,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1312,
+  y = 2645,
+  subtype = "pot",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 1280,
+  y = 2565,
+  name = "room_f_switch_pot",
+  subtype = "pot",
 }
 
 tile{
@@ -46701,5 +47343,41 @@ tile{
   width = 16,
   height = 48,
   pattern = 637,
+}
+
+tile{
+  layer = 2,
+  x = 2568,
+  y = 3576,
+  width = 16,
+  height = 16,
+  pattern = 278,
+}
+
+tile{
+  layer = 2,
+  x = 2680,
+  y = 3576,
+  width = 16,
+  height = 16,
+  pattern = 278,
+}
+
+tile{
+  layer = 2,
+  x = 2568,
+  y = 3504,
+  width = 16,
+  height = 16,
+  pattern = 278,
+}
+
+tile{
+  layer = 2,
+  x = 2680,
+  y = 3504,
+  width = 16,
+  height = 16,
+  pattern = 278,
 }
 

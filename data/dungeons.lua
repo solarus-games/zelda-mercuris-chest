@@ -2,13 +2,22 @@ local game = ...
 
 -- Define the existing dungeons and their floors for the minimap menu.
 game.dungeons = {
- [3] = {
+
+  [3] = {
     floor_width = 1280,
     floor_height = 960,
     lowest_floor = -1,
     highest_floor = 3,
     maps = { "lighthouse_b1", "lighthouse_1f", "lighthouse_2f", "lighthouse_3f", "lighthouse_4f" },
-  }
+  },
+
+  [7] = {
+    floor_width = 2292,
+    floor_height = 3680,
+    lowest_floor = -2,
+    highest_floor = 0,
+    maps = { "rail_temple_b2", "rail_temple_b1", "rail_temple_1f" },
+  },
 }
 
 -- Returns the index of the current dungeon if any, or nil.

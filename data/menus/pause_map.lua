@@ -347,7 +347,9 @@ function map_submenu:load_dungeon_map_image()
     local floor_map_img = sol.surface.create(
         "menus/dungeon_maps/map" .. self.dungeon_index ..
         "_" .. self.selected_floor .. ".png")
-    floor_map_img:draw(self.dungeon_map_img)
+    if floor_map_img ~= nil then
+      floor_map_img:draw(self.dungeon_map_img)
+    end
   end
 
   if self.game:has_dungeon_compass() then

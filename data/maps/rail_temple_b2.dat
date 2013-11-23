@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 912,
   height = 656,
-  world = "rail_temple",
+  world = "dungeon_7",
   floor = -2,
   tileset = "mine",
   music = "same",
