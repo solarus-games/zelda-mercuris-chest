@@ -3555,3 +3555,23 @@ tile_pattern{
   height = 8,
 }
 
+tile_pattern{
+  id = 744,
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 296,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = 745,
+  ground = "wall",
+  default_layer = 0,
+  x = 8,
+  y = 296,
+  width = 16,
+  height = 16,
+}
+

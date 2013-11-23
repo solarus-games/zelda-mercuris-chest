@@ -4419,6 +4419,24 @@ tile{
   pattern = 300,
 }
 
+tile{
+  layer = 0,
+  x = 2840,
+  y = 2848,
+  width = 8,
+  height = 24,
+  pattern = 744,
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 2288,
+  width = 16,
+  height = 16,
+  pattern = 745,
+}
+
 wall{
   layer = 0,
   x = 192,
@@ -4435,6 +4453,8 @@ chest{
   layer = 0,
   x = 2808,
   y = 2301,
+  name = "room_c_chest",
+  treasure_savegame_variable = "rail_temple_rail_1_chest",
   sprite = "entities/chest",
 }
 
@@ -4711,6 +4731,512 @@ sensor{
   width = 16,
   height = 16,
   name = "common_to_layer_1_sensor",
+}
+
+door{
+  layer = 0,
+  x = 2848,
+  y = 2856,
+  name = "train_barrier_a_door",
+  direction = 1,
+  sprite = "entities/door_train_barrier",
+  savegame_variable = "rail_temple_train_barrier_a",
+}
+
+block{
+  layer = 0,
+  x = 2360,
+  y = 2333,
+  name = "blocks_puzzle_block_1",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2376,
+  y = 2333,
+  name = "blocks_puzzle_block_2",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2392,
+  y = 2333,
+  name = "blocks_puzzle_block_3",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2376,
+  y = 2349,
+  name = "blocks_puzzle_block_4",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2360,
+  y = 2365,
+  name = "blocks_puzzle_block_5",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2376,
+  y = 2365,
+  name = "blocks_puzzle_block_6",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2408,
+  y = 2413,
+  name = "blocks_puzzle_block_7",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2408,
+  y = 2429,
+  name = "blocks_puzzle_block_8",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2408,
+  y = 2445,
+  name = "blocks_puzzle_block_9",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2424,
+  y = 2413,
+  name = "blocks_puzzle_block_10",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2440,
+  y = 2413,
+  name = "blocks_puzzle_block_11",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2440,
+  y = 2429,
+  name = "blocks_puzzle_block_12",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2456,
+  y = 2413,
+  name = "blocks_puzzle_block_13",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2456,
+  y = 2397,
+  name = "blocks_puzzle_block_14",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2488,
+  y = 2397,
+  name = "blocks_puzzle_block_15",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2536,
+  y = 2349,
+  name = "blocks_puzzle_block_16",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2552,
+  y = 2349,
+  name = "blocks_puzzle_block_17",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2568,
+  y = 2349,
+  name = "blocks_puzzle_block_18",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2552,
+  y = 2365,
+  name = "blocks_puzzle_block_19",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2552,
+  y = 2397,
+  name = "blocks_puzzle_block_20",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2536,
+  y = 2429,
+  name = "blocks_puzzle_block_21",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2728,
+  y = 2301,
+  name = "blocks_puzzle_block_22",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2744,
+  y = 2301,
+  name = "blocks_puzzle_block_23",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2744,
+  y = 2317,
+  name = "blocks_puzzle_block_24",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2760,
+  y = 2317,
+  name = "blocks_puzzle_block_25",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2760,
+  y = 2333,
+  name = "blocks_puzzle_block_26",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2776,
+  y = 2333,
+  name = "blocks_puzzle_block_27",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2776,
+  y = 2349,
+  name = "blocks_puzzle_block_28",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2792,
+  y = 2349,
+  name = "blocks_puzzle_block_29",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2760,
+  y = 2397,
+  name = "blocks_puzzle_block_30",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2776,
+  y = 2397,
+  name = "blocks_puzzle_block_31",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2728,
+  y = 2365,
+  name = "blocks_puzzle_block_32",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2728,
+  y = 2381,
+  name = "blocks_puzzle_block_33",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2776,
+  y = 2381,
+  name = "blocks_puzzle_block_34",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2792,
+  y = 2317,
+  name = "blocks_puzzle_block_35",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2808,
+  y = 2317,
+  name = "blocks_puzzle_block_36",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 2824,
+  y = 2317,
+  name = "blocks_puzzle_block_37",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 2424,
+  y = 2288,
+  direction = 3,
+  breed = "bubble",
+}
+
+enemy{
+  layer = 0,
+  x = 2768,
+  y = 2432,
+  direction = 3,
+  breed = "bubble",
+}
+
+enemy{
+  layer = 0,
+  x = 2512,
+  y = 2285,
+  name = "room_c_enemy_1",
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 0,
+  x = 2520,
+  y = 2405,
+  name = "room_c_enemy_2",
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 0,
+  x = 2856,
+  y = 2381,
+  name = "room_c_enemy_4",
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 0,
+  x = 2664,
+  y = 2357,
+  name = "room_c_enemy_5",
+  direction = 3,
+  breed = "tentacle",
 }
 
 tile{
@@ -39111,6 +39637,15 @@ tile{
   pattern = 649,
 }
 
+tile{
+  layer = 1,
+  x = 2664,
+  y = 2584,
+  width = 16,
+  height = 16,
+  pattern = 2,
+}
+
 door{
   layer = 1,
   x = -32,
@@ -39123,8 +39658,8 @@ door{
 
 destination{
   layer = 1,
-  x = 2648,
-  y = 2877,
+  x = 2632,
+  y = 2493,
   name = "tmp",
   direction = 1,
 }
@@ -39133,6 +39668,7 @@ switch{
   layer = 1,
   x = 2624,
   y = 2848,
+  name = "train_barrier_a_switch",
   subtype = "3",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -40846,6 +41382,150 @@ sensor{
   width = 16,
   height = 16,
   name = "common_to_layer_0_sensor",
+}
+
+door{
+  layer = 1,
+  x = 2624,
+  y = 2568,
+  name = "room_b_door",
+  direction = 1,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 2624,
+  y = 2504,
+  name = "room_b_door_2",
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+destructible{
+  layer = 1,
+  x = 2672,
+  y = 2597,
+  subtype = "pot",
+}
+
+switch{
+  layer = 1,
+  x = 2584,
+  y = 2584,
+  name = "room_b_door_switch",
+  subtype = "1",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+destructible{
+  layer = 1,
+  x = 2592,
+  y = 2597,
+  subtype = "pot",
+}
+
+npc{
+  layer = 1,
+  x = 2664,
+  y = 2581,
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/hint_stone",
+  behavior = "dialog#rail_temple_1f.chests_order_hint",
+}
+
+wall{
+  layer = 1,
+  x = 2600,
+  y = 2432,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 2624,
+  y = 2432,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 2600,
+  y = 2216,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 2624,
+  y = 2216,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 2600,
+  y = 2112,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 2624,
+  y = 2112,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+jumper{
+  layer = 1,
+  x = 2624,
+  y = 2240,
+  width = 8,
+  height = 192,
+  direction = 0,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 2600,
+  y = 2240,
+  width = 8,
+  height = 192,
+  direction = 4,
+  jump_length = 40,
 }
 
 tile{

@@ -2363,3 +2363,17 @@ avec quelque chose...
 }
 -----------------------
 
+-- Rail Temple
+
+dialog{
+  id = "rail_temple_1f.chests_order_hint",
+  text = [[
+         2   5
+       4   7   1
+         6   3
+]]
+}
+-----------------------
+
+
+

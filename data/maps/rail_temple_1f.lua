@@ -1,10 +1,20 @@
 local map = ...
+local game = map:get_game()
 
 function map:on_started()
 
   -- Initially open room A (small room with two skeletons).
   map:set_doors_open("room_a_door", true)
 
+  -- Train barrier A.
+  if game:get_value("rail_temple_train_barrier_a") then
+    train_barrier_a_switch:set_activated(true)
+  end
+
+  -- Disable the blocks puzzle chest (rail 1) if not found yet.
+  if not game:get_value("rail_temple_rail_1_chest") then
+    room_c_chest:set_enabled(false)
+  end
 end
 
 local function room_a_enemy_dead(enemy)
@@ -29,5 +39,37 @@ local function close_room_a_sensor_activated()
 end
 for sensor in map:get_entities("close_room_a_sensor") do
   sensor.on_activated = close_room_a_sensor_activated
+end
+
+function train_barrier_a_switch:on_activated()
+
+  map:move_camera(2848, 2856, 250, function()
+    sol.audio.play_sound("secret")
+    map:open_doors("train_barrier_a_door")
+  end)
+end
+
+function room_b_door_switch:on_activated()
+
+  if room_b_door:is_closed() then
+    sol.audio.play_sound("secret")
+    map:open_doors("room_b_door")
+  end
+end
+
+local function room_c_enemy_dead(enemy)
+
+  if map:get_entities_count("room_c_enemy") == 0
+      and not room_c_chest:is_enabled() then
+    -- The last enemy of the room is dead: show the chest.
+    local x, y = room_c_chest:get_position()
+    map:move_camera(x, y, 250, function()
+      sol.audio.play_sound("chest_appears")
+      room_c_chest:set_enabled(true)
+    end)
+  end
+end
+for enemy in map:get_entities("room_c_enemy") do
+  enemy.on_dead = room_c_enemy_dead
 end
 

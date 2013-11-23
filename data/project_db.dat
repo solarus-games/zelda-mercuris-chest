@@ -221,6 +221,7 @@ sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
 sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "entities/door_train_barrier", description = "Door (train barrier)" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
@@ -456,6 +457,7 @@ enemy{ id = "gelidrak", description = "Gelidrak" }
 enemy{ id = "poutroxor", description = "Poutroxor" }
 enemy{ id = "billy", description = "Billy" }
 enemy{ id = "fire_bat", description = "Fire bat" }
+
 
 language{ id = "fr", description = "Français" }
 
