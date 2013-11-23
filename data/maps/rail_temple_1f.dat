@@ -39902,8 +39902,8 @@ door{
 
 destination{
   layer = 1,
-  x = 1216,
-  y = 2589,
+  x = 2568,
+  y = 2477,
   name = "tmp",
   direction = 1,
 }
