@@ -8,6 +8,10 @@ local function star_sensor_A_activated()
   map:set_entities_enabled("star_tile_B", true)
   map:set_entities_enabled("star_floor_A", false)
   map:set_entities_enabled("star_floor_B", true)
+
+  for sensor in map:get_entities("star_sensor_B") do
+    sensor:set_activated(true)
+  end
 end
 
 local function star_sensor_B_activated()
@@ -18,6 +22,26 @@ local function star_sensor_B_activated()
   map:set_entities_enabled("star_tile_B", false)
   map:set_entities_enabled("star_floor_A", true)
   map:set_entities_enabled("star_floot_B", false)
+
+  for sensor in map:get_entities("star_sensor_A") do
+    sensor:set_activated(true)
+  end
+end
+
+function DS1:on_activated()
+  map:close_doors("LD1")
+  self:set_enabled(false)
+end
+
+-- Key room puzzle
+function key_monster_dead(enemy)
+  if map:get_entities_count("key_monster") == 0 then
+    sol.audio.play_sound("secret")    
+    map:open_doors("LD1")
+  end
+end
+for enemy in map:get_entities("key_monster") do
+  enemy.on_dead = key_monster_dead
 end
 
 function map:on_started()
@@ -28,6 +52,9 @@ function map:on_started()
   for sensor in map:get_entities("star_sensor_B") do
     sensor.on_activated = star_sensor_B_activated
   end
+
+  -- Key room puzzle
+  map:set_doors_open("LD1", true)
 end
 
 

@@ -1988,6 +1988,30 @@ stairs{
   subtype = "4",
 }
 
+enemy{
+  layer = 0,
+  x = 848,
+  y = 864,
+  direction = 3,
+  breed = "bubble",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 864,
+  direction = 3,
+  breed = "bubble",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 584,
+  direction = 3,
+  breed = "bubble",
+}
+
 tile{
   layer = 1,
   x = 1000,
