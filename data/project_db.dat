@@ -9,6 +9,7 @@ map{ id = "rail_temple_1f", description = "Rail Temple 1F" }
 map{ id = "rail_temple_b1", description = "Rail Temple B1" }
 map{ id = "rail_temple_b2", description = "Rail Temple B2" }
 map{ id = "test_map", description = "Test Hub" }
+map{ id = "lighthouse_outside", description = "Lighthouse outside" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "dark_world", description = "Dark World" }
@@ -221,7 +222,6 @@ sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
 sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
-sprite{ id = "entities/door_train_barrier", description = "Door (train barrier)" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }

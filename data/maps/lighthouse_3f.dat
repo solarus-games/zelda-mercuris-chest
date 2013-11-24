@@ -598,8 +598,9 @@ chest{
   layer = 0,
   x = 800,
   y = 85,
-  name = "chest",
+  name = "TRE",
   treasure_name = "bow",
+  treasure_savegame_variable = "lighthouse_treasure",
   sprite = "entities/big_chest",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_big_key",
@@ -1527,7 +1528,7 @@ tile{
 tile{
   layer = 1,
   x = 984,
-  y = 592,
+  y = 640,
   width = 16,
   height = 16,
   pattern = 82,
@@ -1536,7 +1537,7 @@ tile{
 tile{
   layer = 1,
   x = 984,
-  y = 584,
+  y = 632,
   width = 16,
   height = 8,
   pattern = 78,
@@ -1545,7 +1546,7 @@ tile{
 tile{
   layer = 1,
   x = 984,
-  y = 608,
+  y = 656,
   width = 16,
   height = 8,
   pattern = 80,
@@ -1941,7 +1942,7 @@ tile{
 tile{
   layer = 1,
   x = 920,
-  y = 592,
+  y = 640,
   width = 16,
   height = 16,
   pattern = 83,
@@ -1950,7 +1951,7 @@ tile{
 tile{
   layer = 1,
   x = 920,
-  y = 584,
+  y = 632,
   width = 16,
   height = 8,
   pattern = 79,
@@ -1959,7 +1960,7 @@ tile{
 tile{
   layer = 1,
   x = 920,
-  y = 608,
+  y = 656,
   width = 16,
   height = 8,
   pattern = 81,
@@ -2832,7 +2833,7 @@ tile{
 tile{
   layer = 1,
   x = 616,
-  y = 592,
+  y = 640,
   width = 48,
   height = 16,
   pattern = 522,
@@ -2868,7 +2869,7 @@ tile{
 tile{
   layer = 1,
   x = 936,
-  y = 592,
+  y = 640,
   width = 48,
   height = 16,
   pattern = 522,
@@ -2913,7 +2914,7 @@ tile{
 tile{
   layer = 1,
   x = 616,
-  y = 584,
+  y = 632,
   width = 48,
   height = 8,
   pattern = 70,
@@ -2922,7 +2923,7 @@ tile{
 tile{
   layer = 1,
   x = 616,
-  y = 608,
+  y = 656,
   width = 48,
   height = 8,
   pattern = 70,
@@ -2985,7 +2986,7 @@ tile{
 tile{
   layer = 1,
   x = 936,
-  y = 584,
+  y = 632,
   width = 48,
   height = 8,
   pattern = 70,
@@ -2994,7 +2995,7 @@ tile{
 tile{
   layer = 1,
   x = 936,
-  y = 608,
+  y = 656,
   width = 48,
   height = 8,
   pattern = 70,
@@ -3200,26 +3201,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 928,
-  y = 536,
-  width = 16,
-  height = 32,
-  pattern = 338,
-}
-
-tile{
-  layer = 1,
-  x = 928,
-  y = 632,
-  width = 16,
-  height = 32,
-  pattern = 338,
-}
-
-tile{
-  layer = 1,
   x = 600,
-  y = 592,
+  y = 640,
   width = 16,
   height = 16,
   pattern = 95,
@@ -3228,16 +3211,7 @@ tile{
 tile{
   layer = 1,
   x = 664,
-  y = 592,
-  width = 16,
-  height = 16,
-  pattern = 94,
-}
-
-tile{
-  layer = 1,
-  x = 664,
-  y = 584,
+  y = 632,
   width = 16,
   height = 8,
   pattern = 513,
@@ -3246,7 +3220,7 @@ tile{
 tile{
   layer = 1,
   x = 664,
-  y = 608,
+  y = 656,
   width = 16,
   height = 8,
   pattern = 514,
@@ -3255,7 +3229,7 @@ tile{
 tile{
   layer = 1,
   x = 600,
-  y = 584,
+  y = 632,
   width = 16,
   height = 8,
   pattern = 511,
@@ -3264,7 +3238,7 @@ tile{
 tile{
   layer = 1,
   x = 600,
-  y = 608,
+  y = 656,
   width = 16,
   height = 8,
   pattern = 512,
@@ -3893,10 +3867,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 488,
-  y = 336,
-  width = 112,
-  height = 48,
+  x = 504,
+  y = 288,
+  width = 96,
+  height = 96,
   pattern = 523,
 }
 
@@ -3905,7 +3879,7 @@ tile{
   x = 504,
   y = 576,
   width = 96,
-  height = 48,
+  height = 96,
   pattern = 523,
 }
 
@@ -3913,7 +3887,7 @@ tile{
   layer = 1,
   x = 456,
   y = 280,
-  width = 48,
+  width = 144,
   height = 8,
   pattern = 179,
 }
@@ -3921,9 +3895,9 @@ tile{
 tile{
   layer = 1,
   x = 592,
-  y = 336,
+  y = 288,
   width = 8,
-  height = 48,
+  height = 96,
   pattern = 238,
 }
 
@@ -3932,7 +3906,7 @@ tile{
   x = 592,
   y = 576,
   width = 8,
-  height = 48,
+  height = 96,
   pattern = 238,
 }
 
@@ -3940,7 +3914,7 @@ tile{
   layer = 1,
   x = 456,
   y = 672,
-  width = 48,
+  width = 144,
   height = 8,
   pattern = 236,
 }
@@ -3990,14 +3964,365 @@ tile{
   pattern = 633,
 }
 
+tile{
+  layer = 1,
+  x = 416,
+  y = 176,
+  width = 16,
+  height = 24,
+  pattern = 363,
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = 325,
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 128,
+  width = 16,
+  height = 24,
+  pattern = 363,
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = 363,
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = 325,
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = 326,
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 88,
+  width = 16,
+  height = 40,
+  pattern = 326,
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 128,
+  width = 72,
+  height = 24,
+  pattern = 324,
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 72,
+  width = 64,
+  height = 24,
+  pattern = 324,
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = 94,
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 584,
+  width = 16,
+  height = 32,
+  pattern = 338,
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 600,
+  width = 240,
+  height = 24,
+  pattern = 363,
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 672,
+  width = 8,
+  height = 8,
+  pattern = 17,
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 576,
+  width = 128,
+  height = 48,
+  pattern = 523,
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = 69,
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = 15,
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 336,
+  width = 128,
+  height = 48,
+  pattern = 523,
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 152,
+  width = 32,
+  height = 32,
+  pattern = 597,
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 88,
+  width = 32,
+  height = 32,
+  pattern = 597,
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = 2,
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 824,
+  width = 32,
+  height = 32,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 808,
+  width = 64,
+  height = 16,
+  pattern = 519,
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 856,
+  width = 64,
+  height = 16,
+  pattern = 519,
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 824,
+  width = 16,
+  height = 32,
+  pattern = 519,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 824,
+  width = 16,
+  height = 32,
+  pattern = 519,
+}
+
+tile{
+  layer = 1,
+  x = 744,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 744,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = 276,
+}
+
 door{
   layer = 1,
   x = 792,
   y = 392,
-  name = "door",
+  name = "BSD",
   direction = 1,
   sprite = "entities/door_boss_key",
-  savegame_variable = "locked_door_E",
+  savegame_variable = "lighthouse_boss_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_boss_key",
   cannot_open_dialog = "_boss_key_required",
@@ -4161,8 +4486,9 @@ chest{
   layer = 1,
   x = 800,
   y = 845,
-  name = "chest_2",
+  name = "MC",
   treasure_name = "map",
+  treasure_savegame_variable = "lighthouse_map_chest",
   sprite = "entities/chest",
 }
 
@@ -4170,10 +4496,10 @@ door{
   layer = 1,
   x = 792,
   y = 264,
-  name = "door_2",
+  name = "KD5",
   direction = 1,
   sprite = "entities/door_small_key",
-  savegame_variable = "locked_door_D",
+  savegame_variable = "lighthouse_key_door_5",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
@@ -4184,25 +4510,14 @@ door{
   layer = 1,
   x = 792,
   y = 200,
-  name = "door_5",
+  name = "KD5_2",
   direction = 3,
   sprite = "entities/door_small_key",
-  savegame_variable = "locked_door_D",
+  savegame_variable = "lighthouse_key_door_5",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-}
-
-door{
-  layer = 1,
-  x = 664,
-  y = 592,
-  name = "door_6",
-  direction = 2,
-  sprite = "entities/door_weak_wall",
-  savegame_variable = "weak_wall_A",
-  opening_method = "explosion",
 }
 
 door{
@@ -4355,6 +4670,50 @@ sensor{
   width = 16,
   height = 16,
   name = "rpf1_sensor_right",
+}
+
+door{
+  layer = 1,
+  x = 472,
+  y = 200,
+  name = "LD3",
+  direction = 3,
+  sprite = "entities/door_normal",
+  savegame_variable = "lighthouse_locked_door_3",
+}
+
+door{
+  layer = 1,
+  x = 472,
+  y = 264,
+  name = "LD3_2",
+  direction = 1,
+  sprite = "entities/door_normal",
+  savegame_variable = "lighthouse_locked_door_3",
+}
+
+switch{
+  layer = 1,
+  x = 384,
+  y = 160,
+  name = "DS3",
+  subtype = "1",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+destructible{
+  layer = 1,
+  x = 392,
+  y = 173,
+  subtype = "pot",
+}
+
+destructible{
+  layer = 1,
+  x = 480,
+  y = 109,
+  subtype = "pot",
 }
 
 tile{
@@ -4864,7 +5223,7 @@ tile{
 tile{
   layer = 2,
   x = 936,
-  y = 584,
+  y = 632,
   width = 8,
   height = 32,
   pattern = 353,
@@ -5170,7 +5529,7 @@ tile{
 tile{
   layer = 2,
   x = 976,
-  y = 584,
+  y = 632,
   width = 8,
   height = 32,
   pattern = 352,
@@ -5332,7 +5691,7 @@ tile{
 tile{
   layer = 2,
   x = 656,
-  y = 584,
+  y = 632,
   width = 8,
   height = 32,
   pattern = 354,
@@ -5341,7 +5700,7 @@ tile{
 tile{
   layer = 2,
   x = 616,
-  y = 584,
+  y = 632,
   width = 8,
   height = 32,
   pattern = 355,

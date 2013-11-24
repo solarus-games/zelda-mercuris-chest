@@ -1,23 +1,31 @@
 local map = ...
 
 function map:on_started()
-  local platform_movement = sol.movement.create("straight")  
-  platform_movement:set_speed(32)
-  platform_movement:set_angle(math.pi)
-  platform_movement:set_ignore_obstacles(true)
-  platform_movement:set_max_distance(48)
-  platform_movement:start(moving_platform)
+  map:set_doors_open("LD6", true)
+  map:set_doors_open("LD7", true)
+  CC:set_enabled(false)
+end
 
-  platform_movement.on_finished = function()
-    local platform_movement = sol.movement.create("straight")
-    platform_movement:set_speed(32)
-    platform_movement:set_angle(platform_movement:get_angle())
-    platform_movement:set_ignore_obstacles(true)
-    platform_movement:set_max_distance(48)
-    platform_movement:start(moving_platform)
+function DS6:on_activated()
+  map:close_doors("LD6")
+end
 
+function DS7:on_activated()
+  map:close_doors("LD7")
+end
 
-    platform_movement:set_angle(platform_movement:get_angle() + math.pi)
-    platform_movement:start(moving_platform)
+function DS8:on_activated()
+  map:open_doors("LD7")
+  map:open_doors("LD8")
+end
+
+-- Compass puzzle
+function compass_enemy_dead(enemy)
+  if map:get_entities_count("compass_enemy") == 0 then
+    sol.audio.play_sound("chest_appears")    
+    CC:set_enabled(true)
   end
+end
+for enemy in map:get_entities("compass_enemy") do
+  enemy.on_dead = compass_enemy_dead
 end
