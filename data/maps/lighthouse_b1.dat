@@ -1596,7 +1596,7 @@ dynamic_tile{
   y = 336,
   width = 32,
   height = 16,
-  name = "star_tile_A2",
+  name = "star_tile_A_2",
   pattern = 594,
   enabled_at_start = true,
 }
@@ -1618,7 +1618,7 @@ dynamic_tile{
   y = 208,
   width = 32,
   height = 16,
-  name = "star_tile_A4",
+  name = "star_tile_B_4",
   pattern = 594,
   enabled_at_start = true,
 }
@@ -1629,7 +1629,7 @@ dynamic_tile{
   y = 144,
   width = 32,
   height = 16,
-  name = "star_tile_A5",
+  name = "star_tile_A_5",
   pattern = 594,
   enabled_at_start = true,
 }
@@ -1640,7 +1640,7 @@ dynamic_tile{
   y = 80,
   width = 16,
   height = 32,
-  name = "star_tile_A6",
+  name = "star_tile_A_6",
   pattern = 594,
   enabled_at_start = true,
 }
@@ -1651,7 +1651,7 @@ dynamic_tile{
   y = 80,
   width = 16,
   height = 32,
-  name = "star_tile_A7",
+  name = "star_tile_A_7",
   pattern = 594,
   enabled_at_start = true,
 }
@@ -1709,7 +1709,7 @@ dynamic_tile{
   y = 336,
   width = 16,
   height = 32,
-  name = "star_tile_B1",
+  name = "star_tile_B_1",
   pattern = 594,
   enabled_at_start = false,
 }
@@ -1731,7 +1731,7 @@ dynamic_tile{
   y = 272,
   width = 32,
   height = 16,
-  name = "star_tile_B3",
+  name = "star_tile_A_3",
   pattern = 594,
   enabled_at_start = false,
 }
@@ -1742,7 +1742,7 @@ dynamic_tile{
   y = 240,
   width = 16,
   height = 32,
-  name = "star_tile_B4",
+  name = "star_tile_A_4",
   pattern = 594,
   enabled_at_start = false,
 }
@@ -1753,7 +1753,7 @@ dynamic_tile{
   y = 176,
   width = 16,
   height = 32,
-  name = "star_tile_B5",
+  name = "star_tile_A_1",
   pattern = 594,
   enabled_at_start = false,
 }
@@ -1764,7 +1764,7 @@ dynamic_tile{
   y = 112,
   width = 32,
   height = 16,
-  name = "star_tile_B6",
+  name = "star_tile_B_6",
   pattern = 594,
   enabled_at_start = false,
 }
@@ -1786,7 +1786,7 @@ dynamic_tile{
   y = 272,
   width = 32,
   height = 32,
-  name = "star_floor_A2",
+  name = "star_floor_A_2",
   pattern = 552,
   enabled_at_start = true,
 }
@@ -1797,7 +1797,7 @@ dynamic_tile{
   y = 176,
   width = 32,
   height = 32,
-  name = "star_floor_A3",
+  name = "star_floor_A_3",
   pattern = 552,
   enabled_at_start = true,
 }
@@ -1808,7 +1808,7 @@ dynamic_tile{
   y = 176,
   width = 32,
   height = 32,
-  name = "star_floor_A4",
+  name = "star_floor_A_4",
   pattern = 552,
   enabled_at_start = true,
 }
@@ -1819,7 +1819,7 @@ dynamic_tile{
   y = 80,
   width = 32,
   height = 32,
-  name = "star_floor_A5",
+  name = "star_floor_A_5",
   pattern = 552,
   enabled_at_start = true,
 }
@@ -1830,7 +1830,7 @@ dynamic_tile{
   y = 336,
   width = 32,
   height = 32,
-  name = "star_floor_B1",
+  name = "star_floor_B_1",
   pattern = 552,
   enabled_at_start = false,
 }
@@ -1841,7 +1841,7 @@ dynamic_tile{
   y = 304,
   width = 32,
   height = 32,
-  name = "star_floor_B2",
+  name = "star_floor_B_2",
   pattern = 552,
   enabled_at_start = false,
 }
@@ -1852,7 +1852,7 @@ dynamic_tile{
   y = 240,
   width = 32,
   height = 32,
-  name = "star_floor_B3",
+  name = "star_floor_B_3",
   pattern = 552,
   enabled_at_start = false,
 }
@@ -1863,7 +1863,7 @@ dynamic_tile{
   y = 240,
   width = 32,
   height = 32,
-  name = "star_floor_B4",
+  name = "star_floor_B_4",
   pattern = 552,
   enabled_at_start = false,
 }
@@ -1874,7 +1874,7 @@ dynamic_tile{
   y = 176,
   width = 32,
   height = 32,
-  name = "star_floor_B5",
+  name = "star_floor_B_5",
   pattern = 552,
   enabled_at_start = false,
 }
@@ -1885,7 +1885,7 @@ dynamic_tile{
   y = 112,
   width = 32,
   height = 32,
-  name = "star_floor_B6",
+  name = "star_floor_B_6",
   pattern = 552,
   enabled_at_start = false,
 }
@@ -1896,7 +1896,7 @@ dynamic_tile{
   y = 80,
   width = 32,
   height = 32,
-  name = "star_floor_B7",
+  name = "star_floor_B_7",
   pattern = 552,
   enabled_at_start = false,
 }
