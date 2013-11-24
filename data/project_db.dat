@@ -56,6 +56,7 @@ sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
+sprite{ id = "entities/door_train_barrier", description = "Door (train barrier)" }
 sprite{ id = "entities/frozen_door", description = "Frozen door" }
 sprite{ id = "npc/ganon", description = "Ganon" }
 sprite{ id = "npc/great_fairy", description = "Great Fairy" }
