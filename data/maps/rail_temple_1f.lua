@@ -173,12 +173,68 @@ local function blocks_puzzle_block_moved()
   end
 end
 
+-- Coordinates of each rail position to check for the presence of blocks
+-- (top-left corner of a 16x16 square).
+local blocks_puzzle_rails_positions_to_check = {
+  {2544, 2352},
+  {2768, 2352},
+  {2400, 2448},
+  {2368, 2320},
+  {2432, 2400},
+  {2368, 2304},
+  {2416, 2400},
+  {2480, 2400},
+  {2512, 2368},
+  {2352, 2368},
+  {2400, 2400},
+  {2352, 2320},
+  {2720, 2304},
+  {2400, 2416},
+  {2512, 2352},
+  {2768, 2384},
+  {2720, 2272},
+  {2768, 2368},
+  {2400, 2432},
+  {2816, 2320},
+  {2448, 2400},
+  {2768, 2400},
+  {2720, 2336},
+  {2352, 2352},
+  {2768, 2336},
+  {2352, 2336},
+  {2768, 2320},
+  {2832, 2304},
+  {2800, 2320},
+  {2560, 2352},
+  {2784, 2320},
+  {2720, 2288},
+  {2720, 2352},
+  {2528, 2352},
+  {2464, 2400},
+  {2704, 2352},
+}
+
 -- Returns whether the specified block of the puzzle is on the railway.
 -- If none of then is, then the puzzle is solved.
 local function blocks_puzzle_block_is_on_rail(block)
 
-  -- TODO
-  return true
+  local overlaps_rail = false
+
+  -- This code assumes that blocks have a size of 16x16.
+  local block_x, block_y = block:get_position()
+  local origin_x, origin_y = block:get_origin()
+  local x1, y1 = block_x - origin_x, block_y - origin_y
+  -- Test each rail position for the presence of this block.
+  for _, coords in ipairs(blocks_puzzle_rails_positions_to_check) do
+    local x2, y2 = coords[1], coords[2]
+    local overlaps_x = x1 - 16 < x2 and x2 < x1 + 16
+    local overlaps_y = y1 - 16 < y2 and y2 < y1 + 16
+    if overlaps_x and overlaps_y then
+      return true
+    end
+  end
+
+  return false
 end
 
 for block in map:get_entities("blocks_puzzle_block") do
@@ -247,4 +303,14 @@ function map:on_key_pressed(key)
   end
 end
 --]]
+
+function map:on_key_pressed(key)
+
+  if key == "f8" then
+    for npc in map:get_entities("tmp_") do
+      local x, y = npc:get_position()
+      print("{" .. (x - 8) .. ", " .. (y - 13) .. "}")
+    end
+  end
+end
 

@@ -37,6 +37,7 @@ tileset{ id = "intro", description = "Intro" }
 sprite{ id = "npc/agahnim", description = "Agahnim" }
 sprite{ id = "npc/billy", description = "Billy" }
 sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
+sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/gray_block", description = "Block (gray)" }
 sprite{ id = "entities/bone_key_door", description = "Bone key door" }
@@ -282,8 +283,6 @@ sound{ id = "enemy_awake", description = "enemy_awake" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "explosion", description = "explosion" }
-sound{ id = "external_stairs_down", description = "external_stairs_down" }
-sound{ id = "external_stairs_up", description = "external_stairs_up" }
 sound{ id = "heart_container", description = "heart_container" }
 sound{ id = "heart", description = "heart" }
 sound{ id = "hero_dying", description = "hero_dying" }
@@ -294,8 +293,6 @@ sound{ id = "hero_pushes", description = "hero_pushes" }
 sound{ id = "hero_seen", description = "hero_seen" }
 sound{ id = "hookshot", description = "hookshot" }
 sound{ id = "ice", description = "ice" }
-sound{ id = "internal_stairs_down", description = "internal_stairs_down" }
-sound{ id = "internal_stairs_up", description = "internal_stairs_up" }
 sound{ id = "intro", description = "intro" }
 sound{ id = "item_in_water", description = "item_in_water" }
 sound{ id = "jump", description = "jump" }
