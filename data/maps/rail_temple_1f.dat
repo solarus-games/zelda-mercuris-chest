@@ -43024,6 +43024,24 @@ stairs{
   subtype = "1",
 }
 
+door{
+  layer = 1,
+  x = 776,
+  y = 2592,
+  name = "room_g_door",
+  direction = 0,
+  sprite = "entities/door_normal",
+}
+
+door{
+  layer = 1,
+  x = 840,
+  y = 2592,
+  name = "room_g_door_2",
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
 tile{
   layer = 2,
   x = 1200,
