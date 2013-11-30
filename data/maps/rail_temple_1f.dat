@@ -43042,6 +43042,16 @@ door{
   sprite = "entities/door_normal",
 }
 
+door{
+  layer = 1,
+  x = 824,
+  y = 2216,
+  name = "train_barrier_b_door",
+  direction = 1,
+  sprite = "entities/door_train_barrier",
+  savegame_variable = "rail_temple_train_barrier_b",
+}
+
 tile{
   layer = 2,
   x = 1200,
