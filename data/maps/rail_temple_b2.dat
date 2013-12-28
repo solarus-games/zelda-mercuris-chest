@@ -4008,7 +4008,9 @@ destructible{
   layer = 1,
   x = 176,
   y = 597,
-  subtype = "pot",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
 }
 
 destination{
