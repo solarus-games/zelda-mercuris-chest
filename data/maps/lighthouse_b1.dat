@@ -1670,20 +1670,20 @@ destructible{
   layer = 1,
   x = 568,
   y = 77,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 376,
   y = 413,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
@@ -2071,110 +2071,110 @@ destructible{
   layer = 1,
   x = 584,
   y = 77,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 584,
   y = 189,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 568,
   y = 189,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 376,
   y = 189,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 392,
   y = 189,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 376,
   y = 77,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 392,
   y = 77,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 392,
   y = 413,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 408,
   y = 413,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 424,
   y = 413,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 440,
   y = 413,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 wall{

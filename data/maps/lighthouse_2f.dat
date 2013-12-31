@@ -101,15 +101,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
-  y = 424,
-  width = 48,
-  height = 32,
-  pattern = 563,
-}
-
-tile{
-  layer = 0,
   x = 72,
   y = 528,
   width = 64,
@@ -142,15 +133,6 @@ tile{
   width = 24,
   height = 112,
   pattern = 233,
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 536,
-  width = 112,
-  height = 24,
-  pattern = 234,
 }
 
 tile{
@@ -403,24 +385,6 @@ tile{
   width = 16,
   height = 16,
   pattern = 275,
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 456,
-  width = 16,
-  height = 48,
-  pattern = 563,
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 504,
-  width = 48,
-  height = 32,
-  pattern = 563,
 }
 
 tile{
@@ -713,56 +677,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
-  y = 424,
-  width = 48,
-  height = 8,
-  pattern = 247,
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 448,
-  width = 16,
-  height = 8,
-  pattern = 249,
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 448,
-  width = 16,
-  height = 8,
-  pattern = 249,
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 504,
-  width = 16,
-  height = 8,
-  pattern = 247,
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 504,
-  width = 16,
-  height = 8,
-  pattern = 247,
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 528,
-  width = 48,
-  height = 8,
-  pattern = 249,
+  x = 152,
+  y = 536,
+  width = 112,
+  height = 24,
+  pattern = 234,
 }
 
 destructible{
@@ -770,11 +689,11 @@ destructible{
   x = 1120,
   y = 653,
   name = "SK1",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "lighthouse_skull_key_1",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "small_key",
-  treasure_savegame_variable = "lighthouse_skull_key_1",
 }
 
 destructible{
@@ -829,42 +748,6 @@ stairs{
   name = "stairs_7",
   direction = 2,
   subtype = "4",
-}
-
-teletransporter{
-  layer = 0,
-  x = 136,
-  y = 424,
-  width = 48,
-  height = 32,
-  name = "teletransporter_2",
-  transition = 1,
-  destination_map = "lighthouse_1f",
-  destination = "_same",
-}
-
-teletransporter{
-  layer = 0,
-  x = 152,
-  y = 456,
-  width = 16,
-  height = 48,
-  name = "teletransporter_4",
-  transition = 1,
-  destination_map = "lighthouse_1f",
-  destination = "_same",
-}
-
-teletransporter{
-  layer = 0,
-  x = 136,
-  y = 504,
-  width = 48,
-  height = 32,
-  name = "teletransporter_3",
-  transition = 1,
-  destination_map = "lighthouse_1f",
-  destination = "_same",
 }
 
 tile{
@@ -5817,40 +5700,40 @@ destructible{
   layer = 1,
   x = 696,
   y = 301,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 696,
   y = 429,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 904,
   y = 429,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 904,
   y = 301,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destination{
@@ -5933,30 +5816,30 @@ destructible{
   layer = 1,
   x = 760,
   y = 197,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 744,
   y = 197,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 728,
   y = 197,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 chest{
@@ -5982,30 +5865,30 @@ destructible{
   layer = 1,
   x = 1016,
   y = 301,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1016,
   y = 429,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1224,
   y = 429,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 chest{

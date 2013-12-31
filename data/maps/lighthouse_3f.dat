@@ -4332,126 +4332,126 @@ destructible{
   layer = 1,
   x = 1016,
   y = 541,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1016,
   y = 557,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1016,
   y = 573,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1224,
   y = 541,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1224,
   y = 557,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 1224,
   y = 573,
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
   treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
 }
 
 destructible{
   layer = 1,
   x = 1032,
   y = 541,
+  treasure_name = "bomb",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "bomb",
-  treasure_variant = 2,
 }
 
 destructible{
   layer = 1,
   x = 1032,
   y = 557,
+  treasure_name = "bomb",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "bomb",
-  treasure_variant = 2,
 }
 
 destructible{
   layer = 1,
   x = 1032,
   y = 573,
+  treasure_name = "bomb",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "bomb",
-  treasure_variant = 2,
 }
 
 destructible{
   layer = 1,
   x = 1208,
   y = 541,
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "arrow",
-  treasure_variant = 2,
 }
 
 destructible{
   layer = 1,
   x = 1208,
   y = 557,
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "arrow",
-  treasure_variant = 2,
 }
 
 destructible{
   layer = 1,
   x = 1208,
   y = 573,
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "arrow",
-  treasure_variant = 2,
 }
 
 wall{

@@ -3635,3 +3635,43 @@ tile_pattern{
   height = 48,
 }
 
+tile_pattern{
+  id = 634,
+  ground = "traversable",
+  default_layer = 0,
+  x = 208,
+  y = 304,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = 635,
+  ground = "traversable",
+  default_layer = 0,
+  x = 208,
+  y = 320,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = 636,
+  ground = "traversable",
+  default_layer = 0,
+  x = 208,
+  y = 336,
+  width = 16,
+  height = 32,
+}
+
+tile_pattern{
+  id = 637,
+  ground = "traversable",
+  default_layer = 0,
+  x = 224,
+  y = 336,
+  width = 16,
+  height = 32,
+}
+
