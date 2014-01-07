@@ -1554,7 +1554,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_1f_A",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_1f",
   destination = "from_b1_a",
 }

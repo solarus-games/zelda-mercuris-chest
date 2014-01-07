@@ -4604,7 +4604,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_2f_e",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_2f",
   destination = "from_3f_e",
 }
@@ -4625,7 +4625,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_4f",
   destination = "from_3f_g",
 }
@@ -4646,7 +4646,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_2f_f",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_2f",
   destination = "from_3f_f",
 }

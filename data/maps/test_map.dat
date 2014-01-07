@@ -541,7 +541,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter",
-  transition = 1,
+  transition = "fade",
   destination_map = "outside_a7",
   destination = "test_destination",
 }
@@ -553,7 +553,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_1f",
   destination = "tmp",
 }
@@ -573,7 +573,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_3",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_1f",
   destination = "main_entrance",
 }

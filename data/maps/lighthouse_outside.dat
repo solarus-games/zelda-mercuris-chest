@@ -900,7 +900,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_inside_2f_south",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_outside",
   destination = "from_inside_2f_south",
 }
@@ -920,7 +920,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_inside_2f_north",
-  transition = 1,
+  transition = "fade",
   destination_map = "lighthouse_2f",
   destination = "from_outside_2f_north",
 }

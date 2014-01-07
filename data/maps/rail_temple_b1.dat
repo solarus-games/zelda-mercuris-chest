@@ -2713,7 +2713,7 @@ teletransporter{
   y = 2216,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_1f",
   destination = "from_b1_b",
 }
@@ -2724,7 +2724,7 @@ teletransporter{
   y = 2216,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_1f",
   destination = "from_b1_c",
 }
@@ -2751,7 +2751,7 @@ teletransporter{
   y = 1568,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_b2",
   destination = "from_b1_b",
 }
@@ -10841,7 +10841,7 @@ teletransporter{
   y = 1656,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_1f",
   destination = "from_b1_a",
 }
@@ -10852,7 +10852,7 @@ teletransporter{
   y = 1656,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_b2",
   destination = "from_b1_a",
 }
@@ -10863,7 +10863,7 @@ teletransporter{
   y = 264,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_1f",
   destination = "from_b1_d",
 }

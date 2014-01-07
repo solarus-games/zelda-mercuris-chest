@@ -1383,7 +1383,7 @@ teletransporter{
   y = 48,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_b2_b",
 }
@@ -4027,7 +4027,7 @@ teletransporter{
   y = 24,
   width = 16,
   height = 16,
-  transition = 1,
+  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_b2_a",
 }
