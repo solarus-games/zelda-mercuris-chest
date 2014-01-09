@@ -459,3 +459,4 @@ enemy{ id = "fire_bat", description = "Fire bat" }
 
 language{ id = "fr", description = "Français" }
 
+sound{ id = "running_obstacle", description = "running_obstacle" }
