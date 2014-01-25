@@ -40964,30 +40964,30 @@ destructible{
   layer = 1,
   x = 2432,
   y = 3397,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 2448,
   y = 3397,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 2448,
   y = 3189,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 enemy{
@@ -42528,20 +42528,20 @@ destructible{
   layer = 1,
   x = 2704,
   y = 3637,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
   layer = 1,
   x = 2720,
   y = 3637,
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "heart",
 }
 
 destructible{
@@ -42756,40 +42756,40 @@ destructible{
   layer = 1,
   x = 1248,
   y = 2565,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1264,
   y = 2565,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1296,
   y = 2565,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1312,
   y = 2565,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 switch{
@@ -42806,50 +42806,50 @@ destructible{
   layer = 1,
   x = 1248,
   y = 2645,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1264,
   y = 2645,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1280,
   y = 2645,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1296,
   y = 2645,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
   layer = 1,
   x = 1312,
   y = 2645,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
 }
 
 destructible{
@@ -42868,7 +42868,6 @@ teletransporter{
   y = 2528,
   width = 32,
   height = 32,
-  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_1f_hole",
 }
@@ -43002,7 +43001,6 @@ teletransporter{
   y = 3448,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_1f_b",
 }
@@ -43013,7 +43011,6 @@ teletransporter{
   y = 3448,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_1f_c",
 }
@@ -43024,7 +43021,6 @@ teletransporter{
   y = 2840,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_1f_a",
 }
@@ -43035,7 +43031,6 @@ teletransporter{
   y = 1448,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple_b1",
   destination = "from_1f_d",
 }
@@ -43098,6 +43093,17 @@ door{
   direction = 1,
   sprite = "entities/door_train_barrier",
   savegame_variable = "rail_temple_train_barrier_b",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2568,
+  y = 3453,
+  width = 16,
+  height = 16,
+  name = "minecart",
+  direction = 3,
+  model = "minecart",
 }
 
 tile{

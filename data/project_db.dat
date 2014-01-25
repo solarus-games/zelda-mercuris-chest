@@ -117,7 +117,6 @@ sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
-sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
@@ -344,6 +343,7 @@ sound{ id = "warp", description = "warp" }
 sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
+sound{ id = "running_obstacle", description = "running_obstacle" }
 
 item{ id = "random", description = "(Random)" }
 item{ id = "feather", description = "Feather" }
@@ -456,7 +456,7 @@ enemy{ id = "poutroxor", description = "Poutroxor" }
 enemy{ id = "billy", description = "Billy" }
 enemy{ id = "fire_bat", description = "Fire bat" }
 
+entity{ id = "minecart", description = "Minecart" }
 
 language{ id = "fr", description = "Français" }
 
-sound{ id = "running_obstacle", description = "running_obstacle" }
