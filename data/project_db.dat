@@ -223,6 +223,7 @@ sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
 sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
+sprite{ id = "entities/minecart", description = "Minecart" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }
@@ -457,6 +458,7 @@ enemy{ id = "billy", description = "Billy" }
 enemy{ id = "fire_bat", description = "Fire bat" }
 
 entity{ id = "minecart", description = "Minecart" }
+entity{ id = "minecart_turn", description = "Minecart turn" }
 
 language{ id = "fr", description = "Français" }
 
