@@ -8,3 +8,9 @@ install_manifest.txt
 cmake_install.cmake
 *.luac
 data.solarus
+/zelda_mercuris_chest
+error.txt
+stdout.txt
+stderr.txt
+work/unversioned
+
