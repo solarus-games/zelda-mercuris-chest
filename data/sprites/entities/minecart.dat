@@ -1,0 +1,37 @@
+animation {
+  name = "stopped",
+  src_image = "entities/minecart.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation {
+  name = "breaking",
+  src_image = "entities/minecart.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
+  },
+}
+animation {
+  name = "driving",
+  src_image = "entities/minecart.png",
+  frame_delay = 150,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+  },
+}
+animation {
+  name = "turning_over",
+  src_image = "entities/minecart.png",
+  frame_delay = 150,
+  directions = {
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
