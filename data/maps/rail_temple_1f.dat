@@ -42451,8 +42451,8 @@ destructible{
 
 enemy{
   layer = 1,
-  x = 2368,
-  y = 3253,
+  x = 2384,
+  y = 3277,
   direction = 3,
   breed = "blue_hardhat_beetle",
   treasure_name = "random",
@@ -42989,8 +42989,18 @@ custom_entity{
   width = 16,
   height = 16,
   name = "minecart",
-  direction = 3,
+  direction = 1,
   model = "minecart",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2568,
+  y = 3325,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
 }
 
 tile{

@@ -20,6 +20,7 @@ animation {
   name = "driving",
   src_image = "entities/minecart.png",
   frame_delay = 150,
+  frame_to_loop_on = 0,
   directions = {
     { x = 0, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
     { x = 0, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
