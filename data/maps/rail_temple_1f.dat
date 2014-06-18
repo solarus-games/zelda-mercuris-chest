@@ -4383,6 +4383,66 @@ tile{
   pattern = 666,
 }
 
+custom_entity{
+  layer = 0,
+  x = 2376,
+  y = 2333,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2360,
+  y = 2333,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2408,
+  y = 2413,
+  width = 16,
+  height = 16,
+  direction = 3,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2520,
+  y = 2413,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2728,
+  y = 2365,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2776,
+  y = 2333,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "minecart_turn",
+}
+
 wall{
   layer = 0,
   x = 192,
@@ -5050,18 +5110,6 @@ block{
 block{
   layer = 0,
   x = 2728,
-  y = 2365,
-  name = "blocks_puzzle_block_32",
-  direction = -1,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  maximum_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 2728,
   y = 2381,
   name = "blocks_puzzle_block_33",
   direction = -1,
@@ -5222,6 +5270,158 @@ sensor{
   width = 16,
   height = 16,
   name = "common_to_layer_1_sensor_4",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2776,
+  y = 2429,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2856,
+  y = 2429,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 1549,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 1469,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 1469,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 1325,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 1325,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2840,
+  y = 2333,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2840,
+  y = 2269,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2728,
+  y = 2269,
+  width = 16,
+  height = 16,
+  direction = 3,
+  model = "minecart_turn",
+}
+
+block{
+  layer = 0,
+  x = 2728,
+  y = 2365,
+  name = "blocks_puzzle_block_32",
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 2520,
+  y = 2365,
+  width = 16,
+  height = 16,
+  direction = 3,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2408,
+  y = 2509,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2360,
+  y = 2509,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 0,
+  x = 744,
+  y = 1549,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
 }
 
 tile{
@@ -43230,6 +43430,136 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 592,
+  y = 1653,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 552,
+  y = 1653,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 592,
+  y = 1397,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 496,
+  y = 1397,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 496,
+  y = 1317,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn_diagonal",
+}
+
+custom_entity{
+  layer = 1,
+  x = 368,
+  y = 1189,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 256,
+  y = 1189,
+  width = 16,
+  height = 16,
+  direction = 3,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2696,
+  y = 3485,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2856,
+  y = 3325,
+  width = 16,
+  height = 16,
+  direction = 1,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2696,
+  y = 3325,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2632,
+  y = 3485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2376,
+  y = 1101,
+  width = 16,
+  height = 16,
+  direction = 2,
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1101,
+  width = 16,
+  height = 16,
+  direction = 3,
   model = "minecart_turn",
 }
 
