@@ -5,6 +5,10 @@ local map = minecart:get_map()
 local game = minecart:get_game()
 local hero = map:get_hero()
 
+-- Whether the hero is facing the minecart stopped.
+local hero_facing_minecart = false
+local action_command_minecart = false
+
 minecart:create_sprite("entities/minecart")
 
 -- Don't let the hero traverse the minecart.
@@ -52,14 +56,27 @@ minecart:add_collision_test("facing", function(minecart, other)
 
   if other:get_type() == "hero" then
 
+    hero_facing_minecart = true
     if minecart:get_movement() == nil
+      and game:get_command_effect("action") == nil
       and game:get_custom_command_effect("action") == nil then
-      -- TODO also remove the action icon when leaving.
-      -- game:set_custom_command_effect("action", "action")
+      action_command_minecart = true
+      game:set_custom_command_effect("action", "action")
     end
   end
 
 end)
+
+-- Remove the action icon when stopping facing the minecart.
+function minecart:on_update()
+
+  if action_command_minecart and not hero_facing_minecart then
+    game:set_custom_command_effect("action", nil)
+    action_command_minecart = false
+  end
+
+  hero_facing = false
+end
 
 -- Called when the hero presses the action command near the minecart.
 function minecart:on_interaction()
@@ -76,6 +93,10 @@ function minecart:go()
   hero:set_position(minecart:get_position())
   hero:set_animation("minecart_driving")
   minecart:get_sprite():set_animation("driving")
+
+  game:set_custom_command_effect("action", nil)
+  action_command_minecart = false
+  hero_facing_minecart = false
 
   -- Create a movement on the hero.
   local direction4 = minecart:get_direction()

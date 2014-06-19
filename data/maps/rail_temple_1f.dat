@@ -43563,6 +43563,50 @@ custom_entity{
   model = "minecart_turn",
 }
 
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1933,
+  width = 16,
+  height = 16,
+  name = "railway_points_q_off",
+  direction = 2,
+  model = "minecart_turn",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 592,
+  y = 1920,
+  width = 16,
+  height = 16,
+  name = "railway_points_q_off_tile",
+  pattern = 626,
+  enabled_at_start = true,
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1933,
+  width = 16,
+  height = 16,
+  name = "railway_points_q_on",
+  direction = 0,
+  model = "minecart_turn",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 592,
+  y = 1920,
+  width = 16,
+  height = 16,
+  name = "railway_points_q_on_tile",
+  pattern = 625,
+  enabled_at_start = true,
+}
+
 tile{
   layer = 2,
   x = 1200,
