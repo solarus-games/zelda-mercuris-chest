@@ -2222,7 +2222,8 @@ switch{
   x = 208,
   y = 336,
   name = "star_sensor_A",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2232,7 +2233,8 @@ switch{
   x = 208,
   y = 352,
   name = "star_sensor_A_2",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2242,7 +2244,8 @@ switch{
   x = 80,
   y = 336,
   name = "star_sensor_A_3",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2252,7 +2255,8 @@ switch{
   x = 96,
   y = 336,
   name = "star_sensor_A_4",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2262,7 +2266,8 @@ switch{
   x = 80,
   y = 272,
   name = "star_sensor_A_5",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -2272,7 +2277,8 @@ switch{
   x = 96,
   y = 272,
   name = "star_sensor_A_6",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -2282,7 +2288,8 @@ switch{
   x = 208,
   y = 344,
   name = "star_sensor_A_7",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2292,7 +2299,8 @@ switch{
   x = 88,
   y = 336,
   name = "star_sensor_A_8",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2302,7 +2310,8 @@ switch{
   x = 88,
   y = 272,
   name = "star_sensor_A_9",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2312,7 +2321,8 @@ switch{
   x = 176,
   y = 240,
   name = "star_sensor_A_10",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2322,7 +2332,8 @@ switch{
   x = 176,
   y = 256,
   name = "star_sensor_A_11",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2332,7 +2343,8 @@ switch{
   x = 176,
   y = 248,
   name = "star_sensor_A_12",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2342,7 +2354,8 @@ switch{
   x = 128,
   y = 176,
   name = "star_sensor_A_13",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2352,7 +2365,8 @@ switch{
   x = 128,
   y = 192,
   name = "star_sensor_A_14",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2362,7 +2376,8 @@ switch{
   x = 128,
   y = 184,
   name = "star_sensor_A_15",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2372,7 +2387,8 @@ switch{
   x = 144,
   y = 144,
   name = "star_sensor_A_16",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2382,7 +2398,8 @@ switch{
   x = 152,
   y = 144,
   name = "star_sensor_A_17",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2392,7 +2409,8 @@ switch{
   x = 160,
   y = 144,
   name = "star_sensor_A_18",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2402,7 +2420,8 @@ switch{
   x = 160,
   y = 80,
   name = "star_sensor_A_19",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2412,7 +2431,8 @@ switch{
   x = 160,
   y = 88,
   name = "star_sensor_A_20",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2422,7 +2442,8 @@ switch{
   x = 160,
   y = 96,
   name = "star_sensor_A_21",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2432,7 +2453,8 @@ switch{
   x = 208,
   y = 80,
   name = "star_sensor_A_22",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2442,7 +2464,8 @@ switch{
   x = 208,
   y = 88,
   name = "star_sensor_A_23",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2452,7 +2475,8 @@ switch{
   x = 208,
   y = 96,
   name = "star_sensor_A_24",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2462,7 +2486,8 @@ switch{
   x = 144,
   y = 336,
   name = "star_sensor_B",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2472,7 +2497,8 @@ switch{
   x = 144,
   y = 344,
   name = "star_sensor_B_2",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2482,7 +2508,8 @@ switch{
   x = 144,
   y = 352,
   name = "star_sensor_B_3",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2492,7 +2519,8 @@ switch{
   x = 176,
   y = 304,
   name = "star_sensor_B_4",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2502,7 +2530,8 @@ switch{
   x = 184,
   y = 304,
   name = "star_sensor_B_5",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2512,7 +2541,8 @@ switch{
   x = 192,
   y = 304,
   name = "star_sensor_B_6",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2522,7 +2552,8 @@ switch{
   x = 80,
   y = 208,
   name = "star_sensor_B_10",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2532,7 +2563,8 @@ switch{
   x = 88,
   y = 208,
   name = "star_sensor_B_11",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2542,7 +2574,8 @@ switch{
   x = 96,
   y = 208,
   name = "star_sensor_B_12",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2552,7 +2585,8 @@ switch{
   x = 112,
   y = 112,
   name = "star_sensor_B_13",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2562,7 +2596,8 @@ switch{
   x = 120,
   y = 112,
   name = "star_sensor_B_14",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2572,7 +2607,8 @@ switch{
   x = 128,
   y = 112,
   name = "star_sensor_B_15",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2582,7 +2618,8 @@ switch{
   x = 128,
   y = 256,
   name = "star_sensor_A_25",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2592,7 +2629,8 @@ switch{
   x = 128,
   y = 240,
   name = "star_sensor_A_26",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -2602,7 +2640,8 @@ switch{
   x = 128,
   y = 248,
   name = "star_sensor_A_27",
-  subtype = "0",
+  subtype = "walkable",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }

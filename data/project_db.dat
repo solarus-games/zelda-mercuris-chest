@@ -463,3 +463,4 @@ entity{ id = "minecart_turn_diagonal", description = "Minecart turn (diagonal)" 
 
 language{ id = "fr", description = "Français" }
 
+sprite{ id = "entities/solid_switch", description = "Solid switch" }

@@ -5691,7 +5691,9 @@ switch{
   x = 688,
   y = 416,
   name = "switch",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -5807,7 +5809,9 @@ switch{
   x = 752,
   y = 184,
   name = "switch_2",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -5906,7 +5910,9 @@ switch{
   x = 792,
   y = 816,
   name = "DS8",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
