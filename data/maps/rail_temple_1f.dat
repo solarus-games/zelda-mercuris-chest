@@ -40901,14 +40901,6 @@ npc{
   subtype = "0",
 }
 
-npc{
-  layer = 1,
-  x = 1768,
-  y = 1141,
-  direction = 3,
-  subtype = "0",
-}
-
 chest{
   layer = 1,
   x = 2312,
@@ -43615,6 +43607,29 @@ dynamic_tile{
   name = "railway_points_q_on_tile",
   pattern = 625,
   enabled_at_start = true,
+}
+
+switch{
+  layer = 1,
+  x = 1760,
+  y = 1128,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  layer = 1,
+  x = 2608,
+  y = 3424,
+  name = "lever_1",
+  subtype = "solid",
+  sprite = "entities/lever",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
 tile{

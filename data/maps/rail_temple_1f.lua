@@ -302,7 +302,6 @@ function map:on_key_pressed(key)
     end
   end
 end
---]]
 
 function map:on_key_pressed(key)
 
@@ -312,5 +311,23 @@ function map:on_key_pressed(key)
       print("{" .. (x - 8) .. ", " .. (y - 13) .. "}")
     end
   end
+end
+--]]
+
+-- Make lever switches re-activable.
+local function lever_on_activated(lever)
+
+  local sprite = lever:get_sprite()
+  local direction = sprite:get_direction()
+  sprite:set_direction(1 - direction)  -- Direction may be 0 or 1.
+
+  -- Allow to activate it again.
+  sol.timer.start(lever, 1000, function()
+    lever:set_activated(false)  
+  end)
+end
+
+for lever in map:get_entities("lever_") do
+  lever.on_activated = lever_on_activated
 end
 

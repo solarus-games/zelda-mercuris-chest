@@ -1,0 +1,16 @@
+animation {
+  name = "inactivated",
+  src_image = "entities/lever.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation {
+  name = "activated",
+  src_image = "entities/lever.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
