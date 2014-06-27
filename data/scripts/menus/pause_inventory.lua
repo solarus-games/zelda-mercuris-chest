@@ -1,4 +1,4 @@
-local submenu = require("menus/pause_submenu")
+local submenu = require("scripts/menus/pause_submenu")
 local inventory_submenu = submenu:new()
 
 local item_names = {
@@ -87,10 +87,8 @@ function inventory_submenu:on_finished()
     self:finish_assigning_item()
   end
 
-  if self.game.hud ~= nil then
-    self.game.hud.item_icon_1.surface:set_opacity(255)
-    self.game.hud.item_icon_2.surface:set_opacity(255)
-  end
+  self.game:get_hud():set_item_icon_opacity(1, 255)
+  self.game:get_hud():set_item_icon_opacity(2, 255)
 end
 
 function inventory_submenu:set_cursor_position(row, column)
@@ -117,8 +115,8 @@ function inventory_submenu:set_cursor_position(row, column)
     self:set_caption(nil)
     self.game:set_custom_command_effect("action", nil)
   end
-  self.game.hud.item_icon_1.surface:set_opacity(item_icon_opacity)
-  self.game.hud.item_icon_2.surface:set_opacity(item_icon_opacity)
+  self.game:get_hud():set_item_icon_opacity(1, item_icon_opacity)
+  self.game:get_hud():set_item_icon_opacity(2, item_icon_opacity)
 end
 
 function inventory_submenu:get_selected_index()

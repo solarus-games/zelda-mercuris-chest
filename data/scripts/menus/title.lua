@@ -180,13 +180,6 @@ function title_screen:on_key_pressed(key)
 
   elseif key == "space" or key == "return" then
     handled = self:try_finish_title()
-
---  Debug.
-  elseif sol.main.is_debug_enabled() then
-    if key == "left shift" or key == "right shift" then
-      self:finish_title()
-      handled = true
-    end
   end
 end
 

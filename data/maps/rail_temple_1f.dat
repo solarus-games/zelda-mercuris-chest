@@ -4722,7 +4722,7 @@ sensor{
   y = 2973,
   width = 16,
   height = 16,
-  name = "common_to_layer_1_sensor",
+  name = "layer_up_sensor",
 }
 
 door{
@@ -5251,7 +5251,7 @@ sensor{
   y = 1837,
   width = 16,
   height = 16,
-  name = "common_to_layer_1_sensor_2",
+  name = "layer_up_sensor_2",
 }
 
 sensor{
@@ -5260,7 +5260,7 @@ sensor{
   y = 1245,
   width = 16,
   height = 16,
-  name = "common_to_layer_1_sensor_3",
+  name = "layer_up_sensor_3",
 }
 
 sensor{
@@ -5269,7 +5269,7 @@ sensor{
   y = 1229,
   width = 16,
   height = 16,
-  name = "common_to_layer_1_sensor_4",
+  name = "layer_up_sensor_4",
 }
 
 custom_entity{
@@ -42375,7 +42375,7 @@ sensor{
   y = 2965,
   width = 16,
   height = 16,
-  name = "common_to_layer_0_sensor",
+  name = "layer_down_sensor",
 }
 
 door{
@@ -42552,7 +42552,7 @@ sensor{
   y = 1845,
   width = 16,
   height = 16,
-  name = "common_to_layer_0_sensor_2",
+  name = "layer_down_sensor_2",
 }
 
 wall{
@@ -42976,7 +42976,7 @@ sensor{
   y = 1253,
   width = 16,
   height = 16,
-  name = "common_to_layer_0_sensor_3",
+  name = "layer_down_sensor_3",
 }
 
 wall{
@@ -43009,7 +43009,7 @@ sensor{
   y = 1237,
   width = 16,
   height = 16,
-  name = "common_to_layer_0_sensor_4",
+  name = "layer_down_sensor_4",
 }
 
 wall{

@@ -1,7 +1,7 @@
 -- Animated Solarus logo by Maxs.
 
 -- Usage:
--- local logo = require("menus/solarus_logo")
+-- local logo = require("scripts/menus/solarus_logo")
 -- sol.menu.start(logo)
 local solarus_logo_menu = {}
 

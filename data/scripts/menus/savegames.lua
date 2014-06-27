@@ -2,6 +2,8 @@
 
 local savegame_menu = {}
 
+local game_manager = require("scripts/game_manager")
+
 function savegame_menu:on_started()
 
   -- Create all graphic objects.
@@ -234,7 +236,7 @@ function savegame_menu:read_savegames()
   for i = 1, 3 do
     local slot = {}
     slot.file_name = "save" .. i .. ".dat"
-    slot.savegame = sol.game.load(slot.file_name)
+    slot.savegame = game_manager:create(slot.file_name)
     slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
 
     slot.player_name_text = sol.text_surface.create()
@@ -243,7 +245,7 @@ function savegame_menu:read_savegames()
       slot.player_name_text:set_text(slot.savegame:get_value("player_name"))
 
       -- Hearts.
-      local hearts_class = require("hud/hearts")
+      local hearts_class = require("scripts/hud/hearts")
       slot.hearts_view = hearts_class:new(slot.savegame)
     else
       -- New file.
@@ -973,23 +975,10 @@ function savegame_menu:validate_player_name()
   sol.audio.play_sound("ok")
 
   local savegame = self.slots[self.cursor_position].savegame
-  self:set_initial_values(savegame)
+  savegame:set_value("player_name", self.player_name)
   savegame:save()
   self:read_savegames()
   return true
-end
-
-function savegame_menu:set_initial_values(savegame)
-
-  savegame:set_starting_location("test_map", "initial_position")
-  savegame:set_value("player_name", self.player_name)
-
-  -- Initially give 3 hearts, the first tunic and the first wallet.
-  savegame:set_max_life(12)
-  savegame:set_life(savegame:get_max_life())
-  savegame:get_item("tunic"):set_variant(1)
-  savegame:set_ability("tunic", 1)
-  savegame:get_item("rupee_bag"):set_variant(1)
 end
 
 return savegame_menu
