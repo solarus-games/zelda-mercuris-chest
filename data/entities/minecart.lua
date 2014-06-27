@@ -75,7 +75,7 @@ function minecart:on_update()
     action_command_minecart = false
   end
 
-  hero_facing = false
+  hero_facing_minecart = false
 end
 
 -- Called when the hero presses the action command near the minecart.
