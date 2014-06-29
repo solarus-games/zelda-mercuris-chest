@@ -69,7 +69,8 @@ function game_manager:create(file)
     hud:on_paused()
 
     -- Start the pause menu.
-    sol.menu.start(game, pause_menu)
+    local to_front = false  -- Show it behind the HUD.
+    sol.menu.start(game, pause_menu, false)
   end
 
   -- Function called when the game is paused.

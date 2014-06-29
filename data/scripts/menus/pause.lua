@@ -15,13 +15,13 @@ local pause_manager = {}
 function pause_manager:create(game)
 
   local pause_menu = {}
-  local pause_submenus
+  game.pause_menu = pause_menu
 
   function pause_menu:on_started()
 
     -- Define the available submenus.
 
-    pause_submenus = {  -- Array of submenus (inventory, map, etc.).
+    game.pause_submenus = {  -- Array of submenus (inventory, map, etc.).
       inventory_builder:new(game),
       map_builder:new(game),
       quest_status_builder:new(game),
@@ -31,7 +31,7 @@ function pause_manager:create(game)
     -- Select the submenu that was saved if any.
     local submenu_index = game:get_value("pause_last_submenu") or 1
     if submenu_index <= 0
-        or submenu_index > #pause_submenus then
+        or submenu_index > #game.pause_submenus then
       submenu_index = 1
     end
     game:set_value("pause_last_submenu", submenu_index)
@@ -40,11 +40,17 @@ function pause_manager:create(game)
     sol.audio.play_sound("pause_open")
 
     -- Start the selected submenu.
-    sol.menu.start(pause_menu, pause_submenus[submenu_index])
+    sol.menu.start(pause_menu, game.pause_submenus[submenu_index])
   end
 
   function pause_menu:on_finished()
-    pause_submenus = nil
+
+    -- Play the sound of unpausing the game.
+    sol.audio.play_sound("pause_closed")
+
+    game.pause_submenus = {}
+
+    -- Restore the built-in effect of action and attack commands.
     if game.set_custom_command_effect ~= nil then
       game:set_custom_command_effect("action", nil)
       game:set_custom_command_effect("attack", nil)
