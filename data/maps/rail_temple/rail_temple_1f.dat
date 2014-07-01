@@ -43620,18 +43620,6 @@ switch{
   inactivate_when_leaving = false,
 }
 
-switch{
-  layer = 1,
-  x = 2608,
-  y = 3424,
-  name = "lever_switch",
-  subtype = "solid",
-  sprite = "entities/lever",
-  sound = "switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
 tile{
   layer = 2,
   x = 1200,

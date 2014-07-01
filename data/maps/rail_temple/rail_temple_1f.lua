@@ -314,9 +314,3 @@ function map:on_key_pressed(key)
 end
 --]]
 
-function lever_switch_test:on_activated()
-
-  getmetatable(self).on_activated(self)
-  sol.audio.play_sound("secret")
-end
-

@@ -61,7 +61,8 @@ local function initialize_switch()
 
   function switch_meta:on_activated()
 
-    -- Switches named "lever_switch*" are re-activable.
+    -- Switches named "lever_switch*" are re-activable and have two
+    -- alternative visuals.
     local name = self:get_name()
 
     if name:match("^lever_switch") then
