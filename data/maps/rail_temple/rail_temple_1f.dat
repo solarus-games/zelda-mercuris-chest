@@ -42955,7 +42955,7 @@ teletransporter{
   y = 2528,
   width = 32,
   height = 32,
-  destination_map = "rail_temple_b1",
+  destination_map = "rail_temple/rail_temple_b1",
   destination = "from_1f_hole",
 }
 
@@ -43090,7 +43090,7 @@ teletransporter{
   y = 3448,
   width = 16,
   height = 16,
-  destination_map = "rail_temple_b1",
+  destination_map = "rail_temple/rail_temple_b1",
   destination = "from_1f_b",
 }
 
@@ -43100,7 +43100,7 @@ teletransporter{
   y = 3448,
   width = 16,
   height = 16,
-  destination_map = "rail_temple_b1",
+  destination_map = "rail_temple/rail_temple_b1",
   destination = "from_1f_c",
 }
 
@@ -43110,7 +43110,7 @@ teletransporter{
   y = 2840,
   width = 16,
   height = 16,
-  destination_map = "rail_temple_b1",
+  destination_map = "rail_temple/rail_temple_b1",
   destination = "from_1f_a",
 }
 
@@ -43120,7 +43120,7 @@ teletransporter{
   y = 1448,
   width = 16,
   height = 16,
-  destination_map = "rail_temple_b1",
+  destination_map = "rail_temple/rail_temple_b1",
   destination = "from_1f_d",
 }
 
@@ -43624,7 +43624,7 @@ switch{
   layer = 1,
   x = 2608,
   y = 3424,
-  name = "lever_1",
+  name = "lever_switch",
   subtype = "solid",
   sprite = "entities/lever",
   sound = "switch",

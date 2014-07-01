@@ -1942,7 +1942,7 @@ teletransporter{
   height = 16,
   name = "to_3f_g",
   transition = "fade",
-  destination_map = "lighthouse_3f",
+  destination_map = "lighthouse/lighthouse_3f",
   destination = "from_4f_g",
 }
 

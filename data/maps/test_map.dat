@@ -542,7 +542,7 @@ teletransporter{
   height = 16,
   name = "teletransporter",
   transition = "fade",
-  destination_map = "outside_a7",
+  destination_map = "outside/outside_a7",
   destination = "test_destination",
 }
 
@@ -554,7 +554,7 @@ teletransporter{
   height = 16,
   name = "teletransporter_2",
   transition = "fade",
-  destination_map = "rail_temple_1f",
+  destination_map = "rail_temple/rail_temple_1f",
   destination = "tmp",
 }
 
@@ -574,7 +574,7 @@ teletransporter{
   height = 16,
   name = "teletransporter_3",
   transition = "fade",
-  destination_map = "lighthouse_1f",
+  destination_map = "lighthouse/lighthouse_1f",
   destination = "main_entrance",
 }
 

@@ -6733,7 +6733,7 @@ teletransporter{
   height = 16,
   name = "to_b1_A",
   transition = "fade",
-  destination_map = "lighthouse_b1",
+  destination_map = "lighthouse/lighthouse_b1",
   destination = "from_1f_a",
 }
 
@@ -6783,7 +6783,7 @@ teletransporter{
   height = 16,
   name = "to_2F_B",
   transition = "fade",
-  destination_map = "lighthouse_2f",
+  destination_map = "lighthouse/lighthouse_2f",
   destination = "from_1f_b",
 }
 
@@ -7050,7 +7050,7 @@ teletransporter{
   height = 16,
   name = "teletransporter",
   transition = "fade",
-  destination_map = "lighthouse_2f",
+  destination_map = "lighthouse/lighthouse_2f",
   destination = "from_1f_c",
 }
 
@@ -7071,7 +7071,7 @@ teletransporter{
   height = 16,
   name = "teletransporter_2",
   transition = "fade",
-  destination_map = "lighthouse_2f",
+  destination_map = "lighthouse/lighthouse_2f",
   destination = "from_1f_d",
 }
 
