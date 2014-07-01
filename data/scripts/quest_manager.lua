@@ -54,11 +54,35 @@ local function initialize_sensor()
   end
 end
 
+-- Initialize the common behavior of switches specific to this quest.
+local function initialize_switch()
+
+  local switch_meta = sol.main.get_metatable("switch")
+
+  function switch_meta:on_activated()
+
+    -- Switches named "lever_switch*" are re-activable.
+    local name = self:get_name()
+
+    if name:match("^lever_switch") then
+      local sprite = self:get_sprite()
+      local direction = sprite:get_direction()
+      sprite:set_direction(1 - direction)  -- Direction may be 0 or 1.
+
+      -- Allow to activate it again.
+      sol.timer.start(self, 1000, function()
+        self:set_activated(false)  
+      end)
+    end
+  end
+end
+
 -- Initializes map entity related behaviors.
 local function initialize_entities()
 
   initialize_destructible()
   initialize_sensor()
+  initialize_switch()
 end
 
 -- Performs global initializations specific to this quest.

@@ -314,20 +314,9 @@ function map:on_key_pressed(key)
 end
 --]]
 
--- Make lever switches re-activable.
-local function lever_on_activated(lever)
+function lever_switch_test:on_activated()
 
-  local sprite = lever:get_sprite()
-  local direction = sprite:get_direction()
-  sprite:set_direction(1 - direction)  -- Direction may be 0 or 1.
-
-  -- Allow to activate it again.
-  sol.timer.start(lever, 1000, function()
-    lever:set_activated(false)  
-  end)
-end
-
-for lever in map:get_entities("lever_") do
-  lever.on_activated = lever_on_activated
+  getmetatable(self).on_activated(self)
+  sol.audio.play_sound("secret")
 end
 
