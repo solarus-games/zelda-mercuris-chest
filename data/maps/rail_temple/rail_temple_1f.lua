@@ -28,6 +28,11 @@ function map:on_started()
     train_barrier_a_switch:set_activated(true)
   end
 
+  -- Train barrier B.
+  if game:get_value("rail_temple_train_barrier_b") then
+    train_barrier_b_switch:set_activated(true)
+  end
+
   -- Place the statue of room F on the switch if it was done once.
   if game:get_value("rail_temple_1f_room_f_statue") then
     room_f_statue:set_position(1280, 2565)
@@ -66,6 +71,12 @@ function train_barrier_a_switch:on_activated()
     sol.audio.play_sound("secret")
     map:open_doors("train_barrier_a_door")
   end)
+end
+
+function train_barrier_b_switch:on_activated()
+
+  sol.audio.play_sound("secret")
+  map:open_doors("train_barrier_b_door")
 end
 
 function room_b_door_switch:on_activated()

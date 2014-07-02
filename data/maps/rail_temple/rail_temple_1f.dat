@@ -40722,6 +40722,15 @@ tile{
   pattern = 722,
 }
 
+tile{
+  layer = 1,
+  x = 816,
+  y = 2232,
+  width = 8,
+  height = 24,
+  pattern = 744,
+}
+
 enemy{
   layer = 1,
   x = 1576,
@@ -42965,8 +42974,9 @@ switch{
   layer = 1,
   x = 928,
   y = 2168,
-  subtype = "walkable",
-  sprite = "entities/switch",
+  name = "train_barrier_b_switch",
+  subtype = "solid",
+  sprite = "entities/solid_switch",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -43179,7 +43189,7 @@ door{
 door{
   layer = 1,
   x = 824,
-  y = 2216,
+  y = 2240,
   name = "train_barrier_b_door",
   direction = 1,
   sprite = "entities/door_train_barrier",
