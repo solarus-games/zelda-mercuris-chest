@@ -125,7 +125,8 @@ end
 
 local function close_room_e_sensor_activated()
   if room_e_enemy ~= nil
-      and room_e_door:is_open() then
+      and room_e_door:is_open()
+      and not game:get_value("rail_temple_map_chest") then
     -- Close the doors of this room.
     map:close_doors("room_e_door")
   end

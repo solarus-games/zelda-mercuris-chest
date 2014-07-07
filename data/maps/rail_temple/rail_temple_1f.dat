@@ -4,7 +4,7 @@ properties{
   width = 2992,
   height = 3680,
   world = "dungeon_7",
-  floor = 0,
+  floor = 1,
   tileset = "mine",
   music = "dark_world_dungeon",
 }
@@ -42797,7 +42797,7 @@ sensor{
 door{
   layer = 1,
   x = 1416,
-  y = 2624,
+  y = 2592,
   name = "room_e_door",
   direction = 0,
   sprite = "entities/door_normal",
@@ -42806,7 +42806,7 @@ door{
 door{
   layer = 1,
   x = 1480,
-  y = 2624,
+  y = 2592,
   name = "room_e_door_2",
   direction = 2,
   sprite = "entities/door_normal",
