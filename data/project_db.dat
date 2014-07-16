@@ -10,6 +10,7 @@ map{ id = "rail_temple/rail_temple_b1", description = "Rail Temple B1" }
 map{ id = "rail_temple/rail_temple_b2", description = "Rail Temple B2" }
 map{ id = "test_map", description = "Test Hub" }
 map{ id = "lighthouse/lighthouse_outside", description = "Lighthouse outside" }
+map{ id = "inside_store", description = "Inside Store" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "mine", description = "Mine" }
