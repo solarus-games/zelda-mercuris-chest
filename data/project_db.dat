@@ -15,6 +15,7 @@ tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "mine", description = "Mine" }
 tileset{ id = "lighthouse", description = "Lighthouse" }
 tileset{ id = "dark_world", description = "Dark World" }
+tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
 
 sprite{ id = "npc/agahnim", description = "Agahnim" }
 sprite{ id = "npc/billy", description = "Billy" }
