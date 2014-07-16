@@ -12,27 +12,9 @@ map{ id = "test_map", description = "Test Hub" }
 map{ id = "lighthouse/lighthouse_outside", description = "Lighthouse outside" }
 
 tileset{ id = "light_world", description = "Light World" }
-tileset{ id = "dark_world", description = "Dark World" }
-tileset{ id = "cave", description = "Cave" }
-tileset{ id = "house", description = "House" }
-tileset{ id = "blue_dungeon_lw", description = "Blue dungeon (LW)" }
-tileset{ id = "green_dungeon_lw", description = "Green dungeon (LW)" }
-tileset{ id = "brown_dungeon_lw", description = "Brown dungeon (LW)" }
-tileset{ id = "pink_dungeon_lw", description = "Pink dungeon (LW)" }
-tileset{ id = "blue_dungeon_dw", description = "Blue dungeon (DW)" }
-tileset{ id = "green_dungeon_dw", description = "Green dungeon (DW)" }
-tileset{ id = "orange_dungeon_dw", description = "Orange dungeon (DW)" }
-tileset{ id = "gray_dungeon_dw", description = "Gray dungeon (DW)" }
-tileset{ id = "graybrown_dungeon_dw", description = "Gray-brown dungeon (DW)" }
-tileset{ id = "grayblue_dungeon_dw", description = "Gray-blue dungeon (DW)" }
-tileset{ id = "castle", description = "Castle" }
 tileset{ id = "mine", description = "Mine" }
-tileset{ id = "ice_dungeon", description = "Ice dungeon" }
-tileset{ id = "forest_dungeon", description = "Forest dungeon" }
 tileset{ id = "lighthouse", description = "Lighthouse" }
-tileset{ id = "final_dungeon", description = "Final dungeon" }
-tileset{ id = "old_school_dungeon", description = "Old school dungeon" }
-tileset{ id = "intro", description = "Intro" }
+tileset{ id = "dark_world", description = "Dark World" }
 
 sprite{ id = "npc/agahnim", description = "Agahnim" }
 sprite{ id = "npc/billy", description = "Billy" }

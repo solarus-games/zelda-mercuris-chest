@@ -4,17 +4,8 @@ properties{
   width = 320,
   height = 240,
   world = "inside_world",
-  tileset = "castle",
+  tileset = "lighthouse",
   music = "castle",
-}
-
-tile{
-  layer = 1,
-  x = 40,
-  y = 40,
-  width = 240,
-  height = 160,
-  pattern = 320,
 }
 
 tile{
@@ -191,15 +182,6 @@ tile{
 tile{
   layer = 1,
   x = 64,
-  y = 216,
-  width = 16,
-  height = 32,
-  pattern = 320,
-}
-
-tile{
-  layer = 1,
-  x = 64,
   y = 240,
   width = 16,
   height = 8,
@@ -244,38 +226,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 136,
-  y = 16,
-  width = 32,
-  height = 24,
-  pattern = 607,
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 16,
-  width = 32,
-  height = 24,
-  pattern = 607,
-}
-
-tile{
-  layer = 1,
   x = 200,
   y = 24,
   width = 8,
   height = 16,
   pattern = 73,
-}
-
-tile{
-  layer = 1,
-  x = 184,
-  y = -8,
-  width = 16,
-  height = 32,
-  pattern = 320,
 }
 
 tile{
@@ -330,15 +285,6 @@ tile{
   width = 8,
   height = 16,
   pattern = 73,
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = -8,
-  width = 16,
-  height = 32,
-  pattern = 320,
 }
 
 tile{
@@ -398,15 +344,6 @@ tile{
 tile{
   layer = 1,
   x = 152,
-  y = 216,
-  width = 16,
-  height = 32,
-  pattern = 320,
-}
-
-tile{
-  layer = 1,
-  x = 152,
   y = 240,
   width = 16,
   height = 8,
@@ -460,15 +397,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 296,
-  y = 112,
-  width = 32,
-  height = 16,
-  pattern = 320,
-}
-
-tile{
-  layer = 1,
   x = 320,
   y = 112,
   width = 8,
@@ -492,6 +420,15 @@ tile{
   width = 16,
   height = 8,
   pattern = 70,
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 48,
+  width = 224,
+  height = 144,
+  pattern = 523,
 }
 
 destination{
@@ -541,7 +478,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter",
-  transition = "fade",
   destination_map = "outside/outside_a7",
   destination = "test_destination",
 }
@@ -553,7 +489,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_1f",
   destination = "tmp",
 }
@@ -573,7 +508,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_3",
-  transition = "fade",
   destination_map = "lighthouse/lighthouse_1f",
   destination = "main_entrance",
 }
@@ -616,33 +550,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 32,
-  y = 16,
-  width = 64,
-  height = 8,
-  pattern = 559,
-}
-
-tile{
-  layer = 2,
-  x = 168,
-  y = 16,
-  width = 32,
-  height = 8,
-  pattern = 559,
-}
-
-tile{
-  layer = 2,
-  x = 184,
-  y = 16,
-  width = 32,
-  height = 8,
-  pattern = 559,
-}
-
-tile{
-  layer = 2,
   x = 48,
   y = 16,
   width = 32,
@@ -661,15 +568,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 40,
-  y = 216,
-  width = 64,
-  height = 8,
-  pattern = 560,
-}
-
-tile{
-  layer = 2,
   x = 56,
   y = 216,
   width = 32,
@@ -679,29 +577,11 @@ tile{
 
 tile{
   layer = 2,
-  x = 128,
-  y = 216,
-  width = 64,
-  height = 8,
-  pattern = 560,
-}
-
-tile{
-  layer = 2,
   x = 144,
   y = 216,
   width = 32,
   height = 8,
   pattern = 153,
-}
-
-tile{
-  layer = 2,
-  x = 296,
-  y = 88,
-  width = 8,
-  height = 64,
-  pattern = 562,
 }
 
 tile{
