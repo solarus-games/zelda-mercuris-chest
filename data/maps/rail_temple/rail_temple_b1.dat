@@ -2076,7 +2076,7 @@ tile{
   y = 1568,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -2085,7 +2085,7 @@ tile{
   y = 1568,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -2355,7 +2355,7 @@ tile{
   y = 2216,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -2364,7 +2364,7 @@ tile{
   y = 2216,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -2391,7 +2391,7 @@ tile{
   y = 2216,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -2400,7 +2400,7 @@ tile{
   y = 2216,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -4192,7 +4192,7 @@ tile{
   y = 264,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -4201,7 +4201,7 @@ tile{
   y = 264,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -4210,7 +4210,7 @@ tile{
   y = 296,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -4219,7 +4219,7 @@ tile{
   y = 296,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -4444,7 +4444,7 @@ tile{
   y = 360,
   width = 16,
   height = 16,
-  pattern = 629,
+  pattern = "door_mine.1.support.1",
 }
 
 tile{
@@ -4453,7 +4453,7 @@ tile{
   y = 360,
   width = 16,
   height = 16,
-  pattern = 630,
+  pattern = "door_mine.1.support.2",
 }
 
 tile{
@@ -4498,7 +4498,7 @@ tile{
   y = 456,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -4507,7 +4507,7 @@ tile{
   y = 456,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -4525,7 +4525,7 @@ tile{
   y = 520,
   width = 16,
   height = 16,
-  pattern = 629,
+  pattern = "door_mine.1.support.1",
 }
 
 tile{
@@ -4534,7 +4534,7 @@ tile{
   y = 520,
   width = 16,
   height = 16,
-  pattern = 630,
+  pattern = "door_mine.1.support.2",
 }
 
 tile{
@@ -5092,7 +5092,7 @@ tile{
   y = 1592,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -5101,7 +5101,7 @@ tile{
   y = 1592,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -5119,7 +5119,7 @@ tile{
   y = 1656,
   width = 16,
   height = 16,
-  pattern = 629,
+  pattern = "door_mine.1.support.1",
 }
 
 tile{
@@ -5128,7 +5128,7 @@ tile{
   y = 1656,
   width = 16,
   height = 16,
-  pattern = 630,
+  pattern = "door_mine.1.support.2",
 }
 
 tile{
@@ -5173,7 +5173,7 @@ tile{
   y = 1584,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -5344,7 +5344,7 @@ tile{
   y = 2232,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -5353,7 +5353,7 @@ tile{
   y = 2232,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -5965,7 +5965,7 @@ tile{
   y = 2408,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_mine.2.support.1",
 }
 
 tile{
@@ -5974,7 +5974,7 @@ tile{
   y = 2408,
   width = 16,
   height = 16,
-  pattern = 632,
+  pattern = "door_mine.2.support.2",
 }
 
 tile{
@@ -7513,7 +7513,7 @@ tile{
   y = 24,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7522,7 +7522,7 @@ tile{
   y = 360,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7531,7 +7531,7 @@ tile{
   y = 24,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7540,7 +7540,7 @@ tile{
   y = 360,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7549,7 +7549,7 @@ tile{
   y = 520,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7558,7 +7558,7 @@ tile{
   y = 552,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7567,7 +7567,7 @@ tile{
   y = 256,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7576,7 +7576,7 @@ tile{
   y = 288,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7585,7 +7585,7 @@ tile{
   y = 448,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7594,7 +7594,7 @@ tile{
   y = 256,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7603,7 +7603,7 @@ tile{
   y = 288,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7612,7 +7612,7 @@ tile{
   y = 448,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7621,7 +7621,7 @@ tile{
   y = 520,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7738,7 +7738,7 @@ tile{
   y = 1280,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7747,7 +7747,7 @@ tile{
   y = 1280,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7756,7 +7756,7 @@ tile{
   y = 1024,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7765,7 +7765,7 @@ tile{
   y = 1024,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7774,7 +7774,7 @@ tile{
   y = 1424,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7783,7 +7783,7 @@ tile{
   y = 1584,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7792,7 +7792,7 @@ tile{
   y = 1424,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7801,7 +7801,7 @@ tile{
   y = 1584,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7810,7 +7810,7 @@ tile{
   y = 1248,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7819,7 +7819,7 @@ tile{
   y = 1248,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7828,7 +7828,7 @@ tile{
   y = 1024,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7837,7 +7837,7 @@ tile{
   y = 1024,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7846,7 +7846,7 @@ tile{
   y = 1064,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7855,7 +7855,7 @@ tile{
   y = 1464,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7864,7 +7864,7 @@ tile{
   y = 1464,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7873,7 +7873,7 @@ tile{
   y = 552,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7882,7 +7882,7 @@ tile{
   y = 1656,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7891,7 +7891,7 @@ tile{
   y = 1992,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7900,7 +7900,7 @@ tile{
   y = 1992,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7909,7 +7909,7 @@ tile{
   y = 1656,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7918,7 +7918,7 @@ tile{
   y = 1752,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -7936,7 +7936,7 @@ tile{
   y = 1752,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7945,7 +7945,7 @@ tile{
   y = 1656,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7954,7 +7954,7 @@ tile{
   y = 1656,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -7963,7 +7963,7 @@ tile{
   y = 1968,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7972,7 +7972,7 @@ tile{
   y = 2240,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -7981,7 +7981,7 @@ tile{
   y = 2240,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7990,7 +7990,7 @@ tile{
   y = 1920,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -7999,7 +7999,7 @@ tile{
   y = 1920,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -8008,7 +8008,7 @@ tile{
   y = 2344,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -8017,7 +8017,7 @@ tile{
   y = 2440,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -8026,7 +8026,7 @@ tile{
   y = 2520,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -8035,7 +8035,7 @@ tile{
   y = 2648,
   width = 24,
   height = 24,
-  pattern = 658,
+  pattern = "beam.corner.1.bottom",
 }
 
 tile{
@@ -8044,7 +8044,7 @@ tile{
   y = 2344,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -8053,7 +8053,7 @@ tile{
   y = 2440,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -8062,7 +8062,7 @@ tile{
   y = 2440,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -8071,7 +8071,7 @@ tile{
   y = 2520,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -8080,7 +8080,7 @@ tile{
   y = 2648,
   width = 24,
   height = 24,
-  pattern = 659,
+  pattern = "beam.corner.2.bottom",
 }
 
 tile{
@@ -8089,7 +8089,7 @@ tile{
   y = 2688,
   width = 24,
   height = 24,
-  pattern = 660,
+  pattern = "beam.corner.3.bottom",
 }
 
 tile{
@@ -8098,7 +8098,7 @@ tile{
   y = 2688,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -8107,7 +8107,7 @@ tile{
   y = 2480,
   width = 24,
   height = 24,
-  pattern = 661,
+  pattern = "beam.corner.4.bottom",
 }
 
 tile{
@@ -8116,7 +8116,7 @@ tile{
   y = 72,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8125,7 +8125,7 @@ tile{
   y = 176,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8134,7 +8134,7 @@ tile{
   y = 80,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8143,7 +8143,7 @@ tile{
   y = 184,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8161,7 +8161,7 @@ tile{
   y = 208,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8179,7 +8179,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -8188,7 +8188,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -8197,7 +8197,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -8206,7 +8206,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -8215,7 +8215,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -8224,7 +8224,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8233,7 +8233,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8242,7 +8242,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8251,7 +8251,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8287,7 +8287,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8296,7 +8296,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8305,7 +8305,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -8314,7 +8314,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -8323,7 +8323,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -8359,7 +8359,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8368,7 +8368,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8377,7 +8377,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8386,7 +8386,7 @@ tile{
   y = 256,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8395,7 +8395,7 @@ tile{
   y = 256,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -8404,7 +8404,7 @@ tile{
   y = 192,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -8413,7 +8413,7 @@ tile{
   y = 96,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -8422,7 +8422,7 @@ tile{
   y = 64,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -8431,7 +8431,7 @@ tile{
   y = 40,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -8440,7 +8440,7 @@ tile{
   y = 200,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -8449,7 +8449,7 @@ tile{
   y = 200,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -8458,7 +8458,7 @@ tile{
   y = 168,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -8467,7 +8467,7 @@ tile{
   y = 72,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -8485,7 +8485,7 @@ tile{
   y = 400,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8494,7 +8494,7 @@ tile{
   y = 400,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8503,7 +8503,7 @@ tile{
   y = 392,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8512,7 +8512,7 @@ tile{
   y = 424,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8548,7 +8548,7 @@ tile{
   y = 656,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8557,7 +8557,7 @@ tile{
   y = 792,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8566,7 +8566,7 @@ tile{
   y = 824,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8575,7 +8575,7 @@ tile{
   y = 960,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8584,7 +8584,7 @@ tile{
   y = 688,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8593,7 +8593,7 @@ tile{
   y = 664,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8602,7 +8602,7 @@ tile{
   y = 968,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8611,7 +8611,7 @@ tile{
   y = 696,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8620,7 +8620,7 @@ tile{
   y = 800,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8629,7 +8629,7 @@ tile{
   y = 832,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8638,7 +8638,7 @@ tile{
   y = 856,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8647,7 +8647,7 @@ tile{
   y = 1072,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8656,7 +8656,7 @@ tile{
   y = 1208,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8665,7 +8665,7 @@ tile{
   y = 1368,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8674,7 +8674,7 @@ tile{
   y = 1512,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8683,7 +8683,7 @@ tile{
   y = 1536,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8692,7 +8692,7 @@ tile{
   y = 1360,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8701,7 +8701,7 @@ tile{
   y = 1232,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8710,7 +8710,7 @@ tile{
   y = 1096,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8719,7 +8719,7 @@ tile{
   y = 1128,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8728,7 +8728,7 @@ tile{
   y = 1104,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8737,7 +8737,7 @@ tile{
   y = 1240,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8746,7 +8746,7 @@ tile{
   y = 1336,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -8755,7 +8755,7 @@ tile{
   y = 1312,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -8764,7 +8764,7 @@ tile{
   y = 1504,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -8791,7 +8791,7 @@ tile{
   y = 1024,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8800,7 +8800,7 @@ tile{
   y = 1024,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8809,7 +8809,7 @@ tile{
   y = 1024,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8818,7 +8818,7 @@ tile{
   y = 1024,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8827,7 +8827,7 @@ tile{
   y = 1024,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -8899,7 +8899,7 @@ tile{
   y = 1584,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8908,7 +8908,7 @@ tile{
   y = 1584,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8917,7 +8917,7 @@ tile{
   y = 1584,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8926,7 +8926,7 @@ tile{
   y = 1024,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8935,7 +8935,7 @@ tile{
   y = 1024,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8944,7 +8944,7 @@ tile{
   y = 1424,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8953,7 +8953,7 @@ tile{
   y = 1424,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -8962,7 +8962,7 @@ tile{
   y = 1424,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8971,7 +8971,7 @@ tile{
   y = 1584,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8980,7 +8980,7 @@ tile{
   y = 1584,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8989,7 +8989,7 @@ tile{
   y = 1024,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -8998,7 +8998,7 @@ tile{
   y = 1584,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -9007,7 +9007,7 @@ tile{
   y = 1024,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -9016,7 +9016,7 @@ tile{
   y = 1424,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -9025,7 +9025,7 @@ tile{
   y = 1328,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9034,7 +9034,7 @@ tile{
   y = 1440,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9043,7 +9043,7 @@ tile{
   y = 1472,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9052,7 +9052,7 @@ tile{
   y = 1504,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9061,7 +9061,7 @@ tile{
   y = 1376,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9070,7 +9070,7 @@ tile{
   y = 1184,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9079,7 +9079,7 @@ tile{
   y = 1120,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9088,7 +9088,7 @@ tile{
   y = 912,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9097,7 +9097,7 @@ tile{
   y = 976,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9106,7 +9106,7 @@ tile{
   y = 944,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9115,7 +9115,7 @@ tile{
   y = 1192,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9124,7 +9124,7 @@ tile{
   y = 1352,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9133,7 +9133,7 @@ tile{
   y = 1480,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9142,7 +9142,7 @@ tile{
   y = 1304,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9151,7 +9151,7 @@ tile{
   y = 1448,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9160,7 +9160,7 @@ tile{
   y = 1328,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9169,7 +9169,7 @@ tile{
   y = 952,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9178,7 +9178,7 @@ tile{
   y = 920,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9187,7 +9187,7 @@ tile{
   y = 1096,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9196,7 +9196,7 @@ tile{
   y = 1088,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9205,7 +9205,7 @@ tile{
   y = 1056,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9214,7 +9214,7 @@ tile{
   y = 1056,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9223,7 +9223,7 @@ tile{
   y = 1456,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9232,7 +9232,7 @@ tile{
   y = 1456,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9241,7 +9241,7 @@ tile{
   y = 1456,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9250,7 +9250,7 @@ tile{
   y = 1368,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9259,7 +9259,7 @@ tile{
   y = 1400,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9268,7 +9268,7 @@ tile{
   y = 1376,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -9277,7 +9277,7 @@ tile{
   y = 1344,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -9286,7 +9286,7 @@ tile{
   y = 1456,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9295,7 +9295,7 @@ tile{
   y = 1456,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9358,7 +9358,7 @@ tile{
   y = 776,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9367,7 +9367,7 @@ tile{
   y = 744,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9376,7 +9376,7 @@ tile{
   y = 608,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9385,7 +9385,7 @@ tile{
   y = 752,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9394,7 +9394,7 @@ tile{
   y = 616,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9403,7 +9403,7 @@ tile{
   y = 584,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9412,7 +9412,7 @@ tile{
   y = 784,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -9421,7 +9421,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9430,7 +9430,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9439,7 +9439,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9448,7 +9448,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9457,7 +9457,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9466,7 +9466,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9475,7 +9475,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9484,7 +9484,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9493,7 +9493,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9502,7 +9502,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9511,7 +9511,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9520,7 +9520,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9529,7 +9529,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9538,7 +9538,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9547,7 +9547,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9556,7 +9556,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9565,7 +9565,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9574,7 +9574,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9583,7 +9583,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9592,7 +9592,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9601,7 +9601,7 @@ tile{
   y = 544,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9736,7 +9736,7 @@ tile{
   y = 1648,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9745,7 +9745,7 @@ tile{
   y = 1648,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9754,7 +9754,7 @@ tile{
   y = 1648,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9763,7 +9763,7 @@ tile{
   y = 1648,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9772,7 +9772,7 @@ tile{
   y = 1984,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9781,7 +9781,7 @@ tile{
   y = 1648,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9790,7 +9790,7 @@ tile{
   y = 1984,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -9799,7 +9799,7 @@ tile{
   y = 1648,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9808,7 +9808,7 @@ tile{
   y = 1648,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9817,7 +9817,7 @@ tile{
   y = 1648,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -9826,7 +9826,7 @@ tile{
   y = 1984,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -9835,7 +9835,7 @@ tile{
   y = 1696,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -9844,7 +9844,7 @@ tile{
   y = 1672,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -9853,7 +9853,7 @@ tile{
   y = 1696,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9862,7 +9862,7 @@ tile{
   y = 1728,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9871,7 +9871,7 @@ tile{
   y = 1864,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9880,7 +9880,7 @@ tile{
   y = 2056,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9889,7 +9889,7 @@ tile{
   y = 2208,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9898,7 +9898,7 @@ tile{
   y = 2216,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -9907,7 +9907,7 @@ tile{
   y = 1704,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -9916,7 +9916,7 @@ tile{
   y = 1872,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -9925,7 +9925,7 @@ tile{
   y = 2064,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -9934,7 +9934,7 @@ tile{
   y = 2184,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -9943,7 +9943,7 @@ tile{
   y = 1840,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -9952,7 +9952,7 @@ tile{
   y = 1672,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -9961,7 +9961,7 @@ tile{
   y = 2088,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9970,7 +9970,7 @@ tile{
   y = 2176,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9979,7 +9979,7 @@ tile{
   y = 1832,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9988,7 +9988,7 @@ tile{
   y = 1712,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -9997,7 +9997,7 @@ tile{
   y = 1720,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -10006,7 +10006,7 @@ tile{
   y = 1920,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10015,7 +10015,7 @@ tile{
   y = 1920,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10024,7 +10024,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10033,7 +10033,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10042,7 +10042,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10051,7 +10051,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10060,7 +10060,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10069,7 +10069,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10078,7 +10078,7 @@ tile{
   y = 1920,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10087,7 +10087,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10096,7 +10096,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10105,7 +10105,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10114,7 +10114,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10123,7 +10123,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10132,7 +10132,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10141,7 +10141,7 @@ tile{
   y = 2240,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10150,7 +10150,7 @@ tile{
   y = 1968,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10159,7 +10159,7 @@ tile{
   y = 1968,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10168,7 +10168,7 @@ tile{
   y = 2240,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10177,7 +10177,7 @@ tile{
   y = 1912,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10186,7 +10186,7 @@ tile{
   y = 1880,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10195,7 +10195,7 @@ tile{
   y = 1744,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10204,7 +10204,7 @@ tile{
   y = 1712,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10213,7 +10213,7 @@ tile{
   y = 1720,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -10222,7 +10222,7 @@ tile{
   y = 1920,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -10231,7 +10231,7 @@ tile{
   y = 1848,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -10240,7 +10240,7 @@ tile{
   y = 1888,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -10249,7 +10249,7 @@ tile{
   y = 1720,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -10258,7 +10258,7 @@ tile{
   y = 2048,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10267,7 +10267,7 @@ tile{
   y = 2080,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10276,7 +10276,7 @@ tile{
   y = 2208,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10285,7 +10285,7 @@ tile{
   y = 2216,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -10294,7 +10294,7 @@ tile{
   y = 2056,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -10303,7 +10303,7 @@ tile{
   y = 2088,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -10321,7 +10321,7 @@ tile{
   y = 2336,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -10330,7 +10330,7 @@ tile{
   y = 2336,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -10339,7 +10339,7 @@ tile{
   y = 2432,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -10348,7 +10348,7 @@ tile{
   y = 2512,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -10357,7 +10357,7 @@ tile{
   y = 2512,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -10375,7 +10375,7 @@ tile{
   y = 2512,
   width = 32,
   height = 32,
-  pattern = 603,
+  pattern = "beam.1.diag.1",
 }
 
 tile{
@@ -10402,7 +10402,7 @@ tile{
   y = 2336,
   width = 32,
   height = 32,
-  pattern = 605,
+  pattern = "beam.1.diag.2",
 }
 
 tile{
@@ -10411,7 +10411,7 @@ tile{
   y = 2336,
   width = 16,
   height = 32,
-  pattern = 604,
+  pattern = "beam.1",
 }
 
 tile{
@@ -10420,7 +10420,7 @@ tile{
   y = 2688,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10429,7 +10429,7 @@ tile{
   y = 2688,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10438,7 +10438,7 @@ tile{
   y = 2688,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10447,7 +10447,7 @@ tile{
   y = 2688,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10456,7 +10456,7 @@ tile{
   y = 2688,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10465,7 +10465,7 @@ tile{
   y = 2480,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10474,7 +10474,7 @@ tile{
   y = 2480,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10483,7 +10483,7 @@ tile{
   y = 2480,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10492,7 +10492,7 @@ tile{
   y = 2480,
   width = 16,
   height = 32,
-  pattern = 607,
+  pattern = "beam.2",
 }
 
 tile{
@@ -10501,7 +10501,7 @@ tile{
   y = 2480,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10510,7 +10510,7 @@ tile{
   y = 2480,
   width = 32,
   height = 32,
-  pattern = 608,
+  pattern = "beam.2.diag.2",
 }
 
 tile{
@@ -10519,7 +10519,7 @@ tile{
   y = 2480,
   width = 32,
   height = 32,
-  pattern = 606,
+  pattern = "beam.2.diag.1",
 }
 
 tile{
@@ -10528,7 +10528,7 @@ tile{
   y = 2408,
   width = 32,
   height = 32,
-  pattern = 654,
+  pattern = "beam.4.diag.2",
 }
 
 tile{
@@ -10537,7 +10537,7 @@ tile{
   y = 2400,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -10546,7 +10546,7 @@ tile{
   y = 2512,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10555,7 +10555,7 @@ tile{
   y = 2656,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10564,7 +10564,7 @@ tile{
   y = 2624,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10573,7 +10573,7 @@ tile{
   y = 2632,
   width = 32,
   height = 32,
-  pattern = 653,
+  pattern = "beam.3.diag.2",
 }
 
 tile{
@@ -10582,7 +10582,7 @@ tile{
   y = 2664,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -10591,7 +10591,7 @@ tile{
   y = 2488,
   width = 32,
   height = 32,
-  pattern = 651,
+  pattern = "beam.3.diag.1",
 }
 
 tile{
@@ -10600,7 +10600,7 @@ tile{
   y = 2480,
   width = 32,
   height = 16,
-  pattern = 652,
+  pattern = "beam.3",
 }
 
 tile{
@@ -10609,7 +10609,7 @@ tile{
   y = 2664,
   width = 32,
   height = 32,
-  pattern = 656,
+  pattern = "beam.4.diag.1",
 }
 
 tile{
@@ -10618,7 +10618,7 @@ tile{
   y = 2656,
   width = 32,
   height = 16,
-  pattern = 655,
+  pattern = "beam.4",
 }
 
 tile{
@@ -10654,7 +10654,7 @@ tile{
   y = 1656,
   width = 16,
   height = 16,
-  pattern = 629,
+  pattern = "door_mine.1.support.1",
 }
 
 tile{
@@ -10663,7 +10663,7 @@ tile{
   y = 1656,
   width = 16,
   height = 16,
-  pattern = 629,
+  pattern = "door_mine.1.support.1",
 }
 
 tile{
@@ -10672,7 +10672,7 @@ tile{
   y = 1656,
   width = 16,
   height = 16,
-  pattern = 630,
+  pattern = "door_mine.1.support.2",
 }
 
 tile{
@@ -10681,7 +10681,7 @@ tile{
   y = 1656,
   width = 16,
   height = 16,
-  pattern = 630,
+  pattern = "door_mine.1.support.2",
 }
 
 tile{
@@ -10970,7 +10970,7 @@ tile{
   y = 280,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -10979,7 +10979,7 @@ tile{
   y = 312,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -11006,7 +11006,7 @@ tile{
   y = 344,
   width = 48,
   height = 16,
-  pattern = 639,
+  pattern = "door_top.mine.1",
 }
 
 tile{
@@ -11015,7 +11015,7 @@ tile{
   y = 472,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -11024,7 +11024,7 @@ tile{
   y = 504,
   width = 48,
   height = 16,
-  pattern = 639,
+  pattern = "door_top.mine.1",
 }
 
 tile{
@@ -11033,7 +11033,7 @@ tile{
   y = 1608,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -11042,7 +11042,7 @@ tile{
   y = 1640,
   width = 48,
   height = 16,
-  pattern = 639,
+  pattern = "door_top.mine.1",
 }
 
 tile{
@@ -11051,7 +11051,7 @@ tile{
   y = 2424,
   width = 48,
   height = 16,
-  pattern = 640,
+  pattern = "door_top.mine.2",
 }
 
 tile{
@@ -11168,7 +11168,7 @@ tile{
   y = 8,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11177,7 +11177,7 @@ tile{
   y = 344,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11186,7 +11186,7 @@ tile{
   y = 536,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11195,7 +11195,7 @@ tile{
   y = 504,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11204,7 +11204,7 @@ tile{
   y = 344,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11213,7 +11213,7 @@ tile{
   y = 8,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11222,7 +11222,7 @@ tile{
   y = 464,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11231,7 +11231,7 @@ tile{
   y = 304,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11240,7 +11240,7 @@ tile{
   y = 272,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11249,7 +11249,7 @@ tile{
   y = 464,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11258,7 +11258,7 @@ tile{
   y = 304,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11267,7 +11267,7 @@ tile{
   y = 272,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11276,7 +11276,7 @@ tile{
   y = 504,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11285,7 +11285,7 @@ tile{
   y = 1296,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11294,7 +11294,7 @@ tile{
   y = 1296,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11303,7 +11303,7 @@ tile{
   y = 1600,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11312,7 +11312,7 @@ tile{
   y = 1040,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11321,7 +11321,7 @@ tile{
   y = 1440,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11330,7 +11330,7 @@ tile{
   y = 1040,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11339,7 +11339,7 @@ tile{
   y = 1448,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11348,7 +11348,7 @@ tile{
   y = 1040,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11357,7 +11357,7 @@ tile{
   y = 1040,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11366,7 +11366,7 @@ tile{
   y = 1264,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11375,7 +11375,7 @@ tile{
   y = 1264,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11384,7 +11384,7 @@ tile{
   y = 1600,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11393,7 +11393,7 @@ tile{
   y = 1048,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11402,7 +11402,7 @@ tile{
   y = 536,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11411,7 +11411,7 @@ tile{
   y = 1640,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11420,7 +11420,7 @@ tile{
   y = 1736,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11429,7 +11429,7 @@ tile{
   y = 1640,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11438,7 +11438,7 @@ tile{
   y = 1976,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11447,7 +11447,7 @@ tile{
   y = 1976,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11456,7 +11456,7 @@ tile{
   y = 1736,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11465,7 +11465,7 @@ tile{
   y = 1640,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11474,7 +11474,7 @@ tile{
   y = 1640,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11483,7 +11483,7 @@ tile{
   y = 1984,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11492,7 +11492,7 @@ tile{
   y = 2256,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11501,7 +11501,7 @@ tile{
   y = 2256,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11510,7 +11510,7 @@ tile{
   y = 1936,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11519,7 +11519,7 @@ tile{
   y = 1936,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11528,7 +11528,7 @@ tile{
   y = 2704,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11537,7 +11537,7 @@ tile{
   y = 2704,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11546,7 +11546,7 @@ tile{
   y = 2632,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11555,7 +11555,7 @@ tile{
   y = 2504,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11564,7 +11564,7 @@ tile{
   y = 2424,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11573,7 +11573,7 @@ tile{
   y = 2424,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11582,7 +11582,7 @@ tile{
   y = 2328,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11591,7 +11591,7 @@ tile{
   y = 2424,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11600,7 +11600,7 @@ tile{
   y = 2328,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11609,7 +11609,7 @@ tile{
   y = 2632,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11618,7 +11618,7 @@ tile{
   y = 2496,
   width = 24,
   height = 24,
-  pattern = 665,
+  pattern = "beam.corner.4.top",
 }
 
 tile{
@@ -11627,7 +11627,7 @@ tile{
   y = 2504,
   width = 24,
   height = 24,
-  pattern = 662,
+  pattern = "beam.corner.1.top",
 }
 
 tile{
@@ -11636,7 +11636,7 @@ tile{
   y = 1448,
   width = 24,
   height = 24,
-  pattern = 663,
+  pattern = "beam.corner.2.top",
 }
 
 tile{
@@ -11645,7 +11645,7 @@ tile{
   y = 1440,
   width = 24,
   height = 24,
-  pattern = 664,
+  pattern = "beam.corner.3.top",
 }
 
 tile{
@@ -11654,7 +11654,7 @@ tile{
   y = 1640,
   width = 48,
   height = 16,
-  pattern = 639,
+  pattern = "door_top.mine.1",
 }
 
 tile{
@@ -11663,7 +11663,7 @@ tile{
   y = 1640,
   width = 48,
   height = 16,
-  pattern = 639,
+  pattern = "door_top.mine.1",
 }
 
 tile{
