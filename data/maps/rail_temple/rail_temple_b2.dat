@@ -24,7 +24,7 @@ tile{
   y = 120,
   width = 192,
   height = 144,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -33,7 +33,7 @@ tile{
   y = 72,
   width = 128,
   height = 192,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -42,7 +42,7 @@ tile{
   y = 216,
   width = 240,
   height = 368,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -52,15 +52,6 @@ tile{
   width = 176,
   height = 8,
   pattern = "wall_low_border.1",
-}
-
-tile{
-  layer = 0,
-  x = 296,
-  y = 208,
-  width = 80,
-  height = 56,
-  pattern = "floor_grid",
 }
 
 tile{
@@ -776,33 +767,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 256,
-  width = 8,
-  height = 8,
-  pattern = "stage.7",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 256,
-  width = 8,
-  height = 8,
-  pattern = "stage.6",
-}
-
-tile{
-  layer = 0,
-  x = 328,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "steps",
-}
-
-tile{
-  layer = 0,
   x = 584,
   y = 120,
   width = 24,
@@ -960,7 +924,7 @@ tile{
   y = 216,
   width = 96,
   height = 16,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -1104,7 +1068,7 @@ tile{
   y = 72,
   width = 64,
   height = 160,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -1113,7 +1077,7 @@ tile{
   y = 408,
   width = 160,
   height = 176,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -1305,6 +1269,42 @@ tile{
   pattern = "wall_low_border.corner_reverse.3",
 }
 
+tile{
+  layer = 0,
+  x = 296,
+  y = 208,
+  width = 80,
+  height = 56,
+  pattern = "floor_small.1",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "stage.7",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "stage.6",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "steps",
+}
+
 destination{
   layer = 0,
   x = 808,
@@ -1383,7 +1383,6 @@ teletransporter{
   y = 48,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_b1",
   destination = "from_b2_b",
 }
@@ -1402,7 +1401,7 @@ tile{
   y = 280,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1411,7 +1410,7 @@ tile{
   y = 264,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1420,7 +1419,7 @@ tile{
   y = 248,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1429,7 +1428,7 @@ tile{
   y = 232,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1438,7 +1437,7 @@ tile{
   y = 216,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1447,7 +1446,7 @@ tile{
   y = 200,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1456,7 +1455,7 @@ tile{
   y = 184,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1465,7 +1464,7 @@ tile{
   y = 168,
   width = 16,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1474,7 +1473,7 @@ tile{
   y = 88,
   width = 48,
   height = 64,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1483,7 +1482,7 @@ tile{
   y = 136,
   width = 128,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1492,7 +1491,7 @@ tile{
   y = 88,
   width = 48,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1501,7 +1500,7 @@ tile{
   y = 40,
   width = 320,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1519,7 +1518,7 @@ tile{
   y = 328,
   width = 48,
   height = 288,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1528,7 +1527,7 @@ tile{
   y = 296,
   width = 112,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1537,7 +1536,7 @@ tile{
   y = 88,
   width = 48,
   height = 256,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -1546,7 +1545,7 @@ tile{
   y = 40,
   width = 128,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -4027,7 +4026,6 @@ teletransporter{
   y = 24,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_b1",
   destination = "from_b2_a",
 }

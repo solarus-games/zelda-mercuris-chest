@@ -15,7 +15,25 @@ tile{
   y = 1848,
   width = 240,
   height = 368,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1840,
+  width = 176,
+  height = 8,
+  pattern = "wall_low_border.1",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 1840,
+  width = 80,
+  height = 56,
+  pattern = "floor_small.1",
 }
 
 tile{
@@ -24,7 +42,7 @@ tile{
   y = 1704,
   width = 48,
   height = 112,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -33,7 +51,7 @@ tile{
   y = 1816,
   width = 128,
   height = 80,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -105,25 +123,7 @@ tile{
   y = 1752,
   width = 192,
   height = 144,
-  pattern = "floor.cracked.5",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 1840,
-  width = 176,
-  height = 8,
-  pattern = "wall_low_border.1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 1840,
-  width = 80,
-  height = 56,
-  pattern = "floor_grid",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -816,7 +816,7 @@ tile{
   y = 2040,
   width = 160,
   height = 176,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -978,7 +978,7 @@ tile{
   y = 600,
   width = 352,
   height = 64,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -987,7 +987,7 @@ tile{
   y = 1512,
   width = 240,
   height = 48,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -996,7 +996,7 @@ tile{
   y = 1272,
   width = 48,
   height = 288,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -1005,7 +1005,7 @@ tile{
   y = 664,
   width = 800,
   height = 336,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -1014,7 +1014,7 @@ tile{
   y = 1000,
   width = 288,
   height = 272,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -1023,7 +1023,7 @@ tile{
   y = 1112,
   width = 176,
   height = 64,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -2031,7 +2031,7 @@ tile{
   y = 1344,
   width = 64,
   height = 64,
-  pattern = "floor.cracked.5",
+  pattern = "floor_low.14",
 }
 
 tile{
@@ -2713,7 +2713,6 @@ teletransporter{
   y = 2216,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_1f",
   destination = "from_b1_b",
 }
@@ -2724,7 +2723,6 @@ teletransporter{
   y = 2216,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_1f",
   destination = "from_b1_c",
 }
@@ -2751,7 +2749,6 @@ teletransporter{
   y = 1568,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_b2",
   destination = "from_b1_b",
 }
@@ -2770,7 +2767,7 @@ tile{
   y = 1768,
   width = 128,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2779,7 +2776,7 @@ tile{
   y = 1800,
   width = 16,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2788,7 +2785,7 @@ tile{
   y = 1912,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2797,7 +2794,7 @@ tile{
   y = 1896,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2806,7 +2803,7 @@ tile{
   y = 1880,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2815,7 +2812,7 @@ tile{
   y = 1864,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2824,7 +2821,7 @@ tile{
   y = 1848,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2833,7 +2830,7 @@ tile{
   y = 1832,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2842,7 +2839,7 @@ tile{
   y = 1816,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2851,7 +2848,7 @@ tile{
   y = 920,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2860,7 +2857,7 @@ tile{
   y = 904,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2869,7 +2866,7 @@ tile{
   y = 888,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2878,7 +2875,7 @@ tile{
   y = 872,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2887,7 +2884,7 @@ tile{
   y = 840,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2896,7 +2893,7 @@ tile{
   y = 856,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2905,7 +2902,7 @@ tile{
   y = 824,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2914,7 +2911,7 @@ tile{
   y = 808,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2923,7 +2920,7 @@ tile{
   y = 792,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2932,7 +2929,7 @@ tile{
   y = 776,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2941,7 +2938,7 @@ tile{
   y = 744,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2950,7 +2947,7 @@ tile{
   y = 760,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2959,7 +2956,7 @@ tile{
   y = 728,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2968,7 +2965,7 @@ tile{
   y = 712,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2977,7 +2974,7 @@ tile{
   y = 696,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2986,7 +2983,7 @@ tile{
   y = 680,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -2995,7 +2992,7 @@ tile{
   y = 664,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3004,7 +3001,7 @@ tile{
   y = 648,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3013,7 +3010,7 @@ tile{
   y = 632,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3022,7 +3019,7 @@ tile{
   y = 936,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3031,7 +3028,7 @@ tile{
   y = 952,
   width = 112,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3040,7 +3037,7 @@ tile{
   y = 2544,
   width = 144,
   height = 144,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3103,7 +3100,7 @@ tile{
   y = 1720,
   width = 48,
   height = 64,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3112,7 +3109,7 @@ tile{
   y = 1720,
   width = 48,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3121,7 +3118,7 @@ tile{
   y = 1672,
   width = 320,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3139,7 +3136,7 @@ tile{
   y = 1960,
   width = 48,
   height = 288,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3148,7 +3145,7 @@ tile{
   y = 1928,
   width = 128,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3157,7 +3154,7 @@ tile{
   y = 1776,
   width = 32,
   height = 192,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3166,7 +3163,7 @@ tile{
   y = 1680,
   width = 112,
   height = 96,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3751,7 +3748,7 @@ tile{
   y = 1208,
   width = 112,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3769,7 +3766,7 @@ tile{
   y = 968,
   width = 160,
   height = 64,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3823,7 +3820,7 @@ tile{
   y = 536,
   width = 96,
   height = 32,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3832,7 +3829,7 @@ tile{
   y = 568,
   width = 448,
   height = 64,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -3940,7 +3937,7 @@ tile{
   y = 224,
   width = 304,
   height = 32,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -4183,7 +4180,7 @@ tile{
   y = 256,
   width = 80,
   height = 32,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -4435,7 +4432,7 @@ tile{
   y = 384,
   width = 80,
   height = 64,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -4471,7 +4468,7 @@ tile{
   y = 312,
   width = 16,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -4552,7 +4549,7 @@ tile{
   y = 472,
   width = 16,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5029,7 +5026,7 @@ tile{
   y = 968,
   width = 48,
   height = 624,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5146,7 +5143,7 @@ tile{
   y = 1608,
   width = 16,
   height = 48,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5677,7 +5674,7 @@ tile{
   y = 2464,
   width = 16,
   height = 224,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5758,7 +5755,7 @@ tile{
   y = 2368,
   width = 64,
   height = 32,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5767,7 +5764,7 @@ tile{
   y = 2368,
   width = 32,
   height = 96,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5776,7 +5773,7 @@ tile{
   y = 2464,
   width = 208,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -5785,7 +5782,7 @@ tile{
   y = 2672,
   width = 64,
   height = 16,
-  pattern = "floor_low.14",
+  pattern = "floor.14",
 }
 
 tile{
@@ -10841,7 +10838,6 @@ teletransporter{
   y = 1656,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_1f",
   destination = "from_b1_a",
 }
@@ -10852,7 +10848,6 @@ teletransporter{
   y = 1656,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_b2",
   destination = "from_b1_a",
 }
@@ -10863,7 +10858,6 @@ teletransporter{
   y = 264,
   width = 16,
   height = 16,
-  transition = "fade",
   destination_map = "rail_temple/rail_temple_1f",
   destination = "from_b1_d",
 }
