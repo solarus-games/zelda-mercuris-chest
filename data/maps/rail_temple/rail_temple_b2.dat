@@ -1554,7 +1554,7 @@ tile{
   y = 616,
   width = 512,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -1563,7 +1563,7 @@ tile{
   y = 344,
   width = 24,
   height = 272,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -1599,7 +1599,7 @@ tile{
   y = 40,
   width = 24,
   height = 304,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -1617,7 +1617,7 @@ tile{
   y = 344,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -1653,7 +1653,7 @@ tile{
   y = 40,
   width = 24,
   height = 80,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -2049,7 +2049,7 @@ tile{
   y = 296,
   width = 144,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -2148,7 +2148,7 @@ tile{
   y = 40,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -2175,7 +2175,7 @@ tile{
   y = 264,
   width = 128,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{

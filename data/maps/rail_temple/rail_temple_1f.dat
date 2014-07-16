@@ -5736,7 +5736,7 @@ tile{
   y = 2136,
   width = 192,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -5826,7 +5826,7 @@ tile{
   y = 1832,
   width = 24,
   height = 80,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -5889,7 +5889,7 @@ tile{
   y = 1536,
   width = 24,
   height = 144,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6105,7 +6105,7 @@ tile{
   y = 192,
   width = 24,
   height = 208,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6195,7 +6195,7 @@ tile{
   y = 440,
   width = 144,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6204,7 +6204,7 @@ tile{
   y = 440,
   width = 144,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6231,7 +6231,7 @@ tile{
   y = 968,
   width = 160,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6312,7 +6312,7 @@ tile{
   y = 1144,
   width = 656,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6438,7 +6438,7 @@ tile{
   y = 1048,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6456,7 +6456,7 @@ tile{
   y = 1160,
   width = 24,
   height = 240,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6492,7 +6492,7 @@ tile{
   y = 1416,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6528,7 +6528,7 @@ tile{
   y = 1528,
   width = 24,
   height = 272,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6690,7 +6690,7 @@ tile{
   y = 2648,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6699,7 +6699,7 @@ tile{
   y = 2552,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6825,7 +6825,7 @@ tile{
   y = 3000,
   width = 24,
   height = 400,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6915,7 +6915,7 @@ tile{
   y = 2728,
   width = 24,
   height = 256,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -6933,7 +6933,7 @@ tile{
   y = 2984,
   width = 256,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6951,7 +6951,7 @@ tile{
   y = 3160,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -6996,7 +6996,7 @@ tile{
   y = 1672,
   width = 256,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -7050,7 +7050,7 @@ tile{
   y = 1528,
   width = 24,
   height = 144,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -7293,7 +7293,7 @@ tile{
   y = 1512,
   width = 48,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -7338,7 +7338,7 @@ tile{
   y = 1672,
   width = 240,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -7392,7 +7392,7 @@ tile{
   y = 1288,
   width = 80,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -7527,7 +7527,7 @@ tile{
   y = 1160,
   width = 24,
   height = 512,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -7545,7 +7545,7 @@ tile{
   y = 1048,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -7815,7 +7815,7 @@ tile{
   y = 1312,
   width = 24,
   height = 16,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -7842,7 +7842,7 @@ tile{
   y = 1296,
   width = 16,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -8472,7 +8472,7 @@ tile{
   y = 2872,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -8499,7 +8499,7 @@ tile{
   y = 3096,
   width = 624,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -8778,7 +8778,7 @@ tile{
   y = 3176,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -8796,7 +8796,7 @@ tile{
   y = 3400,
   width = 144,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -8985,7 +8985,7 @@ tile{
   y = 3240,
   width = 24,
   height = 400,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -9003,7 +9003,7 @@ tile{
   y = 3640,
   width = 192,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -9426,7 +9426,7 @@ tile{
   y = 3064,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -9723,7 +9723,7 @@ tile{
   y = 3400,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -9813,7 +9813,7 @@ tile{
   y = 2984,
   width = 32,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -9876,7 +9876,7 @@ tile{
   y = 2584,
   width = 24,
   height = 128,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -10479,7 +10479,7 @@ tile{
   y = 2648,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -10533,7 +10533,7 @@ tile{
   y = 2584,
   width = 24,
   height = 64,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -10731,7 +10731,7 @@ tile{
   y = 2216,
   width = 24,
   height = 432,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -10749,7 +10749,7 @@ tile{
   y = 2648,
   width = 192,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -10776,7 +10776,7 @@ tile{
   y = 2504,
   width = 432,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -11280,7 +11280,7 @@ tile{
   y = 2648,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -11289,7 +11289,7 @@ tile{
   y = 2552,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -11532,7 +11532,7 @@ tile{
   y = 2552,
   width = 24,
   height = 240,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -11586,7 +11586,7 @@ tile{
   y = 2792,
   width = 208,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -11604,7 +11604,7 @@ tile{
   y = 2648,
   width = 80,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -12135,7 +12135,7 @@ tile{
   y = 2648,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -12144,7 +12144,7 @@ tile{
   y = 2552,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -12531,7 +12531,7 @@ tile{
   y = 2648,
   width = 272,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -12540,7 +12540,7 @@ tile{
   y = 2552,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -12828,7 +12828,7 @@ tile{
   y = 2648,
   width = 208,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -12900,7 +12900,7 @@ tile{
   y = 2408,
   width = 24,
   height = 48,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -12954,7 +12954,7 @@ tile{
   y = 2520,
   width = 24,
   height = 128,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -12981,7 +12981,7 @@ tile{
   y = 2552,
   width = 24,
   height = 48,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -13026,7 +13026,7 @@ tile{
   y = 2552,
   width = 64,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -13053,7 +13053,7 @@ tile{
   y = 2456,
   width = 64,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -13071,7 +13071,7 @@ tile{
   y = 2488,
   width = 80,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -13143,7 +13143,7 @@ tile{
   y = 2472,
   width = 24,
   height = 32,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -13521,7 +13521,7 @@ tile{
   y = 2648,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -13530,7 +13530,7 @@ tile{
   y = 2552,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -13728,7 +13728,7 @@ tile{
   y = 2456,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -13737,7 +13737,7 @@ tile{
   y = 2408,
   width = 24,
   height = 48,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -14196,7 +14196,7 @@ tile{
   y = 2328,
   width = 928,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -14844,7 +14844,7 @@ tile{
   y = 2136,
   width = 128,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -14871,7 +14871,7 @@ tile{
   y = 1816,
   width = 24,
   height = 320,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -14934,7 +14934,7 @@ tile{
   y = 1880,
   width = 24,
   height = 256,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -14997,7 +14997,7 @@ tile{
   y = 2136,
   width = 192,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15015,7 +15015,7 @@ tile{
   y = 1832,
   width = 80,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15024,7 +15024,7 @@ tile{
   y = 1848,
   width = 24,
   height = 16,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -15078,7 +15078,7 @@ tile{
   y = 1832,
   width = 80,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15168,7 +15168,7 @@ tile{
   y = 1720,
   width = 24,
   height = 416,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -15186,7 +15186,7 @@ tile{
   y = 1720,
   width = 24,
   height = 112,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -15267,7 +15267,7 @@ tile{
   y = 1512,
   width = 16,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15276,7 +15276,7 @@ tile{
   y = 1512,
   width = 16,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15321,7 +15321,7 @@ tile{
   y = 1416,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -15510,7 +15510,7 @@ tile{
   y = 1640,
   width = 128,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15573,7 +15573,7 @@ tile{
   y = 1640,
   width = 128,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -15609,7 +15609,7 @@ tile{
   y = 1416,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -16185,7 +16185,7 @@ tile{
   y = 1272,
   width = 144,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -16815,7 +16815,7 @@ tile{
   y = 1048,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -16941,7 +16941,7 @@ tile{
   y = 1448,
   width = 464,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -16950,7 +16950,7 @@ tile{
   y = 1224,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -17319,7 +17319,7 @@ tile{
   y = 824,
   width = 24,
   height = 128,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -17328,7 +17328,7 @@ tile{
   y = 952,
   width = 224,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -17589,7 +17589,7 @@ tile{
   y = 1048,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -17778,7 +17778,7 @@ tile{
   y = 1144,
   width = 224,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -17868,7 +17868,7 @@ tile{
   y = 1048,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -18030,7 +18030,7 @@ tile{
   y = 1144,
   width = 160,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -18084,7 +18084,7 @@ tile{
   y = 968,
   width = 160,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -18291,7 +18291,7 @@ tile{
   y = 664,
   width = 24,
   height = 304,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -18363,7 +18363,7 @@ tile{
   y = 664,
   width = 24,
   height = 304,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -18660,7 +18660,7 @@ tile{
   y = 584,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -18750,7 +18750,7 @@ tile{
   y = 520,
   width = 24,
   height = 64,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -18804,7 +18804,7 @@ tile{
   y = 584,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -18894,7 +18894,7 @@ tile{
   y = 520,
   width = 24,
   height = 64,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -19587,7 +19587,7 @@ tile{
   y = 152,
   width = 24,
   height = 32,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -19668,7 +19668,7 @@ tile{
   y = 136,
   width = 32,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -19704,7 +19704,7 @@ tile{
   y = 40,
   width = 24,
   height = 48,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -19731,7 +19731,7 @@ tile{
   y = 88,
   width = 128,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -19740,7 +19740,7 @@ tile{
   y = 104,
   width = 24,
   height = 32,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -19965,7 +19965,7 @@ tile{
   y = 1144,
   width = 160,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -19974,7 +19974,7 @@ tile{
   y = 1048,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -20118,7 +20118,7 @@ tile{
   y = 968,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -20208,7 +20208,7 @@ tile{
   y = 904,
   width = 24,
   height = 64,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -20298,7 +20298,7 @@ tile{
   y = 1288,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -20388,7 +20388,7 @@ tile{
   y = 1224,
   width = 24,
   height = 64,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -20514,7 +20514,7 @@ tile{
   y = 824,
   width = 80,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -20748,7 +20748,7 @@ tile{
   y = 704,
   width = 24,
   height = 80,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -20982,7 +20982,7 @@ tile{
   y = 712,
   width = 16,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -21000,7 +21000,7 @@ tile{
   y = 736,
   width = 24,
   height = 16,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -21306,7 +21306,7 @@ tile{
   y = 1672,
   width = 64,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -21504,7 +21504,7 @@ tile{
   y = 1408,
   width = 24,
   height = 80,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -21738,7 +21738,7 @@ tile{
   y = 1416,
   width = 16,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -21756,7 +21756,7 @@ tile{
   y = 1440,
   width = 24,
   height = 16,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -22134,7 +22134,7 @@ tile{
   y = 1912,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -22152,7 +22152,7 @@ tile{
   y = 1816,
   width = 16,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -22287,7 +22287,7 @@ tile{
   y = 1976,
   width = 352,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -22314,7 +22314,7 @@ tile{
   y = 1752,
   width = 24,
   height = 224,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -23988,7 +23988,7 @@ tile{
   y = 1048,
   width = 24,
   height = 368,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -24096,7 +24096,7 @@ tile{
   y = 1416,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -24168,7 +24168,7 @@ tile{
   y = 1592,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -24186,7 +24186,7 @@ tile{
   y = 1496,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -24951,7 +24951,7 @@ tile{
   y = 192,
   width = 24,
   height = 208,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -25158,7 +25158,7 @@ tile{
   y = 152,
   width = 24,
   height = 32,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -25239,7 +25239,7 @@ tile{
   y = 136,
   width = 32,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -25275,7 +25275,7 @@ tile{
   y = 40,
   width = 24,
   height = 48,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -25302,7 +25302,7 @@ tile{
   y = 88,
   width = 128,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -25311,7 +25311,7 @@ tile{
   y = 104,
   width = 24,
   height = 32,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -25950,7 +25950,7 @@ tile{
   y = 2856,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -25959,7 +25959,7 @@ tile{
   y = 2952,
   width = 112,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -26022,7 +26022,7 @@ tile{
   y = 2856,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -26031,7 +26031,7 @@ tile{
   y = 2952,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -26094,7 +26094,7 @@ tile{
   y = 2856,
   width = 24,
   height = 96,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -26103,7 +26103,7 @@ tile{
   y = 2952,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -26166,7 +26166,7 @@ tile{
   y = 3032,
   width = 24,
   height = 64,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -26175,7 +26175,7 @@ tile{
   y = 3096,
   width = 96,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -26931,7 +26931,7 @@ tile{
   y = 3176,
   width = 24,
   height = 208,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
@@ -26949,7 +26949,7 @@ tile{
   y = 3384,
   width = 320,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -27003,7 +27003,7 @@ tile{
   y = 3640,
   width = 320,
   height = 24,
-  pattern = "wall.3",
+  pattern = "wall.2",
 }
 
 tile{
@@ -27012,7 +27012,7 @@ tile{
   y = 3464,
   width = 24,
   height = 176,
-  pattern = "wall.2",
+  pattern = "wall.3",
 }
 
 tile{
