@@ -375,7 +375,7 @@ tile{
   y = 472,
   width = 16,
   height = 16,
-  pattern = 275,
+  pattern = "torch_off",
 }
 
 tile{
@@ -384,7 +384,7 @@ tile{
   y = 472,
   width = 16,
   height = 16,
-  pattern = 275,
+  pattern = "torch_off",
 }
 
 tile{
@@ -801,7 +801,7 @@ tile{
   y = 104,
   width = 16,
   height = 48,
-  pattern = 563,
+  pattern = "hole_parallax.3",
 }
 
 tile{
@@ -846,7 +846,7 @@ tile{
   y = 152,
   width = 48,
   height = 288,
-  pattern = 563,
+  pattern = "hole_parallax.3",
 }
 
 tile{
@@ -864,7 +864,7 @@ tile{
   y = 88,
   width = 128,
   height = 64,
-  pattern = 563,
+  pattern = "hole_parallax.3",
 }
 
 tile{
@@ -3510,7 +3510,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = 341,
+  pattern = "wall_pillar.1",
 }
 
 tile{
@@ -3519,7 +3519,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 342,
+  pattern = "wall_pillar.2",
 }
 
 tile{
@@ -3528,7 +3528,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 342,
+  pattern = "wall_pillar.2",
 }
 
 tile{
@@ -3537,7 +3537,7 @@ tile{
   y = 256,
   width = 16,
   height = 32,
-  pattern = 341,
+  pattern = "wall_pillar.1",
 }
 
 tile{
@@ -3546,7 +3546,7 @@ tile{
   y = 280,
   width = 16,
   height = 160,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -3555,7 +3555,7 @@ tile{
   y = 280,
   width = 16,
   height = 160,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -3915,7 +3915,7 @@ tile{
   y = 392,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -3924,7 +3924,7 @@ tile{
   y = 392,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -3933,7 +3933,7 @@ tile{
   y = 392,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -3942,7 +3942,7 @@ tile{
   y = 392,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -3951,7 +3951,7 @@ tile{
   y = 392,
   width = 24,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -3960,7 +3960,7 @@ tile{
   y = 392,
   width = 152,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -3978,7 +3978,7 @@ tile{
   y = 344,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -3987,7 +3987,7 @@ tile{
   y = 368,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -3996,7 +3996,7 @@ tile{
   y = 584,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4005,7 +4005,7 @@ tile{
   y = 608,
   width = 40,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4014,7 +4014,7 @@ tile{
   y = 584,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4023,7 +4023,7 @@ tile{
   y = 608,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4032,7 +4032,7 @@ tile{
   y = 344,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4041,7 +4041,7 @@ tile{
   y = 368,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4050,7 +4050,7 @@ tile{
   y = 216,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4059,7 +4059,7 @@ tile{
   y = 216,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4068,7 +4068,7 @@ tile{
   y = 104,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4077,7 +4077,7 @@ tile{
   y = 128,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4086,7 +4086,7 @@ tile{
   y = 544,
   width = 144,
   height = 112,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -4095,7 +4095,7 @@ tile{
   y = 568,
   width = 32,
   height = 64,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -4104,7 +4104,7 @@ tile{
   y = 568,
   width = 32,
   height = 64,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -4158,7 +4158,7 @@ tile{
   y = 696,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4167,7 +4167,7 @@ tile{
   y = 696,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4176,7 +4176,7 @@ tile{
   y = 344,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4185,7 +4185,7 @@ tile{
   y = 368,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4194,7 +4194,7 @@ tile{
   y = 456,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4203,7 +4203,7 @@ tile{
   y = 456,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4221,7 +4221,7 @@ tile{
   y = 824,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4230,7 +4230,7 @@ tile{
   y = 848,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4293,7 +4293,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4302,7 +4302,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4311,7 +4311,7 @@ tile{
   y = 136,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4320,7 +4320,7 @@ tile{
   y = 136,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4329,7 +4329,7 @@ tile{
   y = 136,
   width = 128,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4338,7 +4338,7 @@ tile{
   y = 96,
   width = 40,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4347,7 +4347,7 @@ tile{
   y = 104,
   width = 8,
   height = 32,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4356,7 +4356,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4365,7 +4365,7 @@ tile{
   y = 96,
   width = 128,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4374,7 +4374,7 @@ tile{
   y = 104,
   width = 128,
   height = 32,
-  pattern = 563,
+  pattern = "hole_parallax.3",
 }
 
 tile{
@@ -4527,7 +4527,7 @@ tile{
   y = 80,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4536,7 +4536,7 @@ tile{
   y = 152,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4545,7 +4545,7 @@ tile{
   y = 152,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4554,7 +4554,7 @@ tile{
   y = 152,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4563,7 +4563,7 @@ tile{
   y = 152,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4572,7 +4572,7 @@ tile{
   y = 80,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4581,7 +4581,7 @@ tile{
   y = 80,
   width = 128,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4590,7 +4590,7 @@ tile{
   y = 88,
   width = 8,
   height = 64,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4599,7 +4599,7 @@ tile{
   y = 152,
   width = 40,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4608,7 +4608,7 @@ tile{
   y = 160,
   width = 8,
   height = 32,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4617,7 +4617,7 @@ tile{
   y = 192,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4626,7 +4626,7 @@ tile{
   y = 192,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4635,7 +4635,7 @@ tile{
   y = 160,
   width = 8,
   height = 32,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4644,7 +4644,7 @@ tile{
   y = 152,
   width = 40,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4653,7 +4653,7 @@ tile{
   y = 104,
   width = 8,
   height = 48,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4662,7 +4662,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4671,7 +4671,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -4680,7 +4680,7 @@ tile{
   y = 88,
   width = 8,
   height = 8,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -4689,7 +4689,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -4878,7 +4878,7 @@ tile{
   y = 344,
   width = 32,
   height = 32,
-  pattern = 598,
+  pattern = "statue_teeth",
 }
 
 tile{
@@ -4950,7 +4950,7 @@ tile{
   y = 344,
   width = 32,
   height = 32,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -4959,7 +4959,7 @@ tile{
   y = 256,
   width = 32,
   height = 16,
-  pattern = 337,
+  pattern = "wall_torch.1",
 }
 
 tile{
@@ -4968,7 +4968,7 @@ tile{
   y = 448,
   width = 32,
   height = 16,
-  pattern = 339,
+  pattern = "wall_torch.2",
 }
 
 tile{
@@ -4977,7 +4977,7 @@ tile{
   y = 352,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -4986,7 +4986,7 @@ tile{
   y = 352,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -4995,7 +4995,7 @@ tile{
   y = 56,
   width = 16,
   height = 32,
-  pattern = 340,
+  pattern = "wall_torch.3",
 }
 
 tile{
@@ -5004,7 +5004,7 @@ tile{
   y = 152,
   width = 16,
   height = 32,
-  pattern = 340,
+  pattern = "wall_torch.3",
 }
 
 tile{
@@ -5013,7 +5013,7 @@ tile{
   y = 152,
   width = 16,
   height = 32,
-  pattern = 338,
+  pattern = "wall_torch.4",
 }
 
 tile{
@@ -5022,7 +5022,7 @@ tile{
   y = 56,
   width = 16,
   height = 32,
-  pattern = 338,
+  pattern = "wall_torch.4",
 }
 
 tile{
@@ -5031,7 +5031,7 @@ tile{
   y = 152,
   width = 16,
   height = 32,
-  pattern = 338,
+  pattern = "wall_torch.4",
 }
 
 tile{
@@ -5040,7 +5040,7 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -5049,7 +5049,7 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -5058,7 +5058,7 @@ tile{
   y = 496,
   width = 32,
   height = 16,
-  pattern = 337,
+  pattern = "wall_torch.1",
 }
 
 tile{
@@ -5067,7 +5067,7 @@ tile{
   y = 496,
   width = 32,
   height = 16,
-  pattern = 337,
+  pattern = "wall_torch.1",
 }
 
 tile{
@@ -5076,7 +5076,7 @@ tile{
   y = 688,
   width = 32,
   height = 16,
-  pattern = 339,
+  pattern = "wall_torch.2",
 }
 
 tile{
@@ -5085,7 +5085,7 @@ tile{
   y = 688,
   width = 32,
   height = 16,
-  pattern = 339,
+  pattern = "wall_torch.2",
 }
 
 tile{
@@ -5094,7 +5094,7 @@ tile{
   y = 104,
   width = 8,
   height = 32,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{
@@ -5103,7 +5103,7 @@ tile{
   y = 96,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -5112,7 +5112,7 @@ tile{
   y = 96,
   width = 40,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -5166,7 +5166,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_main.3",
 }
 
 tile{
@@ -5175,7 +5175,7 @@ tile{
   y = 120,
   width = 16,
   height = 8,
-  pattern = 627,
+  pattern = "door_main.3.support.1",
 }
 
 tile{
@@ -5184,7 +5184,7 @@ tile{
   y = 144,
   width = 16,
   height = 8,
-  pattern = 629,
+  pattern = "door_main.3.support.2",
 }
 
 tile{
@@ -5193,7 +5193,7 @@ tile{
   y = 816,
   width = 16,
   height = 16,
-  pattern = 631,
+  pattern = "door_main.3",
 }
 
 tile{
@@ -5202,7 +5202,7 @@ tile{
   y = 808,
   width = 16,
   height = 8,
-  pattern = 627,
+  pattern = "door_main.3.support.1",
 }
 
 tile{
@@ -5211,7 +5211,7 @@ tile{
   y = 832,
   width = 16,
   height = 8,
-  pattern = 629,
+  pattern = "door_main.3.support.2",
 }
 
 tile{
@@ -5220,7 +5220,7 @@ tile{
   y = 792,
   width = 32,
   height = 16,
-  pattern = 344,
+  pattern = "wall_pillar.3",
 }
 
 tile{
@@ -5229,7 +5229,7 @@ tile{
   y = 840,
   width = 32,
   height = 16,
-  pattern = 344,
+  pattern = "wall_pillar.3",
 }
 
 tile{
@@ -5238,7 +5238,7 @@ tile{
   y = 104,
   width = 32,
   height = 16,
-  pattern = 344,
+  pattern = "wall_pillar.3",
 }
 
 tile{
@@ -5247,7 +5247,7 @@ tile{
   y = 152,
   width = 32,
   height = 16,
-  pattern = 344,
+  pattern = "wall_pillar.3",
 }
 
 tile{
@@ -5256,7 +5256,7 @@ tile{
   y = 800,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -5265,7 +5265,7 @@ tile{
   y = 864,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -5274,7 +5274,7 @@ tile{
   y = 800,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -5283,7 +5283,7 @@ tile{
   y = 864,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -5292,7 +5292,7 @@ tile{
   y = 856,
   width = 16,
   height = 24,
-  pattern = 363,
+  pattern = "barrier_big.junction.2",
 }
 
 tile{
@@ -5301,7 +5301,7 @@ tile{
   y = 792,
   width = 16,
   height = 24,
-  pattern = 363,
+  pattern = "barrier_big.junction.2",
 }
 
 tile{
@@ -5310,7 +5310,7 @@ tile{
   y = 792,
   width = 16,
   height = 24,
-  pattern = 363,
+  pattern = "barrier_big.junction.2",
 }
 
 tile{
@@ -5319,7 +5319,7 @@ tile{
   y = 856,
   width = 16,
   height = 24,
-  pattern = 363,
+  pattern = "barrier_big.junction.2",
 }
 
 tile{
@@ -5328,7 +5328,7 @@ tile{
   y = 856,
   width = 16,
   height = 24,
-  pattern = 363,
+  pattern = "barrier_big.junction.2",
 }
 
 tile{
@@ -5337,7 +5337,7 @@ tile{
   y = 856,
   width = 16,
   height = 24,
-  pattern = 363,
+  pattern = "barrier_big.junction.2",
 }
 
 tile{
@@ -5346,7 +5346,7 @@ tile{
   y = 856,
   width = 32,
   height = 24,
-  pattern = 324,
+  pattern = "barrier_big.1",
 }
 
 tile{
@@ -5355,7 +5355,7 @@ tile{
   y = 856,
   width = 32,
   height = 24,
-  pattern = 324,
+  pattern = "barrier_big.1",
 }
 
 tile{
@@ -5364,7 +5364,7 @@ tile{
   y = 808,
   width = 16,
   height = 48,
-  pattern = 326,
+  pattern = "barrier_big.2",
 }
 
 tile{
@@ -5373,7 +5373,7 @@ tile{
   y = 808,
   width = 16,
   height = 48,
-  pattern = 326,
+  pattern = "barrier_big.2",
 }
 
 tile{
@@ -5382,7 +5382,7 @@ tile{
   y = 792,
   width = 128,
   height = 24,
-  pattern = 324,
+  pattern = "barrier_big.1",
 }
 
 tile{
@@ -5391,7 +5391,7 @@ tile{
   y = 864,
   width = 32,
   height = 16,
-  pattern = 519,
+  pattern = "spikes",
 }
 
 tile{
@@ -5409,7 +5409,7 @@ tile{
   y = 640,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -5418,7 +5418,7 @@ tile{
   y = 616,
   width = 48,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -5535,7 +5535,7 @@ tile{
   y = 592,
   width = 160,
   height = 64,
-  pattern = 563,
+  pattern = "hole_parallax.3",
 }
 
 tile{
@@ -5544,7 +5544,7 @@ tile{
   y = 632,
   width = 64,
   height = 48,
-  pattern = 563,
+  pattern = "hole_parallax.3",
 }
 
 tile{
@@ -5580,7 +5580,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 323,
+  pattern = "statue_eye",
 }
 
 tile{
@@ -5589,7 +5589,7 @@ tile{
   y = 544,
   width = 32,
   height = 32,
-  pattern = 323,
+  pattern = "statue_eye",
 }
 
 tile{
@@ -5598,7 +5598,7 @@ tile{
   y = 560,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -5607,7 +5607,7 @@ tile{
   y = 560,
   width = 104,
   height = 8,
-  pattern = 70,
+  pattern = "barrier.1",
 }
 
 tile{
@@ -5616,7 +5616,7 @@ tile{
   y = 560,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -5625,7 +5625,7 @@ tile{
   y = 672,
   width = 8,
   height = 8,
-  pattern = 69,
+  pattern = "barrier.junction",
 }
 
 tile{
@@ -5634,7 +5634,7 @@ tile{
   y = 568,
   width = 8,
   height = 104,
-  pattern = 71,
+  pattern = "barrier.2",
 }
 
 tile{

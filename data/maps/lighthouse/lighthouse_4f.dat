@@ -1725,7 +1725,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1734,7 +1734,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1743,7 +1743,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1752,7 +1752,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1761,7 +1761,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1770,7 +1770,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1779,7 +1779,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1788,7 +1788,7 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1797,7 +1797,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1806,7 +1806,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1815,7 +1815,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1824,7 +1824,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1833,7 +1833,7 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1842,7 +1842,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1851,7 +1851,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1860,7 +1860,7 @@ tile{
   y = 192,
   width = 16,
   height = 16,
-  pattern = 276,
+  pattern = "torch",
 }
 
 tile{
@@ -1869,7 +1869,7 @@ tile{
   y = 184,
   width = 16,
   height = 16,
-  pattern = 277,
+  pattern = "torch_big.bottom",
 }
 
 tile{
@@ -1878,7 +1878,7 @@ tile{
   y = 232,
   width = 16,
   height = 16,
-  pattern = 277,
+  pattern = "torch_big.bottom",
 }
 
 tile{
@@ -1887,7 +1887,7 @@ tile{
   y = 232,
   width = 16,
   height = 16,
-  pattern = 277,
+  pattern = "torch_big.bottom",
 }
 
 tile{
@@ -1896,7 +1896,7 @@ tile{
   y = 280,
   width = 16,
   height = 16,
-  pattern = 277,
+  pattern = "torch_big.bottom",
 }
 
 tile{
@@ -2032,7 +2032,7 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = 278,
+  pattern = "torch_big.top",
 }
 
 tile{
@@ -2041,7 +2041,7 @@ tile{
   y = 264,
   width = 16,
   height = 16,
-  pattern = 278,
+  pattern = "torch_big.top",
 }
 
 tile{
@@ -2050,7 +2050,7 @@ tile{
   y = 168,
   width = 16,
   height = 16,
-  pattern = 278,
+  pattern = "torch_big.top",
 }
 
 tile{
@@ -2059,7 +2059,7 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = 278,
+  pattern = "torch_big.top",
 }
 
 tile{
