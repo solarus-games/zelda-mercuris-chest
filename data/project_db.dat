@@ -14,7 +14,7 @@ map{ id = "inside_store", description = "Inside Store" }
 
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "mine", description = "Mine" }
-tileset{ id = "lighthouse", description = "Lighthouse" }
+tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
 tileset{ id = "dark_world", description = "Dark World" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
 
