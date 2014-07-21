@@ -2319,7 +2319,7 @@ tile{
   y = 344,
   width = 8,
   height = 32,
-  pattern = 443,
+  pattern = "door_cache_low.3",
 }
 
 tile{
@@ -2337,7 +2337,7 @@ tile{
   y = 344,
   width = 8,
   height = 32,
-  pattern = 444,
+  pattern = "door_cache_low.4",
 }
 
 tile{
