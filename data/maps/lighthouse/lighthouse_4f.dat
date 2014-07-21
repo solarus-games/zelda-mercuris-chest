@@ -195,7 +195,7 @@ tile{
   y = 16,
   width = 384,
   height = 24,
-  pattern = 615,
+  pattern = "wall_glass.1",
 }
 
 tile{
@@ -204,7 +204,7 @@ tile{
   y = 40,
   width = 384,
   height = 8,
-  pattern = 616,
+  pattern = "wall_glass_border.1",
 }
 
 tile{
@@ -213,7 +213,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 611,
+  pattern = "wall_glass_pillar.1",
 }
 
 tile{
@@ -285,7 +285,7 @@ tile{
   y = 128,
   width = 24,
   height = 224,
-  pattern = 619,
+  pattern = "wall_glass.3",
 }
 
 tile{
@@ -294,7 +294,7 @@ tile{
   y = 128,
   width = 8,
   height = 224,
-  pattern = 620,
+  pattern = "wall_glass_border.3",
 }
 
 tile{
@@ -519,7 +519,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 611,
+  pattern = "wall_glass_pillar.1",
 }
 
 tile{
@@ -528,7 +528,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 611,
+  pattern = "wall_glass_pillar.1",
 }
 
 tile{
@@ -537,7 +537,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 611,
+  pattern = "wall_glass_pillar.1",
 }
 
 tile{
@@ -546,7 +546,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 611,
+  pattern = "wall_glass_pillar.1",
 }
 
 tile{
@@ -555,7 +555,7 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = 611,
+  pattern = "wall_glass_pillar.1",
 }
 
 tile{
@@ -609,7 +609,7 @@ tile{
   y = 128,
   width = 32,
   height = 16,
-  pattern = 612,
+  pattern = "wall_glass_pillar.3",
 }
 
 tile{
@@ -681,7 +681,7 @@ tile{
   y = 336,
   width = 32,
   height = 16,
-  pattern = 612,
+  pattern = "wall_glass_pillar.3",
 }
 
 tile{
@@ -690,7 +690,7 @@ tile{
   y = 272,
   width = 32,
   height = 16,
-  pattern = 612,
+  pattern = "wall_glass_pillar.3",
 }
 
 tile{
@@ -699,7 +699,7 @@ tile{
   y = 192,
   width = 32,
   height = 16,
-  pattern = 612,
+  pattern = "wall_glass_pillar.3",
 }
 
 tile{
@@ -807,7 +807,7 @@ tile{
   y = 440,
   width = 384,
   height = 24,
-  pattern = 617,
+  pattern = "wall_glass.2",
 }
 
 tile{
@@ -816,7 +816,7 @@ tile{
   y = 432,
   width = 384,
   height = 8,
-  pattern = 618,
+  pattern = "wall_glass_border.2",
 }
 
 tile{
@@ -987,7 +987,7 @@ tile{
   y = 128,
   width = 24,
   height = 224,
-  pattern = 622,
+  pattern = "wall_glass.4",
 }
 
 tile{
@@ -996,7 +996,7 @@ tile{
   y = 128,
   width = 8,
   height = 224,
-  pattern = 621,
+  pattern = "wall_glass_border.4",
 }
 
 tile{
@@ -1005,7 +1005,7 @@ tile{
   y = 336,
   width = 32,
   height = 16,
-  pattern = 613,
+  pattern = "wall_glass_pillar.4",
 }
 
 tile{
@@ -1014,7 +1014,7 @@ tile{
   y = 272,
   width = 32,
   height = 16,
-  pattern = 613,
+  pattern = "wall_glass_pillar.4",
 }
 
 tile{
@@ -1023,7 +1023,7 @@ tile{
   y = 128,
   width = 32,
   height = 16,
-  pattern = 613,
+  pattern = "wall_glass_pillar.4",
 }
 
 tile{
@@ -1032,7 +1032,7 @@ tile{
   y = 192,
   width = 32,
   height = 16,
-  pattern = 613,
+  pattern = "wall_glass_pillar.4",
 }
 
 tile{
@@ -1041,7 +1041,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 614,
+  pattern = "wall_glass_pillar.2",
 }
 
 tile{
@@ -1050,7 +1050,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 614,
+  pattern = "wall_glass_pillar.2",
 }
 
 tile{
@@ -1059,7 +1059,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 614,
+  pattern = "wall_glass_pillar.2",
 }
 
 tile{
@@ -1068,7 +1068,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 614,
+  pattern = "wall_glass_pillar.2",
 }
 
 tile{
@@ -1077,7 +1077,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 614,
+  pattern = "wall_glass_pillar.2",
 }
 
 tile{
@@ -1086,7 +1086,7 @@ tile{
   y = 432,
   width = 16,
   height = 32,
-  pattern = 614,
+  pattern = "wall_glass_pillar.2",
 }
 
 tile{
@@ -1257,7 +1257,7 @@ tile{
   y = 120,
   width = 8,
   height = 96,
-  pattern = 620,
+  pattern = "wall_glass_border.3",
 }
 
 tile{
@@ -1266,7 +1266,7 @@ tile{
   y = 216,
   width = 128,
   height = 8,
-  pattern = 616,
+  pattern = "wall_glass_border.1",
 }
 
 tile{
@@ -1275,7 +1275,7 @@ tile{
   y = 120,
   width = 8,
   height = 96,
-  pattern = 621,
+  pattern = "wall_glass_border.4",
 }
 
 tile{
@@ -1284,7 +1284,7 @@ tile{
   y = 112,
   width = 128,
   height = 8,
-  pattern = 618,
+  pattern = "wall_glass_border.2",
 }
 
 tile{
@@ -1392,7 +1392,7 @@ tile{
   y = 264,
   width = 8,
   height = 96,
-  pattern = 620,
+  pattern = "wall_glass_border.3",
 }
 
 tile{
@@ -1401,7 +1401,7 @@ tile{
   y = 360,
   width = 128,
   height = 8,
-  pattern = 616,
+  pattern = "wall_glass_border.1",
 }
 
 tile{
@@ -1410,7 +1410,7 @@ tile{
   y = 264,
   width = 8,
   height = 96,
-  pattern = 621,
+  pattern = "wall_glass_border.4",
 }
 
 tile{
@@ -1419,7 +1419,7 @@ tile{
   y = 256,
   width = 128,
   height = 8,
-  pattern = 618,
+  pattern = "wall_glass_border.2",
 }
 
 tile{
@@ -1536,7 +1536,7 @@ tile{
   y = 264,
   width = 8,
   height = 96,
-  pattern = 620,
+  pattern = "wall_glass_border.3",
 }
 
 tile{
@@ -1545,7 +1545,7 @@ tile{
   y = 360,
   width = 128,
   height = 8,
-  pattern = 616,
+  pattern = "wall_glass_border.1",
 }
 
 tile{
@@ -1554,7 +1554,7 @@ tile{
   y = 264,
   width = 8,
   height = 96,
-  pattern = 621,
+  pattern = "wall_glass_border.4",
 }
 
 tile{
@@ -1563,7 +1563,7 @@ tile{
   y = 256,
   width = 128,
   height = 8,
-  pattern = 618,
+  pattern = "wall_glass_border.2",
 }
 
 tile{
@@ -1680,7 +1680,7 @@ tile{
   y = 120,
   width = 8,
   height = 96,
-  pattern = 620,
+  pattern = "wall_glass_border.3",
 }
 
 tile{
@@ -1689,7 +1689,7 @@ tile{
   y = 216,
   width = 128,
   height = 8,
-  pattern = 616,
+  pattern = "wall_glass_border.1",
 }
 
 tile{
@@ -1698,7 +1698,7 @@ tile{
   y = 120,
   width = 8,
   height = 96,
-  pattern = 621,
+  pattern = "wall_glass_border.4",
 }
 
 tile{
@@ -1707,7 +1707,7 @@ tile{
   y = 112,
   width = 128,
   height = 8,
-  pattern = 618,
+  pattern = "wall_glass_border.2",
 }
 
 tile{

@@ -96,7 +96,7 @@ tile{
   y = 80,
   width = 16,
   height = 320,
-  pattern = "wall_hole.",
+  pattern = "wall_hole.4",
 }
 
 tile{

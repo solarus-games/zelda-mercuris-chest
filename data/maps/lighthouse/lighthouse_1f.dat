@@ -3305,15 +3305,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 600,
-  y = 912,
-  width = 24,
-  height = 24,
-  pattern = "330",
-}
-
-tile{
-  layer = 1,
   x = 624,
   y = 896,
   width = 32,
@@ -3400,15 +3391,6 @@ tile{
   width = 192,
   height = 24,
   pattern = "wall.2",
-}
-
-tile{
-  layer = 1,
-  x = 656,
-  y = 912,
-  width = 24,
-  height = 24,
-  pattern = 331,
 }
 
 tile{
@@ -6424,7 +6406,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "main_exit",
-  transition = "fade",
   destination_map = "test_map",
   destination = "from_lighthouse",
 }
@@ -6732,7 +6713,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_b1_A",
-  transition = "fade",
   destination_map = "lighthouse/lighthouse_b1",
   destination = "from_1f_a",
 }
@@ -6782,7 +6762,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_2F_B",
-  transition = "fade",
   destination_map = "lighthouse/lighthouse_2f",
   destination = "from_1f_b",
 }
@@ -7049,7 +7028,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter",
-  transition = "fade",
   destination_map = "lighthouse/lighthouse_2f",
   destination = "from_1f_c",
 }
@@ -7070,7 +7048,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  transition = "fade",
   destination_map = "lighthouse/lighthouse_2f",
   destination = "from_1f_d",
 }
@@ -7252,10 +7229,7 @@ wall{
   y = 72,
   width = 16,
   height = 16,
-  stops_hero = false,
   stops_enemies = true,
-  stops_npcs = false,
-  stops_blocks = false,
 }
 
 wall{
@@ -7264,10 +7238,7 @@ wall{
   y = 112,
   width = 48,
   height = 16,
-  stops_hero = false,
   stops_enemies = true,
-  stops_npcs = false,
-  stops_blocks = false,
 }
 
 wall{
@@ -7276,10 +7247,7 @@ wall{
   y = 112,
   width = 48,
   height = 16,
-  stops_hero = false,
   stops_enemies = true,
-  stops_npcs = false,
-  stops_blocks = false,
 }
 
 wall{
@@ -7288,10 +7256,7 @@ wall{
   y = 352,
   width = 16,
   height = 16,
-  stops_hero = false,
   stops_enemies = true,
-  stops_npcs = false,
-  stops_blocks = false,
 }
 
 switch{
@@ -7414,24 +7379,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 600,
-  y = 936,
-  width = 24,
-  height = 8,
-  pattern = 332,
-}
-
-tile{
-  layer = 2,
-  x = 656,
-  y = 936,
-  width = 24,
-  height = 8,
-  pattern = 333,
-}
-
-tile{
-  layer = 2,
   x = 624,
   y = 936,
   width = 32,
@@ -7445,7 +7392,7 @@ tile{
   y = 864,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7454,7 +7401,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7463,7 +7410,7 @@ tile{
   y = 896,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7472,7 +7419,7 @@ tile{
   y = 912,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7481,7 +7428,7 @@ tile{
   y = 928,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7490,7 +7437,7 @@ tile{
   y = 928,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7499,7 +7446,7 @@ tile{
   y = 912,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7508,7 +7455,7 @@ tile{
   y = 896,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7517,7 +7464,7 @@ tile{
   y = 880,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7526,7 +7473,7 @@ tile{
   y = 864,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7661,7 +7608,7 @@ tile{
   y = 688,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7670,7 +7617,7 @@ tile{
   y = 656,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7679,7 +7626,7 @@ tile{
   y = 640,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7688,7 +7635,7 @@ tile{
   y = 624,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7697,7 +7644,7 @@ tile{
   y = 672,
   width = 16,
   height = 16,
-  pattern = 579,
+  pattern = "wall_diag.3",
 }
 
 tile{
@@ -7742,7 +7689,7 @@ tile{
   y = 672,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7751,7 +7698,7 @@ tile{
   y = 656,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7760,7 +7707,7 @@ tile{
   y = 640,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7769,7 +7716,7 @@ tile{
   y = 624,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7778,7 +7725,7 @@ tile{
   y = 688,
   width = 16,
   height = 16,
-  pattern = 588,
+  pattern = "wall_diag.4",
 }
 
 tile{
@@ -7823,7 +7770,7 @@ tile{
   y = 256,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7832,7 +7779,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7841,7 +7788,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7850,7 +7797,7 @@ tile{
   y = 320,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7859,7 +7806,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7904,7 +7851,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7913,7 +7860,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7922,7 +7869,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7931,7 +7878,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7940,7 +7887,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = 573,
+  pattern = "wall_diag.2",
 }
 
 tile{
@@ -7994,7 +7941,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8003,7 +7950,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8012,7 +7959,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8021,7 +7968,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8030,7 +7977,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8120,7 +8067,7 @@ tile{
   y = 256,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8129,7 +8076,7 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8138,7 +8085,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8147,7 +8094,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
@@ -8156,7 +8103,7 @@ tile{
   y = 320,
   width = 16,
   height = 16,
-  pattern = 574,
+  pattern = "wall_diag.1",
 }
 
 tile{
