@@ -3579,7 +3579,7 @@ tile{
   y = 568,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3588,7 +3588,7 @@ tile{
   y = 568,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3597,7 +3597,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3606,7 +3606,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3615,7 +3615,7 @@ tile{
   y = 568,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3624,7 +3624,7 @@ tile{
   y = 568,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3669,7 +3669,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3678,7 +3678,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3687,7 +3687,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3723,7 +3723,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3732,7 +3732,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3741,7 +3741,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3750,7 +3750,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3759,7 +3759,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3768,7 +3768,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3777,7 +3777,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3786,7 +3786,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3795,7 +3795,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3804,7 +3804,7 @@ tile{
   y = 752,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -3840,7 +3840,7 @@ tile{
   y = 712,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4209,7 +4209,7 @@ tile{
   y = 280,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4218,7 +4218,7 @@ tile{
   y = 280,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4227,7 +4227,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4236,7 +4236,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4389,7 +4389,7 @@ tile{
   y = 280,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4398,7 +4398,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4407,7 +4407,7 @@ tile{
   y = 376,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -4416,7 +4416,7 @@ tile{
   y = 336,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5343,7 +5343,7 @@ tile{
   y = 368,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5352,7 +5352,7 @@ tile{
   y = 344,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5361,7 +5361,7 @@ tile{
   y = 144,
   width = 16,
   height = 24,
-  pattern = "barrier_big.junction.2",
+  pattern = "barrier_big.border.2",
 }
 
 tile{
@@ -5370,7 +5370,7 @@ tile{
   y = 144,
   width = 16,
   height = 24,
-  pattern = "barrier_big.junction.2",
+  pattern = "barrier_big.border.2",
 }
 
 tile{
@@ -5379,7 +5379,7 @@ tile{
   y = 72,
   width = 16,
   height = 16,
-  pattern = "barrier_big.junction.1",
+  pattern = "barrier_big.border.1",
 }
 
 tile{
@@ -5388,7 +5388,7 @@ tile{
   y = 72,
   width = 16,
   height = 16,
-  pattern = "barrier_big.junction.1",
+  pattern = "barrier_big.border.1",
 }
 
 tile{
@@ -5784,7 +5784,7 @@ tile{
   y = 520,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5793,7 +5793,7 @@ tile{
   y = 520,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5802,7 +5802,7 @@ tile{
   y = 520,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5811,7 +5811,7 @@ tile{
   y = 520,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5820,7 +5820,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5829,7 +5829,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5838,7 +5838,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
@@ -5847,7 +5847,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "barrier.junction",
+  pattern = "barrier.border",
 }
 
 tile{
