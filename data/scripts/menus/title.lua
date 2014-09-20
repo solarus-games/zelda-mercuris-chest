@@ -1,6 +1,7 @@
 -- Title screen of the game.
 
 local title_screen = {}
+local quest_manager = require("scripts/quest_manager")
 
 function title_screen:on_started()
 
@@ -68,7 +69,8 @@ function title_screen:phase_title()
   self.logo_img = sol.surface.create("menus/title_logo.png")
 
   self.website_img = sol.text_surface.create{
-    font = "dialog",
+    font = "la",
+    font_size = 11,
     rendering_mode = "antialiasing",
     color = hour_text_color,
     text_key = "title_screen.website",
@@ -76,7 +78,8 @@ function title_screen:phase_title()
   }
 
   self.press_space_img = sol.text_surface.create{
-    font = "dialog_big",
+    font = "la",
+    font_size = 18,
     rendering_mode = "antialiasing",
     color = hour_text_color,
     text_key = "title_screen.press_space",

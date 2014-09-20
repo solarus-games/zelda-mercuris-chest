@@ -92,20 +92,20 @@ function quest_manager:initialize_quest()
   initialize_entities()
 end
 
--- Returns the font to be used for dialogs
+-- Returns the font and font size to be used for dialogs
 -- depending on the specified language (the current one by default).
 function quest_manager:get_dialog_font(language)
 
   -- No font differences between languages (for now).
-  return "dialog"
+  return "la", 11
 end
 
--- Returns the font to be used to display text in menus
+-- Returns the font and font size to be used to display text in menus
 -- depending on the specified language (the current one by default).
 function quest_manager:get_menu_font(language)
 
   -- No font differences between languages (for now).
-  return "fixed"
+  return "minecraftia", 8
 end
 
 return quest_manager

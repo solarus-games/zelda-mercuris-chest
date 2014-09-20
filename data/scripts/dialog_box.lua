@@ -58,13 +58,14 @@ function dialog_box_manager:create(game)
   local box_height = 60
 
   -- Initialize dialog box data.
-  local dialog_font = quest_manager:get_dialog_font()
+  local font, font_size = quest_manager:get_dialog_font()
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
     dialog_box.line_surfaces[i] = sol.text_surface.create{
       horizontal_alignment = "left",
       vertical_alignment = "top",
-      font = dialog_font,
+      font = font,
+      font_size = font_size,
     }
   end
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
