@@ -98,15 +98,21 @@ sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/grass", description = "Grass" }
-sprite{ id = "entities/bush", description = "Bush" }
-sprite{ id = "entities/pot", description = "Pot" }
+sprite{ id = "entities/bush", description = "Bush (from tileset)" }
+sprite{ id = "entities/bush_green", description = "Bush (green)" }
+sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
+sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
-sprite{ id = "entities/stone_small_black", description = "Small black stone" }
-sprite{ id = "entities/stone_small_white", description = "Small white stone" }
+sprite{ id = "entities/stone_black", description = "Stone (black)" }
+sprite{ id = "entities/stone_black_skull", description = "Stone (black skull)" }
+sprite{ id = "entities/stone_white", description = "Stone (white)" }
+sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
 sprite{ id = "entities/switch", description = "Switch" }
+sprite{ id = "entities/vase", description = "Vase" }
+sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
 sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
 sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
