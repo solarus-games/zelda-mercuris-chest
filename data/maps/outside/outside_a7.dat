@@ -8,6 +8,168 @@ properties{
   music = "same",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 40,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 88,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 136,
+  width = 96,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 232,
+  width = 288,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 40,
+  width = 96,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
 destination{
   layer = 0,
   x = 216,
@@ -32,5 +194,149 @@ chest{
   y = 125,
   name = "chest",
   sprite = "entities/chest",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 144,
+  height = 40,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 48,
+  width = 144,
+  height = 40,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 32,
+  width = 144,
+  height = 16,
+  pattern = "tree.green.2",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 96,
+  width = 96,
+  height = 40,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 80,
+  width = 96,
+  height = 16,
+  pattern = "tree.green.2",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = -8,
+  width = 8,
+  height = 40,
+  pattern = "tree.green.4",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 40,
+  width = 8,
+  height = 40,
+  pattern = "tree.green.4",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 88,
+  width = 8,
+  height = 40,
+  pattern = "tree.green.4",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 144,
+  width = 96,
+  height = 40,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 128,
+  width = 96,
+  height = 16,
+  pattern = "tree.green.2",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 136,
+  width = 8,
+  height = 40,
+  pattern = "tree.green.4",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 192,
+  width = 960,
+  height = 40,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 176,
+  width = 960,
+  height = 16,
+  pattern = "tree.green.2",
+}
+
+tile{
+  layer = 1,
+  x = 960,
+  y = 184,
+  width = 8,
+  height = 40,
+  pattern = "tree.green.4",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = -8,
+  width = 8,
+  height = 40,
+  pattern = "tree.green.3",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 0,
+  width = 1776,
+  height = 40,
+  pattern = "tree.green.1",
 }
 
