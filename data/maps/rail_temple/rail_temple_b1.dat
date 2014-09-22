@@ -2492,7 +2492,7 @@ destructible{
   layer = 0,
   x = 744,
   y = 1373,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2501,7 +2501,7 @@ destructible{
   layer = 0,
   x = 776,
   y = 1373,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2510,7 +2510,7 @@ destructible{
   layer = 0,
   x = 760,
   y = 1405,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2534,7 +2534,7 @@ destructible{
   layer = 0,
   x = 224,
   y = 613,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2543,7 +2543,7 @@ destructible{
   layer = 0,
   x = 240,
   y = 613,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2552,7 +2552,7 @@ destructible{
   layer = 0,
   x = 224,
   y = 997,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2561,7 +2561,7 @@ destructible{
   layer = 0,
   x = 240,
   y = 997,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2570,7 +2570,7 @@ destructible{
   layer = 0,
   x = 992,
   y = 677,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2579,7 +2579,7 @@ destructible{
   layer = 0,
   x = 1008,
   y = 677,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2588,7 +2588,7 @@ destructible{
   layer = 0,
   x = 376,
   y = 1125,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2661,7 +2661,7 @@ destructible{
   layer = 0,
   x = 344,
   y = 2189,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -2670,7 +2670,7 @@ destructible{
   layer = 0,
   x = 504,
   y = 2189,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
@@ -10746,7 +10746,7 @@ destructible{
   layer = 1,
   x = 176,
   y = 2229,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }

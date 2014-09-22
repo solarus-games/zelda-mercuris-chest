@@ -4007,7 +4007,7 @@ destructible{
   layer = 1,
   x = 176,
   y = 597,
-  sprite = "entities/vase,
+  sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
 }
