@@ -7612,6 +7612,60 @@ tile{
   pattern = "house_tree.steps.bottom",
 }
 
+tile{
+  layer = 0,
+  x = 656,
+  y = 624,
+  width = 8,
+  height = 16,
+  pattern = "house.wall_stones.corner.1",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "house.wall_stones.window",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "house.wall_stones.window",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "house.entrance_green",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 624,
+  width = 8,
+  height = 16,
+  pattern = "house.wall_stones.corner.2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 592,
+  width = 64,
+  height = 32,
+  pattern = "invisible_wall",
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -8539,6 +8593,87 @@ tile{
   width = 64,
   height = 56,
   pattern = "house_tree.roof",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 616,
+  width = 48,
+  height = 8,
+  pattern = "house.roof_leaves.2",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = "house.roof_leaves.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = "house.roof_leaves.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 600,
+  width = 8,
+  height = 16,
+  pattern = "house.roof_leaves.3",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "house.roof_leaves.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 600,
+  width = 48,
+  height = 16,
+  pattern = "house.roof_leaves",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 592,
+  width = 48,
+  height = 8,
+  pattern = "house.roof_leaves.1",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "house.roof_leaves.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 600,
+  width = 8,
+  height = 16,
+  pattern = "house.roof_leaves.4",
 }
 
 dynamic_tile{
