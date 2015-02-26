@@ -94,6 +94,8 @@ sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bone_key_door", description = "Bone key door" }
+sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
+sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
 sprite{ id = "entities/bush", description = "Bush (from tileset)" }
 sprite{ id = "entities/bush_green", description = "Bush (green)" }
 sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
@@ -103,6 +105,7 @@ sprite{ id = "entities/castle_lock", description = "Castle prison lock" }
 sprite{ id = "entities/chest", description = "Chest (normal)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
+sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/destination", description = "Destination of teletransporter" }
 sprite{ id = "entities/door_big_key", description = "Door (big key)" }
 sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
@@ -114,15 +117,18 @@ sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/fresco", description = "Intro fresco" }
 sprite{ id = "entities/frozen_door", description = "Frozen door" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/gray_block", description = "Block (gray)" }
 sprite{ id = "entities/hint_stone", description = "Hint stone" }
+sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/lever", description = "Lever" }
 sprite{ id = "entities/minecart", description = "Minecart" }
 sprite{ id = "entities/outside_door", description = "Outside closed door" }
+sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/slot_machine", description = "Casino slot machine" }
