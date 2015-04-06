@@ -1306,10 +1306,10 @@ tile{
 }
 
 destination{
+  name = "from_b1_b",
   layer = 0,
   x = 808,
   y = 61,
-  name = "from_b1_b",
   direction = 3,
 }
 
@@ -1325,7 +1325,7 @@ stairs{
   x = 592,
   y = 120,
   direction = 0,
-  subtype = "4",
+  subtype = 4,
 }
 
 enemy{
@@ -1373,7 +1373,7 @@ npc{
   x = 592,
   y = 397,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/hint_stone",
 }
 
@@ -1392,7 +1392,7 @@ stairs{
   x = 800,
   y = 48,
   direction = 1,
-  subtype = "2",
+  subtype = 2,
 }
 
 tile{
@@ -3986,8 +3986,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -3998,8 +3998,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4013,10 +4013,10 @@ destructible{
 }
 
 destination{
+  name = "from_b1_a",
   layer = 1,
   x = 144,
   y = 37,
-  name = "from_b1_a",
   direction = 3,
 }
 
@@ -4035,7 +4035,7 @@ stairs{
   x = 136,
   y = 24,
   direction = 1,
-  subtype = "0",
+  subtype = 0,
 }
 
 tile{
