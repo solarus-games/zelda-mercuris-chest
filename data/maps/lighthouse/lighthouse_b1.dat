@@ -1540,39 +1540,38 @@ tile{
 }
 
 destination{
+  name = "from_1f_a",
   layer = 1,
   x = 480,
   y = 277,
-  name = "from_1f_a",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_1f_A",
   layer = 1,
   x = 472,
   y = 264,
   width = 16,
   height = 16,
-  name = "to_1f_A",
-  transition = "fade",
   destination_map = "lighthouse/lighthouse_1f",
   destination = "from_b1_a",
 }
 
 stairs{
+  name = "stairs",
   layer = 1,
   x = 472,
   y = 264,
-  name = "stairs",
   direction = 1,
-  subtype = "0",
+  subtype = 0,
 }
 
 chest{
+  name = "RC1",
   layer = 1,
   x = 264,
   y = 221,
-  name = "RC1",
   treasure_name = "rupee",
   treasure_variant = 4,
   treasure_savegame_variable = "lighthouse_ruby_chest_1",
@@ -1580,87 +1579,87 @@ chest{
 }
 
 dynamic_tile{
+  name = "star_tile_A1",
   layer = 1,
   x = 208,
   y = 336,
+  pattern = "floor_star.on",
   width = 16,
   height = 32,
-  name = "star_tile_A1",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_tile_A_2",
   layer = 1,
   x = 80,
   y = 336,
+  pattern = "floor_star.on",
   width = 32,
   height = 16,
-  name = "star_tile_A_2",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_tile_A3",
   layer = 1,
   x = 176,
   y = 240,
+  pattern = "floor_star.on",
   width = 16,
   height = 32,
-  name = "star_tile_A3",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_tile_B_4",
   layer = 1,
   x = 80,
   y = 208,
+  pattern = "floor_star.on",
   width = 32,
   height = 16,
-  name = "star_tile_B_4",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_tile_A_5",
   layer = 1,
   x = 144,
   y = 144,
+  pattern = "floor_star.on",
   width = 32,
   height = 16,
-  name = "star_tile_A_5",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_tile_A_6",
   layer = 1,
   x = 160,
   y = 80,
+  pattern = "floor_star.on",
   width = 16,
   height = 32,
-  name = "star_tile_A_6",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_tile_A_7",
   layer = 1,
   x = 208,
   y = 80,
+  pattern = "floor_star.on",
   width = 16,
   height = 32,
-  name = "star_tile_A_7",
-  pattern = "floor_star.on",
   enabled_at_start = true,
 }
 
 chest{
+  name = "KC1",
   layer = 1,
   x = 480,
   y = 133,
-  name = "KC1",
   treasure_name = "small_key",
   treasure_savegame_variable = "lighthouse_b1_key_chest",
   sprite = "entities/chest",
@@ -1714,356 +1713,356 @@ destructible{
 }
 
 dynamic_tile{
-  layer = 1,
-  x = 144,
-  y = 336,
-  width = 16,
-  height = 32,
   name = "star_tile_B_1",
+  layer = 1,
+  x = 144,
+  y = 336,
   pattern = "floor_star.on",
+  width = 16,
+  height = 32,
   enabled_at_start = false,
 }
 
 dynamic_tile{
-  layer = 1,
-  x = 176,
-  y = 304,
-  width = 32,
-  height = 16,
   name = "star_tile_B2",
+  layer = 1,
+  x = 176,
+  y = 304,
   pattern = "floor_star.on",
+  width = 32,
+  height = 16,
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_tile_A_3",
   layer = 1,
   x = 80,
   y = 272,
+  pattern = "floor_star.on",
   width = 32,
   height = 16,
-  name = "star_tile_A_3",
-  pattern = "floor_star.on",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_tile_A_4",
   layer = 1,
   x = 128,
   y = 240,
+  pattern = "floor_star.on",
   width = 16,
   height = 32,
-  name = "star_tile_A_4",
-  pattern = "floor_star.on",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_tile_A_1",
   layer = 1,
   x = 128,
   y = 176,
+  pattern = "floor_star.on",
   width = 16,
   height = 32,
-  name = "star_tile_A_1",
-  pattern = "floor_star.on",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_tile_B_6",
   layer = 1,
   x = 112,
   y = 112,
+  pattern = "floor_star.on",
   width = 32,
   height = 16,
-  name = "star_tile_B_6",
-  pattern = "floor_star.on",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_A1",
   layer = 1,
   x = 112,
   y = 336,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_A1",
-  pattern = "floor_low.16",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_floor_A_2",
   layer = 1,
   x = 176,
   y = 272,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_A_2",
-  pattern = "floor_low.16",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_floor_A_3",
   layer = 1,
   x = 80,
   y = 176,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_A_3",
-  pattern = "floor_low.16",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_floor_A_4",
   layer = 1,
   x = 208,
   y = 176,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_A_4",
-  pattern = "floor_low.16",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_floor_A_5",
   layer = 1,
   x = 112,
   y = 80,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_A_5",
-  pattern = "floor_low.16",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "star_floor_B_1",
   layer = 1,
   x = 176,
   y = 336,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_1",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_B_2",
   layer = 1,
   x = 80,
   y = 304,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_2",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_B_3",
   layer = 1,
   x = 80,
   y = 240,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_3",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_B_4",
   layer = 1,
   x = 144,
   y = 240,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_4",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_B_5",
   layer = 1,
   x = 144,
   y = 176,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_5",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_B_6",
   layer = 1,
   x = 144,
   y = 112,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_6",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "star_floor_B_7",
   layer = 1,
   x = 176,
   y = 80,
+  pattern = "floor_low.16",
   width = 32,
   height = 32,
-  name = "star_floor_B_7",
-  pattern = "floor_low.16",
   enabled_at_start = false,
 }
 
 wall{
+  name = "wall",
   layer = 1,
   x = 208,
   y = 328,
   width = 8,
   height = 8,
-  name = "wall",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
-  layer = 1,
-  x = 168,
-  y = 328,
-  width = 8,
-  height = 8,
   name = "wall_2",
+  layer = 1,
+  x = 168,
+  y = 328,
+  width = 8,
+  height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_3",
   layer = 1,
   x = 168,
   y = 272,
   width = 8,
   height = 8,
-  name = "wall_3",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_4",
   layer = 1,
   x = 112,
   y = 272,
   width = 8,
   height = 8,
-  name = "wall_4",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_5",
   layer = 1,
   x = 112,
   y = 328,
   width = 8,
   height = 8,
-  name = "wall_5",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_6",
   layer = 1,
   x = 136,
   y = 144,
   width = 8,
   height = 8,
-  name = "wall_6",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_7",
   layer = 1,
   x = 112,
   y = 208,
   width = 8,
   height = 8,
-  name = "wall_7",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_8",
   layer = 1,
   x = 176,
   y = 168,
   width = 8,
   height = 8,
-  name = "wall_8",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_9",
   layer = 1,
   x = 176,
   y = 112,
   width = 8,
   height = 8,
-  name = "wall_9",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_10",
   layer = 1,
   x = 104,
   y = 112,
   width = 8,
   height = 8,
-  name = "wall_10",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_11",
   layer = 1,
   x = 200,
   y = 112,
   width = 8,
   height = 8,
-  name = "wall_11",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "wall_12",
   layer = 1,
   x = 112,
   y = 232,
   width = 8,
   height = 8,
-  name = "wall_12",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -2178,50 +2177,50 @@ destructible{
 }
 
 wall{
+  name = "wall_13",
   layer = 1,
   x = 136,
   y = 168,
   width = 8,
   height = 8,
-  name = "wall_13",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 door{
+  name = "LD1",
   layer = 1,
   x = 344,
   y = 120,
-  name = "LD1",
   direction = 2,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "LD1_2",
   layer = 1,
   x = 280,
   y = 120,
-  name = "LD1_2",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 sensor{
+  name = "DS1",
   layer = 1,
   x = 376,
   y = 117,
   width = 16,
   height = 48,
-  name = "DS1",
 }
 
 switch{
+  name = "star_sensor_A",
   layer = 1,
   x = 208,
   y = 336,
-  name = "star_sensor_A",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2229,10 +2228,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_2",
   layer = 1,
   x = 208,
   y = 352,
-  name = "star_sensor_A_2",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2240,10 +2239,10 @@ switch{
 }
 
 switch{
-  layer = 1,
-  x = 80,
-  y = 336,
   name = "star_sensor_A_3",
+  layer = 1,
+  x = 80,
+  y = 336,
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2251,10 +2250,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_4",
   layer = 1,
   x = 96,
   y = 336,
-  name = "star_sensor_A_4",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2262,10 +2261,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_5",
   layer = 1,
   x = 80,
   y = 272,
-  name = "star_sensor_A_5",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2273,10 +2272,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_6",
   layer = 1,
   x = 96,
   y = 272,
-  name = "star_sensor_A_6",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2284,10 +2283,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_7",
   layer = 1,
   x = 208,
   y = 344,
-  name = "star_sensor_A_7",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2295,10 +2294,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_8",
   layer = 1,
   x = 88,
   y = 336,
-  name = "star_sensor_A_8",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2306,10 +2305,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_9",
   layer = 1,
   x = 88,
   y = 272,
-  name = "star_sensor_A_9",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2317,10 +2316,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_10",
   layer = 1,
   x = 176,
   y = 240,
-  name = "star_sensor_A_10",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2328,10 +2327,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_11",
   layer = 1,
   x = 176,
   y = 256,
-  name = "star_sensor_A_11",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2339,10 +2338,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_12",
   layer = 1,
   x = 176,
   y = 248,
-  name = "star_sensor_A_12",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2350,10 +2349,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_13",
   layer = 1,
   x = 128,
   y = 176,
-  name = "star_sensor_A_13",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2361,10 +2360,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_14",
   layer = 1,
   x = 128,
   y = 192,
-  name = "star_sensor_A_14",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2372,10 +2371,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_15",
   layer = 1,
   x = 128,
   y = 184,
-  name = "star_sensor_A_15",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2383,10 +2382,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_16",
   layer = 1,
   x = 144,
   y = 144,
-  name = "star_sensor_A_16",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2394,10 +2393,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_17",
   layer = 1,
   x = 152,
   y = 144,
-  name = "star_sensor_A_17",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2405,10 +2404,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_18",
   layer = 1,
   x = 160,
   y = 144,
-  name = "star_sensor_A_18",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2416,10 +2415,10 @@ switch{
 }
 
 switch{
-  layer = 1,
-  x = 160,
-  y = 80,
   name = "star_sensor_A_19",
+  layer = 1,
+  x = 160,
+  y = 80,
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2427,10 +2426,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_20",
   layer = 1,
   x = 160,
   y = 88,
-  name = "star_sensor_A_20",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2438,10 +2437,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_21",
   layer = 1,
   x = 160,
   y = 96,
-  name = "star_sensor_A_21",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2449,10 +2448,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_22",
   layer = 1,
   x = 208,
   y = 80,
-  name = "star_sensor_A_22",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2460,10 +2459,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_23",
   layer = 1,
   x = 208,
   y = 88,
-  name = "star_sensor_A_23",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2471,10 +2470,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_24",
   layer = 1,
   x = 208,
   y = 96,
-  name = "star_sensor_A_24",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2482,10 +2481,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B",
   layer = 1,
   x = 144,
   y = 336,
-  name = "star_sensor_B",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2493,10 +2492,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_2",
   layer = 1,
   x = 144,
   y = 344,
-  name = "star_sensor_B_2",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2504,10 +2503,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_3",
   layer = 1,
   x = 144,
   y = 352,
-  name = "star_sensor_B_3",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2515,10 +2514,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_4",
   layer = 1,
   x = 176,
   y = 304,
-  name = "star_sensor_B_4",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2526,10 +2525,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_5",
   layer = 1,
   x = 184,
   y = 304,
-  name = "star_sensor_B_5",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2537,10 +2536,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_6",
   layer = 1,
   x = 192,
   y = 304,
-  name = "star_sensor_B_6",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2548,10 +2547,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_10",
   layer = 1,
   x = 80,
   y = 208,
-  name = "star_sensor_B_10",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2559,10 +2558,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_11",
   layer = 1,
   x = 88,
   y = 208,
-  name = "star_sensor_B_11",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2570,10 +2569,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_12",
   layer = 1,
   x = 96,
   y = 208,
-  name = "star_sensor_B_12",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2581,10 +2580,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_13",
   layer = 1,
   x = 112,
   y = 112,
-  name = "star_sensor_B_13",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2592,10 +2591,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_14",
   layer = 1,
   x = 120,
   y = 112,
-  name = "star_sensor_B_14",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2603,10 +2602,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_B_15",
   layer = 1,
   x = 128,
   y = 112,
-  name = "star_sensor_B_15",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2614,10 +2613,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_25",
   layer = 1,
   x = 128,
   y = 256,
-  name = "star_sensor_A_25",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2625,10 +2624,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_26",
   layer = 1,
   x = 128,
   y = 240,
-  name = "star_sensor_A_26",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2636,10 +2635,10 @@ switch{
 }
 
 switch{
+  name = "star_sensor_A_27",
   layer = 1,
   x = 128,
   y = 248,
-  name = "star_sensor_A_27",
   subtype = "walkable",
   sound = "switch",
   needs_block = false,
@@ -2647,37 +2646,37 @@ switch{
 }
 
 enemy{
+  name = "key_monster",
   layer = 1,
   x = 452,
   y = 133,
-  name = "key_monster",
   direction = 3,
   breed = "ropa",
 }
 
 enemy{
+  name = "key_monster_2",
   layer = 1,
   x = 508,
   y = 133,
-  name = "key_monster_2",
   direction = 3,
   breed = "ropa",
 }
 
 enemy{
+  name = "key_monster_3",
   layer = 1,
   x = 484,
   y = 109,
-  name = "key_monster_3",
   direction = 3,
   breed = "ropa",
 }
 
 enemy{
+  name = "key_monster_4",
   layer = 1,
   x = 476,
   y = 157,
-  name = "key_monster_4",
   direction = 3,
   breed = "ropa",
 }
