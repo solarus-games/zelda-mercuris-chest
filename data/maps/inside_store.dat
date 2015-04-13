@@ -1548,32 +1548,32 @@ door{
 }
 
 dynamic_tile{
+  name = "weak_wall_a_closed_2",
   layer = 1,
   x = 360,
   y = 304,
+  pattern = "wall.3",
   width = 24,
   height = 48,
-  name = "weak_wall_a_closed_2",
-  pattern = "wall.3",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_closed",
   layer = 1,
   x = 336,
   y = 304,
+  pattern = "wall.4",
   width = 24,
   height = 48,
-  name = "weak_wall_a_closed",
-  pattern = "wall.4",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_a_2",
   layer = 1,
   x = 368,
   y = 320,
-  name = "weak_wall_a_2",
   direction = 2,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_a",
@@ -1581,10 +1581,10 @@ door{
 }
 
 door{
+  name = "weak_wall_a",
   layer = 1,
   x = 336,
   y = 320,
-  name = "weak_wall_a",
   direction = 0,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_a",
@@ -1592,32 +1592,32 @@ door{
 }
 
 dynamic_tile{
+  name = "weak_wall_b_closed_3",
   layer = 1,
   x = 488,
   y = 168,
+  pattern = "wall.1",
   width = 48,
   height = 24,
-  name = "weak_wall_b_closed_3",
-  pattern = "wall.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_closed_2",
   layer = 1,
   x = 488,
   y = 144,
+  pattern = "wall.2",
   width = 48,
   height = 24,
-  name = "weak_wall_b_closed_2",
-  pattern = "wall.2",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_b_3",
   layer = 1,
   x = 504,
   y = 176,
-  name = "weak_wall_b_3",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_b",
@@ -1625,10 +1625,10 @@ door{
 }
 
 door{
+  name = "weak_wall_b_2",
   layer = 1,
   x = 504,
   y = 144,
-  name = "weak_wall_b_2",
   direction = 3,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "dungeon_1_1f_weak_wall_b",
@@ -2041,90 +2041,90 @@ tile{
 }
 
 dynamic_tile{
-  layer = 2,
-  x = 352,
-  y = 280,
-  width = 8,
-  height = 96,
   name = "weak_wall_a_closed_3",
+  layer = 2,
+  x = 352,
+  y = 280,
   pattern = "door_cache.4",
+  width = 8,
+  height = 96,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_closed_4",
   layer = 2,
   x = 360,
   y = 280,
+  pattern = "door_cache.3",
   width = 8,
   height = 96,
-  name = "weak_wall_a_closed_4",
-  pattern = "door_cache.3",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_open",
   layer = 2,
   x = 352,
   y = 312,
+  pattern = "door_top.blast.4",
   width = 8,
   height = 32,
-  name = "weak_wall_a_open",
-  pattern = "door_top.blast.4",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_a_open_2",
   layer = 2,
   x = 360,
   y = 312,
+  pattern = "door_top.blast.3",
   width = 8,
   height = 32,
-  name = "weak_wall_a_open_2",
-  pattern = "door_top.blast.3",
   enabled_at_start = true,
 }
 
 dynamic_tile{
-  layer = 2,
-  x = 464,
-  y = 160,
-  width = 96,
-  height = 8,
   name = "weak_wall_b_open_5",
+  layer = 2,
+  x = 464,
+  y = 160,
   pattern = "door_cache.2",
+  width = 96,
+  height = 8,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_open_2",
   layer = 2,
   x = 464,
   y = 168,
+  pattern = "door_cache.1",
   width = 96,
   height = 8,
-  name = "weak_wall_b_open_2",
-  pattern = "door_cache.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_open_3",
   layer = 2,
   x = 496,
   y = 168,
+  pattern = "door_top.blast.1",
   width = 32,
   height = 8,
-  name = "weak_wall_b_open_3",
-  pattern = "door_top.blast.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "weak_wall_b_open_4",
   layer = 2,
   x = 496,
   y = 160,
+  pattern = "door_top.blast.2",
   width = 32,
   height = 8,
-  name = "weak_wall_b_open_4",
-  pattern = "door_top.blast.2",
   enabled_at_start = true,
 }
 
