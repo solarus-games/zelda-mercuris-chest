@@ -2458,10 +2458,10 @@ tile{
 }
 
 destination{
+  name = "from_b2_b",
   layer = 0,
   x = 808,
   y = 1581,
-  name = "from_b2_b",
   direction = 1,
 }
 
@@ -2477,7 +2477,7 @@ stairs{
   x = 592,
   y = 1752,
   direction = 0,
-  subtype = "4",
+  subtype = 4,
 }
 
 enemy{
@@ -2520,7 +2520,7 @@ npc{
   x = 760,
   y = 1373,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 chest{
@@ -2598,7 +2598,7 @@ stairs{
   x = 384,
   y = 1184,
   direction = 3,
-  subtype = "4",
+  subtype = 4,
 }
 
 enemy{
@@ -2684,26 +2684,26 @@ enemy{
 }
 
 destination{
+  name = "from_1f_hole",
   layer = 0,
   x = 760,
   y = 1389,
-  name = "from_1f_hole",
   direction = -1,
 }
 
 destination{
+  name = "from_1f_b",
   layer = 0,
   x = 344,
   y = 2229,
-  name = "from_1f_b",
   direction = 1,
 }
 
 destination{
+  name = "from_1f_c",
   layer = 0,
   x = 504,
   y = 2229,
-  name = "from_1f_c",
   direction = 1,
 }
 
@@ -2732,7 +2732,7 @@ stairs{
   x = 336,
   y = 2216,
   direction = 3,
-  subtype = "2",
+  subtype = 2,
 }
 
 stairs{
@@ -2740,7 +2740,7 @@ stairs{
   x = 496,
   y = 2216,
   direction = 3,
-  subtype = "2",
+  subtype = 2,
 }
 
 teletransporter{
@@ -2758,7 +2758,7 @@ stairs{
   x = 800,
   y = 1568,
   direction = 3,
-  subtype = "3",
+  subtype = 3,
 }
 
 tile{
@@ -10725,8 +10725,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10737,8 +10737,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10768,8 +10768,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10780,8 +10780,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10809,26 +10809,26 @@ enemy{
 }
 
 destination{
+  name = "from_1f_a",
   layer = 1,
   x = 64,
   y = 1669,
-  name = "from_1f_a",
   direction = 3,
 }
 
 destination{
+  name = "from_b2_a",
   layer = 1,
   x = 144,
   y = 1669,
-  name = "from_b2_a",
   direction = 3,
 }
 
 destination{
+  name = "from_1f_d",
   layer = 1,
   x = 776,
   y = 277,
-  name = "from_1f_d",
   direction = 1,
 }
 
@@ -10867,7 +10867,7 @@ stairs{
   x = 768,
   y = 264,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 stairs{
@@ -10875,7 +10875,7 @@ stairs{
   x = 56,
   y = 1656,
   direction = 1,
-  subtype = "0",
+  subtype = 0,
 }
 
 stairs{
@@ -10883,7 +10883,7 @@ stairs{
   x = 136,
   y = 1656,
   direction = 1,
-  subtype = "1",
+  subtype = 1,
 }
 
 tile{

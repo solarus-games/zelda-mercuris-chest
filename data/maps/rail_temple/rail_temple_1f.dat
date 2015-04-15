@@ -4396,16 +4396,16 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 chest{
+  name = "room_c_chest",
   layer = 0,
   x = 2808,
   y = 2301,
-  name = "room_c_chest",
   treasure_savegame_variable = "rail_temple_rail_1_chest",
   sprite = "entities/chest",
 }
@@ -4430,7 +4430,6 @@ block{
   layer = 0,
   x = 2664,
   y = 1949,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -4441,7 +4440,6 @@ block{
   layer = 0,
   x = 2680,
   y = 1949,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -4452,7 +4450,6 @@ block{
   layer = 0,
   x = 2680,
   y = 2109,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -4463,7 +4460,6 @@ block{
   layer = 0,
   x = 2072,
   y = 1949,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -4474,7 +4470,6 @@ block{
   layer = 0,
   x = 2088,
   y = 1949,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -4485,7 +4480,6 @@ block{
   layer = 0,
   x = 2072,
   y = 2109,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -4497,7 +4491,7 @@ stairs{
   x = 2432,
   y = 2528,
   direction = 0,
-  subtype = "4",
+  subtype = 4,
 }
 
 wall{
@@ -4506,8 +4500,8 @@ wall{
   y = 2112,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4517,8 +4511,8 @@ wall{
   y = 2040,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4528,8 +4522,8 @@ wall{
   y = 2040,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4539,8 +4533,8 @@ wall{
   y = 1760,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4550,8 +4544,8 @@ wall{
   y = 2040,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4561,8 +4555,8 @@ wall{
   y = 2040,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4572,8 +4566,8 @@ wall{
   y = 1760,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4583,8 +4577,8 @@ wall{
   y = 2224,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4594,8 +4588,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4605,8 +4599,8 @@ wall{
   y = 2480,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4616,8 +4610,8 @@ wall{
   y = 1504,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4627,8 +4621,8 @@ wall{
   y = 1392,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4638,8 +4632,8 @@ wall{
   y = 1536,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4649,8 +4643,8 @@ wall{
   y = 1536,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -4659,34 +4653,33 @@ stairs{
   x = 520,
   y = 1584,
   direction = 3,
-  subtype = "4",
+  subtype = 4,
 }
 
 sensor{
+  name = "layer_up_sensor",
   layer = 0,
   x = 2856,
   y = 2973,
   width = 16,
   height = 16,
-  name = "layer_up_sensor",
 }
 
 door{
+  name = "train_barrier_a_door",
   layer = 0,
   x = 2848,
   y = 2856,
-  name = "train_barrier_a_door",
   direction = 1,
   sprite = "entities/door_train_barrier",
   savegame_variable = "rail_temple_train_barrier_a",
 }
 
 block{
+  name = "blocks_puzzle_block_1",
   layer = 0,
   x = 2360,
   y = 2333,
-  name = "blocks_puzzle_block_1",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4694,11 +4687,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_2",
   layer = 0,
   x = 2376,
   y = 2333,
-  name = "blocks_puzzle_block_2",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4706,11 +4698,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_3",
   layer = 0,
   x = 2392,
   y = 2333,
-  name = "blocks_puzzle_block_3",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4718,11 +4709,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_4",
   layer = 0,
   x = 2376,
   y = 2349,
-  name = "blocks_puzzle_block_4",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4730,11 +4720,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_5",
   layer = 0,
   x = 2360,
   y = 2365,
-  name = "blocks_puzzle_block_5",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4742,11 +4731,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_6",
   layer = 0,
   x = 2376,
   y = 2365,
-  name = "blocks_puzzle_block_6",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4754,11 +4742,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_7",
   layer = 0,
   x = 2408,
   y = 2413,
-  name = "blocks_puzzle_block_7",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4766,11 +4753,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_8",
   layer = 0,
   x = 2408,
   y = 2429,
-  name = "blocks_puzzle_block_8",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4778,11 +4764,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_9",
   layer = 0,
   x = 2408,
   y = 2445,
-  name = "blocks_puzzle_block_9",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4790,11 +4775,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_10",
   layer = 0,
   x = 2424,
   y = 2413,
-  name = "blocks_puzzle_block_10",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4802,11 +4786,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_11",
   layer = 0,
   x = 2440,
   y = 2413,
-  name = "blocks_puzzle_block_11",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4814,11 +4797,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_12",
   layer = 0,
   x = 2440,
   y = 2429,
-  name = "blocks_puzzle_block_12",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4826,11 +4808,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_13",
   layer = 0,
   x = 2456,
   y = 2413,
-  name = "blocks_puzzle_block_13",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4838,11 +4819,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_14",
   layer = 0,
   x = 2456,
   y = 2397,
-  name = "blocks_puzzle_block_14",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4850,11 +4830,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_15",
   layer = 0,
   x = 2488,
   y = 2397,
-  name = "blocks_puzzle_block_15",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4862,11 +4841,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_16",
   layer = 0,
   x = 2536,
   y = 2349,
-  name = "blocks_puzzle_block_16",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4874,11 +4852,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_17",
   layer = 0,
   x = 2552,
   y = 2349,
-  name = "blocks_puzzle_block_17",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4886,11 +4863,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_18",
   layer = 0,
   x = 2568,
   y = 2349,
-  name = "blocks_puzzle_block_18",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4898,11 +4874,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_19",
   layer = 0,
   x = 2552,
   y = 2365,
-  name = "blocks_puzzle_block_19",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4910,11 +4885,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_20",
   layer = 0,
   x = 2552,
   y = 2397,
-  name = "blocks_puzzle_block_20",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4922,11 +4896,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_21",
   layer = 0,
   x = 2536,
   y = 2429,
-  name = "blocks_puzzle_block_21",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4934,11 +4907,10 @@ block{
 }
 
 block{
-  layer = 0,
-  x = 2728,
-  y = 2301,
   name = "blocks_puzzle_block_22",
-  direction = -1,
+  layer = 0,
+  x = 2728,
+  y = 2301,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4946,11 +4918,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_23",
   layer = 0,
   x = 2744,
   y = 2301,
-  name = "blocks_puzzle_block_23",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4958,11 +4929,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_24",
   layer = 0,
   x = 2744,
   y = 2317,
-  name = "blocks_puzzle_block_24",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4970,11 +4940,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_25",
   layer = 0,
   x = 2760,
   y = 2317,
-  name = "blocks_puzzle_block_25",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4982,11 +4951,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_26",
   layer = 0,
   x = 2760,
   y = 2333,
-  name = "blocks_puzzle_block_26",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4994,11 +4962,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_27",
   layer = 0,
   x = 2776,
   y = 2333,
-  name = "blocks_puzzle_block_27",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5006,11 +4973,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_28",
   layer = 0,
   x = 2776,
   y = 2349,
-  name = "blocks_puzzle_block_28",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5018,11 +4984,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_29",
   layer = 0,
   x = 2792,
   y = 2349,
-  name = "blocks_puzzle_block_29",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5030,11 +4995,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_30",
   layer = 0,
   x = 2760,
   y = 2397,
-  name = "blocks_puzzle_block_30",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5042,11 +5006,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_31",
   layer = 0,
   x = 2776,
   y = 2397,
-  name = "blocks_puzzle_block_31",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5054,11 +5017,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_33",
   layer = 0,
   x = 2728,
   y = 2381,
-  name = "blocks_puzzle_block_33",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5066,11 +5028,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_34",
   layer = 0,
   x = 2776,
   y = 2381,
-  name = "blocks_puzzle_block_34",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5078,11 +5039,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_35",
   layer = 0,
   x = 2792,
   y = 2317,
-  name = "blocks_puzzle_block_35",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5090,11 +5050,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_36",
   layer = 0,
   x = 2808,
   y = 2317,
-  name = "blocks_puzzle_block_36",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5102,11 +5061,10 @@ block{
 }
 
 block{
+  name = "blocks_puzzle_block_37",
   layer = 0,
   x = 2824,
   y = 2317,
-  name = "blocks_puzzle_block_37",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5130,37 +5088,37 @@ enemy{
 }
 
 enemy{
+  name = "room_c_enemy_1",
   layer = 0,
   x = 2512,
   y = 2285,
-  name = "room_c_enemy_1",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "room_c_enemy_2",
   layer = 0,
   x = 2520,
   y = 2405,
-  name = "room_c_enemy_2",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "room_c_enemy_4",
   layer = 0,
   x = 2856,
   y = 2381,
-  name = "room_c_enemy_4",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "room_c_enemy_5",
   layer = 0,
   x = 2664,
   y = 2357,
-  name = "room_c_enemy_5",
   direction = 3,
   breed = "tentacle",
 }
@@ -5192,30 +5150,30 @@ door{
 }
 
 sensor{
+  name = "layer_up_sensor_2",
   layer = 0,
   x = 2376,
   y = 1837,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_2",
 }
 
 sensor{
+  name = "layer_up_sensor_3",
   layer = 0,
   x = 744,
   y = 1245,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_3",
 }
 
 sensor{
+  name = "layer_up_sensor_4",
   layer = 0,
   x = 256,
   y = 1229,
   width = 16,
   height = 16,
-  name = "layer_up_sensor_4",
 }
 
 custom_entity{
@@ -5319,11 +5277,10 @@ custom_entity{
 }
 
 block{
+  name = "blocks_puzzle_block_32",
   layer = 0,
   x = 2728,
   y = 2365,
-  name = "blocks_puzzle_block_32",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -40687,66 +40644,65 @@ tile{
 }
 
 enemy{
+  name = "room_e_enemy_2",
   layer = 1,
   x = 1576,
   y = 2613,
-  name = "room_e_enemy_2",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room_e_enemy",
   layer = 1,
   x = 1512,
   y = 2613,
-  name = "room_e_enemy",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 sensor{
+  name = "close_room_e_sensor",
   layer = 1,
   x = 1504,
   y = 2605,
   width = 16,
   height = 16,
-  name = "close_room_e_sensor",
 }
 
 sensor{
+  name = "close_room_e_sensor_2",
   layer = 1,
   x = 1584,
   y = 2605,
   width = 16,
   height = 16,
-  name = "close_room_e_sensor_2",
 }
 
 door{
+  name = "boss_weak_wall",
   layer = 1,
   x = -32,
   y = 1312,
-  name = "boss_weak_wall",
   direction = 2,
   sprite = "entities/door_very_weak_wall",
-  cannot_open_dialog = "",
 }
 
 destination{
+  name = "tmp",
   layer = 1,
   x = 2600,
   y = 3477,
-  name = "tmp",
   direction = 1,
 }
 
 switch{
+  name = "train_barrier_a_switch",
   layer = 1,
   x = 2624,
   y = 2848,
-  name = "train_barrier_a_switch",
   subtype = "solid",
   sprite = "entities/solid_switch",
   sound = "switch",
@@ -40755,10 +40711,10 @@ switch{
 }
 
 chest{
+  name = "room_e_chest",
   layer = 1,
   x = 1544,
   y = 2573,
-  name = "room_e_chest",
   treasure_name = "map",
   treasure_savegame_variable = "rail_temple_map_chest",
   sprite = "entities/chest",
@@ -40768,7 +40724,6 @@ block{
   layer = 1,
   x = 1184,
   y = 2565,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
@@ -40779,7 +40734,6 @@ block{
   layer = 1,
   x = 1184,
   y = 2645,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
@@ -40790,7 +40744,6 @@ block{
   layer = 1,
   x = 1376,
   y = 2565,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
@@ -40798,11 +40751,10 @@ block{
 }
 
 block{
+  name = "room_f_statue",
   layer = 1,
   x = 1376,
   y = 2645,
-  name = "room_f_statue",
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
@@ -40814,7 +40766,7 @@ npc{
   x = 2640,
   y = 1437,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 chest{
@@ -40828,7 +40780,6 @@ block{
   layer = 1,
   x = 2152,
   y = 1629,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -40839,7 +40790,6 @@ block{
   layer = 1,
   x = 2200,
   y = 1533,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -40862,7 +40812,7 @@ npc{
   x = 2528,
   y = 1253,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 chest{
@@ -40919,7 +40869,7 @@ npc{
   x = 2208,
   y = 837,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 npc{
@@ -40927,7 +40877,7 @@ npc{
   x = 2416,
   y = 837,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 npc{
@@ -40935,7 +40885,7 @@ npc{
   x = 2416,
   y = 949,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 npc{
@@ -40943,14 +40893,13 @@ npc{
   x = 2208,
   y = 949,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 block{
   layer = 1,
   x = 2352,
   y = 1125,
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -40961,7 +40910,6 @@ block{
   layer = 1,
   x = 1192,
   y = 1125,
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -40997,7 +40945,6 @@ block{
   layer = 1,
   x = 992,
   y = 2893,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -41008,7 +40955,6 @@ block{
   layer = 1,
   x = 992,
   y = 2933,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -41019,7 +40965,6 @@ block{
   layer = 1,
   x = 1056,
   y = 2933,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -41030,7 +40975,6 @@ block{
   layer = 1,
   x = 1056,
   y = 2893,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -41044,8 +40988,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41056,8 +41000,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41137,57 +41081,57 @@ destructible{
 }
 
 enemy{
+  name = "room_a_enemy_1",
   layer = 1,
   x = 2600,
   y = 3117,
-  name = "room_a_enemy_1",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room_a_enemy_2",
   layer = 1,
   x = 2664,
   y = 3117,
-  name = "room_a_enemy_2",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 door{
+  name = "room_a_door",
   layer = 1,
   x = 2624,
   y = 3048,
-  name = "room_a_door",
   direction = 1,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_a_door_2",
   layer = 1,
   x = 2624,
   y = 2984,
-  name = "room_a_door_2",
   direction = 3,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_a_door_3",
   layer = 1,
   x = 2624,
   y = 3224,
-  name = "room_a_door_3",
   direction = 1,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_a_door_4",
   layer = 1,
   x = 2624,
   y = 3160,
-  name = "room_a_door_4",
   direction = 3,
   sprite = "entities/door_normal",
 }
@@ -41198,8 +41142,8 @@ wall{
   y = 3312,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41209,8 +41153,8 @@ wall{
   y = 3312,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41220,8 +41164,8 @@ wall{
   y = 3312,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41231,8 +41175,8 @@ wall{
   y = 3312,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41242,8 +41186,8 @@ wall{
   y = 3640,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41253,8 +41197,8 @@ wall{
   y = 3224,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41264,8 +41208,8 @@ wall{
   y = 3160,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41275,8 +41219,8 @@ wall{
   y = 3160,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41286,8 +41230,8 @@ wall{
   y = 3096,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41297,8 +41241,8 @@ wall{
   y = 3048,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41308,8 +41252,8 @@ wall{
   y = 2984,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41319,8 +41263,8 @@ wall{
   y = 2712,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41330,8 +41274,8 @@ wall{
   y = 2648,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41341,8 +41285,8 @@ wall{
   y = 2856,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41352,8 +41296,8 @@ wall{
   y = 2792,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41363,8 +41307,8 @@ wall{
   y = 2568,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41374,8 +41318,8 @@ wall{
   y = 2504,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41385,8 +41329,8 @@ wall{
   y = 1456,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41396,8 +41340,8 @@ wall{
   y = 1456,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41407,8 +41351,8 @@ wall{
   y = 1456,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41418,8 +41362,8 @@ wall{
   y = 1456,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41429,8 +41373,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41440,8 +41384,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41451,8 +41395,8 @@ wall{
   y = 1016,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41462,8 +41406,8 @@ wall{
   y = 952,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41473,8 +41417,8 @@ wall{
   y = 1208,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41484,8 +41428,8 @@ wall{
   y = 1144,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41495,8 +41439,8 @@ wall{
   y = 2136,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41506,8 +41450,8 @@ wall{
   y = 2200,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41517,8 +41461,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41528,8 +41472,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41539,8 +41483,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41550,8 +41494,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41561,8 +41505,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41572,8 +41516,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41583,8 +41527,8 @@ wall{
   y = 1032,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41594,8 +41538,8 @@ wall{
   y = 968,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41605,8 +41549,8 @@ wall{
   y = 1032,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41616,8 +41560,8 @@ wall{
   y = 968,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41627,8 +41571,8 @@ wall{
   y = 648,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41638,8 +41582,8 @@ wall{
   y = 584,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41649,8 +41593,8 @@ wall{
   y = 648,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41660,8 +41604,8 @@ wall{
   y = 584,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41671,8 +41615,8 @@ wall{
   y = 504,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41682,8 +41626,8 @@ wall{
   y = 440,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41693,8 +41637,8 @@ wall{
   y = 504,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41704,8 +41648,8 @@ wall{
   y = 440,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41715,8 +41659,8 @@ wall{
   y = 184,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41726,8 +41670,8 @@ wall{
   y = 136,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41737,8 +41681,8 @@ wall{
   y = 136,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41748,8 +41692,8 @@ wall{
   y = 88,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41759,8 +41703,8 @@ wall{
   y = 184,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41770,8 +41714,8 @@ wall{
   y = 136,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41781,8 +41725,8 @@ wall{
   y = 136,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41792,8 +41736,8 @@ wall{
   y = 88,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41803,8 +41747,8 @@ wall{
   y = 888,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41814,8 +41758,8 @@ wall{
   y = 824,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41825,8 +41769,8 @@ wall{
   y = 1032,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41836,8 +41780,8 @@ wall{
   y = 968,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41847,8 +41791,8 @@ wall{
   y = 1208,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41858,8 +41802,8 @@ wall{
   y = 1144,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41869,8 +41813,8 @@ wall{
   y = 1352,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41880,8 +41824,8 @@ wall{
   y = 1288,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41891,8 +41835,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41902,8 +41846,8 @@ wall{
   y = 1088,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41913,8 +41857,8 @@ wall{
   y = 1736,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41924,8 +41868,8 @@ wall{
   y = 1672,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41935,8 +41879,8 @@ wall{
   y = 1736,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41946,8 +41890,8 @@ wall{
   y = 1672,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41968,8 +41912,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41980,8 +41924,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -41991,8 +41935,8 @@ wall{
   y = 2040,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42002,8 +41946,8 @@ wall{
   y = 1976,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42013,8 +41957,8 @@ wall{
   y = 2392,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42024,8 +41968,8 @@ wall{
   y = 2328,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42035,8 +41979,8 @@ wall{
   y = 2424,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42046,8 +41990,8 @@ wall{
   y = 2424,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42057,8 +42001,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42068,8 +42012,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42079,8 +42023,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42090,8 +42034,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42101,8 +42045,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42112,8 +42056,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42123,8 +42067,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42134,8 +42078,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42145,8 +42089,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42156,8 +42100,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42167,8 +42111,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42178,8 +42122,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42189,8 +42133,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42200,8 +42144,8 @@ wall{
   y = 2592,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42211,8 +42155,8 @@ wall{
   y = 2896,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42222,8 +42166,8 @@ wall{
   y = 2896,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42233,8 +42177,8 @@ wall{
   y = 2896,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42244,8 +42188,8 @@ wall{
   y = 2896,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42255,8 +42199,8 @@ wall{
   y = 3016,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42266,8 +42210,8 @@ wall{
   y = 2952,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42277,8 +42221,8 @@ wall{
   y = 3096,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42288,27 +42232,27 @@ wall{
   y = 3160,
   width = 16,
   height = 16,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 sensor{
+  name = "close_room_a_sensor",
   layer = 1,
   x = 2632,
   y = 3077,
   width = 16,
   height = 16,
-  name = "close_room_a_sensor",
 }
 
 sensor{
+  name = "close_room_a_sensor_2",
   layer = 1,
   x = 2632,
   y = 3157,
   width = 16,
   height = 16,
-  name = "close_room_a_sensor_2",
 }
 
 wall{
@@ -42318,8 +42262,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42330,34 +42274,34 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 sensor{
+  name = "layer_down_sensor",
   layer = 1,
   x = 2856,
   y = 2965,
   width = 16,
   height = 16,
-  name = "layer_down_sensor",
 }
 
 door{
+  name = "room_b_door",
   layer = 1,
   x = 2624,
   y = 2568,
-  name = "room_b_door",
   direction = 1,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_b_door_2",
   layer = 1,
   x = 2624,
   y = 2504,
-  name = "room_b_door_2",
   direction = 3,
   sprite = "entities/door_normal",
 }
@@ -42372,10 +42316,10 @@ destructible{
 }
 
 switch{
+  name = "room_b_door_switch",
   layer = 1,
   x = 2584,
   y = 2584,
-  name = "room_b_door_switch",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -42397,7 +42341,7 @@ npc{
   x = 2664,
   y = 2581,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/hint_stone",
   behavior = "dialog#rail_temple_1f.chests_order_hint",
 }
@@ -42409,8 +42353,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42421,8 +42365,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42433,8 +42377,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42445,8 +42389,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42457,8 +42401,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42469,8 +42413,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42513,12 +42457,12 @@ enemy{
 }
 
 sensor{
+  name = "layer_down_sensor_2",
   layer = 1,
   x = 2376,
   y = 1845,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_2",
 }
 
 wall{
@@ -42528,8 +42472,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42540,8 +42484,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42686,119 +42630,119 @@ enemy{
 }
 
 door{
+  name = "room_d_door",
   layer = 1,
   x = 2056,
   y = 2592,
-  name = "room_d_door",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_d_door_2",
   layer = 1,
   x = 2120,
   y = 2592,
-  name = "room_d_door_2",
   direction = 2,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_d_door_3",
   layer = 1,
   x = 2232,
   y = 2592,
-  name = "room_d_door_3",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_d_door_4",
   layer = 1,
   x = 2296,
   y = 2592,
-  name = "room_d_door_4",
   direction = 2,
   sprite = "entities/door_normal",
 }
 
 enemy{
+  name = "room_d_enemy",
   layer = 1,
   x = 2184,
   y = 2605,
-  name = "room_d_enemy",
   direction = 3,
   breed = "blue_hardhat_beetle",
   treasure_name = "random",
 }
 
 sensor{
+  name = "close_room_d_sensor",
   layer = 1,
   x = 2144,
   y = 2605,
   width = 16,
   height = 16,
-  name = "close_room_d_sensor",
 }
 
 sensor{
+  name = "close_room_d_sensor_2",
   layer = 1,
   x = 2224,
   y = 2605,
   width = 16,
   height = 16,
-  name = "close_room_d_sensor_2",
 }
 
 door{
+  name = "room_e_door",
   layer = 1,
   x = 1416,
   y = 2592,
-  name = "room_e_door",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_e_door_2",
   layer = 1,
   x = 1480,
   y = 2592,
-  name = "room_e_door_2",
   direction = 2,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_e_door_3",
   layer = 1,
   x = 1592,
   y = 2592,
-  name = "room_e_door_3",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_e_door_4",
   layer = 1,
   x = 1656,
   y = 2592,
-  name = "room_e_door_4",
   direction = 2,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_f_door_3",
   layer = 1,
   x = 1064,
   y = 2592,
-  name = "room_f_door_3",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_f_door_4",
   layer = 1,
   x = 1128,
   y = 2592,
-  name = "room_f_door_4",
   direction = 2,
   sprite = "entities/door_normal",
 }
@@ -42844,10 +42788,10 @@ destructible{
 }
 
 switch{
+  name = "open_room_f_switch",
   layer = 1,
   x = 1272,
   y = 2552,
-  name = "open_room_f_switch",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -42906,10 +42850,10 @@ destructible{
 }
 
 destructible{
+  name = "room_f_switch_pot",
   layer = 1,
   x = 1280,
   y = 2565,
-  name = "room_f_switch_pot",
   sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
@@ -42926,10 +42870,10 @@ teletransporter{
 }
 
 switch{
+  name = "train_barrier_b_switch",
   layer = 1,
   x = 928,
   y = 2168,
-  name = "train_barrier_b_switch",
   subtype = "solid",
   sprite = "entities/solid_switch",
   sound = "switch",
@@ -42938,12 +42882,12 @@ switch{
 }
 
 sensor{
+  name = "layer_down_sensor_3",
   layer = 1,
   x = 744,
   y = 1253,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_3",
 }
 
 wall{
@@ -42953,8 +42897,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42965,18 +42909,18 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 sensor{
+  name = "layer_down_sensor_4",
   layer = 1,
   x = 256,
   y = 1237,
   width = 16,
   height = 16,
-  name = "layer_down_sensor_4",
 }
 
 wall{
@@ -42986,8 +42930,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -42998,56 +42942,56 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 destination{
+  name = "from_outside_east_1",
   layer = 1,
   x = 1304,
   y = 3653,
-  name = "from_outside_east_1",
   direction = 1,
 }
 
 destination{
+  name = "from_outside_east_2",
   layer = 1,
   x = 1464,
   y = 3653,
-  name = "from_outside_east_2",
   direction = 1,
 }
 
 destination{
+  name = "from_b1_a",
   layer = 1,
   x = 1024,
   y = 2853,
-  name = "from_b1_a",
   direction = 3,
 }
 
 destination{
+  name = "from_b1_b",
   layer = 1,
   x = 1304,
   y = 3461,
-  name = "from_b1_b",
   direction = 3,
 }
 
 destination{
+  name = "from_b1_c",
   layer = 1,
   x = 1464,
   y = 3461,
-  name = "from_b1_c",
   direction = 3,
 }
 
 destination{
+  name = "from_b1_d",
   layer = 1,
   x = 1736,
   y = 1461,
-  name = "from_b1_d",
   direction = 1,
 }
 
@@ -43096,7 +43040,7 @@ stairs{
   x = 1728,
   y = 1448,
   direction = 3,
-  subtype = "1",
+  subtype = 1,
 }
 
 stairs{
@@ -43104,7 +43048,7 @@ stairs{
   x = 1296,
   y = 3448,
   direction = 1,
-  subtype = "3",
+  subtype = 3,
 }
 
 stairs{
@@ -43112,7 +43056,7 @@ stairs{
   x = 1456,
   y = 3448,
   direction = 1,
-  subtype = "3",
+  subtype = 3,
 }
 
 stairs{
@@ -43120,44 +43064,44 @@ stairs{
   x = 1016,
   y = 2840,
   direction = 1,
-  subtype = "1",
+  subtype = 1,
 }
 
 door{
+  name = "room_g_door",
   layer = 1,
   x = 776,
   y = 2592,
-  name = "room_g_door",
   direction = 0,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "room_g_door_2",
   layer = 1,
   x = 840,
   y = 2592,
-  name = "room_g_door_2",
   direction = 2,
   sprite = "entities/door_normal",
 }
 
 door{
+  name = "train_barrier_b_door",
   layer = 1,
   x = 824,
   y = 2240,
-  name = "train_barrier_b_door",
   direction = 1,
   sprite = "entities/door_train_barrier",
   savegame_variable = "rail_temple_train_barrier_b",
 }
 
 custom_entity{
+  name = "minecart",
   layer = 1,
   x = 2568,
   y = 3453,
   width = 16,
   height = 16,
-  name = "minecart",
   direction = 1,
   model = "minecart",
 }
@@ -43533,46 +43477,46 @@ custom_entity{
 }
 
 custom_entity{
+  name = "railway_points_q_off",
   layer = 1,
   x = 600,
   y = 1933,
   width = 16,
   height = 16,
-  name = "railway_points_q_off",
   direction = 2,
   model = "minecart_turn",
 }
 
 dynamic_tile{
+  name = "railway_points_q_off_tile",
   layer = 1,
   x = 592,
   y = 1920,
+  pattern = "rail.corner.2",
   width = 16,
   height = 16,
-  name = "railway_points_q_off_tile",
-  pattern = "rail.corner.2",
   enabled_at_start = true,
 }
 
 custom_entity{
+  name = "railway_points_q_on",
   layer = 1,
   x = 600,
   y = 1933,
   width = 16,
   height = 16,
-  name = "railway_points_q_on",
   direction = 0,
   model = "minecart_turn",
 }
 
 dynamic_tile{
+  name = "railway_points_q_on_tile",
   layer = 1,
   x = 592,
   y = 1920,
+  pattern = "rail.corner.1",
   width = 16,
   height = 16,
-  name = "railway_points_q_on_tile",
-  pattern = "rail.corner.1",
   enabled_at_start = true,
 }
 
