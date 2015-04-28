@@ -173,6 +173,7 @@ sprite{ id = "hud/magic_bar", description = "HUD: Magic bar" }
 sprite{ id = "hud/pause_icon_flip", description = "HUD: Pause icon" }
 sprite{ id = "hud/sword_icon_flip", description = "HUD: Sword icon" }
 sprite{ id = "menus/arrow", description = "Menu: Arrow" }
+sprite{ id = "menus/dungeon_maps/map3", description = "Dungeon Map: Light House" }
 sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
 sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
 sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }

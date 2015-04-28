@@ -77,6 +77,8 @@ function map_submenu:on_started()
 
     -- Minimap.
     self.dungeon_map_img = sol.surface.create(123, 119)
+    self.dungeon_map_spr = sol.sprite.create(
+      "menus/dungeon_maps/map" .. self.dungeon_index)
     self:load_dungeon_map_image()
   end
 
@@ -283,7 +285,7 @@ function map_submenu:draw_dungeon_floors(dst_surface)
   dst_y = old_dst_y + (self.highest_floor_displayed - self.selected_floor) * 12
   self.dungeon_floors_img:draw_region(src_x, src_y, src_width, src_height,
       dst_surface, dst_x, dst_y)
- 
+
   -- Draw the hero's icon if any.
   local lowest_floor_displayed = self.highest_floor_displayed - self.nb_floors_displayed + 1
   if self.hero_floor ~= nil
@@ -341,13 +343,25 @@ end
 function map_submenu:load_dungeon_map_image()
 
   self.dungeon_map_img:clear()
+
+  local floor_animation = tostring(self.selected_floor)
+  self.dungeon_map_spr:set_animation(floor_animation)
+
   if self.game:has_dungeon_map() then
     -- Load the image of this floor.
-    local floor_map_img = sol.surface.create(
-        "menus/dungeon_maps/map" .. self.dungeon_index ..
-        "_" .. self.selected_floor .. ".png")
-    if floor_map_img ~= nil then
-      floor_map_img:draw(self.dungeon_map_img)
+    self.dungeon_map_spr:set_direction(0) -- background
+    self.dungeon_map_spr:draw(self.dungeon_map_img)
+  end
+
+  -- For each rooms:
+  for i = 1, self.dungeon_map_spr:get_num_directions(floor_animation) - 1 do
+    -- If the room is explored.
+    if self.game:has_explored_dungeon_room(
+      self.dungeon_index, self.selected_floor, i
+    ) then
+      -- Load the image of the room.
+      self.dungeon_map_spr:set_direction(i)
+      self.dungeon_map_spr:draw(self.dungeon_map_img)
     end
   end
 
@@ -371,7 +385,7 @@ function map_submenu:load_dungeon_map_image()
         and boss.savegame_variable ~= nil
         and not self.game:get_value(boss.savegame_variable) then
       -- Boss coordinates are already relative to its floor.
-      local dst_x, dst_y = self:to_dungeon_minimap_coordinates(boss.x, boss.y) 
+      local dst_x, dst_y = self:to_dungeon_minimap_coordinates(boss.x, boss.y)
       dst_x = dst_x - 4
       dst_y = dst_y - 4
       self.dungeon_map_icons_img:draw_region(78, 0, 8, 8,
@@ -424,7 +438,7 @@ function map_submenu:load_chests()
       current_map_y = map_properties.y
     end,
 
-    chest = function(chest_properties) 
+    chest = function(chest_properties)
       -- Get the info about this chest and store it into the dungeon table.
       if current_floor ~= nil then
         dungeon.chests[#dungeon.chests + 1] = {
@@ -461,4 +475,3 @@ function map_submenu:load_chests()
 end
 
 return map_submenu
-
