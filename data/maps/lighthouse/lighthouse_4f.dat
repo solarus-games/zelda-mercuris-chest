@@ -1,6 +1,6 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 320,
+  y = 240,
   width = 640,
   height = 480,
   world = "dungeon_3",
@@ -2143,48 +2143,57 @@ tile{
 }
 
 destination{
+  name = "from_3f_g",
   layer = 1,
   x = 440,
   y = 213,
-  name = "from_3f_g",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_3f_g",
   layer = 1,
   x = 432,
   y = 200,
   width = 16,
   height = 16,
-  name = "to_3f_g",
   destination_map = "lighthouse/lighthouse_3f",
   destination = "from_4f_g",
 }
 
 stairs{
+  name = "stairs",
   layer = 1,
   x = 432,
   y = 200,
-  name = "stairs",
   direction = 1,
-  subtype = "1",
+  subtype = 1,
 }
 
 destination{
+  name = "from_boss_h",
   layer = 1,
   x = 200,
   y = 357,
-  name = "from_boss_h",
   direction = 3,
 }
 
 stairs{
+  name = "stairs_2",
   layer = 1,
   x = 192,
   y = 344,
-  name = "stairs_2",
   direction = 1,
-  subtype = "0",
+  subtype = 0,
+}
+
+sensor{
+  name = "dungeon_room_1",
+  layer = 1,
+  x = 440,
+  y = 213,
+  width = 16,
+  height = 16,
 }
 
 tile{

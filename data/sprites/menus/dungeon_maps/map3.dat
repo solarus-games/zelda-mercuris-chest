@@ -1,0 +1,67 @@
+animation{
+  name = "0",
+  src_image = "menus/dungeon_maps/map3.png",
+  directions = {
+    { x = 123, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
+    { x = 154, y = 180, frame_width = 61, frame_height = 46, origin_x = -31, origin_y = -61 },
+    { x = 184, y = 157, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -38 },
+    { x = 154, y = 157, frame_width = 30, frame_height = 23, origin_x = -31, origin_y = -38 },
+    { x = 123, y = 119, frame_width = 31, frame_height = 84, origin_x = 0, origin_y = 0 },
+    { x = 215, y = 180, frame_width = 31, frame_height = 23, origin_x = -92, origin_y = -61 },
+    { x = 215, y = 157, frame_width = 31, frame_height = 23, origin_x = -92, origin_y = -38 },
+    { x = 184, y = 119, frame_width = 31, frame_height = 38, origin_x = -61, origin_y = 0 },
+    { x = 123, y = 119, frame_width = 61, frame_height = 38, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "-1",
+  src_image = "menus/dungeon_maps/map3.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
+    { x = 61, y = 180, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -61 },
+    { x = 0, y = 119, frame_width = 61, frame_height = 84, origin_x = 0, origin_y = 0 },
+    { x = 61, y = 119, frame_width = 31, frame_height = 61, origin_x = -61, origin_y = 0 },
+  },
+}
+animation{
+  name = "1",
+  src_image = "menus/dungeon_maps/map3.png",
+  directions = {
+    { x = 246, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
+    { x = 277, y = 180, frame_width = 30, frame_height = 23, origin_x = -31, origin_y = -61 },
+    { x = 246, y = 119, frame_width = 31, frame_height = 84, origin_x = 0, origin_y = 0 },
+    { x = 277, y = 119, frame_width = 30, frame_height = 38, origin_x = -31, origin_y = 0 },
+    { x = 277, y = 203, frame_width = 30, frame_height = 23, origin_x = -31, origin_y = -84 },
+    { x = 307, y = 203, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -84 },
+    { x = 307, y = 180, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -61 },
+    { x = 338, y = 180, frame_width = 31, frame_height = 23, origin_x = -92, origin_y = -61 },
+    { x = 338, y = 157, frame_width = 31, frame_height = 23, origin_x = -92, origin_y = -38 },
+    { x = 307, y = 157, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -38 },
+    { x = 277, y = 157, frame_width = 30, frame_height = 23, origin_x = -31, origin_y = -38 },
+    { x = 307, y = 119, frame_width = 31, frame_height = 38, origin_x = -61, origin_y = 0 },
+  },
+}
+animation{
+  name = "2",
+  src_image = "menus/dungeon_maps/map3.png",
+  directions = {
+    { x = 369, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
+    { x = 430, y = 180, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -61 },
+    { x = 461, y = 180, frame_width = 31, frame_height = 23, origin_x = -92, origin_y = -61 },
+    { x = 461, y = 157, frame_width = 31, frame_height = 23, origin_x = -92, origin_y = -38 },
+    { x = 430, y = 157, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -38 },
+    { x = 369, y = 157, frame_width = 61, frame_height = 46, origin_x = 0, origin_y = -38 },
+    { x = 400, y = 203, frame_width = 30, frame_height = 23, origin_x = -31, origin_y = -84 },
+    { x = 430, y = 203, frame_width = 31, frame_height = 23, origin_x = -61, origin_y = -84 },
+    { x = 400, y = 119, frame_width = 30, frame_height = 38, origin_x = -31, origin_y = 0 },
+    { x = 430, y = 119, frame_width = 30, frame_height = 38, origin_x = -61, origin_y = 0 },
+  },
+}
+animation{
+  name = "3",
+  src_image = "menus/dungeon_maps/map3.png",
+  directions = {
+    { x = 492, y = 0, frame_width = 92, frame_height = 84, origin_x = 0, origin_y = 0 },
+    { x = 492, y = 119, frame_width = 92, frame_height = 84, origin_x = 0, origin_y = 0 },
+  },
+}

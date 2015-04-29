@@ -35,6 +35,7 @@ local function initialize_sensor()
 
   function sensor_meta:on_activated()
 
+    local game = self:get_game()
     local hero = self:get_map():get_hero()
     local name = self:get_name()
 
@@ -50,6 +51,13 @@ local function initialize_sensor()
       if layer > 0 then
         hero:set_position(x, y, layer - 1)
       end
+    end
+
+    -- Sensors prefixed by "dungeon_room_N" save the exploration state of the
+    -- room "N" of the current dungeon floor.
+    local room = name:match("^dungeon_room_(%d+)")
+    if room ~= nil then
+      game:set_explored_dungeon_room(nil, nil, tonumber(room))
     end
   end
 end
@@ -72,7 +80,7 @@ local function initialize_switch()
 
       -- Allow to activate it again.
       sol.timer.start(self, 1000, function()
-        self:set_activated(false)  
+        self:set_activated(false)
       end)
     end
   end
@@ -109,4 +117,3 @@ function quest_manager:get_menu_font(language)
 end
 
 return quest_manager
-
