@@ -243,13 +243,17 @@ end
 function savegame_menu:read_savegames()
 
   self.slots = {}
+  local font, font_size = quest_manager:get_dialog_font()
   for i = 1, 3 do
     local slot = {}
     slot.file_name = "save" .. i .. ".dat"
     slot.savegame = game_manager:create(slot.file_name)
     slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
 
-    slot.player_name_text = sol.text_surface.create()
+    slot.player_name_text = sol.text_surface.create{
+      font = font,
+      font_size = font_size,
+    }
     if sol.game.exists(slot.file_name) then
       -- Existing file.
       slot.player_name_text:set_text(slot.savegame:get_value("player_name"))
@@ -596,19 +600,22 @@ function savegame_menu:init_phase_options()
     }
   }
 
+  local font, font_size = quest_manager:get_menu_font()
   for _, option in ipairs(self.options) do
 
     option.current_index = nil
 
     -- Text surface of the label.
     option.label_text = sol.text_surface.create{
-      font = "fixed",
+      font = font,
+      font_size = font_size,
       text_key = "selection_menu.options." .. option.name
     }
 
     -- Text surface of the value.
     option.value_text = sol.text_surface.create{
-      font = "fixed",
+      font = font,
+      font_size = font_size,
       horizontal_alignment = "right"
     }
   end
@@ -810,9 +817,15 @@ end
 -- This function is called when the language has just been changed.
 function savegame_menu:reload_options_strings()
 
+  local menu_font, menu_font_size = quest_manager:get_menu_font()
+  local dialog_font, dialog_font_size = quest_manager:get_dialog_font()
   -- Update the label of each option.
   for _, option in ipairs(self.options) do
 
+    option.label_text:set_font(menu_font)
+    option.label_text:set_font_size(menu_font_size)
+    option.value_text:set_font(menu_font)
+    option.value_text:set_font_size(menu_font_size)
     option.label_text:set_text_key("selection_menu.options." .. option.name)
 
     -- And the value of the video mode.
@@ -824,6 +837,12 @@ function savegame_menu:reload_options_strings()
 
   -- Other menu elements
   self.title_text:set_text_key("selection_menu.phase.options")
+  self.title_text:set_font(menu_font)
+  self.title_text:set_font_size(menu_font_size)
+  self.option1_text:set_font(dialog_font)
+  self.option1_text:set_font_size(dialog_font_size)
+  self.option2_text:set_font(dialog_font)
+  self.option2_text:set_font_size(dialog_font_size)
   self:set_bottom_buttons("selection_menu.back", nil)
   self:read_savegames()  -- To update "- Empty -" mentions.
 end
@@ -837,7 +856,11 @@ function savegame_menu:init_phase_choose_name()
   self.title_text:set_text_key("selection_menu.phase.choose_name")
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
-  self.player_name_text = sol.text_surface.create()
+  local font, font_size = sol.language.get_menu_font()
+  self.player_name_text = sol.text_surface.create{
+    font = font,
+    font_size = font_size,
+  }
   self.letter_cursor = { x = 0, y = 0 }
   self.letters_img = sol.surface.create("menus/selection_menu_letters.png")
   self.name_arrow_sprite = sol.sprite.create("menus/arrow")
