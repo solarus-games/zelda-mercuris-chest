@@ -128,6 +128,12 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/lever", description = "Lever" }
 sprite{ id = "entities/minecart", description = "Minecart" }
 sprite{ id = "entities/outside_door", description = "Outside closed door" }
+sprite{ id = "entities/railway_bottom_left", description = "Railway (bottom left)" }
+sprite{ id = "entities/railway_bottom_right", description = "Railway (bottom right)" }
+sprite{ id = "entities/railway_horizontal", description = "Railway (horizontal)" }
+sprite{ id = "entities/railway_top_left", description = "Railway (top left)" }
+sprite{ id = "entities/railway_top_right", description = "Railway (top right)" }
+sprite{ id = "entities/railway_vertical", description = "Railway (vertical)" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }

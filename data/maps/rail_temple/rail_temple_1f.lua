@@ -39,6 +39,9 @@ function map:on_started()
     map:set_doors_open("room_f_door", true)
     room_f_switch_pot:remove()
   end
+
+  -- Railway points maze.
+  map:set_entities_enabled("railway_points_off_", false)
 end
 
 local function room_a_enemy_dead(enemy)
@@ -159,6 +162,25 @@ function open_room_f_switch:on_inactivated()
 
   map:close_doors("room_f")
   game:set_value("rail_temple_1f_room_f_statue", false)
+end
+
+-- Railway points maze.
+local function railway_point_switch_activated(switch)
+
+  local direction = switch:get_sprite():get_direction()
+  switch:get_sprite():set_direction(1 - direction)
+  sol.timer.start(map, 500, function()
+    switch:set_activated(false)
+  end)
+  local switch_number = switch:get_name():match("railway_points_switch_(%d+)")
+  assert(switch_number ~= nil)
+
+  local turned_on = (direction == 1)
+  map:get_entity("railway_points_on_" .. switch_number):set_enabled(turned_on)
+  map:get_entity("railway_points_off_" .. switch_number):set_enabled(not turned_on)
+end
+for switch in map:get_entities("railway_points_switch_") do
+  switch.on_activated = railway_point_switch_activated
 end
 
 -- Blocks puzzle (room C).
