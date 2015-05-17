@@ -856,7 +856,7 @@ function savegame_menu:init_phase_choose_name()
   self.title_text:set_text_key("selection_menu.phase.choose_name")
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
-  local font, font_size = quest_manager:get_menu_font()
+  local font, font_size = sol.language.get_menu_font()
   self.player_name_text = sol.text_surface.create{
     font = font,
     font_size = font_size,

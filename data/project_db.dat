@@ -10,7 +10,7 @@ map{ id = "outside/outside_e7", description = "Outside E7 - Graveyard" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "rail_temple/rail_temple_1f", description = "Rail Temple 1F" }
 map{ id = "rail_temple/rail_temple_b1", description = "Rail Temple B1" }
-map{ id = "rail_temple/rail_temple_b2a", description = "Rail Temple B2" }
+map{ id = "rail_temple/rail_temple_b2", description = "Rail Temple B2" }
 map{ id = "test_map", description = "Test Hub" }
 
 tileset{ id = "dark_world", description = "Dark World" }
