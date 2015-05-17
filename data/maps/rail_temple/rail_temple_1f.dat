@@ -22309,51 +22309,6 @@ tile{
 tile{
   layer = 1,
   x = 896,
-  y = 1792,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 1888,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 920,
-  y = 1888,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 920,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 896,
   y = 1808,
   width = 16,
   height = 80,
@@ -22389,47 +22344,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 896,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
   x = 800,
   y = 1776,
   width = 80,
   height = 16,
   pattern = "rail.2",
-}
-
-tile{
-  layer = 1,
-  x = 800,
-  y = 1792,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
 }
 
 tile{
@@ -22448,51 +22367,6 @@ tile{
   width = 80,
   height = 16,
   pattern = "rail.2",
-}
-
-tile{
-  layer = 1,
-  x = 800,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
 }
 
 tile{
@@ -22551,60 +22425,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 736,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 1792,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 704,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 1792,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
   x = 752,
   y = 1776,
   width = 16,
@@ -22632,101 +22452,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 672,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 624,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 496,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 528,
-  y = 1792,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
   x = 544,
   y = 1776,
   width = 16,
   height = 16,
   pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
 }
 
 tile{
@@ -22799,15 +22529,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "rail.2",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
 }
 
 tile{
@@ -22848,35 +22569,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
   x = 528,
   y = 1856,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 624,
-  y = 1904,
   width = 16,
   height = 16,
   pattern = "rail.corner.4",
@@ -22938,42 +22632,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 672,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 704,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 576,
-  y = 1904,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 656,
-  y = 1888,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
   x = 512,
   y = 1856,
   width = 16,
@@ -22988,24 +22646,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "rail.2",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 656,
-  y = 1856,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
 }
 
 tile{
@@ -23055,24 +22695,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 688,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 704,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
   x = 720,
   y = 1840,
   width = 16,
@@ -23091,15 +22713,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 592,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
   x = 608,
   y = 1840,
   width = 16,
@@ -23114,24 +22727,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "rail.2",
-}
-
-tile{
-  layer = 1,
-  x = 640,
-  y = 1856,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
 }
 
 tile{
@@ -23159,42 +22754,6 @@ tile{
   width = 16,
   height = 64,
   pattern = "rail.1",
-}
-
-tile{
-  layer = 1,
-  x = 496,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 1920,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 1952,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
 }
 
 tile{
@@ -23299,28 +22858,10 @@ tile{
 tile{
   layer = 1,
   x = 528,
-  y = 1888,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 528,
   y = 1904,
   width = 16,
   height = 16,
   pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 1888,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
 }
 
 tile{
@@ -23353,15 +22894,6 @@ tile{
 tile{
   layer = 1,
   x = 592,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 592,
   y = 1856,
   width = 16,
   height = 16,
@@ -23384,24 +22916,6 @@ tile{
   width = 16,
   height = 48,
   pattern = "rail.1",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
 }
 
 tile{
@@ -23452,42 +22966,6 @@ tile{
 tile{
   layer = 1,
   x = 640,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1952,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 624,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 624,
-  y = 1952,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 640,
   y = 1952,
   width = 64,
   height = 16,
@@ -23510,114 +22988,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "rail.1",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 1920,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 688,
-  y = 1920,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 704,
-  y = 1904,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 720,
-  y = 1920,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 1920,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 800,
-  y = 1936,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 1920,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 1952,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 720,
-  y = 1952,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
 }
 
 tile{
@@ -23667,15 +23037,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 752,
-  y = 1904,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
   x = 720,
   y = 1904,
   width = 32,
@@ -23703,65 +23064,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 784,
-  y = 1904,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 1904,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.3",
-}
-
-tile{
-  layer = 1,
   x = 768,
   y = 1888,
   width = 16,
   height = 16,
   pattern = "rail.1",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 1888,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 1872,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.4",
 }
 
 tile{
@@ -23780,24 +23087,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "rail.2",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 1856,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 800,
-  y = 1856,
-  width = 16,
-  height = 16,
-  pattern = "rail.corner.2",
 }
 
 tile{
@@ -43189,15 +42478,6 @@ door{
 }
 
 custom_entity{
-  name = "minecart",
-  layer = 1,
-  x = 2568,
-  y = 3453,
-  direction = 1,
-  model = "minecart",
-}
-
-custom_entity{
   layer = 1,
   x = 2568,
   y = 3325,
@@ -43522,15 +42802,6 @@ destination{
   x = 600,
   y = 1989,
   direction = 1,
-}
-
-custom_entity{
-  name = "minecart_2",
-  layer = 1,
-  x = 600,
-  y = 1973,
-  direction = 1,
-  model = "minecart",
 }
 
 custom_entity{
@@ -44008,6 +43279,906 @@ custom_entity{
   y = 1965,
   direction = 1,
   sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+wall{
+  name = "railway_points_wall_off_17_1",
+  layer = 1,
+  x = 528,
+  y = 1912,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_18_1",
+  layer = 1,
+  x = 672,
+  y = 1952,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_18_2",
+  layer = 1,
+  x = 768,
+  y = 1952,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_19_1",
+  layer = 1,
+  x = 752,
+  y = 1920,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_10_1",
+  layer = 1,
+  x = 592,
+  y = 1816,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_on_12_1",
+  layer = 1,
+  x = 592,
+  y = 1856,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_4_1",
+  layer = 1,
+  x = 544,
+  y = 1840,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_5_1",
+  layer = 1,
+  x = 624,
+  y = 1832,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_6_1",
+  layer = 1,
+  x = 688,
+  y = 1864,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_7_1",
+  layer = 1,
+  x = 752,
+  y = 1776,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_8_1",
+  layer = 1,
+  x = 880,
+  y = 1776,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_on_3_1",
+  layer = 1,
+  x = 688,
+  y = 1792,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_2_1",
+  layer = 1,
+  x = 576,
+  y = 1792,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_15_1",
+  layer = 1,
+  x = 544,
+  y = 1904,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_1_1",
+  layer = 1,
+  x = 664,
+  y = 1760,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 1901,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 536,
+  y = 1901,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 1965,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 648,
+  y = 1869,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 664,
+  y = 1869,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 664,
+  y = 1901,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 1933,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1933,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 760,
+  y = 1901,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 760,
+  y = 1885,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 1885,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 1917,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 1917,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 1933,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 1933,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 648,
+  y = 1949,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 632,
+  y = 1949,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 632,
+  y = 1965,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 1965,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 728,
+  y = 1933,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 712,
+  y = 1917,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 760,
+  y = 1917,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 760,
+  y = 1949,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1949,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1965,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 824,
+  y = 1965,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 808,
+  y = 1949,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 1949,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 808,
+  y = 1869,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1869,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1885,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 712,
+  y = 1853,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1885,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1853,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1853,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 632,
+  y = 1917,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 584,
+  y = 1917,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1885,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 552,
+  y = 1821,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 712,
+  y = 1789,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1837,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 696,
+  y = 1837,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 712,
+  y = 1837,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 1837,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 792,
+  y = 1789,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1853,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 824,
+  y = 1853,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 824,
+  y = 1821,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 808,
+  y = 1821,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 808,
+  y = 1805,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 1805,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 1901,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 928,
+  y = 1901,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 928,
+  y = 1789,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 1773,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 904,
+  y = 1789,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 1773,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 1821,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1821,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 744,
+  y = 1805,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 760,
+  y = 1805,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 760,
+  y = 1773,
+  direction = 2,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1773,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 680,
+  y = 1789,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 632,
+  y = 1789,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 536,
+  y = 1805,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 520,
+  y = 1853,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 1853,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 1885,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 520,
+  y = 1885,
+  direction = 3,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 520,
+  y = 1933,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 552,
+  y = 1949,
+  direction = 2,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 504,
+  y = 1949,
+  direction = 1,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 1773,
+  direction = 3,
+  sprite = "entities/railway_bottom_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 568,
+  y = 1789,
+  direction = 0,
+  sprite = "entities/railway_top_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1789,
+  direction = 1,
+  sprite = "entities/railway_top_left",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 600,
+  y = 1773,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  name = "minecart",
+  layer = 1,
+  x = 2568,
+  y = 3453,
+  direction = 1,
+  model = "minecart",
+}
+
+wall{
+  name = "railway_points_wall_off_20_1",
+  layer = 1,
+  x = 816,
+  y = 1848,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_on_13_1",
+  layer = 1,
+  x = 736,
+  y = 1840,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  name = "railway_points_wall_off_9_1",
+  layer = 1,
+  x = 560,
+  y = 1776,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+custom_entity{
+  layer = 1,
+  x = 520,
+  y = 1789,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
+  model = "minecart_turn",
+}
+
+custom_entity{
+  layer = 1,
+  x = 504,
+  y = 1773,
+  direction = 0,
+  sprite = "entities/railway_bottom_right",
   model = "minecart_turn",
 }
 

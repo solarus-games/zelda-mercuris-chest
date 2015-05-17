@@ -103,6 +103,7 @@ function minecart:go()
   local movement = sol.movement.create("straight")
   movement:set_angle(direction4 * math.pi / 2)
   movement:set_speed(128)
+  movement:set_smooth(false)
 
   function movement:on_position_changed()
     -- Put the minecart at the same position as the hero.

@@ -41,7 +41,21 @@ function map:on_started()
   end
 
   -- Railway points maze.
-  map:set_entities_enabled("railway_points_off_", false)
+  map:set_entities_enabled("railway_points_on_", false)
+  sol.timer.start(100, function()
+    if hero:get_animation() ~= "minecart_driving" then
+      map:set_entities_enabled("railway_points_wall_", false)
+    else
+      for switch in map:get_entities("railway_points_switch_") do
+        local switch_number = switch:get_name():match("railway_points_switch_(%d+)")
+        assert(switch_number ~= nil)
+        local turned_on = (switch:get_sprite():get_direction() == 1)
+        map:set_entities_enabled("railway_points_wall_on_" .. switch_number .. "_", turned_on)
+        map:set_entities_enabled("railway_points_wall_off_" .. switch_number .. "_", not turned_on)
+      end
+    end
+    return true
+  end)
 end
 
 local function room_a_enemy_dead(enemy)
@@ -165,6 +179,16 @@ function open_room_f_switch:on_inactivated()
 end
 
 -- Railway points maze.
+local function update_railway_point_from_switch(switch)
+
+  local switch_number = switch:get_name():match("railway_points_switch_(%d+)")
+  assert(switch_number ~= nil)
+
+  local turned_on = (switch:get_sprite():get_direction() == 1)
+  map:get_entity("railway_points_on_" .. switch_number):set_enabled(turned_on)
+  map:get_entity("railway_points_off_" .. switch_number):set_enabled(not turned_on)
+end
+
 local function railway_point_switch_activated(switch)
 
   local direction = switch:get_sprite():get_direction()
@@ -172,13 +196,9 @@ local function railway_point_switch_activated(switch)
   sol.timer.start(map, 500, function()
     switch:set_activated(false)
   end)
-  local switch_number = switch:get_name():match("railway_points_switch_(%d+)")
-  assert(switch_number ~= nil)
-
-  local turned_on = (direction == 1)
-  map:get_entity("railway_points_on_" .. switch_number):set_enabled(turned_on)
-  map:get_entity("railway_points_off_" .. switch_number):set_enabled(not turned_on)
+  update_railway_point_from_switch(switch)
 end
+
 for switch in map:get_entities("railway_points_switch_") do
   switch.on_activated = railway_point_switch_activated
 end
