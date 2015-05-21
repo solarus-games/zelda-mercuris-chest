@@ -1,6 +1,15 @@
 local map = ...
 local game = map:get_game()
 
+local railway_points_should_be_on = {
+  1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19, 20
+}
+local railway_points_should_be_off = {
+  3, 12, 13
+}
+
+local set_railway_points_puzzle_solved
+
 function map:on_started()
 
   -- Initially open room A (small room with two skeletons).
@@ -42,6 +51,8 @@ function map:on_started()
 
   -- Railway points maze.
   map:set_entities_enabled("railway_points_on_", false)
+
+  -- Set up invisible walls in the maze.
   sol.timer.start(100, function()
     if hero:get_animation() ~= "minecart_driving" then
       map:set_entities_enabled("railway_points_wall_", false)
@@ -54,8 +65,13 @@ function map:on_started()
         map:set_entities_enabled("railway_points_wall_off_" .. switch_number .. "_", not turned_on)
       end
     end
-    return true
+    return true  -- Repeat the timer.
   end)
+
+  if game:get_value("rail_temple_1f_railway_points_puzzle") then
+    -- The puzzle is solved.
+    set_railway_points_puzzle_solved()
+  end
 end
 
 local function room_a_enemy_dead(enemy)
@@ -179,7 +195,7 @@ function open_room_f_switch:on_inactivated()
 end
 
 -- Railway points maze.
-local function update_railway_point_from_switch(switch)
+local function update_railway_points_from_switch(switch)
 
   local switch_number = switch:get_name():match("railway_points_switch_(%d+)")
   assert(switch_number ~= nil)
@@ -189,6 +205,31 @@ local function update_railway_point_from_switch(switch)
   map:get_entity("railway_points_off_" .. switch_number):set_enabled(not turned_on)
 end
 
+local function check_railway_points_switch_puzzle()
+
+  if game:get_value("rail_temple_1f_railway_points_puzzle") then
+    -- Already saved as solved.
+    return
+  end
+
+  for _, index in ipairs(railway_points_should_be_on) do
+    local switch = map:get_entity("railway_points_switch_" .. index)
+    if switch:get_sprite():get_direction() ~= 1 then
+      return
+    end
+  end
+  for _, index in ipairs(railway_points_should_be_off) do
+    local switch = map:get_entity("railway_points_switch_" .. index)
+    if switch:get_sprite():get_direction() ~= 0 then
+      return
+    end
+  end
+
+  -- The puzzle is just solved.
+  sol.audio.play_sound("secret")
+  game:set_value("rail_temple_1f_railway_points_puzzle", true)
+end
+
 local function railway_point_switch_activated(switch)
 
   local direction = switch:get_sprite():get_direction()
@@ -196,11 +237,25 @@ local function railway_point_switch_activated(switch)
   sol.timer.start(map, 500, function()
     switch:set_activated(false)
   end)
-  update_railway_point_from_switch(switch)
+  update_railway_points_from_switch(switch)
+  check_railway_points_switch_puzzle()
 end
-
 for switch in map:get_entities("railway_points_switch_") do
   switch.on_activated = railway_point_switch_activated
+end
+
+function set_railway_points_puzzle_solved()
+
+  for _, index in ipairs(railway_points_should_be_on) do
+    local switch = map:get_entity("railway_points_switch_" .. index)
+    switch:get_sprite():set_direction(1)
+    update_railway_points_from_switch(switch)
+  end
+  for _, index in ipairs(railway_points_should_be_off) do
+    local switch = map:get_entity("railway_points_switch_" .. index)
+    switch:get_sprite():set_direction(0)
+    update_railway_points_from_switch(switch)
+  end
 end
 
 -- Blocks puzzle (room C).
