@@ -7,7 +7,7 @@ function options_submenu:on_started()
 
   submenu.on_started(self)
 
-  local font = quest_manager:get_menu_font()
+  local font, font_size = quest_manager:get_menu_font()
   local width, height = sol.video.get_quest_size()
   local center_x, center_y = width / 2, height / 2
 
@@ -15,6 +15,7 @@ function options_submenu:on_started()
     horizontal_alignment = "left",
     vertical_alignment = "top",
     font = font,
+    font_size = font_size,
     text_key = "selection_menu.options.video_mode",
   }
   self.video_mode_label_text:set_xy(center_x - 50, center_y - 58)
@@ -23,6 +24,7 @@ function options_submenu:on_started()
     horizontal_alignment = "right",
     vertical_alignment = "top",
     font = font,
+    font_size = font_size,
     text = sol.video.get_mode(),
   }
   self.video_mode_text:set_xy(center_x + 104, center_y - 58)
@@ -31,6 +33,7 @@ function options_submenu:on_started()
     horizontal_alignment = "center",
     vertical_alignment = "top",
     font = font,
+    font_size = font_size,
     text_key = "options.commands_column",
   }
   self.command_column_text:set_xy(center_x - 76, center_y - 37)
@@ -39,6 +42,7 @@ function options_submenu:on_started()
     horizontal_alignment = "center",
     vertical_alignment = "top",
     font = font,
+    font_size = font_size,
     text_key = "options.keyboard_column",
   }
   self.keyboard_column_text:set_xy(center_x - 7, center_y - 37)
@@ -47,6 +51,7 @@ function options_submenu:on_started()
     horizontal_alignment = "center",
     vertical_alignment = "top",
     font = font,
+    font_size = font_size,
     text_key = "options.joypad_column",
   }
   self.joypad_column_text:set_xy(center_x + 69, center_y - 37)
@@ -66,6 +71,7 @@ function options_submenu:on_started()
       horizontal_alignment = "left",
       vertical_alignment = "top",
       font = font,
+      font_size = font_size,
       text_key = "options.command." .. self.command_names[i],
     }
 
@@ -73,12 +79,14 @@ function options_submenu:on_started()
       horizontal_alignment = "left",
       vertical_alignment = "top",
       font = font,
+      font_size = font_size,
     }
 
     self.joypad_texts[i] = sol.text_surface.create{
       horizontal_alignment = "left",
       vertical_alignment = "top",
       font = font,
+      font_size = font_size,
     }
   end
 
