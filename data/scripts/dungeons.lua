@@ -17,11 +17,11 @@ function dungeon_manager:create(game)
       lowest_floor = -1,
       highest_floor = 3,
       maps = {
-        "lighthouse/lighthouse_b1",
-        "lighthouse/lighthouse_1f",
-        "lighthouse/lighthouse_2f",
-        "lighthouse/lighthouse_3f",
-        "lighthouse/lighthouse_4f" },
+        "lighthouse/b1",
+        "lighthouse/1f",
+        "lighthouse/2f",
+        "lighthouse/3f",
+        "lighthouse/4f" },
     },
 
     [7] = {

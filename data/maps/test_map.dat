@@ -343,7 +343,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter",
-  destination_map = "outside/outside_a7",
+  destination_map = "outside/a7",
   destination = "test_destination",
 }
 
@@ -354,7 +354,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_2",
-  destination_map = "rail_temple/rail_temple_1f",
+  destination_map = "rail_temple/1f",
   destination = "tmp",
 }
 
@@ -373,7 +373,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter_3",
-  destination_map = "lighthouse/lighthouse_1f",
+  destination_map = "lighthouse/1f",
   destination = "main_entrance",
 }
 
