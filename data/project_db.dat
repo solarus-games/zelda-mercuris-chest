@@ -1,16 +1,16 @@
 map{ id = "inside_store", description = "Inside Store" }
-map{ id = "lighthouse/lighthouse_1f", description = "Lighthouse 1F" }
-map{ id = "lighthouse/lighthouse_2f", description = "Lighthouse 2F" }
-map{ id = "lighthouse/lighthouse_3f", description = "Lighthouse 3F" }
-map{ id = "lighthouse/lighthouse_4f", description = "Lighthouse 4F" }
-map{ id = "lighthouse/lighthouse_b1", description = "Lighthouse B1" }
-map{ id = "lighthouse/lighthouse_outside", description = "Lighthouse outside" }
-map{ id = "outside/outside_a7", description = "Outside A7-B8 - Lost Woods" }
-map{ id = "outside/outside_e7", description = "Outside E7 - Graveyard" }
+map{ id = "lighthouse/1f", description = "Lighthouse 1F" }
+map{ id = "lighthouse/2f", description = "Lighthouse 2F" }
+map{ id = "lighthouse/3f", description = "Lighthouse 3F" }
+map{ id = "lighthouse/4f", description = "Lighthouse 4F" }
+map{ id = "lighthouse/b1", description = "Lighthouse B1" }
+map{ id = "lighthouse/outside", description = "Lighthouse outside" }
+map{ id = "outside/a7", description = "Outside A7-B8 - Lost Woods" }
+map{ id = "outside/e7", description = "Outside E7 - Graveyard" }
 map{ id = "outside_store", description = "Outside Store" }
-map{ id = "rail_temple/rail_temple_1f", description = "Rail Temple 1F" }
-map{ id = "rail_temple/rail_temple_b1", description = "Rail Temple B1" }
-map{ id = "rail_temple/rail_temple_b2", description = "Rail Temple B2" }
+map{ id = "rail_temple/1f", description = "Rail Temple 1F" }
+map{ id = "rail_temple/b1", description = "Rail Temple B1" }
+map{ id = "rail_temple/b2", description = "Rail Temple B2" }
 map{ id = "test_map", description = "Test Hub" }
 
 tileset{ id = "dark_world", description = "Dark World" }
