@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 1280,
   height = 960,
-  tileset = "light_world",
+  tileset = "forest",
   music = "same",
 }
 
@@ -893,7 +893,7 @@ tile{
   layer = 0,
   x = 48,
   y = 104,
-  width = 16,
+  width = 48,
   height = 8,
   pattern = "cliff.top.1",
 }
@@ -7578,8 +7578,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 72,
-  y = 104,
+  x = 160,
+  y = 672,
   width = 16,
   height = 40,
   pattern = "ladder",
@@ -7587,8 +7587,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 88,
-  y = 104,
+  x = 176,
+  y = 672,
   width = 8,
   height = 40,
   pattern = "ladder.border.2",
@@ -7596,8 +7596,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 104,
+  x = 152,
+  y = 672,
   width = 8,
   height = 40,
   pattern = "ladder.border.1",
@@ -7726,26 +7726,26 @@ npc{
   x = 24,
   y = 909,
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 608,
-  y = 288,
-  width = 32,
-  height = 16,
   name = "weak_wall_closed",
+  layer = 0,
+  x = 608,
+  y = 288,
   pattern = "sand.cliff.1",
+  width = 32,
+  height = 16,
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall",
   layer = 0,
   x = 616,
   y = 288,
-  name = "weak_wall",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -7753,21 +7753,21 @@ door{
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 608,
-  y = 112,
-  width = 32,
-  height = 16,
   name = "weak_wall_3_closed",
+  layer = 0,
+  x = 608,
+  y = 112,
   pattern = "grass.cliff.1",
+  width = 32,
+  height = 16,
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_3",
   layer = 0,
   x = 616,
   y = 112,
-  name = "weak_wall_3",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -7775,21 +7775,21 @@ door{
 }
 
 dynamic_tile{
+  name = "weak_wall_2_closed",
   layer = 0,
   x = 608,
   y = 464,
+  pattern = "dirt.cliff.1",
   width = 32,
   height = 16,
-  name = "weak_wall_2_closed",
-  pattern = "dirt.cliff.1",
   enabled_at_start = true,
 }
 
 door{
+  name = "weak_wall_2",
   layer = 0,
   x = 616,
   y = 464,
-  name = "weak_wall_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "outside_a1_weak_wall",
@@ -7820,23 +7820,23 @@ destructible{
 
 wall{
   layer = 0,
-  x = 72,
-  y = 104,
+  x = 160,
+  y = 672,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "to_layer_1_sensor",
   layer = 0,
-  x = 80,
-  y = 133,
+  x = 168,
+  y = 701,
   width = 16,
   height = 16,
-  name = "to_layer_1_sensor",
 }
 
 tile{
@@ -8677,56 +8677,56 @@ tile{
 }
 
 dynamic_tile{
+  name = "invisible_tile_2",
   layer = 1,
-  x = 72,
-  y = 104,
+  x = 160,
+  y = 672,
+  pattern = "ladder",
   width = 16,
   height = 40,
-  name = "invisible_tile_2",
-  pattern = "ladder",
   enabled_at_start = true,
 }
 
 wall{
   layer = 1,
-  x = 72,
-  y = 104,
+  x = 160,
+  y = 672,
   width = 16,
   height = 40,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile",
   layer = 1,
-  x = 64,
-  y = 104,
+  x = 152,
+  y = 672,
+  pattern = "ladder.border.1",
   width = 8,
   height = 40,
-  name = "invisible_tile",
-  pattern = "ladder.border.1",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "invisible_tile_3",
   layer = 1,
-  x = 88,
-  y = 104,
+  x = 176,
+  y = 672,
+  pattern = "ladder.border.2",
   width = 8,
   height = 40,
-  name = "invisible_tile_3",
-  pattern = "ladder.border.2",
   enabled_at_start = true,
 }
 
 sensor{
+  name = "to_layer_0_sensor",
   layer = 1,
-  x = 80,
-  y = 141,
+  x = 168,
+  y = 709,
   width = 16,
   height = 16,
-  name = "to_layer_0_sensor",
 }
 
 tile{

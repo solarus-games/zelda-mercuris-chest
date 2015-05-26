@@ -1,3 +1,4 @@
+map{ id = "forest_store", description = "Forest store" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "lighthouse/1f", description = "Lighthouse 1F" }
 map{ id = "lighthouse/2f", description = "Lighthouse 2F" }
