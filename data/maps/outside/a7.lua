@@ -13,7 +13,7 @@ local overlay_movement
 
 local function restart_overlay_movement()
 
-  overlay_movement:set_speed(16) 
+  overlay_movement:set_speed(16)
   overlay_movement:set_max_distance(100)
   overlay_movement:set_angle(overlay_angles[overlay_step])
   overlay_step = overlay_step + 1
