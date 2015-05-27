@@ -18,8 +18,3 @@ enemy:set_properties({
   end
 })
 
-function enemy:on_dying()
-
-  local sprite = enemy:create_sprite("enemies/tentacle")
-  sprite:set_animation("walking")
-end
