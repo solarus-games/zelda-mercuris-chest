@@ -62,7 +62,7 @@ tile_pattern{
 tile_pattern{
   id = "104",
   ground = "wall_top_left",
-  default_layer = 0,
+  default_layer = 1,
   x = 392,
   y = 600,
   width = 8,
@@ -72,7 +72,7 @@ tile_pattern{
 tile_pattern{
   id = "105",
   ground = "wall_top_right",
-  default_layer = 0,
+  default_layer = 1,
   x = 440,
   y = 600,
   width = 8,
@@ -220,11 +220,31 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "119",
+  ground = "wall_bottom_right",
+  default_layer = 1,
+  x = 392,
+  y = 608,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "12",
   ground = "wall",
   default_layer = 2,
   x = 544,
   y = 368,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "120",
+  ground = "wall_bottom_left",
+  default_layer = 1,
+  x = 440,
+  y = 608,
   width = 8,
   height = 8,
 }
