@@ -193,7 +193,9 @@ sprite{ id = "npc/agahnim", description = "Agahnim" }
 sprite{ id = "npc/billy", description = "Billy" }
 sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
 sprite{ id = "npc/castle_guard", description = "Castle guard" }
-sprite{ id = "npc/deku_green", description = "Green Deku" }
+sprite{ id = "npc/deku_dark_green", description = "Deku (dark green)" }
+sprite{ id = "npc/deku_green", description = "Deku (green)" }
+sprite{ id = "npc/deku_red", description = "Deku (red)" }
 sprite{ id = "npc/ganon", description = "Ganon" }
 sprite{ id = "npc/great_fairy", description = "Great Fairy" }
 sprite{ id = "npc/inferno", description = "Inferno" }
