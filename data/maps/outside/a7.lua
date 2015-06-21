@@ -31,12 +31,20 @@ local function initialize_overlay()
   overlay_offset_y = 0
   overlay_movement = sol.movement.create("straight")
   restart_overlay_movement()
+end
 
+local function initialize_npcs()
+
+  for deku in map:get_entities("deku_npc") do
+    local movement = sol.movement.create("random_path")
+   -- movement:start(deku)
+  end
 end
 
 function map:on_started()
 
   initialize_overlay()
+  initialize_npcs()
 end
 
 function map:on_draw(dst_surface)
