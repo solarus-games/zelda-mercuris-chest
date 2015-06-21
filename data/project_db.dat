@@ -206,10 +206,6 @@ sprite{ id = "npc/newlink6", description = "Newlink NPC 6" }
 sprite{ id = "npc/newlink7", description = "Newlink NPC 7" }
 sprite{ id = "npc/newlink8", description = "Newlink NPC 8" }
 sprite{ id = "npc/sahasrahla", description = "Sahasrahla" }
-sprite{ id = "npc/solarus_child1", description = "Solarus Child 1" }
-sprite{ id = "npc/solarus_child2", description = "Solarus Child 2" }
-sprite{ id = "npc/solarus_child3", description = "Solarus Child 3" }
-sprite{ id = "npc/solarus_child4", description = "Solarus Child 4" }
 sprite{ id = "npc/static_villager1", description = "ALTTP static villager 1" }
 sprite{ id = "npc/static_villager10", description = "ALTTP static villager 10" }
 sprite{ id = "npc/static_villager11", description = "ALTTP static villager 11" }

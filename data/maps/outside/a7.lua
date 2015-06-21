@@ -13,7 +13,7 @@ local overlay_movement
 
 local function restart_overlay_movement()
 
-  overlay_movement:set_speed(16)
+  overlay_movement:set_speed(12)
   overlay_movement:set_max_distance(100)
   overlay_movement:set_angle(overlay_angles[overlay_step])
   overlay_step = overlay_step + 1
@@ -26,7 +26,7 @@ end
 local function initialize_overlay()
 
   overlay = sol.surface.create("entities/overlay_forest_leaves.png")
-  overlay:set_opacity(64)
+  overlay:set_opacity(48)
   overlay_offset_x = 0  -- Used to keep continuity when getting lost.
   overlay_offset_y = 0
   overlay_movement = sol.movement.create("straight")
