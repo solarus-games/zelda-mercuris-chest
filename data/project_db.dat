@@ -369,8 +369,8 @@ item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
 item{ id = "bottle_4", description = "Bottle 4" }
 item{ id = "bow", description = "Bow" }
+item{ id = "cane_of_medusa", description = "Cane of Medusa" }
 item{ id = "cane_of_somaria", description = "Cane of Somaria" }
-item{ id = "cane_of_stone", description = "Cane of Stone" }
 item{ id = "clay_key", description = "Clay key" }
 item{ id = "compass", description = "Dungeon compass" }
 item{ id = "croissant", description = "Croissant (x1)" }

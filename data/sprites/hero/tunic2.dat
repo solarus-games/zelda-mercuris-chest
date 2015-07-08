@@ -1,4 +1,4 @@
-animation {
+animation{
   name = "stopped",
   src_image = "hero/stopped.tunic.png",
   directions = {
@@ -8,7 +8,7 @@ animation {
     { x = 96, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "boomerang1",
   src_image = "hero/boomerang.tunic.png",
   frame_delay = 100,
@@ -19,7 +19,7 @@ animation {
     { x = 0, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
   },
 }
-animation {
+animation{
   name = "boomerang2",
   src_image = "hero/boomerang.tunic.png",
   frame_delay = 100,
@@ -30,7 +30,7 @@ animation {
     { x = 32, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
   },
 }
-animation {
+animation{
   name = "bow",
   src_image = "hero/bow.tunic.png",
   frame_delay = 100,
@@ -41,7 +41,7 @@ animation {
     { x = 0, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20, num_frames = 3 },
   },
 }
-animation {
+animation{
   name = "brandish",
   src_image = "hero/miscellaneous.png",
   directions = {
@@ -51,7 +51,7 @@ animation {
     { x = 16, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "carrying_stopped",
   src_image = "hero/carrying.png",
   directions = {
@@ -61,7 +61,7 @@ animation {
     { x = 0, y = 120, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "carrying_walking",
   src_image = "hero/carrying.png",
   frame_delay = 100,
@@ -73,7 +73,7 @@ animation {
     { x = 0, y = 120, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
   },
 }
-animation {
+animation{
   name = "dying",
   src_image = "hero/dying.png",
   frame_delay = 125,
@@ -82,7 +82,7 @@ animation {
     { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 10 },
   },
 }
-animation {
+animation{
   name = "falling",
   src_image = "hero/falling.png",
   frame_delay = 125,
@@ -93,7 +93,7 @@ animation {
     { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 12, num_frames = 6 },
   },
 }
-animation {
+animation{
   name = "grabbing",
   src_image = "hero/grabbing.png",
   directions = {
@@ -103,7 +103,18 @@ animation {
     { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
+  name = "hammer",
+  src_image = "hero/hammer.tunic.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 160, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 200, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 240, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 280, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+  },
+}
+animation{
   name = "hookshot",
   src_image = "hero/hookshot.tunic.png",
   directions = {
@@ -113,7 +124,7 @@ animation {
     { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "hurt",
   src_image = "hero/miscellaneous.png",
   directions = {
@@ -123,7 +134,7 @@ animation {
     { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "jumping",
   src_image = "hero/jumping.png",
   directions = {
@@ -133,7 +144,7 @@ animation {
     { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "lifting",
   src_image = "hero/lifting.png",
   frame_delay = 100,
@@ -144,7 +155,7 @@ animation {
     { x = 0, y = 168, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 5 },
   },
 }
-animation {
+animation{
   name = "minecart_driving",
   src_image = "hero/minecart.png",
   frame_delay = 150,
@@ -156,7 +167,7 @@ animation {
     { x = 0, y = 200, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
   },
 }
-animation {
+animation{
   name = "minecart_stopped",
   src_image = "hero/minecart.png",
   directions = {
@@ -166,7 +177,7 @@ animation {
     { x = 0, y = 200, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "minecart_turning_over",
   src_image = "hero/minecart.png",
   frame_delay = 100,
@@ -178,7 +189,7 @@ animation {
     { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 4 },
   },
 }
-animation {
+animation{
   name = "plunging_lava",
   src_image = "hero/plunging.png",
   frame_delay = 50,
@@ -189,7 +200,7 @@ animation {
     { x = 336, y = 168, frame_width = 56, frame_height = 24, origin_x = 28, origin_y = 21, num_frames = 6 },
   },
 }
-animation {
+animation{
   name = "plunging_water",
   src_image = "hero/plunging.png",
   frame_delay = 50,
@@ -200,7 +211,7 @@ animation {
     { x = 0, y = 168, frame_width = 56, frame_height = 24, origin_x = 28, origin_y = 21, num_frames = 6 },
   },
 }
-animation {
+animation{
   name = "pulling",
   src_image = "hero/pulling.png",
   frame_delay = 150,
@@ -212,7 +223,7 @@ animation {
     { x = 0, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
   },
 }
-animation {
+animation{
   name = "pushing",
   src_image = "hero/pushing.png",
   frame_delay = 100,
@@ -224,7 +235,7 @@ animation {
     { x = 0, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 5 },
   },
 }
-animation {
+animation{
   name = "spin_attack",
   src_image = "hero/spin_attack.tunic2.png",
   frame_delay = 30,
@@ -235,7 +246,7 @@ animation {
     { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
   },
 }
-animation {
+animation{
   name = "stopped_with_shield",
   src_image = "hero/stopped.tunic.png",
   directions = {
@@ -245,7 +256,7 @@ animation {
     { x = 96, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "super_spin_attack",
   src_image = "hero/spin_attack.tunic2.png",
   frame_delay = 30,
@@ -257,7 +268,7 @@ animation {
     { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
   },
 }
-animation {
+animation{
   name = "swimming_fast",
   src_image = "hero/swimming.png",
   frame_delay = 200,
@@ -268,7 +279,7 @@ animation {
     { x = 240, y = 280, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 29, num_frames = 3 },
   },
 }
-animation {
+animation{
   name = "swimming_slow",
   src_image = "hero/swimming.png",
   frame_delay = 200,
@@ -280,7 +291,7 @@ animation {
     { x = 80, y = 280, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 29, num_frames = 4 },
   },
 }
-animation {
+animation{
   name = "swimming_stopped",
   src_image = "hero/swimming.png",
   frame_delay = 300,
@@ -292,7 +303,7 @@ animation {
     { x = 0, y = 280, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 29, num_frames = 2 },
   },
 }
-animation {
+animation{
   name = "sword",
   src_image = "hero/sword.tunic2.png",
   frame_delay = 30,
@@ -303,7 +314,7 @@ animation {
     { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 12 },
   },
 }
-animation {
+animation{
   name = "sword_loading_stopped",
   src_image = "hero/loading.tunic2.png",
   directions = {
@@ -313,7 +324,7 @@ animation {
     { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
-animation {
+animation{
   name = "sword_loading_walking",
   src_image = "hero/loading.tunic2.png",
   frame_delay = 100,
@@ -325,7 +336,7 @@ animation {
     { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
   },
 }
-animation {
+animation{
   name = "sword_tapping",
   src_image = "hero/sword_tapping.tunic.png",
   frame_delay = 40,
@@ -337,7 +348,7 @@ animation {
     { x = 0, y = 216, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 21, num_frames = 7 },
   },
 }
-animation {
+animation{
   name = "victory",
   src_image = "hero/victory.tunic.png",
   frame_delay = 50,
@@ -349,7 +360,7 @@ animation {
     { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 18 },
   },
 }
-animation {
+animation{
   name = "walking",
   src_image = "hero/walking.tunic.png",
   frame_delay = 100,
@@ -361,7 +372,7 @@ animation {
     { x = 0, y = 288, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 8 },
   },
 }
-animation {
+animation{
   name = "walking_diagonal",
   src_image = "hero/walking.tunic.png",
   frame_delay = 100,
@@ -373,7 +384,7 @@ animation {
     { x = 192, y = 288, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
   },
 }
-animation {
+animation{
   name = "walking_with_shield",
   src_image = "hero/walking.tunic.png",
   frame_delay = 100,

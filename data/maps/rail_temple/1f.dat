@@ -44182,6 +44182,33 @@ custom_entity{
   model = "minecart_turn",
 }
 
+enemy{
+  layer = 1,
+  x = 1272,
+  y = 3549,
+  direction = 3,
+  breed = "blue_hardhat_beetle",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 1,
+  x = 1328,
+  y = 3557,
+  treasure_name = "cane_of_medusa",
+  sprite = "entities/chest",
+}
+
+block{
+  layer = 1,
+  x = 1248,
+  y = 3605,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
 tile{
   layer = 2,
   x = 1200,

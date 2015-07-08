@@ -12,7 +12,7 @@ local item_names = {
 
   "lamp",
   "hookshot",
-  "cane_of_somaria",
+  "cane_of_medusa",
   "apples_counter",
   "pains_au_chocolat_counter",
   "croissants_counter",
