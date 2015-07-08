@@ -84,7 +84,10 @@ function turn_enemy_to_stone(enemy)
   end
 
   sol.timer.start(map, 6000, function()
-    turn_stone_to_enemy(block)
+    sprite:set_animation("shaking")
+    sol.timer.start(map, 1000, function()
+      turn_stone_to_enemy(block)
+    end)
   end)
 end
 
