@@ -1,6 +1,7 @@
 local item = ...
 
 local turn_enemy_to_stone
+local turn_stone_to_enemy
 
 function item:on_created()
 
@@ -54,6 +55,11 @@ function item:on_using()
   cane:set_origin(4, 5)
   cane:add_collision_test("overlapping", function(cane, entity)
 
+    -- TODO this is a workaround for Solarus bug #710
+    if not entity:exists() then
+      return
+    end
+
     if entity:get_type() ~= "enemy" then
       return
     end
@@ -70,6 +76,7 @@ function item:on_using()
   end)
 end
 
+-- Transforms an enemy to a block with the same sprite.
 function turn_enemy_to_stone(enemy)
 
   local map = enemy:get_map()
@@ -85,5 +92,20 @@ function turn_enemy_to_stone(enemy)
     maximum_moves = 2,
   })
   block:bring_to_back()
-  enemy:remove()
+  enemy:set_enabled(false)
+  block.original_enemy = enemy
+
+  sol.timer.start(map, 3000, function()
+    turn_stone_to_enemy(block)
+  end)
+end
+
+-- Transforms a block back to its original enemy.
+function turn_stone_to_enemy(block)
+
+  local enemy = block.original_enemy
+  assert(enemy ~= nil)
+  enemy:set_enabled(true)
+  enemy:set_position(block:get_position())
+  block:remove()
 end
