@@ -7,18 +7,6 @@ function item:on_created()
 
   self:set_savegame_variable("possession_cane_of_medusa")
   self:set_assignable(true)
-
-  -- Add cane of Medusa properties to enemies.
-  local enemy_meta = sol.main.get_metatable("enemy")
-  enemy_meta.vulnerable_to_medusa = true  -- Vulnerable by default.
-  function enemy_meta:is_vulnerable_to_medusa()
-    return self.vulnerable_to_medusa
-  end
-
-  function enemy_meta:set_vulnerable_to_medusa(vulnerable)
-    self.vulnerable_to_medusa = vulnerable
-  end
-
 end
 
 function item:on_obtained(variant, savegame_variable)
@@ -55,11 +43,6 @@ function item:on_using()
   cane:set_origin(4, 5)
   cane:add_collision_test("overlapping", function(cane, entity)
 
-    -- TODO this is a workaround for Solarus bug #710
-    if not entity:exists() then
-      return
-    end
-
     if entity:get_type() ~= "enemy" then
       return
     end
@@ -95,7 +78,12 @@ function turn_enemy_to_stone(enemy)
   enemy:set_enabled(false)
   block.original_enemy = enemy
 
-  sol.timer.start(map, 3000, function()
+  local sprite = block:get_sprite()
+  if sprite:has_animation("immobilized") then
+    sprite:set_animation("immobilized")
+  end
+
+  sol.timer.start(map, 6000, function()
     turn_stone_to_enemy(block)
   end)
 end

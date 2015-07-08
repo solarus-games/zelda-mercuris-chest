@@ -39883,6 +39883,28 @@ tile{
   pattern = "statue_eye",
 }
 
+wall{
+  layer = 1,
+  x = 1296,
+  y = 3640,
+  width = 16,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 1,
+  x = 1456,
+  y = 3640,
+  width = 16,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 custom_entity{
   name = "railway_points_off_19",
   layer = 1,
@@ -44207,6 +44229,15 @@ block{
   pushable = true,
   pullable = true,
   maximum_moves = 2,
+}
+
+enemy{
+  layer = 1,
+  x = 1440,
+  y = 3549,
+  direction = 3,
+  breed = "bubble",
+  treasure_name = "random",
 }
 
 tile{

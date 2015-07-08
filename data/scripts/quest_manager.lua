@@ -28,6 +28,31 @@ local function initialize_destructible()
   end
 end
 
+-- Initialize enemy behavior specific to this quest.
+local function initialize_enemy()
+
+  local enemy_meta = sol.main.get_metatable("enemy")
+
+  -- Add cane of Medusa properties to enemies.
+  local enemy_meta = sol.main.get_metatable("enemy")
+  enemy_meta.vulnerable_to_medusa = true  -- Vulnerable by default.
+  function enemy_meta:is_vulnerable_to_medusa()
+    return self.vulnerable_to_medusa
+  end
+
+  function enemy_meta:set_vulnerable_to_medusa(vulnerable)
+    self.vulnerable_to_medusa = vulnerable
+  end
+
+  local built_in_set_invincible = enemy_meta.set_invincible
+  assert(type(built_in_set_invincible) == "function")
+  function enemy_meta:set_invincible()
+    built_in_set_invincible(self)
+    self:set_vulnerable_to_medusa(false)
+  end
+
+end
+
 -- Initialize sensor behavior specific to this quest.
 local function initialize_sensor()
 
@@ -90,6 +115,7 @@ end
 local function initialize_entities()
 
   initialize_destructible()
+  initialize_enemy()
   initialize_sensor()
   initialize_switch()
 end
