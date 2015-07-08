@@ -79,8 +79,10 @@ function turn_enemy_to_stone(enemy)
   block.original_enemy = enemy
 
   local sprite = block:get_sprite()
-  if sprite:has_animation("immobilized") then
-    sprite:set_animation("immobilized")
+  if sprite:has_animation("hurt") then
+    sprite:set_animation("hurt")
+    sprite:set_frame(0)
+    sprite:set_paused(true)
   end
 
   sol.timer.start(map, 6000, function()
