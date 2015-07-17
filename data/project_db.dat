@@ -7,12 +7,14 @@ map{ id = "lighthouse/4f", description = "Lighthouse 4F" }
 map{ id = "lighthouse/b1", description = "Lighthouse B1" }
 map{ id = "lighthouse/outside", description = "Lighthouse outside" }
 map{ id = "outside/a7", description = "Outside A7-B8 - Lost Woods" }
+map{ id = "outside/d4", description = "Outside D4-E5 - Town" }
 map{ id = "outside/e7", description = "Outside E7 - Graveyard" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "rail_temple/1f", description = "Rail Temple 1F" }
 map{ id = "rail_temple/b1", description = "Rail Temple B1" }
 map{ id = "rail_temple/b2", description = "Rail Temple B2" }
 map{ id = "test_map", description = "Test Hub" }
+map{ id = "village_store", description = "Village Store" }
 
 tileset{ id = "dark_world", description = "Dark World" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
@@ -20,6 +22,7 @@ tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
 tileset{ id = "forest", description = "Forest" }
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "mine", description = "Mine" }
+tileset{ id = "village", description = "Village" }
 
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
