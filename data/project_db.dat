@@ -24,6 +24,8 @@ tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "mine", description = "Mine" }
 tileset{ id = "village", description = "Village" }
 
+sprite{ id = "console/cursor", description = "Console: Cursor" }
+sprite{ id = "console/icons", description = "Console: Icons" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
 sprite{ id = "enemies/billy", description = "Enemy: Billy" }
@@ -476,6 +478,7 @@ language{ id = "fr", description = "Français" }
 font{ id = "green_digits", description = "green_digits" }
 font{ id = "la", description = "la" }
 font{ id = "minecraftia", description = "minecraftia" }
+font{ id = "minecraftia_mono", description = "minecraftia_mono" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
