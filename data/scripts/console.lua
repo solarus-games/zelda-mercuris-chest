@@ -561,7 +561,6 @@ function console:save_history()
 
   file:close()
   self.history_is_saved = true
-  print("save")
 end
 
 -- Called when the console is started.
