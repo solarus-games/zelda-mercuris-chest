@@ -18,6 +18,11 @@ local console = {
 
   history_capacity = 50,                -- Maximum size of the history.
   history_filename = "_history",        -- Name of the history file.
+
+  debug_filename = "debug",             -- Name of the debug file.
+                                        -- The debug file can return a table
+                                        -- that will be accessible in the
+                                        -- console environment.
 }
 
 -- Returns the first argument and the list of the others.
@@ -54,20 +59,25 @@ local function environment_index(environment, key)
     return console.print
   elseif key == "clear" then
     return console.clear
-  else
-    local game = sol.main.game
-    if game ~= nil then
-      if key == "game" then
-        return game
-      elseif key == "map" then
-        return game:get_map()
-      else
-        local entity = game:get_map():get_entity(key)
-        if entity ~= nil then
-          return entity
-        end
-      end
+  end
+
+  local game = sol.main.game
+  if game ~= nil then
+    if key == "game" then
+      return game
+    elseif key == "map" then
+      return game:get_map()
     end
+
+    local entity = game:get_map():get_entity(key)
+    if entity ~= nil then
+      return entity
+    end
+  end
+
+  local debug = console.debug_env[key]
+  if debug ~= nil then
+    return debug
   end
 
   return _G[key]
@@ -190,6 +200,13 @@ function console:init()
 
   self:load_history()
   self.history_is_saved = true
+
+  -- debug environment
+  self.debug_env = {}
+  local debug = sol.main.load_file(self.debug_filename)
+  if type(debug) == "function" then
+    self.debug_env = debug(self) or {}
+  end
 
   -- environment
   self.environment = {}
@@ -505,8 +522,8 @@ function console:load_history()
 
   local history = sol.main.load_file(self.history_filename)
 
-  if history ~= nil then
-    self.history = history()
+  if type(history) == "function" then
+    self.history = history() or {}
     self:reset_temp_history()
   end
 end
