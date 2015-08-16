@@ -16,7 +16,8 @@ local console = {
   icons_sprite_id = "console/icons",    -- Icons sprite, require animations:
                                         -- "return" and "error".
 
-  history_capacity = 50                 -- Maximum size of the history.
+  history_capacity = 50,                -- Maximum size of the history.
+  history_filename = "_history",        -- Name of the history file.
 }
 
 -- Returns the first argument and the list of the others.
@@ -186,6 +187,9 @@ function console:init()
   self.temp_history = {{}}
   self.history_position = 1
   self.cursor = 0
+
+  self:load_history()
+  self.history_is_saved = true
 
   -- environment
   self.environment = {}
@@ -453,6 +457,7 @@ function console:add_to_history()
   if #self.history > self.history_capacity then
     table.remove(self.history, 1)
   end
+  self.history_is_saved = false
 
   -- clear the current command
   self.current_command = {}
@@ -495,6 +500,53 @@ function console:shift_history(shift)
   self.cursor_sprite:set_frame(0)
 end
 
+-- Loads the history from the write directory.
+function console:load_history()
+
+  local history = sol.main.load_file(self.history_filename)
+
+  if history ~= nil then
+    self.history = history()
+    self:reset_temp_history()
+  end
+end
+
+-- Saves the history in the write directory.
+function console:save_history()
+
+  if self.history_is_saved then
+    return
+  end
+
+  local file = sol.file.open(self.history_filename, "w")
+
+  if file == nil then
+    return
+  end
+
+  file:write("return {\n")
+  for _, command in pairs(self.history) do
+    file:write("  {")
+    for _, ch in pairs(command) do
+      file:write("\"")
+      if ch == "\"" then
+        file:write("\\\"")
+      elseif ch == "\n" then
+        file:write("\\n")
+      else
+        file:write(ch)
+      end
+      file:write("\",")
+    end
+    file:write("},\n")
+  end
+  file:write("}")
+
+  file:close()
+  self.history_is_saved = true
+  print("save")
+end
+
 -- Called when the console is started.
 function console:on_started()
   self.enabled = true
@@ -503,6 +555,7 @@ end
 -- Called when the console is stopped.
 function console:on_finished()
   self.enabled = false
+  self:save_history()
 end
 
 -- Called when the user presses a keyboard key while the console is active.
