@@ -11,6 +11,8 @@ local console = {
 
   color = {32, 32, 32},                 -- Background color of the console.
   opacity = 248,                        -- Background opacity of the console.
+  selection_color = {64, 128, 192},     -- Color of the selection.
+  selection_opacity = 80,               -- Selection opacity.
 
   cursor_sprite_id = "console/cursor",  -- Cursor sprite.
   icons_sprite_id = "console/icons",    -- Icons sprite, require animations:
@@ -197,6 +199,11 @@ function console:init()
   self.temp_history = {{}}
   self.history_position = 1
   self.cursor = 0
+  self.selection = 0
+  self.selection_surface = sol.surface.create(width, height)
+  self.selection_surface:set_opacity(self.selection_opacity)
+
+  self.clipboard = {}
 
   self:load_history()
   self.history_is_saved = true
@@ -235,6 +242,57 @@ function console:build_line()
   -- clear all next lines
   for i = self.last_line, self.max_lines do
     self.text_surfaces[i]:set_text("")
+  end
+
+  -- rebuild the selection surface
+  self:build_selection()
+end
+
+-- Builds the selection surface.
+function console:build_selection()
+
+  self.selection_surface:clear()
+
+  if self.cursor ~= self.selection then
+
+    local origin = self.margin + self.padding
+    local cursor = math.min(self.cursor, self.selection)
+    local selection = math.max(self.cursor, self.selection)
+    local cur_line, cur_char = self:get_cursor_position(cursor)
+    local sel_line, sel_char = self:get_cursor_position(selection)
+
+    if cur_line == sel_line then
+      -- print simple selection
+      local x = origin + (cur_char * self.char_width)
+      local y = origin + ((cur_line - 1) * self.line_height)
+      local w = origin + (sel_char * self.char_width) - x
+      self.selection_surface:fill_color(
+        self.selection_color, x, y, w, self.font_size)
+    else
+      -- print first selection line
+      local x = origin + (cur_char * self.char_width)
+      local y = origin + ((cur_line - 1) * self.line_height)
+      local w = (self.max_chars * self.char_width) - x + origin
+      if w > 0 then
+        self.selection_surface:fill_color(
+          self.selection_color, x, y, w, self.font_size)
+      end
+      -- print intermediate selection lines
+      x = origin
+      w = self.max_chars * self.char_width
+      for i = cur_line + 1, sel_line - 1 do
+        y = y + self.line_height
+        self.selection_surface:fill_color(
+          self.selection_color, x, y, w, self.font_size)
+      end
+      -- print last selection line
+      y = y + self.line_height
+      w = sel_char * self.char_width
+      if w > 0 then
+        self.selection_surface:fill_color(
+          self.selection_color, x, y, w, self.font_size)
+      end
+    end
   end
 end
 
@@ -302,18 +360,21 @@ function console:go_to_line()
   return shifted
 end
 
--- Appends character at the cursor position.
-function console:append_char(ch)
+-- Appends characters at the cursor position.
+function console:append_chars(chars)
+
+  if self.cursor ~= self.selection then
+    console:remove_chars()
+  end
 
   local line = self:get_current_line()
 
-  if line[1] then
+  for _, ch in pairs(chars) do
     self.cursor = self.cursor + 1
     table.insert(line, self.cursor, ch)
-  else
-    line[1] = ch
-    self.cursor = 1
   end
+
+  self.selection = self.cursor
 
   -- rebuild current line
   self:build_line()
@@ -322,12 +383,20 @@ function console:append_char(ch)
   self.cursor_sprite:set_frame(0)
 end
 
--- Removes character at the cursor position.
-function console:remove_char(after)
+-- Removes a character at the cursor position or the selection.
+function console:remove_chars(after)
 
   local line = self:get_current_line()
 
-  if after then
+  if self.cursor ~= self.selection then
+    local cursor = math.min(self.cursor, self.selection)
+    local selection = math.max(self.cursor, self.selection)
+    for i = cursor + 1, selection do
+      table.remove(line, cursor + 1)
+    end
+    self.cursor = cursor
+    self.selection = cursor
+  elseif after then
     table.remove(line, self.cursor + 1)
   else
     table.remove(line, self.cursor)
@@ -342,23 +411,29 @@ function console:remove_char(after)
 end
 
 -- Moves the cursor position.
-function console:shift_cursor(shift)
+function console:shift_cursor(shift, select)
 
   self.cursor =
     math.min(math.max(self.cursor + shift, 0), #self:get_current_line())
+  if not select then
+    self.selection = self.cursor
+  end
+
+  -- rebuild selection surface
+  self:build_selection()
 
   -- reset cursor sprite
   self.cursor_sprite:set_frame(0)
 end
 
 -- Returns the cursor line number and character position.
-function console:get_cursor_position()
+function console:get_cursor_position(cursor)
 
   local line = self:get_current_line()
   local char_nb = #self.current_command > 0 and 3 or 2
   local line_nb = self.current_line
 
-  for i = 1, self.cursor do
+  for i = 1, cursor do
     if line[i] == "\n" then
       line_nb = line_nb + 1
       char_nb = 0
@@ -500,6 +575,7 @@ function console:reset_temp_history()
   table.insert(self.temp_history, {})
   self.history_position = #self.temp_history
   self.cursor = 0
+  self.selection = 0
 end
 
 -- Moves to the history.
@@ -509,6 +585,7 @@ function console:shift_history(shift)
   self.history_position =
       math.min(math.max(self.history_position + shift, 1), #self.temp_history)
   self.cursor = #self:get_current_line()
+  self.selection = self.cursor
 
   -- rebuild current line
   self:build_line()
@@ -550,6 +627,8 @@ function console:save_history()
         file:write("\\\"")
       elseif ch == "\n" then
         file:write("\\n")
+      elseif ch == "\\" then
+        file:write("\\\\")
       else
         file:write(ch)
       end
@@ -561,7 +640,36 @@ function console:save_history()
 
   file:close()
   self.history_is_saved = true
-  print("save")
+end
+
+-- Copy the current selection to the clipboard.
+function console:copy_to_clipboard()
+
+  if self.cursor == self.selection then
+    return false
+  end
+
+  local line = self:get_current_line()
+  local cursor = math.min(self.cursor, self.selection)
+  local selection = math.max(self.cursor, self.selection)
+
+  self.clipboard = {}
+  for i = cursor + 1, selection do
+    table.insert(self.clipboard, line[i])
+  end
+
+  -- reset cursor position
+  self.cursor_sprite:set_frame(0)
+
+  return true
+end
+
+-- Paste the clipboard on the current selection.
+function console:paste_from_clipboard()
+
+  if #self.clipboard > 0 then
+    self:append_chars(self.clipboard)
+  end
 end
 
 -- Called when the console is started.
@@ -581,27 +689,45 @@ function console:on_key_pressed(key, modifiers)
   if key == "f12" or key == "escape" then
     sol.menu.stop(self)
   elseif key == "backspace" then
-    self:remove_char()
+    self:remove_chars()
   elseif key == "delete" then
-    self:remove_char(true)
+    self:remove_chars(true)
   elseif key == "return" or key == "kp return" then
     if modifiers.control then
-      self:append_char("\n")
+      self:append_chars({"\n"})
     else
       self:add_line()
     end
   elseif key == "left" then
-    self:shift_cursor(-1)
+    self:shift_cursor(-1, modifiers.shift)
   elseif key == "right" then
-    self:shift_cursor(1)
+    self:shift_cursor(1, modifiers.shift)
   elseif key == "home" then
     self.cursor = 0
+    if not modifiers.shift then
+      self.selection = 0
+    end
+    -- rebuild selection surface
+    self:build_selection()
   elseif key == "end" then
     self.cursor = #self:get_current_line()
+    if not modifiers.shift then
+      self.selection = self.cursor
+    end
+    -- rebuild selection surface
+    self:build_selection()
   elseif key == "up" then
     self:shift_history(-1)
   elseif key == "down" then
     self:shift_history(1)
+  elseif key == "x" and modifiers.control then
+    if self:copy_to_clipboard() then
+      self:remove_chars()
+    end
+  elseif key == "c" and modifiers.control then
+    self:copy_to_clipboard()
+  elseif key == "v" and modifiers.control then
+    self:paste_from_clipboard()
   end
 
   return true
@@ -612,7 +738,7 @@ function console:on_character_pressed(character)
 
   local handled = false
   if not character:find("%c") then
-    self:append_char(character)
+    self:append_chars({character})
     handled = true
   end
 
@@ -639,8 +765,11 @@ function console:on_draw(dst_surface)
     y = y + self.line_height
   end
 
+  -- draw selection
+  self.selection_surface:draw(dst_surface)
+
   -- draw cursor
-  local line, char = self:get_cursor_position()
+  local line, char = self:get_cursor_position(self.cursor)
   x = origin + ((char - 1) * self.char_width)
   y = origin + ((line - 1) * self.line_height)
 
