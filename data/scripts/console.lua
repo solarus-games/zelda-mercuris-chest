@@ -627,6 +627,8 @@ function console:save_history()
         file:write("\\\"")
       elseif ch == "\n" then
         file:write("\\n")
+      elseif ch == "\\" then
+        file:write("\\\\")
       else
         file:write(ch)
       end
