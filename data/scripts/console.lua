@@ -111,6 +111,8 @@ function console.print(...)
       text = text .. arg
     elseif type(arg) == "boolean" then
       text = text .. (arg and "true" or "false")
+    elseif type(arg) == "userdata" and arg.__solarus_type then
+      text = text .. tostring(arg):gsub("userdata", arg.__solarus_type)
     else
       text = text .. tostring(arg)
     end
