@@ -213,6 +213,10 @@ function console:init()
   -- debug environment
   self.debug_env = {}
   local debug = sol.main.load_file(self.debug_filename)
+  -- if cannot be loaded, try with the .lua extension
+  if type(debug) ~= "function" then
+    debug = sol.main.load_file(self.debug_filename .. ".lua")
+  end
   if type(debug) == "function" then
     self.debug_env = debug(self) or {}
   end

@@ -18,9 +18,9 @@ function sol.main:on_started()
   -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
 
-  -- If there is a file called "debug" in the write directory,
+  -- If there is a file called "debug" or "debug.lua" in the write directory,
   -- enable debugging features.
-  if sol.file.exists("debug") then
+  if sol.file.exists("debug") or sol.file.exists("debug.lua") then
     sol.menu.start(self, debug)
   end
 
@@ -84,4 +84,3 @@ function sol.main:start_savegame(game)
   sol.main.game = game
   game:start()
 end
-
