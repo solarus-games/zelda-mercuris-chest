@@ -111,6 +111,8 @@ function console.print(...)
       text = text .. arg
     elseif type(arg) == "boolean" then
       text = text .. (arg and "true" or "false")
+    elseif type(arg) == "userdata" and arg.__solarus_type then
+      text = text .. tostring(arg):gsub("userdata", arg.__solarus_type)
     else
       text = text .. tostring(arg)
     end
@@ -211,6 +213,10 @@ function console:init()
   -- debug environment
   self.debug_env = {}
   local debug = sol.main.load_file(self.debug_filename)
+  -- if cannot be loaded, try with the .lua extension
+  if type(debug) ~= "function" then
+    debug = sol.main.load_file(self.debug_filename .. ".lua")
+  end
   if type(debug) == "function" then
     self.debug_env = debug(self) or {}
   end
