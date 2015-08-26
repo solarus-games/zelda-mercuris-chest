@@ -107,14 +107,13 @@ function console.print(...)
     end
 
     -- check type of the argument and add to text
-    if type(arg) == "string" or type(arg) == "number" then
+    local type_name = sol.main.get_type(arg)
+    if type_name == "string" or type_name == "number" then
       text = text .. arg
-    elseif type(arg) == "boolean" then
+    elseif type_name == "boolean" then
       text = text .. (arg and "true" or "false")
-    elseif type(arg) == "userdata" and arg.__solarus_type then
-      text = text .. tostring(arg):gsub("userdata", arg.__solarus_type)
     else
-      text = text .. tostring(arg)
+      text = text .. type_name
     end
   end
 
