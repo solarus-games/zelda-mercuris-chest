@@ -25811,6 +25811,15 @@ tile{
   pattern = "house.door",
 }
 
+tile{
+  layer = 0,
+  x = 1296,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "forest.corner.3",
+}
+
 destination{
   name = "test_destination",
   layer = 0,
