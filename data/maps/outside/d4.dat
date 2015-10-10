@@ -2123,6 +2123,51 @@ tile{
   pattern = "64",
 }
 
+tile{
+  layer = 0,
+  x = 1544,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 1576,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
 destination{
   layer = 0,
   x = 1864,
@@ -2509,50 +2554,5 @@ tile{
   width = 72,
   height = 64,
   pattern = "79",
-}
-
-tile{
-  layer = 2,
-  x = 1544,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "water.wave_small",
-}
-
-tile{
-  layer = 2,
-  x = 1584,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "water.wave_small",
-}
-
-tile{
-  layer = 2,
-  x = 1560,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = "water.wave_small",
-}
-
-tile{
-  layer = 2,
-  x = 1560,
-  y = 184,
-  width = 16,
-  height = 8,
-  pattern = "water.wave_big",
-}
-
-tile{
-  layer = 2,
-  x = 1576,
-  y = 144,
-  width = 16,
-  height = 8,
-  pattern = "water.wave_big",
 }
 
