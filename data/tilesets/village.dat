@@ -47,7 +47,7 @@ tile_pattern{
   id = "13",
   ground = "traversable",
   default_layer = 0,
-  x = 368,
+  x = 352,
   y = 600,
   width = 16,
   height = 16,
@@ -71,28 +71,6 @@ tile_pattern{
   x = 152,
   y = 656,
   width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "16",
-  ground = "traversable",
-  default_layer = 0,
-  x = 144,
-  y = 656,
-  width = 8,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "17",
-  ground = "traversable",
-  default_layer = 0,
-  x = 168,
-  y = 656,
-  width = 8,
   height = 16,
   repeat_mode = "none",
 }
@@ -141,28 +119,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "21",
-  ground = "traversable",
-  default_layer = 0,
-  x = 176,
-  y = 656,
-  width = 8,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "22",
-  ground = "traversable",
-  default_layer = 0,
-  x = 200,
-  y = 656,
-  width = 8,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "23",
   ground = "wall",
   default_layer = 0,
@@ -176,12 +132,11 @@ tile_pattern{
 tile_pattern{
   id = "24",
   ground = "traversable",
-  default_layer = 0,
-  x = 232,
+  default_layer = 1,
+  x = 312,
   y = 648,
-  width = 8,
-  height = 24,
-  repeat_mode = "none",
+  width = 16,
+  height = 8,
 }
 
 tile_pattern{
@@ -232,7 +187,7 @@ tile_pattern{
   id = "29",
   ground = "wall",
   default_layer = 0,
-  x = 240,
+  x = 232,
   y = 648,
   width = 24,
   height = 24,
@@ -254,7 +209,7 @@ tile_pattern{
   id = "30",
   ground = "wall",
   default_layer = 0,
-  x = 272,
+  x = 256,
   y = 648,
   width = 24,
   height = 24,
@@ -264,23 +219,21 @@ tile_pattern{
 tile_pattern{
   id = "31",
   ground = "traversable",
-  default_layer = 0,
-  x = 296,
-  y = 648,
-  width = 8,
-  height = 24,
-  repeat_mode = "none",
+  default_layer = 1,
+  x = 320,
+  y = 504,
+  width = 80,
+  height = 40,
 }
 
 tile_pattern{
   id = "32",
   ground = "traversable",
-  default_layer = 0,
-  x = 264,
-  y = 648,
-  width = 8,
-  height = 24,
-  repeat_mode = "none",
+  default_layer = 1,
+  x = 400,
+  y = 504,
+  width = 80,
+  height = 40,
 }
 
 tile_pattern{
@@ -301,17 +254,6 @@ tile_pattern{
   x = 312,
   y = 656,
   width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "35",
-  ground = "traversable",
-  default_layer = 1,
-  x = 304,
-  y = 640,
-  width = 32,
   height = 16,
   repeat_mode = "none",
 }
@@ -463,7 +405,7 @@ tile_pattern{
   id = "48",
   ground = "wall",
   default_layer = 1,
-  x = 336,
+  x = 320,
   y = 544,
   width = 80,
   height = 56,
@@ -474,7 +416,7 @@ tile_pattern{
   id = "49",
   ground = "wall",
   default_layer = 0,
-  x = 336,
+  x = 320,
   y = 600,
   width = 32,
   height = 16,
@@ -496,7 +438,7 @@ tile_pattern{
   id = "50",
   ground = "wall",
   default_layer = 0,
-  x = 384,
+  x = 368,
   y = 600,
   width = 32,
   height = 16,
@@ -507,7 +449,7 @@ tile_pattern{
   id = "51",
   ground = "traversable",
   default_layer = 0,
-  x = 360,
+  x = 344,
   y = 616,
   width = 32,
   height = 8,
@@ -537,28 +479,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "54",
-  ground = "traversable",
-  default_layer = 0,
-  x = 328,
-  y = 544,
-  width = 8,
-  height = 72,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "55",
-  ground = "traversable",
-  default_layer = 0,
-  x = 416,
-  y = 544,
-  width = 8,
-  height = 72,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "56",
   ground = "wall",
   default_layer = 0,
@@ -581,28 +501,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "58",
-  ground = "traversable",
-  default_layer = 1,
-  x = 328,
-  y = 504,
-  width = 96,
-  height = 40,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "59",
-  ground = "traversable",
-  default_layer = 1,
-  x = 424,
-  y = 504,
-  width = 96,
-  height = 40,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "6",
   ground = "wall",
   default_layer = 0,
@@ -617,7 +515,7 @@ tile_pattern{
   id = "60",
   ground = "wall",
   default_layer = 1,
-  x = 432,
+  x = 400,
   y = 544,
   width = 80,
   height = 56,
