@@ -22,7 +22,7 @@ tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
 tileset{ id = "forest", description = "Forest" }
 tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "mine", description = "Mine" }
-tileset{ id = "village", description = "Village" }
+tileset{ id = "town", description = "Village" }
 
 sprite{ id = "console/cursor", description = "Console: Cursor" }
 sprite{ id = "console/icons", description = "Console: Icons" }

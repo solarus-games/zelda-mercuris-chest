@@ -4,8 +4,35 @@ properties{
   width = 2048,
   height = 2048,
   num_layers = 3,
-  tileset = "village",
+  tileset = "town",
   music = "village",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 144,
+  width = 128,
+  height = 48,
+  pattern = "water_shallow",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 184,
+  width = 8,
+  height = 24,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "water_shallow",
 }
 
 tile{
@@ -67,16 +94,7 @@ tile{
   x = 1528,
   y = 208,
   width = 96,
-  height = 16,
-  pattern = "water_shallow",
-}
-
-tile{
-  layer = 0,
-  x = 1512,
-  y = 144,
-  width = 128,
-  height = 64,
+  height = 8,
   pattern = "water_shallow",
 }
 
@@ -784,24 +802,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1512,
-  y = 64,
-  width = 128,
-  height = 8,
-  pattern = "hedge.2",
-}
-
-tile{
-  layer = 0,
-  x = 1504,
-  y = 64,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.1",
-}
-
-tile{
-  layer = 0,
   x = 1632,
   y = 72,
   width = 8,
@@ -856,9 +856,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1520,
+  x = 1536,
   y = 184,
-  width = 72,
+  width = 56,
   height = 32,
   pattern = "water",
 }
@@ -868,7 +868,7 @@ tile{
   x = 1592,
   y = 176,
   width = 8,
-  height = 48,
+  height = 32,
   pattern = "water_shallow.to_water.3",
 }
 
@@ -897,15 +897,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "water_shallow.to_water.diag.3",
-}
-
-tile{
-  layer = 0,
-  x = 1528,
-  y = 216,
-  width = 64,
-  height = 8,
-  pattern = "water",
 }
 
 tile{
@@ -1072,24 +1063,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1504,
-  y = 96,
-  width = 144,
-  height = 144,
-  pattern = "73",
-}
-
-tile{
-  layer = 0,
-  x = 1608,
-  y = 232,
-  width = 40,
-  height = 8,
-  pattern = "hedge.2",
-}
-
-tile{
-  layer = 0,
   x = 1656,
   y = 240,
   width = 8,
@@ -1167,15 +1140,6 @@ tile{
   width = 48,
   height = 8,
   pattern = "hedge.1",
-}
-
-tile{
-  layer = 0,
-  x = 1504,
-  y = 232,
-  width = 40,
-  height = 8,
-  pattern = "hedge.2",
 }
 
 tile{
@@ -2105,6 +2069,528 @@ tile{
   pattern = "water.wave_big",
 }
 
+tile{
+  layer = 0,
+  x = 1504,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "93",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "91",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "93",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "91",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "93",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 112,
+  width = 80,
+  height = 8,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "91",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "93",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "92",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "94",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "92",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "94",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "92",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "94",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "94",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 160,
+  width = 32,
+  height = 8,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 1608,
+  y = 160,
+  width = 32,
+  height = 8,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 1608,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 208,
+  width = 64,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 144,
+  width = 8,
+  height = 40,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 144,
+  width = 8,
+  height = 40,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "89",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "89",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "89",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1608,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
+  x = 1608,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1608,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "103",
+}
+
 destination{
   layer = 0,
   x = 1864,
@@ -2149,6 +2635,33 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+tile{
+  layer = 1,
+  x = 1640,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 1512,
+  y = 64,
+  width = 128,
+  height = 8,
+  pattern = "hedge.2",
+}
+
+tile{
+  layer = 1,
+  x = 1504,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.1",
 }
 
 tile{
@@ -2252,92 +2765,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 1640,
-  y = 64,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.2",
-}
-
-tile{
-  layer = 1,
   x = 1608,
   y = 40,
   width = 32,
   height = 40,
   pattern = "19",
-}
-
-tile{
-  layer = 1,
-  x = 1656,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 1648,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 1616,
-  y = 176,
-  width = 32,
-  height = 40,
-  pattern = "19",
-}
-
-tile{
-  layer = 1,
-  x = 1504,
-  y = 176,
-  width = 32,
-  height = 40,
-  pattern = "19",
-}
-
-tile{
-  layer = 1,
-  x = 1600,
-  y = 232,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 1544,
-  y = 232,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 1496,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 1488,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "hedge.corner.1",
 }
 
 tile{
@@ -2473,5 +2905,113 @@ tile{
   width = 16,
   height = 8,
   pattern = "24",
+}
+
+tile{
+  layer = 1,
+  x = 1504,
+  y = 96,
+  width = 56,
+  height = 64,
+  pattern = "73",
+}
+
+tile{
+  layer = 1,
+  x = 1592,
+  y = 96,
+  width = 56,
+  height = 64,
+  pattern = "80",
+}
+
+tile{
+  layer = 1,
+  x = 1504,
+  y = 176,
+  width = 32,
+  height = 40,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 1616,
+  y = 176,
+  width = 32,
+  height = 40,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 1608,
+  y = 232,
+  width = 40,
+  height = 8,
+  pattern = "hedge.2",
+}
+
+tile{
+  layer = 1,
+  x = 1504,
+  y = 232,
+  width = 40,
+  height = 8,
+  pattern = "hedge.2",
+}
+
+tile{
+  layer = 1,
+  x = 1656,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 1648,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 1544,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 1496,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 1488,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.1",
 }
 
