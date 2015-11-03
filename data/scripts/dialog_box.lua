@@ -437,7 +437,7 @@ function dialog_box_manager:create(game)
       while not self:is_full() do
 
         while not self:is_full()
-          and self.char_index > #self.lines[self.line_index] do
+            and self.char_index > #self.lines[self.line_index] do
           self.char_index = 1
           self.line_index = self.line_index + 1
           self:check_full()
@@ -477,12 +477,10 @@ function dialog_box_manager:create(game)
     elseif command == "up" or command == "down" then
 
       if self.selected_answer ~= nil
-        and not self:has_more_lines()
-        and self:is_full() then
+          and not self:has_more_lines()
+          and self:is_full() then
         sol.audio.play_sound("cursor")
         self.selected_answer = 3 - self.selected_answer  -- Switch between 1 and 2.
-        self.question_dst_position.y = self.box_dst_position.y +
-        (self.selected_answer == 1 and 27 or 40)
       end
     end
 
@@ -510,8 +508,8 @@ function dialog_box_manager:create(game)
     for i = 1, nb_visible_lines do
       text_y = text_y + 13
       if self.selected_answer ~= nil
-        and i == nb_visible_lines - 1
-        and not self:has_more_lines() then
+          and i == nb_visible_lines - 1
+          and not self:has_more_lines() then
         -- The last two lines are the answer to a question.
         text_x = text_x + 24
       end
@@ -531,10 +529,12 @@ function dialog_box_manager:create(game)
 
     -- Draw the question arrow.
     if self.selected_answer ~= nil
-      and self:is_full()
-      and not self:has_more_lines() then
+        and self:is_full()
+        and not self:has_more_lines() then
+      self.question_dst_position.y = self.box_dst_position.y +
+          (self.selected_answer == 1 and 27 or 40)
       self.box_img:draw_region(96, 60, 8, 8, self.dialog_surface,
-      self.question_dst_position.x, self.question_dst_position.y)
+          self.question_dst_position.x, self.question_dst_position.y)
     end
 
     -- Draw the end message arrow.
