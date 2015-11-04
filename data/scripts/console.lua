@@ -69,6 +69,10 @@ local function environment_index(environment, key)
       return game
     elseif key == "map" then
       return game:get_map()
+    elseif key == "tp" then
+      return function(...)
+        game:get_hero():teleport(...)
+      end
     end
 
     local entity = game:get_map():get_entity(key)
@@ -76,6 +80,7 @@ local function environment_index(environment, key)
       return entity
     end
   end
+
 
   local debug = console.debug_env[key]
   if debug ~= nil then
