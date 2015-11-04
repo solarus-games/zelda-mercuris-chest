@@ -1,9 +1,10 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 3072,
+  y = 3072,
   width = 2048,
   height = 2048,
   num_layers = 3,
+  world = "outside",
   tileset = "town",
   music = "village",
 }

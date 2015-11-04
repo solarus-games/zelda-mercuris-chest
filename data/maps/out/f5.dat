@@ -1,0 +1,776 @@
+properties{
+  x = 5120,
+  y = 4096,
+  width = 1024,
+  height = 1024,
+  num_layers = 3,
+  world = "outside",
+  tileset = "light_world",
+  music = "overworld",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 384,
+  width = 288,
+  height = 304,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner.3",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 368,
+  width = 32,
+  height = 304,
+  pattern = "castle.3",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 408,
+  width = 240,
+  height = 248,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 408,
+  width = 32,
+  height = 224,
+  pattern = "castle.3",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 104,
+  width = 32,
+  height = 624,
+  pattern = "castle.4",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 104,
+  width = 32,
+  height = 624,
+  pattern = "castle.3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 160,
+  width = 32,
+  height = 512,
+  pattern = "castle.3",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 160,
+  width = 32,
+  height = 528,
+  pattern = "castle.4",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 728,
+  width = 16,
+  height = 48,
+  pattern = "castle.corner_reverse.2",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 728,
+  width = 16,
+  height = 48,
+  pattern = "castle.corner_reverse.1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 720,
+  width = 800,
+  height = 56,
+  pattern = "castle.1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.2",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 664,
+  width = 176,
+  height = 24,
+  pattern = "castle.2",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner.3",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 368,
+  width = 32,
+  height = 304,
+  pattern = "castle.4",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner.4",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner.4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 664,
+  width = 176,
+  height = 24,
+  pattern = "castle.2",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner.4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner.3",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner.4",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 360,
+  width = 320,
+  height = 24,
+  pattern = "castle.2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 96,
+  width = 800,
+  height = 24,
+  pattern = "castle.2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 152,
+  width = 672,
+  height = 56,
+  pattern = "castle.1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner.1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 168,
+  width = 16,
+  height = 40,
+  pattern = "castle.corner.1",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 168,
+  width = 16,
+  height = 40,
+  pattern = "castle.corner.2",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner.2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 120,
+  width = 768,
+  height = 32,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 688,
+  width = 768,
+  height = 32,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 152,
+  width = 32,
+  height = 536,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 152,
+  width = 32,
+  height = 536,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 744,
+  width = 24,
+  height = 32,
+  pattern = "castle.entrance.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 744,
+  width = 24,
+  height = 32,
+  pattern = "castle.entrance.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 752,
+  width = 16,
+  height = 24,
+  pattern = "castle.entrance",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 744,
+  width = 16,
+  height = 8,
+  pattern = "castle.entrance.top",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 752,
+  width = 32,
+  height = 24,
+  pattern = "castle.door",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 736,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 736,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 624,
+  width = 16,
+  height = 48,
+  pattern = "castle.corner_reverse.1",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 408,
+  width = 32,
+  height = 224,
+  pattern = "castle.4",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 624,
+  width = 16,
+  height = 48,
+  pattern = "castle.corner_reverse.2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 616,
+  width = 224,
+  height = 56,
+  pattern = "castle.1",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.2",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.1",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 400,
+  width = 224,
+  height = 24,
+  pattern = "castle.2",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 424,
+  width = 192,
+  height = 184,
+  pattern = "castle.top.floor",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 424,
+  width = 32,
+  height = 160,
+  pattern = "castle.3",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 576,
+  width = 16,
+  height = 48,
+  pattern = "castle.corner_reverse.1",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 424,
+  width = 32,
+  height = 160,
+  pattern = "castle.4",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 576,
+  width = 16,
+  height = 48,
+  pattern = "castle.corner_reverse.2",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 568,
+  width = 176,
+  height = 56,
+  pattern = "castle.1",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.2",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.1",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 416,
+  width = 176,
+  height = 24,
+  pattern = "castle.2",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "castle.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.3",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "castle.top.corner_reverse.4",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 640,
+  width = 24,
+  height = 32,
+  pattern = "castle.entrance.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 640,
+  width = 24,
+  height = 32,
+  pattern = "castle.entrance.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 648,
+  width = 16,
+  height = 24,
+  pattern = "castle.entrance",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 640,
+  width = 16,
+  height = 8,
+  pattern = "castle.entrance.top",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 648,
+  width = 32,
+  height = 24,
+  pattern = "castle.door",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 632,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 632,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 736,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 736,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 736,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 736,
+  width = 32,
+  height = 56,
+  pattern = "castle.turret",
+}
+

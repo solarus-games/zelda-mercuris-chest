@@ -1,10 +1,10 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 4096,
+  y = 7168,
   width = 1024,
   height = 1024,
-  world = "outside",
   num_layers = 3,
+  world = "outside",
   tileset = "light_world",
 }
 

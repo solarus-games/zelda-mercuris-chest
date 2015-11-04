@@ -1,10 +1,10 @@
 properties{
   x = 0,
-  y = 0,
+  y = 6144,
   width = 2048,
   height = 2048,
-  world = "outside",
   num_layers = 3,
+  world = "outside",
   tileset = "forest",
   music = "lost_woods",
 }

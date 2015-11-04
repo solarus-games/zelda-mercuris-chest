@@ -6,9 +6,10 @@ map{ id = "lighthouse/3f", description = "Lighthouse 3F" }
 map{ id = "lighthouse/4f", description = "Lighthouse 4F" }
 map{ id = "lighthouse/b1", description = "Lighthouse B1" }
 map{ id = "lighthouse/outside", description = "Lighthouse outside" }
-map{ id = "out/a7", description = "Outside A7-B8 - Lost Woods" }
-map{ id = "out/d4", description = "Outside D4-E5 - Town" }
-map{ id = "out/e7", description = "Outside E7 - Graveyard" }
+map{ id = "out/a7", description = "A7-B8 - Lost Woods" }
+map{ id = "out/d4", description = "D4-E5 - Town" }
+map{ id = "out/e7", description = "E7 - Graveyard" }
+map{ id = "out/f5", description = "F5 - Castle" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "rail_temple/1f", description = "Rail Temple 1F" }
 map{ id = "rail_temple/b1", description = "Rail Temple B1" }
