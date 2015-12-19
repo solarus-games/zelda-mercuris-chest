@@ -60,20 +60,21 @@ local function initialize_sensor()
 
   function sensor_meta:on_activated()
 
-    local game = self:get_game()
     local hero = self:get_map():get_hero()
+    local game = self:get_game()
+    local map = self:get_map()
     local name = self:get_name()
 
     -- Sensors named "to_layer_X_sensor" move the hero on that layer.
     -- TODO use a custom entity or a wall to block enemies and thrown items?
     if name:match("^layer_up_sensor") then
       local x, y, layer = hero:get_position()
-      if layer < 2 then
+      if layer < map:get_max_layer() then
         hero:set_position(x, y, layer + 1)
       end
     elseif name:match("^layer_down_sensor") then
       local x, y, layer = hero:get_position()
-      if layer > 0 then
+      if layer > map:get_min_layer() then
         hero:set_position(x, y, layer - 1)
       end
     end
