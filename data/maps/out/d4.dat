@@ -50,6 +50,15 @@ teletransporter{
 
 tile{
   layer = 1,
+  x = 872,
+  y = 48,
+  width = 176,
+  height = 80,
+  pattern = "63",
+}
+
+tile{
+  layer = 1,
   x = 1504,
   y = 112,
   width = 144,
@@ -77,7 +86,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1888,
+  x = 1880,
   y = 48,
   width = 80,
   height = 176,
@@ -617,29 +626,20 @@ tile{
 
 tile{
   layer = 1,
-  x = 976,
+  x = 864,
   y = 144,
-  width = 80,
+  width = 192,
   height = 48,
   pattern = "12",
 }
 
 tile{
   layer = 1,
-  x = 1008,
+  x = 864,
   y = 128,
-  width = 32,
+  width = 176,
   height = 16,
   pattern = "10",
-}
-
-tile{
-  layer = 1,
-  x = 1008,
-  y = 48,
-  width = 32,
-  height = 80,
-  pattern = "63",
 }
 
 tile{
@@ -2947,6 +2947,26 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+jumper{
+  layer = 1,
+  x = 1992,
+  y = 288,
+  width = 8,
+  height = 32,
+  direction = 0,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 1992,
+  y = 392,
+  width = 8,
+  height = 24,
+  direction = 0,
+  jump_length = 40,
 }
 
 tile{
