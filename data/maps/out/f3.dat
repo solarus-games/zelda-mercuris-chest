@@ -19,3 +19,25 @@ tile{
   pattern = "water",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 1,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f4",
+  destination = "_side",
+}
+
