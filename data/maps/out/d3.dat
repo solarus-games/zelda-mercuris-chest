@@ -1,10 +1,48 @@
 properties{
-  x = 0,
-  y = 0,
-  width = 320,
-  height = 240,
+  x = 3072,
+  y = 2048,
+  width = 2048,
+  height = 1024,
   min_layer = 0,
   max_layer = 2,
+  world = "outside",
   tileset = "forest",
+  music = "lost_woods",
+}
+
+tile{
+  layer = 0,
+  x = 2032,
+  y = 960,
+  width = 16,
+  height = 64,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 2000,
+  y = 960,
+  width = 16,
+  height = 64,
+  pattern = "water.cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 960,
+  width = 16,
+  height = 64,
+  pattern = "water.cliff_wave.3",
+}
+
+tile{
+  layer = 1,
+  x = 1992,
+  y = 960,
+  width = 8,
+  height = 64,
+  pattern = "cliff.top.3",
 }
 

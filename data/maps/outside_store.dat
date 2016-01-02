@@ -5,7 +5,7 @@ properties{
   height = 960,
   min_layer = 0,
   max_layer = 2,
-  tileset = "forest",
+  tileset = "light_world",
   music = "same",
 }
 
@@ -7668,123 +7668,6 @@ tile{
   pattern = "invisible_wall",
 }
 
-tile{
-  layer = 0,
-  x = 768,
-  y = 592,
-  width = 32,
-  height = 32,
-  pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "90",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "96",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 592,
-  width = 8,
-  height = 32,
-  pattern = "93",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "97",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 640,
-  width = 96,
-  height = 8,
-  pattern = "89",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "99",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "98",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 592,
-  width = 8,
-  height = 32,
-  pattern = "94",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 584,
-  width = 80,
-  height = 16,
-  pattern = "91",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 600,
-  width = 24,
-  height = 24,
-  pattern = "108",
-}
-
-tile{
-  layer = 0,
-  x = 800,
-  y = 600,
-  width = 24,
-  height = 24,
-  pattern = "109",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "house.door",
-}
-
 destructible{
   layer = 0,
   x = 24,
@@ -8793,24 +8676,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "house.roof_leaves.4",
-}
-
-tile{
-  layer = 1,
-  x = 744,
-  y = 544,
-  width = 80,
-  height = 40,
-  pattern = "92",
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 600,
-  width = 32,
-  height = 24,
-  pattern = "110",
 }
 
 dynamic_tile{
