@@ -624,20 +624,560 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 80,
+  x = 0,
+  y = 272,
   width = 16,
   height = 16,
-  pattern = "grass.cliff.top.border.diag.3",
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 968,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 632,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 856,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 808,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 992,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 592,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 768,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 1000,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 1000,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 992,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 1008,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
 }
 
 tile{
   layer = 0,
   x = 368,
-  y = 80,
-  width = 96,
+  y = 992,
+  width = 8,
   height = 8,
-  pattern = "grass.cliff.top.2",
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1016,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 992,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1016,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 1000,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 992,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 1000,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 992,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 1008,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 992,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1008,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
 }
 
 teletransporter{
@@ -2919,6 +3459,24 @@ tile{
   width = 96,
   height = 8,
   pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 80,
+  width = 96,
+  height = 8,
+  pattern = "grass.cliff.top.2",
 }
 
 teletransporter{

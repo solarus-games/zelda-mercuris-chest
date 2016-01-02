@@ -6700,6 +6700,7 @@ tile_pattern{
   y = 112,
   width = 24,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -6710,6 +6711,7 @@ tile_pattern{
   y = 104,
   width = 24,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -6720,6 +6722,7 @@ tile_pattern{
   y = 128,
   width = 24,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -9450,6 +9453,7 @@ tile_pattern{
   y = 104,
   width = 16,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
