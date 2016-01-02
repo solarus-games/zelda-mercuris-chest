@@ -6434,7 +6434,7 @@ destination{
 }
 
 door{
-  name = "LockedDoor9",
+  name = "locked_door_9",
   layer = 1,
   x = 880,
   y = 200,
@@ -6662,8 +6662,8 @@ stairs{
 door{
   name = "key_door_2",
   layer = 1,
-  x = 600,
-  y = 112,
+  x = 592,
+  y = 200,
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "lighthouse_key_door_2",
@@ -6990,7 +6990,7 @@ sensor{
 }
 
 door{
-  name = "LockedDoor11",
+  name = "locked_door_11",
   layer = 1,
   x = 984,
   y = 352,
@@ -6999,7 +6999,7 @@ door{
 }
 
 door{
-  name = "LockedDoor11b",
+  name = "locked_door_11_2",
   layer = 1,
   x = 1112,
   y = 440,
@@ -7079,6 +7079,119 @@ wall{
   width = 32,
   height = 32,
   stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 720,
+  y = 56,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 776,
+  y = 40,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 824,
+  y = 64,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 824,
+  y = 40,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 680,
+  y = 80,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 896,
+  y = 96,
+  width = 24,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 880,
+  y = 144,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 904,
+  y = 144,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "door_sensor_9",
+  layer = 1,
+  x = 888,
+  y = 213,
+  width = 16,
+  height = 16,
 }
 
 tile{

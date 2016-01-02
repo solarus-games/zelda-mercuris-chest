@@ -3,6 +3,7 @@ local game = map:get_game()
 
 local compass_monster_dead
 local spike_monster_dead
+local speed_puzzle_solved = false
 
 -- Invisible sensor puzzle init
 local function invisible_sensor_puzzle_init()
@@ -66,6 +67,17 @@ end
 -- Speed puzzle activation
 function door_switch_9:on_activated()
   map:open_doors("locked_door_9")
+  local timer = sol.timer.start(7000, function()
+    if speed_puzzle_solved == false then
+      map:close_doors("locked_door_9")
+      door_switch_9:set_activated(false)
+    end
+  end)
+  timer:set_with_sound(true)
+end
+
+function door_sensor_9:on_activated()
+  speed_puzzle_solved = true
 end
 
 -- Spike monster puzzle init
@@ -112,7 +124,7 @@ end
 
 -- Mini boss init
 local function mini_boss_init()
-
+  map:set_doors_open("locked_door_11", true)
 end
 
 -- Map starting main event function
@@ -122,4 +134,5 @@ function map:on_started()
   compass_puzzle_init()
   big_key_puzzle_init()
   torch_puzzle_init()
+  mini_boss_init()
 end
