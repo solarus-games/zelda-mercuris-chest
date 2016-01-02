@@ -386,8 +386,8 @@ teletransporter{
   y = 24,
   width = 16,
   height = 16,
-  destination_map = "lighthouse/1f",
-  destination = "main_entrance",
+  destination_map = "lighthouse/2f",
+  destination = "from_1f_b",
 }
 
 tile{

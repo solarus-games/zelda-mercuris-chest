@@ -1,5 +1,15 @@
 local map = ...
 
+-- Star tiles puzzle init
+local function star_tiles_puzzle_init()
+  for sensor in map:get_entities("star_sensor_A") do
+    sensor.on_activated = star_sensor_A_activated
+  end
+  for sensor in map:get_entities("star_sensor_B") do
+    sensor.on_activated = star_sensor_B_activated
+  end
+end
+
 local function star_sensor_A_activated()
   sol.audio.play_sound("secret")
   map:set_entities_enabled("star_sensor_A", false)
@@ -28,33 +38,31 @@ local function star_sensor_B_activated()
   end
 end
 
-function DS1:on_activated()
-  map:close_doors("LD1")
+-- Key room puzzle init
+local function key_room_puzzle_init()
+  map:set_doors_open("LockedDoor16", true)
+
+  for enemy in map:get_entities("key_monster") do
+    enemy.on_dead = key_monster_dead
+  end
+end
+
+-- Key room puzzle monsters
+local function key_monster_dead(enemy)
+  if map:get_entities_count("key_monster") == 0 then
+    sol.audio.play_sound("secret")    
+    map:open_doors("LockedDoor16")
+  end
+end
+
+-- Key room puzzle door
+function DoorSensor16:on_activated()
+  map:close_doors("LockedDoor16")
   self:set_enabled(false)
 end
 
--- Key room puzzle
-function key_monster_dead(enemy)
-  if map:get_entities_count("key_monster") == 0 then
-    sol.audio.play_sound("secret")    
-    map:open_doors("LD1")
-  end
-end
-for enemy in map:get_entities("key_monster") do
-  enemy.on_dead = key_monster_dead
-end
-
+-- Map starting main event function
 function map:on_started()
-  -- Star tiles puzzle
-  for sensor in map:get_entities("star_sensor_A") do
-    sensor.on_activated = star_sensor_A_activated
-  end
-  for sensor in map:get_entities("star_sensor_B") do
-    sensor.on_activated = star_sensor_B_activated
-  end
-
-  -- Key room puzzle
-  map:set_doors_open("LD1", true)
+  star_tiles_puzzle_init()
+  key_room_puzzle_init()
 end
-
-
