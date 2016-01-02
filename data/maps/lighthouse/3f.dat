@@ -5462,16 +5462,8 @@ sensor{
   height = 16,
 }
 
-chest{
-  name = "dummy",
-  layer = 1,
-  x = 800,
-  y = 653,
-  sprite = "entities/chest",
-}
-
 door{
-  name = "LockedDoor13",
+  name = "locked_door_13",
   layer = 1,
   x = 920,
   y = 640,
@@ -5487,6 +5479,16 @@ door{
   direction = 3,
   sprite = "entities/door_normal",
   savegame_variable = "lighthouse_locked_door_15",
+}
+
+switch{
+  name = "statue_eye_3",
+  layer = 1,
+  x = 832,
+  y = 528,
+  subtype = "arrow_target",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
 tile{

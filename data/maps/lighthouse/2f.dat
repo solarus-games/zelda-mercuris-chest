@@ -13,6 +13,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 152,
+  y = 536,
+  width = 112,
+  height = 24,
+  pattern = "wall_low.2",
+}
+
+tile{
+  layer = 0,
   x = 1208,
   y = 608,
   width = 8,
@@ -328,24 +337,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 0,
   x = 1080,
   y = 536,
   width = 24,
@@ -571,15 +562,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 536,
-  width = 112,
-  height = 24,
-  pattern = "wall_low.2",
-}
-
-tile{
-  layer = 0,
   x = 1192,
   y = 656,
   width = 16,
@@ -668,6 +650,15 @@ tile{
   pattern = "wall_low_diag.bottom.3",
 }
 
+tile{
+  layer = 0,
+  x = 1048,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "wall_low_border.corner.3",
+}
+
 destructible{
   layer = 0,
   x = 1104,
@@ -723,7 +714,7 @@ stairs{
 }
 
 switch{
-  name = "BigKeySwitch",
+  name = "big_key_switch",
   layer = 0,
   x = 1112,
   y = 640,
@@ -738,8 +729,6 @@ destructible{
   layer = 0,
   x = 1120,
   y = 653,
-  treasure_name = "small_key",
-  treasure_savegame_variable = "lighthouse_skull_key_1",
   sprite = "entities/vase",
   destruction_sound = "stone",
   damage_on_enemies = 2,
@@ -750,7 +739,7 @@ block{
   x = 112,
   y = 469,
   sprite = "entities/block",
-  pushable = true,
+  pushable = false,
   pullable = false,
   maximum_moves = 1,
 }
@@ -760,7 +749,7 @@ block{
   x = 128,
   y = 485,
   sprite = "entities/block",
-  pushable = true,
+  pushable = false,
   pullable = false,
   maximum_moves = 1,
 }
@@ -780,7 +769,7 @@ block{
   x = 96,
   y = 485,
   sprite = "entities/block",
-  pushable = true,
+  pushable = false,
   pullable = false,
   maximum_moves = 1,
 }
@@ -790,7 +779,7 @@ block{
   x = 192,
   y = 485,
   sprite = "entities/block",
-  pushable = true,
+  pushable = false,
   pullable = false,
   maximum_moves = 1,
 }
@@ -800,8 +789,8 @@ block{
   x = 208,
   y = 501,
   sprite = "entities/block",
-  pushable = true,
-  pullable = false,
+  pushable = false,
+  pullable = true,
   maximum_moves = 1,
 }
 
@@ -810,7 +799,7 @@ block{
   x = 224,
   y = 485,
   sprite = "entities/block",
-  pushable = true,
+  pushable = false,
   pullable = false,
   maximum_moves = 1,
 }
@@ -820,9 +809,31 @@ block{
   x = 208,
   y = 469,
   sprite = "entities/block",
-  pushable = true,
+  pushable = false,
   pullable = false,
   maximum_moves = 1,
+}
+
+npc{
+  name = "torch_2",
+  layer = 0,
+  x = 208,
+  y = 485,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
+}
+
+npc{
+  name = "torch_1",
+  layer = 0,
+  x = 112,
+  y = 485,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 tile{
@@ -6288,8 +6299,17 @@ tile{
   pattern = "floor_small.1",
 }
 
+tile{
+  layer = 1,
+  x = 1200,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "floor_small.1",
+}
+
 sensor{
-  name = "DoorSensor8",
+  name = "door_sensor_8",
   layer = 1,
   x = 688,
   y = 773,
@@ -6397,7 +6417,7 @@ destination{
 }
 
 door{
-  name = "LockedDoor10",
+  name = "locked_door_10",
   layer = 1,
   x = 344,
   y = 352,
@@ -6423,7 +6443,7 @@ door{
 }
 
 switch{
-  name = "DoorSwitch9",
+  name = "door_switch_9",
   layer = 1,
   x = 752,
   y = 184,
@@ -6436,7 +6456,7 @@ switch{
 
 destructible{
   layer = 1,
-  x = 760,
+  x = 744,
   y = 197,
   treasure_name = "random",
   sprite = "entities/vase",
@@ -6446,7 +6466,7 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 744,
+  x = 760,
   y = 197,
   treasure_name = "random",
   sprite = "entities/vase",
@@ -6465,17 +6485,17 @@ destructible{
 }
 
 chest{
-  name = "BigKeyChest",
+  name = "big_key_chest",
   layer = 1,
   x = 1208,
   y = 557,
   treasure_name = "big_key",
-  treasure_savegame_variable = "lighthouse_big_key_chest",
+  treasure_savegame_variable = "dungeon_3s_big_key_chest",
   sprite = "entities/chest",
 }
 
 sensor{
-  name = "DoorSensor7",
+  name = "door_sensor_7",
   layer = 1,
   x = 544,
   y = 533,
@@ -6514,7 +6534,7 @@ destructible{
 }
 
 chest{
-  name = "CompassChest",
+  name = "compass_chest",
   layer = 1,
   x = 480,
   y = 845,
@@ -6525,7 +6545,7 @@ chest{
 }
 
 switch{
-  name = "DoorSwitch8",
+  name = "door_switch_8",
   layer = 1,
   x = 792,
   y = 816,
@@ -6640,7 +6660,7 @@ stairs{
 }
 
 door{
-  name = "KeyDoor2",
+  name = "key_door_2",
   layer = 1,
   x = 600,
   y = 112,
@@ -6731,7 +6751,7 @@ door{
 }
 
 door{
-  name = "LockedDoor7",
+  name = "locked_door_7",
   layer = 1,
   x = 600,
   y = 592,
@@ -6740,7 +6760,7 @@ door{
 }
 
 door{
-  name = "LockedDoor8b",
+  name = "locked_door_8_2",
   layer = 1,
   x = 792,
   y = 744,
@@ -6749,7 +6769,7 @@ door{
 }
 
 door{
-  name = "LockedDoor8",
+  name = "locked_door_8",
   layer = 1,
   x = 664,
   y = 832,
@@ -6760,14 +6780,6 @@ door{
 enemy{
   layer = 1,
   x = 752,
-  y = 840,
-  direction = 3,
-  breed = "bubble",
-}
-
-enemy{
-  layer = 1,
-  x = 848,
   y = 840,
   direction = 3,
   breed = "bubble",
@@ -6822,9 +6834,9 @@ teletransporter{
 
 teletransporter{
   layer = 1,
-  x = 736,
+  x = 720,
   y = 640,
-  width = 144,
+  width = 160,
   height = 16,
   destination_map = "lighthouse/1f",
   destination = "_same",
@@ -6996,14 +7008,77 @@ door{
 }
 
 chest{
-  name = "KeyChest1",
+  name = "key_chest_1",
   layer = 1,
   x = 224,
   y = 629,
-  treasure_name = "compass",
+  treasure_name = "small_key",
   treasure_savegame_variable = "dungeon_3_key_chest",
   sprite = "entities/chest",
   opening_condition = "dungeon_3_compass",
+}
+
+enemy{
+  name = "spike_monster_1",
+  layer = 1,
+  x = 392,
+  y = 301,
+  direction = 0,
+  breed = "mandible",
+}
+
+enemy{
+  name = "spike_monster_4",
+  layer = 1,
+  x = 568,
+  y = 429,
+  direction = 0,
+  breed = "mandible",
+}
+
+enemy{
+  name = "spike_monster_2",
+  layer = 1,
+  x = 480,
+  y = 317,
+  direction = 0,
+  breed = "bee_guard",
+}
+
+enemy{
+  name = "spike_monster_3",
+  layer = 1,
+  x = 480,
+  y = 413,
+  direction = 0,
+  breed = "bee_guard",
+}
+
+wall{
+  layer = 1,
+  x = 416,
+  y = 280,
+  width = 16,
+  height = 160,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 528,
+  y = 280,
+  width = 16,
+  height = 160,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 344,
+  width = 32,
+  height = 32,
+  stops_enemies = true,
 }
 
 tile{
@@ -8085,9 +8160,9 @@ separator{
 
 separator{
   layer = 2,
-  x = 320,
+  x = 0,
   y = 232,
-  width = 960,
+  width = 1280,
   height = 16,
 }
 
@@ -8101,9 +8176,9 @@ separator{
 
 separator{
   layer = 2,
-  x = 320,
+  x = 0,
   y = 712,
-  width = 640,
+  width = 1280,
   height = 16,
 }
 

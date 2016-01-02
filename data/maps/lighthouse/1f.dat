@@ -1921,15 +1921,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 88,
-  y = 504,
-  width = 32,
-  height = 16,
-  pattern = "water_pool_ladder.2",
-}
-
-tile{
-  layer = 0,
   x = 72,
   y = 472,
   width = 16,
@@ -2090,6 +2081,33 @@ tile{
   pattern = "wall_low_diag.bottom.3",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 488,
+  width = 8,
+  height = 24,
+  pattern = "stairs_inner_up.2.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 488,
+  width = 8,
+  height = 24,
+  pattern = "stairs_inner_up.2.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 488,
+  width = 16,
+  height = 24,
+  pattern = "stairs_inner_up.2",
+}
+
 stairs{
   name = "stairs",
   layer = 0,
@@ -2118,7 +2136,7 @@ stairs{
 }
 
 chest{
-  name = "KeyChest2",
+  name = "key_chest_2",
   layer = 0,
   x = 1176,
   y = 365,
@@ -2206,6 +2224,7 @@ enemy{
 }
 
 switch{
+  name = "door_switch_3",
   layer = 0,
   x = 120,
   y = 472,
@@ -2243,6 +2262,35 @@ sensor{
   y = 365,
   width = 16,
   height = 16,
+}
+
+stairs{
+  name = "pond_stairs_1",
+  layer = 0,
+  x = 96,
+  y = 448,
+  direction = 1,
+  subtype = 4,
+}
+
+dynamic_tile{
+  name = "pond_hole",
+  layer = 0,
+  x = 96,
+  y = 472,
+  pattern = "floor_water_drain",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+stairs{
+  name = "pond_stairs_2",
+  layer = 0,
+  x = 96,
+  y = 496,
+  direction = 3,
+  subtype = 4,
 }
 
 tile{
@@ -5874,17 +5922,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 48,
-  y = 448,
-  width = 112,
-  height = 64,
-  pattern = "water.transparent",
-}
-
-tile{
-  layer = 1,
   x = 144,
-  y = 344,
+  y = 328,
   width = 32,
   height = 32,
   pattern = "statue_teeth",
@@ -5893,7 +5932,7 @@ tile{
 tile{
   layer = 1,
   x = 144,
-  y = 584,
+  y = 600,
   width = 32,
   height = 32,
   pattern = "statue_teeth",
@@ -7051,6 +7090,51 @@ tile{
   pattern = "stairs_inner_up.1.top.border.1",
 }
 
+tile{
+  layer = 1,
+  x = 144,
+  y = 360,
+  width = 32,
+  height = 32,
+  pattern = "floor_pot",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 568,
+  width = 32,
+  height = 32,
+  pattern = "floor_pot",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.2.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.2.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 512,
+  width = 16,
+  height = 8,
+  pattern = "stairs_inner_up.2.top",
+}
+
 destination{
   name = "main_entrance",
   layer = 1,
@@ -7310,7 +7394,7 @@ stairs{
 }
 
 switch{
-  name = "ChestSwitch",
+  name = "chest_switch_2",
   layer = 1,
   x = 1112,
   y = 296,
@@ -7359,19 +7443,7 @@ stairs{
 }
 
 switch{
-  name = "switch_2",
-  layer = 1,
-  x = 368,
-  y = 416,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  sound = "switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
-switch{
-  name = "DS4",
+  name = "door_switch_4",
   layer = 1,
   x = 368,
   y = 304,
@@ -7382,30 +7454,6 @@ switch{
   inactivate_when_leaving = false,
 }
 
-switch{
-  name = "switch_4",
-  layer = 1,
-  x = 576,
-  y = 320,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  sound = "switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
-switch{
-  name = "switch_5",
-  layer = 1,
-  x = 576,
-  y = 400,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  sound = "switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
 destructible{
   layer = 1,
   x = 376,
@@ -7479,7 +7527,7 @@ destructible{
 destructible{
   layer = 1,
   x = 584,
-  y = 317,
+  y = 333,
   treasure_name = "random",
   sprite = "entities/vase",
   destruction_sound = "stone",
@@ -7489,7 +7537,7 @@ destructible{
 destructible{
   layer = 1,
   x = 584,
-  y = 333,
+  y = 317,
   treasure_name = "random",
   sprite = "entities/vase",
   destruction_sound = "stone",
@@ -7527,7 +7575,7 @@ destructible{
 }
 
 door{
-  name = "LockedDoor4",
+  name = "locked_door_4",
   layer = 1,
   x = 344,
   y = 352,
@@ -7536,7 +7584,7 @@ door{
 }
 
 door{
-  name = "BigKeyDoor1b",
+  name = "big_key_door",
   layer = 1,
   x = 792,
   y = 264,
@@ -7549,7 +7597,7 @@ door{
 }
 
 door{
-  name = "LockedDoor1",
+  name = "locked_door_1",
   layer = 1,
   x = 1112,
   y = 504,
@@ -7614,9 +7662,9 @@ stairs{
 }
 
 door{
-  name = "KeyDoor1",
+  name = "key_door_1",
   layer = 1,
-  x = 504,
+  x = 472,
   y = 504,
   direction = 1,
   sprite = "entities/door_small_key",
@@ -7628,7 +7676,7 @@ door{
 }
 
 door{
-  name = "LockedDoor2",
+  name = "locked_door_2",
   layer = 1,
   x = 792,
   y = 504,
@@ -7661,7 +7709,7 @@ enemy{
 }
 
 door{
-  name = "LockedDoor5",
+  name = "locked_door_4_2",
   layer = 1,
   x = 600,
   y = 352,
@@ -7680,7 +7728,7 @@ jumper{
 }
 
 dynamic_tile{
-  name = "tile",
+  name = "star_tile_left",
   layer = 1,
   x = 360,
   y = 112,
@@ -7691,7 +7739,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "tile_2",
+  name = "star_tile_right",
   layer = 1,
   x = 552,
   y = 112,
@@ -7702,7 +7750,7 @@ dynamic_tile{
 }
 
 switch{
-  name = "DoorSwitch6",
+  name = "door_switch_6",
   layer = 1,
   x = 376,
   y = 168,
@@ -7724,7 +7772,7 @@ destructible{
 }
 
 door{
-  name = "LockedDoor6",
+  name = "locked_door_6",
   layer = 1,
   x = 472,
   y = 24,
@@ -7768,9 +7816,10 @@ wall{
 }
 
 switch{
+  name = "crystal_switch_water_down",
   layer = 1,
-  x = 112,
-  y = 352,
+  x = 96,
+  y = 608,
   subtype = "solid",
   sprite = "entities/solid_switch",
   sound = "switch",
@@ -7779,9 +7828,10 @@ switch{
 }
 
 switch{
+  name = "crystal_switch_water_up",
   layer = 1,
-  x = 192,
-  y = 352,
+  x = 96,
+  y = 336,
   subtype = "solid",
   sprite = "entities/solid_switch",
   sound = "switch",
@@ -7877,12 +7927,149 @@ sensor{
 }
 
 door{
-  name = "LockedDoor3",
+  name = "locked_door_3",
   layer = 1,
   x = 280,
   y = 592,
   direction = 0,
   sprite = "entities/door_normal",
+}
+
+destructible{
+  layer = 1,
+  x = 152,
+  y = 373,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 168,
+  y = 373,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 168,
+  y = 389,
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 152,
+  y = 389,
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 152,
+  y = 581,
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 168,
+  y = 581,
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 152,
+  y = 597,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 1,
+  x = 168,
+  y = 597,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+dynamic_tile{
+  name = "pond_1",
+  layer = 1,
+  x = 48,
+  y = 448,
+  pattern = "water.transparent",
+  width = 112,
+  height = 64,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "pond_2",
+  layer = 1,
+  x = 56,
+  y = 456,
+  pattern = "water.transparent",
+  width = 96,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "pond_3",
+  layer = 1,
+  x = 64,
+  y = 464,
+  pattern = "water.transparent",
+  width = 80,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "pond_4",
+  layer = 1,
+  x = 72,
+  y = 472,
+  pattern = "water.transparent",
+  width = 64,
+  height = 16,
+  enabled_at_start = false,
+}
+
+sensor{
+  name = "door_sensor_4",
+  layer = 1,
+  x = 584,
+  y = 349,
+  width = 16,
+  height = 48,
 }
 
 tile{
