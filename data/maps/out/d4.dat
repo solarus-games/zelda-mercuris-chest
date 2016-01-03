@@ -7977,6 +7977,60 @@ tile{
   pattern = "4",
 }
 
+tile{
+  layer = 1,
+  x = 1784,
+  y = 792,
+  width = 24,
+  height = 24,
+  pattern = "175",
+}
+
+tile{
+  layer = 1,
+  x = 1864,
+  y = 984,
+  width = 24,
+  height = 24,
+  pattern = "175",
+}
+
+tile{
+  layer = 1,
+  x = 1864,
+  y = 1128,
+  width = 24,
+  height = 24,
+  pattern = "175",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 1128,
+  width = 24,
+  height = 24,
+  pattern = "174",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 984,
+  width = 24,
+  height = 24,
+  pattern = "174",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 792,
+  width = 24,
+  height = 24,
+  pattern = "174",
+}
+
 teletransporter{
   layer = 1,
   x = 2048,
@@ -11361,5 +11415,59 @@ tile{
   width = 16,
   height = 32,
   pattern = "3",
+}
+
+tile{
+  layer = 2,
+  x = 1784,
+  y = 736,
+  width = 24,
+  height = 56,
+  pattern = "177",
+}
+
+tile{
+  layer = 2,
+  x = 1864,
+  y = 928,
+  width = 24,
+  height = 56,
+  pattern = "177",
+}
+
+tile{
+  layer = 2,
+  x = 1864,
+  y = 1072,
+  width = 24,
+  height = 56,
+  pattern = "177",
+}
+
+tile{
+  layer = 2,
+  x = 1600,
+  y = 1072,
+  width = 24,
+  height = 56,
+  pattern = "176",
+}
+
+tile{
+  layer = 2,
+  x = 1600,
+  y = 928,
+  width = 24,
+  height = 56,
+  pattern = "176",
+}
+
+tile{
+  layer = 2,
+  x = 1600,
+  y = 736,
+  width = 24,
+  height = 56,
+  pattern = "176",
 }
 
