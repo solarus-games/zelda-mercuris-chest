@@ -22840,7 +22840,7 @@ tile{
   y = 1792,
   width = 16,
   height = 16,
-  pattern = "103",
+  pattern = "wooden_bridge.stairs.bottom.4",
 }
 
 tile{
@@ -22849,7 +22849,7 @@ tile{
   y = 1792,
   width = 16,
   height = 16,
-  pattern = "102",
+  pattern = "wooden_bridge.stairs.bottom.3",
 }
 
 tile{
@@ -22858,7 +22858,7 @@ tile{
   y = 1776,
   width = 16,
   height = 16,
-  pattern = "107",
+  pattern = "wooden_bridge.stairs.4",
 }
 
 tile{
@@ -22867,7 +22867,7 @@ tile{
   y = 1776,
   width = 16,
   height = 16,
-  pattern = "106",
+  pattern = "wooden_bridge.stairs.3",
 }
 
 tile{
@@ -23677,7 +23677,7 @@ tile{
   y = 1768,
   width = 8,
   height = 8,
-  pattern = "104",
+  pattern = "wooden_bridge.stairs.hidden.1",
 }
 
 tile{
@@ -31886,7 +31886,7 @@ tile{
   y = 1776,
   width = 8,
   height = 8,
-  pattern = "104",
+  pattern = "wooden_bridge.stairs.hidden.1",
 }
 
 tile{
@@ -31895,7 +31895,7 @@ tile{
   y = 1792,
   width = 96,
   height = 8,
-  pattern = "101",
+  pattern = "wooden_bridge.bottom",
 }
 
 tile{
@@ -31904,7 +31904,7 @@ tile{
   y = 1776,
   width = 96,
   height = 16,
-  pattern = "100",
+  pattern = "wooden_bridge",
 }
 
 tile{
@@ -32003,7 +32003,7 @@ tile{
   y = 1776,
   width = 8,
   height = 8,
-  pattern = "105",
+  pattern = "wooden_bridge.stairs.hidden.3",
 }
 
 tile{
@@ -32012,7 +32012,7 @@ tile{
   y = 1792,
   width = 8,
   height = 8,
-  pattern = "120",
+  pattern = "wooden_bridge.stairs.hidden.4",
 }
 
 tile{
@@ -32021,7 +32021,7 @@ tile{
   y = 1792,
   width = 8,
   height = 8,
-  pattern = "119",
+  pattern = "wooden_bridge.stairs.hidden.2",
 }
 
 tile{

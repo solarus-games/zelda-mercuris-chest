@@ -20,86 +20,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "100",
-  ground = "traversable",
-  default_layer = 0,
-  x = 416,
-  y = 600,
-  width = 8,
-  height = 16,
-}
-
-tile_pattern{
-  id = "101",
-  ground = "wall",
-  default_layer = 0,
-  x = 416,
-  y = 616,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "102",
-  ground = "wall_bottom_right",
-  default_layer = 0,
-  x = 400,
-  y = 616,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "103",
-  ground = "wall_bottom_left",
-  default_layer = 0,
-  x = 424,
-  y = 616,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "104",
-  ground = "wall_top_left",
-  default_layer = 1,
-  x = 392,
-  y = 600,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "105",
-  ground = "wall_top_right",
-  default_layer = 1,
-  x = 440,
-  y = 600,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "106",
-  ground = "ladder",
-  default_layer = 0,
-  x = 400,
-  y = 600,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "107",
-  ground = "ladder",
-  default_layer = 0,
-  x = 424,
-  y = 600,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
   id = "108",
   ground = "wall",
   default_layer = 0,
@@ -220,31 +140,11 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "119",
-  ground = "wall_bottom_right",
-  default_layer = 1,
-  x = 392,
-  y = 608,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
   id = "12",
   ground = "wall",
   default_layer = 2,
   x = 544,
   y = 368,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "120",
-  ground = "wall_bottom_left",
-  default_layer = 1,
-  x = 440,
-  y = 608,
   width = 8,
   height = 8,
 }
@@ -6456,5 +6356,105 @@ tile_pattern{
   y = { 392, 392, 392 },
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "wooden_bridge",
+  ground = "traversable",
+  default_layer = 0,
+  x = 416,
+  y = 600,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "wooden_bridge.bottom",
+  ground = "wall",
+  default_layer = 0,
+  x = 416,
+  y = 616,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.3",
+  ground = "ladder",
+  default_layer = 0,
+  x = 400,
+  y = 600,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.4",
+  ground = "ladder",
+  default_layer = 0,
+  x = 424,
+  y = 600,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.bottom.3",
+  ground = "wall_bottom_right",
+  default_layer = 0,
+  x = 400,
+  y = 616,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.bottom.4",
+  ground = "wall_bottom_left",
+  default_layer = 0,
+  x = 424,
+  y = 616,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.hidden.1",
+  ground = "wall_top_left",
+  default_layer = 1,
+  x = 392,
+  y = 600,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.hidden.2",
+  ground = "wall_bottom_right",
+  default_layer = 1,
+  x = 392,
+  y = 608,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.hidden.3",
+  ground = "wall_top_right",
+  default_layer = 1,
+  x = 440,
+  y = 600,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "wooden_bridge.stairs.hidden.4",
+  ground = "wall_bottom_left",
+  default_layer = 1,
+  x = 440,
+  y = 608,
+  width = 8,
+  height = 8,
 }
 
