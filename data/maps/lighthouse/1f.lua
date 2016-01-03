@@ -1,5 +1,7 @@
 local map = ...
 
+local guard_monster_dead
+
 -- Delete this function when map is done
 local function map_temp_dev_init()
   -- Item initialization (for testing purposes)
@@ -139,6 +141,29 @@ function door_switch_3:on_activated()
   map:open_doors("locked_door_3")
 end
 
+local function guard_puzzle_init()
+  for enemy in map:get_entities("guard_monster") do
+    enemy.on_dead = guard_monster_dead
+  end
+end
+
+-- Guard puzzle monsters
+function guard_monster_dead(enemy)
+  if map:get_entities_count("guard_monster") == 0 then
+    sol.audio.play_sound("secret")
+    map:open_doors("locked_door_1")
+  end
+end
+
+local function key_bridge_puzzle_init()
+  key_chest_2:set_enabled(false)
+end
+
+function chest_switch_2:on_activated()
+  sol.audio.play_sound("chest_appears")
+  key_chest_2:set_enabled(true)
+end
+
 -- Map starting main event function
 function map:on_started(destination)
   map_temp_dev_init()
@@ -147,4 +172,6 @@ function map:on_started(destination)
   torch_puzzle()
   boulders_puzzle_init()
   pond_puzzle_init()
+  guard_puzzle_init()
+  key_bridge_puzzle_init()
 end

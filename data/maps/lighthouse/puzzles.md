@@ -16,6 +16,7 @@ B1
 - Pond room
 - Key bridge
 - Star pits
+- Guards
 
 2F
 --

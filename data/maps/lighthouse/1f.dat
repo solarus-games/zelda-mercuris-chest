@@ -7840,6 +7840,7 @@ switch{
 }
 
 enemy{
+  name = "guard_monster_1",
   layer = 1,
   x = 1120,
   y = 597,
@@ -7848,6 +7849,7 @@ enemy{
 }
 
 enemy{
+  name = "guard_monster_2",
   layer = 1,
   x = 1080,
   y = 629,
@@ -7856,6 +7858,7 @@ enemy{
 }
 
 enemy{
+  name = "guard_monster_3",
   layer = 1,
   x = 1160,
   y = 629,
@@ -9016,9 +9019,9 @@ separator{
 
 separator{
   layer = 2,
-  x = 320,
+  x = 0,
   y = 232,
-  width = 640,
+  width = 1280,
   height = 16,
 }
 
@@ -9028,5 +9031,21 @@ separator{
   y = 0,
   width = 16,
   height = 480,
+}
+
+separator{
+  layer = 2,
+  x = 960,
+  y = 712,
+  width = 320,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 712,
+  width = 320,
+  height = 16,
 }
 
