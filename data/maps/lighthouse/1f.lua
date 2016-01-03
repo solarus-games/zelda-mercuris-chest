@@ -78,6 +78,7 @@ end
 
 function door_switch_4:on_activated()
   map:open_doors("locked_door_4")
+  door_sensor_4:set_enabled(false)
 end
 
 -- Pond puzzle init
