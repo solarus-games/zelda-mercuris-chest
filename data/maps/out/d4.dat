@@ -8031,6 +8031,24 @@ tile{
   pattern = "174",
 }
 
+tile{
+  layer = 1,
+  x = 336,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
 teletransporter{
   layer = 1,
   x = 2048,
@@ -11469,5 +11487,23 @@ tile{
   width = 24,
   height = 56,
   pattern = "176",
+}
+
+tile{
+  layer = 2,
+  x = 328,
+  y = 232,
+  width = 32,
+  height = 24,
+  pattern = "18",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 232,
+  width = 32,
+  height = 24,
+  pattern = "18",
 }
 
