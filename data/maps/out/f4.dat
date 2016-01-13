@@ -3479,6 +3479,24 @@ tile{
   pattern = "grass.cliff.top.2",
 }
 
+tile{
+  layer = 1,
+  x = 320,
+  y = 816,
+  width = 32,
+  height = 16,
+  pattern = "grass.high_grass.under",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 816,
+  width = 32,
+  height = 16,
+  pattern = "grass.high_grass.under",
+}
+
 teletransporter{
   layer = 1,
   x = -16,
