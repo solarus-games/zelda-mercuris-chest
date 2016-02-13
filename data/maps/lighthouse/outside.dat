@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 360,
   height = 960,
-  world = "dungeon_3",
-  floor = 1,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_3",
+  floor = 1,
   tileset = "dungeon_grayblue",
   music = "same",
 }
@@ -888,41 +888,39 @@ enemy{
 }
 
 destination{
+  name = "from_inside_2f_south",
   layer = 1,
   x = 312,
   y = 837,
-  name = "from_inside_2f_south",
   direction = 2,
 }
 
 teletransporter{
+  name = "to_inside_2f_south",
   layer = 1,
   x = 320,
   y = 824,
   width = 16,
   height = 16,
-  name = "to_inside_2f_south",
-  transition = "fade",
-  destination_map = "lighthouse/outside",
-  destination = "from_inside_2f_south",
+  destination_map = "lighthouse/2f",
+  destination = "from_outside_2f_south",
 }
 
 destination{
+  name = "from_inside_2f_north",
   layer = 1,
   x = 312,
   y = 133,
-  name = "from_inside_2f_north",
   direction = 2,
 }
 
 teletransporter{
+  name = "to_inside_2f_north",
   layer = 1,
   x = 320,
   y = 120,
   width = 16,
   height = 16,
-  name = "to_inside_2f_north",
-  transition = "fade",
   destination_map = "lighthouse/2f",
   destination = "from_outside_2f_north",
 }
