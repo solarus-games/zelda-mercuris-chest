@@ -3,11 +3,21 @@ properties{
   y = 0,
   width = 1280,
   height = 960,
+  min_layer = 0,
+  max_layer = 2,
   world = "dungeon_3",
   floor = 1,
-  num_layers = 3,
   tileset = "dungeon_grayblue",
   music = "same",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 536,
+  width = 112,
+  height = 24,
+  pattern = "wall_low.2",
 }
 
 tile{
@@ -327,24 +337,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "torch_off",
-}
-
-tile{
-  layer = 0,
   x = 1080,
   y = 536,
   width = 24,
@@ -570,15 +562,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 536,
-  width = 112,
-  height = 24,
-  pattern = "wall_low.2",
-}
-
-tile{
-  layer = 0,
   x = 1192,
   y = 656,
   width = 16,
@@ -667,16 +650,13 @@ tile{
   pattern = "wall_low_diag.bottom.3",
 }
 
-destructible{
-  name = "SK1",
+tile{
   layer = 0,
-  x = 1120,
-  y = 653,
-  treasure_name = "small_key",
-  treasure_savegame_variable = "lighthouse_skull_key_1",
-  sprite = "entities/vase",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
+  x = 1048,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "wall_low_border.corner.3",
 }
 
 destructible{
@@ -731,6 +711,129 @@ stairs{
   y = 624,
   direction = 2,
   subtype = 4,
+}
+
+switch{
+  name = "big_key_switch",
+  layer = 0,
+  x = 1112,
+  y = 640,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+destructible{
+  name = "SK1",
+  layer = 0,
+  x = 1120,
+  y = 653,
+  sprite = "entities/vase",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+block{
+  layer = 0,
+  x = 112,
+  y = 469,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 128,
+  y = 485,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 112,
+  y = 501,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 96,
+  y = 485,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 192,
+  y = 485,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 208,
+  y = 501,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = true,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 224,
+  y = 485,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 208,
+  y = 469,
+  sprite = "entities/block",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+npc{
+  name = "torch_2",
+  layer = 0,
+  x = 208,
+  y = 485,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
+}
+
+npc{
+  name = "torch_1",
+  layer = 0,
+  x = 112,
+  y = 485,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 tile{
@@ -3633,19 +3736,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 80,
-  y = 400,
-  width = 32,
-  height = 8,
-  pattern = "stairs_inner_up.1.top",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 608,
-  width = 32,
-  height = 32,
+  x = 200,
+  y = 600,
+  width = 48,
+  height = 48,
   pattern = "floor_border.1",
 }
 
@@ -4556,15 +4650,6 @@ tile{
   width = 16,
   height = 64,
   pattern = "floor.3",
-}
-
-tile{
-  layer = 1,
-  x = 1024,
-  y = 616,
-  width = 8,
-  height = 32,
-  pattern = "stairs_inner_up.3.top",
 }
 
 tile{
@@ -6151,6 +6236,87 @@ tile{
   pattern = "wall_diag.3",
 }
 
+tile{
+  layer = 1,
+  x = 104,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.1.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "stairs_inner_up.1.top",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.3.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 624,
+  width = 8,
+  height = 16,
+  pattern = "stairs_inner_up.3.top",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "stairs_inner_up.3.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 608,
+  width = 32,
+  height = 32,
+  pattern = "floor_small.1",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "floor_small.1",
+}
+
+sensor{
+  name = "door_sensor_8",
+  layer = 1,
+  x = 688,
+  y = 773,
+  width = 240,
+  height = 160,
+}
+
 destination{
   name = "from_1f_b",
   layer = 1,
@@ -6242,7 +6408,7 @@ destructible{
 }
 
 destination{
-  name = "from_teleporter",
+  name = "from_teleport",
   layer = 1,
   x = 480,
   y = 173,
@@ -6250,33 +6416,12 @@ destination{
   sprite = "entities/destination",
 }
 
-teletransporter{
-  name = "T1",
-  layer = 1,
-  x = 216,
-  y = 616,
-  width = 16,
-  height = 16,
-  destination_map = "lighthouse/2f",
-  destination = "from_teleporter",
-  sprite = "entities/teletransporter",
-}
-
 door{
-  name = "door",
+  name = "locked_door_10",
   layer = 1,
   x = 344,
   y = 352,
   direction = 2,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "door_2",
-  layer = 1,
-  x = 280,
-  y = 352,
-  direction = 0,
   sprite = "entities/door_normal",
 }
 
@@ -6289,16 +6434,7 @@ destination{
 }
 
 door{
-  name = "door_5",
-  layer = 1,
-  x = 880,
-  y = 264,
-  direction = 1,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "door_6",
+  name = "locked_door_9",
   layer = 1,
   x = 880,
   y = 200,
@@ -6307,7 +6443,7 @@ door{
 }
 
 switch{
-  name = "switch_2",
+  name = "door_switch_9",
   layer = 1,
   x = 752,
   y = 184,
@@ -6320,7 +6456,7 @@ switch{
 
 destructible{
   layer = 1,
-  x = 760,
+  x = 744,
   y = 197,
   treasure_name = "random",
   sprite = "entities/vase",
@@ -6330,7 +6466,7 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 744,
+  x = 760,
   y = 197,
   treasure_name = "random",
   sprite = "entities/vase",
@@ -6349,17 +6485,17 @@ destructible{
 }
 
 chest{
-  name = "BKC",
+  name = "big_key_chest",
   layer = 1,
   x = 1208,
   y = 557,
   treasure_name = "big_key",
-  treasure_savegame_variable = "lighthouse_big_key_chest",
+  treasure_savegame_variable = "dungeon_3s_big_key_chest",
   sprite = "entities/chest",
 }
 
 sensor{
-  name = "DS6",
+  name = "door_sensor_7",
   layer = 1,
   x = 544,
   y = 533,
@@ -6398,17 +6534,18 @@ destructible{
 }
 
 chest{
-  name = "CC",
+  name = "compass_chest",
   layer = 1,
   x = 480,
   y = 845,
   treasure_name = "compass",
-  treasure_savegame_variable = "lighthouse_compass_chest",
+  treasure_savegame_variable = "dungeon_3_compass",
   sprite = "entities/chest",
+  opening_condition = "dungeon_3_compass",
 }
 
 switch{
-  name = "DS8",
+  name = "door_switch_8",
   layer = 1,
   x = 792,
   y = 816,
@@ -6523,27 +6660,13 @@ stairs{
 }
 
 door{
-  name = "KD4",
+  name = "key_door_2",
   layer = 1,
-  x = 600,
-  y = 112,
+  x = 592,
+  y = 200,
   direction = 0,
   sprite = "entities/door_small_key",
-  savegame_variable = "lighthouse_key_door_4",
-  opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_3_small_keys",
-  opening_condition_consumed = true,
-  cannot_open_dialog = "_small_key_required",
-}
-
-door{
-  name = "LD4_2",
-  layer = 1,
-  x = 664,
-  y = 112,
-  direction = 2,
-  sprite = "entities/door_small_key",
-  savegame_variable = "lighthouse_key_door_4",
+  savegame_variable = "lighthouse_key_door_2",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
@@ -6559,58 +6682,6 @@ teletransporter{
   height = 192,
   destination_map = "lighthouse/1f",
   destination = "_same",
-}
-
-wall{
-  name = "wall",
-  layer = 1,
-  x = 1024,
-  y = 616,
-  width = 8,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-}
-
-wall{
-  name = "wall_2",
-  layer = 1,
-  x = 1024,
-  y = 640,
-  width = 8,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-}
-
-wall{
-  name = "wall_3",
-  layer = 1,
-  x = 80,
-  y = 400,
-  width = 8,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-}
-
-wall{
-  name = "wall_4",
-  layer = 1,
-  x = 104,
-  y = 400,
-  width = 8,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
 }
 
 dynamic_tile{
@@ -6667,28 +6738,20 @@ jumper{
 }
 
 door{
-  name = "KD7",
+  name = "KeyDoor3",
   layer = 1,
   x = 920,
   y = 352,
   direction = 0,
   sprite = "entities/door_small_key",
-  savegame_variable = "lighthouse_key_door_7",
-  opening_method = "interaction",
+  savegame_variable = "lighthouse_key_door_3",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_3_small_keys",
+  opening_condition_consumed = true,
 }
 
 door{
-  name = "KD7_2",
-  layer = 1,
-  x = 984,
-  y = 352,
-  direction = 2,
-  sprite = "entities/door_small_key",
-  savegame_variable = "lighthouse_key_door_7",
-}
-
-door{
-  name = "LD6",
+  name = "locked_door_7",
   layer = 1,
   x = 600,
   y = 592,
@@ -6697,25 +6760,7 @@ door{
 }
 
 door{
-  name = "LD6_2",
-  layer = 1,
-  x = 664,
-  y = 592,
-  direction = 2,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "LD7",
-  layer = 1,
-  x = 792,
-  y = 680,
-  direction = 3,
-  sprite = "entities/door_normal",
-}
-
-door{
-  name = "LD7_2",
+  name = "locked_door_8_2",
   layer = 1,
   x = 792,
   y = 744,
@@ -6724,30 +6769,12 @@ door{
 }
 
 door{
-  name = "LD8",
+  name = "locked_door_8",
   layer = 1,
   x = 664,
   y = 832,
   direction = 2,
   sprite = "entities/door_normal",
-}
-
-door{
-  name = "LD8_2",
-  layer = 1,
-  x = 600,
-  y = 832,
-  direction = 0,
-  sprite = "entities/door_normal",
-}
-
-sensor{
-  name = "DS7",
-  layer = 1,
-  x = 784,
-  y = 781,
-  width = 48,
-  height = 16,
 }
 
 enemy{
@@ -6759,15 +6786,7 @@ enemy{
 }
 
 enemy{
-  layer = 1,
-  x = 848,
-  y = 840,
-  direction = 3,
-  breed = "bubble",
-}
-
-enemy{
-  name = "compass_enemy_2",
+  name = "compass_monster_1",
   layer = 1,
   x = 464,
   y = 805,
@@ -6776,10 +6795,10 @@ enemy{
 }
 
 enemy{
-  name = "compass_enemy_3",
+  name = "compass_monster_2",
   layer = 1,
   x = 464,
-  y = 909,
+  y = 893,
   direction = 3,
   breed = "mandible",
 }
@@ -6800,6 +6819,7 @@ teletransporter{
   width = 64,
   height = 48,
   destination_map = "lighthouse/1f",
+  destination = "_same",
 }
 
 teletransporter{
@@ -6809,15 +6829,17 @@ teletransporter{
   width = 160,
   height = 16,
   destination_map = "lighthouse/1f",
+  destination = "_same",
 }
 
 teletransporter{
   layer = 1,
-  x = 736,
+  x = 720,
   y = 640,
-  width = 144,
+  width = 160,
   height = 16,
   destination_map = "lighthouse/1f",
+  destination = "_same",
 }
 
 teletransporter{
@@ -6827,6 +6849,7 @@ teletransporter{
   width = 64,
   height = 32,
   destination_map = "lighthouse/1f",
+  destination = "_same",
 }
 
 teletransporter{
@@ -6836,6 +6859,7 @@ teletransporter{
   width = 64,
   height = 32,
   destination_map = "lighthouse/1f",
+  destination = "_same",
 }
 
 destination{
@@ -6876,37 +6900,10 @@ teletransporter{
 }
 
 sensor{
-  name = "dungeon_room_1",
-  layer = 1,
-  x = 480,
-  y = 517,
-  width = 16,
-  height = 16,
-}
-
-sensor{
   name = "dungeon_room_2",
   layer = 1,
   x = 304,
   y = 605,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_3",
-  layer = 1,
-  x = 480,
-  y = 173,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_4",
-  layer = 1,
-  x = 368,
-  y = 829,
   width = 16,
   height = 16,
 }
@@ -6988,6 +6985,211 @@ sensor{
   layer = 1,
   x = 656,
   y = 125,
+  width = 16,
+  height = 16,
+}
+
+door{
+  name = "locked_door_11",
+  layer = 1,
+  x = 984,
+  y = 352,
+  direction = 2,
+  sprite = "entities/door_normal",
+}
+
+door{
+  name = "locked_door_11_2",
+  layer = 1,
+  x = 1112,
+  y = 440,
+  direction = 3,
+  sprite = "entities/door_normal",
+}
+
+chest{
+  name = "key_chest_1",
+  layer = 1,
+  x = 224,
+  y = 629,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_3_key_chest",
+  sprite = "entities/chest",
+  opening_condition = "dungeon_3_compass",
+}
+
+enemy{
+  name = "spike_monster_1",
+  layer = 1,
+  x = 392,
+  y = 301,
+  direction = 0,
+  breed = "mandible",
+}
+
+enemy{
+  name = "spike_monster_4",
+  layer = 1,
+  x = 568,
+  y = 429,
+  direction = 0,
+  breed = "mandible",
+}
+
+enemy{
+  name = "spike_monster_2",
+  layer = 1,
+  x = 480,
+  y = 317,
+  direction = 0,
+  breed = "bee_guard",
+}
+
+enemy{
+  name = "spike_monster_3",
+  layer = 1,
+  x = 480,
+  y = 413,
+  direction = 0,
+  breed = "bee_guard",
+}
+
+wall{
+  layer = 1,
+  x = 416,
+  y = 280,
+  width = 16,
+  height = 160,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 528,
+  y = 280,
+  width = 16,
+  height = 160,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 344,
+  width = 32,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 720,
+  y = 56,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 776,
+  y = 40,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 824,
+  y = 64,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 824,
+  y = 40,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 680,
+  y = 80,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 896,
+  y = 96,
+  width = 24,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 880,
+  y = 144,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 904,
+  y = 144,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "door_sensor_9",
+  layer = 1,
+  x = 888,
+  y = 213,
   width = 16,
   height = 16,
 }
@@ -8043,5 +8245,53 @@ tile{
   width = 64,
   height = 8,
   pattern = "ceiling",
+}
+
+separator{
+  layer = 2,
+  x = 632,
+  y = 0,
+  width = 16,
+  height = 960,
+}
+
+separator{
+  layer = 2,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 960,
+}
+
+separator{
+  layer = 2,
+  x = 952,
+  y = 0,
+  width = 16,
+  height = 960,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 232,
+  width = 1280,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 320,
+  y = 472,
+  width = 960,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 712,
+  width = 1280,
+  height = 16,
 }
 

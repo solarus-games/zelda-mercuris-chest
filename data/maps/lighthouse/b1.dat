@@ -3,9 +3,10 @@ properties{
   y = 240,
   width = 640,
   height = 480,
+  min_layer = 0,
+  max_layer = 2,
   world = "dungeon_3",
   floor = -1,
-  num_layers = 3,
   tileset = "dungeon_grayblue",
   music = "same",
 }
@@ -1569,13 +1570,13 @@ stairs{
 }
 
 chest{
-  name = "RC1",
+  name = "RupeeChest1",
   layer = 1,
   x = 264,
   y = 221,
   treasure_name = "rupee",
   treasure_variant = 4,
-  treasure_savegame_variable = "lighthouse_ruby_chest_1",
+  treasure_savegame_variable = "lighthouse_rupee_chest_1",
   sprite = "entities/chest",
 }
 
@@ -1657,13 +1658,14 @@ dynamic_tile{
 }
 
 chest{
-  name = "KC1",
+  name = "KeyChest1",
   layer = 1,
   x = 480,
   y = 133,
   treasure_name = "small_key",
   treasure_savegame_variable = "lighthouse_b1_key_chest",
   sprite = "entities/chest",
+  opening_condition = "dungeon_3_small_keys",
 }
 
 destructible{
@@ -2191,7 +2193,7 @@ wall{
 }
 
 door{
-  name = "LD1",
+  name = "LockedDoor16",
   layer = 1,
   x = 344,
   y = 120,
@@ -2199,17 +2201,8 @@ door{
   sprite = "entities/door_normal",
 }
 
-door{
-  name = "LD1_2",
-  layer = 1,
-  x = 280,
-  y = 120,
-  direction = 0,
-  sprite = "entities/door_normal",
-}
-
 sensor{
-  name = "DS1",
+  name = "DoorSensor16",
   layer = 1,
   x = 376,
   y = 117,
@@ -2683,15 +2676,6 @@ enemy{
 }
 
 sensor{
-  name = "dungeon_room_1",
-  layer = 1,
-  x = 480,
-  y = 277,
-  width = 16,
-  height = 16,
-}
-
-sensor{
   name = "dungeon_room_2",
   layer = 1,
   x = 304,
@@ -2869,5 +2853,21 @@ tile{
   width = 16,
   height = 16,
   pattern = "torch_big.top",
+}
+
+separator{
+  layer = 2,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 480,
+}
+
+separator{
+  layer = 2,
+  x = 320,
+  y = 232,
+  width = 320,
+  height = 16,
 }
 
