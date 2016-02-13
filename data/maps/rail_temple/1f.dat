@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 2992,
   height = 3680,
-  world = "dungeon_7",
-  floor = 0,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = 0,
   tileset = "mine",
   music = "dark_world_dungeon",
 }
@@ -44204,6 +44204,15 @@ custom_entity{
   direction = 0,
   sprite = "entities/railway_bottom_right",
   model = "minecart_turn",
+}
+
+destination{
+  name = "from_outside_west",
+  layer = 1,
+  x = 2632,
+  y = 3653,
+  direction = 1,
+  default = true,
 }
 
 tile{
