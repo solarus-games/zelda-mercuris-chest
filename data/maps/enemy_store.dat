@@ -72,3 +72,11 @@ enemy{
   breed = "tanekian_blue",
 }
 
+enemy{
+  layer = 1,
+  x = 88,
+  y = 101,
+  direction = 3,
+  breed = "tanekian_red",
+}
+
