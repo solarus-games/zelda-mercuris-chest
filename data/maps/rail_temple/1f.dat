@@ -44217,10 +44217,10 @@ destination{
 
 enemy{
   layer = 1,
-  x = 2600,
-  y = 3541,
+  x = 2608,
+  y = 3517,
   direction = 0,
-  breed = "topik_blue",
+  breed = "zoura_green",
 }
 
 tile{

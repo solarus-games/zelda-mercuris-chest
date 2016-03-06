@@ -102,6 +102,10 @@ sprite{ id = "enemies/topik_blue", description = "Blue Topik" }
 sprite{ id = "enemies/topik_blue_weapon", description = "Blue Topik Sword" }
 sprite{ id = "enemies/topik_green", description = "Green Topik" }
 sprite{ id = "enemies/topik_green_weapon", description = "Green Topik Sword" }
+sprite{ id = "enemies/topik_red", description = "Red Topik" }
+sprite{ id = "enemies/topik_red_weapon", description = "Red Topik Sword" }
+sprite{ id = "enemies/zoura_green", description = "Green Zoura Sword" }
+sprite{ id = "enemies/zoura_green_weapon", description = "Green Zoura Sword" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
@@ -478,6 +482,8 @@ enemy{ id = "snap_dragon", description = "Snap Dragon" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "topik_blue", description = "Blue Topik" }
 enemy{ id = "topik_green", description = "Green Topik" }
+enemy{ id = "topik_red", description = "Red Topik" }
+enemy{ id = "zoura_green", description = "Green Zoura" }
 
 entity{ id = "minecart", description = "Minecart" }
 entity{ id = "minecart_turn", description = "Minecart turn" }

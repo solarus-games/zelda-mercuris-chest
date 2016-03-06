@@ -9,7 +9,7 @@ properties{
 }
 
 enemy{
-  layer = 0,
+  layer = 1,
   x = 24,
   y = 37,
   direction = 0,
@@ -17,10 +17,26 @@ enemy{
 }
 
 enemy{
-  layer = 0,
+  layer = 1,
   x = 56,
   y = 37,
   direction = 0,
   breed = "topik_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 37,
+  direction = 0,
+  breed = "topik_red",
+}
+
+enemy{
+  layer = 1,
+  x = 24,
+  y = 69,
+  direction = 0,
+  breed = "zoura_green",
 }
 
