@@ -44215,14 +44215,6 @@ destination{
   default = true,
 }
 
-enemy{
-  layer = 1,
-  x = 2608,
-  y = 3517,
-  direction = 0,
-  breed = "zoura_green",
-}
-
 tile{
   layer = 2,
   x = 1200,
