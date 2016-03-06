@@ -44217,26 +44217,10 @@ destination{
 
 enemy{
   layer = 1,
-  x = 2592,
-  y = 3541,
+  x = 2608,
+  y = 3477,
   direction = 3,
-  breed = "tanekian_soldier_green",
-}
-
-enemy{
-  layer = 1,
-  x = 2624,
-  y = 3541,
-  direction = 3,
-  breed = "tanekian_soldier_blue",
-}
-
-enemy{
-  layer = 1,
-  x = 2656,
-  y = 3541,
-  direction = 3,
-  breed = "tanekian_soldier_red",
+  breed = "tanekian_guard_red",
 }
 
 tile{
