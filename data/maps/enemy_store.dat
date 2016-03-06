@@ -16,3 +16,11 @@ enemy{
   breed = "topik_green",
 }
 
+enemy{
+  layer = 0,
+  x = 56,
+  y = 37,
+  direction = 0,
+  breed = "topik_blue",
+}
+

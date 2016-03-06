@@ -44215,6 +44215,14 @@ destination{
   default = true,
 }
 
+enemy{
+  layer = 1,
+  x = 2600,
+  y = 3541,
+  direction = 0,
+  breed = "topik_blue",
+}
+
 tile{
   layer = 2,
   x = 1200,
