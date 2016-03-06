@@ -12,7 +12,7 @@ enemy{
   layer = 1,
   x = 24,
   y = 37,
-  direction = 0,
+  direction = 3,
   breed = "topik_green",
 }
 
@@ -20,7 +20,7 @@ enemy{
   layer = 1,
   x = 56,
   y = 37,
-  direction = 0,
+  direction = 3,
   breed = "topik_blue",
 }
 
@@ -28,7 +28,7 @@ enemy{
   layer = 1,
   x = 88,
   y = 37,
-  direction = 0,
+  direction = 3,
   breed = "topik_red",
 }
 
@@ -36,7 +36,15 @@ enemy{
   layer = 1,
   x = 24,
   y = 69,
-  direction = 0,
+  direction = 3,
   breed = "zoura_green",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 69,
+  direction = 3,
+  breed = "zoura_blue",
 }
 
