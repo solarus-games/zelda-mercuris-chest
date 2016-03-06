@@ -1,3 +1,4 @@
+map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "forest_store", description = "Forest store" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "lighthouse/1f", description = "Lighthouse 1F" }
@@ -97,6 +98,8 @@ sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldie
 sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Enemy: Snap Dragon" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "enemies/topik_green", description = "Green Topik" }
+sprite{ id = "enemies/topik_green_weapon", description = "Green Topik Sword" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
@@ -471,6 +474,7 @@ enemy{ id = "simple_green_soldier", description = "Simple Soldier (green)" }
 enemy{ id = "skeletor", description = "Skeletor" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
 enemy{ id = "tentacle", description = "Tentacle" }
+enemy{ id = "topik_green", description = "Green Topik" }
 
 entity{ id = "minecart", description = "Minecart" }
 entity{ id = "minecart_turn", description = "Minecart turn" }

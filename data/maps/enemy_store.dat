@@ -1,0 +1,18 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "dungeon_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 24,
+  y = 37,
+  direction = 0,
+  breed = "topik_green",
+}
+
