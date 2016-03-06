@@ -56,3 +56,11 @@ enemy{
   breed = "zoura_red",
 }
 
+enemy{
+  layer = 1,
+  x = 24,
+  y = 101,
+  direction = 3,
+  breed = "tanekian_green",
+}
+
