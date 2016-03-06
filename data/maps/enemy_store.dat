@@ -61,7 +61,7 @@ enemy{
   x = 24,
   y = 101,
   direction = 3,
-  breed = "tanekian_green",
+  breed = "tanekian_soldier_green",
 }
 
 enemy{
@@ -69,7 +69,7 @@ enemy{
   x = 56,
   y = 101,
   direction = 3,
-  breed = "tanekian_blue",
+  breed = "tanekian_soldier_blue",
 }
 
 enemy{
@@ -77,6 +77,6 @@ enemy{
   x = 88,
   y = 101,
   direction = 3,
-  breed = "tanekian_red",
+  breed = "tanekian_soldier_red",
 }
 

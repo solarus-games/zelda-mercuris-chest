@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/tanekian_blue.png",
+  src_image = "enemies/tanekian_soldier_blue.png",
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
@@ -12,7 +12,7 @@ animation{
 }
 animation{
   name = "hurt",
-  src_image = "enemies/tanekian_blue.png",
+  src_image = "enemies/tanekian_soldier_blue.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -24,7 +24,7 @@ animation{
 }
 animation{
   name = "immobilized",
-  src_image = "enemies/tanekian_blue.png",
+  src_image = "enemies/tanekian_soldier_blue.png",
   directions = {
     { x = 288, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
     { x = 288, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
@@ -34,7 +34,7 @@ animation{
 }
 animation{
   name = "shaking",
-  src_image = "enemies/tanekian_blue.png",
+  src_image = "enemies/tanekian_soldier_blue.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {

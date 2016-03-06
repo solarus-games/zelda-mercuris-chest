@@ -97,12 +97,12 @@ sprite{ id = "enemies/ropa", description = "Enemy: Ropa" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (green)" }
 sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Enemy: Snap Dragon" }
-sprite{ id = "enemies/tanekian_blue", description = "Blue Tanekian" }
-sprite{ id = "enemies/tanekian_blue_weapon", description = "Blue Tanekian Sword" }
-sprite{ id = "enemies/tanekian_green", description = "Green Tanekian" }
-sprite{ id = "enemies/tanekian_green_weapon", description = "Green Tanekian Sword" }
-sprite{ id = "enemies/tanekian_red", description = "Red Tanekian" }
-sprite{ id = "enemies/tanekian_red_weapon", description = "Red Tanekian Spear" }
+sprite{ id = "enemies/tanekian_soldier_blue", description = "Blue Tanekian Soldier" }
+sprite{ id = "enemies/tanekian_soldier_blue_weapon", description = "Blue Tanekian Soldier Sword" }
+sprite{ id = "enemies/tanekian_soldier_green", description = "Green Tanekian Soldier" }
+sprite{ id = "enemies/tanekian_soldier_green_weapon", description = "Green Tanekian Soldier Sword" }
+sprite{ id = "enemies/tanekian_soldier_red", description = "Red Tanekian Soldier" }
+sprite{ id = "enemies/tanekian_soldier_red_weapon", description = "Red Tanekian Soldier Spear" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "enemies/topik_blue", description = "Blue Topik" }
 sprite{ id = "enemies/topik_blue_weapon", description = "Blue Topik Sword" }
@@ -489,9 +489,9 @@ enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "simple_green_soldier", description = "Simple Soldier (green)" }
 enemy{ id = "skeletor", description = "Skeletor" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
-enemy{ id = "tanekian_blue", description = "Blue Tanekian" }
-enemy{ id = "tanekian_green", description = "Green Tanekian" }
-enemy{ id = "tanekian_red", description = "Red Tanekian" }
+enemy{ id = "tanekian_soldier_blue", description = "Blue Tanekian Soldier" }
+enemy{ id = "tanekian_soldier_green", description = "Green Tanekian Soldier" }
+enemy{ id = "tanekian_soldier_red", description = "Red Tanekian Soldier" }
 enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "topik_blue", description = "Blue Topik" }
 enemy{ id = "topik_green", description = "Green Topik" }
