@@ -7841,6 +7841,18 @@ sensor{
   height = 16,
 }
 
+destructible{
+  layer = 0,
+  x = 96,
+  y = 845,
+  treasure_name = "random",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
 tile{
   layer = 1,
   x = 32,
