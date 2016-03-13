@@ -261,6 +261,7 @@ sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
 sprite{ id = "npc/witch", description = "Witch" }
 sprite{ id = "npc/wizard", description = "Wizard" }
 sprite{ id = "npc/zelda", description = "Zelda" }
+sprite{ id = "npc/zora", description = "Zora" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }

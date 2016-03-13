@@ -8195,6 +8195,16 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  name = "zora",
+  layer = 1,
+  x = 1032,
+  y = 1717,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/zora",
+}
+
 tile{
   layer = 2,
   x = 128,
