@@ -8,6 +8,15 @@ properties{
   tileset = "dungeon_blue",
 }
 
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = "floor.18",
+}
+
 enemy{
   layer = 1,
   x = 24,
@@ -86,5 +95,20 @@ enemy{
   y = 101,
   direction = 3,
   breed = "tanekian_guard_red",
+}
+
+enemy{
+  layer = 1,
+  x = 152,
+  y = 101,
+  direction = 3,
+  breed = "tanekian_commander_yellow",
+}
+
+destination{
+  layer = 1,
+  x = 168,
+  y = 213,
+  direction = 1,
 }
 

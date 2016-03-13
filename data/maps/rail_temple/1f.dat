@@ -44215,14 +44215,6 @@ destination{
   default = true,
 }
 
-enemy{
-  layer = 1,
-  x = 2608,
-  y = 3477,
-  direction = 3,
-  breed = "tanekian_guard_red",
-}
-
 tile{
   layer = 2,
   x = 1200,

@@ -97,6 +97,8 @@ sprite{ id = "enemies/ropa", description = "Enemy: Ropa" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (green)" }
 sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Enemy: Snap Dragon" }
+sprite{ id = "enemies/tanekian_commander_yellow", description = "Yellow Tanekian Commander" }
+sprite{ id = "enemies/tanekian_commander_yellow_weapon", description = "Yellow Tanekian Commander Sword" }
 sprite{ id = "enemies/tanekian_guard_red", description = "Red Tanekian Guard" }
 sprite{ id = "enemies/tanekian_soldier_blue", description = "Blue Tanekian Soldier" }
 sprite{ id = "enemies/tanekian_soldier_blue_weapon", description = "Blue Tanekian Soldier Sword" }
@@ -490,6 +492,7 @@ enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "simple_green_soldier", description = "Simple Soldier (green)" }
 enemy{ id = "skeletor", description = "Skeletor" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
+enemy{ id = "tanekian_commander_yellow", description = "Yellow Tanekian Commander" }
 enemy{ id = "tanekian_guard_red", description = "Red Tanekian Guard" }
 enemy{ id = "tanekian_soldier_blue", description = "Blue Tanekian Soldier" }
 enemy{ id = "tanekian_soldier_green", description = "Green Tanekian Soldier" }
