@@ -12,6 +12,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 0,
   x = 48,
   y = 1792,
   width = 64,
