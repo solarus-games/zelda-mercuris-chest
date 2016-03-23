@@ -13145,6 +13145,24 @@ tile{
   pattern = "hedge.1",
 }
 
+tile{
+  layer = 1,
+  x = 1624,
+  y = 1816,
+  width = 24,
+  height = 8,
+  pattern = "hedge.bottom",
+}
+
+tile{
+  layer = 1,
+  x = 1624,
+  y = 1808,
+  width = 24,
+  height = 8,
+  pattern = "hedge.1",
+}
+
 wall{
   layer = 1,
   x = 1040,
@@ -19233,6 +19251,15 @@ tile{
   layer = 2,
   x = 1624,
   y = 1648,
+  width = 24,
+  height = 8,
+  pattern = "hedge.2",
+}
+
+tile{
+  layer = 2,
+  x = 1624,
+  y = 1800,
   width = 24,
   height = 8,
   pattern = "hedge.2",
