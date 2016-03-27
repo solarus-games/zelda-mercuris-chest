@@ -13030,8 +13030,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1736,
-  y = 1800,
+  x = 1760,
+  y = 1816,
   width = 8,
   height = 8,
   pattern = "hedge.corner_reverse.2",
@@ -13161,6 +13161,33 @@ tile{
   width = 24,
   height = 8,
   pattern = "hedge.1",
+}
+
+tile{
+  layer = 1,
+  x = 1736,
+  y = 1800,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner_reverse.2",
+}
+
+tile{
+  layer = 1,
+  x = 1728,
+  y = 1808,
+  width = 8,
+  height = 16,
+  pattern = "hedge.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 1736,
+  y = 1816,
+  width = 24,
+  height = 8,
+  pattern = "hedge.bottom",
 }
 
 wall{
@@ -19259,6 +19286,15 @@ tile{
 tile{
   layer = 2,
   x = 1624,
+  y = 1800,
+  width = 24,
+  height = 8,
+  pattern = "hedge.2",
+}
+
+tile{
+  layer = 2,
+  x = 1744,
   y = 1800,
   width = 24,
   height = 8,
