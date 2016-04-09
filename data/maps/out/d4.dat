@@ -13172,6 +13172,33 @@ tile{
   pattern = "hedge.corner.4",
 }
 
+tile{
+  layer = 1,
+  x = 1656,
+  y = 1656,
+  width = 8,
+  height = 48,
+  pattern = "hedge.4",
+}
+
+tile{
+  layer = 1,
+  x = 1648,
+  y = 1664,
+  width = 8,
+  height = 32,
+  pattern = "hedge.3",
+}
+
+tile{
+  layer = 1,
+  x = 1648,
+  y = 1656,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner_reverse.3",
+}
+
 wall{
   layer = 1,
   x = 1040,
@@ -19260,7 +19287,7 @@ tile{
   layer = 2,
   x = 1624,
   y = 1648,
-  width = 24,
+  width = 32,
   height = 8,
   pattern = "hedge.2",
 }
@@ -19281,6 +19308,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "hedge.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 1656,
+  y = 1648,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.2",
 }
 
 teletransporter{
