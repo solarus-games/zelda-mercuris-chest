@@ -12,37 +12,10 @@ properties{
 
 tile{
   layer = 0,
-  x = 1992,
-  y = 176,
-  width = 8,
-  height = 224,
-  pattern = "cliff.top.3",
-}
-
-tile{
-  layer = 0,
-  x = 2000,
-  y = 176,
-  width = 16,
-  height = 224,
-  pattern = "cliff.3",
-}
-
-tile{
-  layer = 0,
-  x = 2016,
-  y = 176,
-  width = 16,
-  height = 240,
-  pattern = "water.cliff_wave.3",
-}
-
-tile{
-  layer = 0,
   x = 2032,
-  y = 176,
+  y = 0,
   width = 16,
-  height = 848,
+  height = 1024,
   pattern = "water",
 }
 
@@ -1786,37 +1759,28 @@ tile{
 tile{
   layer = 0,
   x = 1992,
-  y = -48,
+  y = 0,
   width = 8,
-  height = 224,
+  height = 400,
   pattern = "cliff.top.3",
 }
 
 tile{
   layer = 0,
   x = 2000,
-  y = -48,
+  y = 0,
   width = 16,
-  height = 224,
+  height = 400,
   pattern = "cliff.3",
 }
 
 tile{
   layer = 0,
   x = 2016,
-  y = -48,
+  y = 0,
   width = 16,
-  height = 240,
+  height = 416,
   pattern = "water.cliff_wave.3",
-}
-
-tile{
-  layer = 0,
-  x = 2032,
-  y = -672,
-  width = 16,
-  height = 848,
-  pattern = "water",
 }
 
 tile{
@@ -1840,9 +1804,9 @@ tile{
 tile{
   layer = 0,
   x = 1968,
-  y = -72,
+  y = -8,
   width = 16,
-  height = 336,
+  height = 272,
   pattern = "forest.4",
 }
 
@@ -14486,15 +14450,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1984,
-  y = 176,
-  width = 8,
-  height = 224,
-  pattern = "grass.cliff.top.border.3",
-}
-
-tile{
-  layer = 1,
   x = 1456,
   y = 248,
   width = 16,
@@ -20994,9 +20949,9 @@ tile{
 tile{
   layer = 1,
   x = 1984,
-  y = -48,
+  y = 0,
   width = 8,
-  height = 224,
+  height = 400,
   pattern = "grass.cliff.top.border.3",
 }
 
