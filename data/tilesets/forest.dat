@@ -317,18 +317,8 @@ tile_pattern{
   x = 248,
   y = 360,
   width = 32,
-  height = 8,
+  height = 32,
   repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "127",
-  ground = "wall",
-  default_layer = 0,
-  x = 248,
-  y = 368,
-  width = 32,
-  height = 24,
 }
 
 tile_pattern{
@@ -338,17 +328,8 @@ tile_pattern{
   x = 280,
   y = 360,
   width = 32,
-  height = 8,
-}
-
-tile_pattern{
-  id = "129",
-  ground = "wall",
-  default_layer = 0,
-  x = 280,
-  y = 368,
-  width = 32,
-  height = 24,
+  height = 32,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -378,17 +359,8 @@ tile_pattern{
   x = 312,
   y = 360,
   width = 32,
-  height = 8,
-}
-
-tile_pattern{
-  id = "132",
-  ground = "wall",
-  default_layer = 0,
-  x = 312,
-  y = 368,
-  width = 32,
-  height = 24,
+  height = 32,
+  repeat_mode = "none",
 }
 
 tile_pattern{
