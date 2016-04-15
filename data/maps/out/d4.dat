@@ -13334,6 +13334,15 @@ tile{
   pattern = "hedge.corner_reverse.4",
 }
 
+tile{
+  layer = 1,
+  x = 1416,
+  y = 1656,
+  width = 8,
+  height = 48,
+  pattern = "hedge.4",
+}
+
 wall{
   layer = 1,
   x = 1040,
