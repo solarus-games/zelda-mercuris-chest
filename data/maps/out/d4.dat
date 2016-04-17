@@ -13343,6 +13343,15 @@ tile{
   pattern = "hedge.4",
 }
 
+tile{
+  layer = 1,
+  x = 1416,
+  y = 1752,
+  width = 8,
+  height = 56,
+  pattern = "hedge.4",
+}
+
 wall{
   layer = 1,
   x = 1040,
@@ -19530,6 +19539,24 @@ tile{
   layer = 2,
   x = 1416,
   y = 1648,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 1408,
+  y = 1744,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 1416,
+  y = 1744,
   width = 8,
   height = 8,
   pattern = "hedge.corner.2",
