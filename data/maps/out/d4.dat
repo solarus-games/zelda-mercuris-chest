@@ -19562,6 +19562,15 @@ tile{
   pattern = "hedge.corner.2",
 }
 
+tile{
+  layer = 2,
+  x = 1368,
+  y = 1648,
+  width = 48,
+  height = 8,
+  pattern = "hedge.2",
+}
+
 teletransporter{
   layer = 2,
   x = 0,
