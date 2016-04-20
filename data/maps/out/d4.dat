@@ -13352,6 +13352,15 @@ tile{
   pattern = "hedge.4",
 }
 
+tile{
+  layer = 1,
+  x = 1368,
+  y = 1656,
+  width = 40,
+  height = 8,
+  pattern = "hedge.bottom",
+}
+
 wall{
   layer = 1,
   x = 1040,
