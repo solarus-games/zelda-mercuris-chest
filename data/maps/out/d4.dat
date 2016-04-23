@@ -13355,10 +13355,37 @@ tile{
 tile{
   layer = 1,
   x = 1368,
-  y = 1656,
+  y = 1664,
   width = 40,
   height = 8,
   pattern = "hedge.bottom",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 1664,
+  width = 8,
+  height = 40,
+  pattern = "hedge.3",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 1656,
+  width = 8,
+  height = 8,
+  pattern = "hedge.corner_reverse.3",
+}
+
+tile{
+  layer = 1,
+  x = 1368,
+  y = 1656,
+  width = 40,
+  height = 8,
+  pattern = "hedge.1",
 }
 
 wall{
