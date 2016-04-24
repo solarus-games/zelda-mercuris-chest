@@ -331,6 +331,33 @@ teletransporter{
 
 tile{
   layer = 1,
+  x = 1248,
+  y = 1648,
+  width = 176,
+  height = 192,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 1416,
+  y = 1704,
+  width = 8,
+  height = 16,
+  pattern = "hedge.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 1704,
+  width = 8,
+  height = 16,
+  pattern = "hedge.corner.3",
+}
+
+tile{
+  layer = 1,
   x = 1488,
   y = 1648,
   width = 176,
@@ -354,15 +381,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "hedge.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 1248,
-  y = 1648,
-  width = 176,
-  height = 192,
-  pattern = "grass.soil",
 }
 
 tile{
