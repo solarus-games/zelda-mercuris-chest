@@ -18,7 +18,7 @@ map{ id = "rail_temple/1f", description = "Rail Temple 1F" }
 map{ id = "rail_temple/b1", description = "Rail Temple B1" }
 map{ id = "rail_temple/b2", description = "Rail Temple B2" }
 map{ id = "test_map", description = "Test Hub" }
-map{ id = "village_store", description = "Village Store" }
+map{ id = "town_store", description = "Town Store" }
 
 tileset{ id = "dark_world", description = "Dark World" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
