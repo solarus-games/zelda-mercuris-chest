@@ -46,6 +46,15 @@ tile{
   pattern = "cliff.top.border.diag.4",
 }
 
+tile{
+  layer = 0,
+  x = -8,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -54,6 +63,17 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "out/f4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d3",
   destination = "_side",
 }
 
@@ -83,6 +103,28 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "out/f4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 1,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d3",
   destination = "_side",
 }
 
