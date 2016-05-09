@@ -22748,6 +22748,168 @@ tile{
   pattern = "house.entrance.border.3",
 }
 
+tile{
+  layer = 1,
+  x = 1688,
+  y = 1768,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 1,
+  x = 1672,
+  y = 1656,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 1,
+  x = 1680,
+  y = 1800,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 1,
+  x = 1424,
+  y = 1800,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 1,
+  x = 1456,
+  y = 1752,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 1,
+  x = 1440,
+  y = 1664,
+  width = 16,
+  height = 8,
+  pattern = "water.wave_big",
+}
+
+tile{
+  layer = 1,
+  x = 1432,
+  y = 1760,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 1800,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 1680,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1712,
+  y = 1648,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1688,
+  y = 1688,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1680,
+  y = 1744,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1712,
+  y = 1792,
+  width = 8,
+  height = 8,
+  pattern = "water.wave_small",
+}
+
+tile{
+  layer = 1,
+  x = 1424,
+  y = 1648,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 1648,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 1,
+  x = 1712,
+  y = 1672,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 1,
+  x = 1664,
+  y = 1784,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
+tile{
+  layer = 1,
+  x = 1448,
+  y = 1808,
+  width = 16,
+  height = 16,
+  pattern = "water.rock",
+}
+
 wall{
   layer = 1,
   x = 968,
