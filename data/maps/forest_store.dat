@@ -493,6 +493,60 @@ tile{
   pattern = "wooden_bridge.stairs.hidden.3",
 }
 
+tile{
+  layer = 1,
+  x = 160,
+  y = 272,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 256,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 256,
+  width = 8,
+  height = 16,
+  pattern = "129",
+}
+
 sensor{
   name = "layer_down_sensor",
   layer = 1,
@@ -524,6 +578,19 @@ sensor{
   height = 16,
 }
 
+wall{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 2,
   x = 56,
@@ -954,5 +1021,14 @@ tile{
   width = 16,
   height = 32,
   pattern = "3",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 200,
+  width = 64,
+  height = 56,
+  pattern = "174",
 }
 

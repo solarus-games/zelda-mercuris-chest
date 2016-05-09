@@ -20469,6 +20469,60 @@ tile{
   pattern = "invisible_wall",
 }
 
+tile{
+  layer = 1,
+  x = 1568,
+  y = 816,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 1560,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 1592,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 1576,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 1608,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 1552,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "129",
+}
+
 destination{
   name = "dungeontorins",
   layer = 1,
@@ -21250,6 +21304,19 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+wall{
+  layer = 1,
+  x = 1560,
+  y = 768,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -23644,6 +23711,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "124",
+}
+
+tile{
+  layer = 2,
+  x = 1552,
+  y = 744,
+  width = 64,
+  height = 56,
+  pattern = "174",
 }
 
 teletransporter{
