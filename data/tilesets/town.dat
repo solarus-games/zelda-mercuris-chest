@@ -1346,6 +1346,7 @@ tile_pattern{
   y = 504,
   width = 112,
   height = 88,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1356,6 +1357,7 @@ tile_pattern{
   y = 504,
   width = 112,
   height = 88,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1366,6 +1368,7 @@ tile_pattern{
   y = 512,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1376,6 +1379,7 @@ tile_pattern{
   y = 512,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1396,6 +1400,7 @@ tile_pattern{
   y = 536,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1406,6 +1411,7 @@ tile_pattern{
   y = 536,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1416,6 +1422,7 @@ tile_pattern{
   y = 560,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1426,6 +1433,7 @@ tile_pattern{
   y = 560,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1477,6 +1485,7 @@ tile_pattern{
   y = 584,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1507,6 +1516,7 @@ tile_pattern{
   y = 584,
   width = 32,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -7661,8 +7671,7 @@ tile_pattern{
   x = 288,
   y = 136,
   width = 8,
-  height = 8,
-  repeat_mode = "horizontal",
+  height = 16,
 }
 
 tile_pattern{
@@ -7696,17 +7705,6 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "vertical",
-}
-
-tile_pattern{
-  id = "hedge.bottom",
-  ground = "wall",
-  default_layer = 0,
-  x = 288,
-  y = 144,
-  width = 8,
-  height = 8,
-  repeat_mode = "horizontal",
 }
 
 tile_pattern{

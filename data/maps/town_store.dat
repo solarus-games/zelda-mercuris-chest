@@ -198,6 +198,15 @@ wall{
 
 tile{
   layer = 2,
+  x = 112,
+  y = 0,
+  width = 112,
+  height = 88,
+  pattern = "212",
+}
+
+tile{
+  layer = 2,
   x = 0,
   y = 0,
   width = 112,
@@ -221,14 +230,5 @@ tile{
   width = 32,
   height = 16,
   pattern = "house.entrance.top",
-}
-
-tile{
-  layer = 2,
-  x = 112,
-  y = 0,
-  width = 112,
-  height = 88,
-  pattern = "212",
 }
 

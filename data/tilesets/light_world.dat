@@ -5504,7 +5504,7 @@ tile_pattern{
   x = 288,
   y = 136,
   width = 8,
-  height = 8,
+  height = 16,
 }
 
 tile_pattern{
@@ -5532,16 +5532,6 @@ tile_pattern{
   ground = "wall",
   default_layer = 0,
   x = 320,
-  y = 144,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
-  id = "hedge.bottom",
-  ground = "wall",
-  default_layer = 0,
-  x = 288,
   y = 144,
   width = 8,
   height = 8,
