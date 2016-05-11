@@ -12877,7 +12877,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1472,
+  x = 1488,
   y = 672,
   width = 16,
   height = 16,
@@ -20543,12 +20543,274 @@ tile{
   pattern = "129",
 }
 
-destination{
-  name = "dungeontorins",
+tile{
+  layer = 1,
+  x = 1872,
+  y = 792,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 1864,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 1896,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
   layer = 1,
   x = 1880,
-  y = 437,
-  direction = 1,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 1912,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 1856,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 1,
+  x = 1464,
+  y = 336,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 1456,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 1488,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 1504,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 1448,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 1,
+  x = 1448,
+  y = 720,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 1440,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 1456,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 1488,
+  y = 704,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 1432,
+  y = 704,
+  width = 8,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 1,
+  x = 1784,
+  y = 856,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 1776,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 1808,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 1792,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 1824,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 1768,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 1,
+  x = 1224,
+  y = 656,
+  width = 32,
+  height = 8,
+  pattern = "173",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 1248,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 1,
+  x = 1264,
+  y = 640,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 640,
+  width = 8,
+  height = 16,
+  pattern = "129",
 }
 
 teletransporter{
@@ -21348,6 +21610,78 @@ teletransporter{
   transition = "scrolling",
   destination_map = "out/f3",
   destination = "_side",
+}
+
+wall{
+  layer = 1,
+  x = 1864,
+  y = 744,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1456,
+  y = 288,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1440,
+  y = 672,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1776,
+  y = 808,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1216,
+  y = 608,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  layer = 1,
+  x = 1296,
+  y = 701,
+  direction = 1,
 }
 
 tile{
@@ -23748,6 +24082,51 @@ tile{
   layer = 2,
   x = 1552,
   y = 744,
+  width = 64,
+  height = 56,
+  pattern = "174",
+}
+
+tile{
+  layer = 2,
+  x = 1856,
+  y = 720,
+  width = 64,
+  height = 56,
+  pattern = "174",
+}
+
+tile{
+  layer = 2,
+  x = 1448,
+  y = 264,
+  width = 64,
+  height = 56,
+  pattern = "174",
+}
+
+tile{
+  layer = 2,
+  x = 1432,
+  y = 648,
+  width = 64,
+  height = 56,
+  pattern = "174",
+}
+
+tile{
+  layer = 2,
+  x = 1768,
+  y = 784,
+  width = 64,
+  height = 56,
+  pattern = "174",
+}
+
+tile{
+  layer = 2,
+  x = 1208,
+  y = 584,
   width = 64,
   height = 56,
   pattern = "174",
