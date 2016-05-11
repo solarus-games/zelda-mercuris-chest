@@ -32322,6 +32322,15 @@ tile{
   pattern = "hedge.corner.2",
 }
 
+tile{
+  layer = 2,
+  x = 568,
+  y = 144,
+  width = 32,
+  height = 24,
+  pattern = "213",
+}
+
 teletransporter{
   layer = 2,
   x = 0,
