@@ -10106,7 +10106,6 @@ tile_pattern{
   y = { 424, 424, 424 },
   width = 16,
   height = 16,
-  repeat_mode = "horizontal",
 }
 
 tile_pattern{
