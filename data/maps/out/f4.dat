@@ -1180,28 +1180,6 @@ tile{
   pattern = "water.rock",
 }
 
-teletransporter{
-  layer = 0,
-  x = -16,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/d4",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 0,
-  x = 0,
-  y = -16,
-  width = 1024,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/f3",
-  destination = "_side",
-}
-
 tile{
   layer = 1,
   x = 352,
@@ -3515,17 +3493,6 @@ tile{
   pattern = "grass.high_grass.under",
 }
 
-teletransporter{
-  layer = 1,
-  x = -16,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/d4",
-  destination = "_side",
-}
-
 jumper{
   layer = 1,
   x = 64,
@@ -3595,13 +3562,24 @@ jumper{
 }
 
 teletransporter{
-  layer = 1,
+  layer = 2,
   x = 0,
   y = -16,
   width = 1024,
   height = 16,
   transition = "scrolling",
   destination_map = "out/f3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d4",
   destination = "_side",
 }
 

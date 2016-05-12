@@ -309,12 +309,12 @@ tile{
 
 teletransporter{
   layer = 0,
-  x = 2048,
+  x = -16,
   y = 0,
   width = 16,
   height = 1024,
   transition = "scrolling",
-  destination_map = "out/f4",
+  destination_map = "out/c4",
   destination = "_side",
 }
 
@@ -13570,8 +13570,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 16,
-  y = 416,
+  x = 24,
+  y = 408,
   width = 16,
   height = 16,
   pattern = "grass.under_sign",
@@ -22910,6 +22910,42 @@ tile{
   pattern = "water.rock",
 }
 
+tile{
+  layer = 1,
+  x = 0,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "fence_stone.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = "fence_stone.pillar",
+}
+
 wall{
   layer = 1,
   x = 968,
@@ -23053,17 +23089,6 @@ wall{
   stops_projectiles = true,
 }
 
-teletransporter{
-  layer = 1,
-  x = 2048,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/f4",
-  destination = "_side",
-}
-
 wall{
   layer = 1,
   x = 1648,
@@ -23114,8 +23139,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 24,
-  y = 429,
+  x = 32,
+  y = 421,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
@@ -23528,17 +23553,6 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-teletransporter{
-  layer = 1,
-  x = 0,
-  y = -16,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d3",
-  destination = "_side",
 }
 
 wall{
@@ -24022,6 +24036,28 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+teletransporter{
+  layer = 1,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/c4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 1,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d3",
+  destination = "_side",
 }
 
 tile{
@@ -32331,17 +32367,6 @@ tile{
   pattern = "213",
 }
 
-teletransporter{
-  layer = 2,
-  x = 0,
-  y = -16,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d3",
-  destination = "_side",
-}
-
 sensor{
   name = "layer_down_sensor",
   layer = 2,
@@ -32427,6 +32452,28 @@ jumper{
   jump_length = 16,
 }
 
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/c4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d3",
+  destination = "_side",
+}
+
 tile{
   layer = 3,
   x = 968,
@@ -32452,5 +32499,27 @@ tile{
   width = 64,
   height = 24,
   pattern = "237",
+}
+
+teletransporter{
+  layer = 3,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 3,
+  x = 2048,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f4",
+  destination = "_side",
 }
 

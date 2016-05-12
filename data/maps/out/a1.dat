@@ -1,0 +1,43 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "overworld",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  pattern = "water",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 2048,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/a3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = 0,
+  width = 16,
+  height = 2048,
+  transition = "scrolling",
+  destination_map = "out/c1",
+  destination = "_side",
+}
+

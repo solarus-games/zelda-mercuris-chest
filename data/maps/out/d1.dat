@@ -1,0 +1,286 @@
+properties{
+  x = 3072,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "dark_mountain",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 16,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 48,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 64,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 80,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 96,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 112,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 1312,
+  width = 688,
+  height = 160,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 992,
+  width = 16,
+  height = 224,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 992,
+  width = 16,
+  height = 224,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 992,
+  width = 16,
+  height = 224,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 992,
+  width = 16,
+  height = 224,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 992,
+  width = 16,
+  height = 224,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 1264,
+  y = 2000,
+  width = 104,
+  height = 48,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 2032,
+  width = 256,
+  height = 16,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 1968,
+  width = 96,
+  height = 80,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 1968,
+  width = 16,
+  height = 80,
+  pattern = "forest.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1968,
+  width = 16,
+  height = 80,
+  pattern = "forest.3",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 1968,
+  width = 8,
+  height = 80,
+  pattern = "grass.soil.4",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 1968,
+  width = 32,
+  height = 80,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1968,
+  width = 8,
+  height = 80,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 2032,
+  width = 16,
+  height = 16,
+  pattern = "forest.4",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 2032,
+  width = 16,
+  height = 16,
+  pattern = "forest.3",
+}
+
+tile{
+  layer = 1,
+  x = 1280,
+  y = 2040,
+  width = 16,
+  height = 16,
+  pattern = "forest.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 1264,
+  y = 2024,
+  width = 16,
+  height = 16,
+  pattern = "forest.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 1264,
+  y = 2040,
+  width = 16,
+  height = 16,
+  pattern = "forest.corner_reverse.2",
+}
+
+tile{
+  layer = 1,
+  x = 1272,
+  y = 2016,
+  width = 32,
+  height = 32,
+  pattern = "grass.tree_small.green.2",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 2048,
+  transition = "scrolling",
+  destination_map = "out/c1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 2048,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d3",
+  destination = "_side",
+}
+

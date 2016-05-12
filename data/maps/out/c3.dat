@@ -1,0 +1,235 @@
+properties{
+  x = 2048,
+  y = 2048,
+  width = 1024,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "overworld",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 848,
+  width = 64,
+  height = 16,
+  pattern = "forest.1",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 768,
+  width = 64,
+  height = 16,
+  pattern = "forest.2",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 536,
+  width = 112,
+  height = 64,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 592,
+  width = 112,
+  height = 16,
+  pattern = "forest.1",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 528,
+  width = 112,
+  height = 16,
+  pattern = "forest.2",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 512,
+  width = 112,
+  height = 64,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 544,
+  width = 192,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 504,
+  width = 256,
+  height = 104,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 384,
+  width = 240,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 440,
+  width = 200,
+  height = 80,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 584,
+  width = 192,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 632,
+  width = 192,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 688,
+  width = 192,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 752,
+  width = 168,
+  height = 80,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 320,
+  width = 192,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 248,
+  width = 192,
+  height = 88,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 192,
+  width = 160,
+  height = 96,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 440,
+  width = 160,
+  height = 64,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 480,
+  width = 128,
+  height = 64,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 80,
+  height = 192,
+  pattern = "water",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/c4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/a3",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/c1",
+  destination = "_side",
+}
+

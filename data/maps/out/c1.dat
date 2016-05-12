@@ -1,0 +1,1097 @@
+properties{
+  x = 2048,
+  y = 0,
+  width = 1024,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "overworld",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 176,
+  width = 8,
+  height = 128,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 624,
+  height = 672,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 136,
+  width = 144,
+  height = 8,
+  pattern = "tower.floor.1",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 408,
+  width = 304,
+  height = 824,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1856,
+  width = 80,
+  height = 192,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1216,
+  width = 176,
+  height = 640,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 400,
+  width = 48,
+  height = 16,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 416,
+  width = 48,
+  height = 32,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = "water.cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "tower.steps.bottom.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "tower.steps.bottom.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 416,
+  width = 8,
+  height = 40,
+  pattern = "tower.steps.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 416,
+  width = 8,
+  height = 40,
+  pattern = "tower.steps.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 416,
+  width = 16,
+  height = 48,
+  pattern = "tower.steps",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 0,
+  width = 16,
+  height = 304,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 0,
+  width = 16,
+  height = 304,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 0,
+  width = 16,
+  height = 144,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 0,
+  width = 16,
+  height = 128,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 0,
+  width = 16,
+  height = 112,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner_reverse.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "sand.cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "sand.cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "sand.cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner_reverse.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner_reverse.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 400,
+  width = 8,
+  height = 176,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 400,
+  width = 16,
+  height = 176,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 400,
+  width = 16,
+  height = 176,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 464,
+  width = 48,
+  height = 16,
+  pattern = "water.cliff_wave.1",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 240,
+  width = 240,
+  height = 160,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 392,
+  width = 48,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow",
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 320,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 320,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 344,
+  width = 176,
+  height = 8,
+  pattern = "tower.floor.shadow.2",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 352,
+  width = 192,
+  height = 8,
+  pattern = "tower.floor.2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 360,
+  width = 72,
+  height = 24,
+  pattern = "tower.wall_yellow",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 360,
+  width = 8,
+  height = 56,
+  pattern = "tower.steps.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = 360,
+  width = 8,
+  height = 56,
+  pattern = "tower.steps.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 360,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 360,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 360,
+  width = 72,
+  height = 24,
+  pattern = "tower.wall_yellow",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 352,
+  width = 32,
+  height = 40,
+  pattern = "tower.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 352,
+  width = 32,
+  height = 40,
+  pattern = "tower.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 344,
+  width = 16,
+  height = 72,
+  pattern = "tower.steps",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "tower.entrance",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "tower.entrance.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "tower.entrance.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 320,
+  width = 64,
+  height = 24,
+  pattern = "tower.wall_yellow",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 320,
+  width = 64,
+  height = 24,
+  pattern = "tower.wall_yellow",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 312,
+  width = 8,
+  height = 32,
+  pattern = "tower.floor.shadow.4",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 312,
+  width = 8,
+  height = 32,
+  pattern = "tower.floor.shadow.3",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 264,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.3",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 264,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.4",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = 344,
+  width = 8,
+  height = 16,
+  pattern = "tower.steps.top.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 344,
+  width = 8,
+  height = 16,
+  pattern = "tower.steps.top.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.4",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow",
+}
+
+tile{
+  layer = 2,
+  x = 488,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 304,
+  width = 160,
+  height = 8,
+  pattern = "tower.floor.shadow.2",
+}
+
+tile{
+  layer = 2,
+  x = 504,
+  y = 272,
+  width = 8,
+  height = 32,
+  pattern = "tower.floor.shadow.4",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 272,
+  width = 8,
+  height = 32,
+  pattern = "tower.floor.shadow.3",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow.corner.3",
+}
+
+tile{
+  layer = 2,
+  x = 504,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow.corner.4",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 264,
+  width = 144,
+  height = 8,
+  pattern = "tower.floor.shadow.2",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 232,
+  width = 8,
+  height = 32,
+  pattern = "tower.floor.shadow.4",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 232,
+  width = 8,
+  height = 32,
+  pattern = "tower.floor.shadow.3",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 264,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow.corner.3",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 264,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.shadow.corner.4",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 144,
+  width = 144,
+  height = 88,
+  pattern = "tower.floor",
+}
+
+tile{
+  layer = 2,
+  x = 328,
+  y = 224,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.3",
+}
+
+tile{
+  layer = 2,
+  x = 328,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 184,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.3",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 144,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.3",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 512,
+  y = 224,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.4",
+}
+
+tile{
+  layer = 2,
+  x = 512,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 504,
+  y = 184,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.4",
+}
+
+tile{
+  layer = 2,
+  x = 504,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 144,
+  width = 8,
+  height = 88,
+  pattern = "tower.floor.4",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 312,
+  width = 176,
+  height = 8,
+  pattern = "tower.floor.2",
+}
+
+tile{
+  layer = 2,
+  x = 328,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.3",
+}
+
+tile{
+  layer = 2,
+  x = 512,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.4",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 272,
+  width = 160,
+  height = 8,
+  pattern = "tower.floor.2",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.3",
+}
+
+tile{
+  layer = 2,
+  x = 504,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.4",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 232,
+  width = 144,
+  height = 8,
+  pattern = "tower.floor.2",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.4",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "tower.floor.corner.3",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 280,
+  width = 144,
+  height = 24,
+  pattern = "tower.wall_yellow",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 360,
+  y = 240,
+  width = 128,
+  height = 24,
+  pattern = "tower.wall_yellow",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 240,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.1",
+}
+
+tile{
+  layer = 2,
+  x = 488,
+  y = 240,
+  width = 8,
+  height = 24,
+  pattern = "tower.wall.corner.2",
+}
+
+tile{
+  layer = 2,
+  x = 408,
+  y = 320,
+  width = 32,
+  height = 8,
+  pattern = "tower.entrance.top",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 2048,
+  transition = "scrolling",
+  destination_map = "out/a1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 2048,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/c3",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 0,
+  width = 16,
+  height = 2048,
+  transition = "scrolling",
+  destination_map = "out/d1",
+  destination = "_side",
+}
+

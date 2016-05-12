@@ -532,17 +532,6 @@ tile{
   pattern = "cliff.top.1",
 }
 
-teletransporter{
-  layer = 0,
-  x = 0,
-  y = 1024,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d4",
-  destination = "_side",
-}
-
 sensor{
   name = "layer_up_sensor_1",
   layer = 0,
@@ -550,17 +539,6 @@ sensor{
   y = 461,
   width = 16,
   height = 64,
-}
-
-teletransporter{
-  layer = 0,
-  x = 2048,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/f3",
-  destination = "_side",
 }
 
 tile{
@@ -21857,15 +21835,31 @@ tile{
   pattern = "leaf.1",
 }
 
-teletransporter{
+tile{
   layer = 1,
-  x = 0,
-  y = 1024,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d4",
-  destination = "_side",
+  x = 168,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "dirt.stone_small",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "dirt.stone_small",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "leaf.1",
 }
 
 pickable{
@@ -22643,17 +22637,6 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-teletransporter{
-  layer = 1,
-  x = 2048,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/f3",
-  destination = "_side",
 }
 
 wall{
@@ -25529,6 +25512,28 @@ teletransporter{
   height = 1024,
   transition = "scrolling",
   destination_map = "out/f3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/c3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d1",
   destination = "_side",
 }
 
