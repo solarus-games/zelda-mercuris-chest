@@ -7,20 +7,20 @@ map{ id = "lighthouse/3f", description = "Lighthouse 3F" }
 map{ id = "lighthouse/4f", description = "Lighthouse 4F" }
 map{ id = "lighthouse/b1", description = "Lighthouse B1" }
 map{ id = "lighthouse/outside", description = "Lighthouse outside" }
-map{ id = "out/a1", description = "A1-B1 - Islands" }
+map{ id = "out/a1", description = "A1-B2 - Islands" }
 map{ id = "out/a3", description = "A3-B4 - Sea" }
 map{ id = "out/a5", description = "A5-A6 - West Beach" }
 map{ id = "out/a7", description = "A7-B8 - Lost Woods" }
 map{ id = "out/b5", description = "B5-C6 - Red Plains" }
-map{ id = "out/c1", description = "C1-D1 - Lighthouse" }
+map{ id = "out/c1", description = "C1-C2 - Lighthouse" }
 map{ id = "out/c3", description = "C3 - Midjy village" }
 map{ id = "out/c4", description = "C4 - Crater" }
-map{ id = "out/c7", description = "C7 - Swamp" }
+map{ id = "out/c7", description = "C7-C8 - Swamp" }
 map{ id = "out/d1", description = "D1-E2 - Mountain" }
 map{ id = "out/d3", description = "D3-E3 - Torin Forest" }
 map{ id = "out/d4", description = "D4-E5 - Town" }
 map{ id = "out/d6", description = "D6-E7 - Purple Plains" }
-map{ id = "out/d8", description = "D8 - Park" }
+map{ id = "out/d8", description = "D8-F8 - Park" }
 map{ id = "out/f1", description = "F1 - Cordillera" }
 map{ id = "out/f2", description = "F2 - Waterfall" }
 map{ id = "out/f3", description = "F3-G3 - Lake" }
