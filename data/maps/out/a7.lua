@@ -51,7 +51,7 @@ function map:on_draw(dst_surface)
 
   -- Make the overlay scroll with the camera, but slightly faster to make
   -- a depth effect.
-  local camera_x, camera_y = map:get_camera_position()
+  local camera_x, camera_y = map:get_camera():get_position()
   local overlay_width, overlay_height = overlay:get_size()
   local screen_width, screen_height = dst_surface:get_size()
   local x, y = camera_x + overlay_offset_x, camera_y + overlay_offset_y
