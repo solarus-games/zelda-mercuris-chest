@@ -1,0 +1,81 @@
+properties{
+  x = 3072,
+  y = 7168,
+  width = 3072,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "overworld",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 3072,
+  height = 1024,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 72,
+  width = 3008,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 88,
+  width = 8,
+  height = 848,
+  pattern = "grass.barrier.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 3024,
+  y = 88,
+  width = 8,
+  height = 848,
+  pattern = "grass.barrier.border.2",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f7",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d6",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f7",
+  destination = "_side",
+}
+

@@ -1,0 +1,144 @@
+properties{
+  x = 7168,
+  y = 2048,
+  width = 1024,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "dark_world",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 1024,
+  height = 1024,
+  pattern = "sand.soil",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 32,
+  width = 80,
+  height = 64,
+  pattern = "ruins.slab.2",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 352,
+  width = 48,
+  height = 64,
+  pattern = "ruins.slab.2",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 760,
+  width = 96,
+  height = 64,
+  pattern = "ruins.slab.2",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 928,
+  width = 64,
+  height = 64,
+  pattern = "ruins.slab.2",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 920,
+  width = 128,
+  height = 64,
+  pattern = "ruins.slab.2",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 312,
+  width = 144,
+  height = 208,
+  pattern = "ruins.slab.2",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 968,
+  width = 32,
+  height = 32,
+  pattern = "ruins.statue",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 568,
+  width = 32,
+  height = 32,
+  pattern = "ruins.statue",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "ruins.statue",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 40,
+  width = 32,
+  height = 32,
+  pattern = "ruins.statue",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g4",
+  destination = "_side",
+}
+

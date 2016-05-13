@@ -1,0 +1,184 @@
+properties{
+  x = 6144,
+  y = 3072,
+  width = 2048,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "dark_world",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 200,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 200,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 200,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 200,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 200,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 200,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 1264,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 1264,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 1264,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1264,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1264,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 1264,
+  width = 16,
+  height = 592,
+  pattern = "cliff.3",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/h3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 1024,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f5",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 2048,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g6",
+  destination = "_side",
+}
+

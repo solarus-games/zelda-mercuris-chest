@@ -7668,6 +7668,276 @@ tile{
   pattern = "invisible_wall",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 792,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 808,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 752,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 792,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 808,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 752,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 792,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 808,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 752,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 888,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 904,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 848,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 888,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 904,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 848,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 888,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 904,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 848,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -8688,6 +8958,168 @@ tile{
   width = 8,
   height = 16,
   pattern = "house.roof_leaves.4",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 736,
+  width = 8,
+  height = 64,
+  pattern = "6",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 736,
+  width = 48,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 736,
+  width = 8,
+  height = 64,
+  pattern = "4",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 736,
+  width = 48,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 736,
+  width = 8,
+  height = 64,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 736,
+  width = 8,
+  height = 64,
+  pattern = "7",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 728,
+  width = 8,
+  height = 72,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 728,
+  width = 48,
+  height = 72,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 728,
+  width = 8,
+  height = 72,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 832,
+  width = 8,
+  height = 64,
+  pattern = "17",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 832,
+  width = 8,
+  height = 64,
+  pattern = "15",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 832,
+  width = 48,
+  height = 64,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 832,
+  width = 8,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 832,
+  width = 48,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 832,
+  width = 8,
+  height = 64,
+  pattern = "18",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 824,
+  width = 48,
+  height = 72,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 824,
+  width = 8,
+  height = 72,
+  pattern = "23",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 824,
+  width = 8,
+  height = 72,
+  pattern = "21",
 }
 
 dynamic_tile{

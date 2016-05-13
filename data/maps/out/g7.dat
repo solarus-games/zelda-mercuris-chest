@@ -1,0 +1,54 @@
+properties{
+  x = 6144,
+  y = 6144,
+  width = 2048,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "dark_world",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 24,
+  width = 2000,
+  height = 2000,
+  pattern = "sand.floor_big",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g6",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f7",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 1024,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d8",
+  destination = "_side",
+}
+

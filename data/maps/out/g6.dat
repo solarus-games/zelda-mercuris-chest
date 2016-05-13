@@ -1,0 +1,72 @@
+properties{
+  x = 6144,
+  y = 5120,
+  width = 2048,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "dark_world",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 1024,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 712,
+  width = 320,
+  height = 224,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 56,
+  width = 320,
+  height = 224,
+  pattern = "cliff.full.1",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f5",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g7",
+  destination = "_side",
+}
+

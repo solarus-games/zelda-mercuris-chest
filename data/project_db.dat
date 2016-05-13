@@ -7,18 +7,31 @@ map{ id = "lighthouse/3f", description = "Lighthouse 3F" }
 map{ id = "lighthouse/4f", description = "Lighthouse 4F" }
 map{ id = "lighthouse/b1", description = "Lighthouse B1" }
 map{ id = "lighthouse/outside", description = "Lighthouse outside" }
-map{ id = "out/a1", description = "A1-B1 - Tokay Island" }
-map{ id = "out/a3", description = "A3-B4 - Zora Sea" }
+map{ id = "out/a1", description = "A1-B1 - Islands" }
+map{ id = "out/a3", description = "A3-B4 - Sea" }
+map{ id = "out/a5", description = "A5-A6 - West Beach" }
 map{ id = "out/a7", description = "A7-B8 - Lost Woods" }
+map{ id = "out/b5", description = "B5-C6 - Red Plains" }
 map{ id = "out/c1", description = "C1-D1 - Lighthouse" }
 map{ id = "out/c3", description = "C3 - Midjy village" }
 map{ id = "out/c4", description = "C4 - Crater" }
-map{ id = "out/d1", description = "D1-E2 - Goron Mountain" }
+map{ id = "out/c7", description = "C7 - Swamp" }
+map{ id = "out/d1", description = "D1-E2 - Mountain" }
 map{ id = "out/d3", description = "D3-E3 - Torin Forest" }
 map{ id = "out/d4", description = "D4-E5 - Town" }
-map{ id = "out/e7", description = "E7 - Graveyard" }
+map{ id = "out/d6", description = "D6-E7 - Purple Plains" }
+map{ id = "out/d8", description = "D8 - Park" }
+map{ id = "out/f1", description = "F1 - Cordillera" }
+map{ id = "out/f2", description = "F2 - Waterfall" }
 map{ id = "out/f3", description = "F3-G3 - Lake" }
 map{ id = "out/f4", description = "F4 - Castle" }
+map{ id = "out/f5", description = "F5-F6 - Yellow Plains" }
+map{ id = "out/f7", description = "F7 - Graveyard" }
+map{ id = "out/g1", description = "G1-H2 - Volcano" }
+map{ id = "out/g4", description = "G4-H5 - Valley" }
+map{ id = "out/g6", description = "G6-H6 - Mine" }
+map{ id = "out/g7", description = "G7-H8 - Desert" }
+map{ id = "out/h3", description = "H3 - East Ruins" }
 map{ id = "outside_store", description = "Outside Store" }
 map{ id = "rail_temple/1f", description = "Rail Temple 1F" }
 map{ id = "rail_temple/b1", description = "Rail Temple B1" }

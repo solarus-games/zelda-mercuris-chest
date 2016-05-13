@@ -1,0 +1,91 @@
+properties{
+  x = 5120,
+  y = 1024,
+  width = 1024,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "la_mountains",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 208,
+  width = 688,
+  height = 160,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 736,
+  width = 864,
+  height = 288,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 736,
+  width = 48,
+  height = 288,
+  pattern = "waterfall",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 736,
+  width = 80,
+  height = 288,
+  pattern = "waterfall",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/g1",
+}
+

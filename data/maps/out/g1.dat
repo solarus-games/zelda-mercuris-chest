@@ -1,0 +1,155 @@
+properties{
+  x = 6144,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "dark_mountain",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 16,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 48,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 64,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 80,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 96,
+  width = 2048,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 112,
+  width = 2064,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 208,
+  width = 400,
+  height = 288,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 1600,
+  width = 400,
+  height = 288,
+  pattern = "cliff.full.1",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 1560,
+  width = 400,
+  height = 288,
+  pattern = "cliff.full.1",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 1024,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/f2",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 2048,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 2048,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/h3",
+  destination = "_side",
+}
+

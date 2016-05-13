@@ -1,0 +1,136 @@
+properties{
+  x = 4096,
+  y = 7168,
+  width = 1024,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 1024,
+  height = 1024,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 16,
+  width = 80,
+  height = 96,
+  pattern = "cemetary.slab",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 32,
+  width = 80,
+  height = 96,
+  pattern = "cemetary.slab",
+}
+
+tile{
+  layer = 1,
+  x = 896,
+  y = 416,
+  width = 80,
+  height = 96,
+  pattern = "cemetary.slab",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 424,
+  width = 64,
+  height = 48,
+  pattern = "cemetary.slab",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 40,
+  width = 32,
+  height = 32,
+  pattern = "gravestone",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "gravestone",
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = "gravestone",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 424,
+  width = 32,
+  height = 32,
+  pattern = "gravestone",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d8",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d6",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/g7",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f5",
+  destination = "_side",
+}
+

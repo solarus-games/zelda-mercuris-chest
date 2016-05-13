@@ -219,7 +219,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 928,
+  x = 808,
   y = 0,
   width = 48,
   height = 192,
@@ -228,7 +228,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1120,
+  x = 1232,
   y = 0,
   width = 112,
   height = 192,
@@ -237,7 +237,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 928,
+  x = 808,
   y = 192,
   width = 48,
   height = 16,
@@ -246,7 +246,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1120,
+  x = 1232,
   y = 192,
   width = 112,
   height = 16,
@@ -291,7 +291,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 768,
+  x = 648,
   y = 0,
   width = 80,
   height = 192,
@@ -300,7 +300,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 768,
+  x = 648,
   y = 192,
   width = 80,
   height = 16,
@@ -443,6 +443,50 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "out/f4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f2",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/h3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g4",
   destination = "_side",
 }
 

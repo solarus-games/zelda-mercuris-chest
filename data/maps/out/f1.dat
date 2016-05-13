@@ -1,0 +1,126 @@
+properties{
+  x = 5120,
+  y = 0,
+  width = 1024,
+  height = 1024,
+  min_layer = 0,
+  max_layer = 2,
+  world = "outside",
+  tileset = "light_world",
+  music = "la_mountains",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 1024,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 16,
+  width = 1040,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 1024,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 48,
+  width = 1040,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 64,
+  width = 1024,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 80,
+  width = 1040,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 96,
+  width = 1024,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 112,
+  width = 1040,
+  height = 16,
+  pattern = "forest_parallax.trees",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 304,
+  width = 864,
+  height = 224,
+  pattern = "cliff.full.1",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/d1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f2",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 1024,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/g1",
+  destination = "_side",
+}
+

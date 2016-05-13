@@ -658,6 +658,294 @@ tile{
   pattern = "forest.corner_reverse.3",
 }
 
+tile{
+  layer = 1,
+  x = 112,
+  y = 952,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 968,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 912,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 944,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 944,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 872,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 888,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 832,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 864,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 864,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 984,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 1000,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 944,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 976,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 976,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 968,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 984,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 928,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 960,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 1,
+  x = 776,
+  y = 960,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 896,
+  width = 8,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 896,
+  width = 48,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 896,
+  width = 8,
+  height = 64,
+  pattern = "18",
+}
+
+tile{
+  layer = 2,
+  x = 368,
+  y = 816,
+  width = 48,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 816,
+  width = 8,
+  height = 64,
+  pattern = "9",
+}
+
+tile{
+  layer = 2,
+  x = 360,
+  y = 816,
+  width = 8,
+  height = 64,
+  pattern = "7",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 928,
+  width = 8,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 2,
+  x = 600,
+  y = 928,
+  width = 48,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 928,
+  width = 8,
+  height = 64,
+  pattern = "18",
+}
+
+tile{
+  layer = 2,
+  x = 784,
+  y = 912,
+  width = 48,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 2,
+  x = 832,
+  y = 912,
+  width = 8,
+  height = 64,
+  pattern = "9",
+}
+
+tile{
+  layer = 2,
+  x = 776,
+  y = 912,
+  width = 8,
+  height = 64,
+  pattern = "7",
+}
+
 teletransporter{
   layer = 2,
   x = 1024,
@@ -666,6 +954,39 @@ teletransporter{
   height = 1024,
   transition = "scrolling",
   destination_map = "out/d4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/a3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/c3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/b5",
   destination = "_side",
 }
 
