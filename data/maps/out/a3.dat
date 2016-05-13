@@ -117,6 +117,7 @@ teletransporter{
   height = 1024,
   transition = "scrolling",
   destination_map = "out/c4",
+  destination = "_side",
 }
 
 teletransporter{

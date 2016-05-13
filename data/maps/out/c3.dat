@@ -220,6 +220,7 @@ teletransporter{
   height = 1024,
   transition = "scrolling",
   destination_map = "out/a3",
+  destination = "_side",
 }
 
 teletransporter{

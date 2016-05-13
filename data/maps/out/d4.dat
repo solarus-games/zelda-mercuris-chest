@@ -307,28 +307,6 @@ tile{
   pattern = "water.rock",
 }
 
-teletransporter{
-  layer = 0,
-  x = -16,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/c4",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 0,
-  x = 0,
-  y = -16,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d3",
-  destination = "_side",
-}
-
 tile{
   layer = 1,
   x = 544,
@@ -24038,28 +24016,6 @@ wall{
   stops_projectiles = true,
 }
 
-teletransporter{
-  layer = 1,
-  x = -16,
-  y = 0,
-  width = 16,
-  height = 1024,
-  transition = "scrolling",
-  destination_map = "out/c4",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 1,
-  x = 0,
-  y = -16,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d3",
-  destination = "_side",
-}
-
 tile{
   layer = 2,
   x = 1000,
@@ -32481,7 +32437,7 @@ teletransporter{
   width = 16,
   height = 1024,
   transition = "scrolling",
-  destination_map = "out/d6",
+  destination_map = "out/b5",
   destination = "_side",
 }
 
@@ -32521,17 +32477,6 @@ tile{
   width = 64,
   height = 24,
   pattern = "237",
-}
-
-teletransporter{
-  layer = 3,
-  x = 8,
-  y = -16,
-  width = 2048,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "out/d3",
-  destination = "_side",
 }
 
 teletransporter{

@@ -53,7 +53,7 @@ teletransporter{
   width = 16,
   height = 1024,
   transition = "scrolling",
-  destination_map = "out/f7",
+  destination_map = "out/c7",
   destination = "_side",
 }
 
@@ -76,6 +76,17 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "out/f7",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 3072,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/g7",
   destination = "_side",
 }
 

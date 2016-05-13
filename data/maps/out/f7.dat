@@ -1,12 +1,13 @@
 properties{
-  x = 4096,
-  y = 7168,
+  x = 5120,
+  y = 6144,
   width = 1024,
   height = 1024,
   min_layer = 0,
   max_layer = 2,
   world = "outside",
   tileset = "light_world",
+  music = "overworld",
 }
 
 tile{

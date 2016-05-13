@@ -830,6 +830,24 @@ tile{
 }
 
 tile{
+  layer = 1,
+  x = 2000,
+  y = 632,
+  width = 48,
+  height = 16,
+  pattern = "hedge.1",
+}
+
+tile{
+  layer = 1,
+  x = 2000,
+  y = 560,
+  width = 48,
+  height = 16,
+  pattern = "hedge.1",
+}
+
+tile{
   layer = 2,
   x = 56,
   y = 32,
@@ -1313,6 +1331,24 @@ tile{
   width = 8,
   height = 64,
   pattern = "18",
+}
+
+tile{
+  layer = 2,
+  x = 2000,
+  y = 624,
+  width = 48,
+  height = 8,
+  pattern = "hedge.2",
+}
+
+tile{
+  layer = 2,
+  x = 2000,
+  y = 552,
+  width = 48,
+  height = 8,
+  pattern = "hedge.2",
 }
 
 teletransporter{
