@@ -127,6 +127,60 @@ tile{
   pattern = "cliff.3",
 }
 
+tile{
+  layer = 0,
+  x = 736,
+  y = 0,
+  width = 176,
+  height = 128,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 96,
+  width = 152,
+  height = 192,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 288,
+  width = 96,
+  height = 208,
+  pattern = "waterfall",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 384,
+  width = 16,
+  height = 288,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 384,
+  width = 16,
+  height = 288,
+  pattern = "cliff.3",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 384,
+  width = 16,
+  height = 288,
+  pattern = "cliff.3",
+}
+
 teletransporter{
   layer = 2,
   x = 0,
