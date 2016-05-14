@@ -13,7 +13,7 @@ properties{
 tile{
   layer = 1,
   x = 0,
-  y = 0,
+  y = -8,
   width = 1024,
   height = 1024,
   pattern = "grass.soil",
@@ -89,6 +89,150 @@ tile{
   width = 32,
   height = 32,
   pattern = "gravestone",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 64,
+  width = 192,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 128,
+  width = 64,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone.pillar",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "24",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "24",
+}
+
+tile{
+  layer = 2,
+  x = 152,
+  y = 48,
+  width = 192,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 2,
+  x = 152,
+  y = 112,
+  width = 64,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "1",
+}
+
+tile{
+  layer = 2,
+  x = 136,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone.pillar.top",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "fence_stone.pillar.top",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "1",
+}
+
+tile{
+  layer = 2,
+  x = 24,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "25",
+}
+
+tile{
+  layer = 2,
+  x = 72,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "25",
 }
 
 teletransporter{
