@@ -1,5 +1,15 @@
 background_color{ 255, 255, 255 }
 tile_pattern{
+  id = "1",
+  ground = "wall",
+  default_layer = 0,
+  x = 280,
+  y = 120,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "10",
   ground = "wall",
   default_layer = 0,
@@ -1877,6 +1887,16 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 8,
+}
+
+tile_pattern{
+  id = "2",
+  ground = "wall",
+  default_layer = 1,
+  x = 280,
+  y = 104,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
@@ -6427,16 +6447,6 @@ tile_pattern{
   y = 144,
   width = 8,
   height = 8,
-}
-
-tile_pattern{
-  id = "804",
-  ground = "wall",
-  default_layer = 0,
-  x = 280,
-  y = 104,
-  width = 16,
-  height = 32,
 }
 
 tile_pattern{
