@@ -9122,6 +9122,213 @@ tile{
   pattern = "21",
 }
 
+tile{
+  layer = 1,
+  x = 200,
+  y = 672,
+  width = 16,
+  height = 40,
+  pattern = "ladder",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 672,
+  width = 8,
+  height = 40,
+  pattern = "ladder.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 672,
+  width = 8,
+  height = 40,
+  pattern = "ladder.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 776,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "grass.cliff.end_right.4",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "grass.cliff.end_left.4",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "grass.cliff.end_left.5",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_left.1",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "grass.cliff.end_left.3",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "grass.cliff.end_left.4",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_left.2",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "cliff.end_left",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_right.1",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "grass.cliff.end_right.4",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "cliff.end_right",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "grass.cliff.end_right.3",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "grass.cliff.end_right.5",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_right.2",
+}
+
+tile{
+  layer = 1,
+  x = 760,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.1",
+}
+
 dynamic_tile{
   name = "invisible_tile_2",
   layer = 1,
@@ -9175,6 +9382,27 @@ sensor{
   height = 16,
 }
 
+wall{
+  layer = 1,
+  x = 200,
+  y = 672,
+  width = 16,
+  height = 40,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "to_layer_1_sensor_2",
+  layer = 1,
+  x = 208,
+  y = 701,
+  width = 16,
+  height = 16,
+}
+
 tile{
   layer = 2,
   x = 608,
@@ -9200,5 +9428,58 @@ tile{
   width = 32,
   height = 8,
   pattern = "cave_entrance_blast.top",
+}
+
+dynamic_tile{
+  name = "invisible_tile_4",
+  layer = 2,
+  x = 200,
+  y = 672,
+  pattern = "ladder",
+  width = 16,
+  height = 40,
+  enabled_at_start = true,
+}
+
+wall{
+  layer = 2,
+  x = 200,
+  y = 672,
+  width = 16,
+  height = 40,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+dynamic_tile{
+  name = "invisible_tile_5",
+  layer = 2,
+  x = 192,
+  y = 672,
+  pattern = "ladder.border.1",
+  width = 8,
+  height = 40,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "invisible_tile_6",
+  layer = 2,
+  x = 216,
+  y = 672,
+  pattern = "ladder.border.2",
+  width = 8,
+  height = 40,
+  enabled_at_start = true,
+}
+
+sensor{
+  name = "to_layer_0_sensor_2",
+  layer = 2,
+  x = 208,
+  y = 709,
+  width = 16,
+  height = 16,
 }
 
