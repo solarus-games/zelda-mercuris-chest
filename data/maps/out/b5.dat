@@ -354,6 +354,24 @@ tile{
 
 tile{
   layer = 1,
+  x = 1912,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 1928,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.1",
+}
+
+tile{
+  layer = 1,
   x = 56,
   y = 88,
   width = 48,
@@ -1326,15 +1344,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1912,
-  y = 736,
-  width = 8,
-  height = 8,
-  pattern = "grass.cliff.end_left.5",
-}
-
-tile{
-  layer = 1,
   x = 1936,
   y = 736,
   width = 16,
@@ -1376,15 +1385,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "grass.cliff.top.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 1928,
-  y = 720,
-  width = 8,
-  height = 8,
-  pattern = "grass.cliff.end_left.5",
 }
 
 tile{
@@ -1547,15 +1547,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "grass.tree_small.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 1792,
-  y = 736,
-  width = 8,
-  height = 8,
-  pattern = "grass.cliff.end_right.5",
 }
 
 tile{
@@ -8594,6 +8585,15 @@ tile{
   width = 32,
   height = 32,
   pattern = "grass.stump",
+}
+
+tile{
+  layer = 1,
+  x = 1784,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.top.border.diag.2",
 }
 
 npc{
