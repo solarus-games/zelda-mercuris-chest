@@ -347,8 +347,8 @@ tile{
   layer = 1,
   x = 0,
   y = -8,
-  width = 2048,
-  height = 2048,
+  width = 1152,
+  height = 456,
   pattern = "grass.soil",
 }
 
