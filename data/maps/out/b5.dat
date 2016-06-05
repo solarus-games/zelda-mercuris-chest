@@ -8911,6 +8911,33 @@ tile{
   pattern = "grass.barrier.border.1",
 }
 
+tile{
+  layer = 1,
+  x = 56,
+  y = 96,
+  width = 96,
+  height = 40,
+  pattern = "tree.under",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -36955,35 +36982,8 @@ tile{
 tile{
   layer = 2,
   x = 56,
-  y = 96,
-  width = 96,
-  height = 40,
-  pattern = "tree.under",
-}
-
-tile{
-  layer = 2,
-  x = 48,
-  y = 128,
-  width = 8,
-  height = 16,
-  pattern = "grass.tree.roots.3",
-}
-
-tile{
-  layer = 2,
-  x = 152,
-  y = 128,
-  width = 8,
-  height = 16,
-  pattern = "grass.tree.roots.4",
-}
-
-tile{
-  layer = 2,
-  x = 56,
   y = 80,
-  width = 48,
+  width = 96,
   height = 64,
   pattern = "19",
 }
@@ -37009,17 +37009,8 @@ tile{
 tile{
   layer = 2,
   x = 104,
-  y = 80,
-  width = 48,
-  height = 64,
-  pattern = "19",
-}
-
-tile{
-  layer = 2,
-  x = 104,
   y = 128,
-  width = 48,
+  width = 96,
   height = 64,
   pattern = "8",
 }
@@ -37031,15 +37022,6 @@ tile{
   width = 8,
   height = 64,
   pattern = "7",
-}
-
-tile{
-  layer = 2,
-  x = 152,
-  y = 128,
-  width = 48,
-  height = 64,
-  pattern = "8",
 }
 
 tile{
