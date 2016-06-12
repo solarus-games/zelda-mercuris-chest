@@ -390,7 +390,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
+  x = 80,
   y = 88,
   width = 48,
   height = 16,
@@ -399,7 +399,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
+  x = 80,
   y = 104,
   width = 48,
   height = 8,
@@ -408,7 +408,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
+  x = 80,
   y = 48,
   width = 48,
   height = 40,
@@ -417,7 +417,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 104,
+  x = 128,
   y = 80,
   width = 8,
   height = 16,
@@ -426,7 +426,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 48,
+  x = 72,
   y = 80,
   width = 8,
   height = 16,
@@ -8616,7 +8616,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 104,
+  x = 80,
   y = 184,
   width = 96,
   height = 16,
@@ -8625,7 +8625,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 104,
+  x = 80,
   y = 200,
   width = 96,
   height = 8,
@@ -8634,7 +8634,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 96,
+  x = 72,
   y = 176,
   width = 8,
   height = 16,
@@ -8643,7 +8643,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 200,
+  x = 176,
   y = 176,
   width = 8,
   height = 16,
@@ -8652,7 +8652,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 104,
+  x = 80,
   y = 144,
   width = 96,
   height = 40,
@@ -9307,6 +9307,15 @@ tile{
   pattern = "grass.tree.roots.3",
 }
 
+tile{
+  layer = 1,
+  x = 264,
+  y = 688,
+  width = 48,
+  height = 16,
+  pattern = "grass.cliff.1",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -9342,7 +9351,7 @@ chest{
 
 tile{
   layer = 2,
-  x = 56,
+  x = 80,
   y = 32,
   width = 48,
   height = 64,
@@ -9351,7 +9360,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 104,
+  x = 128,
   y = 32,
   width = 8,
   height = 64,
@@ -9360,7 +9369,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 48,
+  x = 72,
   y = 32,
   width = 8,
   height = 64,
@@ -34210,15 +34219,6 @@ tile{
 tile{
   layer = 2,
   x = 264,
-  y = 688,
-  width = 48,
-  height = 16,
-  pattern = "grass.cliff.1",
-}
-
-tile{
-  layer = 2,
-  x = 264,
   y = 672,
   width = 48,
   height = 16,
@@ -37224,7 +37224,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 104,
+  x = 80,
   y = 128,
   width = 96,
   height = 64,
@@ -37233,7 +37233,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 96,
+  x = 72,
   y = 128,
   width = 8,
   height = 64,
@@ -37242,7 +37242,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 200,
+  x = 176,
   y = 128,
   width = 8,
   height = 64,
