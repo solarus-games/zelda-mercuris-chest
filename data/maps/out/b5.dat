@@ -9316,6 +9316,15 @@ tile{
   pattern = "grass.cliff.1",
 }
 
+tile{
+  layer = 1,
+  x = 464,
+  y = 264,
+  width = 8,
+  height = 32,
+  pattern = "grass.stairs_down.border.3",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -42215,15 +42224,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "grass.barrier.border.1",
-}
-
-tile{
-  layer = 2,
-  x = 464,
-  y = 264,
-  width = 8,
-  height = 32,
-  pattern = "grass.stairs_down.border.3",
 }
 
 tile{
