@@ -2748,24 +2748,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 864,
-  y = 584,
-  width = 8,
-  height = 64,
-  pattern = "9",
-}
-
-tile{
-  layer = 1,
-  x = 808,
-  y = 584,
-  width = 8,
-  height = 64,
-  pattern = "7",
-}
-
-tile{
-  layer = 1,
   x = 632,
   y = 992,
   width = 32,
@@ -11321,6 +11303,51 @@ tile{
   width = 8,
   height = 16,
   pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 640,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 656,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 1,
+  x = 864,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.4",
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = "grass.tree.roots.3",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 600,
+  width = 48,
+  height = 40,
+  pattern = "tree.under",
 }
 
 npc{
@@ -29826,51 +29853,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 816,
-  y = 640,
-  width = 48,
-  height = 16,
-  pattern = "grass.tree.roots.1",
-}
-
-tile{
-  layer = 2,
-  x = 816,
-  y = 656,
-  width = 48,
-  height = 8,
-  pattern = "grass.tree.roots.2",
-}
-
-tile{
-  layer = 2,
-  x = 864,
-  y = 632,
-  width = 8,
-  height = 16,
-  pattern = "grass.tree.roots.4",
-}
-
-tile{
-  layer = 2,
-  x = 808,
-  y = 632,
-  width = 8,
-  height = 16,
-  pattern = "grass.tree.roots.3",
-}
-
-tile{
-  layer = 2,
-  x = 816,
-  y = 584,
-  width = 48,
-  height = 64,
-  pattern = "8",
-}
-
-tile{
-  layer = 2,
   x = 1392,
   y = 1536,
   width = 48,
@@ -42800,6 +42782,33 @@ tile{
   width = 8,
   height = 64,
   pattern = "9",
+}
+
+tile{
+  layer = 2,
+  x = 816,
+  y = 584,
+  width = 48,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 2,
+  x = 864,
+  y = 584,
+  width = 8,
+  height = 64,
+  pattern = "9",
+}
+
+tile{
+  layer = 2,
+  x = 808,
+  y = 584,
+  width = 8,
+  height = 64,
+  pattern = "7",
 }
 
 teletransporter{
