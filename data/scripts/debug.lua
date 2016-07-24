@@ -75,12 +75,12 @@ function debug:on_key_pressed(key, modifiers)
     elseif key == "g" and hero ~= nil then
       local x, y, layer = hero:get_position()
       if layer ~= 0 then
-	hero:set_position(x, y, layer - 1)
+        hero:set_position(x, y, layer - 1)
       end
     elseif key == "t" and hero ~= nil then
       local x, y, layer = hero:get_position()
       if layer ~= 2 then
-	hero:set_position(x, y, layer + 1)
+        hero:set_position(x, y, layer + 1)
       end
     elseif key == "r" then
       if hero:get_walking_speed() == 384 then
