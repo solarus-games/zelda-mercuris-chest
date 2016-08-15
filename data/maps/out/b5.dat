@@ -353,6 +353,15 @@ tile{
 }
 
 tile{
+  layer = 0,
+  x = 232,
+  y = 608,
+  width = 16,
+  height = 48,
+  pattern = "grass.cliff.4",
+}
+
+tile{
   layer = 1,
   x = 1840,
   y = 408,
@@ -34538,15 +34547,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "grass.cliff.corner_reverse.diag.1",
-}
-
-tile{
-  layer = 2,
-  x = 232,
-  y = 608,
-  width = 16,
-  height = 48,
-  pattern = "grass.cliff.4",
 }
 
 tile{
