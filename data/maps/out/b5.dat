@@ -12502,6 +12502,15 @@ tile{
   pattern = "grass.cliff.3",
 }
 
+tile{
+  layer = 1,
+  x = 264,
+  y = 584,
+  width = 48,
+  height = 8,
+  pattern = "cliff.2",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -34367,15 +34376,6 @@ tile{
   width = 48,
   height = 8,
   pattern = "grass.cliff.2",
-}
-
-tile{
-  layer = 2,
-  x = 264,
-  y = 584,
-  width = 48,
-  height = 8,
-  pattern = "cliff.2",
 }
 
 tile{
