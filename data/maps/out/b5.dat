@@ -12520,6 +12520,24 @@ tile{
   pattern = "cliff.1",
 }
 
+tile{
+  layer = 1,
+  x = 256,
+  y = 584,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 584,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.3",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -34448,24 +34466,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "grass.cliff.top.diag.4",
-}
-
-tile{
-  layer = 2,
-  x = 304,
-  y = 584,
-  width = 16,
-  height = 8,
-  pattern = "cliff.corner_reverse.diag.3",
-}
-
-tile{
-  layer = 2,
-  x = 256,
-  y = 584,
-  width = 16,
-  height = 8,
-  pattern = "cliff.corner_reverse.diag.4",
 }
 
 tile{
