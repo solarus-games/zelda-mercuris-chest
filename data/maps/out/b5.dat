@@ -12592,6 +12592,15 @@ tile{
   pattern = "grass.cliff.diag.3",
 }
 
+tile{
+  layer = 1,
+  x = 328,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.corner_reverse.diag.2",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -34358,15 +34367,6 @@ tile{
   width = 8,
   height = 48,
   pattern = "cliff.top.3",
-}
-
-tile{
-  layer = 2,
-  x = 328,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "grass.cliff.corner_reverse.diag.2",
 }
 
 tile{
