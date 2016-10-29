@@ -12628,6 +12628,15 @@ tile{
   pattern = "cliff.top.border.diag.4",
 }
 
+tile{
+  layer = 1,
+  x = 312,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.3",
+}
+
 npc{
   layer = 1,
   x = 1960,
@@ -34286,15 +34295,6 @@ tile{
   width = 8,
   height = 64,
   pattern = "9",
-}
-
-tile{
-  layer = 2,
-  x = 312,
-  y = 592,
-  width = 16,
-  height = 16,
-  pattern = "cliff.top.border.diag.3",
 }
 
 tile{
