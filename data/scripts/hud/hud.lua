@@ -4,10 +4,11 @@
 -- local hud_manager = require("scripts/hud/hud")
 -- local hud = hud_manager:create(game)
 
-local hud_manager = {}
+require("scripts/multi_events")
+local hud_config = require("scripts/hud/hud_config")
 
 -- Creates and runs a HUD for the specified game.
-function hud_manager:create(game)
+local function initialize_hud_features(game)
 
   -- Set up the HUD.
   local hud = {
@@ -18,9 +19,36 @@ function hud_manager:create(game)
     custom_command_effects = {},
   }
 
+  local item_icons = {}
+
+  for _, element_config in ipairs(hud_config) do
+    local element_builder = require(element_config.menu_script)
+    local element = element_builder:new(game, element_config)
+    if element.set_dst_position ~= nil then
+      -- Compatibility with old HUD element scripts
+      -- whose new() method don't take a config parameter.
+      element:set_dst_position(element_config.x, element_config.y)
+    end
+    hud.elements[#hud.elements + 1] = element
+
+    if element_config.menu_script == "scripts/hud/item_icon" then
+      item_icons[element_config.slot] = element
+    end
+  end
+
   function game:get_custom_command_effect(command)
 
     return hud.custom_command_effects[command]
+  end
+
+  -- Returns whether the HUD is currently shown.
+  function game:is_hud_enabled()
+    return hud:is_enabled()
+  end
+
+  -- Enables or disables the HUD.
+  function game:set_hud_enabled(enable)
+    return hud:set_enabled(enable)
   end
 
   -- Make the action (or attack) icon of the HUD show something else than the
@@ -33,62 +61,6 @@ function hud_manager:create(game)
     hud.custom_command_effects[command] = effect
   end
 
-  -- Create each element of the HUD.
-  local hearts_builder = require("scripts/hud/hearts")
-  local magic_bar_builder = require("scripts/hud/magic_bar")
-  local rupees_builder = require("scripts/hud/rupees")
-  local small_keys_builder = require("scripts/hud/small_keys")
-  local floor_builder = require("scripts/hud/floor")
-  local attack_icon_builder = require("scripts/hud/attack_icon")
-  local pause_icon_builder = require("scripts/hud/pause_icon")
-  local item_icon_builder = require("scripts/hud/item_icon")
-  local action_icon_builder = require("scripts/hud/action_icon")
-
-  local menu = hearts_builder:new(game)
-  menu:set_dst_position(-104, 6)
-  hud.elements[#hud.elements + 1] = menu
-
-  menu = magic_bar_builder:new(game)
-  menu:set_dst_position(-104, 27)
-  hud.elements[#hud.elements + 1] = menu
-
-  menu = rupees_builder:new(game)
-  menu:set_dst_position(8, -20)
-  hud.elements[#hud.elements + 1] = menu
-
-  menu = small_keys_builder:new(game)
-  menu:set_dst_position(-36, -18)
-  hud.elements[#hud.elements + 1] = menu
-
-  menu = floor_builder:new(game)
-  menu:set_dst_position(5, 70)
-  hud.elements[#hud.elements + 1] = menu
-
-  menu = pause_icon_builder:new(game)
-  menu:set_dst_position(0, 7)
-  hud.elements[#hud.elements + 1] = menu
-  hud.pause_icon = menu
-
-  menu = item_icon_builder:new(game, 1)
-  menu:set_dst_position(11, 29)
-  hud.elements[#hud.elements + 1] = menu
-  hud.item_icon_1 = menu
-
-  menu = item_icon_builder:new(game, 2)
-  menu:set_dst_position(63, 29)
-  hud.elements[#hud.elements + 1] = menu
-  hud.item_icon_2 = menu
-
-  menu = attack_icon_builder:new(game)
-  menu:set_dst_position(13, 29)
-  hud.elements[#hud.elements + 1] = menu
-  hud.attack_icon = menu
-
-  menu = action_icon_builder:new(game)
-  menu:set_dst_position(26, 51)
-  hud.elements[#hud.elements + 1] = menu
-  hud.action_icon = menu
-
   -- Destroys the HUD.
   function hud:quit()
 
@@ -99,7 +71,7 @@ function hud_manager:create(game)
   end
 
   -- Call this function to notify the HUD that the current map has changed.
-  function hud:on_map_changed(map)
+  local function hud_on_map_changed(game, map)
 
     if hud:is_enabled() then
       for _, menu in ipairs(hud.elements) do
@@ -111,7 +83,7 @@ function hud_manager:create(game)
   end
 
   -- Call this function to notify the HUD that the game was just paused.
-  function hud:on_paused()
+  local function hud_on_paused(game)
 
     if hud:is_enabled() then
       for _, menu in ipairs(hud.elements) do
@@ -123,7 +95,7 @@ function hud_manager:create(game)
   end
 
   -- Call this function to notify the HUD that the game was just unpaused.
-  function hud:on_unpaused()
+  local function hud_on_unpaused(game)
 
     if hud:is_enabled() then
       for _, menu in ipairs(hud.elements) do
@@ -214,8 +186,12 @@ function hud_manager:create(game)
 
   -- Changes the opacity of an item icon.
   function hud:set_item_icon_opacity(item_index, opacity)
-    hud["item_icon_" .. item_index].surface:set_opacity(opacity)
+    item_icons[item_index].surface:set_opacity(opacity)
   end
+
+  game:register_event("on_map_changed", hud_on_map_changed)
+  game:register_event("on_paused", hud_on_paused)
+  game:register_event("on_unpaused", hud_on_unpaused)
 
   -- Start the HUD.
   hud:set_enabled(true)
@@ -224,5 +200,8 @@ function hud_manager:create(game)
   return hud
 end
 
-return hud_manager
+-- Set up the HUD features on any game that starts.
+local game_meta = sol.main.get_metatable("game")
+game_meta:register_event("on_started", initialize_hud_features)
 
+return true

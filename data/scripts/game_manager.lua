@@ -5,8 +5,9 @@
 -- local game = game_manager:create("savegame_file_name")
 -- game:start()
 
+require("multi_events")
 local dialog_box_manager = require("scripts/dialog_box")
-local hud_manager = require("scripts/hud/hud")
+require("scripts/hud/hud")
 local pause_manager = require("scripts/menus/pause")
 local dungeon_manager = require("scripts/dungeons")
 local equipment_manager = require("scripts/equipment")
@@ -39,31 +40,27 @@ function game_manager:create(file)
   end
  
   local dialog_box
-  local hud
   local pause_menu
 
   -- Function called when the player runs this game.
-  function game:on_started()
+  game:register_event("on_started", function()
 
     dungeon_manager:create(game)
     equipment_manager:create(game)
     dialog_box = dialog_box_manager:create(game)
-    hud = hud_manager:create(game)
     pause_menu = pause_manager:create(game)
-  end
+  end)
 
   -- Function called when the game stops.
-  function game:on_finished()
+  game:register_event("on_finished", function()
 
     dialog_box:quit()
     dialog_box = nil
-    hud:quit()
-    hud = nil
     pause_menu = nil
-  end
+  end)
 
   -- Function called when the game is paused.
-  function game:on_paused()
+  game:register_event("on_paused", function()
 
     -- Tell the HUD we are paused.
     hud:on_paused()
@@ -71,42 +68,20 @@ function game_manager:create(file)
     -- Start the pause menu.
     local to_front = false  -- Show it behind the HUD.
     sol.menu.start(game, pause_menu, false)
-  end
+  end)
 
   -- Function called when the game is paused.
-  function game:on_unpaused()
+  game:register_event("on_unpaused", function()
 
     -- Tell the HUD we are no longer paused.
     hud:on_unpaused()
 
     -- Stop the pause menu.
     sol.menu.stop(pause_menu)
-  end
-
-  -- Function called when the player goes to another map.
-  function game:on_map_changed(map)
-
-    -- Notify the HUD (some HUD elements may want to know that).
-    hud:on_map_changed(map)
-  end
+  end)
 
   function game:get_dialog_box()
     return dialog_box
-  end
-
-  -- Returns whether the HUD is currently shown.
-  function game:is_hud_enabled()
-    return hud:is_enabled()
-  end
-
-  -- Enables or disables the HUD.
-  function game:set_hud_enabled(enable)
-    return hud:set_enabled(enable)
-  end
-
-  -- Return the HUD.
-  function game:get_hud()
-    return hud
   end
 
   function game:get_player_name()
