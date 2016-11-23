@@ -5,7 +5,7 @@
 -- local game = game_manager:create("savegame_file_name")
 -- game:start()
 
-require("multi_events")
+require("scripts/multi_events")
 local dialog_box_manager = require("scripts/dialog_box")
 require("scripts/hud/hud")
 local pause_manager = require("scripts/menus/pause")
