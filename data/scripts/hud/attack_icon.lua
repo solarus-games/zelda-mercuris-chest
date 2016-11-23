@@ -21,7 +21,7 @@ function attack_icon:initialize(game)
   self.icon_region_y = nil
   self.icon_flip_sprite = sol.sprite.create("hud/sword_icon_flip")
   self.is_flipping = false
-  self.effect_displayed = self.game:get_custom_command_effect("attack") or game:get_command_effect("attack")
+  self.effect_displayed = game.get_custom_command_effect ~= nil and game:get_custom_command_effect("attack") or game:get_command_effect("attack")
   self.sword_displayed = game:get_ability("sword")
   self.showing_dialog = false
   self:compute_icon_region_y()
@@ -70,7 +70,7 @@ function attack_icon:check()
   local need_rebuild = false
 
   if not self.flipping then
-    local effect = self.game:get_custom_command_effect("attack") or self.game:get_command_effect("attack")
+    local effect = self.game.get_custom_command_effect ~= nil and self.game:get_custom_command_effect("attack") or self.game:get_command_effect("attack")
     local sword = self.game:get_ability("sword")
     local showing_dialog = self.game:is_dialog_enabled()
     if effect ~= self.effect_displayed

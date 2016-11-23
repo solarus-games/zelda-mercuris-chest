@@ -1,5 +1,6 @@
 -- Main script of the quest.
 
+require("scripts/features")
 local game_manager = require("scripts/game_manager")
 local debug = require("scripts/debug")
 local quest_manager = require("scripts/quest_manager")

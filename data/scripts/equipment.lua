@@ -1,14 +1,13 @@
 -- This module gives access to equipment related info.
 
 -- Usage:
--- local equipment_manager = require("scripts/equipment")
--- equipment_manager:create(game)
+-- require("scripts/equipment")
 
-local equipment_manager = {}
+require("scripts/multi_events")
 
 local num_bottles = 4
 
-function equipment_manager:create(game)
+local function initialize_equipment_features(game)
 
   -- Returns whether a small key counter exists on the current map.
   function game:are_small_keys_enabled()
@@ -117,5 +116,8 @@ function equipment_manager:create(game)
 
 end
 
-return equipment_manager
+-- Set up equipment features on any game that starts.
+local game_meta = sol.main.get_metatable("game")
+game_meta:register_event("on_started", initialize_equipment_features)
 
+return true

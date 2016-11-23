@@ -21,24 +21,8 @@ local function initialize_hud_features(game)
 
   local item_icons = {}
 
-  for _, element_config in ipairs(hud_config) do
-    local element_builder = require(element_config.menu_script)
-    local element = element_builder:new(game, element_config)
-    if element.set_dst_position ~= nil then
-      -- Compatibility with old HUD element scripts
-      -- whose new() method don't take a config parameter.
-      element:set_dst_position(element_config.x, element_config.y)
-    end
-    hud.elements[#hud.elements + 1] = element
-
-    if element_config.menu_script == "scripts/hud/item_icon" then
-      item_icons[element_config.slot] = element
-    end
-  end
-
-  function game:get_custom_command_effect(command)
-
-    return hud.custom_command_effects[command]
+  function game:get_hud()
+    return hud
   end
 
   -- Returns whether the HUD is currently shown.
@@ -49,6 +33,11 @@ local function initialize_hud_features(game)
   -- Enables or disables the HUD.
   function game:set_hud_enabled(enable)
     return hud:set_enabled(enable)
+  end
+
+  function game:get_custom_command_effect(command)
+
+    return hud.custom_command_effects[command]
   end
 
   -- Make the action (or attack) icon of the HUD show something else than the
@@ -187,6 +176,21 @@ local function initialize_hud_features(game)
   -- Changes the opacity of an item icon.
   function hud:set_item_icon_opacity(item_index, opacity)
     item_icons[item_index].surface:set_opacity(opacity)
+  end
+
+  for _, element_config in ipairs(hud_config) do
+    local element_builder = require(element_config.menu_script)
+    local element = element_builder:new(game, element_config)
+    if element.set_dst_position ~= nil then
+      -- Compatibility with old HUD element scripts
+      -- whose new() method don't take a config parameter.
+      element:set_dst_position(element_config.x, element_config.y)
+    end
+    hud.elements[#hud.elements + 1] = element
+
+    if element_config.menu_script == "scripts/hud/item_icon" then
+      item_icons[element_config.slot] = element
+    end
   end
 
   game:register_event("on_map_changed", hud_on_map_changed)

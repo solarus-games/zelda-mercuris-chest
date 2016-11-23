@@ -1,15 +1,13 @@
 -- Script that creates a dialog box for a game.
 
 -- Usage:
--- local dialog_box_manager = require("scripts/dialog_box")
--- local dialog_box = dialog_box_manager:create(game)
+-- require("scripts/menus/dialog_box")
 
-local dialog_box_manager = {}
-
+require("scripts/multi_events")
 local quest_manager = require("scripts/quest_manager")
 
 -- Creates and sets up a dialog box for the specified game.
-function dialog_box_manager:create(game)
+local function initialize_dialog_box_features(game)
 
   local dialog_box = {
 
@@ -80,23 +78,27 @@ function dialog_box_manager:create(game)
     end
   end
 
+  function game:get_dialog_box()
+    return dialog_box
+  end
+
   -- Called by the engine when a dialog starts.
-  function game:on_dialog_started(dialog, info)
+  game:register_event("on_dialog_started", function(game, dialog, info)
 
     dialog_box.dialog = dialog
     dialog_box.info = info
     sol.menu.start(game, dialog_box)
-  end
+  end)
 
   -- Called by the engine when a dialog finishes.
-  function game:on_dialog_finished(dialog)
+  game:register_event("on_dialog_finished", function(game, dialog)
 
     if sol.menu.is_started(dialog_box) then
       sol.menu.stop(dialog_box)
     end
     dialog_box.dialog = nil
     dialog_box.info = nil
-  end
+  end)
 
   -- Sets the style of the dialog box for subsequent dialogs.
   -- style must be one of:
@@ -549,8 +551,10 @@ function dialog_box_manager:create(game)
 
   dialog_box:set_style("box")
 
-  return dialog_box
 end
 
-return dialog_box_manager
+-- Set up the dialog box on any game that starts.
+local game_meta = sol.main.get_metatable("game")
+game_meta:register_event("on_started", initialize_dialog_box_features)
 
+return true

@@ -1,15 +1,14 @@
 -- Defines the dungeon information of a game.
 
 -- Usage:
--- local dungeon_manager = require("scripts/dungeons")
--- dungeon_manager:create(game)
+-- require("scripts/dungeons")
 
-local dungeon_manager = {}
+require("scripts/multi_events")
 
-function dungeon_manager:create(game)
+local function initialize_dungeon_features(game)
 
   -- Define the existing dungeons and their floors for the minimap menu.
-  game.dungeons = {
+  local dungeons_info = {
 
     [3] = {
       floor_width = 1280,
@@ -21,7 +20,8 @@ function dungeon_manager:create(game)
         "lighthouse/1f",
         "lighthouse/2f",
         "lighthouse/3f",
-        "lighthouse/4f" },
+        "lighthouse/4f"
+      },
     },
 
     [7] = {
@@ -29,7 +29,11 @@ function dungeon_manager:create(game)
       floor_height = 3680,
       lowest_floor = -2,
       highest_floor = 0,
-      maps = { "rail_temple_b2", "rail_temple_b1", "rail_temple_1f" },
+      maps = {
+        "rail_temple_b2",
+        "rail_temple_b1",
+        "rail_temple_1f"
+      },
     },
   }
 
@@ -48,7 +52,7 @@ function dungeon_manager:create(game)
   function game:get_dungeon()
 
     local index = game:get_dungeon_index()
-    return game.dungeons[index]
+    return dungeons_info[index]
   end
 
   function game:is_dungeon_finished(dungeon_index)
@@ -134,4 +138,8 @@ function dungeon_manager:create(game)
 
 end
 
-return dungeon_manager
+-- Set up dungeon features on any game that starts.
+local game_meta = sol.main.get_metatable("game")
+game_meta:register_event("on_started", initialize_dungeon_features)
+
+return true

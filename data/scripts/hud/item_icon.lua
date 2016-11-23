@@ -10,7 +10,7 @@ function item_icon_builder:new(game, config)
 
   item_icon.slot = config.slot or 1
   item_icon.surface = sol.surface.create(32, 28)
-  item_icon.background_img = sol.surface.create("hud/item_icon_" .. slot .. ".png")
+  item_icon.background_img = sol.surface.create("hud/item_icon_" .. item_icon.slot .. ".png")
   item_icon.item_sprite = sol.sprite.create("entities/items")
   item_icon.item_displayed = nil
   item_icon.item_variant_displayed = 0
@@ -20,9 +20,6 @@ function item_icon_builder:new(game, config)
   }
   item_icon.amount_displayed = nil
   item_icon.max_amount_displayed = nil
-
-  item_icon:check()
-  item_icon:rebuild_surface()
 
   function item_icon:check()
 
@@ -118,6 +115,9 @@ function item_icon_builder:new(game, config)
       item_icon.surface:draw(dst_surface, x, y)
     end
   end
+
+  item_icon:check()
+  item_icon:rebuild_surface()
 
   return item_icon
 end
