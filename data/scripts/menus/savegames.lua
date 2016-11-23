@@ -377,7 +377,7 @@ function savegame_menu:key_pressed_phase_select_file(key)
         self.surface:fade_out()
         sol.timer.start(self, 700, function()
           sol.menu.stop(self)
-	  sol.main:start_savegame(slot.savegame)
+          sol.main:start_savegame(slot.savegame)
         end)
       else
         -- It's a new savegame: choose the player's name.
