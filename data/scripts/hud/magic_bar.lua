@@ -92,6 +92,10 @@ function magic_bar:set_dst_position(x, y)
   self.dst_y = y
 end
 
+function magic_bar:get_surface()
+  return magic_bar.surface
+end
+
 function magic_bar:on_draw(dst_surface)
 
   -- Is there a magic bar to show?

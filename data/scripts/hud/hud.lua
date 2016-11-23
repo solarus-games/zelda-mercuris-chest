@@ -122,11 +122,12 @@ local function initialize_hud_features(game)
 
       if opacity ~= nil then
         hud.top_left_opacity = opacity
-        hud.item_icon_1.surface:set_opacity(opacity)
-        hud.item_icon_2.surface:set_opacity(opacity)
-        hud.pause_icon.surface:set_opacity(opacity)
-        hud.attack_icon.surface:set_opacity(opacity)
-        hud.action_icon.surface:set_opacity(opacity)
+        for i, element_config in ipairs(hud_config) do
+          if element_config.x >= 0 and element_config.x < 72 and
+              element_config.y >= 0 and element_config.y < 64 then
+            hud.elements[i]:get_surface():set_opacity(opacity)
+          end
+        end
       end
 
       -- During a dialog, move the action icon and the sword icon.
@@ -175,7 +176,7 @@ local function initialize_hud_features(game)
 
   -- Changes the opacity of an item icon.
   function hud:set_item_icon_opacity(item_index, opacity)
-    item_icons[item_index].surface:set_opacity(opacity)
+    item_icons[item_index].get_surface():set_opacity(opacity)
   end
 
   for _, element_config in ipairs(hud_config) do

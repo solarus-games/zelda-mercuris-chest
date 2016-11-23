@@ -146,6 +146,10 @@ function hearts:set_dst_position(x, y)
   self.dst_y = y
 end
 
+function hearts:get_surface()
+  return hearts.surface
+end
+
 function hearts:on_draw(dst_surface)
 
   local x, y = self.dst_x, self.dst_y

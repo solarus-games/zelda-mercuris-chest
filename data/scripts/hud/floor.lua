@@ -100,6 +100,10 @@ function floor_view:set_dst_position(x, y)
   self.dst_y = y
 end
 
+function floor_view:get_surface()
+  return floor_view.surface
+end
+
 function floor_view:on_draw(dst_surface)
 
   if self.visible then

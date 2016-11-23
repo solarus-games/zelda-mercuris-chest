@@ -100,6 +100,10 @@ function item_icon_builder:new(game, config)
     end
   end
 
+  function item_icon:get_surface()
+    return item_icon.surface
+  end
+
   function item_icon:on_draw(dst_surface)
 
     if not game:is_dialog_enabled() then

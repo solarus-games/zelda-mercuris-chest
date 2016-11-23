@@ -97,6 +97,10 @@ function rupees:set_dst_position(x, y)
   self.dst_y = y
 end
 
+function rupees:get_surface()
+  return rupees.surface
+end
+
 function rupees:on_draw(dst_surface)
 
   local x, y = self.dst_x, self.dst_y

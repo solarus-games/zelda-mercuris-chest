@@ -72,6 +72,10 @@ function small_keys:set_dst_position(x, y)
   self.dst_y = y
 end
 
+function small_keys:get_surface()
+  return small_keys.surface
+end
+
 function small_keys:on_draw(dst_surface)
 
   if self.visible then
