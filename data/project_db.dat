@@ -301,6 +301,7 @@ music{ id = "ganon_appears", description = "Ganon appears" }
 music{ id = "ganon_battle", description = "Ganon battle" }
 music{ id = "ganon_theme", description = "Ganon theme" }
 music{ id = "great_fairy", description = "Great Fairy" }
+music{ id = "great_sea", description = "Great Sea" }
 music{ id = "la_mountains", description = "Mountains (LA)" }
 music{ id = "legend", description = "Legend" }
 music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
