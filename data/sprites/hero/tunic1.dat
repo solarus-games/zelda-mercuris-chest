@@ -241,9 +241,9 @@ animation{
   frame_delay = 30,
   directions = {
     { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 64, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
   },
 }
 animation{
@@ -263,9 +263,9 @@ animation{
   frame_to_loop_on = 5,
   directions = {
     { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 64, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
   },
 }
 animation{
