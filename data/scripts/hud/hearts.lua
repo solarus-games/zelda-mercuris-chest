@@ -10,10 +10,7 @@ function hearts_builder:new(game, config)
     hearts.dst_x, hearts.dst_y = config.x, config.y
   end
 
-  hearts.game = game
   hearts.surface = sol.surface.create(90, 18)
-  hearts.dst_x = 0
-  hearts.dst_y = 0
   hearts.empty_heart_sprite = sol.sprite.create("hud/empty_heart")
   hearts.nb_max_hearts_displayed = game:get_max_life() / 4
   hearts.nb_current_hearts_displayed = game:get_life()
@@ -113,7 +110,6 @@ function hearts_builder:new(game, config)
   end
 
   function hearts:rebuild_surface()
-
     hearts.surface:clear()
 
     -- Display the hearts.
@@ -158,6 +154,9 @@ function hearts_builder:new(game, config)
     -- Everything was already drawn on self.surface.
     hearts.surface:draw(dst_surface, x, y)
   end
+
+  hearts:check()
+  hearts:rebuild_surface()
 
   return hearts
 end
