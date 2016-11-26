@@ -530,6 +530,7 @@ entity{ id = "minecart", description = "Minecart" }
 entity{ id = "minecart_turn", description = "Minecart turn" }
 entity{ id = "minecart_turn_diagonal", description = "Minecart turn (diagonal)" }
 
+language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }
 
 font{ id = "green_digits", description = "green_digits" }
