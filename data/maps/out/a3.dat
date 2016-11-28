@@ -7,7 +7,7 @@ properties{
   max_layer = 2,
   world = "outside",
   tileset = "light_world",
-  music = "overworld",
+  music = "great_sea",
 }
 
 tile{
