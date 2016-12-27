@@ -49,6 +49,26 @@ local function initialize_map()
   end
 end
 
+-- Initializes the common behavior of dynamic tiles.
+local function initialize_dynamic_tile()
+
+  local dynamic_tile_meta = sol.main.get_metatable("dynamic_tile")
+  -- dynamic_tile_meta represents the shared behavior of all dynamic tiles.
+
+  function dynamic_tile_meta:on_created()
+
+    local name = self:get_name()
+    if name == nil then
+      return
+    end
+
+    if name:match("^invisible_tile") then
+      self:set_visible(false)
+    end
+  end
+
+end
+
 -- Initializes the common behavior of destructible objects.
 local function initialize_destructible()
 
@@ -163,6 +183,7 @@ end
 local function initialize_entities()
 
   initialize_destructible()
+  initialize_dynamic_tile()
   initialize_enemy()
   initialize_sensor()
   initialize_switch()
