@@ -109,6 +109,11 @@ function attack_icon_builder:new(game, config)
     return attack_icon.surface
   end
 
+  function attack_icon:set_dst_position(x, y)
+    dst_x = x
+    dst_y = y
+  end
+
   function attack_icon:on_draw(dst_surface)
 
     local x, y = dst_x, dst_y

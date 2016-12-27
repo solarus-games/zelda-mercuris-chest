@@ -75,15 +75,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2000,
-  y = 560,
-  width = 16,
-  height = 464,
-  pattern = "cliff.3",
-}
-
-tile{
-  layer = 0,
   x = 2016,
   y = 560,
   width = 16,
@@ -532,6 +523,15 @@ tile{
   pattern = "cliff.top.1",
 }
 
+tile{
+  layer = 0,
+  x = 2000,
+  y = 560,
+  width = 16,
+  height = 464,
+  pattern = "water.cliff.3",
+}
+
 sensor{
   name = "layer_up_sensor_1",
   layer = 0,
@@ -539,6 +539,24 @@ sensor{
   y = 461,
   width = 16,
   height = 64,
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 448,
+  width = 1792,
+  height = 576,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 856,
+  width = 8,
+  height = 136,
+  pattern = "forest",
 }
 
 tile{
@@ -665,15 +683,6 @@ tile{
   width = 24,
   height = 24,
   pattern = "forest",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 448,
-  width = 1792,
-  height = 576,
-  pattern = "grass.soil",
 }
 
 tile{
@@ -3596,7 +3605,7 @@ tile{
   layer = 1,
   x = 680,
   y = 720,
-  width = 264,
+  width = 248,
   height = 272,
   pattern = "forest",
 }
@@ -8493,16 +8502,7 @@ tile{
   x = 928,
   y = 672,
   width = 16,
-  height = 32,
-  pattern = "forest.4",
-}
-
-tile{
-  layer = 1,
-  x = 928,
-  y = 704,
-  width = 16,
-  height = 144,
+  height = 176,
   pattern = "forest.4",
 }
 
@@ -22768,6 +22768,15 @@ destructible{
 
 tile{
   layer = 2,
+  x = 824,
+  y = 920,
+  width = 8,
+  height = 64,
+  pattern = "103",
+}
+
+tile{
+  layer = 2,
   x = 1368,
   y = 72,
   width = 48,
@@ -24501,15 +24510,6 @@ tile{
   width = 48,
   height = 64,
   pattern = "100",
-}
-
-tile{
-  layer = 2,
-  x = 824,
-  y = 920,
-  width = 8,
-  height = 64,
-  pattern = "103",
 }
 
 tile{

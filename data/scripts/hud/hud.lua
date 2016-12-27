@@ -20,6 +20,8 @@ local function initialize_hud_features(game)
   }
 
   local item_icons = {}
+  local action_icon
+  local attack_icon
 
   function game:get_hud()
     return hud
@@ -134,13 +136,13 @@ local function initialize_hud_features(game)
       if not hud.showing_dialog and
         game:is_dialog_enabled() then
         hud.showing_dialog = true
-        hud.action_icon:set_dst_position(0, 54)
-        hud.attack_icon:set_dst_position(0, 29)
+        action_icon:set_dst_position(0, 54)
+        attack_icon:set_dst_position(0, 29)
       elseif hud.showing_dialog and
         not game:is_dialog_enabled() then
         hud.showing_dialog = false
-        hud.action_icon:set_dst_position(26, 51)
-        hud.attack_icon:set_dst_position(13, 29)
+        action_icon:set_dst_position(26, 51)
+        attack_icon:set_dst_position(13, 29)
       end
     end
 
@@ -191,6 +193,10 @@ local function initialize_hud_features(game)
 
     if element_config.menu_script == "scripts/hud/item_icon" then
       item_icons[element_config.slot] = element
+    elseif element_config.menu_script == "scripts/hud/action_icon" then
+      action_icon = element
+    elseif element_config.menu_script == "scripts/hud/attack_icon" then
+      attack_icon = element
     end
   end
 

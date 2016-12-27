@@ -27834,15 +27834,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 992,
-  y = 32,
-  width = 72,
-  height = 48,
-  pattern = "196",
-}
-
-tile{
-  layer = 2,
   x = 1176,
   y = 120,
   width = 8,
@@ -32375,6 +32366,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "fence_stone.pillar.top",
+}
+
+tile{
+  layer = 2,
+  x = 992,
+  y = 32,
+  width = 72,
+  height = 48,
+  pattern = "196",
 }
 
 sensor{

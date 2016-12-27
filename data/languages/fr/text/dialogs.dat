@@ -2002,6 +2002,44 @@ compteur magique !
 }
 
 dialog{
+  id = "found_piece_of_heart.first",
+  text = [[
+Collecte-en quatre
+pour former un
+nouveau Coeur.
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  text = [[
+Tu as trouvé quatre
+Fragments de Coeur.
+
+Tu obtiens un Coeur
+supplémentaire !
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.second",
+  text = [[
+Encore deux et
+tu obtiendras
+un nouveau Coeur.
+]]
+}
+
+dialog{
+  id = "found_piece_of_heart.third",
+  text = [[
+Plus qu'un à trouver
+pour former un
+nouveau Coeur !
+]]
+}
+
+dialog{
   id = "rail_temple_1f.chests_order_hint",
   text = [[
          2   5

@@ -104,6 +104,11 @@ function action_icon_builder:new(game, config)
     return action_icon.surface
   end
 
+  function action_icon:set_dst_position(x, y)
+    dst_x = x
+    dst_y = y
+  end
+
   function action_icon:on_draw(dst_surface)
 
     local x, y = dst_x, dst_y
