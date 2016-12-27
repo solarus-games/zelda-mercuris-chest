@@ -39,6 +39,7 @@ sprites/enemies/mowatulla.png
 sprites/enemies/papillosaur_king.png
 sprites/enemies/poutroxor.png
 sprites/enemies/skeletor.png
+sprites/entities/chest.png
 sprites/entities/conveyor_belt.png
 sprites/entities/fresco.png
 sprites/hud/dialog_box.png
@@ -115,7 +116,6 @@ sprites/entities/arrow.png
 sprites/entities/bed.png
 sprites/entities/bomb.png
 sprites/entities/boomerang.png
-sprites/entities/chest.png
 sprites/entities/dark*.png
 sprites/entities/explosion.png
 sprites/entities/hookshot.png
