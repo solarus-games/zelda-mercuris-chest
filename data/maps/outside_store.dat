@@ -7938,6 +7938,107 @@ tile{
   pattern = "grass.tree.roots.3",
 }
 
+tile{
+  layer = 0,
+  x = 1008,
+  y = 768,
+  width = 16,
+  height = 32,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 768,
+  width = 32,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 768,
+  width = 16,
+  height = 32,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 784,
+  width = 32,
+  height = 16,
+  pattern = "31",
+}
+
+wall{
+  layer = 0,
+  x = 944,
+  y = 776,
+  width = 64,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1072,
+  y = 776,
+  width = 64,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1136,
+  y = 688,
+  width = 48,
+  height = 112,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 896,
+  y = 688,
+  width = 48,
+  height = 112,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 912,
+  y = 592,
+  width = 256,
+  height = 96,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -8121,6 +8222,29 @@ destructible{
   can_be_cut = true,
   damage_on_enemies = 0,
   ground = "grass",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1040,
+  y = 749,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/crater_temple_entrance",
+}
+
+wall{
+  layer = 0,
+  x = 1008,
+  y = 760,
+  width = 64,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -9329,6 +9453,15 @@ tile{
   pattern = "grass.cliff.top.border.diag.1",
 }
 
+tile{
+  layer = 1,
+  x = 1008,
+  y = 752,
+  width = 64,
+  height = 16,
+  pattern = "33",
+}
+
 dynamic_tile{
   name = "invisible_tile_2",
   layer = 1,
@@ -9401,6 +9534,16 @@ sensor{
   y = 701,
   width = 16,
   height = 16,
+}
+
+custom_entity{
+  layer = 1,
+  x = 1040,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/crater_temple_entrance",
 }
 
 tile{

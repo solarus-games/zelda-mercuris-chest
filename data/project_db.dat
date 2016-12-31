@@ -155,6 +155,7 @@ sprite{ id = "entities/cannon", description = "Cannon" }
 sprite{ id = "entities/castle_lock", description = "Castle prison lock" }
 sprite{ id = "entities/chest", description = "Chest (normal)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
+sprite{ id = "entities/crater_temple_entrance", description = "Crater temple entrance" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/destination", description = "Destination of teletransporter" }

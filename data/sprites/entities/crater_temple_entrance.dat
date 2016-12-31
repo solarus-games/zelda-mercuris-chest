@@ -1,0 +1,8 @@
+animation{
+  name = "stopped",
+  src_image = "entities/crater_temple_entrance.png",
+  directions = {
+    { x = 0, y = 120, frame_width = 288, frame_height = 168, origin_x = 144, origin_y = 117 },
+    { x = 0, y = 0, frame_width = 288, frame_height = 120, origin_x = 144, origin_y = 117 },
+  },
+}
