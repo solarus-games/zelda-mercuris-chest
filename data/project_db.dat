@@ -41,6 +41,22 @@ map{ id = "town_store", description = "Town Store" }
 
 tileset{ id = "dark_world", description = "Dark World" }
 tileset{ id = "desert", description = "Desert" }
+tileset{ id = "dungeon/blue", description = "Blue dungeon" }
+tileset{ id = "dungeon/brown", description = "Brown dungeon" }
+tileset{ id = "dungeon/dark_brown", description = "Dark brown dungeon" }
+tileset{ id = "dungeon/dark_yellow", description = "Dark yellow dungeon" }
+tileset{ id = "dungeon/gray", description = "Gray dungeon" }
+tileset{ id = "dungeon/gray_blue", description = "Gray-blue dungeon" }
+tileset{ id = "dungeon/gray_brown", description = "Gray-brown dungeon" }
+tileset{ id = "dungeon/gray_pink", description = "Gray-pink dungeon" }
+tileset{ id = "dungeon/gray_yellow", description = "Gray-yellow dungeon" }
+tileset{ id = "dungeon/green", description = "Green dungeon" }
+tileset{ id = "dungeon/light_blue", description = "Light blue dungeon" }
+tileset{ id = "dungeon/light_brown", description = "Light brown dungeon" }
+tileset{ id = "dungeon/light_green", description = "Light green dungeon" }
+tileset{ id = "dungeon/pink", description = "Pink dungeon" }
+tileset{ id = "dungeon/purple", description = "Purple dungeon" }
+tileset{ id = "dungeon/yellow", description = "Yellow dungeon" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
 tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
 tileset{ id = "forest", description = "Forest" }
