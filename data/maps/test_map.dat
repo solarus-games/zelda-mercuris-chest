@@ -310,7 +310,7 @@ destination{
   name = "from_lighthouse",
   layer = 1,
   x = 64,
-  y = 37,
+  y = 53,
   direction = 3,
 }
 
@@ -318,7 +318,7 @@ destination{
   name = "from_outside_f3",
   layer = 1,
   x = 192,
-  y = 37,
+  y = 53,
   direction = 3,
 }
 
@@ -326,7 +326,7 @@ destination{
   name = "from_outside_a7",
   layer = 1,
   x = 72,
-  y = 213,
+  y = 197,
   direction = 1,
 }
 
@@ -334,7 +334,7 @@ destination{
   name = "from_outside_e7",
   layer = 1,
   x = 160,
-  y = 213,
+  y = 197,
   direction = 1,
 }
 
@@ -342,7 +342,7 @@ teletransporter{
   name = "teletransporter",
   layer = 1,
   x = 64,
-  y = 224,
+  y = 200,
   width = 16,
   height = 16,
   destination_map = "outside/a7",
@@ -352,7 +352,7 @@ teletransporter{
 teletransporter{
   name = "teletransporter_2",
   layer = 1,
-  x = 304,
+  x = 280,
   y = 112,
   width = 16,
   height = 16,
@@ -363,7 +363,7 @@ teletransporter{
 destination{
   name = "from_rail_temple",
   layer = 1,
-  x = 288,
+  x = 272,
   y = 125,
   direction = 2,
 }
@@ -372,7 +372,7 @@ teletransporter{
   name = "teletransporter_3",
   layer = 1,
   x = 56,
-  y = 0,
+  y = 24,
   width = 16,
   height = 16,
   destination_map = "lighthouse/1f",
@@ -380,14 +380,14 @@ teletransporter{
 }
 
 teletransporter{
-  name = "to_lighthouse",
+  name = "teletransporter_4",
   layer = 1,
-  x = 56,
+  x = 184,
   y = 24,
   width = 16,
   height = 16,
-  destination_map = "lighthouse/2f",
-  destination = "from_1f_b",
+  destination_map = "sacred_crater/1f",
+  destination = "main_entrance",
 }
 
 tile{
