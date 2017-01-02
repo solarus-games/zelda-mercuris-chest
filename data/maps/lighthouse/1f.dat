@@ -4194,60 +4194,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 808,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "wall_border.3",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "wall_border.4",
-}
-
-tile{
-  layer = 1,
-  x = 464,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "wall_border.4",
-}
-
-tile{
-  layer = 1,
-  x = 488,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "wall_border.3",
-}
-
-tile{
-  layer = 1,
-  x = 648,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "wall_border.3",
-}
-
-tile{
-  layer = 1,
-  x = 624,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "wall_border.4",
-}
-
-tile{
-  layer = 1,
   x = 1096,
   y = 280,
   width = 8,
@@ -7133,6 +7079,168 @@ tile{
   width = 16,
   height = 8,
   pattern = "stairs_inner_up.2.top",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "hole.3",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "hole.3",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "hole.3",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "hole.4",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "hole.4",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "hole.4",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.1",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.1",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.1",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.2",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.2",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.2",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.3",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.3",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.3",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.4",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.4",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "hole.corner_reverse.4",
 }
 
 destination{
