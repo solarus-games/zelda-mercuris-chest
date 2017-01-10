@@ -2,9 +2,9 @@ quest{
   solarus_version = "1.5",
   write_dir = "zelda_mercuris_chest",
   title = "Zelda Mercuris' Chest",
-  short_description = "Next project from the Solarus team",
+  short_description = "Next Zelda project from the Solarus team",
   long_description = [[
-The new project in progress from the Solarus team.
+The new Zelda project in progress from the Solarus team.
 It will not be a sequel to Zelda Mystery of Solarus DX, but a different story in a huge world!]],
   author = "Christopho",
   quest_version = "",
