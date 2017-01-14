@@ -378,7 +378,7 @@ tile_pattern{
   ground = "wall",
   default_layer = 0,
   x = 640,
-  y = 64,
+  y = 56,
   width = 16,
   height = 16,
   repeat_mode = "none",
@@ -572,7 +572,7 @@ tile_pattern{
 tile_pattern{
   id = "60",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 704,
   y = 64,
   width = 16,
@@ -583,7 +583,7 @@ tile_pattern{
 tile_pattern{
   id = "61",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 704,
   y = 56,
   width = 16,
@@ -594,7 +594,7 @@ tile_pattern{
 tile_pattern{
   id = "62",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 704,
   y = 72,
   width = 16,
@@ -643,7 +643,7 @@ tile_pattern{
   y = 40,
   width = 32,
   height = 16,
-  repeat_mode = "none",
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -665,6 +665,7 @@ tile_pattern{
   y = 0,
   width = 48,
   height = 40,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -675,6 +676,7 @@ tile_pattern{
   y = 40,
   width = 32,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -685,6 +687,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -705,6 +708,51 @@ tile_pattern{
   y = 0,
   width = 32,
   height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "76",
+  ground = "wall",
+  default_layer = 1,
+  x = 640,
+  y = 0,
+  width = 32,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "77",
+  ground = "wall",
+  default_layer = 1,
+  x = 640,
+  y = 16,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "78",
+  ground = "wall",
+  default_layer = 1,
+  x = 664,
+  y = 16,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "79",
+  ground = "traversable",
+  default_layer = 1,
+  x = 648,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -719,6 +767,116 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "80",
+  ground = "ladder",
+  default_layer = 1,
+  x = 648,
+  y = 32,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "81",
+  ground = "ladder",
+  default_layer = 1,
+  x = 648,
+  y = 40,
+  width = 16,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "82",
+  ground = "ladder",
+  default_layer = 0,
+  x = 648,
+  y = 48,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "83",
+  ground = "wall",
+  default_layer = 0,
+  x = 640,
+  y = 48,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "84",
+  ground = "wall",
+  default_layer = 1,
+  x = 640,
+  y = 32,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "85",
+  ground = "wall",
+  default_layer = 1,
+  x = 664,
+  y = 32,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "86",
+  ground = "wall",
+  default_layer = 1,
+  x = 664,
+  y = 40,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "87",
+  ground = "wall",
+  default_layer = 1,
+  x = 640,
+  y = 40,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "88",
+  ground = "wall",
+  default_layer = 1,
+  x = 728,
+  y = 104,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "89",
+  ground = "wall",
+  default_layer = 0,
+  x = 728,
+  y = 120,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "9",
   ground = "traversable",
   default_layer = 1,
@@ -726,6 +884,39 @@ tile_pattern{
   y = 376,
   width = 8,
   height = 64,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "90",
+  ground = "wall",
+  default_layer = 0,
+  x = 736,
+  y = 120,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "91",
+  ground = "traversable",
+  default_layer = 1,
+  x = 736,
+  y = 104,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "92",
+  ground = "wall",
+  default_layer = 0,
+  x = 664,
+  y = 48,
+  width = 8,
+  height = 8,
   repeat_mode = "none",
 }
 
