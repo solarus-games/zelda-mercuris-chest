@@ -10901,7 +10901,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.1-1",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 344,
   y = 544,
   width = 8,
@@ -10923,7 +10923,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.1-3",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 376,
   y = 544,
   width = 8,
@@ -10945,7 +10945,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.2-1",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 352,
   y = 552,
   width = 8,
@@ -10967,7 +10967,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.2-3",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 384,
   y = 552,
   width = 8,
@@ -10989,7 +10989,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.3-1",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 344,
   y = 552,
   width = 8,
@@ -11011,7 +11011,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.3-3",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 376,
   y = 552,
   width = 8,
@@ -11033,7 +11033,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.4-1",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 352,
   y = 544,
   width = 8,
@@ -11055,7 +11055,7 @@ tile_pattern{
 tile_pattern{
   id = "bridge_tile.4-3",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 384,
   y = 544,
   width = 8,
@@ -12732,7 +12732,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.1-1",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 440,
   width = 16,
@@ -12743,7 +12743,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.1-2",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 472,
   width = 16,
@@ -12754,7 +12754,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.1-3",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 344,
   y = 504,
   width = 16,
@@ -12765,7 +12765,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.1-4",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 504,
   width = 16,
@@ -12776,7 +12776,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.1-5",
   ground = "traversable",
-  default_layer = 0,
+  default_layer = 1,
   x = 376,
   y = 504,
   width = 16,
@@ -12787,7 +12787,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.1-6",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 504,
   width = 16,
@@ -12798,7 +12798,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.2-1",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 464,
   width = 16,
@@ -12809,7 +12809,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.2-2",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 496,
   width = 16,
@@ -12820,7 +12820,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.2-3",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 344,
   y = 528,
   width = 16,
@@ -12831,7 +12831,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.2-4",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 528,
   width = 16,
@@ -12842,7 +12842,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.2-5",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 528,
   width = 16,
@@ -12853,7 +12853,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.2-6",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 528,
   width = 16,
@@ -12864,7 +12864,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.3-1",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 448,
   width = 8,
@@ -12875,7 +12875,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.3-2",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 480,
   width = 8,
@@ -12886,7 +12886,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.3-3",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 344,
   y = 512,
   width = 8,
@@ -12897,7 +12897,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.3-4",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 360,
   y = 512,
   width = 8,
@@ -12908,7 +12908,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.3-5",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 512,
   width = 8,
@@ -12919,7 +12919,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.3-6",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 512,
   width = 8,
@@ -12930,7 +12930,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.4-1",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 368,
   y = 448,
   width = 8,
@@ -12941,7 +12941,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.4-2",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 368,
   y = 480,
   width = 8,
@@ -12952,7 +12952,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.4-3",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 352,
   y = 512,
   width = 8,
@@ -12963,7 +12963,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.4-4",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 368,
   y = 512,
   width = 8,
@@ -12974,7 +12974,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.4-5",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 384,
   y = 512,
   width = 8,
@@ -12985,7 +12985,7 @@ tile_pattern{
 tile_pattern{
   id = "door_cache.4-6",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 400,
   y = 512,
   width = 8,
@@ -13816,7 +13816,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.1-1",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 512,
   width = 32,
@@ -13827,7 +13827,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.1-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 528,
   width = 32,
@@ -13838,7 +13838,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.1-3",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 544,
   width = 32,
@@ -13849,7 +13849,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.1-4",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 248,
   y = 544,
   width = 32,
@@ -13860,7 +13860,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.1-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 544,
   width = 32,
@@ -13871,7 +13871,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.1-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 544,
   width = 32,
@@ -13882,7 +13882,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.2-1",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 520,
   width = 32,
@@ -13893,7 +13893,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.2-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 536,
   width = 32,
@@ -13904,7 +13904,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.2-3",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 552,
   width = 32,
@@ -13915,7 +13915,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.2-4",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 248,
   y = 552,
   width = 32,
@@ -13926,7 +13926,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.2-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 552,
   width = 32,
@@ -13937,7 +13937,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.2-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 552,
   width = 32,
@@ -13948,7 +13948,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.3-1",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 248,
   y = 512,
   width = 8,
@@ -13959,7 +13959,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.3-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 264,
   y = 512,
   width = 8,
@@ -13970,7 +13970,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.3-3",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 512,
   width = 8,
@@ -13981,7 +13981,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.3-4",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 296,
   y = 512,
   width = 8,
@@ -13992,7 +13992,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.3-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 512,
   width = 8,
@@ -14003,7 +14003,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.3-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 328,
   y = 512,
   width = 8,
@@ -14014,7 +14014,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.4-1",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 256,
   y = 512,
   width = 8,
@@ -14025,7 +14025,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.4-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 272,
   y = 512,
   width = 8,
@@ -14036,7 +14036,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.4-3",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 288,
   y = 512,
   width = 8,
@@ -14047,7 +14047,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.4-4",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 304,
   y = 512,
   width = 8,
@@ -14058,7 +14058,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.4-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 320,
   y = 512,
   width = 8,
@@ -14069,7 +14069,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.4-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 336,
   y = 512,
   width = 8,
@@ -14080,7 +14080,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.1-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 216,
   y = 672,
   width = 32,
@@ -14091,7 +14091,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.1-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 688,
   width = 32,
@@ -14102,7 +14102,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.1-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 688,
   width = 32,
@@ -14113,7 +14113,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.2-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 216,
   y = 680,
   width = 32,
@@ -14124,7 +14124,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.2-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 696,
   width = 32,
@@ -14135,7 +14135,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.2-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 696,
   width = 32,
@@ -14146,7 +14146,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.3-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 264,
   y = 656,
   width = 8,
@@ -14157,7 +14157,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.3-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 656,
   width = 8,
@@ -14168,7 +14168,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.3-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 328,
   y = 656,
   width = 8,
@@ -14179,7 +14179,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.4-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 272,
   y = 656,
   width = 8,
@@ -14190,7 +14190,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.4-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 320,
   y = 656,
   width = 8,
@@ -14201,7 +14201,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.blast.4-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 336,
   y = 656,
   width = 8,
@@ -14212,7 +14212,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.1-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 624,
   width = 32,
@@ -14223,7 +14223,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.1-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 640,
   width = 32,
@@ -14234,7 +14234,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.1-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 640,
   width = 32,
@@ -14245,7 +14245,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.2-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 216,
   y = 632,
   width = 32,
@@ -14256,7 +14256,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.2-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 280,
   y = 648,
   width = 32,
@@ -14267,7 +14267,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.2-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 648,
   width = 32,
@@ -14278,7 +14278,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.3-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 264,
   y = 608,
   width = 8,
@@ -14289,7 +14289,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.3-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 312,
   y = 608,
   width = 8,
@@ -14300,7 +14300,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.3-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 328,
   y = 608,
   width = 8,
@@ -14311,7 +14311,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.4-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 272,
   y = 608,
   width = 8,
@@ -14322,7 +14322,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.4-5",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 320,
   y = 608,
   width = 8,
@@ -14333,7 +14333,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.closed.4-6",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 336,
   y = 608,
   width = 8,
@@ -14586,7 +14586,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.1-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 720,
   width = 32,
@@ -14597,7 +14597,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.1-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 344,
   y = 720,
   width = 32,
@@ -14608,7 +14608,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.2-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 728,
   width = 32,
@@ -14619,7 +14619,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.2-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 344,
   y = 728,
   width = 32,
@@ -14630,7 +14630,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.3-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 408,
   y = 672,
   width = 8,
@@ -14641,7 +14641,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.3-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 408,
   y = 704,
   width = 8,
@@ -14652,7 +14652,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.4-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 416,
   y = 672,
   width = 8,
@@ -14663,7 +14663,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs.4-2",
   ground = "empty",
-  default_layer = 0,
+  default_layer = 1,
   x = 416,
   y = 704,
   width = 8,
@@ -14674,7 +14674,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_down.1-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 688,
   width = 16,
@@ -14685,7 +14685,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_down.1-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 704,
   width = 16,
@@ -14696,7 +14696,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_down.2-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 696,
   width = 16,
@@ -14707,7 +14707,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_down.2-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 392,
   y = 712,
   width = 16,
@@ -14718,7 +14718,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_up.1-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 688,
   width = 16,
@@ -14729,7 +14729,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_up.1-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 704,
   width = 16,
@@ -14740,7 +14740,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_up.2-1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 696,
   width = 16,
@@ -14751,7 +14751,7 @@ tile_pattern{
 tile_pattern{
   id = "door_top.stairs_up.2-2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 376,
   y = 712,
   width = 16,
@@ -17969,7 +17969,7 @@ tile_pattern{
 tile_pattern{
   id = "jabu-door_top.1",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 216,
   y = 704,
   width = 32,
@@ -17980,7 +17980,7 @@ tile_pattern{
 tile_pattern{
   id = "jabu-door_top.2",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 216,
   y = 712,
   width = 32,
@@ -17991,7 +17991,7 @@ tile_pattern{
 tile_pattern{
   id = "jabu-door_top.3",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 248,
   y = 704,
   width = 8,
@@ -18002,7 +18002,7 @@ tile_pattern{
 tile_pattern{
   id = "jabu-door_top.4",
   ground = "empty",
-  default_layer = 2,
+  default_layer = 1,
   x = 256,
   y = 704,
   width = 8,
