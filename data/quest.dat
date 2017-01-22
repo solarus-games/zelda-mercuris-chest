@@ -6,7 +6,7 @@ quest{
   long_description = [[
 The new Zelda project in progress from the Solarus team.
 It will not be a sequel to Zelda Mystery of Solarus DX, but a different story in a huge world!]],
-  author = "Christopho",
+  author = "Solarus Team",
   quest_version = "",
   release_date = "",
   website = "http://www.solarus-games.org",
