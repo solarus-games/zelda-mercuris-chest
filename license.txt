@@ -80,8 +80,10 @@ sprites/enemies/agahnim_fake.png
 
 Original art inspired from Nintendo:                Author
 ------------------------------------                ------
+musics/gerudo_valley.ogg                            Jamazon: https://www.youtube.com/channel/UCjveXYR8QXsWaCFzFDMaveg
 musics/great_sea.ogg                                Bulby: https://www.youtube.com/channel/UCz6zvgkf6eKpgqlUZQstOtQ
 musics/la_mountains.ogg                             Marine Desmolins
+musics/la_overworld.ogg                             Patricio Herrera: https://www.youtube.com/channel/UCoAt4icZXiytDvbcehvCcMg
 musics/southern_shrine.ogg                          Marine Desmolins
 musics/tloz_dungeon.ogg                             Marine Desmolins
 musics/witch_hut.ogg                                Marine Desmolins

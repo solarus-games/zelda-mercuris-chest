@@ -323,6 +323,7 @@ music{ id = "gerudo_valley", description = "Gerudo Valley (OOT)" }
 music{ id = "great_fairy", description = "Great Fairy" }
 music{ id = "great_sea", description = "Great Sea" }
 music{ id = "la_mountains", description = "Mountains (LA)" }
+music{ id = "la_overworld", description = "Overworld (LA)" }
 music{ id = "legend", description = "Legend" }
 music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
 music{ id = "lost_woods", description = "Lost Woods" }
