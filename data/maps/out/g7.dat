@@ -7,7 +7,7 @@ properties{
   max_layer = 2,
   world = "outside",
   tileset = "desert",
-  music = "dark_world",
+  music = "gerudo_valley",
 }
 
 tile{
