@@ -64,18 +64,18 @@ for old_id, new_id in pairs(new_tileset_ids) do
   
   local _, error_message = os.rename(old_data_file, new_data_file)
   if error_message ~= nil then
-    print("Failed to replace tileset data file .. " .. old_id .. ": " .. error_message)
+    print("Failed to replace tileset data file " .. old_id .. ": " .. error_message)
     os.exit(1)
   end
   os.execute("dos2unix " .. new_data_file)  -- Nevermind if it fails.
   local _, error_message = os.rename(old_tiles_file, new_tiles_file)
   if error_message ~= nil then
-    print("Failed to replace tiles PNG file .. " .. old_id .. ": " .. error_message)
+    print("Failed to replace tiles PNG file " .. old_id .. ": " .. error_message)
     os.exit(1)
   end
   local _, error_message = os.rename(old_entities_file, new_entities_file)
   if error_message ~= nil then
-    print("Failed to replace entities PNG file .. " .. old_id .. ": " .. error_message)
+    print("Failed to replace entities PNG file " .. old_id .. ": " .. error_message)
     os.exit(1)
   end
 end
