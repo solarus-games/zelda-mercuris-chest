@@ -68,6 +68,8 @@ tileset{ id = "volcano", description = "volcano" }
 
 sprite{ id = "console/cursor", description = "Console: Cursor" }
 sprite{ id = "console/icons", description = "Console: Icons" }
+sprite{ id = "enemies/Cobruss", description = "Cobruss" }
+sprite{ id = "enemies/Vipeross", description = "Vipeross" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
 sprite{ id = "enemies/billy", description = "Enemy: Billy" }
@@ -486,6 +488,8 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
+enemy{ id = "Cobruss", description = "Cobruss" }
+enemy{ id = "Vipeross", description = "Vipeross" }
 enemy{ id = "bee_guard", description = "Bee Guard" }
 enemy{ id = "billy", description = "Billy" }
 enemy{ id = "blue_bullblin", description = "Bullblin (blue)" }

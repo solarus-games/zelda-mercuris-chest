@@ -112,3 +112,19 @@ destination{
   direction = 1,
 }
 
+enemy{
+  layer = 1,
+  x = 24,
+  y = 125,
+  direction = 3,
+  breed = "Vipeross",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 125,
+  direction = 3,
+  breed = "Cobruss",
+}
+
