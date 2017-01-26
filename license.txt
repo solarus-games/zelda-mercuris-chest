@@ -63,6 +63,9 @@ sprites/menus/selection_menu_mode.png
 sprites/menus/selection_menu_option_container.png
 sprites/menus/selection_menu_save*.png
 sprites/menus/selection_menu_save_container.png
+sprites/menus/solarus_logo.png
+sprites/menus/team_logo.png
+sprites/menus/team_logo_text.png
 sprites/menus/title_daylight_*.png
 sprites/menus/title_dx.png
 sprites/menus/title_night_*.png
@@ -143,4 +146,3 @@ sprites/menus/title_logo.png
 sprites/npc/alttp.png
 sprites/npc/black_knight_soldier.png
 sprites/npc/witch.png
-

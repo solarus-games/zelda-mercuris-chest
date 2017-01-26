@@ -10,32 +10,11 @@ function title_screen:on_started()
 
   self.surface = sol.surface.create(320, 240)
   sol.timer.start(self, 300, function()
-    self:phase_zs_presents()
+      self:phase_title()
   end)
 
   -- use these 0.3 seconds to preload all sound effects
   sol.audio.preload_sounds()
-end
-
-function title_screen:phase_zs_presents()
-
-  -- "Zelda Solarus presents" displayed for two seconds
-  self.phase = "zs_presents"
-
-  local zs_presents_img =
-      sol.surface.create("title_screen_initialization.png", true)
-
-  local width, height = zs_presents_img:get_size()
-  local x, y = 160 - width / 2, 120 - height / 2
-  zs_presents_img:draw(self.surface, x, y)
-  sol.audio.play_sound("intro")
-
-  sol.timer.start(self, 2000, function()
-    self.surface:fade_out(10)
-    sol.timer.start(self, 700, function()
-      self:phase_title()
-    end)
-  end)
 end
 
 function title_screen:phase_title()
