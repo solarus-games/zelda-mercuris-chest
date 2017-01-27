@@ -68,8 +68,8 @@ tileset{ id = "volcano", description = "volcano" }
 
 sprite{ id = "console/cursor", description = "Console: Cursor" }
 sprite{ id = "console/icons", description = "Console: Icons" }
-sprite{ id = "enemies/Cobruss", description = "Cobruss" }
-sprite{ id = "enemies/Vipeross", description = "Vipeross" }
+sprite{ id = "enemies/cobruss", description = "Cobruss" }
+sprite{ id = "enemies/vipeross", description = "Vipeross" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
 sprite{ id = "enemies/billy", description = "Enemy: Billy" }
@@ -488,8 +488,6 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
-enemy{ id = "Cobruss", description = "Cobruss" }
-enemy{ id = "Vipeross", description = "Vipeross" }
 enemy{ id = "bee_guard", description = "Bee Guard" }
 enemy{ id = "billy", description = "Billy" }
 enemy{ id = "blue_bullblin", description = "Bullblin (blue)" }
@@ -501,6 +499,7 @@ enemy{ id = "blue_knight_soldier", description = "Knight Soldier (blue)" }
 enemy{ id = "blue_pig_soldier", description = "Pig Soldier (blue)" }
 enemy{ id = "bubble", description = "Bubble" }
 enemy{ id = "chain_and_ball", description = "Chain and ball" }
+enemy{ id = "cobruss", description = "Cobruss" }
 enemy{ id = "drakomos", description = "Drakomos" }
 enemy{ id = "drakomos_head", description = "Drakomos head" }
 enemy{ id = "drakomos_lava_spawner", description = "Drakomos lava spawner" }
@@ -549,6 +548,7 @@ enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "topik_blue", description = "Blue Topik" }
 enemy{ id = "topik_green", description = "Green Topik" }
 enemy{ id = "topik_red", description = "Red Topik" }
+enemy{ id = "vipeross", description = "Vipeross" }
 enemy{ id = "zoura_blue", description = "Blue Zoura" }
 enemy{ id = "zoura_green", description = "Green Zoura" }
 enemy{ id = "zoura_red", description = "Red Zoura" }

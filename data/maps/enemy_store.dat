@@ -117,7 +117,7 @@ enemy{
   x = 24,
   y = 125,
   direction = 3,
-  breed = "Vipeross",
+  breed = "vipeross",
 }
 
 enemy{
@@ -125,6 +125,6 @@ enemy{
   x = 56,
   y = 125,
   direction = 3,
-  breed = "Cobruss",
+  breed = "cobruss",
 }
 
