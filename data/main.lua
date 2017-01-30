@@ -20,33 +20,33 @@ function sol.main:on_started()
   sol.main.load_settings()
 
   -- Show the Solarus logo initially.
-  sol.menu.start(self, solarus_logo)
+  sol.menu.start(sol.main, solarus_logo)
 
   -- Then the author's logo (Solarus Team), unless a game was started by a debug key.
-  solarus_logo.on_finished = function()
-    if self.game == nil then
-      sol.menu.start(self, team_logo)
+  function solarus_logo:on_finished()
+    if sol.main.game == nil then
+      sol.menu.start(sol.main, team_logo)
     end
   end
 
   -- Then the language selection menu.
-  team_logo.on_finished = function()
-    if self.game == nil then
-      sol.menu.start(self, language_menu)
+  function team_logo:on_finished()
+    if sol.main.game == nil then
+      sol.menu.start(sol.main, language_menu)
     end
   end
 
   -- Then the title screen.
-  language_menu.on_finished = function()
-    if self.game == nil then
-      sol.menu.start(self, title_screen)
+  function language_menu:on_finished()
+    if sol.main.game == nil then
+      sol.menu.start(sol.main, title_screen)
     end
   end
 
   -- Then the savegame menu.
-  title_screen.on_finished = function()
-    if self.game == nil then
-      sol.menu.start(self, savegame_menu)
+  function title_screen:on_finished()
+    if sol.main.game == nil then
+      sol.menu.start(sol.main, savegame_menu)
     end
   end
 end
@@ -79,6 +79,7 @@ function sol.main:start_savegame(game)
 
   -- Skip initial menus if any.
   sol.menu.stop(solarus_logo)
+  sol.menu.stop(team_logo)
   sol.menu.stop(language_menu)
   sol.menu.stop(title_screen)
   sol.menu.stop(savegame_menu)
