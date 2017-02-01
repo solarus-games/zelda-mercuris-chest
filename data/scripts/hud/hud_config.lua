@@ -36,8 +36,8 @@ local hud_config = {
   -- Small key counter.
   {
     menu_script = "scripts/hud/small_keys",
-    x = -36,
-    y = -18,
+    x = -26,
+    y = -19,
   },
 
   -- Floor view.
@@ -51,14 +51,14 @@ local hud_config = {
   {
     menu_script = "scripts/hud/pause_icon",
     x = 0,
-    y = 7,
+    y = 6,
   },
 
   -- Item icon for slot 1.
   {
     menu_script = "scripts/hud/item_icon",
     x = 11,
-    y = 29,
+    y = 28,
     slot = 1,  -- Item slot (1 or 2).
   },
 
@@ -66,7 +66,7 @@ local hud_config = {
   {
     menu_script = "scripts/hud/item_icon",
     x = 63,
-    y = 29,
+    y = 28,
     slot = 2,  -- Item slot (1 or 2).
   },
 
@@ -74,14 +74,14 @@ local hud_config = {
   {
     menu_script = "scripts/hud/attack_icon",
     x = 13,
-    y = 29,
+    y = 28,
   },
 
   -- Action icon.
   {
     menu_script = "scripts/hud/action_icon",
     x = 26,
-    y = 51,
+    y = 50,
   },
 }
 
