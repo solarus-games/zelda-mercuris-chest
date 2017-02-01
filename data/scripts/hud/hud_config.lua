@@ -36,8 +36,8 @@ local hud_config = {
   -- Small key counter.
   {
     menu_script = "scripts/hud/small_keys",
-    x = -18,
-    y = -36,
+    x = -36,
+    y = -18,
   },
 
   -- Floor view.
