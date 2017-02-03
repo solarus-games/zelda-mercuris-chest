@@ -68,8 +68,6 @@ tileset{ id = "volcano", description = "volcano" }
 
 sprite{ id = "console/cursor", description = "Console: Cursor" }
 sprite{ id = "console/icons", description = "Console: Icons" }
-sprite{ id = "enemies/cobruss", description = "Cobruss" }
-sprite{ id = "enemies/vipeross", description = "Vipeross" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
 sprite{ id = "enemies/billy", description = "Enemy: Billy" }
@@ -87,6 +85,7 @@ sprite{ id = "enemies/blue_pig_soldier", description = "Enemy: Pig Soldier (blue
 sprite{ id = "enemies/blue_pig_soldier_sword", description = "Enemy: Pig Soldier (blue) sword" }
 sprite{ id = "enemies/bubble", description = "Enemy: Bubble" }
 sprite{ id = "enemies/chain_and_ball", description = "Enemy: Chain and ball" }
+sprite{ id = "enemies/cobruss", description = "Cobruss" }
 sprite{ id = "enemies/drakomos", description = "Enemy: Drakomos" }
 sprite{ id = "enemies/drakomos_head", description = "Enemy: Drakomos head" }
 sprite{ id = "enemies/drakomos_lava_spawner", description = "Enemy: Drakomos lava spawner" }
@@ -153,6 +152,7 @@ sprite{ id = "enemies/topik_green", description = "Green Topik" }
 sprite{ id = "enemies/topik_green_weapon", description = "Green Topik Sword" }
 sprite{ id = "enemies/topik_red", description = "Red Topik" }
 sprite{ id = "enemies/topik_red_weapon", description = "Red Topik Sword" }
+sprite{ id = "enemies/vipeross", description = "Vipeross" }
 sprite{ id = "enemies/zoura_blue", description = "Blue Zoura Sword" }
 sprite{ id = "enemies/zoura_blue_weapon", description = "Blue Zoura" }
 sprite{ id = "enemies/zoura_green", description = "Green Zoura" }
