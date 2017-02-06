@@ -345,8 +345,7 @@ teletransporter{
   y = 200,
   width = 16,
   height = 16,
-  destination_map = "outside/a7",
-  destination = "test_destination",
+  destination_map = "out/a7",
 }
 
 teletransporter{
