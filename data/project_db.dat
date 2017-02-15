@@ -437,7 +437,6 @@ item{ id = "blue_potion", description = "Blue potion" }
 item{ id = "bomb", description = "Bombs (x1 / x3 / x8)" }
 item{ id = "bomb_bag", description = "Bomb bag (small / large / huge)" }
 item{ id = "bombs_counter", description = "Bombs counter" }
-item{ id = "bone_key", description = "Bone key" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "boss_key", description = "Dungeon boss key" }
 item{ id = "bottle_1", description = "Bottle 1" }
@@ -447,29 +446,21 @@ item{ id = "bottle_4", description = "Bottle 4" }
 item{ id = "bow", description = "Bow" }
 item{ id = "cane_of_medusa", description = "Cane of Medusa" }
 item{ id = "cane_of_somaria", description = "Cane of Somaria" }
-item{ id = "clay_key", description = "Clay key" }
 item{ id = "compass", description = "Dungeon compass" }
 item{ id = "croissant", description = "Croissant (x1)" }
 item{ id = "croissants_counter", description = "Croissants counter" }
 item{ id = "fairy", description = "Fairy" }
 item{ id = "feather", description = "Feather" }
-item{ id = "fire_stone", description = "Fire stone (x1)" }
-item{ id = "fire_stones_counter", description = "Fire stones counter" }
 item{ id = "flippers", description = "Flippers" }
 item{ id = "glove", description = "Iron glove / Golden glove" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "heart", description = "Heart (x1)" }
 item{ id = "heart_container", description = "Heart container" }
 item{ id = "hookshot", description = "Hookshot" }
-item{ id = "ice_key", description = "Ice key" }
-item{ id = "iron_key", description = "Iron key" }
 item{ id = "lamp", description = "Lamp" }
-item{ id = "level_4_way", description = "Apple pie / Gold bars / Edelweiss" }
 item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
-item{ id = "magic_cape", description = "Magic cape" }
 item{ id = "magic_flask", description = "Magic flask (small / big)" }
 item{ id = "map", description = "Dungeon map" }
-item{ id = "mystic_mirror", description = "Mystic mirror" }
 item{ id = "pain_au_chocolat", description = "Pain au chocolat (x1)" }
 item{ id = "pains_au_chocolat_counter", description = "Pains au chocolat counter" }
 item{ id = "pegasus_shoes", description = "Pegasus shoes" }
@@ -477,15 +468,12 @@ item{ id = "piece_of_heart", description = "Piece of heart" }
 item{ id = "quiver", description = "Quiver (small / large / huge)" }
 item{ id = "random", description = "(Random)" }
 item{ id = "red_potion", description = "Red potion" }
-item{ id = "rock_key", description = "Rock key" }
 item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
 item{ id = "rupee_bag", description = "Rupee bag (small / large / huge)" }
 item{ id = "shield", description = "Shield" }
 item{ id = "small_key", description = "Small key" }
-item{ id = "stone_key", description = "Stone key" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
-item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
 enemy{ id = "bee_guard", description = "Bee Guard" }
