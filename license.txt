@@ -75,6 +75,7 @@ sprites/npc/inferno.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
 text/minecraftia.png                                Andrew Tyler: http://www.andrewtyler.net
+sounds/solarus_team_logo.ogg                        Zonzifleur
 
 Files with original content (CC BY-SA 3.0) but with a Nintendo filename:
 ------------------------------------------------------------------------
