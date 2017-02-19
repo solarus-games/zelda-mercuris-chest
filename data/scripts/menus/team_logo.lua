@@ -28,17 +28,21 @@ local text_x =  (full_logo_width - txt_width) / 2
 local text_y = full_logo_height - txt_height
 text_img:set_xy(text_x, text_y)
 
--- Counter for the number of rotations.
+-- Counter for the number of 1/2 rotations.
 local rotation_count = 0
-local max_rotation_count = 3
+local max_rotation_count = 7
+logo_sprite:set_animation("rotation")
+local rotation_frame_count = logo_sprite:get_num_frames()
+rotation_frame_count = rotation_frame_count / 2
+logo_sprite:set_animation("static")
 
 -- Handling sprite delay.
-local sprite_initial_delay = 1
-local sprite_final_delay = 80
+local sprite_initial_delay = 5
+local sprite_final_delay = 50
 local sprite_delay_diff = sprite_final_delay - sprite_initial_delay
 
 -- Animation steps.
-local NO_STATE, ROTATING, SHINING, DISPLAYING_TEXT, FINAL = 0, 1, 2, 3, 4
+local NO_STATE, ROTATING, SHINING, FINAL = 0, 1, 2, 3
 local animation_step = NO_STATE
 
 -----------------------------------------------------------------
@@ -55,13 +59,13 @@ end
 
 -----------------------------------------------------------------
 
--- Count the number of rotation, and each time decelerate a bit.
+-- Count the number of 1/2 rotations, and each time decelerate a bit.
 function logo_sprite:on_frame_changed(animation, frame)
   if animation_step == 0 then
     return
   end
 
-  if animation == "rotation" and frame == 0 then
+  if animation == "rotation" and (frame % rotation_frame_count) == 0 then  
     local current_time = rotation_count / (max_rotation_count - 1)
 
     -- Decrement the speed.
@@ -74,10 +78,12 @@ function logo_sprite:on_frame_changed(animation, frame)
     -- Stop when max_rotation_count is reach.
     if(rotation_count == max_rotation_count) then
       logo_sprite:set_paused(true)
-      team_logo_menu:go_to_step(SHINING)
+      -- Wait a bit before shining
+      sol.timer.start(team_logo_menu, 400, function()
+        team_logo_menu:go_to_step(SHINING)
+      end)
     end
   end
-
 end
 
 -- Automatically go to the next step.
@@ -85,7 +91,7 @@ function logo_sprite:on_animation_finished(animation)
   if animation == "rotation" then
     team_logo_menu:go_to_step(SHINING)
   elseif animation == "shine" then
-    team_logo_menu:go_to_step(DISPLAYING_TEXT)
+    team_logo_menu:go_to_step(FINAL)
   end
 end
 
@@ -117,18 +123,7 @@ function team_logo_menu:go_to_step(step)
     rotation_count = 0
     logo_sprite:set_animation("shine")
     logo_sprite:set_direction(0)
-
-  -- Step 3: No animation on logo, launch timer for text.
-  elseif step == DISPLAYING_TEXT then
-    animation_step = step
-    rotation_count = 0
-    logo_sprite:set_animation("static")
-    logo_sprite:set_direction(0)
-
-    -- Start timer before displaying text.
-    sol.timer.start(team_logo_menu, 500, function()
-      team_logo_menu:go_to_step(FINAL)
-    end)
+    sol.audio.play_sound("solarus_team_logo")
 
   -- Step 3: everything is displayed, no more animation.
   elseif step == FINAL then
@@ -136,7 +131,6 @@ function team_logo_menu:go_to_step(step)
     rotation_count = 0
     logo_sprite:set_animation("static")
     logo_sprite:set_direction(0)
-    sol.audio.play_sound("intro")
 
     -- Start the final timer.
     sol.timer.start(team_logo_menu, 700, function()
@@ -176,7 +170,7 @@ function team_logo_menu:on_draw(screen)
   logo_sprite:draw(screen, full_logo_x, full_logo_y)
 
   -- Draw the text (only after step 1 is done).
-  if animation_step > DISPLAYING_TEXT then
+  if animation_step >= SHINING then
     text_img:draw(screen, full_logo_x, full_logo_y)
   end
 end
@@ -205,10 +199,10 @@ function team_logo_menu:on_joypad_button_pressed(button)
   end
 end
 
--- Try to skip the menu: go directly to the final step
+-- Try to skip the menu: go directly to the step SHINING
 function team_logo_menu:try_skip_menu()
-  if animation_step ~= FINAL then
-    team_logo_menu:go_to_step(FINAL)
+  if animation_step < SHINING then
+    team_logo_menu:go_to_step(SHINING)
     return true
   else
     return false
