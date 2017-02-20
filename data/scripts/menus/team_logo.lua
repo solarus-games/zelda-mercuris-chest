@@ -85,7 +85,9 @@ function logo_sprite:on_frame_changed(animation, frame)
       logo_sprite:set_paused(true)
       -- Wait a bit before shining
       sol.timer.start(team_logo_menu, 400, function()
-        team_logo_menu:go_to_step(SHINING)
+        if animation_step < SHINING then
+          team_logo_menu:go_to_step(SHINING)
+        end
       end)
     end
   end
