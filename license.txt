@@ -15,6 +15,7 @@ Scripts under GNU GPL v3:                           Author
 Data files under CC BY-SA 4.0:                      Author
 ------------------------------                      ------
 **.dat
+sounds/solarus_team_logo.ogg                        Zonzifleur
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
 sprites/enemies/billy.png
@@ -75,7 +76,6 @@ sprites/npc/inferno.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
 text/minecraftia.png                                Andrew Tyler: http://www.andrewtyler.net
-sounds/solarus_team_logo.ogg                        Zonzifleur
 
 Files with original content (CC BY-SA 3.0) but with a Nintendo filename:
 ------------------------------------------------------------------------
