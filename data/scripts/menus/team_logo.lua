@@ -61,6 +61,11 @@ end
 
 -- Count the number of 1/2 rotations, and each time decelerate a bit.
 function logo_sprite:on_frame_changed(animation, frame)
+
+  if not sol.menu.is_started(team_logo_menu) then
+    return
+  end
+
   if animation_step == 0 then
     return
   end
@@ -76,7 +81,7 @@ function logo_sprite:on_frame_changed(animation, frame)
     rotation_count = rotation_count + 1
 
     -- Stop when max_rotation_count is reach.
-    if(rotation_count == max_rotation_count) then
+    if rotation_count == max_rotation_count then
       logo_sprite:set_paused(true)
       -- Wait a bit before shining
       sol.timer.start(team_logo_menu, 400, function()
@@ -88,6 +93,11 @@ end
 
 -- Automatically go to the next step.
 function logo_sprite:on_animation_finished(animation)
+
+  if not sol.menu.is_started(team_logo_menu) then
+    return
+  end
+
   if animation == "rotation" then
     team_logo_menu:go_to_step(SHINING)
   elseif animation == "shine" then
@@ -178,7 +188,7 @@ end
 -- Key pressed: skip menu or quit Solarus.
 function team_logo_menu:on_key_pressed(key)
   if key == "return" or key == "space" then
-    return  team_logo_menu:try_skip_menu()
+    return team_logo_menu:try_skip_menu()
   elseif key == "escape" then
     sol.main.exit()
     return true
