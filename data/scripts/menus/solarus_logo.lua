@@ -1,8 +1,14 @@
 -- Animated Solarus logo by Maxs.
 
--- Usage:
--- local logo = require("scripts/menus/solarus_logo")
--- sol.menu.start(logo)
+-- You may include this logo in your quest to show that you use Solarus,
+-- but this is not mandatory.
+
+-- Example of use:
+-- local solarus_logo = require("menus/solarus_logo")
+-- sol.menu.start(solarus_logo)
+-- function solarus_logo:on_finished()
+--   -- Do whatever you want next (show a title screen, start a game...)
+-- end
 local solarus_logo_menu = {}
 
 -- Main surface of the menu.
@@ -37,7 +43,7 @@ local timer = nil
 -------------------------------------------------------------------------------
 
 -- Rebuilds the whole surface of the menu.
-local function rebuild_surface ()
+local function rebuild_surface()
 
   surface:clear()
 
@@ -90,8 +96,8 @@ function solarus_logo_menu:step1()
   sun:set_xy(0, -33)
   sword:stop_movement()
   sword:set_xy(-48, 48)
-  -- Play the sword sound.
-  sol.audio.play_sound("solarus_logo")
+  -- Play a sound.
+  sol.audio.play_sound("diarandor/solarus_logo")
   -- Update the surface.
   rebuild_surface()
 end
@@ -174,13 +180,10 @@ end
 -- Called when a keyboard key is pressed.
 function solarus_logo_menu:on_key_pressed(key)
 
-  local handled = false
-
   if key == "escape" then
     -- Escape: quit Solarus.
     sol.main.exit()
-    handled = true
-  elseif key == "space" or key == "return" then
+  else
     -- If the timer exists (after step 1).
     if timer ~= nil then
       -- Stop the timer.
@@ -192,7 +195,6 @@ function solarus_logo_menu:on_key_pressed(key)
         -- Start step 2.
         solarus_logo_menu:step2()
       end
-      handled = true
 
     -- If the animation step is not greater than 0.
     elseif animation_step <= 0 then
@@ -200,13 +202,11 @@ function solarus_logo_menu:on_key_pressed(key)
       solarus_logo_menu:step1()
       -- Start step 2.
       solarus_logo_menu:step2()
-      handled = true
     end
 
+    -- Return true to indicate that the keyboard event was handled.
+    return true
   end
-
-  -- Return whether the keyboard event was handled.
-  return handled
 end
 
 -- Return the menu to the caller.

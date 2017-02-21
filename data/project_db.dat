@@ -360,6 +360,7 @@ sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "danger", description = "danger" }
+sound{ id = "diarandor/solarus_logo", description = "Solarus logo" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
@@ -427,8 +428,8 @@ sound{ id = "walk_on_water", description = "walk_on_water" }
 sound{ id = "warp", description = "warp" }
 sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
+sound{ id = "zonzifleur/solarus_team_logo", description = "Solarus team logo" }
 sound{ id = "zora", description = "zora" }
-sound{ id = "zonzifleur/solarus_team_logo", description = "zonzifleur/solarus_team_logo" }
 
 item{ id = "apple", description = "Apples (x3)" }
 item{ id = "apples_counter", description = "Apples counter" }
