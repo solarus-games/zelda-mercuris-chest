@@ -5,6 +5,8 @@ local language_menu = {}
 
 local quest_manager = require("scripts/quest_manager")
 
+local default_id = "fr"
+
 function language_menu:on_started()
 
   if sol.language.get_language() ~= nil then
@@ -13,7 +15,6 @@ function language_menu:on_started()
   else
 
     local ids = sol.language.get_languages()
-    local default_id = "fr"
     local index = 1
     local cursor_position = 1
     self.surface = sol.surface.create(320, 240)
@@ -116,9 +117,9 @@ function language_menu:on_joypad_axis_moved(axis, state)
     end
   else  -- Vertical axis.
     if state > 0 then
-      self:direction_pressed(2)
-    else
       self:direction_pressed(6)
+    elseif state < 0 then
+      self:direction_pressed(2)
     end
   end
 end
