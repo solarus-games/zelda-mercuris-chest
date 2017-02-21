@@ -15,7 +15,7 @@ Scripts under GNU GPL v3:                           Author
 Data files under CC BY-SA 4.0:                      Author
 ------------------------------                      ------
 **.dat
-sounds/solarus_team_logo.ogg                        Zonzifleur
+sounds/zonzifleur/solarus_team_logo.ogg             Zonzifleur
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
 sprites/enemies/billy.png

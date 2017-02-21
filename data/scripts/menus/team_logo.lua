@@ -135,7 +135,7 @@ function team_logo_menu:go_to_step(step)
     rotation_count = 0
     logo_sprite:set_animation("shine")
     logo_sprite:set_direction(0)
-    sol.audio.play_sound("solarus_team_logo")
+    sol.audio.play_sound("zonzifleur/solarus_team_logo")
 
   -- Step 3: everything is displayed, no more animation.
   elseif step == FINAL then
