@@ -1,8 +1,7 @@
 -- Script that creates a head-up display for a game.
 
 -- Usage:
--- local hud_manager = require("scripts/hud/hud")
--- local hud = hud_manager:create(game)
+-- require("scripts/hud/hud")
 
 require("scripts/multi_events")
 local hud_config = require("scripts/hud/hud_config")
