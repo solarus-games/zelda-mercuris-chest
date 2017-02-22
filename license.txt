@@ -15,9 +15,12 @@ Scripts under GNU GPL v3:                           Author
 Data files under CC BY-SA 4.0:                      Author
 ------------------------------                      ------
 **.dat
+
 fonts/minecraftia.png                               Andrew Tyler: http://www.andrewtyler.net
+
 sounds/diarandor/solarus_logo.ogg                   Olivier Cléro
 sounds/zonzifleur/solarus_team_logo.ogg             Zonzifleur
+
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
 sprites/enemies/billy.png
@@ -99,10 +102,15 @@ Files that include content from Nintendo:
 -----------------------------------------
 fonts/*.png
 fonts/la.ttf
+
 languages/*/images/*.png
+
 musics/*.it
+
 sounds/*.ogg
+
 tilesets/*.png
+
 sprites/enemies/blue_flame.png
 sprites/enemies/*_knight_soldier.png
 sprites/enemies/bubble.png
