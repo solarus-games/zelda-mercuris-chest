@@ -48,7 +48,8 @@ sprites/entities/fresco.png
 sprites/hud/dialog_box.png
 sprites/hud/gameover_fade.png
 sprites/hud/icons_flip.png
-sprites/hud/item_icon_*.png
+sprites/hud/item_icon_1.png
+sprites/hud/item_icon_2.png
 sprites/hud/magic_bar.png
 sprites/hud/rupee_icon.png
 sprites/menus/dungeon_maps/*.png
@@ -137,7 +138,6 @@ sprites/entities/the_end.png
 sprites/entities/vine.png
 sprites/hero/*.png
 sprites/hud/dialog_icons.png
-sprites/hud/digits.png
 sprites/hud/hearts.png
 sprites/hud/small_key_icon.png
 sprites/menus/dungeon_map_icons.png
