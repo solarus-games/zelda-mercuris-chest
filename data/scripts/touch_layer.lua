@@ -1,7 +1,7 @@
 -- Allow to control the hero with a virtual joystick and 5 virtual buttons triggered by touch events.
 
 -- Usage:
--- require("scripts/touch_layer.lua")
+-- touch_layer = require("scripts/touch_layer.lua")
 -- touch_layer:set_callback_context(context)
 
 -- Then the script will call the context:on_virtual_command_event(command, is_pressed)
@@ -50,21 +50,21 @@ local joystick = {
 }
 
 
-function touch_layer:start(context)
+function touch_layer:initialize()
 
   if sol.main.get_os() == "iOS" then
     local virtual_buttons = require("scripts/menus/virtual_button")
     for _, button in pairs(buttons) do
       button.surface:set_opacity(90)
       button.menu = virtual_buttons.create(button)
-      sol.menu.start(context, button.menu)
+      sol.menu.start(sol.main, button.menu)
     end
 
-	joystick.background_surface:set_opacity(90)
-	joystick.stick_surface:set_opacity(90)
+	  joystick.background_surface:set_opacity(90)
+	  joystick.stick_surface:set_opacity(90)
     joystick.menu = require("scripts/menus/virtual_joystick")
-    sol.menu.start(context, joystick.menu)
     joystick.menu:create(joystick)
+    sol.menu.start(sol.main, joystick.menu)
   end
 end
 
@@ -99,4 +99,5 @@ function touch_layer:on_virtual_command_event(command, is_pressed)
   end
 end
 
+touch_layer:initialize()
 return touch_layer

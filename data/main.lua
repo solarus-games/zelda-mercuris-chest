@@ -23,9 +23,6 @@ function sol.main:on_started()
   -- Show the Solarus logo initially.
   sol.menu.start(sol.main, solarus_logo)
 
-  -- Touchscreen layer.
-  touch_layer:start(self)
-
   -- Then the author's logo (Solarus Team), unless a game was started by a debug key.
   function solarus_logo:on_finished()
     if sol.main.game == nil then
