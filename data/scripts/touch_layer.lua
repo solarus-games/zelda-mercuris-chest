@@ -4,8 +4,9 @@
 -- touch_layer = require("scripts/touch_layer.lua")
 -- touch_layer:set_callback_context(context)
 
--- Then the script will call the context:on_virtual_command_event(command, is_pressed)
--- event each time a virtual command is pressed or released.
+-- Then the script will call the context:on_virtual_command_pressed(command) and
+-- context:on_virtual_command_released(command) events each time a
+-- virtual command is pressed or released.
 
 local touch_layer = {}
 
@@ -89,14 +90,15 @@ function touch_layer:set_game(game)
   end
 end
 
--- Make this function as callback once a game is started
-function touch_layer:on_virtual_command_event(command, is_pressed)
+-- Callback functions once a game is started
+function touch_layer:on_virtual_command_pressed(command)
 
-  if is_pressed then
-    self.game:simulate_command_pressed(command)
-  else
-    self.game:simulate_command_released(command)
-  end
+  self.game:simulate_command_pressed(command)
+end
+
+function touch_layer:on_virtual_command_released(command)
+
+  self.game:simulate_command_released(command)
 end
 
 touch_layer:initialize()

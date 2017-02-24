@@ -158,14 +158,12 @@ function language_menu:on_joypad_button_pressed(button)
   return self:on_key_pressed("space")
 end
 
-function language_menu:on_virtual_command_event(command, is_pressed)
+function language_menu:on_virtual_command_pressed(command)
 
-  if is_pressed then
-    if command == "action" then
-      self:on_key_pressed("space")
-    else
-      self:on_key_pressed(command)
-    end
+  if command == "action" then
+    self:on_key_pressed("space")
+  else
+    self:on_key_pressed(command)
   end
 end
 

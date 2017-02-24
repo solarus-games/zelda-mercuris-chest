@@ -46,7 +46,7 @@ function virtual_button:start_command()
   if not self.is_pushed then
     self.is_pushed = true
     if self.callback_context ~= nil then
-      self.callback_context:on_virtual_command_event(self.command, true)
+      self.callback_context:on_virtual_command_pressed(self.command)
     end
   end
 end
@@ -56,7 +56,7 @@ function virtual_button:stop_command()
   if self.is_pushed then
     self.is_pushed = false
     if self.callback_context ~= nil then
-      self.callback_context:on_virtual_command_event(self.command, false)
+      self.callback_context:on_virtual_command_released(self.command)
     end
   end
 end

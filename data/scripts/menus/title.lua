@@ -170,14 +170,12 @@ function title_screen:on_joypad_button_pressed(button)
   return self:try_finish_title()
 end
 
-function title_screen:on_virtual_command_event(command, is_pressed)
+function title_screen:on_virtual_command_pressed(command)
 
-  if is_pressed then
-    if command == "action" then
-      self:on_key_pressed("space")
-    else
-      self:on_key_pressed(command)
-    end
+  if command == "action" then
+    self:on_key_pressed("space")
+  else
+    self:on_key_pressed(command)
   end
 end
 

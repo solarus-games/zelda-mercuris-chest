@@ -105,7 +105,7 @@ function virtual_joystick:start_direction(direction)
   if not simulated_directions[direction] then
     simulated_directions[direction] = true
     if callback_context ~= nil then
-      callback_context:on_virtual_command_event(direction, true)
+      callback_context:on_virtual_command_pressed(direction)
     end
   end
 end
@@ -115,7 +115,7 @@ function virtual_joystick:stop_direction(direction)
   if simulated_directions[direction] then
     simulated_directions[direction] = false
     if callback_context ~= nil then
-      callback_context:on_virtual_command_event(direction, false)
+      callback_context:on_virtual_command_released(direction)
     end
   end
 end
