@@ -65,7 +65,7 @@ end
 
 function virtual_joystick:on_draw(screen)
 
-  -- Compute the position to display the joystick its background.
+  -- Compute the position to display the joystick and its background.
   local stick_icon_x = self.center_x - stick_icon_half_width
   local stick_icon_y = self.center_y - stick_icon_half_height
 

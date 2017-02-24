@@ -10,36 +10,36 @@
 local touch_layer = {}
 
 local buttons = {
-    item_1 = {
-        surface = sol.surface.create("touch/icons/item_1.png"),
-        x = 232,
-        y = 225,
-        command = "item_1",
-    },
-    pause = {
-        surface = sol.surface.create("touch/icons/pause.png"),
-        x = 250,
-        y = 200,
-        command = "pause",
-    },
-    item_2 = {
-        surface = sol.surface.create("touch/icons/item_2.png"),
-        x = 268,
-        y = 225,
-        command = "item_2",
-    },
-    action = {
-        surface = sol.surface.create("touch/icons/action.png"),
-        x = 286,
-        y = 200,
-        command = "action",
-    },
-    attack = {
-        surface = sol.surface.create("touch/icons/attack.png"),
-        x = 304,
-        y = 225,
-        command = "attack",
-    },
+  item_1 = {
+    surface = sol.surface.create("touch/icons/item_1.png"),
+    x = 232,
+    y = 225,
+    command = "item_1",
+  },
+  pause = {
+    surface = sol.surface.create("touch/icons/pause.png"),
+    x = 250,
+    y = 200,
+    command = "pause",
+  },
+  item_2 = {
+    surface = sol.surface.create("touch/icons/item_2.png"),
+    x = 268,
+    y = 225,
+    command = "item_2",
+  },
+  action = {
+    surface = sol.surface.create("touch/icons/action.png"),
+    x = 286,
+    y = 200,
+    command = "action",
+  },
+  attack = {
+    surface = sol.surface.create("touch/icons/attack.png"),
+    x = 304,
+    y = 225,
+    command = "attack",
+  },
 }
 
 local joystick = {
@@ -60,8 +60,8 @@ function touch_layer:initialize()
       sol.menu.start(sol.main, button.menu)
     end
 
-	  joystick.background_surface:set_opacity(90)
-	  joystick.stick_surface:set_opacity(90)
+    joystick.background_surface:set_opacity(90)
+    joystick.stick_surface:set_opacity(90)
     joystick.menu = require("scripts/menus/virtual_joystick")
     joystick.menu:create(joystick)
     sol.menu.start(sol.main, joystick.menu)
