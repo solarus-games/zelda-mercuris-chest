@@ -2,7 +2,7 @@ local map = ...
 
 function map:on_started()
   local game = map:get_game()
-  
+
   -- dynamic music channel volume changes
 
   sol.audio.set_music_channel_volume(0, 64)

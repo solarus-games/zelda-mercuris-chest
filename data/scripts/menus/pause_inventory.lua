@@ -134,7 +134,7 @@ function inventory_submenu:is_item_selected()
 end
 
 function inventory_submenu:on_command_pressed(command)
-  
+
   local handled = submenu.on_command_pressed(self, command)
 
   if not handled then

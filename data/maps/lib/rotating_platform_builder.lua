@@ -16,23 +16,23 @@ function rotating_platform_builder:create(map, prefix)
   }
   local barrier = prefix .. "_barrier"
   local current_state = game:get_value(prefix .. "_save_state")
-  
+
   for _, sensor in pairs(sensors) do
     sensor.on_activated = sensor_activated
   end
-  
+
   --
   function platform:get_state()
     return current_state
   end
-  
+
   --
   function platform:set_state(state)
     if state == "blue" or state == "orange" then
       current_state = state
     end
   end
-  
+
   --
   function platform:toggle_state()
     if current_state == "blue" then
@@ -41,19 +41,19 @@ function rotating_platform_builder:create(map, prefix)
       platform:set_state("blue")
     end
   end
-  
+
   -- Rotates the platform when the hero enters it
   -- A sound is produced and the platform has a rotating animation
   function platform:rotate()
     sol.audio.play_sound("rotating_platform")
     platform:toggle_state()
   end
-  
-  -- 
+
+  --
   local function sensor_activated(sensor)
-    
+
   end
-  
+
   return platform
 end
 
