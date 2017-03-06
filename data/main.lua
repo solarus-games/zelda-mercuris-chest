@@ -3,6 +3,7 @@
 require("scripts/features")
 local game_manager = require("scripts/game_manager")
 local quest_manager = require("scripts/quest_manager")
+local touch_layer = require("scripts/touch_layer.lua")
 
 local solarus_logo = require("scripts/menus/solarus_logo")
 local team_logo = require("scripts/menus/team_logo")
@@ -32,21 +33,24 @@ function sol.main:on_started()
   -- Then the language selection menu.
   function team_logo:on_finished()
     if sol.main.game == nil then
-      sol.menu.start(sol.main, language_menu)
+      touch_layer:set_callback_context(language_menu)
+      sol.menu.start(sol.main, language_menu, false)
     end
   end
 
   -- Then the title screen.
   function language_menu:on_finished()
     if sol.main.game == nil then
-      sol.menu.start(sol.main, title_screen)
+      touch_layer:set_callback_context(title_screen)
+      sol.menu.start(sol.main, title_screen, false)
     end
   end
 
   -- Then the savegame menu.
   function title_screen:on_finished()
     if sol.main.game == nil then
-      sol.menu.start(sol.main, savegame_menu)
+      touch_layer:set_callback_context(savegame_menu)
+      sol.menu.start(sol.main, savegame_menu, false)
     end
   end
 end
@@ -84,6 +88,7 @@ function sol.main:start_savegame(game)
   sol.menu.stop(title_screen)
   sol.menu.stop(savegame_menu)
 
+  touch_layer:set_game(game)
   sol.main.game = game
   game:start()
 end

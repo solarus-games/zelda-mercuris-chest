@@ -8,9 +8,12 @@
 require("scripts/debug")
 require("scripts/equipment")
 require("scripts/dungeons")
-require("scripts/mouse_control")
 require("scripts/menus/dialog_box")
 require("scripts/menus/pause")
 require("scripts/hud/hud")
+
+if sol.main.get_os() ~= "iOS" then
+  require("scripts/mouse_control")
+end
 
 return true

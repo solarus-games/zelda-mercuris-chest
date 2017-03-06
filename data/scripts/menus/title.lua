@@ -170,6 +170,15 @@ function title_screen:on_joypad_button_pressed(button)
   return self:try_finish_title()
 end
 
+function title_screen:on_virtual_command_pressed(command)
+
+  if command == "action" then
+    self:on_key_pressed("space")
+  else
+    self:on_key_pressed(command)
+  end
+end
+
 -- Ends the title screen (if possible)
 -- and starts the savegame selection screen
 function title_screen:try_finish_title()
