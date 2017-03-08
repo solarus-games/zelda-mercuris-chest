@@ -30005,6 +30005,28 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "cave_entry_top.1",
+  ground = "traversable",
+  default_layer = 1,
+  x = 408,
+  y = 472,
+  width = 32,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "cave_entry_top.2",
+  ground = "traversable",
+  default_layer = 1,
+  x = 488,
+  y = 448,
+  width = 32,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "ceiling.1",
   ground = "traversable",
   default_layer = 2,
