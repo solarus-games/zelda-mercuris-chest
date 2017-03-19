@@ -14,6 +14,8 @@ require("scripts/hud/hud")
 
 if sol.main.get_os() ~= "iOS" then
   require("scripts/mouse_control")
+else
+  require("scripts/touch_layer")
 end
 
 return true

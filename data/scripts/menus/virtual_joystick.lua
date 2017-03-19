@@ -1,5 +1,10 @@
 -- Touchable virtual joystick.
--- Assume that the virtual joystick is a circle.
+
+-- Usage:
+-- local joystick_menu = require("scripts/menus/virtual_joystick")
+-- joystick_menu:create(icon)
+-- sol.menu.start(sol.main, joystick_menu)
+
 local virtual_joystick = {}
 
 local simulated_directions = {
@@ -9,7 +14,6 @@ local simulated_directions = {
   down = false
 }
 
-local callback_context = nil
 local pressed_finger = nil
 local angle = 0
 local background_icon_half_width, background_icon_half_height
@@ -28,11 +32,6 @@ function virtual_joystick:create(icon)
   background_icon_half_height = background_icon_half_height / 2
   stick_icon_half_width = stick_icon_half_width / 2
   stick_icon_half_height = stick_icon_half_height / 2
-end
-
-function virtual_joystick:set_callback_context(new_callback_context)
-
-  callback_context = new_callback_context
 end
 
 function virtual_joystick:on_finger_pressed(finger, x, y, pressure)
@@ -104,9 +103,7 @@ function virtual_joystick:start_direction(direction)
 
   if not simulated_directions[direction] then
     simulated_directions[direction] = true
-    if callback_context ~= nil and self.callback_context.on_virtual_command_pressed ~= nil then
-      callback_context:on_virtual_command_pressed(direction)
-    end
+    sol.input.simulate_key_pressed(direction)
   end
 end
 
@@ -114,9 +111,7 @@ function virtual_joystick:stop_direction(direction)
 
   if simulated_directions[direction] then
     simulated_directions[direction] = false
-    if callback_context ~= nil and self.callback_context.on_virtual_command_released ~= nil then
-      callback_context:on_virtual_command_released(direction)
-    end
+    sol.input.simulate_key_released(direction)
   end
 end
 

@@ -1,4 +1,10 @@
 -- Touchable virtual button.
+
+-- Usage:
+-- local virtual_buttons = require("scripts/menus/virtual_button")
+-- local button_menu = virtual_buttons.create(icon)
+-- sol.menu.start(sol.main, button_menu)
+
 local virtual_button = {}
 virtual_button.__index = virtual_button
 
@@ -9,18 +15,12 @@ function virtual_button.create(icon)
   mt.surface = icon.surface
   mt.x = icon.x
   mt.y = icon.y
-  mt.command = icon.command
+  mt.key = icon.key
 
-  mt.callback_context = nil
   mt.is_pushed = false
   mt.icon_width, mt.icon_height = icon.surface:get_size()
 
   return mt
-end
-
-function virtual_button:set_callback_context(callback_context)
-
-  self.callback_context = callback_context
 end
 
 function virtual_button:on_finger_pressed(finger, x, y)
@@ -45,9 +45,7 @@ function virtual_button:start_command()
 
   if not self.is_pushed then
     self.is_pushed = true
-    if self.callback_context ~= nil and self.callback_context.on_virtual_command_pressed ~= nil then
-      self.callback_context:on_virtual_command_pressed(self.command)
-    end
+    sol.input.simulate_key_pressed(self.key)
   end
 end
 
@@ -55,9 +53,7 @@ function virtual_button:stop_command()
 
   if self.is_pushed then
     self.is_pushed = false
-    if self.callback_context ~= nil and self.callback_context.on_virtual_command_released ~= nil then
-      self.callback_context:on_virtual_command_released(self.command)
-    end
+    sol.input.simulate_key_released(self.key)
   end
 end
 
