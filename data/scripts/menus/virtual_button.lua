@@ -1,8 +1,9 @@
 -- Touchable virtual button.
--- The create(icon) function can create several virtual buttons for a same quest.
+-- The create(icon) function can be called several times to create several virtual buttons for a same quest.
 
 -- Usage:
--- local button_menu = require("scripts/menus/virtual_button").create(icon)
+-- local virtual_button = require("scripts/menus/virtual_button")
+-- virtual_button.create(icon)
 
 local virtual_button = {}
 virtual_button.__index = virtual_button
@@ -55,8 +56,6 @@ function virtual_button.create(icon)
 	mt.icon_width, mt.icon_height = icon.surface:get_size()
 
 	sol.menu.start(sol.main, mt)
-
-	return mt
 end
 
 return virtual_button

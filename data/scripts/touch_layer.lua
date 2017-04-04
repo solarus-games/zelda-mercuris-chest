@@ -45,13 +45,14 @@ local joystick = {
 
 
 -- Initialize virtual commands.
+local virtual_button = require("scripts/menus/virtual_button")
 for _, button in pairs(buttons) do
   button.surface:set_opacity(90)
-  button.menu = require("scripts/menus/virtual_button").create(button)
+  virtual_button.create(button)
 end
 
 joystick.background_surface:set_opacity(90)
 joystick.stick_surface:set_opacity(90)
-joystick.menu = require("scripts/menus/virtual_joystick").create(joystick)
+require("scripts/menus/virtual_joystick").create(joystick)
 
 return true

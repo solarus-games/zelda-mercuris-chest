@@ -2,7 +2,7 @@
 -- The create(icon) function should be called only once, there can only be one virtual joystick by quest.
 
 -- Usage:
--- local joystick_menu = require("scripts/menus/virtual_joystick").create(icon)
+-- require("scripts/menus/virtual_joystick").create(icon)
 
 local virtual_joystick = {}
 
@@ -116,8 +116,6 @@ function virtual_joystick.create(icon)
 	stick_icon_half_height = stick_icon_half_height / 2
 
 	sol.menu.start(sol.main, virtual_joystick)
-
-	return virtual_joystick
 end
 
 return virtual_joystick
