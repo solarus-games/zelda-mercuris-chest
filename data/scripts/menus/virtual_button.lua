@@ -1,27 +1,11 @@
 -- Touchable virtual button.
+-- The create(icon) function can create several virtual buttons for a same quest.
 
 -- Usage:
--- local virtual_buttons = require("scripts/menus/virtual_button")
--- local button_menu = virtual_buttons.create(icon)
--- sol.menu.start(sol.main, button_menu)
+-- local button_menu = require("scripts/menus/virtual_button").create(icon)
 
 local virtual_button = {}
 virtual_button.__index = virtual_button
-
-function virtual_button.create(icon)
-
-  local mt = {}
-  setmetatable(mt, virtual_button)
-  mt.surface = icon.surface
-  mt.x = icon.x
-  mt.y = icon.y
-  mt.key = icon.key
-
-  mt.is_pushed = false
-  mt.icon_width, mt.icon_height = icon.surface:get_size()
-
-  return mt
-end
 
 function virtual_button:on_finger_pressed(finger, x, y)
 
@@ -55,6 +39,24 @@ function virtual_button:stop_command()
     self.is_pushed = false
     sol.input.simulate_key_released(self.key)
   end
+end
+
+-- Create and return an instance of a virtual button menu.
+function virtual_button.create(icon)
+
+	local mt = {}
+	setmetatable(mt, virtual_button)
+	mt.surface = icon.surface
+	mt.x = icon.x
+	mt.y = icon.y
+	mt.key = icon.key
+
+	mt.is_pushed = false
+	mt.icon_width, mt.icon_height = icon.surface:get_size()
+
+	sol.menu.start(sol.main, mt)
+
+	return mt
 end
 
 return virtual_button

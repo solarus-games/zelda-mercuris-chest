@@ -1,9 +1,8 @@
 -- Touchable virtual joystick.
+-- The create(icon) function should be called only once, there can only be one virtual joystick by quest.
 
 -- Usage:
--- local joystick_menu = require("scripts/menus/virtual_joystick")
--- joystick_menu:create(icon)
--- sol.menu.start(sol.main, joystick_menu)
+-- local joystick_menu = require("scripts/menus/virtual_joystick").create(icon)
 
 local virtual_joystick = {}
 
@@ -18,21 +17,6 @@ local pressed_finger = nil
 local angle = 0
 local background_icon_half_width, background_icon_half_height
 local stick_icon_half_width, stick_icon_half_height
-
-function virtual_joystick:create(icon)
-
-  self.background_surface = icon.background_surface
-  self.stick_surface = icon.stick_surface
-  self.center_x = icon.x
-  self.center_y = icon.y
-  
-  background_icon_half_width, background_icon_half_height = self.background_surface:get_size()
-  stick_icon_half_width, stick_icon_half_height = self.stick_surface:get_size()
-  background_icon_half_width = background_icon_half_width / 2
-  background_icon_half_height = background_icon_half_height / 2
-  stick_icon_half_width = stick_icon_half_width / 2
-  stick_icon_half_height = stick_icon_half_height / 2
-end
 
 function virtual_joystick:on_finger_pressed(finger, x, y, pressure)
 
@@ -113,6 +97,27 @@ function virtual_joystick:stop_direction(direction)
     simulated_directions[direction] = false
     sol.input.simulate_key_released(direction)
   end
+end
+
+
+-- Create and return the virtual joystick menu.
+function virtual_joystick.create(icon)
+
+	virtual_joystick.background_surface = icon.background_surface
+	virtual_joystick.stick_surface = icon.stick_surface
+	virtual_joystick.center_x = icon.x
+	virtual_joystick.center_y = icon.y
+
+	background_icon_half_width, background_icon_half_height = virtual_joystick.background_surface:get_size()
+	stick_icon_half_width, stick_icon_half_height = virtual_joystick.stick_surface:get_size()
+	background_icon_half_width = background_icon_half_width / 2
+	background_icon_half_height = background_icon_half_height / 2
+	stick_icon_half_width = stick_icon_half_width / 2
+	stick_icon_half_height = stick_icon_half_height / 2
+
+	sol.menu.start(sol.main, virtual_joystick)
+
+	return virtual_joystick
 end
 
 return virtual_joystick

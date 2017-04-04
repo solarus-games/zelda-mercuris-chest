@@ -44,18 +44,14 @@ local joystick = {
 }
 
 
--- Initialize virtual commands
-local virtual_buttons = require("scripts/menus/virtual_button")
+-- Initialize virtual commands.
 for _, button in pairs(buttons) do
   button.surface:set_opacity(90)
-  button.menu = virtual_buttons.create(button)
-  sol.menu.start(sol.main, button.menu)
+  button.menu = require("scripts/menus/virtual_button").create(button)
 end
 
 joystick.background_surface:set_opacity(90)
 joystick.stick_surface:set_opacity(90)
-joystick.menu = require("scripts/menus/virtual_joystick")
-joystick.menu:create(joystick)
-sol.menu.start(sol.main, joystick.menu)
+joystick.menu = require("scripts/menus/virtual_joystick").create(joystick)
 
 return true
