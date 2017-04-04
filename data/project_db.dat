@@ -115,6 +115,11 @@ sprite{ id = "enemies/mandible", description = "Enemy: Mandible" }
 sprite{ id = "enemies/minillosaur_egg_fixed", description = "Enemy: Minillosaur Egg (thrown)" }
 sprite{ id = "enemies/minillosaur_egg_thrown", description = "Enemy: Minillosaur Egg (fixed)" }
 sprite{ id = "enemies/mowatulla", description = "Enemy: Mowatulla" }
+sprite{ id = "enemies/newlink/Beebee_blue", description = "BlueBeebee" }
+sprite{ id = "enemies/newlink/Beebee_green", description = "greenBeebee" }
+sprite{ id = "enemies/newlink/Beebee_red", description = "redBeebee" }
+sprite{ id = "enemies/newlink/Stalkis_blue", description = "blueStalkis" }
+sprite{ id = "enemies/newlink/Stalkis_red", description = "redStalkis" }
 sprite{ id = "enemies/papillosaur_king", description = "Enemy: Papillosaur King" }
 sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
 sprite{ id = "enemies/pike_detect", description = "Enemy: Pike (moves near hero)" }
@@ -518,6 +523,11 @@ enemy{ id = "mandible", description = "Mandible" }
 enemy{ id = "minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
 enemy{ id = "minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
 enemy{ id = "mowatulla", description = "Mowatulla" }
+enemy{ id = "newlink/Beebee_blue", description = "BlueBeebee" }
+enemy{ id = "newlink/Beebee_green", description = "greenBeebee" }
+enemy{ id = "newlink/Beebee_red", description = "redBeebee" }
+enemy{ id = "newlink/Stalkis_blue", description = "bluestalkis" }
+enemy{ id = "newlink/Stalkis_red", description = "redstalkis" }
 enemy{ id = "papillosaur_king", description = "Papillosaur King" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pike_detect", description = "Pike (moves near hero)" }
