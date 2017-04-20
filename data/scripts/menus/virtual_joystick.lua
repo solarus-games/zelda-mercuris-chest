@@ -13,17 +13,23 @@ local simulated_directions = {
   down = false
 }
 
+local deadzone_ratio = 3
 local pressed_finger = nil
 local angle = 0
+local distance_finger_to_center = 0
+local deadzone_ray = 0
 local background_icon_half_width, background_icon_half_height
 local stick_icon_half_width, stick_icon_half_height
 
 function virtual_joystick:on_finger_pressed(finger, x, y, pressure)
 
   -- If the finger position is near enough to the joystick, simulate corresponding directions.
-  if pressed_finger == nil and sol.main.get_distance(x, y, self.center_x, self.center_y) < background_icon_half_width * 2 then
+  distance_finger_to_center = sol.main.get_distance(x, y, self.center_x, self.center_y)
+  if pressed_finger == nil and distance_finger_to_center < background_icon_half_width * 2 then
     pressed_finger = finger
-    self:update_directions(x, y)
+    if distance_finger_to_center > deadzone_ray then
+      self:update_directions(x, y)
+    end
   end
 end
 
@@ -31,7 +37,14 @@ function virtual_joystick:on_finger_moved(finger, x, y, dx, dy, pressure)
 
   -- If the finger that pressed the joystick before is moved, update simulated directions.
   if finger == pressed_finger then
-    self:update_directions(x, y)
+    distance_finger_to_center = sol.main.get_distance(x, y, self.center_x, self.center_y)
+    if distance_finger_to_center > deadzone_ray then
+      self:update_directions(x, y)
+    else
+      for direction, _ in pairs(simulated_directions) do
+        self:stop_direction(direction)
+      end
+    end
   end
 end
 
@@ -52,7 +65,7 @@ function virtual_joystick:on_draw(screen)
   local stick_icon_x = self.center_x - stick_icon_half_width
   local stick_icon_y = self.center_y - stick_icon_half_height
 
-  if pressed_finger ~= nil then
+  if pressed_finger ~= nil and distance_finger_to_center > deadzone_ray then
     stick_icon_x = stick_icon_x + stick_icon_half_width * math.cos(angle) / 2
     stick_icon_y = stick_icon_y - stick_icon_half_height * math.sin(angle) / 2
   end
@@ -114,6 +127,7 @@ function virtual_joystick.create(icon)
 	background_icon_half_height = background_icon_half_height / 2
 	stick_icon_half_width = stick_icon_half_width / 2
 	stick_icon_half_height = stick_icon_half_height / 2
+	deadzone_ray = background_icon_half_width / deadzone_ratio
 
 	sol.menu.start(sol.main, virtual_joystick)
 end
