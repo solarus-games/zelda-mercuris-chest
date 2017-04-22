@@ -1,7 +1,7 @@
 -- Allow to control the hero with a virtual joystick and 5 virtual buttons triggered by touch events.
 
 -- Usage:
--- require("scripts/touch_layer")
+-- require("scripts/touch_control")
 
 local buttons = {
   item_1 = {

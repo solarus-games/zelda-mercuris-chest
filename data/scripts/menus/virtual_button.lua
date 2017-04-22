@@ -2,6 +2,12 @@
 -- The create(icon) function can be called several times to create several virtual buttons for a same quest.
 
 -- Usage:
+-- local icon = {
+--   surface = sol.surface.create("button.png"),
+--   x = 100,
+--   y = 200,
+--   key = "space",
+-- }
 -- local virtual_button = require("scripts/menus/virtual_button")
 -- virtual_button.create(icon)
 
@@ -42,20 +48,20 @@ function virtual_button:stop_command()
   end
 end
 
--- Create and return an instance of a virtual button menu.
+-- Create an instance of a virtual button menu.
 function virtual_button.create(icon)
 
-	local mt = {}
-	setmetatable(mt, virtual_button)
-	mt.surface = icon.surface
-	mt.x = icon.x
-	mt.y = icon.y
-	mt.key = icon.key
+  local mt = {}
+  setmetatable(mt, virtual_button)
+  mt.surface = icon.surface
+  mt.x = icon.x
+  mt.y = icon.y
+  mt.key = icon.key
 
-	mt.is_pushed = false
-	mt.icon_width, mt.icon_height = icon.surface:get_size()
+  mt.is_pushed = false
+  mt.icon_width, mt.icon_height = icon.surface:get_size()
 
-	sol.menu.start(sol.main, mt)
+  sol.menu.start(sol.main, mt)
 end
 
 return virtual_button

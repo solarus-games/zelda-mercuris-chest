@@ -2,6 +2,12 @@
 -- The create(icon) function should be called only once, there can only be one virtual joystick by quest.
 
 -- Usage:
+-- local icon = {
+--   background_surface = sol.surface.create("background.png"),
+--   stick_surface = sol.surface.create("stick.png"),
+--   x = 100,
+--   y = 200
+-- }
 -- require("scripts/menus/virtual_joystick").create(icon)
 
 local virtual_joystick = {}
@@ -60,7 +66,7 @@ end
 
 function virtual_joystick:on_draw(screen)
 
-  -- Compute the position to display the joystick and its background.
+  -- Compute the position to display the joystick.
   local stick_icon_x = self.center_x - half_sizes.stick_width
   local stick_icon_y = self.center_y - half_sizes.stick_height
 
@@ -112,7 +118,7 @@ function virtual_joystick:stop_direction(direction)
 end
 
 
--- Create and return the virtual joystick menu.
+-- Create the virtual joystick menu.
 function virtual_joystick.create(icon)
 
   virtual_joystick.background_surface = icon.background_surface
