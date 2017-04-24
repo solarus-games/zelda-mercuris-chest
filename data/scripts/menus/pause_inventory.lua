@@ -6,7 +6,7 @@ local item_names = {
   "bombs_counter",
   "bow",
   "boomerang",
-  "mystic_mirror",
+  "",
   "pegasus_shoes",
   "bottle_1",
 
