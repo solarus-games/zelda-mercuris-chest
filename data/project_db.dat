@@ -41,6 +41,7 @@ map{ id = "test_map", description = "Test Hub" }
 map{ id = "town_store", description = "Town Store" }
 map{ id = "work/evil_tiles", description = "Evil tiles try" }
 
+tileset{ id = "Goron", description = "Goron" }
 tileset{ id = "dark_world", description = "Dark World" }
 tileset{ id = "desert", description = "Desert" }
 tileset{ id = "dungeon/blue", description = "Blue dungeon" }
