@@ -128,15 +128,6 @@ function savegame_menu:on_joypad_hat_moved(hat, direction8)
   end
 end
 
-function savegame_menu:on_virtual_command_pressed(command)
-
-  if command == "action" then
-    self:on_key_pressed("space")
-  else
-    self:on_key_pressed(command)
-  end
-end
-
 function savegame_menu:direction_pressed(direction8)
 
   local handled = true

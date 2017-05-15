@@ -158,15 +158,6 @@ function language_menu:on_joypad_button_pressed(button)
   return self:on_key_pressed("space")
 end
 
-function language_menu:on_virtual_command_pressed(command)
-
-  if command == "action" then
-    self:on_key_pressed("space")
-  else
-    self:on_key_pressed(command)
-  end
-end
-
 function language_menu:set_cursor_position(cursor_position)
 
   if self.cursor_position ~= nil then

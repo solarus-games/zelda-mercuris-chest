@@ -1,27 +1,18 @@
 -- Touchable virtual button.
+-- The create(icon) function can be called several times to create several virtual buttons for a same quest.
+
+-- Usage:
+-- local icon = {
+--   surface = sol.surface.create("button.png"),
+--   x = 100,
+--   y = 200,
+--   key = "space",
+-- }
+-- local virtual_button = require("scripts/menus/virtual_button")
+-- virtual_button.create(icon)
+
 local virtual_button = {}
 virtual_button.__index = virtual_button
-
-function virtual_button.create(icon)
-
-  local mt = {}
-  setmetatable(mt, virtual_button)
-  mt.surface = icon.surface
-  mt.x = icon.x
-  mt.y = icon.y
-  mt.command = icon.command
-
-  mt.callback_context = nil
-  mt.is_pushed = false
-  mt.icon_width, mt.icon_height = icon.surface:get_size()
-
-  return mt
-end
-
-function virtual_button:set_callback_context(callback_context)
-
-  self.callback_context = callback_context
-end
 
 function virtual_button:on_finger_pressed(finger, x, y)
 
@@ -45,9 +36,7 @@ function virtual_button:start_command()
 
   if not self.is_pushed then
     self.is_pushed = true
-    if self.callback_context ~= nil and self.callback_context.on_virtual_command_pressed ~= nil then
-      self.callback_context:on_virtual_command_pressed(self.command)
-    end
+    sol.input.simulate_key_pressed(self.key)
   end
 end
 
@@ -55,10 +44,24 @@ function virtual_button:stop_command()
 
   if self.is_pushed then
     self.is_pushed = false
-    if self.callback_context ~= nil and self.callback_context.on_virtual_command_released ~= nil then
-      self.callback_context:on_virtual_command_released(self.command)
-    end
+    sol.input.simulate_key_released(self.key)
   end
+end
+
+-- Create an instance of a virtual button menu.
+function virtual_button.create(icon)
+
+  local mt = {}
+  setmetatable(mt, virtual_button)
+  mt.surface = icon.surface
+  mt.x = icon.x
+  mt.y = icon.y
+  mt.key = icon.key
+
+  mt.is_pushed = false
+  mt.icon_width, mt.icon_height = icon.surface:get_size()
+
+  sol.menu.start(sol.main, mt)
 end
 
 return virtual_button

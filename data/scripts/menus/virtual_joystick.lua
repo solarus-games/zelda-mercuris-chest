@@ -1,5 +1,15 @@
 -- Touchable virtual joystick.
--- Assume that the virtual joystick is a circle.
+-- The create(icon) function should be called only once, there can only be one virtual joystick by quest.
+
+-- Usage:
+-- local icon = {
+--   background_surface = sol.surface.create("background.png"),
+--   stick_surface = sol.surface.create("stick.png"),
+--   x = 100,
+--   y = 200
+-- }
+-- require("scripts/menus/virtual_joystick").create(icon)
+
 local virtual_joystick = {}
 
 local simulated_directions = {
@@ -9,38 +19,22 @@ local simulated_directions = {
   down = false
 }
 
-local callback_context = nil
+local deadzone_ratio = 3
 local pressed_finger = nil
 local angle = 0
-local background_icon_half_width, background_icon_half_height
-local stick_icon_half_width, stick_icon_half_height
-
-function virtual_joystick:create(icon)
-
-  self.background_surface = icon.background_surface
-  self.stick_surface = icon.stick_surface
-  self.center_x = icon.x
-  self.center_y = icon.y
-  
-  background_icon_half_width, background_icon_half_height = self.background_surface:get_size()
-  stick_icon_half_width, stick_icon_half_height = self.stick_surface:get_size()
-  background_icon_half_width = background_icon_half_width / 2
-  background_icon_half_height = background_icon_half_height / 2
-  stick_icon_half_width = stick_icon_half_width / 2
-  stick_icon_half_height = stick_icon_half_height / 2
-end
-
-function virtual_joystick:set_callback_context(new_callback_context)
-
-  callback_context = new_callback_context
-end
+local distance_finger_to_center = 0
+local deadzone_ray = 0
+local half_sizes = {}
 
 function virtual_joystick:on_finger_pressed(finger, x, y, pressure)
 
   -- If the finger position is near enough to the joystick, simulate corresponding directions.
-  if pressed_finger == nil and sol.main.get_distance(x, y, self.center_x, self.center_y) < background_icon_half_width * 2 then
+  distance_finger_to_center = sol.main.get_distance(x, y, self.center_x, self.center_y)
+  if pressed_finger == nil and distance_finger_to_center < half_sizes.background_width * 2 then
     pressed_finger = finger
-    self:update_directions(x, y)
+    if distance_finger_to_center > deadzone_ray then
+      self:update_directions(x, y)
+    end
   end
 end
 
@@ -48,7 +42,14 @@ function virtual_joystick:on_finger_moved(finger, x, y, dx, dy, pressure)
 
   -- If the finger that pressed the joystick before is moved, update simulated directions.
   if finger == pressed_finger then
-    self:update_directions(x, y)
+    distance_finger_to_center = sol.main.get_distance(x, y, self.center_x, self.center_y)
+    if distance_finger_to_center > deadzone_ray then
+      self:update_directions(x, y)
+    else
+      for direction, _ in pairs(simulated_directions) do
+        self:stop_direction(direction)
+      end
+    end
   end
 end
 
@@ -65,17 +66,17 @@ end
 
 function virtual_joystick:on_draw(screen)
 
-  -- Compute the position to display the joystick and its background.
-  local stick_icon_x = self.center_x - stick_icon_half_width
-  local stick_icon_y = self.center_y - stick_icon_half_height
+  -- Compute the position to display the joystick.
+  local stick_icon_x = self.center_x - half_sizes.stick_width
+  local stick_icon_y = self.center_y - half_sizes.stick_height
 
-  if pressed_finger ~= nil then
-    stick_icon_x = stick_icon_x + stick_icon_half_width * math.cos(angle) / 2
-    stick_icon_y = stick_icon_y - stick_icon_half_height * math.sin(angle) / 2
+  if pressed_finger ~= nil and distance_finger_to_center > deadzone_ray then
+    stick_icon_x = stick_icon_x + half_sizes.stick_width * math.cos(angle) / 2
+    stick_icon_y = stick_icon_y - half_sizes.stick_height * math.sin(angle) / 2
   end
 
   -- Display the background and the joystick.
-  self.background_surface:draw(screen, self.center_x - background_icon_half_width, self.center_y - background_icon_half_height)
+  self.background_surface:draw(screen, self.center_x - half_sizes.background_width, self.center_y - half_sizes.background_height)
   self.stick_surface:draw(screen, stick_icon_x, stick_icon_y)
 end
 
@@ -104,9 +105,7 @@ function virtual_joystick:start_direction(direction)
 
   if not simulated_directions[direction] then
     simulated_directions[direction] = true
-    if callback_context ~= nil and self.callback_context.on_virtual_command_pressed ~= nil then
-      callback_context:on_virtual_command_pressed(direction)
-    end
+    sol.input.simulate_key_pressed(direction)
   end
 end
 
@@ -114,10 +113,27 @@ function virtual_joystick:stop_direction(direction)
 
   if simulated_directions[direction] then
     simulated_directions[direction] = false
-    if callback_context ~= nil and self.callback_context.on_virtual_command_released ~= nil then
-      callback_context:on_virtual_command_released(direction)
-    end
+    sol.input.simulate_key_released(direction)
   end
+end
+
+
+-- Create the virtual joystick menu.
+function virtual_joystick.create(icon)
+
+  virtual_joystick.background_surface = icon.background_surface
+  virtual_joystick.stick_surface = icon.stick_surface
+  virtual_joystick.center_x = icon.x
+  virtual_joystick.center_y = icon.y
+
+  half_sizes.background_width, half_sizes.background_height = virtual_joystick.background_surface:get_size()
+  half_sizes.stick_width, half_sizes.stick_height = virtual_joystick.stick_surface:get_size()
+  for half_size, _ in pairs(half_sizes) do
+    half_sizes[half_size] = half_sizes[half_size] / 2
+  end
+  deadzone_ray = half_sizes.background_width / deadzone_ratio
+
+  sol.menu.start(sol.main, virtual_joystick)
 end
 
 return virtual_joystick
