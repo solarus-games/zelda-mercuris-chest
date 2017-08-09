@@ -68,6 +68,7 @@ tileset{ id = "mine", description = "Mine" }
 tileset{ id = "parc", description = "parc" }
 tileset{ id = "town", description = "Village" }
 tileset{ id = "volcano", description = "volcano" }
+tileset{ id = "zora", description = "zora" }
 
 sprite{ id = "console/cursor", description = "Console: Cursor" }
 sprite{ id = "console/icons", description = "Console: Icons" }
