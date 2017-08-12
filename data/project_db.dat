@@ -64,6 +64,7 @@ tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
 tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
 tileset{ id = "forest", description = "Forest" }
 tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "midjyvillage", description = "midjyvillage" }
 tileset{ id = "mine", description = "Mine" }
 tileset{ id = "parc", description = "parc" }
 tileset{ id = "town", description = "Village" }
