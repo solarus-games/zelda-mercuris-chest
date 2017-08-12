@@ -50,8 +50,8 @@ tile{
   layer = 0,
   x = 0,
   y = 1856,
-  width = 80,
-  height = 192,
+  width = 48,
+  height = 160,
   pattern = "water",
 }
 
@@ -368,6 +368,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 2016,
+  width = 608,
+  height = 32,
+  pattern = "dirt.soil",
 }
 
 tile{
@@ -710,6 +719,78 @@ tile{
   width = 16,
   height = 40,
   pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 2016,
+  width = 48,
+  height = 32,
+  pattern = "water",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 2016,
+  width = 248,
+  height = 32,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 2016,
+  width = 96,
+  height = 32,
+  pattern = "forest",
+}
+
+tile{
+  layer = 1,
+  x = 912,
+  y = 2016,
+  width = 16,
+  height = 32,
+  pattern = "forest.3",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 2016,
+  width = 16,
+  height = 32,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 2016,
+  width = 16,
+  height = 32,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 2016,
+  width = 8,
+  height = 32,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 2016,
+  width = 8,
+  height = 32,
+  pattern = "grass.soil.3",
 }
 
 tile{

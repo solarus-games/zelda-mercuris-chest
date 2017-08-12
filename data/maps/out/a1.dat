@@ -11,7 +11,7 @@ properties{
 }
 
 tile{
-  layer = 0,
+  layer = 1,
   x = 0,
   y = 0,
   width = 2048,
