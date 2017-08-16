@@ -12,29 +12,11 @@ properties{
 
 tile{
   layer = 0,
-  x = 656,
-  y = 176,
-  width = 8,
-  height = 128,
-  pattern = "cliff.top.4",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = 0,
   width = 624,
   height = 672,
   pattern = "water",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 136,
-  width = 144,
-  height = 8,
-  pattern = "tower.floor.1",
 }
 
 tile{
@@ -93,258 +75,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 408,
-  y = 456,
-  width = 8,
-  height = 8,
-  pattern = "tower.steps.bottom.border.1",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 456,
-  width = 8,
-  height = 8,
-  pattern = "tower.steps.bottom.border.2",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 416,
-  width = 8,
-  height = 40,
-  pattern = "tower.steps.border.2",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 416,
-  width = 8,
-  height = 40,
-  pattern = "tower.steps.border.1",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 416,
-  width = 16,
-  height = 48,
-  pattern = "tower.steps",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 0,
-  width = 16,
-  height = 304,
-  pattern = "water.cliff.4",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 0,
-  width = 16,
-  height = 304,
-  pattern = "water.cliff_wave.4",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 0,
-  width = 16,
-  height = 144,
-  pattern = "cliff.4",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 0,
-  width = 16,
-  height = 128,
-  pattern = "cliff.4",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 0,
-  width = 16,
-  height = 112,
-  pattern = "cliff.4",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "cliff.corner_reverse.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "sand.cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "sand.cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 208,
-  width = 16,
-  height = 16,
-  pattern = "sand.cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "cliff.corner_reverse.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "cliff.corner_reverse.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "cliff.middle.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "cliff.middle.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "cliff.middle.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "cliff.diag.2",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 400,
-  width = 8,
-  height = 176,
-  pattern = "cliff.top.4",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 400,
-  width = 16,
-  height = 176,
-  pattern = "water.cliff.4",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 400,
-  width = 16,
-  height = 176,
-  pattern = "water.cliff_wave.4",
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 464,
   width = 48,
@@ -368,6 +98,240 @@ tile{
   width = 16,
   height = 16,
   pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner.diag.2",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 1200,
+  width = 8,
+  height = 16,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1448,
+  width = 16,
+  height = 240,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 1448,
+  width = 64,
+  height = 16,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1880,
+  width = 64,
+  height = 144,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1992,
+  width = 8,
+  height = 24,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1984,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1976,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 1968,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1968,
+  width = 40,
+  height = 8,
+  pattern = "grass.soil.1",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 1960,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1952,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1904,
+  width = 8,
+  height = 48,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1896,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 1888,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1880,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1552,
+  width = 16,
+  height = 160,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 1568,
+  width = 16,
+  height = 128,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 1584,
+  width = 16,
+  height = 96,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 1216,
+  width = 16,
+  height = 128,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 1184,
+  width = 16,
+  height = 176,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 1200,
+  width = 16,
+  height = 160,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1232,
+  width = 128,
+  height = 128,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1360,
+  width = 48,
+  height = 16,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1376,
+  width = 32,
+  height = 16,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "water",
 }
 
 tile{
@@ -395,330 +359,6 @@ tile{
   width = 48,
   height = 8,
   pattern = "cliff.top.1",
-}
-
-tile{
-  layer = 1,
-  x = 504,
-  y = 336,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 336,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow",
-}
-
-tile{
-  layer = 1,
-  x = 504,
-  y = 320,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 320,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 344,
-  width = 176,
-  height = 8,
-  pattern = "tower.floor.shadow.2",
-}
-
-tile{
-  layer = 1,
-  x = 328,
-  y = 352,
-  width = 192,
-  height = 8,
-  pattern = "tower.floor.2",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 360,
-  width = 72,
-  height = 24,
-  pattern = "tower.wall_yellow",
-}
-
-tile{
-  layer = 1,
-  x = 432,
-  y = 360,
-  width = 8,
-  height = 56,
-  pattern = "tower.steps.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 408,
-  y = 360,
-  width = 8,
-  height = 56,
-  pattern = "tower.steps.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 328,
-  y = 360,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 360,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 440,
-  y = 360,
-  width = 72,
-  height = 24,
-  pattern = "tower.wall_yellow",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 352,
-  width = 32,
-  height = 40,
-  pattern = "tower.pillar",
-}
-
-tile{
-  layer = 1,
-  x = 472,
-  y = 352,
-  width = 32,
-  height = 40,
-  pattern = "tower.pillar",
-}
-
-tile{
-  layer = 1,
-  x = 416,
-  y = 344,
-  width = 16,
-  height = 72,
-  pattern = "tower.steps",
-}
-
-tile{
-  layer = 1,
-  x = 416,
-  y = 328,
-  width = 16,
-  height = 16,
-  pattern = "tower.entrance",
-}
-
-tile{
-  layer = 1,
-  x = 408,
-  y = 328,
-  width = 8,
-  height = 16,
-  pattern = "tower.entrance.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 432,
-  y = 328,
-  width = 8,
-  height = 16,
-  pattern = "tower.entrance.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 440,
-  y = 320,
-  width = 64,
-  height = 24,
-  pattern = "tower.wall_yellow",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 320,
-  width = 64,
-  height = 24,
-  pattern = "tower.wall_yellow",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 312,
-  width = 8,
-  height = 32,
-  pattern = "tower.floor.shadow.4",
-}
-
-tile{
-  layer = 1,
-  x = 328,
-  y = 312,
-  width = 8,
-  height = 32,
-  pattern = "tower.floor.shadow.3",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 264,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.3",
-}
-
-tile{
-  layer = 1,
-  x = 520,
-  y = 264,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.4",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 256,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.1",
-}
-
-tile{
-  layer = 1,
-  x = 520,
-  y = 256,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.2",
-}
-
-tile{
-  layer = 1,
-  x = 408,
-  y = 344,
-  width = 8,
-  height = 16,
-  pattern = "tower.steps.top.border.1",
-}
-
-tile{
-  layer = 1,
-  x = 432,
-  y = 344,
-  width = 8,
-  height = 16,
-  pattern = "tower.steps.top.border.2",
-}
-
-tile{
-  layer = 1,
-  x = 328,
-  y = 344,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 344,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 352,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.3",
-}
-
-tile{
-  layer = 1,
-  x = 520,
-  y = 352,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.4",
-}
-
-tile{
-  layer = 1,
-  x = 472,
-  y = 320,
-  width = 16,
-  height = 40,
-  pattern = "75",
-}
-
-tile{
-  layer = 1,
-  x = 488,
-  y = 320,
-  width = 24,
-  height = 40,
-  pattern = "76",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 320,
-  width = 24,
-  height = 40,
-  pattern = "73",
-}
-
-tile{
-  layer = 1,
-  x = 360,
-  y = 320,
-  width = 16,
-  height = 40,
-  pattern = "74",
 }
 
 tile{
@@ -794,444 +434,2487 @@ tile{
 }
 
 tile{
-  layer = 2,
+  layer = 1,
+  x = 48,
+  y = 1904,
+  width = 16,
+  height = 112,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 1888,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1872,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1864,
+  width = 64,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1856,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1840,
+  width = 64,
+  height = 16,
+  pattern = "water.cliff_wave.2",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 1840,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 1872,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "water",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 1904,
+  width = 16,
+  height = 112,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 1888,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1728,
+  width = 16,
+  height = 96,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1824,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1712,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1712,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1696,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1680,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1680,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1696,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1584,
+  width = 16,
+  height = 96,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2b",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1552,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2b",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1536,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2b",
+}
+
+tile{
+  layer = 1,
   x = 352,
-  y = 256,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow",
+  y = 1216,
+  width = 16,
+  height = 128,
+  pattern = "water.cliff_wave.4",
 }
 
 tile{
-  layer = 2,
-  x = 488,
-  y = 256,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow",
-}
-
-tile{
-  layer = 2,
-  x = 496,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow",
-}
-
-tile{
-  layer = 2,
-  x = 344,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow",
-}
-
-tile{
-  layer = 2,
-  x = 344,
-  y = 304,
-  width = 160,
-  height = 8,
-  pattern = "tower.floor.shadow.2",
-}
-
-tile{
-  layer = 2,
-  x = 504,
-  y = 272,
-  width = 8,
-  height = 32,
-  pattern = "tower.floor.shadow.4",
-}
-
-tile{
-  layer = 2,
-  x = 336,
-  y = 272,
-  width = 8,
-  height = 32,
-  pattern = "tower.floor.shadow.3",
-}
-
-tile{
-  layer = 2,
-  x = 336,
-  y = 304,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow.corner.3",
-}
-
-tile{
-  layer = 2,
-  x = 504,
-  y = 304,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow.corner.4",
-}
-
-tile{
-  layer = 2,
+  layer = 1,
   x = 352,
-  y = 264,
-  width = 144,
-  height = 8,
-  pattern = "tower.floor.shadow.2",
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 496,
-  y = 232,
-  width = 8,
-  height = 32,
-  pattern = "tower.floor.shadow.4",
-}
-
-tile{
-  layer = 2,
-  x = 344,
-  y = 232,
-  width = 8,
-  height = 32,
-  pattern = "tower.floor.shadow.3",
-}
-
-tile{
-  layer = 2,
-  x = 344,
-  y = 264,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow.corner.3",
-}
-
-tile{
-  layer = 2,
-  x = 496,
-  y = 264,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.shadow.corner.4",
-}
-
-tile{
-  layer = 2,
-  x = 352,
-  y = 144,
-  width = 144,
-  height = 88,
-  pattern = "tower.floor",
-}
-
-tile{
-  layer = 2,
-  x = 328,
-  y = 224,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.3",
-}
-
-tile{
-  layer = 2,
-  x = 328,
-  y = 216,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.1",
-}
-
-tile{
-  layer = 2,
+  layer = 1,
   x = 336,
-  y = 184,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.3",
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 336,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.1",
+  layer = 1,
+  x = 240,
+  y = 1360,
+  width = 96,
+  height = 16,
+  pattern = "water.cliff_wave.2",
 }
 
 tile{
-  layer = 2,
-  x = 344,
-  y = 144,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.3",
+  layer = 1,
+  x = 176,
+  y = 1824,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 344,
-  y = 136,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.1",
+  layer = 1,
+  x = 224,
+  y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
 }
 
 tile{
-  layer = 2,
-  x = 512,
-  y = 224,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.4",
+  layer = 1,
+  x = 208,
+  y = 1552,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
 }
 
 tile{
-  layer = 2,
-  x = 512,
-  y = 216,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.2",
+  layer = 1,
+  x = 192,
+  y = 1536,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
 }
 
 tile{
-  layer = 2,
-  x = 504,
-  y = 184,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.4",
+  layer = 1,
+  x = 176,
+  y = 1424,
+  width = 16,
+  height = 112,
+  pattern = "water.cliff_wave.4",
 }
 
 tile{
-  layer = 2,
-  x = 504,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.2",
+  layer = 1,
+  x = 192,
+  y = 1408,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 496,
-  y = 144,
-  width = 8,
-  height = 88,
-  pattern = "tower.floor.4",
+  layer = 1,
+  x = 208,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 496,
-  y = 136,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.2",
+  layer = 1,
+  x = 224,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 336,
-  y = 312,
-  width = 176,
-  height = 8,
-  pattern = "tower.floor.2",
+  layer = 1,
+  x = 240,
+  y = 1584,
+  width = 16,
+  height = 96,
+  pattern = "water.cliff.4",
 }
 
 tile{
-  layer = 2,
-  x = 328,
-  y = 312,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.3",
+  layer = 1,
+  x = 192,
+  y = 1424,
+  width = 16,
+  height = 112,
+  pattern = "water.cliff.4",
 }
 
 tile{
-  layer = 2,
-  x = 512,
-  y = 312,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.4",
-}
-
-tile{
-  layer = 2,
-  x = 344,
-  y = 272,
-  width = 160,
-  height = 8,
-  pattern = "tower.floor.2",
-}
-
-tile{
-  layer = 2,
-  x = 336,
-  y = 272,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.3",
-}
-
-tile{
-  layer = 2,
-  x = 504,
-  y = 272,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.4",
-}
-
-tile{
-  layer = 2,
+  layer = 1,
   x = 352,
-  y = 232,
-  width = 144,
-  height = 8,
-  pattern = "tower.floor.2",
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
 }
 
 tile{
-  layer = 2,
-  x = 496,
-  y = 232,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.4",
+  layer = 1,
+  x = 336,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
 }
 
 tile{
-  layer = 2,
-  x = 344,
-  y = 232,
-  width = 8,
-  height = 8,
-  pattern = "tower.floor.corner.3",
+  layer = 1,
+  x = 320,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
 }
 
 tile{
-  layer = 2,
+  layer = 1,
+  x = 320,
+  y = 1040,
+  width = 16,
+  height = 128,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 1040,
+  width = 16,
+  height = 128,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1840,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2b",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2b",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2b",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1408,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
   x = 352,
-  y = 280,
-  width = 144,
-  height = 24,
-  pattern = "tower.wall_yellow",
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 344,
-  y = 280,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.1",
+  layer = 1,
+  x = 368,
+  y = 976,
+  width = 64,
+  height = 16,
+  pattern = "water.cliff_wave.2",
 }
 
 tile{
-  layer = 2,
-  x = 496,
-  y = 280,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.2",
+  layer = 1,
+  x = 432,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.3",
 }
 
 tile{
-  layer = 2,
-  x = 360,
-  y = 240,
-  width = 128,
-  height = 24,
-  pattern = "tower.wall_yellow",
+  layer = 1,
+  x = 448,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.3",
 }
 
 tile{
-  layer = 2,
-  x = 352,
-  y = 240,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.1",
-}
-
-tile{
-  layer = 2,
-  x = 488,
-  y = 240,
-  width = 8,
-  height = 24,
-  pattern = "tower.wall.corner.2",
-}
-
-tile{
-  layer = 2,
-  x = 408,
-  y = 320,
-  width = 32,
-  height = 8,
-  pattern = "tower.entrance.top",
-}
-
-tile{
-  layer = 2,
+  layer = 1,
   x = 464,
-  y = 296,
-  width = 48,
-  height = 24,
-  pattern = "72",
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.3",
 }
 
 tile{
-  layer = 2,
+  layer = 1,
+  x = 480,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 832,
+  width = 16,
+  height = 192,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 576,
+  width = 16,
+  height = 96,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.2",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.2",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 688,
+  width = 16,
+  height = 64,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 688,
+  width = 16,
+  height = 80,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 688,
+  width = 8,
+  height = 80,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 576,
+  width = 8,
+  height = 96,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 832,
+  width = 8,
+  height = 192,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 1056,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1056,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1000,
+  width = 64,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 992,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 992,
+  width = 32,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 992,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1008,
+  width = 64,
+  height = 8,
+  pattern = "cliff.top.2",
+}
+
+tile{
+  layer = 1,
   x = 336,
-  y = 296,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1040,
+  width = 8,
+  height = 128,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 1192,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 1176,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 992,
+  width = 32,
+  height = 8,
+  pattern = "water.cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1376,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1376,
   width = 48,
+  height = 8,
+  pattern = "water.cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 1376,
+  width = 16,
+  height = 8,
+  pattern = "water.cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 1376,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1408,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1536,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1424,
+  width = 8,
+  height = 112,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1552,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 1544,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 1560,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1680,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1696,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1712,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1824,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1840,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 1856,
+  width = 32,
+  height = 8,
+  pattern = "water.cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 1872,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1888,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1904,
+  width = 8,
+  height = 112,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1872,
+  width = 64,
+  height = 8,
+  pattern = "cliff.top.2",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 832,
+  width = 16,
+  height = 192,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1064,
+  width = 32,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1072,
+  width = 32,
+  height = 8,
+  pattern = "cliff.top.2",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1216,
+  width = 16,
+  height = 128,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 1216,
+  width = 8,
+  height = 128,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 1056,
+  width = 16,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 400,
+  width = 16,
+  height = 176,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 400,
+  width = 16,
+  height = 176,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 400,
+  width = 8,
+  height = 176,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1392,
+  width = 96,
+  height = 8,
+  pattern = "cliff.top.2",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1384,
+  width = 96,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1584,
+  width = 8,
+  height = 96,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1728,
+  width = 16,
+  height = 96,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1728,
+  width = 8,
+  height = 96,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 1856,
+  width = 16,
+  height = 8,
+  pattern = "cliff.corner_reverse.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 576,
+  width = 16,
+  height = 96,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "cliff.top.border.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 1904,
+  width = 304,
+  height = 112,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 1888,
+  width = 320,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1880,
+  width = 304,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1872,
+  width = 240,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1824,
+  width = 48,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1840,
+  width = 64,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1824,
+  width = 48,
+  height = 32,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1712,
+  width = 48,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1696,
+  width = 32,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 1400,
+  width = 192,
+  height = 288,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1728,
+  width = 56,
+  height = 96,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 1696,
+  width = 32,
+  height = 32,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 1688,
+  width = 232,
   height = 24,
-  pattern = "71",
+  pattern = "grass.soil",
 }
 
 tile{
-  layer = 2,
-  x = 360,
-  y = 224,
+  layer = 1,
+  x = 760,
+  y = 1848,
+  width = 248,
+  height = 168,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 1688,
+  width = 104,
+  height = 24,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 1712,
+  width = 24,
+  height = 168,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1848,
+  width = 136,
+  height = 32,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 1712,
+  width = 64,
+  height = 144,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1856,
+  width = 224,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 1728,
+  width = 32,
+  height = 96,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1680,
   width = 32,
   height = 16,
-  pattern = "69",
+  pattern = "dirt.soil",
 }
 
 tile{
-  layer = 2,
-  x = 360,
-  y = 240,
-  width = 32,
-  height = 32,
-  pattern = "70",
+  layer = 1,
+  x = 72,
+  y = 1896,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
 }
 
 tile{
-  layer = 2,
-  x = 456,
-  y = 224,
+  layer = 1,
+  x = 80,
+  y = 1888,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 1880,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1872,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 1864,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 1856,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 1848,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1840,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 1832,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1824,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 1720,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1712,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 1704,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1696,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1688,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1680,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1576,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1544,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 1536,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 1400,
   width = 32,
+  height = 160,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 1552,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1560,
+  width = 16,
   height = 16,
-  pattern = "69",
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1560,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1408,
+  width = 16,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 1424,
+  width = 16,
+  height = 112,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1528,
+  width = 16,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 1416,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 1408,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 1400,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 1192,
+  width = 16,
+  height = 16,
+  pattern = "water.cliff_wave.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1392,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 1384,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1376,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 1368,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1360,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 1352,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 1344,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 1168,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1176,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 1184,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1192,
+  width = 16,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 1192,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1568,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 1560,
+  width = 8,
+  height = 8,
+  pattern = "cliff.top.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1384,
+  width = 128,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 1352,
+  width = 96,
+  height = 32,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1368,
+  width = 16,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 1192,
+  width = 112,
+  height = 160,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 1712,
+  width = 240,
+  height = 304,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 616,
+  y = 1872,
+  width = 104,
+  height = 8,
+  pattern = "grass.soil.2",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 1872,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 1864,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 1728,
+  width = 8,
+  height = 136,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 1712,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 1720,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 1712,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3b",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 1704,
+  width = 136,
+  height = 8,
+  pattern = "grass.soil.2",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 1704,
+  width = 144,
+  height = 8,
+  pattern = "grass.soil.2",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 1712,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 1720,
+  width = 8,
+  height = 80,
+  pattern = "grass.soil.4",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 1704,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 1712,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4b",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 1800,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.4",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 1816,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1816,
+  width = 40,
+  height = 8,
+  pattern = "grass.soil.2",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1816,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 1808,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.4",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1736,
+  width = 8,
+  height = 80,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 1728,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 1720,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1728,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.1",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 1704,
+  width = 8,
+  height = 16,
+  pattern = "grass.soil.3",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 1696,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 1688,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.1",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 1688,
+  width = 168,
+  height = 8,
+  pattern = "grass.soil.1",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 176,
+  width = 8,
+  height = 128,
+  pattern = "cliff.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner_reverse.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "sand.cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "sand.cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "sand.cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner_reverse.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "cliff.corner_reverse.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "cliff.diag.2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 0,
+  width = 16,
+  height = 112,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 0,
+  width = 16,
+  height = 128,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 0,
+  width = 16,
+  height = 144,
+  pattern = "cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 0,
+  width = 16,
+  height = 304,
+  pattern = "water.cliff.4",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 0,
+  width = 16,
+  height = 304,
+  pattern = "water.cliff_wave.4",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 224,
+  width = 208,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 336,
+  width = 40,
+  height = 48,
+  pattern = "110",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 344,
+  width = 40,
+  height = 48,
+  pattern = "110",
 }
 
 tile{
   layer = 2,
-  x = 456,
-  y = 240,
-  width = 32,
-  height = 32,
-  pattern = "70",
+  x = 312,
+  y = 296,
+  width = 56,
+  height = 40,
+  pattern = "109",
+}
+
+tile{
+  layer = 2,
+  x = 480,
+  y = 304,
+  width = 56,
+  height = 40,
+  pattern = "109",
 }
 
 teletransporter{
