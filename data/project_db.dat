@@ -62,8 +62,10 @@ tileset{ id = "dungeon/purple", description = "Purple dungeon" }
 tileset{ id = "dungeon/yellow", description = "Yellow dungeon" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
 tileset{ id = "dungeon_grayblue", description = "Dungeon (gray-blue)" }
+tileset{ id = "eastruin", description = "eastruin" }
 tileset{ id = "forest", description = "Forest" }
 tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "lighthouseext", description = "lighthouseext" }
 tileset{ id = "midjyvillage", description = "midjyvillage" }
 tileset{ id = "mine", description = "Mine" }
 tileset{ id = "parc", description = "parc" }
