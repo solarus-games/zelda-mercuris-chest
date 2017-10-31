@@ -1,0 +1,12 @@
+animation{
+  name = "walking",
+  src_image = "enemies/newlink/cyclopus_orange.png",
+  frame_delay = 210,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 8, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 36, num_frames = 2 },
+    { x = 0, y = 56, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 36, num_frames = 4 },
+    { x = 0, y = 104, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 36, num_frames = 2 },
+    { x = 0, y = 152, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 36, num_frames = 4 },
+  },
+}

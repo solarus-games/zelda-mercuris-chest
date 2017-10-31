@@ -126,6 +126,10 @@ sprite{ id = "enemies/newlink/Beebee_green", description = "greenBeebee" }
 sprite{ id = "enemies/newlink/Beebee_red", description = "redBeebee" }
 sprite{ id = "enemies/newlink/Stalkis_blue", description = "blueStalkis" }
 sprite{ id = "enemies/newlink/Stalkis_red", description = "redStalkis" }
+sprite{ id = "enemies/newlink/cyclopus_orange", description = "orangecyclopus" }
+sprite{ id = "enemies/newlink/cyclopus_yellow", description = "yellowcyclopus" }
+sprite{ id = "enemies/newlink/moblin_brown", description = "brownmoblin" }
+sprite{ id = "enemies/newlink/moblin_brown_weapon", description = "brownmoblinsword" }
 sprite{ id = "enemies/newlink/tigris_brown", description = "browntigris" }
 sprite{ id = "enemies/newlink/tigris_yellow", description = "yellowtigris" }
 sprite{ id = "enemies/newlink/zombos_green", description = "greenzombos" }
@@ -538,6 +542,9 @@ enemy{ id = "newlink/Beebee_green", description = "greenBeebee" }
 enemy{ id = "newlink/Beebee_red", description = "redBeebee" }
 enemy{ id = "newlink/Stalkis_blue", description = "bluestalkis" }
 enemy{ id = "newlink/Stalkis_red", description = "redstalkis" }
+enemy{ id = "newlink/cyclopus_orange", description = "orangecyclopus" }
+enemy{ id = "newlink/cyclopus_yellow", description = "yellowcyclopus" }
+enemy{ id = "newlink/moblin_brown", description = "brownmoblin" }
 enemy{ id = "newlink/tigris_brown", description = "newlink/tigris_brown" }
 enemy{ id = "newlink/tigris_yellow", description = "newlink/tigris_yellow" }
 enemy{ id = "newlink/zombos_green", description = "newlink/zombos_green" }
