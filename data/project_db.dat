@@ -69,6 +69,7 @@ tileset{ id = "lighthouseext", description = "lighthouseext" }
 tileset{ id = "midjyvillage", description = "midjyvillage" }
 tileset{ id = "mine", description = "Mine" }
 tileset{ id = "parc", description = "parc" }
+tileset{ id = "sea", description = "sea" }
 tileset{ id = "town", description = "Village" }
 tileset{ id = "volcano", description = "volcano" }
 tileset{ id = "zora", description = "zora" }
