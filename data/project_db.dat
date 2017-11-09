@@ -129,6 +129,8 @@ sprite{ id = "enemies/newlink/Stalkis_blue", description = "blueStalkis" }
 sprite{ id = "enemies/newlink/Stalkis_red", description = "redStalkis" }
 sprite{ id = "enemies/newlink/cyclopus_orange", description = "orangecyclopus" }
 sprite{ id = "enemies/newlink/cyclopus_yellow", description = "yellowcyclopus" }
+sprite{ id = "enemies/newlink/horsek_greenarmor", description = "greenarmorhorsek" }
+sprite{ id = "enemies/newlink/horsek_greenarmor_weapon", description = "greenarmorhorsekspear" }
 sprite{ id = "enemies/newlink/horsek_redarmor", description = "redarmorhorsek" }
 sprite{ id = "enemies/newlink/horsek_redarmor_weapon", description = "redarmorhorseksword" }
 sprite{ id = "enemies/newlink/moblin_brown", description = "brownmoblin" }
@@ -138,6 +140,9 @@ sprite{ id = "enemies/newlink/snake_red", description = "redsnake" }
 sprite{ id = "enemies/newlink/snake_yellow", description = "yellowsnake" }
 sprite{ id = "enemies/newlink/tigris_brown", description = "browntigris" }
 sprite{ id = "enemies/newlink/tigris_yellow", description = "yellowtigris" }
+sprite{ id = "enemies/newlink/tortugas_blue", description = "bluetortugas" }
+sprite{ id = "enemies/newlink/tortugas_green", description = "greentortugas" }
+sprite{ id = "enemies/newlink/tortugas_red", description = "redtortugas" }
 sprite{ id = "enemies/newlink/wolfos_brown", description = "brownyelwolfos" }
 sprite{ id = "enemies/newlink/wolfos_brown_weapon", description = "wolfossword" }
 sprite{ id = "enemies/newlink/wolfos_white", description = "whitewolfos" }
@@ -554,6 +559,7 @@ enemy{ id = "newlink/Stalkis_blue", description = "bluestalkis" }
 enemy{ id = "newlink/Stalkis_red", description = "redstalkis" }
 enemy{ id = "newlink/cyclopus_orange", description = "orangecyclopus" }
 enemy{ id = "newlink/cyclopus_yellow", description = "yellowcyclopus" }
+enemy{ id = "newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 enemy{ id = "newlink/horsek_redarmor", description = "redarmorhorsek" }
 enemy{ id = "newlink/moblin_brown", description = "brownmoblin" }
 enemy{ id = "newlink/snake_green", description = "greensnake" }
