@@ -107,7 +107,7 @@ enemy{
 
 destination{
   layer = 1,
-  x = 168,
+  x = 272,
   y = 213,
   direction = 1,
 }
@@ -115,7 +115,7 @@ destination{
 enemy{
   layer = 1,
   x = 24,
-  y = 125,
+  y = 133,
   direction = 3,
   breed = "vipeross",
 }
@@ -123,8 +123,184 @@ enemy{
 enemy{
   layer = 1,
   x = 56,
-  y = 125,
+  y = 133,
   direction = 3,
   breed = "cobruss",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 133,
+  direction = 3,
+  breed = "newlink/Beebee_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 120,
+  y = 133,
+  direction = 3,
+  breed = "newlink/Beebee_green",
+}
+
+enemy{
+  layer = 1,
+  x = 152,
+  y = 133,
+  direction = 3,
+  breed = "newlink/Beebee_red",
+}
+
+enemy{
+  layer = 1,
+  x = 120,
+  y = 37,
+  direction = 3,
+  breed = "newlink/horsek_greenarmor",
+}
+
+enemy{
+  layer = 1,
+  x = 152,
+  y = 37,
+  direction = 3,
+  breed = "newlink/horsek_redarmor",
+}
+
+enemy{
+  layer = 1,
+  x = 24,
+  y = 165,
+  direction = 3,
+  breed = "newlink/moblin_brown",
+}
+
+enemy{
+  layer = 1,
+  x = 256,
+  y = 21,
+  direction = 3,
+  breed = "newlink/snake_green",
+}
+
+enemy{
+  layer = 1,
+  x = 280,
+  y = 21,
+  direction = 3,
+  breed = "newlink/snake_red",
+}
+
+enemy{
+  layer = 1,
+  x = 304,
+  y = 21,
+  direction = 3,
+  breed = "newlink/snake_yellow",
+}
+
+enemy{
+  layer = 1,
+  x = 24,
+  y = 229,
+  direction = 3,
+  breed = "newlink/cyclopus_orange",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 229,
+  direction = 3,
+  breed = "newlink/cyclopus_yellow",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 229,
+  direction = 3,
+  breed = "newlink/tigris_brown",
+}
+
+enemy{
+  layer = 1,
+  x = 120,
+  y = 229,
+  direction = 3,
+  breed = "newlink/tigris_yellow",
+}
+
+enemy{
+  layer = 1,
+  x = 120,
+  y = 165,
+  direction = 3,
+  breed = "newlink/wolfos_white",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 165,
+  direction = 3,
+  breed = "newlink/wolfos_brown",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 101,
+  direction = 3,
+  breed = "newlink/Stalkis_red",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 101,
+  direction = 3,
+  breed = "newlink/Stalkis_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 280,
+  y = 101,
+  direction = 3,
+  breed = "newlink/zombos_green",
+}
+
+enemy{
+  layer = 1,
+  x = 304,
+  y = 101,
+  direction = 3,
+  breed = "newlink/zombos_purple",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 149,
+  direction = 3,
+  breed = "newlink/demonos_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 149,
+  direction = 3,
+  breed = "newlink/demonos_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 280,
+  y = 149,
+  direction = 3,
+  breed = "newlink/pumkin_orange",
 }
 
