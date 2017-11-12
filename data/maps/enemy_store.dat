@@ -1,8 +1,8 @@
 properties{
   x = 0,
   y = 0,
-  width = 320,
-  height = 240,
+  width = 342,
+  height = 256,
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon_blue",
@@ -13,6 +13,33 @@ tile{
   x = 0,
   y = 0,
   width = 320,
+  height = 240,
+  pattern = "floor.18",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 0,
+  width = 16,
+  height = 240,
+  pattern = "floor.18",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 240,
+  width = 352,
+  height = 16,
+  pattern = "floor.18",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 0,
+  width = 16,
   height = 240,
   pattern = "floor.18",
 }
@@ -178,7 +205,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 256,
+  x = 248,
   y = 21,
   direction = 3,
   breed = "newlink/snake_green",
@@ -186,7 +213,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 280,
+  x = 272,
   y = 21,
   direction = 3,
   breed = "newlink/snake_red",
@@ -194,7 +221,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 304,
+  x = 296,
   y = 21,
   direction = 3,
   breed = "newlink/snake_yellow",
@@ -203,7 +230,7 @@ enemy{
 enemy{
   layer = 1,
   x = 24,
-  y = 229,
+  y = 237,
   direction = 3,
   breed = "newlink/cyclopus_orange",
 }
@@ -211,7 +238,7 @@ enemy{
 enemy{
   layer = 1,
   x = 56,
-  y = 229,
+  y = 237,
   direction = 3,
   breed = "newlink/cyclopus_yellow",
 }
@@ -219,7 +246,7 @@ enemy{
 enemy{
   layer = 1,
   x = 88,
-  y = 229,
+  y = 237,
   direction = 3,
   breed = "newlink/tigris_brown",
 }
@@ -227,7 +254,7 @@ enemy{
 enemy{
   layer = 1,
   x = 120,
-  y = 229,
+  y = 237,
   direction = 3,
   breed = "newlink/tigris_yellow",
 }
@@ -283,7 +310,7 @@ enemy{
 enemy{
   layer = 1,
   x = 216,
-  y = 149,
+  y = 141,
   direction = 3,
   breed = "newlink/demonos_fire",
 }
@@ -291,7 +318,7 @@ enemy{
 enemy{
   layer = 1,
   x = 248,
-  y = 149,
+  y = 141,
   direction = 3,
   breed = "newlink/demonos_ice",
 }
@@ -299,7 +326,7 @@ enemy{
 enemy{
   layer = 1,
   x = 280,
-  y = 149,
+  y = 141,
   direction = 3,
   breed = "newlink/pumkin_orange",
 }
@@ -307,7 +334,7 @@ enemy{
 enemy{
   layer = 1,
   x = 152,
-  y = 229,
+  y = 237,
   direction = 3,
   breed = "newlink/zourakuss_purple",
 }
@@ -315,7 +342,7 @@ enemy{
 enemy{
   layer = 1,
   x = 184,
-  y = 229,
+  y = 237,
   direction = 3,
   breed = "newlink/zourakuss_green",
 }
@@ -339,7 +366,7 @@ enemy{
 enemy{
   layer = 1,
   x = 216,
-  y = 181,
+  y = 173,
   direction = 3,
   breed = "newlink/stalfos_guard",
 }
@@ -347,8 +374,88 @@ enemy{
 enemy{
   layer = 1,
   x = 248,
-  y = 181,
+  y = 173,
   direction = 3,
   breed = "newlink/stalfos_soldier",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 45,
+  direction = 3,
+  breed = "red_helmasaur",
+}
+
+enemy{
+  layer = 1,
+  x = 328,
+  y = 101,
+  direction = 3,
+  breed = "gibdo",
+}
+
+enemy{
+  layer = 1,
+  x = 272,
+  y = 69,
+  direction = 0,
+  breed = "ropa",
+}
+
+enemy{
+  layer = 1,
+  x = 296,
+  y = 69,
+  direction = 0,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 69,
+  direction = 0,
+  breed = "red_hardhat_beetle",
+}
+
+enemy{
+  layer = 1,
+  x = 224,
+  y = 69,
+  direction = 0,
+  breed = "blue_hardhat_beetle",
+}
+
+enemy{
+  layer = 1,
+  x = 272,
+  y = 45,
+  direction = 3,
+  breed = "green_helmasaur",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 165,
+  direction = 3,
+  breed = "newlink/moblin_green",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 237,
+  direction = 3,
+  breed = "newlink/champigos_yellow",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 237,
+  direction = 3,
+  breed = "newlink/champigos_pink",
 }
 
