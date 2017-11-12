@@ -89,6 +89,7 @@ sprite{ id = "enemies/blue_flame", description = "Enemy: Flame (blue)" }
 sprite{ id = "enemies/blue_hardhat_beetle", description = "Enemy: Hardhat Beetle (blue)" }
 sprite{ id = "enemies/blue_knight_soldier", description = "Enemy: Knight Soldier (blue)" }
 sprite{ id = "enemies/blue_knight_soldier_sword", description = "Enemy: Knight Soldier (blue) sword" }
+sprite{ id = "enemies/blue_kodongos", description = "Enemy:Kodongos (blue)" }
 sprite{ id = "enemies/blue_pig_soldier", description = "Enemy: Pig Soldier (blue)" }
 sprite{ id = "enemies/blue_pig_soldier_sword", description = "Enemy: Pig Soldier (blue) sword" }
 sprite{ id = "enemies/bubble", description = "Enemy: Bubble" }
@@ -109,6 +110,7 @@ sprite{ id = "enemies/gibdo", description = "Enemy: Gibdo" }
 sprite{ id = "enemies/globul", description = "Enemy: Globul" }
 sprite{ id = "enemies/green_duck_soldier", description = "Enemy: Duck Soldier (green)" }
 sprite{ id = "enemies/green_duck_soldier_sword", description = "Enemy: Duck Soldier (green) sword" }
+sprite{ id = "enemies/green_helmasaur", description = "Enemy:Helmasaur (green)" }
 sprite{ id = "enemies/green_knight_soldier", description = "Enemy: Knight Soldier (green)" }
 sprite{ id = "enemies/green_knight_soldier_sword", description = "Enemy: Knight Soldier (green) sword" }
 sprite{ id = "enemies/khorneth", description = "Enemy: Khorneth" }
@@ -127,6 +129,8 @@ sprite{ id = "enemies/newlink/Beebee_green", description = "greenBeebee" }
 sprite{ id = "enemies/newlink/Beebee_red", description = "redBeebee" }
 sprite{ id = "enemies/newlink/Stalkis_blue", description = "blueStalkis" }
 sprite{ id = "enemies/newlink/Stalkis_red", description = "redStalkis" }
+sprite{ id = "enemies/newlink/champigos_pink", description = "pinkchampigos" }
+sprite{ id = "enemies/newlink/champigos_yellow", description = "yellowchampigos" }
 sprite{ id = "enemies/newlink/cyclopus_orange", description = "orangecyclopus" }
 sprite{ id = "enemies/newlink/cyclopus_yellow", description = "yellowcyclopus" }
 sprite{ id = "enemies/newlink/demonos_fire", description = "Firedemonos" }
@@ -142,6 +146,8 @@ sprite{ id = "enemies/newlink/lizalfos_purple", description = "purplelizalfos" }
 sprite{ id = "enemies/newlink/lizalfos_purple_weapon", description = "purplelizalfossword" }
 sprite{ id = "enemies/newlink/moblin_brown", description = "brownmoblin" }
 sprite{ id = "enemies/newlink/moblin_brown_weapon", description = "brownmoblinsword" }
+sprite{ id = "enemies/newlink/moblin_green", description = "greenmoblin" }
+sprite{ id = "enemies/newlink/moblin_green_weapon", description = "greenmoblinspear" }
 sprite{ id = "enemies/newlink/pumkin_blue", description = "bluepumkin" }
 sprite{ id = "enemies/newlink/pumkin_orange", description = "orangepumkin" }
 sprite{ id = "enemies/newlink/pumkin_orange_weapon", description = "orangepumkinspear" }
@@ -183,6 +189,7 @@ sprite{ id = "enemies/red_hardhat_beetle", description = "Enemy: Hardhat Beetle 
 sprite{ id = "enemies/red_helmasaur", description = "Enemy: Helmasaur (red)" }
 sprite{ id = "enemies/red_knight_soldier", description = "Enemy: Knight Soldier (red)" }
 sprite{ id = "enemies/red_knight_soldier_sword", description = "Enemy: Knight Soldier (red) sword" }
+sprite{ id = "enemies/red_kodongos", description = "Enemy:Kodongos (red)" }
 sprite{ id = "enemies/red_pig_soldier", description = "Enemy: Pig Soldier (red)" }
 sprite{ id = "enemies/red_pig_soldier_sword", description = "Enemy: Pig Soldier (red) sword" }
 sprite{ id = "enemies/ropa", description = "Enemy: Ropa" }
@@ -561,6 +568,7 @@ enemy{ id = "gelidrak", description = "Gelidrak" }
 enemy{ id = "gibdo", description = "Gibdo" }
 enemy{ id = "globul", description = "Globul" }
 enemy{ id = "green_duck_soldier", description = "Duck Soldier (green)" }
+enemy{ id = "green_helmasaur", description = "helmasaur (green)" }
 enemy{ id = "green_knight_soldier", description = "Knight Soldier (green)" }
 enemy{ id = "khorneth", description = "Khorneth" }
 enemy{ id = "khotor", description = "Khotor" }
@@ -575,6 +583,8 @@ enemy{ id = "newlink/Beebee_green", description = "greenBeebee" }
 enemy{ id = "newlink/Beebee_red", description = "redBeebee" }
 enemy{ id = "newlink/Stalkis_blue", description = "bluestalkis" }
 enemy{ id = "newlink/Stalkis_red", description = "redstalkis" }
+enemy{ id = "newlink/champigos_pink", description = "pinkchampigos" }
+enemy{ id = "newlink/champigos_yellow", description = "yellowchampigos" }
 enemy{ id = "newlink/cyclopus_orange", description = "orangecyclopus" }
 enemy{ id = "newlink/cyclopus_yellow", description = "yellowcyclopus" }
 enemy{ id = "newlink/demonos_fire", description = "firedemonos" }
@@ -584,6 +594,7 @@ enemy{ id = "newlink/horsek_redarmor", description = "redarmorhorsek" }
 enemy{ id = "newlink/lizalfos_green", description = "greenlizalfos" }
 enemy{ id = "newlink/lizalfos_purple", description = "purplelizalfos" }
 enemy{ id = "newlink/moblin_brown", description = "brownmoblin" }
+enemy{ id = "newlink/moblin_green", description = "greenmoblin" }
 enemy{ id = "newlink/pumkin_orange", description = "orangepumkin" }
 enemy{ id = "newlink/snake_green", description = "greensnake" }
 enemy{ id = "newlink/snake_red", description = "redsnake" }
