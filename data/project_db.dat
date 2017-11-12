@@ -136,13 +136,22 @@ sprite{ id = "enemies/newlink/horsek_greenarmor_weapon", description = "greenarm
 sprite{ id = "enemies/newlink/horsek_redarmor", description = "redarmorhorsek" }
 sprite{ id = "enemies/newlink/horsek_redarmor_weapon", description = "redarmorhorseksword" }
 sprite{ id = "enemies/newlink/keese", description = "keese" }
+sprite{ id = "enemies/newlink/lizalfos_green", description = "greenlizalfos" }
+sprite{ id = "enemies/newlink/lizalfos_green_weapon", description = "greenlizalfossword" }
+sprite{ id = "enemies/newlink/lizalfos_purple", description = "purplelizalfos" }
+sprite{ id = "enemies/newlink/lizalfos_purple_weapon", description = "purplelizalfossword" }
 sprite{ id = "enemies/newlink/moblin_brown", description = "brownmoblin" }
 sprite{ id = "enemies/newlink/moblin_brown_weapon", description = "brownmoblinsword" }
+sprite{ id = "enemies/newlink/pumkin_blue", description = "bluepumkin" }
 sprite{ id = "enemies/newlink/pumkin_orange", description = "orangepumkin" }
 sprite{ id = "enemies/newlink/pumkin_orange_weapon", description = "orangepumkinspear" }
 sprite{ id = "enemies/newlink/snake_green", description = "greensnake" }
 sprite{ id = "enemies/newlink/snake_red", description = "redsnake" }
 sprite{ id = "enemies/newlink/snake_yellow", description = "yellowsnake" }
+sprite{ id = "enemies/newlink/stalfos_guard", description = "guardstalfos" }
+sprite{ id = "enemies/newlink/stalfos_guard_weapon", description = "guardstalfossword" }
+sprite{ id = "enemies/newlink/stalfos_soldier", description = "soldierstalfos" }
+sprite{ id = "enemies/newlink/stalfos_soldier_weapon", description = "soldierstalfosspear" }
 sprite{ id = "enemies/newlink/tigris_brown", description = "browntigris" }
 sprite{ id = "enemies/newlink/tigris_yellow", description = "yellowtigris" }
 sprite{ id = "enemies/newlink/tortugas_blue", description = "bluetortugas" }
@@ -156,6 +165,8 @@ sprite{ id = "enemies/newlink/wolfos_white", description = "whitewolfos" }
 sprite{ id = "enemies/newlink/wolfos_white_weapon", description = "wolfoswhitespear" }
 sprite{ id = "enemies/newlink/zombos_green", description = "greenzombos" }
 sprite{ id = "enemies/newlink/zombos_purple", description = "purplezombos" }
+sprite{ id = "enemies/newlink/zourakuss_green", description = "greenzourakuss" }
+sprite{ id = "enemies/newlink/zourakuss_purple", description = "purplezourakuss" }
 sprite{ id = "enemies/papillosaur_king", description = "Enemy: Papillosaur King" }
 sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
 sprite{ id = "enemies/pike_detect", description = "Enemy: Pike (moves near hero)" }
@@ -570,17 +581,23 @@ enemy{ id = "newlink/demonos_fire", description = "firedemonos" }
 enemy{ id = "newlink/demonos_ice", description = "icedemonos" }
 enemy{ id = "newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 enemy{ id = "newlink/horsek_redarmor", description = "redarmorhorsek" }
+enemy{ id = "newlink/lizalfos_green", description = "greenlizalfos" }
+enemy{ id = "newlink/lizalfos_purple", description = "purplelizalfos" }
 enemy{ id = "newlink/moblin_brown", description = "brownmoblin" }
 enemy{ id = "newlink/pumkin_orange", description = "orangepumkin" }
 enemy{ id = "newlink/snake_green", description = "greensnake" }
 enemy{ id = "newlink/snake_red", description = "redsnake" }
 enemy{ id = "newlink/snake_yellow", description = "yellowsnake" }
+enemy{ id = "newlink/stalfos_guard", description = "guardstalfos" }
+enemy{ id = "newlink/stalfos_soldier", description = "soldierstalfos" }
 enemy{ id = "newlink/tigris_brown", description = "browntigris" }
 enemy{ id = "newlink/tigris_yellow", description = "yellowtigris" }
 enemy{ id = "newlink/wolfos_brown", description = "brownwolfos" }
 enemy{ id = "newlink/wolfos_white", description = "whitewolfos" }
 enemy{ id = "newlink/zombos_green", description = "greenzombos" }
 enemy{ id = "newlink/zombos_purple", description = "purplezombos" }
+enemy{ id = "newlink/zourakuss_green", description = "greenzourakuss" }
+enemy{ id = "newlink/zourakuss_purple", description = "purplezourakuss" }
 enemy{ id = "papillosaur_king", description = "Papillosaur King" }
 enemy{ id = "pike_auto", description = "Pike (always moving)" }
 enemy{ id = "pike_detect", description = "Pike (moves near hero)" }

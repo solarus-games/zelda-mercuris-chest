@@ -107,8 +107,8 @@ enemy{
 
 destination{
   layer = 1,
-  x = 272,
-  y = 213,
+  x = 304,
+  y = 221,
   direction = 1,
 }
 
@@ -302,5 +302,53 @@ enemy{
   y = 149,
   direction = 3,
   breed = "newlink/pumkin_orange",
+}
+
+enemy{
+  layer = 1,
+  x = 152,
+  y = 229,
+  direction = 3,
+  breed = "newlink/zourakuss_purple",
+}
+
+enemy{
+  layer = 1,
+  x = 184,
+  y = 229,
+  direction = 3,
+  breed = "newlink/zourakuss_green",
+}
+
+enemy{
+  layer = 1,
+  x = 184,
+  y = 37,
+  direction = 3,
+  breed = "newlink/lizalfos_green",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 37,
+  direction = 3,
+  breed = "newlink/lizalfos_purple",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 181,
+  direction = 3,
+  breed = "newlink/stalfos_guard",
+}
+
+enemy{
+  layer = 1,
+  x = 248,
+  y = 181,
+  direction = 3,
+  breed = "newlink/stalfos_soldier",
 }
 
