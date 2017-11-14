@@ -134,8 +134,8 @@ enemy{
 
 destination{
   layer = 1,
-  x = 328,
-  y = 141,
+  x = 344,
+  y = 253,
   direction = 1,
 }
 
@@ -229,7 +229,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 24,
+  x = 72,
   y = 237,
   direction = 3,
   breed = "newlink/cyclopus_orange",
@@ -237,7 +237,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 56,
+  x = 104,
   y = 237,
   direction = 3,
   breed = "newlink/cyclopus_yellow",
@@ -245,7 +245,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 88,
+  x = 136,
   y = 237,
   direction = 3,
   breed = "newlink/tigris_brown",
@@ -253,7 +253,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 120,
+  x = 168,
   y = 237,
   direction = 3,
   breed = "newlink/tigris_yellow",
@@ -277,7 +277,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 200,
+  x = 232,
   y = 101,
   direction = 3,
   breed = "newlink/Stalkis_red",
@@ -285,7 +285,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 224,
+  x = 264,
   y = 101,
   direction = 3,
   breed = "newlink/Stalkis_blue",
@@ -293,7 +293,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 248,
+  x = 296,
   y = 101,
   direction = 3,
   breed = "newlink/zombos_green",
@@ -301,7 +301,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 272,
+  x = 320,
   y = 101,
   direction = 3,
   breed = "newlink/zombos_purple",
@@ -309,7 +309,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 200,
+  x = 232,
   y = 141,
   direction = 3,
   breed = "newlink/demonos_fire",
@@ -317,7 +317,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 232,
+  x = 264,
   y = 141,
   direction = 3,
   breed = "newlink/demonos_ice",
@@ -325,7 +325,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 264,
+  x = 296,
   y = 141,
   direction = 3,
   breed = "newlink/pumkin_orange",
@@ -333,7 +333,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 152,
+  x = 200,
   y = 237,
   direction = 3,
   breed = "newlink/zourakuss_purple",
@@ -341,7 +341,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 184,
+  x = 232,
   y = 237,
   direction = 3,
   breed = "newlink/zourakuss_green",
@@ -365,7 +365,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 200,
+  x = 232,
   y = 173,
   direction = 3,
   breed = "newlink/stalfos_guard",
@@ -373,7 +373,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 232,
+  x = 264,
   y = 173,
   direction = 3,
   breed = "newlink/stalfos_soldier",
@@ -389,8 +389,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 296,
-  y = 101,
+  x = 320,
+  y = 69,
   direction = 3,
   breed = "gibdo",
 }
@@ -413,16 +413,16 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 248,
-  y = 69,
+  x = 296,
+  y = 45,
   direction = 0,
   breed = "red_hardhat_beetle",
 }
 
 enemy{
   layer = 1,
-  x = 224,
-  y = 69,
+  x = 320,
+  y = 21,
   direction = 0,
   breed = "blue_hardhat_beetle",
 }
@@ -445,7 +445,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 216,
+  x = 256,
   y = 237,
   direction = 3,
   breed = "newlink/champigos_yellow",
@@ -453,7 +453,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 248,
+  x = 280,
   y = 237,
   direction = 3,
   breed = "newlink/champigos_pink",
@@ -461,7 +461,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 280,
+  x = 312,
   y = 237,
   direction = 3,
   breed = "newlink/lynel_red",
@@ -469,7 +469,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 312,
+  x = 336,
   y = 237,
   direction = 3,
   breed = "newlink/lynel_blue",
@@ -477,7 +477,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 264,
+  x = 296,
   y = 173,
   direction = 3,
   breed = "newlink/wizzrobe_fire",
@@ -485,9 +485,41 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 288,
+  x = 320,
   y = 173,
   direction = 3,
   breed = "newlink/wizzrobe_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 152,
+  y = 165,
+  direction = 3,
+  breed = "newlink/garouk_brown",
+}
+
+enemy{
+  layer = 1,
+  x = 184,
+  y = 165,
+  direction = 3,
+  breed = "newlink/garouk_white",
+}
+
+enemy{
+  layer = 1,
+  x = 16,
+  y = 237,
+  direction = 3,
+  breed = "newlink/dinolfos_purple",
+}
+
+enemy{
+  layer = 1,
+  x = 40,
+  y = 237,
+  direction = 3,
+  breed = "newlink/dinolfos_green",
 }
 

@@ -135,6 +135,10 @@ sprite{ id = "enemies/newlink/cyclopus_orange", description = "orangecyclopus" }
 sprite{ id = "enemies/newlink/cyclopus_yellow", description = "yellowcyclopus" }
 sprite{ id = "enemies/newlink/demonos_fire", description = "Firedemonos" }
 sprite{ id = "enemies/newlink/demonos_ice", description = "icedemonos" }
+sprite{ id = "enemies/newlink/dinolfos_green", description = "greendinolfos" }
+sprite{ id = "enemies/newlink/dinolfos_purple", description = "purpledinolfos" }
+sprite{ id = "enemies/newlink/garouk_brown", description = "browngarouk" }
+sprite{ id = "enemies/newlink/garouk_white", description = "whitegarouk" }
 sprite{ id = "enemies/newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 sprite{ id = "enemies/newlink/horsek_greenarmor_weapon", description = "greenarmorhorsekspear" }
 sprite{ id = "enemies/newlink/horsek_redarmor", description = "redarmorhorsek" }
@@ -595,6 +599,10 @@ enemy{ id = "newlink/cyclopus_orange", description = "orangecyclopus" }
 enemy{ id = "newlink/cyclopus_yellow", description = "yellowcyclopus" }
 enemy{ id = "newlink/demonos_fire", description = "firedemonos" }
 enemy{ id = "newlink/demonos_ice", description = "icedemonos" }
+enemy{ id = "newlink/dinolfos_green", description = "greendinolfos" }
+enemy{ id = "newlink/dinolfos_purple", description = "purpledinolfos" }
+enemy{ id = "newlink/garouk_brown", description = "browngarouk" }
+enemy{ id = "newlink/garouk_white", description = "whitegarouk" }
 enemy{ id = "newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 enemy{ id = "newlink/horsek_redarmor", description = "redarmorhorsek" }
 enemy{ id = "newlink/lizalfos_green", description = "greenlizalfos" }
