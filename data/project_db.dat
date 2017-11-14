@@ -144,6 +144,8 @@ sprite{ id = "enemies/newlink/lizalfos_green", description = "greenlizalfos" }
 sprite{ id = "enemies/newlink/lizalfos_green_weapon", description = "greenlizalfossword" }
 sprite{ id = "enemies/newlink/lizalfos_purple", description = "purplelizalfos" }
 sprite{ id = "enemies/newlink/lizalfos_purple_weapon", description = "purplelizalfossword" }
+sprite{ id = "enemies/newlink/lynel_blue", description = "bluelynel" }
+sprite{ id = "enemies/newlink/lynel_red", description = "redlynel" }
 sprite{ id = "enemies/newlink/moblin_brown", description = "brownmoblin" }
 sprite{ id = "enemies/newlink/moblin_brown_weapon", description = "brownmoblinsword" }
 sprite{ id = "enemies/newlink/moblin_green", description = "greenmoblin" }
@@ -165,6 +167,10 @@ sprite{ id = "enemies/newlink/tortugas_green", description = "greentortugas" }
 sprite{ id = "enemies/newlink/tortugas_red", description = "redtortugas" }
 sprite{ id = "enemies/newlink/toukor_brown", description = "browntoukor" }
 sprite{ id = "enemies/newlink/toukor_pink", description = "pinktoukor" }
+sprite{ id = "enemies/newlink/wizzrobe_beam", description = "beamwizzrobe" }
+sprite{ id = "enemies/newlink/wizzrobe_fire", description = "firewizzrobe" }
+sprite{ id = "enemies/newlink/wizzrobe_ice", description = "icewizzrobe" }
+sprite{ id = "enemies/newlink/wizzrobe_ice_beam", description = "beamicewizzrobe" }
 sprite{ id = "enemies/newlink/wolfos_brown", description = "brownyelwolfos" }
 sprite{ id = "enemies/newlink/wolfos_brown_weapon", description = "wolfossword" }
 sprite{ id = "enemies/newlink/wolfos_white", description = "whitewolfos" }
@@ -593,6 +599,8 @@ enemy{ id = "newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 enemy{ id = "newlink/horsek_redarmor", description = "redarmorhorsek" }
 enemy{ id = "newlink/lizalfos_green", description = "greenlizalfos" }
 enemy{ id = "newlink/lizalfos_purple", description = "purplelizalfos" }
+enemy{ id = "newlink/lynel_blue", description = "bluelynel" }
+enemy{ id = "newlink/lynel_red", description = "redlynel" }
 enemy{ id = "newlink/moblin_brown", description = "brownmoblin" }
 enemy{ id = "newlink/moblin_green", description = "greenmoblin" }
 enemy{ id = "newlink/pumkin_orange", description = "orangepumkin" }
@@ -603,6 +611,10 @@ enemy{ id = "newlink/stalfos_guard", description = "guardstalfos" }
 enemy{ id = "newlink/stalfos_soldier", description = "soldierstalfos" }
 enemy{ id = "newlink/tigris_brown", description = "browntigris" }
 enemy{ id = "newlink/tigris_yellow", description = "yellowtigris" }
+enemy{ id = "newlink/wizzrobe_beam", description = "beamwizzrobe" }
+enemy{ id = "newlink/wizzrobe_fire", description = "firewizzrobe" }
+enemy{ id = "newlink/wizzrobe_ice", description = "icewizzrobe" }
+enemy{ id = "newlink/wizzrobe_ice_beam", description = "icebeamwizzrobe" }
 enemy{ id = "newlink/wolfos_brown", description = "brownwolfos" }
 enemy{ id = "newlink/wolfos_white", description = "whitewolfos" }
 enemy{ id = "newlink/zombos_green", description = "greenzombos" }
