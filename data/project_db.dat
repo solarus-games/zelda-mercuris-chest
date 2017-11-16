@@ -727,4 +727,19 @@ font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
 
 shader{ id = "CRT-interlaced", description = "CRT-interlaced" }
+shader{ id = "curvature", description = "curvature" }
+shader{ id = "edge-detection", description = "edge-detection" }
+shader{ id = "grayscale", description = "grayscale" }
+shader{ id = "heavybloom", description = "heavybloom" }
+shader{ id = "hq2x", description = "hq2x" }
+shader{ id = "hq4x", description = "hq4x" }
+shader{ id = "hw_scale2x", description = "hw_scale2x" }
+shader{ id = "pip", description = "pip" }
+shader{ id = "sepia", description = "sepia" }
+shader{ id = "toon", description = "toon" }
+shader{ id = "waterpaint", description = "waterpaint" }
+shader{ id = "xBR-hybrid-v5", description = "xBR-hybrid-v5" }
+shader{ id = "xBR-v3.8a", description = "xBR-v3.8a" }
+shader{ id = "xBR-v3.8b", description = "xBR-v3.8b" }
+shader{ id = "xBR-v3.8c", description = "xBR-v3.8c" }
 
