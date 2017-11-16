@@ -385,8 +385,8 @@ teletransporter{
   y = 24,
   width = 16,
   height = 16,
-  destination_map = "sacred_crater/1f",
-  destination = "main_entrance",
+  destination_map = "out/d4",
+  destination = "smith_out",
 }
 
 teletransporter{

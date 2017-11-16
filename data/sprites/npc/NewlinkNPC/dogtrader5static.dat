@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "npc/NewlinkNPC/dogtrader5static.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 15, origin_y = 28 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 15, origin_y = 28 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 15, origin_y = 28 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 15, origin_y = 28 },
+  },
+}
