@@ -280,6 +280,8 @@ sprite{ id = "entities/railway_horizontal", description = "Railway (horizontal)"
 sprite{ id = "entities/railway_top_left", description = "Railway (top left)" }
 sprite{ id = "entities/railway_top_right", description = "Railway (top right)" }
 sprite{ id = "entities/railway_vertical", description = "Railway (vertical)" }
+sprite{ id = "entities/rotating_platform/barrier", description = "Rotating platform (barrier)" }
+sprite{ id = "entities/rotating_platform/base", description = "Rotating platform (base)" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
@@ -714,6 +716,7 @@ enemy{ id = "zoura_red", description = "Red Zoura" }
 entity{ id = "minecart", description = "Minecart" }
 entity{ id = "minecart_turn", description = "Minecart turn" }
 entity{ id = "minecart_turn_diagonal", description = "Minecart turn (diagonal)" }
+entity{ id = "rotating_platform", description = "Rotating platform" }
 
 language{ id = "en", description = "English" }
 language{ id = "fr", description = "Français" }

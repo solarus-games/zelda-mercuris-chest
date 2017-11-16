@@ -39925,6 +39925,15 @@ tile{
   pattern = "statue_eye",
 }
 
+tile{
+  layer = 1,
+  x = 2560,
+  y = 3312,
+  width = 16,
+  height = 16,
+  pattern = "rail.corner.2",
+}
+
 wall{
   layer = 1,
   x = 1296,
@@ -44505,6 +44514,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 1,
+  sprite = "entities/minecart",
   model = "minecart",
 }
 

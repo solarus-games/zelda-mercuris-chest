@@ -9,8 +9,6 @@ local hero = map:get_hero()
 local hero_facing_minecart = false
 local action_command_minecart = false
 
-minecart:create_sprite("entities/minecart")
-
 -- Don't let the hero traverse the minecart.
 minecart:set_traversable_by("hero", false)
 
@@ -120,6 +118,7 @@ function minecart:go()
 
   -- Allow the player to control the direction of the hero.
   if map.on_command_pressed == nil then
+    -- TODO use map:register_event()
     function map:on_command_pressed(command)
 
       local directions4 = {

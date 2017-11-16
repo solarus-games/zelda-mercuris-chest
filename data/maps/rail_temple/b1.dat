@@ -3,10 +3,10 @@ properties{
   y = 1184,
   width = 1088,
   height = 2736,
-  world = "dungeon_7",
-  floor = -1,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = -1,
   tileset = "mine",
   music = "same",
 }
@@ -5223,15 +5223,6 @@ tile{
 tile{
   layer = 1,
   x = 144,
-  y = 1760,
-  width = 16,
-  height = 16,
-  pattern = "block",
-}
-
-tile{
-  layer = 1,
-  x = 48,
   y = 1760,
   width = 16,
   height = 16,
@@ -10880,6 +10871,91 @@ stairs{
   y = 1656,
   direction = 1,
   subtype = 1,
+}
+
+custom_entity{
+  layer = 1,
+  x = 88,
+  y = 1709,
+  width = 48,
+  height = 48,
+  direction = 0,
+  sprite = "entities/rotating_platform/base",
+}
+
+custom_entity{
+  name = "rp_1",
+  layer = 1,
+  x = 88,
+  y = 1709,
+  width = 48,
+  height = 48,
+  direction = 0,
+  sprite = "entities/rotating_platform/barrier",
+  model = "rotating_platform",
+}
+
+wall{
+  layer = 1,
+  x = 88,
+  y = 1728,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 112,
+  y = 1728,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 88,
+  y = 1704,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 112,
+  y = 1704,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+block{
+  layer = 1,
+  x = 56,
+  y = 1773,
+  direction = 3,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 1,
 }
 
 tile{
