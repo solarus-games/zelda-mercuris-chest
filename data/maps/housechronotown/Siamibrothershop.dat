@@ -1,0 +1,739 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "dungeon/gray_blue",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 16,
+  width = 128,
+  height = 24,
+  pattern = "wall.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 16,
+  width = 112,
+  height = 24,
+  pattern = "wall.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 16,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.2-1",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 40,
+  width = 24,
+  height = 160,
+  pattern = "wall.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 200,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 200,
+  width = 240,
+  height = 24,
+  pattern = "wall.2-1",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 200,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.3-1",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 40,
+  width = 24,
+  height = 160,
+  pattern = "wall.3-1",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "floor.1-2",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 40,
+  width = 240,
+  height = 160,
+  pattern = "floor_low.1-2",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 40,
+  width = 224,
+  height = 8,
+  pattern = "wall_border.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.2-1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 48,
+  width = 8,
+  height = 144,
+  pattern = "wall_border.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 192,
+  width = 224,
+  height = 8,
+  pattern = "wall_border.2-1",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "wall_border.corner.3-1",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 48,
+  width = 8,
+  height = 144,
+  pattern = "wall_border.3-1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "counter.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "counter.3",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 64,
+  width = 8,
+  height = 32,
+  pattern = "counter.6",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 64,
+  width = 8,
+  height = 40,
+  pattern = "counter.4",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "counter.7",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 104,
+  width = 192,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "counter.9",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 56,
+  width = 8,
+  height = 48,
+  pattern = "counter.6",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "counter.3",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "counter.1",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 64,
+  width = 8,
+  height = 32,
+  pattern = "counter.4",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 96,
+  width = 192,
+  height = 8,
+  pattern = "counter.2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "counter.5",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "counter.5",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.3",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 64,
+  width = 8,
+  height = 32,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 64,
+  width = 8,
+  height = 32,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 96,
+  width = 192,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.1",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.3",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 64,
+  width = 8,
+  height = 40,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 64,
+  width = 8,
+  height = 40,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 112,
+  width = 208,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 104,
+  width = 208,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "wine_rack.3",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "wine_rack.2",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "wine_rack.1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "bug_cage",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "bug_cage",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "bug_cage",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "bug_cage",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "bug_cage",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 168,
+  width = 16,
+  height = 24,
+  pattern = "barrel",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "cabinet.5a",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "cabinet.5a",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "wine_rack.3",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "wine_rack.2",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "wine_rack.1",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 32,
+  width = 24,
+  height = 24,
+  pattern = "cabinet.3a",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 24,
+  height = 24,
+  pattern = "cabinet.4a",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "cabinet.1a",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "cabinet.1a",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "book_case.1a",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "book_case.1a",
+}
+
+npc{
+  layer = 0,
+  x = 96,
+  y = 93,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/siamibrother1",
+}
+
+npc{
+  layer = 0,
+  x = 208,
+  y = 93,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/siamibrother2",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "cabinet.5b",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "cabinet.5b",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 8,
+  width = 24,
+  height = 24,
+  pattern = "cabinet.3b",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 16,
+  width = 24,
+  height = 16,
+  pattern = "cabinet.4b",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "cabinet.1b",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "cabinet.1b",
+}
+
