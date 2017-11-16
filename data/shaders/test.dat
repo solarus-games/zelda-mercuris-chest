@@ -1,0 +1,27 @@
+
+video_driver_name = select(1, ...) -- Get the rendering driver name.
+shading_language_version = select(2, ...) -- Get the shading language version.
+sampler_type = select(3, ...) -- Get the type of samplers to use.
+
+videomode {
+	-- Name of the video mode associated to the shader.
+	name = "test",
+	-- Default scale of the window compared to the quest_size.
+	default_window_scale = 2,
+	-- Set the validity range of the shader.
+    --TODO check the real validity range.
+	is_shader_valid = video_driver_name == "opengl",
+	-- Source of the fragment shader.
+	fragment_source = [[
+
+uniform sampler2DRect quest_texture;
+
+void main() {
+  vec3 pixel = texture2DRect(quest_texture, gl_TexCoord[0].xy).rgb;
+  gl_FragColor = vec4(0.0, pixel.g, pixel.b, 1.0);
+}
+
+]]
+
+}
+

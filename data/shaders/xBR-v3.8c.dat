@@ -1,0 +1,556 @@
+-- This is a 5xBR-v3.8c glsl shader implementation from the libretro/common-shaders project.
+-- https://github.com/libretro/common-shaders/tree/master/xbr
+-- It was converted from CG script by the cg2glsl tool here
+-- https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py
+
+video_driver_name = select(1, ...) -- Get the rendering driver name.
+shading_language_version = select(2, ...) -- Get the shading language version.
+sampler_type = select(3, ...) -- Get the type of samplers to use.
+
+-- Get the type of texture2D function to use.
+texture_type = "texture2D"
+if (sampler_type == "sampler2DRect") then
+	texture_type = "texture2DRect"	
+end
+
+videomode {
+	-- Name of the video mode associated to the shader.
+	name = "xBR-v3.8c",
+	-- Default scale of the window compared to the quest_size.
+	default_window_scale = 2,
+	-- Set the validity range of the shader.
+        --TODO check the real validity range.
+	is_shader_valid = video_driver_name == "opengl",
+	-- Source of the vertex shader.
+	vertex_source = [[
+            #if __VERSION__ >= 130
+            #define COMPAT_VARYING out
+            #else
+            #define COMPAT_VARYING varying
+            #endif
+
+            #ifdef GL_ES
+            #define COMPAT_PRECISION mediump
+            #else
+            #define COMPAT_PRECISION
+            #endif
+            COMPAT_VARYING     vec4 VARt7;
+            COMPAT_VARYING     vec4 VARt6;
+            COMPAT_VARYING     vec4 VARt5;
+            COMPAT_VARYING     vec4 VARt4;
+            COMPAT_VARYING     vec4 VARt3;
+            COMPAT_VARYING     vec4 VARt2;
+            COMPAT_VARYING     vec4 VARt1;
+            COMPAT_VARYING     vec2 _texCoord1;
+            COMPAT_VARYING     vec4 _color1;
+            COMPAT_VARYING     vec4 _position1;
+            struct input_dummy {
+                vec2 _video_size;
+                vec2 _texture_size;
+                vec2 _output_dummy_size;
+            };
+            struct out_vertex {
+                vec4 _position1;
+                vec4 _color1;
+                vec2 _texCoord1;
+                vec4 VARt1;
+                vec4 VARt2;
+                vec4 VARt3;
+                vec4 VARt4;
+                vec4 VARt5;
+                vec4 VARt6;
+                vec4 VARt7;
+            };
+            out_vertex _ret_0;
+            input_dummy _IN1;
+            vec4 TexCoord;
+            COMPAT_VARYING vec4 COL0;
+            COMPAT_VARYING vec4 TEX0;
+
+            void main()
+            {
+                out_vertex _OUT;
+                vec2 _ps;
+                TexCoord = gl_MultiTexCoord0;
+                _OUT._position1 = gl_ModelViewProjectionMatrix * gl_Vertex;
+                _ps = vec2(1.00000000E+00);
+                _OUT.VARt1 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float((-2.00000000E+00*_ps.y))));
+                _OUT.VARt2 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float(-_ps.y)));
+                _OUT.VARt3 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), 0.00000000E+00);
+                _OUT.VARt4 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float(_ps.y)));
+                _OUT.VARt5 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float((2.00000000E+00*_ps.y))));
+                _OUT.VARt6 = TexCoord.xyyy + vec4(float(float((-2.00000000E+00*_ps.x))), float(float(-_ps.y)), 0.00000000E+00, float(float(_ps.y)));
+                _OUT.VARt7 = TexCoord.xyyy + vec4(float(float((2.00000000E+00*_ps.x))), float(float(-_ps.y)), 0.00000000E+00, float(float(_ps.y)));
+                _ret_0._position1 = _OUT._position1;
+                _ret_0._color1 = gl_Color;
+                _ret_0._texCoord1 = TexCoord.xy;
+                VARt1 = _OUT.VARt1;
+                VARt2 = _OUT.VARt2;
+                VARt3 = _OUT.VARt3;
+                VARt4 = _OUT.VARt4;
+                VARt5 = _OUT.VARt5;
+                VARt6 = _OUT.VARt6;
+                VARt7 = _OUT.VARt7;
+                gl_Position = _OUT._position1;
+                COL0 = gl_Color;
+                TEX0.xy = TexCoord.xy;
+            }
+	]],
+	-- Source of the fragment shader.
+	fragment_source = [[
+            uniform ]] .. sampler_type .. [[ solarus_sampler;
+
+            #if __VERSION__ >= 130
+            #define COMPAT_VARYING in
+            #define COMPAT_TEXTURE texture
+            out vec4 FragColor;
+            #else
+            #define COMPAT_VARYING varying
+            #define FragColor gl_FragColor
+            #define COMPAT_TEXTURE ]] .. texture_type .. [[ 
+            #endif
+
+            #ifdef GL_ES
+            #ifdef GL_FRAGMENT_PRECISION_HIGH
+            precision highp float;
+            #else
+            precision mediump float;
+            #endif
+            #define COMPAT_PRECISION mediump
+            #else
+            #define COMPAT_PRECISION
+            #endif
+            COMPAT_VARYING     vec4 VARt7;
+            COMPAT_VARYING     vec4 VARt6;
+            COMPAT_VARYING     vec4 VARt5;
+            COMPAT_VARYING     vec4 VARt4;
+            COMPAT_VARYING     vec4 VARt3;
+            COMPAT_VARYING     vec4 VARt2;
+            COMPAT_VARYING     vec4 VARt1;
+            COMPAT_VARYING     vec2 _texCoord;
+            COMPAT_VARYING     vec4 _color;
+            struct input_dummy {
+                vec2 _video_size;
+                vec2 _texture_size;
+                vec2 _output_dummy_size;
+            };
+            struct out_vertex {
+                vec4 _color;
+                vec2 _texCoord;
+                vec4 VARt1;
+                vec4 VARt2;
+                vec4 VARt3;
+                vec4 VARt4;
+                vec4 VARt5;
+                vec4 VARt6;
+                vec4 VARt7;
+            };
+            vec4 _ret_0;
+            float _TMP62;
+            vec3 _TMP54;
+            vec3 _TMP52;
+            vec3 _TMP50;
+            vec3 _TMP48;
+            vec3 _TMP53;
+            vec3 _TMP51;
+            vec3 _TMP49;
+            vec3 _TMP47;
+            vec4 _TMP46;
+            vec4 _TMP39;
+            vec4 _TMP38;
+            vec4 _TMP63;
+            bvec4 _TMP37;
+            bvec4 _TMP36;
+            bvec4 _TMP35;
+            bvec4 _TMP34;
+            bvec4 _TMP33;
+            bvec4 _TMP32;
+            bvec4 _TMP31;
+            bvec4 _TMP30;
+            bvec4 _TMP29;
+            bvec4 _TMP28;
+            bvec4 _TMP27;
+            vec4 _TMP20;
+            vec4 _TMP19;
+            vec4 _TMP18;
+            vec4 _TMP17;
+            vec4 _TMP16;
+            vec4 _TMP15;
+            vec4 _TMP14;
+            vec4 _TMP13;
+            vec4 _TMP12;
+            vec4 _TMP11;
+            vec4 _TMP10;
+            vec4 _TMP9;
+            vec4 _TMP8;
+            vec4 _TMP7;
+            vec4 _TMP6;
+            vec4 _TMP5;
+            vec4 _TMP4;
+            vec4 _TMP3;
+            vec4 _TMP2;
+            vec4 _TMP1;
+            vec4 _TMP0;
+            out_vertex _VAR1;
+            input_dummy _IN1;
+            vec2 _x0078;
+            vec4 _r0122;
+            vec4 _r0132;
+            vec4 _r0142;
+            vec4 _r0152;
+            vec4 _r0162;
+            vec4 _r0172;
+            vec4 _TMP183;
+            vec4 _a0186;
+            vec4 _TMP189;
+            vec4 _a0192;
+            vec4 _TMP195;
+            vec4 _a0198;
+            vec4 _TMP201;
+            vec4 _a0204;
+            vec4 _TMP207;
+            vec4 _a0210;
+            vec4 _TMP213;
+            vec4 _a0216;
+            vec4 _TMP219;
+            vec4 _a0222;
+            vec4 _TMP225;
+            vec4 _a0228;
+            vec4 _TMP231;
+            vec4 _a0234;
+            vec4 _TMP237;
+            vec4 _a0240;
+            vec4 _TMP243;
+            vec4 _a0246;
+            vec4 _x0248;
+            vec4 _TMP249;
+            vec4 _x0256;
+            vec4 _TMP257;
+            vec4 _x0264;
+            vec4 _TMP265;
+            vec4 _TMP273;
+            vec4 _a0276;
+            vec4 _TMP277;
+            vec4 _a0280;
+            vec4 _TMP281;
+            vec4 _a0284;
+            vec4 _TMP285;
+            vec4 _a0288;
+            vec4 _TMP289;
+            vec4 _a0292;
+            vec4 _TMP295;
+            vec4 _a0298;
+            vec4 _TMP299;
+            vec4 _a0302;
+            vec4 _TMP303;
+            vec4 _a0306;
+            vec4 _TMP307;
+            vec4 _a0310;
+            vec4 _TMP311;
+            vec4 _a0314;
+            vec4 _TMP315;
+            vec4 _a0318;
+            vec4 _TMP319;
+            vec4 _a0322;
+            vec4 _TMP323;
+            vec4 _a0326;
+            vec4 _TMP327;
+            vec4 _a0330;
+            vec4 _TMP331;
+            vec4 _a0334;
+            vec4 _TMP335;
+            vec4 _a0338;
+            float _t0344;
+            float _t0346;
+            float _t0348;
+            float _t0350;
+            float _t0352;
+            float _t0354;
+            float _t0356;
+            float _t0358;
+            vec4 _r0360;
+            vec4 _TMP369;
+            vec4 _a0372;
+            COMPAT_VARYING vec4 TEX0;
+
+            void main()
+            {
+                bvec4 _edr;
+                bvec4 _edr_left;
+                bvec4 _edr_up;
+                bvec4 _px;
+                bvec4 _interp_restriction_lv1;
+                bvec4 _interp_restriction_lv2_left;
+                bvec4 _interp_restriction_lv2_up;
+                vec4 _fx;
+                vec4 _fx_left;
+                vec4 _fx_up;
+                vec2 _fp;
+                vec3 _A11;
+                vec3 _B11;
+                vec3 _C1;
+                vec3 _A2;
+                vec3 _B2;
+                vec3 _C;
+                vec3 _D;
+                vec3 _E;
+                vec3 _F;
+                vec3 _G;
+                vec3 _H;
+                vec3 _I;
+                vec3 _G5;
+                vec3 _H5;
+                vec3 _I5;
+                vec3 _A0;
+                vec3 _D0;
+                vec3 _G0;
+                vec3 _C4;
+                vec3 _F4;
+                vec3 _I4;
+                vec4 _b1;
+                vec4 _c1;
+                vec4 _e1;
+                vec4 _i4;
+                vec4 _i5;
+                vec4 _h5;
+                vec4 _fx45;
+                vec4 _fx30;
+                vec4 _fx60;
+                vec4 _maximo;
+                vec4 _pixel;
+                vec3 _res;
+                float _mx;
+                _x0078 = TEX0.xy;
+                _fp = fract(_x0078);
+                _TMP0 = COMPAT_TEXTURE(solarus_sampler, VARt1.xw);
+                _A11 = vec3(float(_TMP0.x), float(_TMP0.y), float(_TMP0.z));
+                _TMP1 = COMPAT_TEXTURE(solarus_sampler, VARt1.yw);
+                _B11 = vec3(float(_TMP1.x), float(_TMP1.y), float(_TMP1.z));
+                _TMP2 = COMPAT_TEXTURE(solarus_sampler, VARt1.zw);
+                _C1 = vec3(float(_TMP2.x), float(_TMP2.y), float(_TMP2.z));
+                _TMP3 = COMPAT_TEXTURE(solarus_sampler, VARt2.xw);
+                _A2 = vec3(float(_TMP3.x), float(_TMP3.y), float(_TMP3.z));
+                _TMP4 = COMPAT_TEXTURE(solarus_sampler, VARt2.yw);
+                _B2 = vec3(float(_TMP4.x), float(_TMP4.y), float(_TMP4.z));
+                _TMP5 = COMPAT_TEXTURE(solarus_sampler, VARt2.zw);
+                _C = vec3(float(_TMP5.x), float(_TMP5.y), float(_TMP5.z));
+                _TMP6 = COMPAT_TEXTURE(solarus_sampler, VARt3.xw);
+                _D = vec3(float(_TMP6.x), float(_TMP6.y), float(_TMP6.z));
+                _TMP7 = COMPAT_TEXTURE(solarus_sampler, VARt3.yw);
+                _E = vec3(float(_TMP7.x), float(_TMP7.y), float(_TMP7.z));
+                _TMP8 = COMPAT_TEXTURE(solarus_sampler, VARt3.zw);
+                _F = vec3(float(_TMP8.x), float(_TMP8.y), float(_TMP8.z));
+                _TMP9 = COMPAT_TEXTURE(solarus_sampler, VARt4.xw);
+                _G = vec3(float(_TMP9.x), float(_TMP9.y), float(_TMP9.z));
+                _TMP10 = COMPAT_TEXTURE(solarus_sampler, VARt4.yw);
+                _H = vec3(float(_TMP10.x), float(_TMP10.y), float(_TMP10.z));
+                _TMP11 = COMPAT_TEXTURE(solarus_sampler, VARt4.zw);
+                _I = vec3(float(_TMP11.x), float(_TMP11.y), float(_TMP11.z));
+                _TMP12 = COMPAT_TEXTURE(solarus_sampler, VARt5.xw);
+                _G5 = vec3(float(_TMP12.x), float(_TMP12.y), float(_TMP12.z));
+                _TMP13 = COMPAT_TEXTURE(solarus_sampler, VARt5.yw);
+                _H5 = vec3(float(_TMP13.x), float(_TMP13.y), float(_TMP13.z));
+                _TMP14 = COMPAT_TEXTURE(solarus_sampler, VARt5.zw);
+                _I5 = vec3(float(_TMP14.x), float(_TMP14.y), float(_TMP14.z));
+                _TMP15 = COMPAT_TEXTURE(solarus_sampler, VARt6.xy);
+                _A0 = vec3(float(_TMP15.x), float(_TMP15.y), float(_TMP15.z));
+                _TMP16 = COMPAT_TEXTURE(solarus_sampler, VARt6.xz);
+                _D0 = vec3(float(_TMP16.x), float(_TMP16.y), float(_TMP16.z));
+                _TMP17 = COMPAT_TEXTURE(solarus_sampler, VARt6.xw);
+                _G0 = vec3(float(_TMP17.x), float(_TMP17.y), float(_TMP17.z));
+                _TMP18 = COMPAT_TEXTURE(solarus_sampler, VARt7.xy);
+                _C4 = vec3(float(_TMP18.x), float(_TMP18.y), float(_TMP18.z));
+                _TMP19 = COMPAT_TEXTURE(solarus_sampler, VARt7.xz);
+                _F4 = vec3(float(_TMP19.x), float(_TMP19.y), float(_TMP19.z));
+                _TMP20 = COMPAT_TEXTURE(solarus_sampler, VARt7.xw);
+                _I4 = vec3(float(_TMP20.x), float(_TMP20.y), float(_TMP20.z));
+                _TMP62 = dot(vec3(float(_B2.x), float(_B2.y), float(_B2.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0122.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_D.x), float(_D.y), float(_D.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0122.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_H.x), float(_H.y), float(_H.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0122.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_F.x), float(_F.y), float(_F.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0122.w = float(_TMP62);
+                _b1 = vec4(float(_r0122.x), float(_r0122.y), float(_r0122.z), float(_r0122.w));
+                _TMP62 = dot(vec3(float(_C.x), float(_C.y), float(_C.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0132.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_A2.x), float(_A2.y), float(_A2.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0132.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_G.x), float(_G.y), float(_G.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0132.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_I.x), float(_I.y), float(_I.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0132.w = float(_TMP62);
+                _c1 = vec4(float(_r0132.x), float(_r0132.y), float(_r0132.z), float(_r0132.w));
+                _TMP62 = dot(vec3(float(_E.x), float(_E.y), float(_E.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0142.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_E.x), float(_E.y), float(_E.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0142.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_E.x), float(_E.y), float(_E.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0142.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_E.x), float(_E.y), float(_E.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0142.w = float(_TMP62);
+                _e1 = vec4(float(_r0142.x), float(_r0142.y), float(_r0142.z), float(_r0142.w));
+                _TMP62 = dot(vec3(float(_I4.x), float(_I4.y), float(_I4.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0152.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_C1.x), float(_C1.y), float(_C1.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0152.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_A0.x), float(_A0.y), float(_A0.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0152.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_G5.x), float(_G5.y), float(_G5.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0152.w = float(_TMP62);
+                _i4 = vec4(float(_r0152.x), float(_r0152.y), float(_r0152.z), float(_r0152.w));
+                _TMP62 = dot(vec3(float(_I5.x), float(_I5.y), float(_I5.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0162.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_C4.x), float(_C4.y), float(_C4.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0162.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_A11.x), float(_A11.y), float(_A11.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0162.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_G0.x), float(_G0.y), float(_G0.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0162.w = float(_TMP62);
+                _i5 = vec4(float(_r0162.x), float(_r0162.y), float(_r0162.z), float(_r0162.w));
+                _TMP62 = dot(vec3(float(_H5.x), float(_H5.y), float(_H5.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0172.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_F4.x), float(_F4.y), float(_F4.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0172.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_B11.x), float(_B11.y), float(_B11.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0172.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_D0.x), float(_D0.y), float(_D0.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0172.w = float(_TMP62);
+                _h5 = vec4(float(_r0172.x), float(_r0172.y), float(_r0172.z), float(_r0172.w));
+                _fx = vec4( 1.00000000E+00, -1.00000000E+00, -1.00000000E+00, 1.00000000E+00)*_fp.y + vec4( 1.00000000E+00, 1.00000000E+00, -1.00000000E+00, -1.00000000E+00)*_fp.x;
+                _fx_left = vec4( 1.00000000E+00, -1.00000000E+00, -1.00000000E+00, 1.00000000E+00)*_fp.y + vec4( 5.00000000E-01, 2.00000000E+00, -5.00000000E-01, -2.00000000E+00)*_fp.x;
+                _fx_up = vec4( 1.00000000E+00, -1.00000000E+00, -1.00000000E+00, 1.00000000E+00)*_fp.y + vec4( 2.00000000E+00, 5.00000000E-01, -2.00000000E+00, -5.00000000E-01)*_fp.x;
+                _a0186 = _b1.wxyz - _b1;
+                _TMP183 = abs(_a0186);
+                _TMP27 = bvec4(_TMP183.x < 1.50000000E+01, _TMP183.y < 1.50000000E+01, _TMP183.z < 1.50000000E+01, _TMP183.w < 1.50000000E+01);
+                _a0192 = _b1.wxyz - _c1;
+                _TMP189 = abs(_a0192);
+                _TMP28 = bvec4(_TMP189.x < 1.50000000E+01, _TMP189.y < 1.50000000E+01, _TMP189.z < 1.50000000E+01, _TMP189.w < 1.50000000E+01);
+                _a0198 = _b1.zwxy - _b1.yzwx;
+                _TMP195 = abs(_a0198);
+                _TMP29 = bvec4(_TMP195.x < 1.50000000E+01, _TMP195.y < 1.50000000E+01, _TMP195.z < 1.50000000E+01, _TMP195.w < 1.50000000E+01);
+                _a0204 = _b1.zwxy - _c1.zwxy;
+                _TMP201 = abs(_a0204);
+                _TMP30 = bvec4(_TMP201.x < 1.50000000E+01, _TMP201.y < 1.50000000E+01, _TMP201.z < 1.50000000E+01, _TMP201.w < 1.50000000E+01);
+                _a0210 = _e1 - _c1.wxyz;
+                _TMP207 = abs(_a0210);
+                _TMP31 = bvec4(_TMP207.x < 1.50000000E+01, _TMP207.y < 1.50000000E+01, _TMP207.z < 1.50000000E+01, _TMP207.w < 1.50000000E+01);
+                _a0216 = _b1.wxyz - _h5.yzwx;
+                _TMP213 = abs(_a0216);
+                _TMP32 = bvec4(_TMP213.x < 1.50000000E+01, _TMP213.y < 1.50000000E+01, _TMP213.z < 1.50000000E+01, _TMP213.w < 1.50000000E+01);
+                _a0222 = _b1.wxyz - _i4;
+                _TMP219 = abs(_a0222);
+                _TMP33 = bvec4(_TMP219.x < 1.50000000E+01, _TMP219.y < 1.50000000E+01, _TMP219.z < 1.50000000E+01, _TMP219.w < 1.50000000E+01);
+                _a0228 = _b1.zwxy - _h5;
+                _TMP225 = abs(_a0228);
+                _TMP34 = bvec4(_TMP225.x < 1.50000000E+01, _TMP225.y < 1.50000000E+01, _TMP225.z < 1.50000000E+01, _TMP225.w < 1.50000000E+01);
+                _a0234 = _b1.zwxy - _i5;
+                _TMP231 = abs(_a0234);
+                _TMP35 = bvec4(_TMP231.x < 1.50000000E+01, _TMP231.y < 1.50000000E+01, _TMP231.z < 1.50000000E+01, _TMP231.w < 1.50000000E+01);
+                _a0240 = _e1 - _c1.zwxy;
+                _TMP237 = abs(_a0240);
+                _TMP36 = bvec4(_TMP237.x < 1.50000000E+01, _TMP237.y < 1.50000000E+01, _TMP237.z < 1.50000000E+01, _TMP237.w < 1.50000000E+01);
+                _a0246 = _e1 - _c1;
+                _TMP243 = abs(_a0246);
+                _TMP37 = bvec4(_TMP243.x < 1.50000000E+01, _TMP243.y < 1.50000000E+01, _TMP243.z < 1.50000000E+01, _TMP243.w < 1.50000000E+01);
+                _interp_restriction_lv1 = bvec4(_e1.x != _b1.w && _e1.x != _b1.z && (!_TMP27.x && !_TMP28.x || !_TMP29.x && !_TMP30.x || _TMP31.x && (!_TMP32.x && !_TMP33.x || !_TMP34.x && !_TMP35.x) || _TMP36.x || _TMP37.x), _e1.y != _b1.x && _e1.y != _b1.w && (!_TMP27.y && !_TMP28.y || !_TMP29.y && !_TMP30.y || _TMP31.y && (!_TMP32.y && !_TMP33.y || !_TMP34.y && !_TMP35.y) || _TMP36.y || _TMP37.y), _e1.z != _b1.y && _e1.z != _b1.x && (!_TMP27.z && !_TMP28.z || !_TMP29.z && !_TMP30.z || _TMP31.z && (!_TMP32.z && !_TMP33.z || !_TMP34.z && !_TMP35.z) || _TMP36.z || _TMP37.z), _e1.w != _b1.z && _e1.w != _b1.y && (!_TMP27.w && !_TMP28.w || !_TMP29.w && !_TMP30.w || _TMP31.w && (!_TMP32.w && !_TMP33.w || !_TMP34.w && !_TMP35.w) || _TMP36.w || _TMP37.w));
+                _interp_restriction_lv2_left = bvec4(_e1.x != _c1.z && _b1.y != _c1.z, _e1.y != _c1.w && _b1.z != _c1.w, _e1.z != _c1.x && _b1.w != _c1.x, _e1.w != _c1.y && _b1.x != _c1.y);
+                _interp_restriction_lv2_up = bvec4(_e1.x != _c1.x && _b1.x != _c1.x, _e1.y != _c1.y && _b1.y != _c1.y, _e1.z != _c1.z && _b1.z != _c1.z, _e1.w != _c1.w && _b1.w != _c1.w);
+                _x0248 = ((_fx + vec4( 2.00000003E-01, 2.00000003E-01, 2.00000003E-01, 2.00000003E-01)) - vec4( 1.50000000E+00, 5.00000000E-01, -5.00000000E-01, 5.00000000E-01))/vec4( 4.00000006E-01, 4.00000006E-01, 4.00000006E-01, 4.00000006E-01);
+                _TMP63 = min(vec4( 1.00000000E+00, 1.00000000E+00, 1.00000000E+00, 1.00000000E+00), _x0248);
+                _TMP249 = max(vec4( 0.00000000E+00, 0.00000000E+00, 0.00000000E+00, 0.00000000E+00), _TMP63);
+                _x0256 = ((_fx_left + vec4( 1.00000001E-01, 2.00000003E-01, 1.00000001E-01, 2.00000003E-01)) - vec4( 1.00000000E+00, 1.00000000E+00, -5.00000000E-01, 0.00000000E+00))/vec4( 2.00000003E-01, 4.00000006E-01, 2.00000003E-01, 4.00000006E-01);
+                _TMP63 = min(vec4( 1.00000000E+00, 1.00000000E+00, 1.00000000E+00, 1.00000000E+00), _x0256);
+                _TMP257 = max(vec4( 0.00000000E+00, 0.00000000E+00, 0.00000000E+00, 0.00000000E+00), _TMP63);
+                _x0264 = ((_fx_up + vec4( 2.00000003E-01, 1.00000001E-01, 2.00000003E-01, 1.00000001E-01)) - vec4( 2.00000000E+00, 0.00000000E+00, -1.00000000E+00, 5.00000000E-01))/vec4( 4.00000006E-01, 2.00000003E-01, 4.00000006E-01, 2.00000003E-01);
+                _TMP63 = min(vec4( 1.00000000E+00, 1.00000000E+00, 1.00000000E+00, 1.00000000E+00), _x0264);
+                _TMP265 = max(vec4( 0.00000000E+00, 0.00000000E+00, 0.00000000E+00, 0.00000000E+00), _TMP63);
+                _a0276 = _e1 - _c1;
+                _TMP273 = abs(_a0276);
+                _a0280 = _e1 - _c1.zwxy;
+                _TMP277 = abs(_a0280);
+                _a0284 = _c1.wxyz - _h5;
+                _TMP281 = abs(_a0284);
+                _a0288 = _c1.wxyz - _h5.yzwx;
+                _TMP285 = abs(_a0288);
+                _a0292 = _b1.zwxy - _b1.wxyz;
+                _TMP289 = abs(_a0292);
+                _TMP38 = _TMP273 + _TMP277 + _TMP281 + _TMP285 + 4.00000000E+00*_TMP289;
+                _a0298 = _b1.zwxy - _b1.yzwx;
+                _TMP295 = abs(_a0298);
+                _a0302 = _b1.zwxy - _i5;
+                _TMP299 = abs(_a0302);
+                _a0306 = _b1.wxyz - _i4;
+                _TMP303 = abs(_a0306);
+                _a0310 = _b1.wxyz - _b1;
+                _TMP307 = abs(_a0310);
+                _a0314 = _e1 - _c1.wxyz;
+                _TMP311 = abs(_a0314);
+                _TMP39 = _TMP295 + _TMP299 + _TMP303 + _TMP307 + 4.00000000E+00*_TMP311;
+                _edr = bvec4(_TMP38.x < _TMP39.x && _interp_restriction_lv1.x, _TMP38.y < _TMP39.y && _interp_restriction_lv1.y, _TMP38.z < _TMP39.z && _interp_restriction_lv1.z, _TMP38.w < _TMP39.w && _interp_restriction_lv1.w);
+                _a0318 = _b1.wxyz - _c1.zwxy;
+                _TMP315 = abs(_a0318);
+                _a0322 = _b1.zwxy - _c1;
+                _TMP319 = abs(_a0322);
+                _edr_left = bvec4((2.00000000E+00*_TMP315).x <= _TMP319.x && _interp_restriction_lv2_left.x && _edr.x, (2.00000000E+00*_TMP315).y <= _TMP319.y && _interp_restriction_lv2_left.y && _edr.y, (2.00000000E+00*_TMP315).z <= _TMP319.z && _interp_restriction_lv2_left.z && _edr.z, (2.00000000E+00*_TMP315).w <= _TMP319.w && _interp_restriction_lv2_left.w && _edr.w);
+                _a0326 = _b1.wxyz - _c1.zwxy;
+                _TMP323 = abs(_a0326);
+                _a0330 = _b1.zwxy - _c1;
+                _TMP327 = abs(_a0330);
+                _edr_up = bvec4(_TMP323.x >= (2.00000000E+00*_TMP327).x && _interp_restriction_lv2_up.x && _edr.x, _TMP323.y >= (2.00000000E+00*_TMP327).y && _interp_restriction_lv2_up.y && _edr.y, _TMP323.z >= (2.00000000E+00*_TMP327).z && _interp_restriction_lv2_up.z && _edr.z, _TMP323.w >= (2.00000000E+00*_TMP327).w && _interp_restriction_lv2_up.w && _edr.w);
+                _fx45 = vec4(float(_edr.x), float(_edr.y), float(_edr.z), float(_edr.w))*_TMP249;
+                _fx30 = vec4(float(_edr_left.x), float(_edr_left.y), float(_edr_left.z), float(_edr_left.w))*_TMP257;
+                _fx60 = vec4(float(_edr_up.x), float(_edr_up.y), float(_edr_up.z), float(_edr_up.w))*_TMP265;
+                _a0334 = _e1 - _b1.wxyz;
+                _TMP331 = abs(_a0334);
+                _a0338 = _e1 - _b1.zwxy;
+                _TMP335 = abs(_a0338);
+                _px = bvec4(_TMP331.x <= _TMP335.x, _TMP331.y <= _TMP335.y, _TMP331.z <= _TMP335.z, _TMP331.w <= _TMP335.w);
+                _TMP46 = max(_fx30, _fx60);
+                _maximo = max(_TMP46, _fx45);
+                _t0344 = float(_px.x);
+                _TMP47 = _H + _t0344*(_F - _H);
+                _t0346 = float(_maximo.x);
+                _TMP48 = _E + _t0346*(_TMP47 - _E);
+                _t0348 = float(_px.y);
+                _TMP49 = _F + _t0348*(_B2 - _F);
+                _t0350 = float(_maximo.y);
+                _TMP50 = _E + _t0350*(_TMP49 - _E);
+                _t0352 = float(_px.z);
+                _TMP51 = _B2 + _t0352*(_D - _B2);
+                _t0354 = float(_maximo.z);
+                _TMP52 = _E + _t0354*(_TMP51 - _E);
+                _t0356 = float(_px.w);
+                _TMP53 = _D + _t0356*(_H - _D);
+                _t0358 = float(_maximo.w);
+                _TMP54 = _E + _t0358*(_TMP53 - _E);
+                _TMP62 = dot(vec3(float(_TMP48.x), float(_TMP48.y), float(_TMP48.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0360.x = float(_TMP62);
+                _TMP62 = dot(vec3(float(_TMP50.x), float(_TMP50.y), float(_TMP50.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0360.y = float(_TMP62);
+                _TMP62 = dot(vec3(float(_TMP52.x), float(_TMP52.y), float(_TMP52.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0360.z = float(_TMP62);
+                _TMP62 = dot(vec3(float(_TMP54.x), float(_TMP54.y), float(_TMP54.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
+                _r0360.w = float(_TMP62);
+                _pixel = vec4(float(_r0360.x), float(_r0360.y), float(_r0360.z), float(_r0360.w));
+                _a0372 = _pixel - _e1;
+                _TMP369 = abs(_a0372);
+                _res = _TMP48;
+                _mx = _TMP369.x;
+                if (_TMP369.y > _TMP369.x) { 
+                    _res = _TMP50;
+                    _mx = _TMP369.y;
+                } 
+                if (_TMP369.z > _mx) { 
+                    _res = _TMP52;
+                    _mx = _TMP369.z;
+                } 
+                if (_TMP369.w > _mx) { 
+                    _res = _TMP54;
+                }
+                _ret_0 = vec4(float(_res.x), float(_res.y), float(_res.z), 1.00000000E+00);
+                FragColor = _ret_0;
+            }
+	]]
+}
