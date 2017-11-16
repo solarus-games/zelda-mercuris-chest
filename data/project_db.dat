@@ -1,5 +1,7 @@
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "forest_store", description = "Forest store" }
+map{ id = "housechronotown/Siamibrothershop", description = "blackmarketsiami" }
+map{ id = "housechronotown/potionshop", description = "Potionshop" }
 map{ id = "housechronotown/smithshop", description = "blacksmithshop" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "lighthouse/1f", description = "Lighthouse 1F" }
@@ -338,6 +340,8 @@ sprite{ id = "npc/NewlinkNPC/Elefanttrader3", description = "greenelefanttrader"
 sprite{ id = "npc/NewlinkNPC/Kamal(snaketrainer)", description = "Kamal" }
 sprite{ id = "npc/NewlinkNPC/Rosasister1", description = "bluehairrosasister" }
 sprite{ id = "npc/NewlinkNPC/Rosasister2", description = "yellowhairrosasister" }
+sprite{ id = "npc/NewlinkNPC/Tannek(firstmeeting)", description = "Tannek(firstmeeting)" }
+sprite{ id = "npc/NewlinkNPC/Tannek(secondmeeting)", description = "Tannek(secondmeeting)" }
 sprite{ id = "npc/NewlinkNPC/Vulkosblacksmith", description = "Vulkos" }
 sprite{ id = "npc/NewlinkNPC/bluetradesman", description = "bluetradesman" }
 sprite{ id = "npc/NewlinkNPC/boxer1", description = "yellowboxer" }
@@ -358,12 +362,16 @@ sprite{ id = "npc/NewlinkNPC/hatboy2", description = "brownhatboy" }
 sprite{ id = "npc/NewlinkNPC/hattradesman1", description = "yellowhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman2", description = "redhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman3", description = "greenhattrader" }
+sprite{ id = "npc/NewlinkNPC/kotake", description = "kotake" }
+sprite{ id = "npc/NewlinkNPC/koume", description = "koume" }
 sprite{ id = "npc/NewlinkNPC/misterIngo", description = "Ingo" }
 sprite{ id = "npc/NewlinkNPC/odhar", description = "odhar" }
 sprite{ id = "npc/NewlinkNPC/redtradesman", description = "redtradesman" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper1", description = "blueshopkeeper" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper2", description = "yellowshopkeeper" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper3", description = "purpleshopkeeper" }
+sprite{ id = "npc/NewlinkNPC/siamibrother1", description = "bluesiami" }
+sprite{ id = "npc/NewlinkNPC/siamibrother2", description = "redsiami" }
 sprite{ id = "npc/NewlinkNPC/snake", description = "kamalsnake" }
 sprite{ id = "npc/NewlinkNPC/tingle", description = "tingle" }
 sprite{ id = "npc/NewlinkNPC/townsfolk", description = "hatbluehairman" }
