@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "npc/NewlinkNPC/ramu.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 30, frame_height = 48, origin_x = 16, origin_y = 37, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 30, frame_height = 48, origin_x = 16, origin_y = 37, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 30, frame_height = 48, origin_x = 16, origin_y = 37, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 30, frame_height = 48, origin_x = 16, origin_y = 37, num_frames = 4 },
+  },
+}

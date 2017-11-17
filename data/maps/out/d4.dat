@@ -23014,6 +23014,42 @@ tile{
   pattern = "grass.barrier.border.1",
 }
 
+tile{
+  layer = 1,
+  x = 840,
+  y = 1064,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 848,
+  y = 1048,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 1048,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 896,
+  y = 1064,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
 destructible{
   layer = 1,
   x = 1160,
@@ -24442,8 +24478,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 1440,
-  y = 205,
+  x = 976,
+  y = 389,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/gorons",
@@ -24528,6 +24564,373 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/youngboy4",
+}
+
+npc{
+  layer = 1,
+  x = 872,
+  y = 1085,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/musicianelder",
+}
+
+npc{
+  layer = 1,
+  x = 856,
+  y = 1069,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/dragoonorange",
+}
+
+npc{
+  layer = 1,
+  x = 888,
+  y = 1069,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/dragoonblue",
+}
+
+npc{
+  layer = 1,
+  x = 320,
+  y = 429,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/gerudo",
+}
+
+npc{
+  layer = 1,
+  x = 1160,
+  y = 1085,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/kromagno",
+}
+
+npc{
+  layer = 1,
+  x = 1976,
+  y = 413,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 1976,
+  y = 317,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 72,
+  y = 421,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 72,
+  y = 509,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 480,
+  y = 1381,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 1912,
+  y = 1421,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 720,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 304,
+  y = 229,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 160,
+  y = 229,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 1688,
+  y = 853,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manbookblue",
+}
+
+npc{
+  layer = 1,
+  x = 1392,
+  y = 853,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manbookgreen",
+}
+
+npc{
+  layer = 1,
+  x = 1168,
+  y = 1293,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/ramu",
+}
+
+npc{
+  layer = 1,
+  x = 1128,
+  y = 1293,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/parrotred",
+}
+
+npc{
+  layer = 1,
+  x = 1208,
+  y = 1293,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/parrotgreen",
+}
+
+npc{
+  layer = 1,
+  x = 1288,
+  y = 613,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manblue",
+}
+
+npc{
+  layer = 1,
+  x = 1744,
+  y = 669,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manblue3",
+}
+
+npc{
+  layer = 1,
+  x = 1296,
+  y = 925,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manblue2",
+}
+
+npc{
+  layer = 1,
+  x = 1240,
+  y = 1429,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/mangreen",
+}
+
+npc{
+  layer = 1,
+  x = 768,
+  y = 829,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/mangreen2",
+}
+
+npc{
+  layer = 1,
+  x = 672,
+  y = 1397,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/mangreen3",
+}
+
+npc{
+  layer = 1,
+  x = 1800,
+  y = 1501,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manblue3",
+}
+
+npc{
+  layer = 1,
+  x = 1728,
+  y = 1077,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/mangreen2",
+}
+
+npc{
+  layer = 1,
+  x = 368,
+  y = 725,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manred",
+}
+
+npc{
+  layer = 1,
+  x = 440,
+  y = 485,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manred2",
+}
+
+npc{
+  layer = 1,
+  x = 288,
+  y = 1165,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manred3",
+}
+
+npc{
+  layer = 1,
+  x = 208,
+  y = 877,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manblue",
+}
+
+npc{
+  layer = 1,
+  x = 216,
+  y = 1589,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manblue2",
+}
+
+npc{
+  layer = 1,
+  x = 1792,
+  y = 229,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/mangreen",
+}
+
+npc{
+  layer = 1,
+  x = 168,
+  y = 373,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manyellow",
+}
+
+npc{
+  layer = 1,
+  x = 416,
+  y = 261,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/palombanker",
+}
+
+npc{
+  layer = 1,
+  x = 1264,
+  y = 373,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/kolispostman",
+}
+
+npc{
+  layer = 1,
+  x = 1416,
+  y = 189,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/manyellow2",
+}
+
+teletransporter{
+  layer = 1,
+  x = 408,
+  y = 1704,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/potionshop",
+}
+
+destination{
+  name = "potionshop_out",
+  layer = 1,
+  x = 416,
+  y = 1733,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 616,
+  y = 928,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/Siamibrothershop",
+}
+
+destination{
+  name = "siamishop_out",
+  layer = 1,
+  x = 624,
+  y = 957,
+  direction = 3,
 }
 
 tile{

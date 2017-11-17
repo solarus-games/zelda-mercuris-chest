@@ -672,15 +672,6 @@ tile{
   y = 200,
   width = 16,
   height = 16,
-  pattern = "ceiling.2",
-}
-
-tile{
-  layer = 1,
-  x = 152,
-  y = 200,
-  width = 16,
-  height = 16,
   pattern = "door.2",
 }
 
