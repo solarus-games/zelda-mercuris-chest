@@ -1,0 +1,12 @@
+animation{
+  name = "stopped",
+  src_image = "npc/NewlinkNPC/Noboora_gerudoqueen.png",
+  frame_delay = 500,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 8, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 46, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 46, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 46, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 46, num_frames = 4 },
+  },
+}
