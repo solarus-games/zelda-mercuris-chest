@@ -142,6 +142,7 @@ sprite{ id = "enemies/newlink/dinolfos_green", description = "greendinolfos" }
 sprite{ id = "enemies/newlink/dinolfos_purple", description = "purpledinolfos" }
 sprite{ id = "enemies/newlink/garouk_brown", description = "browngarouk" }
 sprite{ id = "enemies/newlink/garouk_white", description = "whitegarouk" }
+sprite{ id = "enemies/newlink/gibdo_terrific", description = "terrificgibdo" }
 sprite{ id = "enemies/newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 sprite{ id = "enemies/newlink/horsek_greenarmor_weapon", description = "greenarmorhorsekspear" }
 sprite{ id = "enemies/newlink/horsek_redarmor", description = "redarmorhorsek" }
@@ -340,6 +341,7 @@ sprite{ id = "npc/NewlinkNPC/Elefanttrader1", description = "bluelefanttrader" }
 sprite{ id = "npc/NewlinkNPC/Elefanttrader2", description = "redelefanttrader" }
 sprite{ id = "npc/NewlinkNPC/Elefanttrader3", description = "greenelefanttrader" }
 sprite{ id = "npc/NewlinkNPC/Kamal(snaketrainer)", description = "Kamal" }
+sprite{ id = "npc/NewlinkNPC/Noboora_gerudoqueen", description = "Noboora" }
 sprite{ id = "npc/NewlinkNPC/Rosasister1", description = "bluehairrosasister" }
 sprite{ id = "npc/NewlinkNPC/Rosasister2", description = "yellowhairrosasister" }
 sprite{ id = "npc/NewlinkNPC/Tannek(firstmeeting)", description = "Tannek(firstmeeting)" }
@@ -351,6 +353,8 @@ sprite{ id = "npc/NewlinkNPC/boxer2", description = "redboxer" }
 sprite{ id = "npc/NewlinkNPC/childblue", description = "bluechild" }
 sprite{ id = "npc/NewlinkNPC/childred", description = "redchild" }
 sprite{ id = "npc/NewlinkNPC/childyellow", description = "yellowchild" }
+sprite{ id = "npc/NewlinkNPC/daruka_goronking", description = "daruka" }
+sprite{ id = "npc/NewlinkNPC/deku_king", description = "kingdeku" }
 sprite{ id = "npc/NewlinkNPC/dogtrader", description = "yellowdogtrader" }
 sprite{ id = "npc/NewlinkNPC/dogtrader2", description = "dogtrader" }
 sprite{ id = "npc/NewlinkNPC/dogtrader3", description = "whitedogtrader" }
@@ -363,11 +367,14 @@ sprite{ id = "npc/NewlinkNPC/godhar", description = "godhar" }
 sprite{ id = "npc/NewlinkNPC/gorons", description = "Gorons" }
 sprite{ id = "npc/NewlinkNPC/greentradesman", description = "greentradesman" }
 sprite{ id = "npc/NewlinkNPC/guardcity", description = "cityguard" }
+sprite{ id = "npc/NewlinkNPC/guardgoron", description = "goronguard" }
+sprite{ id = "npc/NewlinkNPC/guardzora", description = "zoraguard" }
 sprite{ id = "npc/NewlinkNPC/hatboy1", description = "greenhatboy" }
 sprite{ id = "npc/NewlinkNPC/hatboy2", description = "brownhatboy" }
 sprite{ id = "npc/NewlinkNPC/hattradesman1", description = "yellowhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman2", description = "redhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman3", description = "greenhattrader" }
+sprite{ id = "npc/NewlinkNPC/jabuk_zoraking", description = "Jabuk" }
 sprite{ id = "npc/NewlinkNPC/kolispostman", description = "Kolisthepostman" }
 sprite{ id = "npc/NewlinkNPC/kotake", description = "kotake" }
 sprite{ id = "npc/NewlinkNPC/koume", description = "koume" }
@@ -400,6 +407,7 @@ sprite{ id = "npc/NewlinkNPC/siamibrother1", description = "bluesiami" }
 sprite{ id = "npc/NewlinkNPC/siamibrother2", description = "redsiami" }
 sprite{ id = "npc/NewlinkNPC/snake", description = "kamalsnake" }
 sprite{ id = "npc/NewlinkNPC/tingle", description = "tingle" }
+sprite{ id = "npc/NewlinkNPC/torins", description = "torins" }
 sprite{ id = "npc/NewlinkNPC/townsfolk", description = "hatbluehairman" }
 sprite{ id = "npc/NewlinkNPC/townsfolk2", description = "hatgreenhairman" }
 sprite{ id = "npc/NewlinkNPC/townsfolk3", description = "hatyellowhairman" }
@@ -681,6 +689,7 @@ enemy{ id = "newlink/dinolfos_green", description = "greendinolfos" }
 enemy{ id = "newlink/dinolfos_purple", description = "purpledinolfos" }
 enemy{ id = "newlink/garouk_brown", description = "browngarouk" }
 enemy{ id = "newlink/garouk_white", description = "whitegarouk" }
+enemy{ id = "newlink/gibdo_terrific", description = "terrificgibdo" }
 enemy{ id = "newlink/horsek_greenarmor", description = "greenarmorhorsek" }
 enemy{ id = "newlink/horsek_redarmor", description = "redarmorhorsek" }
 enemy{ id = "newlink/lizalfos_green", description = "greenlizalfos" }
@@ -752,21 +761,4 @@ font{ id = "minecraftia_mono", description = "minecraftia_mono" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
-
-shader{ id = "CRT-interlaced", description = "CRT-interlaced" }
-shader{ id = "curvature", description = "curvature" }
-shader{ id = "edge-detection", description = "edge-detection" }
-shader{ id = "grayscale", description = "grayscale" }
-shader{ id = "heavybloom", description = "heavybloom" }
-shader{ id = "hq2x", description = "hq2x" }
-shader{ id = "hq4x", description = "hq4x" }
-shader{ id = "hw_scale2x", description = "hw_scale2x" }
-shader{ id = "pip", description = "pip" }
-shader{ id = "sepia", description = "sepia" }
-shader{ id = "toon", description = "toon" }
-shader{ id = "waterpaint", description = "waterpaint" }
-shader{ id = "xBR-hybrid-v5", description = "xBR-hybrid-v5" }
-shader{ id = "xBR-v3.8a", description = "xBR-v3.8a" }
-shader{ id = "xBR-v3.8b", description = "xBR-v3.8b" }
-shader{ id = "xBR-v3.8c", description = "xBR-v3.8c" }
 

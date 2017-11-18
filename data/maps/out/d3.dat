@@ -22018,6 +22018,74 @@ destructible{
   damage_on_enemies = 2,
 }
 
+npc{
+  layer = 1,
+  x = 1472,
+  y = 757,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/torins",
+}
+
+npc{
+  layer = 1,
+  x = 1656,
+  y = 781,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/torins",
+}
+
+npc{
+  layer = 1,
+  x = 1888,
+  y = 853,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/torins",
+}
+
+npc{
+  layer = 1,
+  x = 1296,
+  y = 645,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/torins",
+}
+
+enemy{
+  layer = 1,
+  x = 200,
+  y = 269,
+  direction = 3,
+  breed = "newlink/Beebee_green",
+}
+
+enemy{
+  layer = 1,
+  x = 432,
+  y = 485,
+  direction = 3,
+  breed = "newlink/Beebee_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 1368,
+  y = 381,
+  direction = 3,
+  breed = "newlink/Beebee_red",
+}
+
+enemy{
+  layer = 1,
+  x = 256,
+  y = 685,
+  direction = 3,
+  breed = "newlink/Beebee_green",
+}
+
 tile{
   layer = 2,
   x = 824,

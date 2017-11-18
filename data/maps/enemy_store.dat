@@ -309,7 +309,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 232,
+  x = 248,
   y = 141,
   direction = 3,
   breed = "newlink/demonos_fire",
@@ -317,7 +317,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 264,
+  x = 280,
   y = 141,
   direction = 3,
   breed = "newlink/demonos_ice",
@@ -325,7 +325,7 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 296,
+  x = 320,
   y = 141,
   direction = 3,
   breed = "newlink/pumkin_orange",
@@ -521,5 +521,13 @@ enemy{
   y = 237,
   direction = 3,
   breed = "newlink/dinolfos_green",
+}
+
+enemy{
+  layer = 1,
+  x = 192,
+  y = 101,
+  direction = 3,
+  breed = "newlink/gibdo_terrific",
 }
 
