@@ -7,6 +7,9 @@ if (sampler_type == "sampler2DRect") then
 	texture_type = "texture2DRect"	
 end
 
+sampler_type = "sampler2D"
+texture_type = "texture2D"
+
 videomode {
 	name = "default",
 	default_window_scale = 2,
@@ -14,14 +17,15 @@ videomode {
 
 	-- Source of the fragment shader.
 	fragment_source = [[
-		
-		#define TEXEL(x,y) ]] .. texture_type .. [[(x,y)
-		
-		uniform ]] .. sampler_type .. [[ solarus_sampler;
 
-		void main() {
+    #version 120
+    #define TEXEL(x,y) ]] .. texture_type .. [[(x,y)
+		
+    uniform ]] .. sampler_type .. [[ solarus_sampler;
+
+    void main() {
       vec3 texel = TEXEL(solarus_sampler, gl_TexCoord[0].xy).rgb;
       gl_FragColor = vec4(texel.x,texel.y,texel.z, 1.0);
-		}
+    }
 	]]
 }

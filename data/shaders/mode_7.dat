@@ -7,6 +7,9 @@ if (sampler_type == "sampler2DRect") then
 	texture_type = "texture2DRect"	
 end
 
+sampler_type = "sampler2D"
+texture_type = "texture2D"
+
 videomode {
 	name = "test",
 	default_window_scale = 2,
@@ -14,25 +17,8 @@ videomode {
 
 	vertex_source = [[
 
+    #version 120
     	void main() {
-
-      if (gl_Vertex.x < 0.0) {
-
-        if (gl_Vertex.y < 0.0) {
-          gl_Position = gl_ModelViewMatrix * vec4(-1.5, -0.8, 1.0, 1.0);
-        }
-        else {
-          gl_Position = gl_ModelViewMatrix * vec4(-0.5, 0.8, -1.0, 1.0);
-        }
-      }
-      else {
-        if (gl_Vertex.y < 0.0) {
-          gl_Position = gl_ModelViewMatrix * vec4(1.5, -0.8, 1.0, 1.0);
-        }
-        else {
-          gl_Position = gl_ModelViewMatrix * vec4(0.5, 0.8, -1.0, 1.0);
-        }
-      }
 
 //      gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
       gl_Position = gl_ModelViewMatrix * gl_Vertex;
@@ -42,13 +28,14 @@ videomode {
 
 	fragment_source = [[
 
+    #version 120
     // Inspired from https://www.shadertoy.com/view/ltsGWn
 
 		#define TEXEL(x,y) ]] .. texture_type .. [[(x,y)
 		
 		uniform ]] .. sampler_type .. [[ solarus_sampler;
     uniform int solarus_display_time;
-    vec2 resolution = vec2(320.0, 240.0);
+    vec2 resolution = 2 * vec2(320.0, 240.0);
 //  vec2 resolution = vec2(1.0, 1.0);
 
     vec4 mainImage(vec2 fragCoord) {
@@ -57,8 +44,8 @@ videomode {
       vec2 uv = q - vec2(0.5);
 
       // Create a 3D point
-  //    float h = 0.25;
-      float h = 0.9;
+      float h = 0.25;
+  //    float h = 0.5;
       vec3 p = vec3(uv.x, uv.y - h - 1.0, uv.y - h);
 
       // Projecting back to 2D space
@@ -66,27 +53,30 @@ videomode {
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = 50.0;
+      float scale = 0.4;
       uvm7 *= scale;
 
       // Rotations if needed
-      float a = (solarus_display_time / 100.0) * 0.1;
+      float a = (solarus_display_time / 1000.0) * 0.5;
 //      float a = 0.0;
       mat2 rotation = mat2(cos(a), - sin(a), sin(a), cos(a));
       uvm7 *= rotation;
 
       // Repeat
-//      uvm7 = fract(uvm7);
+      uvm7 = fract(uvm7);
 
       // Read background texture
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
+
+      // Darkness based on the horizon
+      col *= abs(uv.y - h - 0.35);
 
       // Output the color
   	    return vec4(col, 1.0);
   }
 
     void main() {
-      gl_FragColor = mainImage(gl_FragCoord);
+      gl_FragColor = mainImage(vec2(gl_FragCoord));
 //      gl_FragColor = mainImage(gl_TexCoord[0].xy);
     }
 	]]
