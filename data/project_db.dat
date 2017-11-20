@@ -786,7 +786,5 @@ shader{ id = "sepia", description = "sepia" }
 shader{ id = "toon", description = "toon" }
 shader{ id = "waterpaint", description = "waterpaint" }
 shader{ id = "xBR-hybrid-v5", description = "xBR-hybrid-v5" }
-shader{ id = "xBR-v3.8a", description = "xBR-v3.8a" }
-shader{ id = "xBR-v3.8b", description = "xBR-v3.8b" }
 shader{ id = "xBR-v3.8c", description = "xBR-v3.8c" }
 
