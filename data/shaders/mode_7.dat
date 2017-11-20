@@ -67,7 +67,7 @@ videomode {
   }
 
     void main() {
-      gl_FragColor = mainImage(vec2(gl_FragCoord));
+      gl_FragColor = mainImage(gl_FragCoord.xy);
 //      gl_FragColor = mainImage(gl_TexCoord[0].xy);
     }
 	]]
