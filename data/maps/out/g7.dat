@@ -8558,6 +8558,15 @@ destination{
   direction = 0,
 }
 
+npc{
+  layer = 0,
+  x = 928,
+  y = 837,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/gerudo",
+}
+
 tile{
   layer = 1,
   x = 856,
@@ -26414,6 +26423,33 @@ tile{
   pattern = "sand.cliff.diag.4",
 }
 
+tile{
+  layer = 1,
+  x = 552,
+  y = 840,
+  width = 80,
+  height = 16,
+  pattern = "cemetary.slab",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
 destructible{
   layer = 1,
   x = 1088,
@@ -26845,6 +26881,69 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  layer = 1,
+  x = 848,
+  y = 1125,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardgerudo",
+}
+
+npc{
+  layer = 1,
+  x = 912,
+  y = 1125,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardgerudo",
+}
+
+npc{
+  layer = 1,
+  x = 856,
+  y = 725,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/gerudo",
+}
+
+npc{
+  layer = 1,
+  x = 600,
+  y = 669,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/gerudo",
+}
+
+npc{
+  layer = 1,
+  x = 600,
+  y = 869,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/gerudo",
+}
+
+npc{
+  layer = 1,
+  x = 608,
+  y = 941,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardgerudo",
+}
+
+npc{
+  layer = 1,
+  x = 952,
+  y = 949,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardgerudo",
+}
+
 tile{
   layer = 2,
   x = 864,
@@ -27144,15 +27243,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 552,
-  y = 840,
-  width = 80,
-  height = 16,
-  pattern = "cemetary.slab",
-}
-
-tile{
-  layer = 2,
   x = 496,
   y = 736,
   width = 80,
@@ -27315,15 +27405,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 944,
-  y = 928,
-  width = 16,
-  height = 16,
-  pattern = "70",
-}
-
-tile{
-  layer = 2,
   x = 960,
   y = 928,
   width = 8,
@@ -27347,15 +27428,6 @@ tile{
   width = 8,
   height = 32,
   pattern = "69",
-}
-
-tile{
-  layer = 2,
-  x = 600,
-  y = 920,
-  width = 16,
-  height = 16,
-  pattern = "70",
 }
 
 tile{

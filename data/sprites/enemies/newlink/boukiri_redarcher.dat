@@ -1,0 +1,36 @@
+animation{
+  name = "gettingout",
+  src_image = "enemies/newlink/boukiri_redarcher.png",
+  frame_delay = 400,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 30, num_frames = 5 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 30, num_frames = 5 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 30, num_frames = 5 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 30, num_frames = 5 },
+  },
+}
+animation{
+  name = "archery",
+  src_image = "enemies/newlink/boukiri_redarcher.png",
+  frame_delay = 400,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 168, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 0, y = 248, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 0, y = 208, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 0, y = 120, frame_width = 40, frame_height = 48, origin_x = 20, origin_y = 37, num_frames = 3 },
+  },
+}
+animation{
+  name = "watching",
+  src_image = "enemies/newlink/boukiri_redarcher.png",
+  frame_delay = 400,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 40, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 40, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 80, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 36, num_frames = 4 },
+    { x = 0, y = 80, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 36, num_frames = 4 },
+  },
+}
