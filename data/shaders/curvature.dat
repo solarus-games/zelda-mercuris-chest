@@ -2,59 +2,59 @@
 -- https://gitorious.org/bsnes/xml-shaders
 
 videomode {
-	-- Name of the video mode associated to the shader.
-	name = "curvature",
+    -- Name of the video mode associated to the shader.
+    name = "curvature",
 
-	-- Default scale of the window compared to the quest_size.
-	default_window_scale = 2,
+    -- Default scale of the window compared to the quest_size.
+    default_window_scale = 2,
 
-	-- Source of the vertex shader.
-	vertex_source = [[
-		#define ZOOM_SCALE 1.235
-		
-     	void main()
-     	{
-			gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex * vec4(ZOOM_SCALE,ZOOM_SCALE,1.0,1.0);
-			gl_TexCoord[0] = gl_MultiTexCoord0;
-		}
-	]],
+    -- Source of the vertex shader.
+    vertex_source = [[
+        #define ZOOM_SCALE 1.235
+        
+         void main()
+         {
+            gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex * vec4(ZOOM_SCALE,ZOOM_SCALE,1.0,1.0);
+            gl_TexCoord[0] = gl_MultiTexCoord0;
+        }
+    ]],
 
-	-- Source of the fragment shader.
-	fragment_source = [[
-    	// Tweak this parameter for more / less distortion
-    	#define distortion 1.2
-    	#define BLACK_BACKGROUND
+    -- Source of the fragment shader.
+    fragment_source = [[
+        // Tweak this parameter for more / less distortion
+        #define distortion 1.2
+        #define BLACK_BACKGROUND
 
-		#define TEXEL(x,y) texture2D(x,y)
-    	
-		uniform sampler2D solarus_sampler;
-    	uniform vec2 solarus_io_size;
+        #define TEXEL(x,y) texture2D(x,y)
+        
+        uniform sampler2D solarus_sampler;
+        uniform vec2 solarus_io_size;
 
-    	vec2 radialDistortion(vec2 coord) {
-      		coord *= vec2(1.0) / solarus_io_size;
-      		vec2 cc = coord - vec2(0.5);
-      		float dist = dot(cc, cc) * distortion;
-      		return (coord + cc * (1.0 + dist) * dist) * solarus_io_size;
-    	}
+        vec2 radialDistortion(vec2 coord) {
+              coord *= vec2(1.0) / solarus_io_size;
+              vec2 cc = coord - vec2(0.5);
+              float dist = dot(cc, cc) * distortion;
+              return (coord + cc * (1.0 + dist) * dist) * solarus_io_size;
+        }
 
         float corner(vec2 coord)
         {
-        	//TODO optimize
-        	if(coord.x < 0.0 || coord.y < 0.0 || coord.x > solarus_io_size.x || coord.y > solarus_io_size.y)
-        		return 0.0;
-        	return 1.0;
+            //TODO optimize
+            if(coord.x < 0.0 || coord.y < 0.0 || coord.x > solarus_io_size.x || coord.y > solarus_io_size.y)
+                return 0.0;
+            return 1.0;
         }
         
-    	void main(void) {	
-    		vec2 xy = radialDistortion(gl_TexCoord[0].xy);
-    		
-      		vec4 sample = TEXEL(solarus_sampler, xy);
-      		
-      		#ifdef BLACK_BACKGROUND
-    			sample *= vec4(vec3(corner(xy)), 1.0);
-    		#endif
-    		
-      		gl_FragColor = sample;
-    	}
-	]]
+        void main(void) {    
+            vec2 xy = radialDistortion(gl_TexCoord[0].xy);
+            
+              vec4 sample = TEXEL(solarus_sampler, xy);
+              
+              #ifdef BLACK_BACKGROUND
+                sample *= vec4(vec3(corner(xy)), 1.0);
+            #endif
+            
+              gl_FragColor = sample;
+        }
+    ]]
 }

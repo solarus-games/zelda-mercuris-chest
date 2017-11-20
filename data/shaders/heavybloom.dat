@@ -2,45 +2,45 @@
 -- https://gitorious.org/bsnes/xml-shaders
 
 videomode {
-	-- Name of the video mode associated to the shader.
-	name = "heavybloom",
+    -- Name of the video mode associated to the shader.
+    name = "heavybloom",
 
-	-- Default scale of the window compared to the quest_size.
-	default_window_scale = 2,
+    -- Default scale of the window compared to the quest_size.
+    default_window_scale = 2,
 
-	-- Source of the fragment shader.
-	fragment_source = [[
-      	#define glarebasesize 0.42
-      	#define power 0.35 // 0.50 is good
+    -- Source of the fragment shader.
+    fragment_source = [[
+          #define glarebasesize 0.42
+          #define power 0.35 // 0.50 is good
 
-		#define TEXEL(x,y) texture2D(x,y)
-		
+        #define TEXEL(x,y) texture2D(x,y)
+        
     uniform sampler2D solarus_sampler;
     uniform vec2 solarus_io_size;
 
-      	void main()
-      	{
-         	vec4 sum = vec4(0.0);
-         	vec4 bum = vec4(0.0);
-         	vec2 texcoord = vec2(gl_TexCoord[0]);
-         	int j;
-         	int i;
+          void main()
+          {
+             vec4 sum = vec4(0.0);
+             vec4 bum = vec4(0.0);
+             vec2 texcoord = vec2(gl_TexCoord[0]);
+             int j;
+             int i;
 
-         	vec2 glaresize = vec2(glarebasesize) / solarus_io_size;
+             vec2 glaresize = vec2(glarebasesize) / solarus_io_size;
 
-         	for(i = -2; i < 5; i++)
-         	{
-            	for (j = -1; j < 1; j++)
-            	{
-               		sum += TEXEL(solarus_sampler, texcoord + vec2(-i, j)*glaresize) * power;
-               		bum += TEXEL(solarus_sampler, texcoord + vec2(j, i)*glaresize) * power;            
-            	}
-         	}
+             for(i = -2; i < 5; i++)
+             {
+                for (j = -1; j < 1; j++)
+                {
+                       sum += TEXEL(solarus_sampler, texcoord + vec2(-i, j)*glaresize) * power;
+                       bum += TEXEL(solarus_sampler, texcoord + vec2(j, i)*glaresize) * power;            
+                }
+             }
 
-         	if (TEXEL(solarus_sampler, texcoord).r < 2.0)
-         	{
-            	gl_FragColor = sum*sum*sum*0.001+bum*bum*bum*0.0080 + texture2D(solarus_sampler, texcoord);
-         	}
-      	}
-	]]
+             if (TEXEL(solarus_sampler, texcoord).r < 2.0)
+             {
+                gl_FragColor = sum*sum*sum*0.001+bum*bum*bum*0.0080 + texture2D(solarus_sampler, texcoord);
+             }
+          }
+    ]]
 }

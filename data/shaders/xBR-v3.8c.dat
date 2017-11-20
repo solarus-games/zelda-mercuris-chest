@@ -4,14 +4,14 @@
 -- https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py
 
 videomode {
-	-- Name of the video mode associated to the shader.
-	name = "xBR-v3.8c",
+    -- Name of the video mode associated to the shader.
+    name = "xBR-v3.8c",
 
-	-- Default scale of the window compared to the quest_size.
-	default_window_scale = 2,
+    -- Default scale of the window compared to the quest_size.
+    default_window_scale = 2,
 
-	-- Source of the vertex shader.
-	vertex_source = [[
+    -- Source of the vertex shader.
+    vertex_source = [[
             #if __VERSION__ >= 130
             #define COMPAT_VARYING out
             #else
@@ -84,9 +84,9 @@ videomode {
                 COL0 = gl_Color;
                 TEX0.xy = TexCoord.xy;
             }
-	]],
-	-- Source of the fragment shader.
-	fragment_source = [[
+    ]],
+    -- Source of the fragment shader.
+    fragment_source = [[
             uniform sampler2D solarus_sampler;
 
             #if __VERSION__ >= 130
@@ -541,5 +541,5 @@ videomode {
                 _ret_0 = vec4(float(_res.x), float(_res.y), float(_res.z), 1.00000000E+00);
                 FragColor = _ret_0;
             }
-	]]
+    ]]
 }

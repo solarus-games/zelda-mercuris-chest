@@ -2,65 +2,65 @@
 -- http://gamedev.dreamnoid.com/2009/03/11/cel-shading-en-glsl/
 
 videomode {
-	-- Name of the video mode associated to the shader.
-	name = "toon",
+    -- Name of the video mode associated to the shader.
+    name = "toon",
 
-	-- Default scale of the window compared to the quest_size.
-	default_window_scale = 2,
+    -- Default scale of the window compared to the quest_size.
+    default_window_scale = 2,
 
-	-- Source of the vertex shader.
-	vertex_source = [[
-		void main(void)
-		{
-			// Front color
-			gl_FrontColor = gl_Color;
+    -- Source of the vertex shader.
+    vertex_source = [[
+        void main(void)
+        {
+            // Front color
+            gl_FrontColor = gl_Color;
 
-			// Textures coordinates
-			gl_TexCoord[0] = gl_MultiTexCoord0;
+            // Textures coordinates
+            gl_TexCoord[0] = gl_MultiTexCoord0;
 
-			// The position of the vertex
-			gl_Position = ftransform();
+            // The position of the vertex
+            gl_Position = ftransform();
 
-		}
-	]],
+        }
+    ]],
 
-	-- Source of the fragment shader.
-	fragment_source = [[
-		#define GRADIENT_FACTOR_NUMBER 4
-		
-		#define TEXEL(x,y) texture2D(x,y)
-		
-		uniform sampler2D solarus_sampler;
-		
-		vec4 Toon( vec4 color )
-		{
-			float intensity = color.x + color.y + color.z;
-			
-			// Toon gradient conf.
-			#if GRADIENT_FACTOR_NUMBER == 2
-				float factor = 1.0;
-				if ( intensity < 0.9 )
-					factor = 0.5;
-			#else // Use the more gradient number supported by default.
-				float factor = 0.5;
-				if      ( intensity > 1.5 )
-					factor = 1.0;
-				else if ( intensity > 1.0  )
-					factor = 0.8;
-				else if ( intensity > 0.6 )
-					factor = 0.6;
-			#endif
-			
-			color *= vec4 ( factor, factor, factor, 1.0 );
+    -- Source of the fragment shader.
+    fragment_source = [[
+        #define GRADIENT_FACTOR_NUMBER 4
+        
+        #define TEXEL(x,y) texture2D(x,y)
+        
+        uniform sampler2D solarus_sampler;
+        
+        vec4 Toon( vec4 color )
+        {
+            float intensity = color.x + color.y + color.z;
+            
+            // Toon gradient conf.
+            #if GRADIENT_FACTOR_NUMBER == 2
+                float factor = 1.0;
+                if ( intensity < 0.9 )
+                    factor = 0.5;
+            #else // Use the more gradient number supported by default.
+                float factor = 0.5;
+                if      ( intensity > 1.5 )
+                    factor = 1.0;
+                else if ( intensity > 1.0  )
+                    factor = 0.8;
+                else if ( intensity > 0.6 )
+                    factor = 0.6;
+            #endif
+            
+            color *= vec4 ( factor, factor, factor, 1.0 );
 
-			return color;
-		}
+            return color;
+        }
 
-		void main (void)
-		{
-			vec4 color = TEXEL(solarus_sampler, vec2( gl_TexCoord[0] ) );
+        void main (void)
+        {
+            vec4 color = TEXEL(solarus_sampler, vec2( gl_TexCoord[0] ) );
 
-			gl_FragColor = Toon( color );
-		}
-	]]
+            gl_FragColor = Toon( color );
+        }
+    ]]
 }
