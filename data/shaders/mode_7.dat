@@ -1,19 +1,10 @@
-video_driver_name = select(1, ...) -- Get the rendering driver name.
-shading_language_version = select(2, ...) -- Get the shading language version.
-sampler_type = select(3, ...) -- Get the type of samplers to use.
-
-texture_type = "texture2D"
-if (sampler_type == "sampler2DRect") then
-	texture_type = "texture2DRect"	
-end
-
-sampler_type = "sampler2D"
-texture_type = "texture2D"
+-- Mode 7 shader.
+-- Shows a texture in a perspective view.
+-- Inspired from https://www.shadertoy.com/view/ltsGWn
 
 videomode {
 	name = "test",
 	default_window_scale = 2,
-	is_shader_valid = video_driver_name == "opengl",
 
 	vertex_source = [[
 
@@ -29,12 +20,12 @@ videomode {
 	fragment_source = [[
 
     #version 120
-    // Inspired from https://www.shadertoy.com/view/ltsGWn
 
-		#define TEXEL(x,y) ]] .. texture_type .. [[(x,y)
+		#define TEXEL(x,y) texture2D(x,y)
 		
-		uniform ]] .. sampler_type .. [[ solarus_sampler;
+		uniform sampler2D solarus_sampler;
     uniform int solarus_display_time;
+
     vec2 resolution = 2 * vec2(320.0, 240.0);
 //  vec2 resolution = vec2(1.0, 1.0);
 

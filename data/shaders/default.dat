@@ -1,31 +1,18 @@
-video_driver_name = select(1, ...) -- Get the rendering driver name.
-shading_language_version = select(2, ...) -- Get the shading language version.
-sampler_type = select(3, ...) -- Get the type of samplers to use.
-
-texture_type = "texture2D"
-if (sampler_type == "sampler2DRect") then
-	texture_type = "texture2DRect"	
-end
-
-sampler_type = "sampler2D"
-texture_type = "texture2D"
+-- A shader that does nothing special.
 
 videomode {
 	name = "default",
 	default_window_scale = 2,
-	is_shader_valid = video_driver_name == "opengl",
 
 	-- Source of the fragment shader.
 	fragment_source = [[
 
     #version 120
-    #define TEXEL(x,y) ]] .. texture_type .. [[(x,y)
-		
-    uniform ]] .. sampler_type .. [[ solarus_sampler;
+
+    uniform sampler2D quest_texture;
 
     void main() {
-      vec3 texel = TEXEL(solarus_sampler, gl_TexCoord[0].xy).rgb;
-      gl_FragColor = vec4(texel.x,texel.y,texel.z, 1.0);
+      gl_FragColor = texture2D(quest_texture, gl_TexCoord[0].xy);
     }
 	]]
 }
