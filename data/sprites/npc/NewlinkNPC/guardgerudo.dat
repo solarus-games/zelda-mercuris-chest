@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "npc/NewlinkNPC/guardgerudo.png",
+  directions = {
+    { x = 0, y = 8, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 0, y = 8, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 0, y = 8, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 0, y = 8, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 3 },
+  },
+}
