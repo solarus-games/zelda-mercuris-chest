@@ -161,7 +161,7 @@ videomode {
         uniform vec2 solarus_input_size;
         vec2 solarus_output_size = solarus_input_size;
         vec2 solarus_texture_size = solarus_input_size;
-        uniform int solarus_display_time;
+        uniform int solarus_time;
         
         varying vec2 texCoord;
         varying vec2 one;
@@ -289,7 +289,7 @@ videomode {
 
                 // Of all the pixels that are mapped onto the texel we are
                 // currently rendering, which pixel are we currently rendering?
-                vec2 ilvec = vec2(0.0,ilfac.y > 1.5 ? mod(float(solarus_display_time)/10.0,2.0) : 0.0);
+                vec2 ilvec = vec2(0.0,ilfac.y > 1.5 ? mod(float(solarus_time)/10.0,2.0) : 0.0);
                 vec2 ratio_scale = (xy * solarus_texture_size - vec2(0.5) + ilvec)/ilfac;
         #ifdef OVERSAMPLE
                 float filter = fwidth(ratio_scale.y);

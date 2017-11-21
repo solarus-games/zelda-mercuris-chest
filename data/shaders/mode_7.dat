@@ -25,7 +25,7 @@ videomode {
     #define TEXEL(x,y) texture2D(x,y)
 
     uniform sampler2D solarus_sampler;
-    uniform int solarus_display_time;
+    uniform int solarus_time;
 
     vec2 resolution = 2 * vec2(320.0, 240.0);
 //  vec2 resolution = vec2(1.0, 1.0);
@@ -49,13 +49,13 @@ videomode {
       uvm7 *= scale;
 
       // Rotations if needed
-      float a = (solarus_display_time / 1000.0) * 0.5;
+      float a = (solarus_time / 1000.0) * 0.5;
 //      float a = 0.0;
       mat2 rotation = mat2(cos(a), - sin(a), sin(a), cos(a));
       uvm7 *= rotation;
 
       // Repeat
-      uvm7 = fract(uvm7);
+      uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
 
       // Read background texture
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
