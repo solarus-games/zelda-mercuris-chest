@@ -10,37 +10,39 @@ videomode {
 
     -- Source of the fragment shader.
     fragment_source = [[
-          #define glarebasesize 0.42
-          #define power 0.35 // 0.50 is good
+        #define glarebasesize 0.42
+        #define power 0.35 // 0.50 is good
 
         #define TEXEL(x,y) texture2D(x,y)
         
-    uniform sampler2D solarus_sampler;
-    uniform vec2 solarus_input_size;
+        uniform sampler2D solarus_sampler;
+        uniform vec2 solarus_input_size;
+        vec2 solarus_output_size = solarus_input_size;
+        vec2 solarus_texture_size = solarus_input_size;
 
-          void main()
-          {
-             vec4 sum = vec4(0.0);
-             vec4 bum = vec4(0.0);
-             vec2 texcoord = vec2(gl_TexCoord[0]);
-             int j;
-             int i;
+        void main()
+        {
+            vec4 sum = vec4(0.0);
+            vec4 bum = vec4(0.0);
+            vec2 texcoord = vec2(gl_TexCoord[0]);
+            int j;
+            int i;
 
-             vec2 glaresize = vec2(glarebasesize) / solarus_input_size;
+            vec2 glaresize = vec2(glarebasesize) / solarus_texture_size;
 
-             for(i = -2; i < 5; i++)
-             {
+            for (i = -2; i < 5; i++)
+            {
                 for (j = -1; j < 1; j++)
                 {
-                       sum += TEXEL(solarus_sampler, texcoord + vec2(-i, j)*glaresize) * power;
-                       bum += TEXEL(solarus_sampler, texcoord + vec2(j, i)*glaresize) * power;            
+                    sum += TEXEL(solarus_sampler, texcoord + vec2(-i, j)*glaresize) * power;
+                    bum += TEXEL(solarus_sampler, texcoord + vec2(j, i)*glaresize) * power;            
                 }
-             }
+            }
 
-             if (TEXEL(solarus_sampler, texcoord).r < 2.0)
-             {
+            if (TEXEL(solarus_sampler, texcoord).r < 2.0)
+            {
                 gl_FragColor = sum*sum*sum*0.001+bum*bum*bum*0.0080 + texture2D(solarus_sampler, texcoord);
-             }
-          }
+            }
+        }
     ]]
 }

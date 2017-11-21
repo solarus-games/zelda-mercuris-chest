@@ -781,7 +781,6 @@ shader{ id = "hq2x", description = "hq2x" }
 shader{ id = "hq4x", description = "hq4x" }
 shader{ id = "hw_scale2x", description = "hw_scale2x" }
 shader{ id = "mode_7", description = "Mode 7" }
-shader{ id = "pip", description = "pip" }
 shader{ id = "sepia", description = "sepia" }
 shader{ id = "toon", description = "toon" }
 shader{ id = "waterpaint", description = "waterpaint" }

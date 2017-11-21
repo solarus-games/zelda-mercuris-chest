@@ -13,7 +13,10 @@ videomode {
         #define TEXEL(x,y) texture2D(x,y)
         
         uniform sampler2D solarus_sampler;
-        
+        uniform vec2 solarus_input_size;
+        vec2 solarus_output_size = solarus_input_size;
+        vec2 solarus_texture_size = solarus_input_size;
+
         const float mx = 0.325;    // start smoothing factor
         const float k = -0.250;    // smoothing decrease factor
         const float max_w = 0.25;
@@ -24,8 +27,8 @@ videomode {
 
         void main()
         {
-            float x = 0.5;
-            float y = 0.5;
+            float x = 0.5 / solarus_texture_size.x;
+            float y = 0.5 / solarus_texture_size.y;
 
             vec2 dg1 = vec2( x,y);
             vec2 dg2 = vec2(-x,y);

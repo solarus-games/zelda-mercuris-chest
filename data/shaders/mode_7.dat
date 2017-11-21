@@ -21,9 +21,9 @@ videomode {
 
     #version 120
 
-        #define TEXEL(x,y) texture2D(x,y)
+    #define TEXEL(x,y) texture2D(x,y)
         
-        uniform sampler2D solarus_sampler;
+    uniform sampler2D solarus_sampler;
     uniform int solarus_display_time;
 
     vec2 resolution = 2 * vec2(320.0, 240.0);

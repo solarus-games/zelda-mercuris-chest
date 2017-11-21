@@ -10,10 +10,15 @@ videomode {
 
     -- Source of the vertex shader.
     vertex_source = [[
-         void main()
-         {
-            float x = 0.5;
-            float y = 0.5;
+
+        uniform vec2 solarus_input_size;
+        vec2 solarus_output_size = solarus_input_size;
+        vec2 solarus_texture_size = solarus_input_size;
+
+        void main()
+        {
+            float x = 0.5 / solarus_texture_size.x;
+            float y = 0.5 / solarus_texture_size.y;
             vec2 dg1 = vec2( x, y);
             vec2 dg2 = vec2(-x, y);
             vec2 dx = vec2(x, 0.0);
@@ -37,6 +42,9 @@ videomode {
     #define TEXEL(x,y) texture2D(x,y)
         
     uniform sampler2D solarus_sampler;
+    uniform vec2 solarus_input_size;
+    vec2 solarus_output_size = solarus_input_size;
+    vec2 solarus_texture_size = solarus_input_size;
          
         vec3 grayscale(vec3 color)
          {
@@ -52,7 +60,7 @@ videomode {
             vec3 c22 = TEXEL(solarus_sampler, gl_TexCoord[3].xy).xyz;
 
             vec2 tex = gl_TexCoord[0].xy;
-            vec2 texsize = vec2(1.0);
+            vec2 texsize = solarus_texture_size;
  
             vec3 first = mix(c00, c20, fract(tex.x * texsize.x + 0.5));
             vec3 second = mix(c02, c22, fract(tex.x * texsize.x + 0.5));
