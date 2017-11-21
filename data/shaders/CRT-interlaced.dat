@@ -2,11 +2,6 @@
 -- https://gitorious.org/bsnes/xml-shaders
 
 videomode {
-    -- Name of the video mode associated to the shader.
-    name = "CRT-interlaced",
-
-    -- Default scale of the window compared to the quest_size.
-    default_window_scale = 2,
 
     -- Source of the vertex shader.
     vertex_source = [[

@@ -2,13 +2,7 @@
 -- https://raw.githubusercontent.com/libretro/glsl-shaders/master/xbrz/shaders/6xbrz.glsl
 
 videomode {
-    -- Name of the video mode associated to the shader.
-    name = "6xBRZ",
 
-    -- Default scale of the window compared to the quest_size.
-    default_window_scale = 2,
-
-    -- Source of the vertex shader.
     vertex_source = [[
 
     // 6xBRZ shader - Copyright (C) 2014-2016 DeSmuME team

@@ -4,11 +4,6 @@
 -- https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py
 
 videomode {
-    -- Name of the video mode associated to the shader.
-    name = "xBR-hybrid-v5",
-
-    -- Default scale of the window compared to the quest_size.
-    default_window_scale = 2,
 
     -- Source of the vertex shader.
     vertex_source = [[

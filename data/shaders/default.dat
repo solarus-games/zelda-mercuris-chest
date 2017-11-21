@@ -1,10 +1,6 @@
 -- A shader that does nothing special.
 
 videomode {
-  name = "default",
-  
-  default_window_scale = 2,
-
   fragment_source = [[
 
 #version 120

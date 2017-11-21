@@ -2,11 +2,6 @@
 -- http://stabyourself.net/mari0/
 
 videomode {
-    -- Name of the video mode associated to the shader.
-    name = "hw_hq4x",
-
-    -- Default scale of the window compared to the quest_size.
-    default_window_scale = 4,
 
     -- Source of the fragment shader.
     fragment_source = [[

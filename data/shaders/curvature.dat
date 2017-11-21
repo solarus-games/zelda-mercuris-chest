@@ -2,12 +2,6 @@
 -- https://gitorious.org/bsnes/xml-shaders
 
 videomode {
-  -- Name of the video mode associated to the shader.
-  name = "curvature",
-
-  -- Default scale of the window compared to the quest_size.
-  default_window_scale = 2,
-
   vertex_source = [[
       #define ZOOM_SCALE 1.235
 
