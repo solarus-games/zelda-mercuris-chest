@@ -1,18 +1,19 @@
 -- A shader that does nothing special.
 
 videomode {
-    name = "default",
-    default_window_scale = 2,
+  name = "default",
+  
+  default_window_scale = 2,
 
-    -- Source of the fragment shader.
-    fragment_source = [[
+  fragment_source = [[
 
-    #version 120
+#version 120
 
-    uniform sampler2D quest_texture;
+uniform sampler2D solarus_sampler;
 
-    void main() {
-      gl_FragColor = texture2D(quest_texture, gl_TexCoord[0].xy);
-    }
-    ]]
+void main() {
+  gl_FragColor = texture2D(solarus_sampler, gl_TexCoord[0].xy);
+}
+
+  ]]
 }
