@@ -9,20 +9,21 @@ videomode {
     vertex_source = [[
 
     #version 120
-        void main() {
+
+    void main() {
 
 //      gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
       gl_Position = gl_ModelViewMatrix * gl_Vertex;
       gl_TexCoord[0] = gl_MultiTexCoord0;
     }
-    ]],
+]],
 
     fragment_source = [[
 
     #version 120
 
     #define TEXEL(x,y) texture2D(x,y)
-        
+
     uniform sampler2D solarus_sampler;
     uniform int solarus_display_time;
 
@@ -63,7 +64,7 @@ videomode {
       col *= abs(uv.y - h - 0.35);
 
       // Output the color
-          return vec4(col, 1.0);
+      return vec4(col, 1.0);
   }
 
     void main() {
