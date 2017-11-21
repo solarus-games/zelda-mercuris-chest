@@ -11,18 +11,18 @@ videomode {
     -- Source of the vertex shader.
     vertex_source = [[
     #version 120
-    uniform vec2 solarus_io_size;
+    uniform vec2 solarus_input_size;
         void main() {
       vec4 offsetx;
       vec4 offsety;
 
       gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
 
-      offsetx.x = 1.0 / solarus_io_size.x;
+      offsetx.x = 1.0 / solarus_input_size.x;
       offsetx.y = 0.0;
       offsetx.w = 0.0;
           offsetx.z = 0.0;
-          offsety.y = 1.0 / solarus_io_size.y;
+          offsety.y = 1.0 / solarus_input_size.y;
           offsety.x = 0.0;
           offsety.w = 0.0;
           offsety.z = 0.0;
@@ -39,7 +39,7 @@ videomode {
     #version 120
 
     uniform sampler2D solarus_sampler;
-    uniform vec2 solarus_io_size;
+    uniform vec2 solarus_input_size;
 
     void main() {
       vec4 colD, colF, colB, colH, col, tmp;
@@ -51,7 +51,7 @@ videomode {
       colB = texture2D(solarus_sampler, gl_TexCoord[3].xy);  //B (top)
       colH = texture2D(solarus_sampler, gl_TexCoord[4].xy);  //H (bottom)
 
-      sel = fract(gl_TexCoord[0].xy * solarus_io_size.xy);       //where are we (E0-E3)?
+      sel = fract(gl_TexCoord[0].xy * solarus_input_size.xy);       //where are we (E0-E3)?
                                                                  //E0 is default
       if(sel.y >= 0.5) { tmp = colB; colB = colH; colH = tmp; }  //E1 (or E3): swap B and H
       if(sel.x >= 0.5) { tmp = colF; colF = colD; colD = tmp; }  //E2 (or E3): swap D and F

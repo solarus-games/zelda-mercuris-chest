@@ -10,7 +10,9 @@ videomode {
 
     -- Source of the vertex shader.
     vertex_source = [[
-        uniform vec2 solarus_io_size;
+        uniform vec2 solarus_input_size;
+        vec2 solarus_output_size = solarus_input_size;
+        vec2 solarus_texture_size = solarus_input_size;
 
         varying float CRTgamma;
         varying float monitorgamma;
@@ -119,13 +121,13 @@ videomode {
                 // Texture coords.
                 texCoord = gl_MultiTexCoord0.xy;
 
-                ilfac = vec2(1.0,floor(solarus_io_size.y/200.0));
+                ilfac = vec2(1.0,floor(solarus_input_size.y/200.0));
 
                 // The size of one texel, in texture-coordinates.
-                one = ilfac;
+                one = ilfac / solarus_texture_size;
 
                 // Resulting X pixel-coordinate of the pixel we're drawing.
-                mod_factor = texCoord.x;
+                mod_factor = texCoord.x * solarus_texture_size.x * solarus_output_size.x / solarus_input_size.x;
         }
     ]],
     -- Source of the fragment shader.
@@ -156,7 +158,9 @@ videomode {
         #endif
 
         uniform sampler2D solarus_sampler;
-        uniform vec2 solarus_io_size;
+        uniform vec2 solarus_input_size;
+        vec2 solarus_output_size = solarus_input_size;
+        vec2 solarus_texture_size = solarus_input_size;
         uniform int solarus_display_time;
         
         varying vec2 texCoord;
@@ -207,14 +211,14 @@ videomode {
 
         vec2 transform(vec2 coord)
         {
-                coord *= vec2(1.0) / solarus_io_size;
+                coord *= solarus_texture_size / solarus_input_size;
                 coord = (coord-vec2(0.5))*aspect*stretch.z+stretch.xy;
-                return (bkwtrans(coord)/overscan/aspect+vec2(0.5)) * solarus_io_size;
+                return (bkwtrans(coord)/overscan/aspect+vec2(0.5)) * solarus_input_size / solarus_texture_size;
         }
 
         float corner(vec2 coord)
         {
-                coord *= vec2(1.0) / solarus_io_size;
+                coord *= solarus_texture_size / solarus_input_size;
                 coord = (coord - vec2(0.5)) * overscan + vec2(0.5);
                 coord = min(coord, vec2(1.0)-coord) * aspect;
                 vec2 cdist = vec2(cornersize);
@@ -286,14 +290,14 @@ videomode {
                 // Of all the pixels that are mapped onto the texel we are
                 // currently rendering, which pixel are we currently rendering?
                 vec2 ilvec = vec2(0.0,ilfac.y > 1.5 ? mod(float(solarus_display_time)/10.0,2.0) : 0.0);
-                vec2 ratio_scale = (xy - vec2(0.5) + ilvec)/ilfac;
+                vec2 ratio_scale = (xy * solarus_texture_size - vec2(0.5) + ilvec)/ilfac;
         #ifdef OVERSAMPLE
                 float filter = fwidth(ratio_scale.y);
         #endif
                 vec2 uv_ratio = fract(ratio_scale);
 
                 // Snap to the center of the underlying texel.
-                xy = floor(ratio_scale)*ilfac + vec2(0.5) - ilvec;
+                xy = (floor(ratio_scale)*ilfac + vec2(0.5) - ilvec) / solarus_texture_size;
 
                 // Calculate Lanczos scaling coefficients describing the effect
                 // of various neighbour texels in a scanline on the current

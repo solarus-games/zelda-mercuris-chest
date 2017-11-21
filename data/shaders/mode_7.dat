@@ -3,7 +3,7 @@
 -- Inspired from https://www.shadertoy.com/view/ltsGWn
 
 videomode {
-    name = "test",
+    name = "mode_7",
     default_window_scale = 2,
 
     vertex_source = [[
