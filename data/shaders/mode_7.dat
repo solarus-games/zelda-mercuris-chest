@@ -25,10 +25,10 @@ videomode {
     #define TEXEL(x,y) texture2D(x,y)
 
     uniform sampler2D solarus_sampler;
+    uniform vec2 solarus_output_size;
     uniform int solarus_time;
 
-    vec2 resolution = 2 * vec2(320.0, 240.0);
-//  vec2 resolution = vec2(1.0, 1.0);
+    vec2 resolution = solarus_output_size;
 
     vec4 mainImage(vec2 fragCoord) {
 

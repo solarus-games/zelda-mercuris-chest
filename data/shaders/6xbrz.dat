@@ -93,9 +93,10 @@ COMPAT_VARYING vec4 t7;
 uniform COMPAT_PRECISION int FrameDirection;
 uniform COMPAT_PRECISION int FrameCount;
 uniform COMPAT_PRECISION vec2 solarus_input_size;
-#define OutputSize solarus_input_size
+uniform COMPAT_PRECISION vec2 solarus_output_size;
 #define TextureSize solarus_input_size
 #define InputSize solarus_input_size
+#define OutputSize solarus_output_size
 
 // vertex compatibility #defines
 #define vTexCoord TEX0.xy
@@ -202,9 +203,10 @@ precision mediump float;
 uniform COMPAT_PRECISION int FrameDirection;
 uniform COMPAT_PRECISION int FrameCount;
 uniform COMPAT_PRECISION vec2 solarus_input_size;
-#define OutputSize solarus_input_size
+uniform COMPAT_PRECISION vec2 solarus_output_size;
 #define TextureSize solarus_input_size
 #define InputSize solarus_input_size
+#define OutputSize solarus_output_size
 uniform sampler2D solarus_sampler;
 #define Texture solarus_sampler
 COMPAT_VARYING vec4 TEX0;
