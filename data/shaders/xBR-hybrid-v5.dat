@@ -55,6 +55,7 @@ videomode {
             vec4 TexCoord;
             COMPAT_VARYING vec4 COL0;
             COMPAT_VARYING vec4 TEX0;
+            uniform COMPAT_PRECISION vec2 solarus_io_size;
 
             void main()
             {
@@ -62,7 +63,7 @@ videomode {
                 vec2 _ps;
                 TexCoord = gl_MultiTexCoord0;
                 _OUT._position1 = gl_ModelViewProjectionMatrix * gl_Vertex;
-                _ps = vec2(1.00000000E+00);
+                _ps = vec2(1.00000000E+00/solarus_io_size.x, 1.00000000E+00/solarus_io_size.y);
                 _OUT.VARt1 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float((-2.00000000E+00*_ps.y))));
                 _OUT.VARt2 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float(-_ps.y)));
                 _OUT.VARt3 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), 0.00000000E+00);
@@ -85,6 +86,7 @@ videomode {
                 TEX0.xy = TexCoord.xy;
             }
     ]],
+
     -- Source of the fragment shader.
     fragment_source = [[
             uniform sampler2D solarus_sampler;
@@ -278,6 +280,7 @@ videomode {
             float _t0431;
             vec3 _TMP440;
             COMPAT_VARYING vec4 TEX0;
+            uniform COMPAT_PRECISION vec2 solarus_io_size;
 
             void main()
             {
@@ -349,7 +352,7 @@ videomode {
                 vec4 _final30;
                 vec4 _final60;
                 vec4 _maximo;
-                _x0097 = TEX0.xy;
+                _x0097 = TEX0.xy * solarus_io_size;
                 _fp = fract(_x0097);
                 _TMP0 = COMPAT_TEXTURE(solarus_sampler, VARt1.xw);
                 _A11 = vec3(float(_TMP0.x), float(_TMP0.y), float(_TMP0.z));
