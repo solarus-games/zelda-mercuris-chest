@@ -1,6 +1,6 @@
 -- A shader that does nothing special.
 
-videomode {
+shader{
   fragment_source = [[
 
 #version 120

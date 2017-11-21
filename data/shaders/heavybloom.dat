@@ -1,7 +1,7 @@
 -- This is a heavybloom glsl shader implementation from the bsnes project.
 -- https://gitorious.org/bsnes/xml-shaders
 
-videomode {
+shader{
 
     -- Source of the fragment shader.
     fragment_source = [[

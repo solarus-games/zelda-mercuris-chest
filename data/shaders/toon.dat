@@ -1,12 +1,7 @@
 -- This is a toon glsl shader implementation from
 -- http://gamedev.dreamnoid.com/2009/03/11/cel-shading-en-glsl/
 
-videomode {
-    -- Name of the video mode associated to the shader.
-    name = "toon",
-
-    -- Default scale of the window compared to the quest_size.
-    default_window_scale = 2,
+shader{
 
     -- Source of the vertex shader.
     vertex_source = [[

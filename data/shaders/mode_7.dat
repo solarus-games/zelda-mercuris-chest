@@ -2,7 +2,7 @@
 -- Shows a texture in a perspective view.
 -- Inspired from https://www.shadertoy.com/view/ltsGWn
 
-videomode {
+shader{
 
     vertex_source = [[
 

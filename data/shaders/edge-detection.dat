@@ -1,7 +1,7 @@
 -- This is a edge-detection glsl shader implementation from the bsnes project.
 -- https://gitorious.org/bsnes/xml-shaders
 
-videomode {
+shader{
 
     -- Source of the vertex shader.
     vertex_source = [[

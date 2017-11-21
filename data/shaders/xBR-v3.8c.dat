@@ -3,7 +3,7 @@
 -- It was converted from CG script by the cg2glsl tool here
 -- https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py
 
-videomode {
+shader{
 
     -- Source of the vertex shader.
     vertex_source = [[

@@ -1,7 +1,7 @@
 -- This is a 6xBRZ glsl shader implementation from the libretro/glsl-shaders project.
 -- https://raw.githubusercontent.com/libretro/glsl-shaders/master/xbrz/shaders/6xbrz.glsl
 
-videomode {
+shader{
 
     vertex_source = [[
 
