@@ -412,6 +412,9 @@ sprite{ id = "npc/NewlinkNPC/shopkeeper3", description = "purpleshopkeeper" }
 sprite{ id = "npc/NewlinkNPC/siamibrother1", description = "bluesiami" }
 sprite{ id = "npc/NewlinkNPC/siamibrother2", description = "redsiami" }
 sprite{ id = "npc/NewlinkNPC/snake", description = "kamalsnake" }
+sprite{ id = "npc/NewlinkNPC/staticcitywomangreen", description = "citystaticgreenwoman" }
+sprite{ id = "npc/NewlinkNPC/staticwomanblue", description = "staticbluewoman" }
+sprite{ id = "npc/NewlinkNPC/staticwomangreen", description = "staticgreenwoman" }
 sprite{ id = "npc/NewlinkNPC/subrossianred", description = "redsubrossian" }
 sprite{ id = "npc/NewlinkNPC/tingle", description = "tingle" }
 sprite{ id = "npc/NewlinkNPC/tokaygreen", description = "greentokay" }
@@ -422,6 +425,14 @@ sprite{ id = "npc/NewlinkNPC/townsfolk2", description = "hatgreenhairman" }
 sprite{ id = "npc/NewlinkNPC/townsfolk3", description = "hatyellowhairman" }
 sprite{ id = "npc/NewlinkNPC/townsfolk4", description = "purplerastaman" }
 sprite{ id = "npc/NewlinkNPC/townsfolk5", description = "greenrastaman" }
+sprite{ id = "npc/NewlinkNPC/villagerman", description = "villagerbluehairman" }
+sprite{ id = "npc/NewlinkNPC/villagerman2", description = "villagergreenhairman" }
+sprite{ id = "npc/NewlinkNPC/villagerman3", description = "villageryellowhairman" }
+sprite{ id = "npc/NewlinkNPC/villagewoman", description = "villageyellowwoman" }
+sprite{ id = "npc/NewlinkNPC/villagewoman2", description = "villageredwoman" }
+sprite{ id = "npc/NewlinkNPC/villagewoman3", description = "villagegreenwoman" }
+sprite{ id = "npc/NewlinkNPC/womanstaticbluehair", description = "staticwomanbluehair" }
+sprite{ id = "npc/NewlinkNPC/womanstaticgreenhair", description = "staticwomangreenhair" }
 sprite{ id = "npc/NewlinkNPC/youngboy", description = "greenyoungboy" }
 sprite{ id = "npc/NewlinkNPC/youngboy2", description = "yellowyoungboy" }
 sprite{ id = "npc/NewlinkNPC/youngboy3", description = "brownyoungboy" }
