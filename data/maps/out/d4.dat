@@ -24933,6 +24933,24 @@ destination{
   direction = 3,
 }
 
+npc{
+  layer = 1,
+  x = 824,
+  y = 517,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/womanstaticgreenhair",
+}
+
+npc{
+  layer = 1,
+  x = 472,
+  y = 181,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/womanstaticbluehair",
+}
+
 tile{
   layer = 2,
   x = 1000,
