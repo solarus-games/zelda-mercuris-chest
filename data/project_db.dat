@@ -791,8 +791,8 @@ shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "heavybloom", description = "heavybloom" }
 shader{ id = "hq2x", description = "hq2x" }
 shader{ id = "hq4x", description = "hq4x" }
-shader{ id = "hw_scale2x", description = "hw_scale2x" }
 shader{ id = "mode_7", description = "Mode 7" }
+shader{ id = "scale2x", description = "Scale2x" }
 shader{ id = "sepia", description = "sepia" }
 shader{ id = "toon", description = "toon" }
 shader{ id = "waterpaint", description = "waterpaint" }

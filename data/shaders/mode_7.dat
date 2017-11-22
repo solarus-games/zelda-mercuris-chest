@@ -53,7 +53,7 @@ shader{
       uvm7 *= rotation;
 
       // Repeat
-      uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
+    //  uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
 
       // Read background texture
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
