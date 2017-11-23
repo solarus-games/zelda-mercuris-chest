@@ -31,7 +31,8 @@ shader{
     vec2 resolution = solarus_output_size;
 
     // Tweak this parameter for more / less distortion
-    #define distortion 1.2
+//    #define distortion 1.2
+    #define distortion 1.1
 
     vec2 radialDistortion(vec2 coord) {
       coord *= solarus_texture_size / solarus_input_size;
@@ -43,12 +44,12 @@ shader{
     vec4 mainImage(vec2 fragCoord) {
 
       vec2 q = fragCoord / resolution;
-      q = radialDistortion(q);
+      q = radialDistortion(q);  // TODO make the curvature depend on the height
       vec2 uv = q - vec2(0.5);
 
       // Create a 3D point
    //   float h = 0.25;
-      float h = 0.25;
+      float h = 0.90;
       vec3 p = vec3(uv.x, uv.y - h - 1.0, uv.y - h);
 
       // Projecting back to 2D space
@@ -56,14 +57,24 @@ shader{
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = 0.1;
+      float scale = 0.05;
       uvm7 *= scale;
 
       // Rotations if needed
-      float a = (solarus_time / 1000.0) * 0.25;
-//      float a = 0.0;
-      mat2 rotation = mat2(cos(a), - sin(a), sin(a), cos(a));
+//      float a = (solarus_time / 1000.0) * 0.25;
+      float a = radians(180.0);
+      mat2 rotation = mat2(cos(a), -sin(a), sin(a), cos(a));
       uvm7 *= rotation;
+
+      // Initial position
+      vec2 initial_position = vec2(0.50, 0.25);
+      uvm7 += initial_position;
+
+      // Translation
+//      float dy = 0.0;
+      float dy = -(solarus_time / 1000.0) * 0.03;
+      vec2 translation = vec2(0.0, dy);
+      uvm7 += translation;
 
       // Repeat
     //  uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
@@ -72,7 +83,7 @@ shader{
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
 
       // Darkness based on the horizon
-      col *= -(uv.y - h - 0.50);
+//      col *= -(uv.y - h - 0.50);
 
       // Output the color
       return vec4(col, 1.0);

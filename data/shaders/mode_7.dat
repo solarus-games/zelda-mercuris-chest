@@ -23,7 +23,9 @@ shader{
     #define TEXEL(x,y) texture2D(x,y)
 
     uniform sampler2D solarus_sampler;
+    uniform vec2 solarus_input_size;
     uniform vec2 solarus_output_size;
+    vec2 solarus_texture_size = solarus_input_size;
     uniform int solarus_time;
 
     vec2 resolution = solarus_output_size;
@@ -35,7 +37,7 @@ shader{
 
       // Create a 3D point
    //   float h = 0.25;
-      float h = 0.25;
+      float h = 0.90;
       vec3 p = vec3(uv.x, uv.y - h - 1.0, uv.y - h);
 
       // Projecting back to 2D space
@@ -43,14 +45,24 @@ shader{
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = 0.4;
+      float scale = 0.05;
       uvm7 *= scale;
 
       // Rotations if needed
-      float a = (solarus_time / 1000.0) * 0.5;
-//      float a = 0.0;
-      mat2 rotation = mat2(cos(a), - sin(a), sin(a), cos(a));
+//      float a = (solarus_time / 1000.0) * 0.25;
+      float a = radians(180.0);
+      mat2 rotation = mat2(cos(a), -sin(a), sin(a), cos(a));
       uvm7 *= rotation;
+
+      // Initial position
+      vec2 initial_position = vec2(0.50, 0.25);
+      uvm7 += initial_position;
+
+      // Translation
+//      float dy = 0.0;
+      float dy = -(solarus_time / 1000.0) * 0.03;
+      vec2 translation = vec2(0.0, dy);
+      uvm7 += translation;
 
       // Repeat
     //  uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
@@ -59,7 +71,7 @@ shader{
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
 
       // Darkness based on the horizon
-      col *= abs(uv.y - h - 0.35);
+//      col *= -(uv.y - h - 0.50);
 
       // Output the color
       return vec4(col, 1.0);
