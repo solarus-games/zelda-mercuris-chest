@@ -1,0 +1,12 @@
+animation{
+  name = "stopped",
+  src_image = "npc/NewlinkNPC/joril.png",
+  frame_delay = 500,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 4 },
+  },
+}
