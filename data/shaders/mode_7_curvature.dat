@@ -72,7 +72,7 @@ shader{
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
 
       // Darkness based on the horizon
-      col *= -(uv.y - h - 0.35);
+      col *= -(uv.y - h - 0.50);
 
       // Output the color
       return vec4(col, 1.0);
