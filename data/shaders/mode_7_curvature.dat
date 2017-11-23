@@ -56,11 +56,11 @@ shader{
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = 0.05;
+      float scale = 0.1;
       uvm7 *= scale;
 
       // Rotations if needed
-      float a = (solarus_time / 1000.0) * 0.5;
+      float a = (solarus_time / 1000.0) * 0.25;
 //      float a = 0.0;
       mat2 rotation = mat2(cos(a), - sin(a), sin(a), cos(a));
       uvm7 *= rotation;
@@ -72,7 +72,7 @@ shader{
       vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
 
       // Darkness based on the horizon
-      col *= abs(uv.y - h - 0.35);
+      col *= -(uv.y - h - 0.35);
 
       // Output the color
       return vec4(col, 1.0);
