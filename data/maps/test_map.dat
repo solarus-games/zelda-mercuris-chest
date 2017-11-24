@@ -386,7 +386,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "out/d4",
-  destination = "smith_out",
+  destination = "from_romani_inn_s",
 }
 
 teletransporter{
