@@ -23167,6 +23167,78 @@ tile{
   pattern = "carpet",
 }
 
+tile{
+  layer = 1,
+  x = 536,
+  y = 64,
+  width = 48,
+  height = 24,
+  pattern = "72",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 64,
+  width = 48,
+  height = 24,
+  pattern = "72",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 1048,
+  width = 8,
+  height = 32,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1176,
+  y = 1048,
+  width = 8,
+  height = 32,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 1264,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 1272,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1176,
+  y = 1264,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 1272,
+  width = 8,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
 destructible{
   layer = 1,
   x = 1160,
@@ -24351,15 +24423,6 @@ npc{
 
 npc{
   layer = 1,
-  x = 672,
-  y = 733,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/greentradesman",
-}
-
-npc{
-  layer = 1,
   x = 880,
   y = 885,
   direction = 3,
@@ -24504,8 +24567,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 256,
-  y = 1037,
+  x = 328,
+  y = 1005,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/misterIngo",
@@ -24514,7 +24577,7 @@ npc{
 npc{
   layer = 1,
   x = 280,
-  y = 1053,
+  y = 1037,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/Rosasister1",
@@ -24523,7 +24586,7 @@ npc{
 npc{
   layer = 1,
   x = 232,
-  y = 1053,
+  y = 1037,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/Rosasister2",
@@ -24604,7 +24667,7 @@ npc{
 npc{
   layer = 1,
   x = 1472,
-  y = 133,
+  y = 141,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/childred",
@@ -24936,8 +24999,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 288,
-  y = 1165,
+  x = 256,
+  y = 1229,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/manred3",
@@ -25042,7 +25105,7 @@ destination{
 
 npc{
   layer = 1,
-  x = 824,
+  x = 816,
   y = 517,
   direction = 3,
   subtype = 1,
@@ -25087,8 +25150,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 1280,
-  y = 1117,
+  x = 1168,
+  y = 1157,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/villagerman",
@@ -25303,8 +25366,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 632,
-  y = 1109,
+  x = 624,
+  y = 1085,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/gormibrothers",
@@ -25312,8 +25375,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 680,
-  y = 1109,
+  x = 664,
+  y = 1085,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/gormiredbrother",
@@ -25474,7 +25537,7 @@ npc{
 
 npc{
   layer = 1,
-  x = 1672,
+  x = 1648,
   y = 1413,
   direction = 3,
   subtype = 1,
@@ -25483,11 +25546,162 @@ npc{
 
 npc{
   layer = 1,
-  x = 1648,
-  y = 1413,
+  x = 1624,
+  y = 1421,
   direction = 3,
   subtype = 1,
   sprite = "npc/billy",
+}
+
+npc{
+  layer = 1,
+  x = 672,
+  y = 733,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/Balek",
+}
+
+npc{
+  layer = 1,
+  x = 568,
+  y = 493,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/womanwithbroom2",
+}
+
+teletransporter{
+  layer = 1,
+  x = 616,
+  y = 1288,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/archerygame",
+}
+
+destination{
+  name = "merline_out",
+  layer = 1,
+  x = 624,
+  y = 1317,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1352,
+  y = 536,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/Ikanamaskvendor",
+}
+
+destination{
+  name = "randolhouse_out",
+  layer = 1,
+  x = 1360,
+  y = 565,
+  direction = 3,
+}
+
+npc{
+  layer = 1,
+  x = 256,
+  y = 1053,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/Japass",
+}
+
+npc{
+  layer = 1,
+  x = 144,
+  y = 1061,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/static_villager7",
+}
+
+npc{
+  layer = 1,
+  x = 1144,
+  y = 1253,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 912,
+  y = 1005,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 1208,
+  y = 1005,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 920,
+  y = 1021,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 1152,
+  y = 973,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 816,
+  y = 1277,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 824,
+  y = 1261,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 1392,
+  y = 973,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/workers",
+}
+
+npc{
+  layer = 1,
+  x = 1416,
+  y = 973,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/workers2",
 }
 
 tile{
@@ -34045,7 +34259,7 @@ npc{
 
 npc{
   layer = 2,
-  x = 1216,
+  x = 1392,
   y = 477,
   direction = 3,
   subtype = 1,
@@ -34140,6 +34354,132 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 2,
+  x = 856,
+  y = 85,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 2,
+  x = 632,
+  y = 141,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 2,
+  x = 648,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 2,
+  x = 152,
+  y = 853,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 2,
+  x = 440,
+  y = 1077,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 2,
+  x = 72,
+  y = 597,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catyellow",
+}
+
+npc{
+  layer = 2,
+  x = 704,
+  y = 1517,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catyellow",
+}
+
+npc{
+  layer = 2,
+  x = 1296,
+  y = 437,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catyellow",
+}
+
+npc{
+  layer = 2,
+  x = 1728,
+  y = 989,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catyellow",
+}
+
+npc{
+  layer = 2,
+  x = 1384,
+  y = 789,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catbrown",
+}
+
+npc{
+  layer = 2,
+  x = 816,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catbrown",
+}
+
+npc{
+  layer = 2,
+  x = 1344,
+  y = 1653,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catbrown",
+}
+
+npc{
+  layer = 2,
+  x = 424,
+  y = 1109,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catbrown",
+}
+
+npc{
+  layer = 2,
+  x = 96,
+  y = 869,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catyellow",
 }
 
 tile{
