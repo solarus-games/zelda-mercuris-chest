@@ -1,6 +1,8 @@
 map{ id = "enemy_store", description = "Enemy Store" }
 map{ id = "forest_store", description = "Forest store" }
+map{ id = "housechronotown/Ikanamaskvendor", description = "Randolhouse" }
 map{ id = "housechronotown/Siamibrothershop", description = "blackmarketsiami" }
+map{ id = "housechronotown/archerygame", description = "Merlinearcherygame" }
 map{ id = "housechronotown/potionshop", description = "Potionshop" }
 map{ id = "housechronotown/smithshop", description = "blacksmithshop" }
 map{ id = "inside_store", description = "Inside Store" }
@@ -339,9 +341,11 @@ sprite{ id = "menus/pause_save_dialog", description = "Menu: Pause save dialog" 
 sprite{ id = "menus/selection_menu_cursor", description = "Menu: Savegame cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menu: Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Menu: Team logo" }
+sprite{ id = "npc/NewlinkNPC/Balek", description = "Balek" }
 sprite{ id = "npc/NewlinkNPC/Elefanttrader1", description = "bluelefanttrader" }
 sprite{ id = "npc/NewlinkNPC/Elefanttrader2", description = "redelefanttrader" }
 sprite{ id = "npc/NewlinkNPC/Elefanttrader3", description = "greenelefanttrader" }
+sprite{ id = "npc/NewlinkNPC/Japass", description = "Japass" }
 sprite{ id = "npc/NewlinkNPC/Kamal(snaketrainer)", description = "Kamal" }
 sprite{ id = "npc/NewlinkNPC/Noboora_gerudoqueen", description = "Noboora" }
 sprite{ id = "npc/NewlinkNPC/Rosasister1", description = "bluehairrosasister" }
@@ -355,6 +359,8 @@ sprite{ id = "npc/NewlinkNPC/birds", description = "birds" }
 sprite{ id = "npc/NewlinkNPC/bluetradesman", description = "bluetradesman" }
 sprite{ id = "npc/NewlinkNPC/boxer1", description = "yellowboxer" }
 sprite{ id = "npc/NewlinkNPC/boxer2", description = "redboxer" }
+sprite{ id = "npc/NewlinkNPC/catbrown", description = "browncat" }
+sprite{ id = "npc/NewlinkNPC/catyellow", description = "yellowcat" }
 sprite{ id = "npc/NewlinkNPC/chikenwhite", description = "whitechiken" }
 sprite{ id = "npc/NewlinkNPC/childblue", description = "bluechild" }
 sprite{ id = "npc/NewlinkNPC/childred", description = "redchild" }
@@ -417,6 +423,7 @@ sprite{ id = "npc/NewlinkNPC/pirategreen", description = "greenpirate" }
 sprite{ id = "npc/NewlinkNPC/piratered", description = "redpirate" }
 sprite{ id = "npc/NewlinkNPC/professorkastroff", description = "Kastroff" }
 sprite{ id = "npc/NewlinkNPC/ramu", description = "ramu" }
+sprite{ id = "npc/NewlinkNPC/randol", description = "randol" }
 sprite{ id = "npc/NewlinkNPC/redtradesman", description = "redtradesman" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper1", description = "blueshopkeeper" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper2", description = "yellowshopkeeper" }
@@ -446,9 +453,13 @@ sprite{ id = "npc/NewlinkNPC/villagerman3", description = "villageryellowhairman
 sprite{ id = "npc/NewlinkNPC/villagewoman", description = "villageyellowwoman" }
 sprite{ id = "npc/NewlinkNPC/villagewoman2", description = "villageredwoman" }
 sprite{ id = "npc/NewlinkNPC/villagewoman3", description = "villagegreenwoman" }
+sprite{ id = "npc/NewlinkNPC/womanshopkeeper1", description = "Merline" }
 sprite{ id = "npc/NewlinkNPC/womanstaticbluehair", description = "staticwomanbluehair" }
 sprite{ id = "npc/NewlinkNPC/womanstaticgreenhair", description = "staticwomangreenhair" }
 sprite{ id = "npc/NewlinkNPC/womanwithbroom", description = "redwomanwithbroom" }
+sprite{ id = "npc/NewlinkNPC/womanwithbroom2", description = "womangreenhairwithbroom" }
+sprite{ id = "npc/NewlinkNPC/workers", description = "Tigor" }
+sprite{ id = "npc/NewlinkNPC/workers2", description = "Bigor" }
 sprite{ id = "npc/NewlinkNPC/youngboy", description = "greenyoungboy" }
 sprite{ id = "npc/NewlinkNPC/youngboy2", description = "yellowyoungboy" }
 sprite{ id = "npc/NewlinkNPC/youngboy3", description = "brownyoungboy" }
