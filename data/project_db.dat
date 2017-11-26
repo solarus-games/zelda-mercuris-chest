@@ -354,6 +354,7 @@ sprite{ id = "npc/NewlinkNPC/Tannek(firstmeeting)", description = "Tannek(firstm
 sprite{ id = "npc/NewlinkNPC/Tannek(secondmeeting)", description = "Tannek(secondmeeting)" }
 sprite{ id = "npc/NewlinkNPC/Timmythief", description = "Timmy" }
 sprite{ id = "npc/NewlinkNPC/Vulkosblacksmith", description = "Vulkos" }
+sprite{ id = "npc/NewlinkNPC/anju", description = "anju" }
 sprite{ id = "npc/NewlinkNPC/bigdogtavern", description = "taverdogguardian" }
 sprite{ id = "npc/NewlinkNPC/birds", description = "birds" }
 sprite{ id = "npc/NewlinkNPC/bluetradesman", description = "bluetradesman" }
@@ -365,6 +366,7 @@ sprite{ id = "npc/NewlinkNPC/chikenwhite", description = "whitechiken" }
 sprite{ id = "npc/NewlinkNPC/childblue", description = "bluechild" }
 sprite{ id = "npc/NewlinkNPC/childred", description = "redchild" }
 sprite{ id = "npc/NewlinkNPC/childyellow", description = "yellowchild" }
+sprite{ id = "npc/NewlinkNPC/cow", description = "cow" }
 sprite{ id = "npc/NewlinkNPC/daruka_goronking", description = "daruka" }
 sprite{ id = "npc/NewlinkNPC/deku_king", description = "kingdeku" }
 sprite{ id = "npc/NewlinkNPC/doggybrown", description = "dogbrown" }
@@ -375,12 +377,14 @@ sprite{ id = "npc/NewlinkNPC/dogtrader4", description = "Welson" }
 sprite{ id = "npc/NewlinkNPC/dogtrader5static", description = "browndog" }
 sprite{ id = "npc/NewlinkNPC/dragoonblue", description = "bluedragoon" }
 sprite{ id = "npc/NewlinkNPC/dragoonorange", description = "orangedragoon" }
+sprite{ id = "npc/NewlinkNPC/epona", description = "epona" }
 sprite{ id = "npc/NewlinkNPC/gerudo", description = "gerudo" }
 sprite{ id = "npc/NewlinkNPC/godhar", description = "godhar" }
 sprite{ id = "npc/NewlinkNPC/gormibrothers", description = "blueGormi" }
 sprite{ id = "npc/NewlinkNPC/gormiredbrother", description = "redGormi" }
 sprite{ id = "npc/NewlinkNPC/gorons", description = "Gorons" }
 sprite{ id = "npc/NewlinkNPC/greentradesman", description = "greentradesman" }
+sprite{ id = "npc/NewlinkNPC/grishnu", description = "grishnu" }
 sprite{ id = "npc/NewlinkNPC/guardcity", description = "cityguard" }
 sprite{ id = "npc/NewlinkNPC/guardgerudo", description = "gerudoguard" }
 sprite{ id = "npc/NewlinkNPC/guardgoron", description = "goronguard" }
@@ -390,6 +394,7 @@ sprite{ id = "npc/NewlinkNPC/hatboy2", description = "brownhatboy" }
 sprite{ id = "npc/NewlinkNPC/hattradesman1", description = "yellowhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman2", description = "redhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman3", description = "greenhattrader" }
+sprite{ id = "npc/NewlinkNPC/horse", description = "horse" }
 sprite{ id = "npc/NewlinkNPC/jabuk_zoraking", description = "Jabuk" }
 sprite{ id = "npc/NewlinkNPC/joril", description = "joril" }
 sprite{ id = "npc/NewlinkNPC/kolispostman", description = "Kolisthepostman" }
@@ -413,6 +418,7 @@ sprite{ id = "npc/NewlinkNPC/manyellow", description = "yellowhairedman" }
 sprite{ id = "npc/NewlinkNPC/manyellow2", description = "yellowhairedman2" }
 sprite{ id = "npc/NewlinkNPC/misterIngo", description = "Ingo" }
 sprite{ id = "npc/NewlinkNPC/musicianelder", description = "eldermusician" }
+sprite{ id = "npc/NewlinkNPC/mutoh", description = "mutoh" }
 sprite{ id = "npc/NewlinkNPC/odhar", description = "odhar" }
 sprite{ id = "npc/NewlinkNPC/palombanker", description = "palom" }
 sprite{ id = "npc/NewlinkNPC/parrotgreen", description = "greenparrot" }
