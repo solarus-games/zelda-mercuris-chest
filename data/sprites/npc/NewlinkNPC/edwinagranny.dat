@@ -1,0 +1,12 @@
+animation{
+  name = "stopped",
+  src_image = "npc/NewlinkNPC/edwinagranny.png",
+  frame_delay = 600,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 40, frame_height = 32, origin_x = 20, origin_y = 27, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 32, origin_x = 20, origin_y = 27, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 32, origin_x = 20, origin_y = 27, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 32, origin_x = 20, origin_y = 27, num_frames = 2 },
+  },
+}

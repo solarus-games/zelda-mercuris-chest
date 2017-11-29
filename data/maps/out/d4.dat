@@ -5512,7 +5512,7 @@ tile{
 tile{
   layer = 1,
   x = 560,
-  y = 1048,
+  y = 1040,
   width = 32,
   height = 16,
   pattern = "71",
@@ -5521,7 +5521,7 @@ tile{
 tile{
   layer = 1,
   x = 560,
-  y = 1104,
+  y = 1112,
   width = 32,
   height = 16,
   pattern = "38",
@@ -23293,6 +23293,60 @@ tile{
   pattern = "grass.flower",
 }
 
+tile{
+  layer = 1,
+  x = 592,
+  y = 1032,
+  width = 32,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 616,
+  y = 1032,
+  width = 8,
+  height = 80,
+  pattern = "grass.barrier.border.2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 1112,
+  width = 32,
+  height = 16,
+  pattern = "grass.barrier.border.1",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1192,
+  width = 16,
+  height = 8,
+  pattern = "grass.weed",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 1312,
+  width = 16,
+  height = 8,
+  pattern = "grass.weed",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "grass.flower",
+}
+
 destructible{
   layer = 1,
   x = 1160,
@@ -24450,15 +24504,6 @@ npc{
 
 npc{
   layer = 1,
-  x = 1856,
-  y = 1141,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/shopkeeper2",
-}
-
-npc{
-  layer = 1,
   x = 792,
   y = 157,
   direction = 3,
@@ -24531,17 +24576,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 1728,
-  y = 1285,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/shopkeeper3",
-}
-
-npc{
-  layer = 1,
-  x = 1776,
-  y = 1285,
+  x = 1848,
+  y = 1149,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/hattradesman3",
@@ -25249,7 +25285,7 @@ npc{
 
 npc{
   layer = 1,
-  x = 536,
+  x = 528,
   y = 141,
   direction = 3,
   subtype = 1,
@@ -25797,7 +25833,7 @@ npc{
 npc{
   layer = 1,
   x = 592,
-  y = 1101,
+  y = 1109,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/horse",
@@ -25834,9 +25870,129 @@ npc{
   layer = 1,
   x = 1400,
   y = 1165,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/static_villager4",
+}
+
+npc{
+  layer = 1,
+  x = 552,
+  y = 1197,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 1776,
+  y = 1285,
   direction = 3,
   subtype = 1,
-  sprite = "npc/static_villager7",
+  sprite = "npc/NewlinkNPC/riju",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1520,
+  y = 1432,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/Kafeihouse",
+}
+
+destination{
+  name = "kafeihouse_out",
+  layer = 1,
+  x = 1528,
+  y = 1461,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 680,
+  y = 1560,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/Bombgame",
+}
+
+destination{
+  name = "bombgame_out",
+  layer = 1,
+  x = 688,
+  y = 1589,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 576,
+  y = 176,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/foodshop",
+}
+
+destination{
+  name = "grogfoodshop_out",
+  layer = 1,
+  x = 584,
+  y = 205,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1008,
+  y = 1096,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/towerlibrary",
+}
+
+destination{
+  name = "towerlibrary_out",
+  layer = 1,
+  x = 1016,
+  y = 1125,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 1232,
+  y = 536,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/rupeegame",
+}
+
+destination{
+  name = "rupeegame_out",
+  layer = 1,
+  x = 1240,
+  y = 565,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 704,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/edwinahouse",
+}
+
+destination{
+  name = "edwinahouse_out",
+  layer = 1,
+  x = 712,
+  y = 493,
+  direction = 3,
 }
 
 tile{
@@ -33051,7 +33207,7 @@ tile{
 tile{
   layer = 2,
   x = 560,
-  y = 1040,
+  y = 1032,
   width = 32,
   height = 8,
   pattern = "70",
@@ -33060,7 +33216,7 @@ tile{
 tile{
   layer = 2,
   x = 560,
-  y = 1096,
+  y = 1104,
   width = 32,
   height = 8,
   pattern = "39",
@@ -34615,6 +34771,33 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/catyellow",
+}
+
+npc{
+  layer = 2,
+  x = 688,
+  y = 1173,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/catbrown",
+}
+
+destination{
+  name = "library2F_out",
+  layer = 2,
+  x = 1016,
+  y = 1045,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 2,
+  x = 1008,
+  y = 1016,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/towerlibrary2F",
+  destination = "library2F_in",
 }
 
 tile{

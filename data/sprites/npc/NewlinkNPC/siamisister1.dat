@@ -1,6 +1,6 @@
 animation{
   name = "stopped",
-  src_image = "npc/NewlinkNPC/siamibrother2.png",
+  src_image = "npc/NewlinkNPC/Siamisister1.png",
   frame_delay = 500,
   frame_to_loop_on = 0,
   directions = {

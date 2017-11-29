@@ -596,7 +596,7 @@ tile{
 
 npc{
   layer = 1,
-  x = 104,
+  x = 120,
   y = 93,
   direction = 3,
   subtype = 1,
@@ -605,7 +605,7 @@ npc{
 
 npc{
   layer = 1,
-  x = 208,
+  x = 200,
   y = 93,
   direction = 3,
   subtype = 1,
@@ -628,6 +628,33 @@ teletransporter{
   height = 16,
   destination_map = "out/d4",
   destination = "potionshop_out",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 216,
+  y = 88,
+  treasure_name = "blue_potion",
+  price = 60,
+  dialog = "",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 144,
+  y = 88,
+  treasure_name = "green_potion",
+  price = 10,
+  dialog = "",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 72,
+  y = 88,
+  treasure_name = "red_potion",
+  price = 20,
+  dialog = "",
 }
 
 tile{
