@@ -20,15 +20,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 224,
-  y = 16,
-  width = 24,
-  height = 16,
-  pattern = "cabinet.4b",
-}
-
-tile{
-  layer = 1,
   x = 248,
   y = 16,
   width = 16,
@@ -272,15 +263,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 64,
-  y = 104,
-  width = 192,
-  height = 16,
-  pattern = "counter.8",
-}
-
-tile{
-  layer = 1,
   x = 264,
   y = 104,
   width = 8,
@@ -335,15 +317,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 64,
-  y = 96,
-  width = 192,
-  height = 8,
-  pattern = "counter.2",
-}
-
-tile{
-  layer = 1,
   x = 56,
   y = 96,
   width = 8,
@@ -380,29 +353,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
-  y = 64,
-  width = 8,
-  height = 32,
-  pattern = "tablecloth.6",
-}
-
-tile{
-  layer = 1,
   x = 48,
   y = 64,
   width = 8,
   height = 32,
   pattern = "tablecloth.4",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 96,
-  width = 192,
-  height = 8,
-  pattern = "tablecloth.2",
 }
 
 tile{
@@ -439,15 +394,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "tablecloth.4",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 96,
-  width = 8,
-  height = 8,
-  pattern = "tablecloth.5",
 }
 
 tile{
@@ -488,15 +434,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 56,
-  y = 112,
-  width = 208,
-  height = 8,
-  pattern = "tablecloth.8",
-}
-
-tile{
-  layer = 1,
   x = 264,
   y = 104,
   width = 8,
@@ -511,15 +448,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "tablecloth.4",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 104,
-  width = 208,
-  height = 8,
-  pattern = "tablecloth.5",
 }
 
 tile{
@@ -747,22 +675,724 @@ tile{
   pattern = "door.2",
 }
 
-npc{
+tile{
   layer = 1,
-  x = 96,
-  y = 93,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/siamibrother1",
+  x = 64,
+  y = 104,
+  width = 56,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "counter.9",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "counter.6",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 112,
+  width = 64,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 64,
+  width = 8,
+  height = 32,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 104,
+  width = 64,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 72,
+  width = 8,
+  height = 24,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 96,
+  width = 48,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.1",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 64,
+  width = 56,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 72,
+  width = 56,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 80,
+  width = 48,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 80,
+  width = 48,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "counter.7",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 104,
+  width = 56,
+  height = 16,
+  pattern = "counter.8",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 96,
+  width = 48,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.4",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.2",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.3",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 72,
+  width = 8,
+  height = 24,
+  pattern = "tablecloth.6",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 104,
+  width = 56,
+  height = 8,
+  pattern = "tablecloth.5",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.7",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "tablecloth.8",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "tablecloth.9",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 120,
+  width = 80,
+  height = 16,
+  pattern = "floor.2-1",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 136,
+  width = 64,
+  height = 16,
+  pattern = "floor.2-1",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 120,
+  width = 80,
+  height = 16,
+  pattern = "floor.2-1",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 136,
+  width = 64,
+  height = 16,
+  pattern = "floor.2-1",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 96,
+  width = 8,
+  height = 48,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 152,
+  width = 80,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 96,
+  width = 8,
+  height = 40,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 152,
+  width = 72,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "floor_border.1",
 }
 
 npc{
   layer = 1,
-  x = 208,
+  x = 88,
   y = 93,
   direction = 3,
   subtype = 1,
-  sprite = "npc/NewlinkNPC/siamibrother2",
+  sprite = "npc/NewlinkNPC/siamisister1",
+}
+
+npc{
+  layer = 1,
+  x = 232,
+  y = 93,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/siamisister2",
 }
 
 destination{
@@ -781,6 +1411,60 @@ teletransporter{
   height = 16,
   destination_map = "out/d4",
   destination = "siamishop_out",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 240,
+  y = 88,
+  treasure_name = "world_map",
+  price = 50,
+  dialog = "",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 48,
+  y = 88,
+  treasure_name = "magic_bar",
+  price = 60,
+  dialog = "",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 120,
+  y = 64,
+  treasure_name = "piece_of_heart",
+  price = 400,
+  dialog = "",
+}
+
+npc{
+  layer = 1,
+  x = 96,
+  y = 181,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/thief",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 168,
+  y = 64,
+  treasure_name = "arrow",
+  price = 10,
+  dialog = "",
+}
+
+shop_treasure{
+  layer = 1,
+  x = 192,
+  y = 88,
+  treasure_name = "quiver",
+  price = 200,
+  dialog = "",
 }
 
 tile{
@@ -853,5 +1537,24 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.2-1",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 16,
+  width = 24,
+  height = 16,
+  pattern = "cabinet.4b",
+}
+
+shop_treasure{
+  layer = 2,
+  x = 96,
+  y = 88,
+  treasure_name = "bombs_counter",
+  treasure_variant = 3,
+  price = 10,
+  dialog = "",
 }
 
