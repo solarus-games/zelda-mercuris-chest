@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/green",
+  music = "same",
 }
 
 tile{
@@ -643,7 +644,7 @@ destination{
   name = "destination",
   layer = 1,
   x = 160,
-  y = 197,
+  y = 205,
   direction = 1,
 }
 

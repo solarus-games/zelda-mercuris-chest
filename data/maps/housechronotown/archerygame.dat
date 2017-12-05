@@ -10,6 +10,15 @@ properties{
 }
 
 tile{
+  layer = 0,
+  x = 24,
+  y = 200,
+  width = 32,
+  height = 24,
+  pattern = "wall.2-1",
+}
+
+tile{
   layer = 1,
   x = 8,
   y = 16,
@@ -65,9 +74,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 32,
+  x = 56,
   y = 200,
-  width = 128,
+  width = 96,
   height = 24,
   pattern = "wall.2-1",
 }
@@ -560,20 +569,20 @@ tile{
 
 tile{
   layer = 1,
-  x = 168,
+  x = 184,
   y = 200,
-  width = 128,
+  width = 112,
   height = 24,
   pattern = "wall.2-1",
 }
 
 tile{
   layer = 1,
-  x = 168,
+  x = 224,
   y = 200,
-  width = 8,
-  height = 16,
-  pattern = "door.2.support.2-1",
+  width = 32,
+  height = 24,
+  pattern = "window.2-1",
 }
 
 npc{
@@ -589,27 +598,18 @@ destination{
   name = "destination",
   layer = 1,
   x = 160,
-  y = 197,
+  y = 205,
   direction = 1,
 }
 
 teletransporter{
   layer = 1,
   x = 152,
-  y = 200,
+  y = 208,
   width = 16,
   height = 16,
   destination_map = "out/d4",
   destination = "merline_out",
-}
-
-tile{
-  layer = 2,
-  x = 144,
-  y = 216,
-  width = 32,
-  height = 8,
-  pattern = "door_top.2-1",
 }
 
 tile{
@@ -659,10 +659,28 @@ tile{
 
 tile{
   layer = 2,
-  x = 224,
+  x = 168,
   y = 200,
-  width = 32,
+  width = 16,
   height = 24,
-  pattern = "window.2-1",
+  pattern = "wall.2-1",
+}
+
+tile{
+  layer = 2,
+  x = 168,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "door.2.support.2-1",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 216,
+  width = 32,
+  height = 8,
+  pattern = "door_top.2-1",
 }
 

@@ -688,14 +688,14 @@ destination{
   name = "destination",
   layer = 1,
   x = 160,
-  y = 197,
+  y = 205,
   direction = 1,
 }
 
 teletransporter{
   layer = 1,
   x = 152,
-  y = 200,
+  y = 208,
   width = 16,
   height = 16,
   destination_map = "out/d4",
