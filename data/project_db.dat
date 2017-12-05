@@ -3,15 +3,19 @@ map{ id = "forest_store", description = "Forest store" }
 map{ id = "housechronotown/Bombgame", description = "Wollybombgame" }
 map{ id = "housechronotown/Ikanamaskvendor", description = "Randolhouse" }
 map{ id = "housechronotown/Kafeihouse", description = "Kafeihouse" }
+map{ id = "housechronotown/Leekahhouse", description = "Leekahhouse" }
 map{ id = "housechronotown/Siamibrothershop", description = "blackmarketsiami" }
 map{ id = "housechronotown/archerygame", description = "Merlinearcherygame" }
+map{ id = "housechronotown/aromahouse", description = "aromahouse" }
 map{ id = "housechronotown/edwinahouse", description = "edwinahouse" }
 map{ id = "housechronotown/foodshop", description = "Grogfoodshop" }
+map{ id = "housechronotown/joanhahouse", description = "joanhahouse" }
 map{ id = "housechronotown/potionshop", description = "Potionshop" }
 map{ id = "housechronotown/rupeegame", description = "rupeegame" }
 map{ id = "housechronotown/smithshop", description = "blacksmithshop" }
 map{ id = "housechronotown/towerlibrary", description = "towerlibrary" }
 map{ id = "housechronotown/towerlibrary2F", description = "towerlibrary2F" }
+map{ id = "housechronotown/towerlibrary3F", description = "towerlibrary3F" }
 map{ id = "inside_store", description = "Inside Store" }
 map{ id = "lighthouse/1f", description = "Lighthouse 1F" }
 map{ id = "lighthouse/2f", description = "Lighthouse 2F" }
@@ -362,6 +366,7 @@ sprite{ id = "npc/NewlinkNPC/Tannek(secondmeeting)", description = "Tannek(secon
 sprite{ id = "npc/NewlinkNPC/Timmythief", description = "Timmy" }
 sprite{ id = "npc/NewlinkNPC/Vulkosblacksmith", description = "Vulkos" }
 sprite{ id = "npc/NewlinkNPC/anju", description = "anju" }
+sprite{ id = "npc/NewlinkNPC/aromagranny", description = "aromagranny" }
 sprite{ id = "npc/NewlinkNPC/bigdogtavern", description = "taverdogguardian" }
 sprite{ id = "npc/NewlinkNPC/birds", description = "birds" }
 sprite{ id = "npc/NewlinkNPC/bluetradesman", description = "bluetradesman" }
@@ -373,9 +378,11 @@ sprite{ id = "npc/NewlinkNPC/chikenwhite", description = "whitechiken" }
 sprite{ id = "npc/NewlinkNPC/childblue", description = "bluechild" }
 sprite{ id = "npc/NewlinkNPC/childred", description = "redchild" }
 sprite{ id = "npc/NewlinkNPC/childyellow", description = "yellowchild" }
+sprite{ id = "npc/NewlinkNPC/columbo", description = "columbo" }
 sprite{ id = "npc/NewlinkNPC/cow", description = "cow" }
 sprite{ id = "npc/NewlinkNPC/daruka_goronking", description = "daruka" }
 sprite{ id = "npc/NewlinkNPC/deku_king", description = "kingdeku" }
+sprite{ id = "npc/NewlinkNPC/doctorBulbo", description = "Bulbo" }
 sprite{ id = "npc/NewlinkNPC/doggybrown", description = "dogbrown" }
 sprite{ id = "npc/NewlinkNPC/dogtrader", description = "yellowdogtrader" }
 sprite{ id = "npc/NewlinkNPC/dogtrader2", description = "dogtrader" }
@@ -405,8 +412,10 @@ sprite{ id = "npc/NewlinkNPC/hatboy2", description = "brownhatboy" }
 sprite{ id = "npc/NewlinkNPC/hattradesman1", description = "yellowhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman2", description = "redhattrader" }
 sprite{ id = "npc/NewlinkNPC/hattradesman3", description = "greenhattrader" }
+sprite{ id = "npc/NewlinkNPC/hemus", description = "Hemus" }
 sprite{ id = "npc/NewlinkNPC/horse", description = "horse" }
 sprite{ id = "npc/NewlinkNPC/jabuk_zoraking", description = "Jabuk" }
+sprite{ id = "npc/NewlinkNPC/joanha", description = "joanha" }
 sprite{ id = "npc/NewlinkNPC/joril", description = "joril" }
 sprite{ id = "npc/NewlinkNPC/kafei", description = "kafei" }
 sprite{ id = "npc/NewlinkNPC/kolispostman", description = "Kolisthepostman" }
@@ -414,6 +423,7 @@ sprite{ id = "npc/NewlinkNPC/kotake", description = "kotake" }
 sprite{ id = "npc/NewlinkNPC/koume", description = "koume" }
 sprite{ id = "npc/NewlinkNPC/krokro", description = "krokro" }
 sprite{ id = "npc/NewlinkNPC/kromagno", description = "kromagno" }
+sprite{ id = "npc/NewlinkNPC/leekah", description = "leekah" }
 sprite{ id = "npc/NewlinkNPC/malonia", description = "malonia" }
 sprite{ id = "npc/NewlinkNPC/manblue", description = "bluehairedman" }
 sprite{ id = "npc/NewlinkNPC/manblue2", description = "bluehairedman2" }
@@ -428,13 +438,16 @@ sprite{ id = "npc/NewlinkNPC/manred2", description = "redhairedman2" }
 sprite{ id = "npc/NewlinkNPC/manred3", description = "redhairedman3" }
 sprite{ id = "npc/NewlinkNPC/manyellow", description = "yellowhairedman" }
 sprite{ id = "npc/NewlinkNPC/manyellow2", description = "yellowhairedman2" }
+sprite{ id = "npc/NewlinkNPC/medea", description = "medea" }
 sprite{ id = "npc/NewlinkNPC/misterIngo", description = "Ingo" }
 sprite{ id = "npc/NewlinkNPC/musicianelder", description = "eldermusician" }
 sprite{ id = "npc/NewlinkNPC/mutoh", description = "mutoh" }
+sprite{ id = "npc/NewlinkNPC/nat", description = "nat" }
 sprite{ id = "npc/NewlinkNPC/odhar", description = "odhar" }
 sprite{ id = "npc/NewlinkNPC/palombanker", description = "palom" }
 sprite{ id = "npc/NewlinkNPC/parrotgreen", description = "greenparrot" }
 sprite{ id = "npc/NewlinkNPC/parrotred", description = "redparrot" }
+sprite{ id = "npc/NewlinkNPC/pigeon", description = "pigeon" }
 sprite{ id = "npc/NewlinkNPC/pigpink", description = "pinkpig" }
 sprite{ id = "npc/NewlinkNPC/pirateblue", description = "bluepirate" }
 sprite{ id = "npc/NewlinkNPC/pirategreen", description = "greenpirate" }
@@ -444,6 +457,7 @@ sprite{ id = "npc/NewlinkNPC/ramu", description = "ramu" }
 sprite{ id = "npc/NewlinkNPC/randol", description = "randol" }
 sprite{ id = "npc/NewlinkNPC/redtradesman", description = "redtradesman" }
 sprite{ id = "npc/NewlinkNPC/riju", description = "riju" }
+sprite{ id = "npc/NewlinkNPC/ronn", description = "Ronn" }
 sprite{ id = "npc/NewlinkNPC/shikashi", description = "shikashi" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper1", description = "blueshopkeeper" }
 sprite{ id = "npc/NewlinkNPC/shopkeeper2", description = "yellowshopkeeper" }
@@ -829,22 +843,4 @@ font{ id = "minecraftia_mono", description = "minecraftia_mono" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
-
-shader{ id = "6xbrz", description = "6xBRZ" }
-shader{ id = "CRT-interlaced", description = "CRT-interlaced" }
-shader{ id = "curvature", description = "curvature" }
-shader{ id = "default", description = "default" }
-shader{ id = "edge-detection", description = "edge-detection" }
-shader{ id = "grayscale", description = "grayscale" }
-shader{ id = "heavybloom", description = "heavybloom" }
-shader{ id = "hq2x", description = "hq2x" }
-shader{ id = "hq4x", description = "hq4x" }
-shader{ id = "mode_7", description = "Mode 7" }
-shader{ id = "mode_7_curvature", description = "Mode 7 with curvature" }
-shader{ id = "scale2x", description = "Scale2x" }
-shader{ id = "sepia", description = "sepia" }
-shader{ id = "toon", description = "toon" }
-shader{ id = "waterpaint", description = "waterpaint" }
-shader{ id = "xBR-hybrid-v5", description = "xBR-hybrid-v5" }
-shader{ id = "xBR-v3.8c", description = "xBR-v3.8c" }
 

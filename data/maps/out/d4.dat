@@ -23052,7 +23052,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1024,
+  x = 1008,
   y = 200,
   width = 16,
   height = 16,
@@ -23345,6 +23345,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "grass.flower",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 200,
+  width = 32,
+  height = 16,
+  pattern = "grass.barrier",
 }
 
 destructible{
@@ -24765,7 +24774,7 @@ npc{
 
 npc{
   layer = 1,
-  x = 1016,
+  x = 1032,
   y = 213,
   direction = 3,
   subtype = 1,
@@ -25294,8 +25303,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 1208,
-  y = 181,
+  x = 1008,
+  y = 245,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/malonia",
@@ -25447,8 +25456,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 1264,
-  y = 141,
+  x = 1232,
+  y = 189,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/bigdogtavern",
@@ -25993,6 +26002,165 @@ destination{
   x = 712,
   y = 493,
   direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 784,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/joanhahouse",
+}
+
+destination{
+  name = "joanhahouse_out",
+  layer = 1,
+  x = 792,
+  y = 461,
+  direction = 3,
+}
+
+npc{
+  layer = 1,
+  x = 984,
+  y = 261,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/medea",
+}
+
+npc{
+  layer = 1,
+  x = 1136,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/doctorBulbo",
+}
+
+teletransporter{
+  layer = 1,
+  x = 128,
+  y = 1744,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/aromahouse",
+}
+
+destination{
+  name = "aromahouse_out",
+  layer = 1,
+  x = 136,
+  y = 1773,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 128,
+  y = 1512,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/Leekahhouse",
+}
+
+destination{
+  name = "leekahhouse_out",
+  layer = 1,
+  x = 136,
+  y = 1541,
+  direction = 3,
+}
+
+npc{
+  layer = 1,
+  x = 1016,
+  y = 1509,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/ronn",
+}
+
+npc{
+  layer = 1,
+  x = 1072,
+  y = 1501,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 1072,
+  y = 1533,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 1072,
+  y = 1565,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 1072,
+  y = 1597,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 960,
+  y = 1501,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 960,
+  y = 1533,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 960,
+  y = 1565,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 960,
+  y = 1597,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/guardcity",
+}
+
+npc{
+  layer = 1,
+  x = 432,
+  y = 709,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/nat",
 }
 
 tile{
@@ -34541,8 +34709,8 @@ npc{
 
 npc{
   layer = 2,
-  x = 1168,
-  y = 109,
+  x = 1256,
+  y = 93,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/birds",
