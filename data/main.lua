@@ -17,10 +17,10 @@ local function start_mode_7()
   --  local texture = sol.surface.create("work/out_scale_1_2.png")
   local texture = sol.surface.create("work/som.png")
   assert(texture ~= nil)
-  --  local mode_7_shader = sol.shader.create("6xbrz")
-  local mode_7_shader = sol.shader.create("mode_7")
-  mode_7_shader:set_uniform("mode_7_texture", texture)
-  sol.video.set_shader(mode_7_shader)
+  local shader = sol.shader.create("6xbrz")
+  --local shader = sol.shader.create("mode_7")
+  shader:set_uniform("mode_7_texture", texture)
+  sol.video.set_shader(shader)
 end
 
 -- Event called when the program starts.

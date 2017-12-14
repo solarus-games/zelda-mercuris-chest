@@ -5,12 +5,11 @@ shader{
 
     -- Source of the fragment shader.
     fragment_source = [[
-        #define TEXEL(x,y) texture2D(x,y)
         
-        uniform sampler2D solarus_sampler;
-        uniform vec2 solarus_input_size;
-        vec2 solarus_output_size = solarus_input_size;
-        vec2 solarus_texture_size = solarus_input_size;
+        uniform sampler2D sol_texture;
+        uniform vec2 sol_input_size;
+        uniform vec2 sol_output_size;
+        uniform vec2 sol_texture_size;
 
         const float mx = 0.325;    // start smoothing factor
         const float k = -0.250;    // smoothing decrease factor
@@ -22,23 +21,23 @@ shader{
 
         void main()
         {
-            float x = 0.5 / solarus_texture_size.x;
-            float y = 0.5 / solarus_texture_size.y;
+            float x = 0.5 / sol_texture_size.x;
+            float y = 0.5 / sol_texture_size.y;
 
             vec2 dg1 = vec2( x,y);
             vec2 dg2 = vec2(-x,y);
             vec2 sd11 = dg1*0.5;
             vec2 sd21 = dg2*0.5;
     
-            vec3 c  = TEXEL(solarus_sampler, texcoord).xyz;
-            vec3 i1 = TEXEL(solarus_sampler, texcoord - sd11).xyz; 
-            vec3 i2 = TEXEL(solarus_sampler, texcoord - sd21).xyz; 
-            vec3 i3 = TEXEL(solarus_sampler, texcoord + sd11).xyz; 
-            vec3 i4 = TEXEL(solarus_sampler, texcoord + sd21).xyz; 
-            vec3 o1 = TEXEL(solarus_sampler, texcoord - dg1).xyz; 
-            vec3 o3 = TEXEL(solarus_sampler, texcoord + dg1).xyz; 
-            vec3 o2 = TEXEL(solarus_sampler, texcoord - dg2).xyz;
-            vec3 o4 = TEXEL(solarus_sampler, texcoord + dg2).xyz; 
+            vec3 c  = texture2D(sol_texture, texcoord).xyz;
+            vec3 i1 = texture2D(sol_texture, texcoord - sd11).xyz;
+            vec3 i2 = texture2D(sol_texture, texcoord - sd21).xyz;
+            vec3 i3 = texture2D(sol_texture, texcoord + sd11).xyz;
+            vec3 i4 = texture2D(sol_texture, texcoord + sd21).xyz;
+            vec3 o1 = texture2D(sol_texture, texcoord - dg1).xyz;
+            vec3 o3 = texture2D(sol_texture, texcoord + dg1).xyz;
+            vec3 o2 = texture2D(sol_texture, texcoord - dg2).xyz;
+            vec3 o4 = texture2D(sol_texture, texcoord + dg2).xyz;
 
             vec3 dt = vec3(1.0);
 

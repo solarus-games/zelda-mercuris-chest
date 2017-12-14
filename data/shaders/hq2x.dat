@@ -5,7 +5,6 @@ shader{
 
     -- Source of the fragment shader.
     fragment_source = [[
-        #define TEXEL(x,y) texture2D(x,y)
 
         uniform sampler2D sol_texture;
         uniform vec2 sol_input_size;
@@ -29,17 +28,17 @@ shader{
             vec2 dx = vec2(x, 0.0);
             vec2 dy = vec2(0.0, y);
     
-            vec4 texcolor = TEXEL(sol_texture, texture_coords);
+            vec4 texcolor = texture2D(sol_texture, texture_coords);
 
-            vec3 c00 = TEXEL(sol_texture, texture_coords - dg1).xyz; 
-            vec3 c10 = TEXEL(sol_texture, texture_coords - dy).xyz;
-            vec3 c20 = TEXEL(sol_texture, texture_coords - dg2).xyz;
-            vec3 c01 = TEXEL(sol_texture, texture_coords - dx).xyz;
+            vec3 c00 = texture2D(sol_texture, texture_coords - dg1).xyz;
+            vec3 c10 = texture2D(sol_texture, texture_coords - dy).xyz;
+            vec3 c20 = texture2D(sol_texture, texture_coords - dg2).xyz;
+            vec3 c01 = texture2D(sol_texture, texture_coords - dx).xyz;
             vec3 c11 = texcolor.xyz;
-            vec3 c21 = TEXEL(sol_texture, texture_coords + dx).xyz;
-            vec3 c02 = TEXEL(sol_texture, texture_coords + dg2).xyz;
-            vec3 c12 = TEXEL(sol_texture, texture_coords + dy).xyz;
-            vec3 c22 = TEXEL(sol_texture, texture_coords + dg1).xyz;
+            vec3 c21 = texture2D(sol_texture, texture_coords + dx).xyz;
+            vec3 c02 = texture2D(sol_texture, texture_coords + dg2).xyz;
+            vec3 c12 = texture2D(sol_texture, texture_coords + dy).xyz;
+            vec3 c22 = texture2D(sol_texture, texture_coords + dg1).xyz;
             vec3 dt = vec3(1.0, 1.0, 1.0);
 
             float md1 = dot(abs(c00 - c22), dt);
