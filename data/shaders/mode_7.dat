@@ -20,8 +20,6 @@ shader{
 
     #version 120
 
-    #define TEXEL(x,y) texture2D(x,y)
-
     uniform sampler2D sol_texture;
     uniform sampler2D mode_7_texture;
     uniform vec2 sol_input_size;
@@ -69,7 +67,7 @@ shader{
     //  uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
 
       // Read background texture
-      vec3 col = TEXEL(mode_7_texture, uvm7).xyz;
+      vec3 col = texture2D(mode_7_texture, uvm7).xyz;
 
       // Darkness based on the horizon
 //      col *= -(uv.y - h - 0.50);
