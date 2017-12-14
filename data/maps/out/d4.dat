@@ -24657,15 +24657,6 @@ npc{
 
 npc{
   layer = 1,
-  x = 384,
-  y = 1197,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/dogtrader3",
-}
-
-npc{
-  layer = 1,
   x = 328,
   y = 1005,
   direction = 3,
@@ -25045,7 +25036,7 @@ npc{
 npc{
   layer = 1,
   x = 760,
-  y = 829,
+  y = 877,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/mangreen2",
@@ -25162,7 +25153,7 @@ npc{
 npc{
   layer = 1,
   x = 1416,
-  y = 189,
+  y = 253,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/manyellow2",
@@ -25528,8 +25519,8 @@ npc{
 
 npc{
   layer = 1,
-  x = 1328,
-  y = 1749,
+  x = 1368,
+  y = 1773,
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/tanya",
@@ -25828,24 +25819,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/anju",
-}
-
-npc{
-  layer = 1,
-  x = 592,
-  y = 1077,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/epona",
-}
-
-npc{
-  layer = 1,
-  x = 592,
-  y = 1109,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/NewlinkNPC/horse",
 }
 
 npc{
@@ -26161,6 +26134,95 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/NewlinkNPC/nat",
+}
+
+npc{
+  layer = 1,
+  x = 584,
+  y = 1069,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/epona",
+}
+
+npc{
+  layer = 1,
+  x = 800,
+  y = 741,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/oliff",
+}
+
+teletransporter{
+  layer = 1,
+  x = 1664,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "housechronotown/gotterhouse",
+}
+
+destination{
+  name = "gotterhouse_out",
+  layer = 1,
+  x = 1672,
+  y = 173,
+  direction = 3,
+}
+
+npc{
+  layer = 1,
+  x = 1168,
+  y = 1677,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/fugo",
+}
+
+npc{
+  layer = 1,
+  x = 864,
+  y = 1765,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 1208,
+  y = 1733,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 776,
+  y = 1805,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 1168,
+  y = 1765,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/birds",
+}
+
+npc{
+  layer = 1,
+  x = 584,
+  y = 1093,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/NewlinkNPC/horse",
 }
 
 tile{

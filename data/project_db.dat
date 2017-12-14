@@ -9,6 +9,7 @@ map{ id = "housechronotown/archerygame", description = "Merlinearcherygame" }
 map{ id = "housechronotown/aromahouse", description = "aromahouse" }
 map{ id = "housechronotown/edwinahouse", description = "edwinahouse" }
 map{ id = "housechronotown/foodshop", description = "Grogfoodshop" }
+map{ id = "housechronotown/gotterhouse", description = "gotterhouse" }
 map{ id = "housechronotown/joanhahouse", description = "joanhahouse" }
 map{ id = "housechronotown/potionshop", description = "Potionshop" }
 map{ id = "housechronotown/rupeegame", description = "rupeegame" }
@@ -394,11 +395,13 @@ sprite{ id = "npc/NewlinkNPC/dragoonorange", description = "orangedragoon" }
 sprite{ id = "npc/NewlinkNPC/edwinagranny", description = "edwinagranny" }
 sprite{ id = "npc/NewlinkNPC/epona", description = "epona" }
 sprite{ id = "npc/NewlinkNPC/foodshopkeeper", description = "foodshopkeeper" }
+sprite{ id = "npc/NewlinkNPC/fugo", description = "fugo" }
 sprite{ id = "npc/NewlinkNPC/gerudo", description = "gerudo" }
 sprite{ id = "npc/NewlinkNPC/godhar", description = "godhar" }
 sprite{ id = "npc/NewlinkNPC/gormibrothers", description = "blueGormi" }
 sprite{ id = "npc/NewlinkNPC/gormiredbrother", description = "redGormi" }
 sprite{ id = "npc/NewlinkNPC/gorons", description = "Gorons" }
+sprite{ id = "npc/NewlinkNPC/gotter", description = "Gotter" }
 sprite{ id = "npc/NewlinkNPC/greentradesman", description = "greentradesman" }
 sprite{ id = "npc/NewlinkNPC/grishnu", description = "grishnu" }
 sprite{ id = "npc/NewlinkNPC/grog", description = "grog" }
@@ -440,10 +443,13 @@ sprite{ id = "npc/NewlinkNPC/manyellow", description = "yellowhairedman" }
 sprite{ id = "npc/NewlinkNPC/manyellow2", description = "yellowhairedman2" }
 sprite{ id = "npc/NewlinkNPC/medea", description = "medea" }
 sprite{ id = "npc/NewlinkNPC/misterIngo", description = "Ingo" }
+sprite{ id = "npc/NewlinkNPC/misterbarten", description = "Barten" }
 sprite{ id = "npc/NewlinkNPC/musicianelder", description = "eldermusician" }
 sprite{ id = "npc/NewlinkNPC/mutoh", description = "mutoh" }
 sprite{ id = "npc/NewlinkNPC/nat", description = "nat" }
 sprite{ id = "npc/NewlinkNPC/odhar", description = "odhar" }
+sprite{ id = "npc/NewlinkNPC/oliff", description = "Oliff" }
+sprite{ id = "npc/NewlinkNPC/painting", description = "painting" }
 sprite{ id = "npc/NewlinkNPC/palombanker", description = "palom" }
 sprite{ id = "npc/NewlinkNPC/parrotgreen", description = "greenparrot" }
 sprite{ id = "npc/NewlinkNPC/parrotred", description = "redparrot" }
