@@ -10,6 +10,18 @@ local language_menu = require("scripts/menus/language")
 local title_screen = require("scripts/menus/title")
 local savegame_menu = require("scripts/menus/savegames")
 
+-- Experimental mode 7 testing code.
+local function start_mode_7()
+
+  --  local texture = sol.surface.create("work/out_scale_1_2.png")
+  local texture = sol.surface.create("work/som.png")
+  assert(texture ~= nil)
+  --  local mode_7_shader = sol.shader.create("6xbrz")
+  local mode_7_shader = sol.shader.create("mode_7")
+  mode_7_shader:set_uniform("mode_7_texture", texture)
+  sol.video.set_shader(mode_7_shader)
+end
+
 -- Event called when the program starts.
 function sol.main:on_started()
 
@@ -49,6 +61,8 @@ function sol.main:on_started()
       sol.menu.start(sol.main, savegame_menu, false)
     end
   end
+
+--  start_mode_7()
 end
 
 -- Event called when the program stops.

@@ -86,11 +86,11 @@ COMPAT_VARYING vec4 t7;
 #define MVPMatrix gl_ModelViewProjectionMatrix
 uniform COMPAT_PRECISION int FrameDirection;
 uniform COMPAT_PRECISION int FrameCount;
-uniform COMPAT_PRECISION vec2 solarus_input_size;
-uniform COMPAT_PRECISION vec2 solarus_output_size;
-#define TextureSize solarus_input_size
-#define InputSize solarus_input_size
-#define OutputSize solarus_output_size
+uniform COMPAT_PRECISION vec2 sol_input_size;
+uniform COMPAT_PRECISION vec2 sol_output_size;
+#define TextureSize sol_input_size
+#define InputSize sol_input_size
+#define OutputSize sol_output_size
 
 // vertex compatibility #defines
 #define vTexCoord TEX0.xy
@@ -196,13 +196,13 @@ precision mediump float;
 
 uniform COMPAT_PRECISION int FrameDirection;
 uniform COMPAT_PRECISION int FrameCount;
-uniform COMPAT_PRECISION vec2 solarus_input_size;
-uniform COMPAT_PRECISION vec2 solarus_output_size;
-#define TextureSize solarus_input_size
-#define InputSize solarus_input_size
-#define OutputSize solarus_output_size
-uniform sampler2D solarus_sampler;
-#define Texture solarus_sampler
+uniform COMPAT_PRECISION vec2 sol_input_size;
+uniform COMPAT_PRECISION vec2 sol_output_size;
+#define TextureSize sol_input_size
+#define InputSize sol_input_size
+#define OutputSize sol_output_size
+uniform sampler2D sol_texture;
+#define Texture sol_texture
 COMPAT_VARYING vec4 TEX0;
 COMPAT_VARYING vec4 t1;
 COMPAT_VARYING vec4 t2;

@@ -22,13 +22,14 @@ shader{
 
     #define TEXEL(x,y) texture2D(x,y)
 
-    uniform sampler2D solarus_sampler;
-    uniform vec2 solarus_input_size;
-    uniform vec2 solarus_output_size;
-    vec2 solarus_texture_size = solarus_input_size;
-    uniform int solarus_time;
+    uniform sampler2D sol_texture;
+    uniform sampler2D mode_7_texture;
+    uniform vec2 sol_input_size;
+    uniform vec2 sol_output_size;
+    uniform vec2 sol_texture_size;
+    uniform int sol_time;
 
-    vec2 resolution = solarus_output_size;
+    vec2 resolution = sol_output_size;
 
     vec4 mainImage(vec2 fragCoord) {
 
@@ -60,7 +61,7 @@ shader{
 
       // Translation
 //      float dy = 0.0;
-      float dy = -(solarus_time / 1000.0) * 0.03;
+      float dy = -(sol_time / 1000.0) * 0.03;
       vec2 translation = vec2(0.0, dy);
       uvm7 += translation;
 
@@ -68,7 +69,7 @@ shader{
     //  uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
 
       // Read background texture
-      vec3 col = TEXEL(solarus_sampler, uvm7).xyz;
+      vec3 col = TEXEL(mode_7_texture, uvm7).xyz;
 
       // Darkness based on the horizon
 //      col *= -(uv.y - h - 0.50);
