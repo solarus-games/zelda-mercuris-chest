@@ -9,11 +9,11 @@ shader{
         #define power 0.35 // 0.50 is good
 
         #define TEXEL(x,y) texture2D(x,y)
-        
-        uniform sampler2D solarus_sampler;
-        uniform vec2 solarus_input_size;
-        vec2 solarus_output_size = solarus_input_size;
-        vec2 solarus_texture_size = solarus_input_size;
+
+        uniform sampler2D sol_texture;
+        uniform vec2 sol_input_size;
+        uniform vec2 sol_output_size;
+        uniform vec2 sol_texture_size;
 
         void main()
         {
@@ -23,20 +23,20 @@ shader{
             int j;
             int i;
 
-            vec2 glaresize = vec2(glarebasesize) / solarus_texture_size;
+            vec2 glaresize = vec2(glarebasesize) / sol_texture_size;
 
             for (i = -2; i < 5; i++)
             {
                 for (j = -1; j < 1; j++)
                 {
-                    sum += TEXEL(solarus_sampler, texcoord + vec2(-i, j)*glaresize) * power;
-                    bum += TEXEL(solarus_sampler, texcoord + vec2(j, i)*glaresize) * power;            
+                    sum += TEXEL(sol_texture, texcoord + vec2(-i, j)*glaresize) * power;
+                    bum += TEXEL(sol_texture, texcoord + vec2(j, i)*glaresize) * power;            
                 }
             }
 
-            if (TEXEL(solarus_sampler, texcoord).r < 2.0)
+            if (TEXEL(sol_texture, texcoord).r < 2.0)
             {
-                gl_FragColor = sum*sum*sum*0.001+bum*bum*bum*0.0080 + texture2D(solarus_sampler, texcoord);
+                gl_FragColor = sum*sum*sum*0.001+bum*bum*bum*0.0080 + texture2D(sol_texture, texcoord);
             }
         }
     ]]

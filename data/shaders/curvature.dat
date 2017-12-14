@@ -13,18 +13,18 @@ shader{
   ]],
 
   fragment_source = [[
-    uniform sampler2D solarus_sampler;
-    uniform vec2 solarus_input_size;
-    vec2 solarus_texture_size = solarus_input_size;
+    uniform sampler2D sol_texture;
+    uniform vec2 sol_input_size;
+    uniform vec2 sol_texture_size;
 
     // Tweak this parameter for more / less distortion
     #define distortion 1.2
 
     vec2 radialDistortion(vec2 coord) {
-      coord *= solarus_texture_size / solarus_input_size;
+      coord *= sol_texture_size / sol_input_size;
       vec2 cc = coord - vec2(0.5);
       float dist = dot(cc, cc) * distortion;
-      return (coord + cc * (1.0 + dist) * dist) * solarus_input_size / solarus_texture_size;
+      return (coord + cc * (1.0 + dist) * dist) * sol_input_size / sol_texture_size;
     }
 
     float corner(vec2 coord)
@@ -37,7 +37,7 @@ shader{
 
     void main(void) {
       vec2 xy = radialDistortion(gl_TexCoord[0].xy);
-      vec4 sample = texture2D(solarus_sampler, xy);
+      vec4 sample = texture2D(sol_texture, xy);
       sample *= vec4(vec3(corner(xy)), 1.0);
       gl_FragColor = sample;
     }

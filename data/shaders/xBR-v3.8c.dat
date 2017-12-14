@@ -50,7 +50,7 @@ shader{
             vec4 TexCoord;
             COMPAT_VARYING vec4 COL0;
             COMPAT_VARYING vec4 TEX0;
-            uniform COMPAT_PRECISION vec2 solarus_input_size;
+            uniform COMPAT_PRECISION vec2 sol_input_size;
 
             void main()
             {
@@ -58,7 +58,7 @@ shader{
                 vec2 _ps;
                 TexCoord = gl_MultiTexCoord0;
                 _OUT._position1 = gl_ModelViewProjectionMatrix * gl_Vertex;
-                _ps = vec2(1.00000000E+00/solarus_input_size.x, 1.00000000E+00/solarus_input_size.y);
+                _ps = vec2(1.00000000E+00/sol_input_size.x, 1.00000000E+00/sol_input_size.y);
                 _OUT.VARt1 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float((-2.00000000E+00*_ps.y))));
                 _OUT.VARt2 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), float(float(-_ps.y)));
                 _OUT.VARt3 = TexCoord.xxxy + vec4(float(float(-_ps.x)), 0.00000000E+00, float(float(_ps.x)), 0.00000000E+00);
@@ -83,7 +83,7 @@ shader{
     ]],
     -- Source of the fragment shader.
     fragment_source = [[
-            uniform sampler2D solarus_sampler;
+            uniform sampler2D sol_texture;
 
             #if __VERSION__ >= 130
             #define COMPAT_VARYING in
@@ -257,7 +257,7 @@ shader{
             vec4 _TMP369;
             vec4 _a0372;
             COMPAT_VARYING vec4 TEX0;
-            uniform COMPAT_PRECISION vec2 solarus_input_size;
+            uniform COMPAT_PRECISION vec2 sol_input_size;
 
             void main()
             {
@@ -306,49 +306,49 @@ shader{
                 vec4 _pixel;
                 vec3 _res;
                 float _mx;
-                _x0078 = TEX0.xy * solarus_input_size;
+                _x0078 = TEX0.xy * sol_input_size;
                 _fp = fract(_x0078);
-                _TMP0 = COMPAT_TEXTURE(solarus_sampler, VARt1.xw);
+                _TMP0 = COMPAT_TEXTURE(sol_texture, VARt1.xw);
                 _A11 = vec3(float(_TMP0.x), float(_TMP0.y), float(_TMP0.z));
-                _TMP1 = COMPAT_TEXTURE(solarus_sampler, VARt1.yw);
+                _TMP1 = COMPAT_TEXTURE(sol_texture, VARt1.yw);
                 _B11 = vec3(float(_TMP1.x), float(_TMP1.y), float(_TMP1.z));
-                _TMP2 = COMPAT_TEXTURE(solarus_sampler, VARt1.zw);
+                _TMP2 = COMPAT_TEXTURE(sol_texture, VARt1.zw);
                 _C1 = vec3(float(_TMP2.x), float(_TMP2.y), float(_TMP2.z));
-                _TMP3 = COMPAT_TEXTURE(solarus_sampler, VARt2.xw);
+                _TMP3 = COMPAT_TEXTURE(sol_texture, VARt2.xw);
                 _A2 = vec3(float(_TMP3.x), float(_TMP3.y), float(_TMP3.z));
-                _TMP4 = COMPAT_TEXTURE(solarus_sampler, VARt2.yw);
+                _TMP4 = COMPAT_TEXTURE(sol_texture, VARt2.yw);
                 _B2 = vec3(float(_TMP4.x), float(_TMP4.y), float(_TMP4.z));
-                _TMP5 = COMPAT_TEXTURE(solarus_sampler, VARt2.zw);
+                _TMP5 = COMPAT_TEXTURE(sol_texture, VARt2.zw);
                 _C = vec3(float(_TMP5.x), float(_TMP5.y), float(_TMP5.z));
-                _TMP6 = COMPAT_TEXTURE(solarus_sampler, VARt3.xw);
+                _TMP6 = COMPAT_TEXTURE(sol_texture, VARt3.xw);
                 _D = vec3(float(_TMP6.x), float(_TMP6.y), float(_TMP6.z));
-                _TMP7 = COMPAT_TEXTURE(solarus_sampler, VARt3.yw);
+                _TMP7 = COMPAT_TEXTURE(sol_texture, VARt3.yw);
                 _E = vec3(float(_TMP7.x), float(_TMP7.y), float(_TMP7.z));
-                _TMP8 = COMPAT_TEXTURE(solarus_sampler, VARt3.zw);
+                _TMP8 = COMPAT_TEXTURE(sol_texture, VARt3.zw);
                 _F = vec3(float(_TMP8.x), float(_TMP8.y), float(_TMP8.z));
-                _TMP9 = COMPAT_TEXTURE(solarus_sampler, VARt4.xw);
+                _TMP9 = COMPAT_TEXTURE(sol_texture, VARt4.xw);
                 _G = vec3(float(_TMP9.x), float(_TMP9.y), float(_TMP9.z));
-                _TMP10 = COMPAT_TEXTURE(solarus_sampler, VARt4.yw);
+                _TMP10 = COMPAT_TEXTURE(sol_texture, VARt4.yw);
                 _H = vec3(float(_TMP10.x), float(_TMP10.y), float(_TMP10.z));
-                _TMP11 = COMPAT_TEXTURE(solarus_sampler, VARt4.zw);
+                _TMP11 = COMPAT_TEXTURE(sol_texture, VARt4.zw);
                 _I = vec3(float(_TMP11.x), float(_TMP11.y), float(_TMP11.z));
-                _TMP12 = COMPAT_TEXTURE(solarus_sampler, VARt5.xw);
+                _TMP12 = COMPAT_TEXTURE(sol_texture, VARt5.xw);
                 _G5 = vec3(float(_TMP12.x), float(_TMP12.y), float(_TMP12.z));
-                _TMP13 = COMPAT_TEXTURE(solarus_sampler, VARt5.yw);
+                _TMP13 = COMPAT_TEXTURE(sol_texture, VARt5.yw);
                 _H5 = vec3(float(_TMP13.x), float(_TMP13.y), float(_TMP13.z));
-                _TMP14 = COMPAT_TEXTURE(solarus_sampler, VARt5.zw);
+                _TMP14 = COMPAT_TEXTURE(sol_texture, VARt5.zw);
                 _I5 = vec3(float(_TMP14.x), float(_TMP14.y), float(_TMP14.z));
-                _TMP15 = COMPAT_TEXTURE(solarus_sampler, VARt6.xy);
+                _TMP15 = COMPAT_TEXTURE(sol_texture, VARt6.xy);
                 _A0 = vec3(float(_TMP15.x), float(_TMP15.y), float(_TMP15.z));
-                _TMP16 = COMPAT_TEXTURE(solarus_sampler, VARt6.xz);
+                _TMP16 = COMPAT_TEXTURE(sol_texture, VARt6.xz);
                 _D0 = vec3(float(_TMP16.x), float(_TMP16.y), float(_TMP16.z));
-                _TMP17 = COMPAT_TEXTURE(solarus_sampler, VARt6.xw);
+                _TMP17 = COMPAT_TEXTURE(sol_texture, VARt6.xw);
                 _G0 = vec3(float(_TMP17.x), float(_TMP17.y), float(_TMP17.z));
-                _TMP18 = COMPAT_TEXTURE(solarus_sampler, VARt7.xy);
+                _TMP18 = COMPAT_TEXTURE(sol_texture, VARt7.xy);
                 _C4 = vec3(float(_TMP18.x), float(_TMP18.y), float(_TMP18.z));
-                _TMP19 = COMPAT_TEXTURE(solarus_sampler, VARt7.xz);
+                _TMP19 = COMPAT_TEXTURE(sol_texture, VARt7.xz);
                 _F4 = vec3(float(_TMP19.x), float(_TMP19.y), float(_TMP19.z));
-                _TMP20 = COMPAT_TEXTURE(solarus_sampler, VARt7.xw);
+                _TMP20 = COMPAT_TEXTURE(sol_texture, VARt7.xw);
                 _I4 = vec3(float(_TMP20.x), float(_TMP20.y), float(_TMP20.z));
                 _TMP62 = dot(vec3(float(_B2.x), float(_B2.y), float(_B2.z)), vec3( 1.43593750E+01, 2.81718750E+01, 5.47265625E+00));
                 _r0122.x = float(_TMP62);

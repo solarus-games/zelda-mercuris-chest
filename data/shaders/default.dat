@@ -5,10 +5,10 @@ shader{
 
 #version 120
 
-uniform sampler2D solarus_sampler;
+uniform sampler2D sol_texture;
 
 void main() {
-  gl_FragColor = texture2D(solarus_sampler, gl_TexCoord[0].xy);
+  gl_FragColor = texture2D(sol_texture, gl_TexCoord[0].xy);
 }
 
   ]]

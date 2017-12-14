@@ -8,10 +8,10 @@ shader{
         
     #define TEXEL(x,y) texture2D(x,y)
         
-    uniform sampler2D solarus_sampler;
+    uniform sampler2D sol_texture;
 
     void main() {
-            vec3 texel = TEXEL(solarus_sampler, gl_TexCoord[0].xy).rgb;
+            vec3 texel = TEXEL(sol_texture, gl_TexCoord[0].xy).rgb;
             gl_FragColor = vec4(texel.x,texel.y,texel.z, 1.0);
 
             #ifdef BIAS_GRAY

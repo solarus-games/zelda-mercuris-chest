@@ -6,11 +6,11 @@ shader{
     -- Source of the vertex shader.
     vertex_source = [[
         #version 120
-        uniform vec2 solarus_input_size;
+        uniform vec2 sol_input_size;
         void main()
         {
-            float x = 0.5 / solarus_input_size.x;
-            float y = 0.5 / solarus_input_size.y;
+            float x = 0.5 / sol_input_size.x;
+            float y = 0.5 / sol_input_size.y;
             vec2 dg1 = vec2( x, y);
             vec2 dg2 = vec2(-x, y);
             vec2 dx = vec2(x, 0.0);
@@ -33,8 +33,8 @@ shader{
         #version 120
         #define TEXEL(x,y) texture2D(x,y)
 
-        uniform sampler2D solarus_sampler;
-        uniform vec2 solarus_input_size;
+        uniform sampler2D sol_texture;
+        uniform vec2 sol_input_size;
 
         vec4 compress(vec4 in_color, float threshold, float ratio)
         {
@@ -45,18 +45,18 @@ shader{
  
         void main ()
         {
-            vec3 c00 = TEXEL(solarus_sampler, gl_TexCoord[1].xy).xyz;
-            vec3 c01 = TEXEL(solarus_sampler, gl_TexCoord[4].zw).xyz;
-            vec3 c02 = TEXEL(solarus_sampler, gl_TexCoord[4].xy).xyz;
-            vec3 c10 = TEXEL(solarus_sampler, gl_TexCoord[1].zw).xyz;
-            vec3 c11 = TEXEL(solarus_sampler, gl_TexCoord[0].xy).xyz;
-            vec3 c12 = TEXEL(solarus_sampler, gl_TexCoord[3].zw).xyz;
-            vec3 c20 = TEXEL(solarus_sampler, gl_TexCoord[2].xy).xyz;
-            vec3 c21 = TEXEL(solarus_sampler, gl_TexCoord[2].zw).xyz;
-            vec3 c22 = TEXEL(solarus_sampler, gl_TexCoord[3].xy).xyz;
+            vec3 c00 = texture2D(sol_texture, gl_TexCoord[1].xy).xyz;
+            vec3 c01 = texture2D(sol_texture, gl_TexCoord[4].zw).xyz;
+            vec3 c02 = texture2D(sol_texture, gl_TexCoord[4].xy).xyz;
+            vec3 c10 = texture2D(sol_texture, gl_TexCoord[1].zw).xyz;
+            vec3 c11 = texture2D(sol_texture, gl_TexCoord[0].xy).xyz;
+            vec3 c12 = texture2D(sol_texture, gl_TexCoord[3].zw).xyz;
+            vec3 c20 = texture2D(sol_texture, gl_TexCoord[2].xy).xyz;
+            vec3 c21 = texture2D(sol_texture, gl_TexCoord[2].zw).xyz;
+            vec3 c22 = texture2D(sol_texture, gl_TexCoord[3].xy).xyz;
  
             vec2 tex = gl_TexCoord[0].xy;
-            vec2 texsize = solarus_input_size;
+            vec2 texsize = sol_input_size;
  
             vec3 first = mix(c00, c20, fract(tex.x * texsize.x + 0.5));
             vec3 second = mix(c02, c22, fract(tex.x * texsize.x + 0.5));

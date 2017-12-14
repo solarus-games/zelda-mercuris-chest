@@ -63,7 +63,7 @@ function sol.main:on_started()
     end
   end
 
---  start_mode_7()
+  start_mode_7()
 end
 
 -- Event called when the program stops.

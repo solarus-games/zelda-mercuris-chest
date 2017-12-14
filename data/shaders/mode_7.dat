@@ -48,7 +48,7 @@ shader{
       uvm7 *= scale;
 
       // Rotations if needed
-//      float a = (solarus_time / 1000.0) * 0.25;
+//      float a = (sol_time / 1000.0) * 0.25;
       float a = radians(180.0);
       mat2 rotation = mat2(cos(a), -sin(a), sin(a), cos(a));
       uvm7 *= rotation;
