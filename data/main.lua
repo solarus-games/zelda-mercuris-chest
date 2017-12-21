@@ -14,12 +14,19 @@ local savegame_menu = require("scripts/menus/savegames")
 -- Experimental mode 7 testing code.
 local function start_mode_7()
 
-  --local texture = sol.surface.create("work/out_scale_1_2.png")
-  local texture = sol.surface.create("work/som.png")
-  assert(texture ~= nil)
-  --local shader = sol.shader.create("6xbrz")
+  local map_texture = sol.surface.create("work/out_scale_1_2.png")
+--  local texture = sol.surface.create("work/som.png")
+--  local texture = sol.surface.create("work/alttp.png")
+--  local texture = sol.surface.create("work/alttp_minimap.png")
+--  local texture = sol.surface.create("work/xd2_minimap.png")
+--  local texture = sol.surface.create("work/gs.png")
+  assert(map_texture ~= nil)
+  local mercuris_texture = sol.surface.create("work/flying_mercuris_link.png")
   local shader = sol.shader.create("mode_7")
-  shader:set_uniform("mode_7_texture", texture)
+  shader:set_uniform("mode_7_texture", map_texture)
+  shader:set_uniform("character_texture", character_texture)
+  shader:set_uniform("position", { 0.5, 1.0, 0.5 })
+--  shader:set_uniform("angle", math.pi / 4)
   sol.video.set_shader(shader)
 end
 
@@ -63,6 +70,7 @@ function sol.main:on_started()
     end
   end
 
+  start_mode_7()
 end
 
 -- Event called when the program stops.
@@ -100,5 +108,5 @@ function sol.main:start_savegame(game)
 
   sol.main.game = game
   game:start()
---  start_mode_7()
+
 end

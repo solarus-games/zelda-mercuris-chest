@@ -21,11 +21,14 @@ shader{
     #version 120
 
     uniform sampler2D sol_texture;
-    uniform sampler2D mode_7_texture;
     uniform vec2 sol_input_size;
     uniform vec2 sol_output_size;
     uniform vec2 sol_texture_size;
     uniform int sol_time;
+
+    uniform sampler2D mode_7_texture;
+    uniform vec3 position;
+    uniform float angle;
 
     vec2 resolution = sol_output_size;
 
@@ -36,7 +39,7 @@ shader{
 
       // Create a 3D point
    //   float h = 0.25;
-      float h = 0.90;
+      float h = 0.75;
       vec3 p = vec3(uv.x, uv.y - h - 1.0, uv.y - h);
 
       // Projecting back to 2D space
@@ -44,18 +47,17 @@ shader{
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = 0.05;
+      float scale = max(0.01, position.z / 10.0);
       uvm7 *= scale;
 
       // Rotations if needed
 //      float a = (sol_time / 1000.0) * 0.25;
-      float a = radians(180.0);
+      float a = radians(180.0) + angle;
       mat2 rotation = mat2(cos(a), -sin(a), sin(a), cos(a));
       uvm7 *= rotation;
 
       // Initial position
-      vec2 initial_position = vec2(0.50, 0.25);
-      uvm7 += initial_position;
+      uvm7 += position.xy;
 
       // Translation
 //      float dy = 0.0;
@@ -64,7 +66,7 @@ shader{
       uvm7 += translation;
 
       // Repeat
-    //  uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
+      uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
 
       // Read background texture
       vec3 col = texture2D(mode_7_texture, uvm7).xyz;
@@ -78,7 +80,6 @@ shader{
 
     void main() {
       gl_FragColor = mainImage(gl_FragCoord.xy);
-//      gl_FragColor = mainImage(gl_TexCoord[0].xy);
     }
     ]]
 }

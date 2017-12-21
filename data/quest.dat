@@ -11,7 +11,7 @@ It will not be a sequel to Zelda Mystery of Solarus DX, but a different story in
   release_date = "",
   website = "http://www.solarus-games.org",
   normal_quest_size = "320x240",
-  min_quest_size = "320x200",
-  max_quest_size = "400x240",
+  min_quest_size = "128x128",
+  max_quest_size = "320x256",
 }
 
