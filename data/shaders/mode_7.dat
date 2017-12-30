@@ -27,14 +27,24 @@ shader{
     uniform int sol_time;
 
     uniform sampler2D mode_7_texture;
+    uniform sampler2D character_texture;
     uniform vec3 position;
     uniform float angle;
 
     vec2 resolution = sol_output_size;
 
-    vec4 mainImage(vec2 fragCoord) {
+    // Alpha-blends c1 onto c2.
+    vec4 alpha_blend(vec4 c1, vec4 c2) {
 
-      vec2 q = fragCoord / resolution;
+      float alpha = c1.a + c2.a * (1.0 - c1.a);
+      vec3 rgb = (c1.rgb * c1.a) + (c2.rgb * c2.a) * (1.0 - c1.a) / alpha;
+      return vec4(rgb, alpha);
+    }
+
+    // Mode 7 transformation.
+    vec4 make_mode_7(vec2 frag_coord) {
+
+      vec2 q = frag_coord / resolution;
       vec2 uv = q - vec2(0.5);
 
       // Create a 3D point
@@ -69,17 +79,24 @@ shader{
       uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
 
       // Read background texture
-      vec3 col = texture2D(mode_7_texture, uvm7).xyz;
+      vec4 mode_7_color = vec4(texture2D(mode_7_texture, uvm7).xyz, 1.0);
 
       // Darkness based on the horizon
-//      col *= -(uv.y - h - 0.50);
+//      mode_7_color *= -(uv.y - h - 0.50);
+
+      vec2 uv_character = vec2(q.x, 1.0 - q.y);
+      vec4 character_color = texture2D(character_texture, uv_character);
+
+      // Alpha-blend the character texture.
+      vec4 col = alpha_blend(character_color, mode_7_color);
 
       // Output the color
-      return vec4(col, 1.0);
+      return col;
   }
 
     void main() {
-      gl_FragColor = mainImage(gl_FragCoord.xy);
+      gl_FragColor = make_mode_7(gl_FragCoord.xy);
     }
-    ]]
+]],
+
 }

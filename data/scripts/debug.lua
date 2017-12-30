@@ -14,6 +14,25 @@ local game_manager = require("scripts/game_manager")
 
 local debug = {}
 
+-- Experimental mode 7 testing code.
+local function start_mode_7()
+
+  local map_texture = sol.surface.create("work/out_scale_1_2.png")
+--  local map_texture = sol.surface.create("work/som.png")
+--  local map_texture = sol.surface.create("work/alttp.png")
+--  local map_texture = sol.surface.create("work/alttp_minimap.png")
+--  local map_texture = sol.surface.create("work/xd2_minimap.png")
+--  local map_texture = sol.surface.create("work/gs.png")
+  assert(map_texture ~= nil)
+  local character_texture = sol.surface.create("work/mercuris_link_flying.png")
+  local shader = sol.shader.create("mode_7")
+  shader:set_uniform("mode_7_texture", map_texture)
+  shader:set_uniform("character_texture", character_texture)
+  shader:set_uniform("position", { 0.5, 1.0, 0.5 })
+--  shader:set_uniform("angle", math.pi / 4)
+  sol.video.set_shader(shader)
+end
+
 function debug:on_key_pressed(key, modifiers)
 
   local handled = true
@@ -31,6 +50,8 @@ function debug:on_key_pressed(key, modifiers)
     end
   elseif key == "f12" and not console.enabled then
     sol.menu.start(sol.main, console)
+  elseif key == "7" then
+    start_mode_7()
   elseif sol.main.game ~= nil and not console.enabled then
     local game = sol.main.game
     local hero = nil
