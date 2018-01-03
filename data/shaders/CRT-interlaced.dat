@@ -7,7 +7,7 @@ shader{
     vertex_source = [[
         uniform vec2 sol_input_size;
         uniform vec2 sol_output_size;
-        uniform vec2 sol_texture_size;
+        vec2 sol_texture_size = sol_input_size;
 
         varying float CRTgamma;
         varying float monitorgamma;
@@ -153,7 +153,7 @@ shader{
         uniform sampler2D sol_texture;
         uniform vec2 sol_input_size;
         uniform vec2 sol_output_size;
-        uniform vec2 sol_texture_size;
+        vec2 sol_texture_size = sol_input_size;
         uniform int sol_time;
 
         varying vec2 texCoord;

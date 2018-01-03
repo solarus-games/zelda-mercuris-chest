@@ -8,12 +8,10 @@ shader{
         #define glarebasesize 0.42
         #define power 0.35 // 0.50 is good
 
-        #define TEXEL(x,y) texture2D(x,y)
-
         uniform sampler2D sol_texture;
         uniform vec2 sol_input_size;
         uniform vec2 sol_output_size;
-        uniform vec2 sol_texture_size;
+        vec2 sol_texture_size = sol_input_size;
 
         void main()
         {
@@ -29,12 +27,12 @@ shader{
             {
                 for (j = -1; j < 1; j++)
                 {
-                    sum += TEXEL(sol_texture, texcoord + vec2(-i, j)*glaresize) * power;
-                    bum += TEXEL(sol_texture, texcoord + vec2(j, i)*glaresize) * power;            
+                    sum += texture2D(sol_texture, texcoord + vec2(-i, j)*glaresize) * power;
+                    bum += texture2D(sol_texture, texcoord + vec2(j, i)*glaresize) * power;
                 }
             }
 
-            if (TEXEL(sol_texture, texcoord).r < 2.0)
+            if (texture2D(sol_texture, texcoord).r < 2.0)
             {
                 gl_FragColor = sum*sum*sum*0.001+bum*bum*bum*0.0080 + texture2D(sol_texture, texcoord);
             }

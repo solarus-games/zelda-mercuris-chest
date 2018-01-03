@@ -15,7 +15,7 @@ shader{
   fragment_source = [[
     uniform sampler2D sol_texture;
     uniform vec2 sol_input_size;
-    uniform vec2 sol_texture_size;
+    vec2 sol_texture_size = sol_input_size;
 
     // Tweak this parameter for more / less distortion
     #define distortion 1.2

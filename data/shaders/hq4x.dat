@@ -9,7 +9,7 @@ shader{
         uniform sampler2D sol_texture;
         uniform vec2 sol_input_size;
         uniform vec2 sol_output_size;
-        uniform vec2 sol_texture_size;
+        vec2 sol_texture_size = sol_input_size;
 
         const float mx = 0.325;    // start smoothing factor
         const float k = -0.250;    // smoothing decrease factor

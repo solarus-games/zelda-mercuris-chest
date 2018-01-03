@@ -8,8 +8,9 @@ shader{
 
     #version 120
     uniform vec2 solarus_input_size;
-    vec2 solarus_output_size = solarus_input_size;
+    uniform vec2 solarus_output_size;
     vec2 solarus_texture_size = solarus_input_size;
+
     void main() {
       vec4 offsetx;
       vec4 offsety;
@@ -39,7 +40,7 @@ shader{
 
     uniform sampler2D solarus_sampler;
     uniform vec2 solarus_input_size;
-    vec2 solarus_output_size = solarus_input_size;
+    uniform vec2 solarus_output_size;
     vec2 solarus_texture_size = solarus_input_size;
 
     void main() {

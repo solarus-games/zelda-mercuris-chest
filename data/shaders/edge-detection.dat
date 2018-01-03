@@ -8,7 +8,7 @@ shader{
 
         uniform vec2 sol_input_size;
         uniform vec2 sol_output_size;
-        uniform vec2 sol_texture_size;
+        vec2 sol_texture_size = sol_input_size;
 
         void main()
         {
@@ -34,8 +34,7 @@ shader{
 
     -- Source of the fragment shader.
     fragment_source = [[
-    #define TEXEL(x,y) texture2D(x,y)
-        
+
     uniform sampler2D sol_texture;
     uniform vec2 sol_input_size;
     uniform vec2 sol_output_size;
@@ -48,11 +47,11 @@ shader{
  
          void main ()
          {
-            vec3 c00 = TEXEL(sol_texture, gl_TexCoord[1].xy).xyz;
-            vec3 c02 = TEXEL(sol_texture, gl_TexCoord[4].xy).xyz;
-            vec3 c11 = TEXEL(sol_texture, gl_TexCoord[0].xy).xyz;
-            vec3 c20 = TEXEL(sol_texture, gl_TexCoord[2].xy).xyz;
-            vec3 c22 = TEXEL(sol_texture, gl_TexCoord[3].xy).xyz;
+            vec3 c00 = texture2D(sol_texture, gl_TexCoord[1].xy).xyz;
+            vec3 c02 = texture2D(sol_texture, gl_TexCoord[4].xy).xyz;
+            vec3 c11 = texture2D(sol_texture, gl_TexCoord[0].xy).xyz;
+            vec3 c20 = texture2D(sol_texture, gl_TexCoord[2].xy).xyz;
+            vec3 c22 = texture2D(sol_texture, gl_TexCoord[3].xy).xyz;
 
             vec2 tex = gl_TexCoord[0].xy;
             vec2 texsize = sol_texture_size;

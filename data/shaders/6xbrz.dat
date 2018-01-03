@@ -86,10 +86,9 @@ COMPAT_VARYING vec4 t7;
 #define MVPMatrix gl_ModelViewProjectionMatrix
 uniform COMPAT_PRECISION int FrameDirection;
 uniform COMPAT_PRECISION int FrameCount;
-uniform COMPAT_PRECISION vec2 sol_texture_size;
 uniform COMPAT_PRECISION vec2 sol_input_size;
 uniform COMPAT_PRECISION vec2 sol_output_size;
-#define TextureSize sol_texture_size
+#define TextureSize sol_input_size
 #define InputSize sol_input_size
 #define OutputSize sol_output_size
 
@@ -197,10 +196,9 @@ precision mediump float;
 
 uniform COMPAT_PRECISION int FrameDirection;
 uniform COMPAT_PRECISION int FrameCount;
-uniform COMPAT_PRECISION vec2 sol_texture_size;
 uniform COMPAT_PRECISION vec2 sol_input_size;
 uniform COMPAT_PRECISION vec2 sol_output_size;
-#define TextureSize sol_texture_size
+#define TextureSize sol_input_size
 #define InputSize sol_input_size
 #define OutputSize sol_output_size
 uniform sampler2D sol_texture;
