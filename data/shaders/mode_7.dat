@@ -23,7 +23,6 @@ shader{
     uniform sampler2D sol_texture;
     uniform vec2 sol_input_size;
     uniform vec2 sol_output_size;
-    uniform vec2 sol_texture_size;
     uniform int sol_time;
 
     uniform sampler2D mode_7_texture;
@@ -86,6 +85,7 @@ shader{
 
       vec2 uv_character = vec2(q.x, 1.0 - q.y);
       vec4 character_color = texture2D(character_texture, uv_character);
+      character_color = vec4(0.0, 0.0, 0.0, 0.0);
 
       // Alpha-blend the character texture.
       vec4 col = alpha_blend(character_color, mode_7_color);

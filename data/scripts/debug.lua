@@ -29,7 +29,7 @@ local function start_mode_7()
   shader:set_uniform("mode_7_texture", map_texture)
   shader:set_uniform("character_texture", character_texture)
   shader:set_uniform("position", { 0.5, 1.0, 0.5 })
---  shader:set_uniform("angle", math.pi / 4)
+  shader:set_uniform("angle", 0)
   sol.video.set_shader(shader)
 end
 
