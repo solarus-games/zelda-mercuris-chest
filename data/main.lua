@@ -1,53 +1,40 @@
 -- Main script of the quest.
 
 require("scripts/features")
-local game_manager = require("scripts/game_manager")
-local shader_manager = require("scripts/shader_manager")
 local quest_manager = require("scripts/quest_manager")
+local shader_manager = require("scripts/shader_manager")
+local initial_menus_config = require("scripts/menus/initial_menus_config")
+local initial_menus = {}
 
-local solarus_logo = require("scripts/menus/solarus_logo")
-local team_logo = require("scripts/menus/team_logo")
-local language_menu = require("scripts/menus/language")
-local title_screen = require("scripts/menus/title")
-local savegame_menu = require("scripts/menus/savegames")
-
--- Event called when the program starts.
+-- This function is called when Solarus starts.
 function sol.main:on_started()
 
-  -- Make quest-specific initializations.
-  quest_manager:initialize_quest()
-
-  -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
+  math.randomseed(os.time())
 
-  -- Show the Solarus logo initially.
-  sol.menu.start(sol.main, solarus_logo)
+  quest_manager:initialize_quest()  -- TODO remove
 
-  -- Then the author's logo (Solarus Team), unless a game was started by a debug key.
-  function solarus_logo:on_finished()
-    if sol.main.game == nil then
-      sol.menu.start(sol.main, team_logo)
-    end
+  -- Show the initial menus.
+  if #initial_menus_config == 0 then
+    return
   end
 
-  -- Then the language selection menu.
-  function team_logo:on_finished()
-    if sol.main.game == nil then
-      sol.menu.start(sol.main, language_menu, false)
-    end
+  for _, menu_script in ipairs(initial_menus_config) do
+    initial_menus[#initial_menus + 1] = require(menu_script)
   end
 
-  -- Then the title screen.
-  function language_menu:on_finished()
-    if sol.main.game == nil then
-      sol.menu.start(sol.main, title_screen, false)
-    end
-  end
-
-  -- Then the savegame menu.
-  function title_screen:on_finished()
-    if sol.main.game == nil then
-      sol.menu.start(sol.main, savegame_menu, false)
+  local on_top = false  -- To keep the debug menu on top.
+  sol.menu.start(sol.main, initial_menus[1], on_top)
+  for i, menu in ipairs(initial_menus) do
+    function menu:on_finished()
+      if sol.main.game ~= nil then
+        -- A game is already running (probably quick start with a debug key).
+        return
+      end
+      local next_menu = initial_menus[i + 1]
+      if next_menu ~= nil then
+        sol.menu.start(sol.main, next_menu)
+      end
     end
   end
 
@@ -62,15 +49,23 @@ end
 -- Event called when the player pressed a keyboard key.
 function sol.main:on_key_pressed(key, modifiers)
 
+  local handled = false
   if key == "f5" then
     -- F5: change the shader.
     shader_manager:switch_shader()
+    handled = true
   elseif key == "f11" or (key == "return" and modifiers.alt) then
     -- F11 or Alt + Return: switch fullscreen.
     sol.video.set_fullscreen(not sol.video.is_fullscreen())
+    handled = true
   elseif key == "f4" and modifiers.alt then
     -- Alt + F4: stop the program.
     sol.main.exit()
+    handled = true
+  elseif key == "escape" and sol.main.game == nil then
+    -- Escape in title screens: stop the program.
+    sol.main.exit()
+    handled = true
   end
 
   return handled
@@ -80,13 +75,10 @@ end
 function sol.main:start_savegame(game)
 
   -- Skip initial menus if any.
-  sol.menu.stop(solarus_logo)
-  sol.menu.stop(team_logo)
-  sol.menu.stop(language_menu)
-  sol.menu.stop(title_screen)
-  sol.menu.stop(savegame_menu)
+  for _, menu in ipairs(initial_menus) do
+    sol.menu.stop(menu)
+  end
 
   sol.main.game = game
   game:start()
-
 end
