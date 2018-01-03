@@ -1,5 +1,5 @@
 local submenu = require("scripts/menus/pause_submenu")
-local quest_manager = require("scripts/quest_manager")
+local language_manager = require("scripts/language_manager")
 
 local options_submenu = submenu:new()
 
@@ -7,7 +7,7 @@ function options_submenu:on_started()
 
   submenu.on_started(self)
 
-  local font, font_size = quest_manager:get_menu_font()
+  local font, font_size = language_manager:get_menu_font()
   local width, height = sol.video.get_quest_size()
   local center_x, center_y = width / 2, height / 2
 

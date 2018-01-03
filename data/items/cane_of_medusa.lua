@@ -102,3 +102,33 @@ function turn_stone_to_enemy(block)
   enemy:set_position(block:get_position())
   block:remove()
 end
+
+-- Initialize the metatable of appropriate entities to work with the Cane of Medusa.
+local function initialize_meta()
+
+  local enemy_meta = sol.main.get_metatable("enemy")
+
+  if enemy_meta.set_vulnerable_to_medusa ~= nil then
+    -- Already done.
+    return
+  end
+
+  enemy_meta.vulnerable_to_medusa = true  -- Vulnerable by default.
+
+  function enemy_meta:is_vulnerable_to_medusa()
+    return self.vulnerable_to_medusa
+  end
+
+  function enemy_meta:set_vulnerable_to_medusa(vulnerable)
+    self.vulnerable_to_medusa = vulnerable
+  end
+
+  local previous_set_invincible = enemy_meta.set_invincible
+  function enemy_meta:set_invincible()
+    previous_set_invincible(self)
+    self:set_vulnerable_to_medusa(false)
+  end
+
+end
+
+initialize_meta()

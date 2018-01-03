@@ -1,7 +1,6 @@
 -- Title screen of the game.
 
 local title_screen = {}
-local quest_manager = require("scripts/quest_manager")
 
 function title_screen:on_started()
 

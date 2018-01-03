@@ -3,9 +3,7 @@
 
 local language_menu = {}
 
-local quest_manager = require("scripts/quest_manager")
-
-local default_id = "fr"
+local language_manager = require("scripts/language_manager")
 
 function language_menu:on_started()
 
@@ -25,7 +23,7 @@ function language_menu:on_started()
     self.languages = {}
     for _, id in ipairs(ids) do
       local language = {}
-      local font, font_size = quest_manager:get_menu_font(id)
+      local font, font_size = language_manager:get_menu_font(id)
       language.id = id
       language.text = sol.text_surface.create{
         font = font,
@@ -34,7 +32,7 @@ function language_menu:on_started()
         horizontal_alignment = "center"
       }
 
-      if id == default_id then
+      if id == language_manager:get_default_language() then
         cursor_position = index
       end
 
@@ -117,9 +115,9 @@ function language_menu:on_joypad_axis_moved(axis, state)
     end
   else  -- Vertical axis.
     if state > 0 then
-      self:direction_pressed(6)
-    elseif state < 0 then
       self:direction_pressed(2)
+    elseif state < 0 then
+      self:direction_pressed(6)
     end
   end
 end

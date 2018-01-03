@@ -4,10 +4,15 @@
 -- require("scripts/menus/dialog_box")
 
 require("scripts/multi_events")
-local quest_manager = require("scripts/quest_manager")
+local language_manager = require("scripts/language_manager")
 
 -- Creates and sets up a dialog box for the specified game.
 local function initialize_dialog_box_features(game)
+
+  if game.get_dialog_box ~= nil then
+    -- Already done.
+    return
+  end
 
   local dialog_box = {
 
@@ -56,7 +61,7 @@ local function initialize_dialog_box_features(game)
   local box_height = 60
 
   -- Initialize dialog box data.
-  local font, font_size = quest_manager:get_dialog_font()
+  local font, font_size = language_manager:get_dialog_font()
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
     dialog_box.line_surfaces[i] = sol.text_surface.create{
@@ -168,15 +173,19 @@ local function initialize_dialog_box_features(game)
     if self.vertical_position == "top" then
       top = true
     elseif self.vertical_position == "auto" then
-      local hero_x, hero_y = map:get_entity("hero"):get_position()
-      if hero_y >= camera_y + (camera_height / 2 + 10) then
-        top = true
+      local hero = map:get_entity("hero")
+      if hero:is_enabled() and hero:is_visible() then
+        local hero_x, hero_y = hero:get_position()
+        if hero_y >= camera_y + (camera_height / 2 + 10) then
+          top = true
+        end
       end
     end
 
     -- Set the coordinates of graphic objects.
-    local x = camera_width / 2 - 110
-    local y = top and 32 or (camera_height - 96)
+    local screen_width, screen_height = sol.video.get_quest_size()
+    local x = screen_width / 2 - 110
+    local y = top and 32 or (screen_height - 80)
 
     if self.style == "empty" then
       y = y + (top and -24 or 24)

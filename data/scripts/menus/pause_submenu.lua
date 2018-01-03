@@ -2,7 +2,7 @@
 
 local submenu = {}
 
-local quest_manager = require("scripts/quest_manager")
+local language_manager = require("scripts/language_manager")
 
 function submenu:new(game)
   local o = { game = game }
@@ -18,8 +18,8 @@ function submenu:on_started()
   self.save_dialog_sprite = sol.sprite.create("menus/pause_save_dialog")
   self.save_dialog_state = 0
 
-  local dialog_font, dialog_font_size = quest_manager:get_dialog_font()
-  local menu_font, menu_font_size = quest_manager:get_menu_font()
+  local dialog_font, dialog_font_size = language_manager:get_dialog_font()
+  local menu_font, menu_font_size = language_manager:get_menu_font()
 
   self.question_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",

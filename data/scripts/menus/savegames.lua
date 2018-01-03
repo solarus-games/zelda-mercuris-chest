@@ -2,7 +2,7 @@
 
 local savegame_menu = {}
 
-local quest_manager = require("scripts/quest_manager")
+local language_manager = require("scripts/language_manager")
 local game_manager = require("scripts/game_manager")
 
 function savegame_menu:on_started()
@@ -14,8 +14,8 @@ function savegame_menu:on_started()
   self.cloud_img = sol.surface.create("menus/selection_menu_cloud.png")
   self.save_container_img = sol.surface.create("menus/selection_menu_save_container.png")
   self.option_container_img = sol.surface.create("menus/selection_menu_option_container.png")
-  local dialog_font, dialog_font_size = quest_manager:get_dialog_font()
-  local menu_font, menu_font_size = quest_manager:get_menu_font()
+  local dialog_font, dialog_font_size = language_manager:get_dialog_font()
+  local menu_font, menu_font_size = language_manager:get_menu_font()
   self.option1_text = sol.text_surface.create{
     font = dialog_font,
     font_size = dialog_font_size,
@@ -243,7 +243,7 @@ end
 function savegame_menu:read_savegames()
 
   self.slots = {}
-  local font, font_size = quest_manager:get_dialog_font()
+  local font, font_size = language_manager:get_dialog_font()
   for i = 1, 3 do
     local slot = {}
     slot.file_name = "save" .. i .. ".dat"
@@ -600,7 +600,7 @@ function savegame_menu:init_phase_options()
     }
   }
 
-  local font, font_size = quest_manager:get_menu_font()
+  local font, font_size = language_manager:get_menu_font()
   for _, option in ipairs(self.options) do
 
     option.current_index = nil
@@ -817,8 +817,8 @@ end
 -- This function is called when the language has just been changed.
 function savegame_menu:reload_options_strings()
 
-  local menu_font, menu_font_size = quest_manager:get_menu_font()
-  local dialog_font, dialog_font_size = quest_manager:get_dialog_font()
+  local menu_font, menu_font_size = language_manager:get_menu_font()
+  local dialog_font, dialog_font_size = language_manager:get_dialog_font()
   -- Update the label of each option.
   for _, option in ipairs(self.options) do
 
@@ -856,7 +856,7 @@ function savegame_menu:init_phase_choose_name()
   self.title_text:set_text_key("selection_menu.phase.choose_name")
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
-  local font, font_size = quest_manager:get_menu_font()
+  local font, font_size = language_manager:get_menu_font()
   self.player_name_text = sol.text_surface.create{
     font = font,
     font_size = font_size,

@@ -1,7 +1,6 @@
 -- Main script of the quest.
 
 require("scripts/features")
-local quest_manager = require("scripts/quest_manager")
 local shader_manager = require("scripts/shader_manager")
 local initial_menus_config = require("scripts/menus/initial_menus_config")
 local initial_menus = {}
@@ -11,8 +10,6 @@ function sol.main:on_started()
 
   sol.main.load_settings()
   math.randomseed(os.time())
-
-  quest_manager:initialize_quest()  -- TODO remove
 
   -- Show the initial menus.
   if #initial_menus_config == 0 then
