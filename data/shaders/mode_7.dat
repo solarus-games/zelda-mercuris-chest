@@ -8,10 +8,12 @@ shader{
 
     #version 120
 
+    varying out vec4 vertex_position;
+
     void main() {
 
-//      gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
-      gl_Position = gl_ModelViewMatrix * gl_Vertex;
+      vertex_position = gl_ModelViewMatrix * gl_Vertex;
+      gl_Position = vertex_position;
       gl_TexCoord[0] = gl_MultiTexCoord0;
     }
 ]],
@@ -30,7 +32,7 @@ shader{
     uniform vec3 position;
     uniform float angle;
 
-    vec2 resolution = sol_output_size;
+    varying in vec4 vertex_position;
 
     // Alpha-blends c1 onto c2.
     vec4 alpha_blend(vec4 c1, vec4 c2) {
@@ -41,14 +43,11 @@ shader{
     }
 
     // Mode 7 transformation.
-    vec4 make_mode_7(vec2 frag_coord) {
-
-      vec2 q = frag_coord / resolution;
-      vec2 uv = q - vec2(0.5);
+    vec4 make_mode_7(vec2 uv) {
 
       // Create a 3D point
    //   float h = 0.25;
-      float h = 0.75;
+      float h = 1.5;
       vec3 p = vec3(uv.x, uv.y - h - 1.0, uv.y - h);
 
       // Projecting back to 2D space
@@ -83,7 +82,7 @@ shader{
       // Darkness based on the horizon
 //      mode_7_color *= -(uv.y - h - 0.50);
 
-      vec2 uv_character = vec2(q.x, 1.0 - q.y);
+      vec2 uv_character = vec2(uv.x, 1.0 - uv.y);
       vec4 character_color = texture2D(character_texture, uv_character);
       character_color = vec4(0.0, 0.0, 0.0, 0.0);
 
@@ -95,7 +94,7 @@ shader{
   }
 
     void main() {
-      gl_FragColor = make_mode_7(gl_FragCoord.xy);
+      gl_FragColor = make_mode_7(vertex_position.xy);
     }
 ]],
 
