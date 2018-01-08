@@ -14,15 +14,18 @@ local game_manager = require("scripts/game_manager")
 
 local debug = {}
 
+local map_texture
+local new_texture
+
 -- Experimental mode 7 testing code.
 local function start_mode_7()
 
-  local map_texture = sol.surface.create("work/out_scale_1_2.png")
---  local map_texture = sol.surface.create("work/som.png")
---  local map_texture = sol.surface.create("work/alttp.png")
---  local map_texture = sol.surface.create("work/alttp_minimap.png")
---  local map_texture = sol.surface.create("work/xd2_minimap.png")
---  local map_texture = sol.surface.create("work/gs.png")
+  map_texture = sol.surface.create("work/out_scale_1_2.png")
+--  map_texture = sol.surface.create("work/som.png")
+--  map_texture = sol.surface.create("work/alttp.png")
+--  map_texture = sol.surface.create("work/alttp_minimap.png")
+--  map_texture = sol.surface.create("work/xd2_minimap.png")
+--  map_texture = sol.surface.create("work/gs.png")
   assert(map_texture ~= nil)
   local character_texture = sol.surface.create("work/mercuris_link_flying.png")
   local shader = sol.shader.create("mode_7")
@@ -31,6 +34,11 @@ local function start_mode_7()
   shader:set_uniform("position", { 0.5, 1.0, 0.5 })
   shader:set_uniform("angle", 0)
   sol.video.set_shader(shader)
+
+  new_texture = sol.surface.create("work/som.png")
+  sol.timer.start(sol.main, 2000, function()
+    new_texture:draw(map_texture)
+  end)
 end
 
 function debug:on_key_pressed(key, modifiers)
