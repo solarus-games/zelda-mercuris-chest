@@ -7458,3 +7458,14 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = -16,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d8",
+  destination = "_side",
+}
+

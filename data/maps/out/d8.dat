@@ -7604,3 +7604,25 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 1024,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/d1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = 1024,
+  width = 1024,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/f1",
+  destination = "_side",
+}
+

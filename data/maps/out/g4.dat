@@ -236,3 +236,25 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = 0,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/a3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = 1024,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "out/a5",
+  destination = "_side",
+}
+

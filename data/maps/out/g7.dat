@@ -29281,3 +29281,25 @@ npc{
   sprite = "entities/sign",
 }
 
+teletransporter{
+  layer = 2,
+  x = 2048,
+  y = 0,
+  width = 16,
+  height = 2048,
+  transition = "scrolling",
+  destination_map = "out/a7",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 0,
+  y = 2048,
+  width = 2048,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/g1",
+  destination = "_side",
+}
+
