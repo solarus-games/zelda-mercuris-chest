@@ -1,0 +1,15 @@
+-- This is a game ntsc to pal glsl shader implementation.
+
+shader{
+
+    -- Source of the fragment shader.
+    fragment_source = [[
+        
+        uniform sampler2D sol_texture;
+
+        void main() {
+            gl_FragColor = texture2D(sol_texture, gl_TexCoord[0].xy);
+            gl_FragColor.rgb += 0.1255;
+        }
+    ]]
+}
