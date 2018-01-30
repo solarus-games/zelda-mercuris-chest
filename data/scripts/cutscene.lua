@@ -78,6 +78,10 @@ function flagers.dontWaitFor(b)
   b.flags.wait = nil
 end
 
+function flagers.noContinue(b)
+  b.flags.no_cont = true
+end
+
 --check if there is a flager for the given key
 --resume normal behaviour if key is a normal key
 function builder_meta.__index(b,k)
@@ -125,12 +129,16 @@ function cutscene.builder(game,map,hero)
     local cell = {}
     --save wait flag as upval
     local wait = b.flags.wait
+    local no_cont = b.flags.no_cont
     function bhead.next(...)
       if wait then
         closure(safe(cell.next),...)
-      else
-        local results = {closure(...)}
-        safe(cell.next)(unpack(results)) --call next directly if wait flag is down
+      else --call next directly if wait flag is down
+        if no_cont then --need continuation?
+          safe(cell.next)(closure(...))
+        else
+          safe(cell.next)(closure(safe(),...))
+        end 
       end
     end
     b.reset_flags()
@@ -140,7 +148,7 @@ function cutscene.builder(game,map,hero)
 
   --shorthand for .dontWaitFor.and_then()
   function b.exec(closure)
-    return b.dontWaitFor.and_then(closure)
+    return b.dontWaitFor.noContinue.and_then(closure)
   end
 
   --start a timer and resume next cell when it expires
