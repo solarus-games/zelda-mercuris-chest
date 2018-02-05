@@ -10,12 +10,12 @@
 --
 -- --In a map script file
 --
--- local cutscene = require('scripts/cutscene')
+-- local cutscene = require('scripts/maps/cutscene')
 --
--- local game,hero,map = --init those vals as always
+-- local game, map, hero = --init those vals as always
 
 -- function map:start_cinematic()
---   cutscene.builder(game,hero,map)
+--   cutscene.builder(game, map, hero)
 --   .wait(1000) --wait one second
 --   .dialog('my_dialog') --start a dialog
 --   .wait(500) --wait between dialog and next cell
@@ -34,7 +34,7 @@
 --
 -- Example:
 --
--- cutscene.builder(game,hero,map)
+-- cutscene.builder(game, map, hero)
 -- .exec(function() return 1 end)
 -- .exec(function(val) print(val) end)
 -- .start()
@@ -74,11 +74,11 @@ local flagers = {}
 
 --flagers allow to add callless 'flags'
 --in the middle of the call chain
-function flagers.dontWaitFor(b)
+function flagers.dont_wait_for(b)
   b.flags.wait = nil
 end
 
-function flagers.noContinue(b)
+function flagers.no_continue(b)
   b.flags.no_cont = true
 end
 
@@ -98,7 +98,7 @@ function builder_meta.__index(b,k)
 end
 
 --create a cutscene builder
-function cutscene.builder(game,map,hero)
+function cutscene.builder(game, map, hero)
   local b = {}
   local bhead = b
 
@@ -120,7 +120,7 @@ function cutscene.builder(game,map,hero)
 
   -- base cell that run your function closure
   -- your function is given a callable cont that you must call to continue
-  -- the cutscene, unless you use .dontWaitFor. flag before.
+  -- the cutscene, unless you use .dont_wait_for. flag before.
   -- closure(cont,vals returned from the preceding cell)
   --
   -- any val passed to cont() are forwarded to the next cell
@@ -146,9 +146,9 @@ function cutscene.builder(game,map,hero)
     return b;
   end
 
-  --shorthand for .dontWaitFor.and_then()
+  --shorthand for .dont_wait_for.and_then()
   function b.exec(closure)
-    return b.dontWaitFor.noContinue.and_then(closure)
+    return b.dont_wait_for.no_continue.and_then(closure)
   end
 
   --start a timer and resume next cell when it expires
@@ -189,7 +189,7 @@ function cutscene.builder(game,map,hero)
   --create a movement and starts it
   --first argument is a params table that is typicaly like this :
   --{ type ='type_of_movement_to_create',entity=entity_to_move,
-  --  movement_properties = {speed = 30,target = {x,y},...}
+  --  properties = {speed = 30,target = {x,y},...}
   --second optional argument is a function that will receive the movement
   -- and can do a last setup before it is started
   -- op_setup_closure(mov)
@@ -197,7 +197,7 @@ function cutscene.builder(game,map,hero)
     return b.and_then(
       function(cont)
         local mov = sol.movement.create(params.type)
-        utils.apply_properties(mov,params.movement_properties)
+        utils.apply_properties(mov,params.properties)
         safe(op_setup_closure)(mov)
         mov:start(params.entity,cont)
         return mov
@@ -206,7 +206,7 @@ function cutscene.builder(game,map,hero)
   end
 
   --start an animation on the given sprite
-  -- use with .dontWaitFor. flag if the animation loops,
+  -- use with .dont_wait_for. flag if the animation loops,
   -- otherwise the cinematic will get stuck
   function b.sprite_animation(sprite,animation)
     return b.and_then(
