@@ -3124,6 +3124,7 @@ tile_pattern{
   y = 0,
   width = 24,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -3134,6 +3135,7 @@ tile_pattern{
   y = 0,
   width = 24,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -3144,6 +3146,7 @@ tile_pattern{
   y = 24,
   width = 24,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -3154,6 +3157,7 @@ tile_pattern{
   y = 24,
   width = 24,
   height = 24,
+  repeat_mode = "none",
 }
 
 tile_pattern{
