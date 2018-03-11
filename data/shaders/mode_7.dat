@@ -28,7 +28,7 @@ shader{
     uniform int sol_time;
 
     uniform sampler2D mode_7_texture;
-    uniform sampler2D character_texture;
+    uniform sampler2D overlay_texture;
     uniform vec3 position;
     uniform float angle;
 
@@ -83,14 +83,10 @@ shader{
 //      mode_7_color *= -(uv.y - h - 0.50);
 
       vec2 uv_character = vec2(uv.x * 2, 1.0 - uv.y * 2);
-      vec4 character_color = vec4(0.0, 0.0, 0.0, 0.0);
-      if (vertex_position.x >= 0.0 && vertex_position.x < 0.5 &&
-          vertex_position.y >= -0.5 && vertex_position.y < 0.0) {
-        character_color = texture2D(character_texture, uv_character);
-      }
+      vec4 overlay_color = texture2D(overlay_texture, uv);
 
-      // Alpha-blend the character texture.
-      vec4 col = alpha_blend(character_color, mode_7_color);
+      // Alpha-blend the overlay texture.
+      vec4 col = alpha_blend(overlay_color, mode_7_color);
 
       // Output the color
       return col;
