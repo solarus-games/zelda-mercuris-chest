@@ -83,7 +83,7 @@ shader{
 //      mode_7_color *= -(uv.y - h - 0.50);
 
       vec2 uv_character = vec2(uv.x * 2, 1.0 - uv.y * 2);
-      vec4 overlay_color = texture2D(overlay_texture, uv);
+      vec4 overlay_color = texture2D(overlay_texture, uv * sol_input_size / sol_output_size);
 
       // Alpha-blend the overlay texture.
       vec4 col = alpha_blend(overlay_color, mode_7_color);
