@@ -29,7 +29,7 @@ shader{
 
     uniform sampler2D mode_7_texture;
     uniform sampler2D overlay_texture;
-    uniform vec3 position;
+    uniform vec3 character_position;
     uniform float angle;
 
     varying in vec4 vertex_position;
@@ -55,7 +55,7 @@ shader{
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = max(0.01, position.z / 10.0);
+      float scale = max(0.01, character_position.z / 10.0);
       uvm7 *= scale;
 
       // Rotations if needed
@@ -65,7 +65,7 @@ shader{
       uvm7 *= rotation;
 
       // Initial position
-      uvm7 += position.xy;
+      uvm7 += character_position.xy;
 
       // Translation
 //      float dy = 0.0;
@@ -82,8 +82,7 @@ shader{
       // Darkness based on the horizon
 //      mode_7_color *= -(uv.y - h - 0.50);
 
-      vec2 uv_character = vec2(uv.x * 2, 1.0 - uv.y * 2);
-      vec4 overlay_color = texture2D(overlay_texture, uv * sol_input_size / sol_output_size);
+      vec4 overlay_color = texture2D(overlay_texture, gl_TexCoord[0].xy);
 
       // Alpha-blend the overlay texture.
       vec4 col = alpha_blend(overlay_color, mode_7_color);
