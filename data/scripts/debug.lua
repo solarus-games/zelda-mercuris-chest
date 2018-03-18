@@ -11,7 +11,7 @@ end
 
 local console = require("scripts/console")
 local game_manager = require("scripts/game_manager")
-local mode_7_manager = require("scripts/maps/mode_7")
+local mode_7_manager = require("scripts/mode_7")
 
 local debug = {}
 
