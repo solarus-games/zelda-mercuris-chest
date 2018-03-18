@@ -11,37 +11,9 @@ end
 
 local console = require("scripts/console")
 local game_manager = require("scripts/game_manager")
+local mode_7_manager = require("scripts/maps/mode_7")
 
 local debug = {}
-
-local map_texture
-local new_texture
-
--- Experimental mode 7 testing code.
-local function start_mode_7()
-
-  map_texture = sol.surface.create("work/out_scale_1_2.png")
---  map_texture = sol.surface.create("work/som.png")
---  map_texture = sol.surface.create("work/alttp.png")
---  map_texture = sol.surface.create("work/alttp_minimap.png")
---  map_texture = sol.surface.create("work/xd2_minimap.png")
---  map_texture = sol.surface.create("work/gs.png")
-  assert(map_texture ~= nil)
-  local overlay_texture = sol.surface.create(320, 240)
-  local character_texture = sol.surface.create("work/mercuris_link_flying.png")
-  character_texture:draw(overlay_texture, 112, 120)
-  local shader = sol.shader.create("mode_7")
-  shader:set_uniform("mode_7_texture", map_texture)
-  shader:set_uniform("overlay_texture", overlay_texture)
-  shader:set_uniform("character_position", { 0.5, 1.0, 0.5 })
-  shader:set_uniform("angle", 0)
-  sol.video.set_shader(shader)
-
-  new_texture = sol.surface.create("work/som.png")
-  sol.timer.start(sol.main, 2000, function()
-    new_texture:draw(map_texture)
-  end)
-end
 
 function debug:on_key_pressed(key, modifiers)
 
@@ -60,8 +32,6 @@ function debug:on_key_pressed(key, modifiers)
     end
   elseif key == "f12" and not console.enabled then
     sol.menu.start(sol.main, console)
-  elseif key == "7" then
-    start_mode_7()
   elseif sol.main.game ~= nil and not console.enabled then
     local game = sol.main.game
     local hero = nil
@@ -131,6 +101,8 @@ function debug:on_key_pressed(key, modifiers)
         debug.normal_walking_speed = hero:get_walking_speed()
         hero:set_walking_speed(384)
       end
+    elseif key == "7" then
+      mode_7_manager:start_mode_7(game)
     else
       -- Not a known in-game debug key.
       handled = false

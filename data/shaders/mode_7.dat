@@ -55,7 +55,7 @@ shader{
 
       // Texture scaling if you need
   //    float scale = 0.4;
-      float scale = max(0.01, character_position.z / 10.0);
+      float scale = max(0.01, character_position.z);
       uvm7 *= scale;
 
       // Rotations if needed
@@ -69,9 +69,9 @@ shader{
 
       // Translation
 //      float dy = 0.0;
-      float dy = -(sol_time / 1000.0) * 0.03;
-      vec2 translation = vec2(0.0, dy);
-      uvm7 += translation;
+//      float translation_distance = -(sol_time / 1000.0) * 0.03;
+//      vec2 translation = vec2(translation_distance * sin(a), -translation_distance * cos(a));
+//      uvm7 += translation;
 
       // Repeat
       uvm7 = fract(uvm7);  // Unnecessary if GL_REPEAT is set on the texture.
